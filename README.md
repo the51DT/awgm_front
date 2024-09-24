@@ -1,5 +1,5 @@
-# awgm
-
+# awgm_front
+https://amwayfront.netlify.app/
 ## Project setup - Vue3 CLI + Vuetify 3 Vue CLI(preview) 
 ```
 vue add vuetify
