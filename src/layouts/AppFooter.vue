@@ -1,8 +1,11 @@
-<!-- src/layouts/AppFooter.vue -->
 <template>
-  <v-footer app>
-    <v-col class="text-center">Footer Content</v-col>
-  </v-footer>
+  <footer class="footer">
+    <p>&copy; 2024 amway</p>
+  </footer>
 </template>
 
-<script setup></script>
+<script>
+export default {
+  name: "AppFooter",
+};
+</script>
