@@ -1,16 +1,21 @@
 <template>
   <header class="header">
-    <h1>암웨이 것모닝 프론트</h1>
-    <nav>
+    <h1><FrontLogo /></h1>
+    <!-- nav>
       <router-link to="/">Main</router-link>
       <router-link to="/sub">Sub</router-link>
-    </nav>
+    </nav -->
   </header>
 </template>
 
 <script>
-import { router } from "vue-router";
+// eslint-disable-next-line no-unused-vars
+import FrontLogo from "@/components/FrontLogo.vue";
+
 export default {
   name: "AppHeader",
+  components: {
+    FrontLogo,
+  },
 };
 </script>

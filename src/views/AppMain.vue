@@ -1,12 +1,15 @@
 <template>
-  <div>
-    <h2>Main</h2>
-    <p>것모닝 메인</p>
-  </div>
+  <FrontIntro />
 </template>
 
 <script>
+// eslint-disable-next-line no-unused-vars
+import FrontIntro from "@/components/FrontIntro.vue";
+
 export default {
   name: "AppMain",
+  components: {
+    FrontIntro,
+  },
 };
 </script>
