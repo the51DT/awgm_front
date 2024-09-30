@@ -11,6 +11,11 @@ body,
   text-align: left;
   margin-top: 19px;
   margin-left: 13px;
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
 }
 .footer {
   background-color: #343a40;
@@ -24,4 +29,12 @@ body,
 .main-content {
   padding: 1rem;
   margin-bottom: 60px;
+}
+.floating {
+  position: fixed;
+  bottom: 120px;
+  right: 0;
+  padding: 8px;
+  text-align: center;
+  z-index: 1000;
 }
