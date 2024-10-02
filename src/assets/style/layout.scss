@@ -18,13 +18,17 @@ body,
   }
 }
 .footer {
-  background-color: #343a40;
-  color: white;
-  text-align: center;
-  padding: 1rem;
+  padding: 32px 20px;
   position: fixed;
   bottom: 0;
   width: 100%;
+  &--white {
+    color: #fff;
+  }
+  &__top {
+    display: flex;
+    gap: 20px;
+  }
 }
 .main-content {
   padding: 1rem;

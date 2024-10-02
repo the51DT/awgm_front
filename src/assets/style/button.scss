@@ -19,14 +19,15 @@
   &__item {
     display: block;
     width: 100%;
-    height: 40px;
-    padding: 10px 16px;
+    height: 48px;
+    padding: 16px;
     border-radius: 4px;
     box-sizing: border-box;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 20px;
-    color: #000;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: -5%;
+    color: #3F3F3F;
     text-align: center;
 
     & + & {
@@ -49,8 +50,8 @@
       background-color: #fee500;
       border-radius: 12px;
       border: 1px solid #fee500;
-      svg {
-        margin-right: 4px;
+      img {
+        margin-right: 8px;
       }
     }
 
@@ -61,8 +62,8 @@
       background-color: #fff;
       border-radius: 12px;
       border: 1px solid #dbdbdb;
-      svg {
-        margin-right: 4px;
+      img {
+        margin-right: 8px;
       }
     }
   }
