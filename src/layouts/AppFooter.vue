@@ -1,5 +1,5 @@
 <template>
-  <footer :class="white === true ? 'footer' : 'footer footer--white'">
+  <footer :class="white === false ? 'footer' : 'footer footer--white'">
     <div class="footer__top">
       <router-link class="footer__top--link" to="#">이용약관</router-link>
       <router-link class="footer__top--link" to="#">개인정보처리방침</router-link>
@@ -7,7 +7,7 @@
     <div class="footer__bottom">
       <div class="footer__bottom--call">
         <div>
-          <img :src="white === true ? require(`@/assets/images/footer_call.svg`) : require(`@/assets/images/footer_call_white.svg`)">
+          <img :src="white === false ? require(`@/assets/images/footer_call.svg`) : require(`@/assets/images/footer_call_white.svg`)">
           <span>암웨이 고객센터</span>
         </div>
         <div>
@@ -30,5 +30,11 @@
 <script>
 export default {
   name: "AppFooter",
+  props: {
+    white: {
+      type: Boolean,
+      default: false
+    },
+  }
 };
 </script>
