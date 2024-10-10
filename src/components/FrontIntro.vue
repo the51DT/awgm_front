@@ -16,7 +16,7 @@ onMounted(() => {
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: 'https://lottie.host/6fe10512-efda-4a53-a2ed-29edb17fae6d/ujD16R84gk.json'
+    path: 'https://lottie.host/ea9bb5ed-9c25-43b1-a524-f667312a7a05/yAUqxq6FYY.json'
   });
 });
 </script>
