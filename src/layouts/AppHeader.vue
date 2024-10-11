@@ -1,11 +1,6 @@
 <template>
   <header class="header">
     <h1><FrontLogo /></h1>
-    <nav>
-      <router-link to="/">Main</router-link>
-      <router-link to="/login">Login</router-link>
-      <router-link to="/sub">Sub</router-link>
-    </nav>
   </header>
 </template>
 
