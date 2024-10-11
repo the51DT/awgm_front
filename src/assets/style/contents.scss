@@ -1,0 +1,18 @@
+/* login */
+.login {
+	&-intro {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		.ico-logo {
+			width: 112px;
+			height: 96px;
+		}
+		.ico-title {
+			font-size: 18px;
+			margin-top: 16px;
+			font-weight: 700;
+		}
+	}
+}
