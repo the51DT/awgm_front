@@ -16,3 +16,51 @@
 		}
 	}
 }
+
+.input-area {
+	.inputField {
+		margin-bottom: 16px;
+	}
+}
+.btn-area {
+	margin-top: 16px;
+	button:not(:first-child) {
+		margin-top: 16px;
+	}
+	.btn {
+		&--text {
+			display: block;
+			width: 100%;
+			text-align: right;
+		}
+	}
+}
+.btn-group {
+	margin-top: 40px;
+}	
+.form-box {
+	.box-wrap {
+		padding-top: 20px;
+		.img-wrap {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			img {
+				width: 53px;
+				height: 53px;
+			}
+			.desc {
+				font-size: 16px;
+				font-weight: 800;
+				line-height: 24px;
+				color: #111;
+				margin-top: 12px;
+			}
+		}
+	}
+}	
+.info {
+	&--list {
+		margin-top: 24px;
+	}
+}
