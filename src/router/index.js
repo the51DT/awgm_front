@@ -23,6 +23,7 @@ const baseRoutes = [
     component: () => import("@/views/AppCS04.vue"),
     name: "AppCS04",
   }, */
+
 ];
 
 const dynamicRoutes = menuRoutes.map((route) => {
