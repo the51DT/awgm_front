@@ -1,0 +1,305 @@
+.calender {
+  height: 416px;
+  margin-top: 32px;
+  border: 1px solid #E5E5E5;
+}
+.challenge {
+  position: relative;
+  &--main {
+    .custom-btn {
+      margin-top: 16px;
+    }
+    &__not {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      margin-top: 136px;
+      img {
+        width: 94px;
+      }
+      &__title {
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 32px;
+        letter-spacing: -0.5px;
+        text-align: center;
+      }
+      &__subtit {
+        margin-top: 4px;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: -0.5px;
+        text-align: center;
+      }
+      & > p:not(.challenge--main__not__title) {
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: -0.5px;
+        text-align: center;
+        color: #999;
+      }
+      &__box {
+        width: 100%;
+        max-width: 320px;
+        padding: 8px 20px;
+        border-radius: 16px;
+        background-color: #F5F5F5;
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: -0.5px;
+        div {
+          display: flex;
+          gap: 12px;
+          padding: 8px 0;
+        }
+      }
+    }
+  }
+  &__card {
+    &--main {
+      position: relative;
+      margin-top: 32px;
+      & > button {
+        position: absolute;
+        top: 68px;
+        right: 4px;
+      }
+      &__top {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        & > p {
+          font-size: 24px;
+          line-height: 32px;
+        }
+        & > div {
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+      &__per {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+        margin-top: 16px;
+        & > div:not(.card--per) {
+          flex-shrink: 0;
+          p:first-child {
+            margin-top: 0;
+            font-size: 14px;
+            line-height: 24px;
+          }
+          p {
+            margin-top: -5px;
+            font-size: 16px;
+            line-height: 24px;
+            span {
+              font-size: 24px;
+              line-height: 32px;
+            }
+          }
+        }
+      }
+      & > p {
+        margin-top: 16px;
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+    &--history {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      & > p {
+
+      }
+      & > div:not(:last-child) {
+        display: flex;
+        gap: 12px;
+        img {
+          width: 72px;
+          height: 72px;
+        }
+        & > div {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+        }
+        & p + div {
+          display: flex;
+          gap: 8px;
+        }
+      }
+      & > div:last-child {
+        display: flex;
+        justify-content: space-between;
+        padding: 11px 16px 13px;
+        border-radius: 12px;
+        background-color: #F5F5F5;
+        text-align: center;
+        .success {
+          padding: 2px 8px;
+          background-color: #169E4A;
+          color: #fff;
+        }
+        .fail {
+          padding: 2px 8px;
+          background-color: #999;
+          color: #fff;
+        }
+      }
+      & + .challenge__card--history {
+        margin-top: 16px;
+      }
+    }
+  }
+}
+.link-arrow {
+  position: absolute;
+  top: 8px;
+  right: 0;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: -0.5px;
+  color: #111;
+}
+.font {
+  &--500 {
+    font-weight: 500;
+  }
+  &--700 {
+    font-weight: 700;
+  }
+  &--800 {
+    font-weight: 800;
+  }
+  &--green {
+    color: #169E4A;
+  }
+  &--c11 {
+    color: #111;
+  }
+  &--c33 {
+    color: #333;
+  }
+  &--c66 {
+    color: #666;
+  }
+  &--ls1 {
+    letter-spacing: -0.5px;
+  }
+  &--ls2 {
+    letter-spacing: -1.0px;
+  }
+  &--ls3 {
+    letter-spacing: -1.5px;
+  }
+}
+.text {
+  &__title {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 36px;
+    color: #169E4A;
+    &__wrap {
+      margin-top: 40px;
+    }
+  }
+  &__subtit {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    color: #666;
+    &--bold {
+      font-weight: 800;
+      color: #333;
+    }
+  }
+}
+.card {
+  border-radius: 32px;
+  &--p16 {
+    padding: 16px;
+  }
+  &--p20 {
+    padding: 20px;
+  }
+  &--border {
+    border: 1px solid #E5E5E5;
+  }
+  &--shadow00 {
+    box-shadow: 0px 8px 16px 0px #0000000F;
+  }
+  &--shadowc2 {
+    box-shadow: 0px 8px 12px 0px #C2C2C240;
+  }
+  &--per {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #E5E5E5;
+    overflow: hidden;
+    &__gage {
+      width: 88px;
+      height: 100%;
+      border-radius: 20px;
+      background-color: #F79C22;
+    }
+    &__comp {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      padding-left: 8px;
+      width: 48px;
+      height: 100%;
+      background-color: #169E4A;
+      font-size: 16px;
+      font-weight: 800;
+      line-height: 24px;
+      color: #fff;
+    }
+  }
+  &--img {
+    position: relative;
+    width: 280px;
+    margin: 0 auto;
+    border-radius: 32px;
+    &__comp {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 36%;
+      height: auto;
+      z-index: 1;
+    }
+    & > div {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      text-align: right;
+      color: #fff;
+    }
+    .share-btn {
+      position: absolute;
+      bottom: 16px;
+      right: 16px;
+      width: 40px;
+      height: 40px;
+      background-image: url(../images/icon_share.svg);
+    }
+    & > p {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      text-align: center;
+      color: #fff;
+    }
+  }
+}
