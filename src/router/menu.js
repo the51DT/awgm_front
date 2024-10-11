@@ -2,7 +2,6 @@ export const menuRoutes = [
   {
     text: "01 로그인",
     path: "/로그인",
-    component: () => import("@/views/Gut00001.vue"),
     meta: { layout: "footerOnly" },
     subMenu: [
       {
@@ -47,7 +46,6 @@ export const menuRoutes = [
   {
     text: "02 홈",
     path: "/홈",
-    component: () => import("@/views/Gut00004.vue"),
     meta: { layout: "none" },
     subMenu: [
       {
@@ -80,7 +78,6 @@ export const menuRoutes = [
   {
     text: "03 첼린지",
     path: "/첼린지",
-    component: () => import("@/views/Gut00008.vue"),
     meta: { layout: "none" },
     subMenu: [
       {
@@ -108,7 +105,6 @@ export const menuRoutes = [
   {
     text: "04 나의 팀",
     path: "/나의 팀",
-    component: () => import("@/views/Gut00009.vue"),
     meta: { layout: "none" },
     subMenu: [
       {
@@ -156,7 +152,6 @@ export const menuRoutes = [
   {
     text: "05 마이",
     path: "/마이",
-    component: () => import("@/views/Gut00009.vue"),
     meta: { layout: "none" },
     subMenu: [
       {
@@ -214,7 +209,6 @@ export const menuRoutes = [
   {
     text: "06 Footer",
     path: "/footer",
-    component: () => import("@/views/Gut00026.vue"),
     meta: { layout: "none" },
     subMenu: [
       {
@@ -232,7 +226,6 @@ export const menuRoutes = [
   {
     text: "07 ETC",
     path: "/시스템점검",
-    component: () => import("@/views/Gut00028.vue"),
     meta: { layout: "none" },
     subMenu: [
       {
