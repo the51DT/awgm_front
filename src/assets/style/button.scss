@@ -80,3 +80,42 @@
     }
   }
 }
+.custom-btn {
+  font-family: "RixSinHead";
+  width: 100%;
+  padding: 16px 24px;
+  border-radius: 12px;
+  background-color: #169E4A;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: -0.5px;
+  color: #fff;
+  &--sm {
+    width: fit-content;
+    padding: 6px 27.5px;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  &--md {
+    padding: 8px 24px;
+    border-radius: 24px;
+    font-size: 14px;
+  }
+  &--light {
+    background-color: #E5E5E5;
+    color: #B3B3B3;
+  }
+  &--gray {
+    background-color: #999999;
+    color: #fff;
+  }
+  &--dark {
+    background-color: #666666;
+    color: #fff;
+  }
+  &--yellow {
+    background-color: #FDE500;
+    color: #181601;
+  }
+}

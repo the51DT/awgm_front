@@ -23,14 +23,36 @@
         {disabled: false, placeholder: '선택'},
       ]" />
   </div>
+  <CustomButton>버튼 디폴트</CustomButton>
+  <CustomButton size="md" color="light">중간 사이즈 / 밝은 회색</CustomButton>
+  <CustomButton size="sm" color="gray">작은 사이즈 / 회색</CustomButton>
+  <CustomButton color="dark">어두운 회색</CustomButton>
+  <CustomButton color="yellow">노란색</CustomButton>
+  <PopupDefault>
+    <template v-slot:title>
+      팝업 타이틀
+    </template>
+    <template v-slot:cont>
+      <span>볼드 텍스트</span> 일반 텍스트
+    </template>
+    <template v-slot:btn>
+      <CustomButton size="md">
+        전체 이미지 저장
+      </CustomButton>
+    </template>
+  </PopupDefault>
 </template>
 
 <script>
 import InputField from "@/components/InputField.vue";
+import PopupDefault from "@/components/PopupDefault.vue";
+import CustomButton from "@/components/CustomButton.vue";
 export default {
   name: "AppSub",
   components: {
     InputField,
+    PopupDefault,
+    CustomButton,
   }
 };
 </script>

@@ -160,6 +160,7 @@
 
 <script>
 export default {
+  name: "InputField",
   props: {
     type: {
       type: String,
@@ -215,7 +216,6 @@ export default {
       }
     }
   },
-  emits: ['update:defaultText', 'update:searchValue'],
   methods: {
     // 패스워드 눈 버튼
     passwordView: (el) => {
@@ -231,46 +231,6 @@ export default {
         }
       }
     },
-    // 체크박스 체크하면 텍스트 줄치기
-    checkedText: function (el) {
-      const target = el.currentTarget
-      const input = target.nextElementSibling
-      const label = input.nextElementSibling
-      if (input.innerText === '') {
-        target.checked = false
-      }
-      if (target.checked === true && input.innerText !== '') {
-        input.classList.add('checked')
-      } else {
-        input.classList.remove('checked')
-      }
-      if (target.checked === true) {
-        label.classList.add('on')
-        input.readOnly = true
-        input.setAttribute('contenteditable', 'false')
-      } else {
-        label.classList.remove('on')
-        input.readOnly = false
-        input.setAttribute('contenteditable', 'true')
-      }
-      if (target.readOnly === true) {
-        target.checked = true
-        input.readOnly = true
-        input.classList.add('checked')
-        input.setAttribute('contenteditable', 'false')
-      }
-    },
-    // deleteInput: function (event) {
-    //   const input = event.target
-    //   const target = input.closest('.inputField')
-    //   if (input.innerHTML < 1) {
-    //     input.addEventListener('keydown', (e) => {
-    //       if (e.key === 'Backspace') {
-    //         target.remove()
-    //       }
-    //     })
-    //   }
-    // }
   }
 }
 </script>
