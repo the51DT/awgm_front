@@ -1,0 +1,36 @@
+/* Font */
+@font-face {
+  font-family: "RixSinHead ExtraBold";
+  src: url("../fonts/RixSinHead_ExtraBold.eot");
+  src: url("../fonts/RixSinHead_ExtraBold.woff2") format("woff2"),
+    url("../fonts/RixSinHead_ExtraBold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RixSinHead Bold";
+  src: url("../fonts/RixSinHead_Bold.eot");
+  src: url("../fonts/RixSinHead_Bold.woff2") format("woff2"),
+    url("../fonts/RixSinHead_Bold.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RixSinHead Medium";
+  src: url("../fonts/RixSinHead_Medium.eot");
+  src: url("../fonts/RixSinHead_Medium.woff2") format("woff2"),
+    url("../fonts/RixSinHead_Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RixSinHead Light";
+  src: url("../fonts/RixSinHead_Light.eot");
+  src: url("../fonts/RixSinHead_Light.woff2") format("woff2"),
+    url("../fonts/RixSinHead_Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
