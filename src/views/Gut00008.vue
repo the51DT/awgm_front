@@ -1,21 +1,48 @@
 <template>
-  <div class="content-top">
-    <div class="login-wrap">
-      <div class="login-intro">
-        <img
-          class="ico-logo"
-          :src="require(`@/assets/images/icon/ico_login01.png`)"
-          alt="자녀계정 로그인"
-        />
-        <h4 class="ico-title">자녀계정 로그인</h4>
-      </div>
+  <div class="challenge challenge--main">
+    <button class="link-arrow">챌린지 이력보기<img :src="require(`@/assets/images/icon_link_arrow.svg`)"></button>
+    <div class="text__title__wrap">
+      <p class="text__title">GUT Morning<br />Korea Challenge</p>
+      <p class="text__subtit"><span class="text__subtit--bold">16</span>일째 참여중입니다.</p>
     </div>
+    <div class="card card--border card--shadow00 card--p20 challenge__card--main">
+      <button><img :src="require(`@/assets/images/icon_arrow_r.svg`)"></button>
+      <div class="challenge__card--main__top">
+        <p class="font--c33 font--700 font--ls3">팀명: 아침마다 오 마이 GUT Morning</p>
+        <div>
+          <p class="font--c11 font--700 font--ls2">성공조건 : 팀 인증 <span class="font--green">80%</span> 이상</p>
+          <p class="font--c66 font--ls1">2025.04.01 ~ 2025.06.10 / <span class="font--800">70</span>일</p>
+        </div>
+      </div>
+      <div class="challenge__card--main__per">
+        <div>
+          <p class="font--700 font--ls1">팀 인증률</p>
+          <p class="font--700 font--c11 font--ls1"><span class="font--green font--800 font--ls1">40</span>%</p>
+        </div>
+        <div class="card--per">
+          <div class="card--per__gage"></div>
+          <div class="card--per__comp">성공</div>
+        </div>
+      </div>
+      <p class="font--c66 font--ls1"><span class="font--800">* 목표치란,</span> 챌린지를 성공하기 위하여 오늘까지 달성해야 할 최소한의 인증률을 말합니다.</p>
+    </div>
+    <div class="calender">
+      캘린더 영역
+    </div>
+    <CustomButton>
+      챌린지 인증 공유하기
+    </CustomButton>
   </div>
 </template>
 
 <script>
+import CustomButton from "@/components/CustomButton.vue";
+
 export default {
   name: "LoginMain",
+  components: {
+    CustomButton,
+  }
 };
 </script>
 
