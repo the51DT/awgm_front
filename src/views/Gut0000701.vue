@@ -32,12 +32,12 @@
         </div>
         <p><span>팀장김웨이</span>님의<br />GUT Morning</p>
       </div>
-      <div class="card card--border">
+      <div class="card card--border challenge__calender--card">
         <div class="calender">
           캘린더 영역
         </div>
       </div>
-      <div>
+      <div class="challenge__btn--wrap">
         <CustomButton color="yellow">카카오로 공유</CustomButton>
         <CustomButton>전체 이미지 저장</CustomButton>
         <CustomButton>오늘 인증 이미지 저장</CustomButton>
