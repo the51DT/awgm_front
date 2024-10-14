@@ -199,7 +199,7 @@
     font-weight: 800;
   }
   &--green {
-    color: #169E4A;
+    color: #169E4A !important;
   }
   &--yellow {
     color: #F79C22;
@@ -516,6 +516,52 @@
   & + .card {
     margin-top: 16px;
   }
+  &--box {
+    padding: 11px 16px;
+    border-radius: 12px;
+    background-color: #F5F5F5;
+    &--flex2 {
+      display: flex;
+      align-items: center;
+      & > div {
+        width: 50%;
+        text-align: center;
+        padding-right: 12px;
+        &:last-child {
+          padding-right: 0;
+          padding-left: 12px;
+          border-left: 1px solid #D8D8D8;
+        }
+        p:first-child {
+          font-size: 13px;
+          line-height: 24px;
+          letter-spacing: -0.5px;
+          color: #666;
+        }
+        p:last-child {
+          font-size: 18px;
+          font-weight: 800;
+          line-height: 24px;
+          letter-spacing: -0.5px;
+          color: #333;
+        }
+      }
+    }
+  }
+  &__caption {
+    position: relative;
+    padding-left: 9px;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.5px;
+    color: #666;
+    &::before {
+      content: '*';
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
   &--img {
     position: relative;
     width: 100%;
@@ -570,7 +616,7 @@
     width: 100%;
     max-width: 868px;
     height: 56px;
-    background-image: url(../images/icon_plus.svg);
+    background-image: url(../images/icon_plus_button.svg);
     background-position: right 20px center;
     z-index: 9;
   }
@@ -583,6 +629,131 @@
       margin: 0 -20px 0;
       padding: 32px 20px 128px;
       background-color: #E5E5E5;
+    }
+  }
+  &--sub {
+    margin: 0 -20px;
+    padding: 0 20px 38px;
+    background-color: #F5F5F5;
+    &__title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .title {
+        &__top {
+          display: flex;
+          gap: 12px;
+          div {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            p {
+              font-size: 18px;
+              font-weight: 800;
+              line-height: 24px;
+              letter-spacing: -0.5px;
+              color: #666;
+              span {
+                font-size: 24px;
+                line-height: 32px;
+                color: #169E4A;
+              }
+            }
+          }
+          button {
+            display: flex;
+            align-items: center;
+            height: fit-content;
+            padding: 2px 4px 2px 8px;
+            border-radius: 7px;
+            background-color: #E5E5E5;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 16px;
+            letter-spacing: -0.5px;
+            color: #333;
+          }
+        }
+        &__big {
+          margin-top: 8px;
+          font-size: 24px;
+          font-weight: 800;
+          line-height: 32px;
+          letter-spacing: -0.5px;
+          text-align: center;
+          color: #169E4A;
+        }
+        &__main {
+          margin-top: 8px;
+          font-size: 18px;
+          font-weight: 800;
+          line-height: 24px;
+          letter-spacing: -0.5px;
+          text-align: center;
+          color: #111;
+        }
+      }
+      & + .card {
+        margin-top: 32px;
+      }
+    }
+    .card {
+      & + .card {
+        margin-top: 32px;
+      }
+      &--per {
+        height: 40px;
+      }
+      &__head {
+        margin: 32px auto 9px;
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 24px;
+        letter-spacing: -0.5px;
+        text-align: center;
+        color: #111;
+      }
+    }
+    &__card1 {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding-top: 32px;
+    }
+    &__card2 {
+      display: flex;
+      flex-direction: column;
+      padding-top: 12px;
+      & > div {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 8px 0;
+        p:first-child {
+          flex-shrink: 0;
+          width: 80px;
+          font-size: 15px;
+          font-weight: 800;
+          line-height: 24px;
+          letter-spacing: -0.5px;
+          color: #111;
+        }
+        p:last-child {
+          font-size: 15px;
+          line-height: 24px;
+          letter-spacing: -0.5px;
+          color: #666;
+          &.sm {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+    &__card3 {
+      padding: 22.12px 12px 16px;
+      .card__caption {
+        margin: 15px 8px 0;
+      }
     }
   }
 }
