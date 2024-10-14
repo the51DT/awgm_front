@@ -292,3 +292,49 @@
 		}
 	}
 }
+
+
+/* list filter */
+.list-top-wrap {
+	.filter {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		> div {
+			width: 50%;
+			flex: 1;
+			height: 40px;
+		}
+		.box-wrap {
+			border: 1px solid #e5e5e5;
+			border-radius: 8px;			
+			color: #666;
+			padding: 0 10px;
+			display: flex;
+			align-items: center;
+		}
+		.inputField__input {
+			height: 40px;
+			padding: 0 10px;
+			border: 1px solid #e5e5e5;
+			&__checkbox--label {
+				font-size: 14px;
+				font-weight: 500;
+				line-height: 24px;				
+			}
+			&__checkbox {	
+				padding: 0;
+				width: 16px;
+				height: 16px;
+				&:checked {
+					border: 0;
+					background-image: url(../images/checkbox_arrow_fill.svg);
+					background-size: 16px 16px;
+					&:focus {
+						border: 0;
+					}
+				}
+			}
+		}
+	}
+}
