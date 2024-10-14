@@ -111,42 +111,63 @@
       display: flex;
       flex-direction: column;
       gap: 16px;
-      & > p {
-
-      }
-      & > div:not(:last-child) {
-        display: flex;
-        gap: 12px;
-        img {
-          width: 72px;
-          height: 72px;
-        }
-        & > div {
-          display: flex;
-          flex-direction: column;
-          gap: 8px;
-        }
-        & p + div {
-          display: flex;
-          gap: 8px;
-        }
-      }
       & > div:last-child {
         display: flex;
-        justify-content: space-between;
         padding: 11px 16px 13px;
         border-radius: 12px;
         background-color: #F5F5F5;
         text-align: center;
-        .success {
-          padding: 2px 8px;
-          background-color: #169E4A;
-          color: #fff;
+        div {
+          width: 33.33%;
+          padding: 0 16px;
+          text-align: center;
+          &:first-child {
+            padding-left: 0;
+          }
+          &:last-child {
+            padding-right: 0;
+          }
+          p:first-child {
+            font-size: 13px;
+            line-height: 24px;
+            letter-spacing: -0.5px;
+            color: #666;
+          }
+          p:last-child {
+            margin-top: 2px;
+            font-size: 15px;
+            font-weight: 800;
+            line-height: 24px;
+            letter-spacing: -0.5px;
+            color: #333;
+            &.success {
+              width: fit-content;
+              margin: 4px auto 0;
+              padding: 2px 8px;
+              border-radius: 4px;
+              background-color: #169E4A;
+              font-size: 12px;
+              font-weight: 800;
+              line-height: 16px;
+              letter-spacing: -0.5px;
+              color: #fff;
+            }
+            &.fail {
+              width: fit-content;
+              margin: 4px auto 0;
+              padding: 2px 8px;
+              border-radius: 4px;
+              background-color: #999;
+              font-size: 12px;
+              font-weight: 800;
+              line-height: 16px;
+              letter-spacing: -0.5px;
+              color: #fff;
+            }
+          }
         }
-        .fail {
-          padding: 2px 8px;
-          background-color: #999;
-          color: #fff;
+        & div + div {
+          border-left: 1px solid #D8D8D8;
         }
       }
       & + .challenge__card--history {
@@ -243,7 +264,6 @@
     height: 40px;
     border-radius: 20px;
     background-color: #E5E5E5;
-    overflow: hidden;
     &__gage {
       width: 88px;
       height: 100%;
@@ -259,12 +279,77 @@
       padding-left: 8px;
       width: 48px;
       height: 100%;
+      border-radius: 0px 20px 20px 0px;
       background-color: #169E4A;
       font-size: 16px;
       font-weight: 800;
       line-height: 24px;
       color: #fff;
+      width: 48px;
     }
+    &__target {
+      position: absolute;
+      top: -16px;
+      left: calc(80% - 44px);
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      font-size: 11px;
+      line-height: 16px;
+      color: #666;
+    }
+  }
+  &__top {
+    display: flex;
+    gap: 12px;
+  }
+  &__img {
+    width: 72px;
+    height: 72px;
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  &__info {
+    display: flex;
+    gap: 8px;
+  }
+  &__title {
+    padding: 0px 12px;
+    border-radius: 16px;
+    border: 1px solid #169E4A;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+    color: #169E4A;
+  }
+  &__num {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 8px;
+    border-radius: 10px;
+    background-color: #E5E5E5;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.5px;
+    color: #333;
+    &::before {
+      content: '';
+      display: block;
+      width: 13px;
+      height: 10px;
+      background-image: url(../images/icon_people.svg);
+    }
+  }
+  &__date {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.5px;
+    color: #999;
   }
   &--img {
     position: relative;
