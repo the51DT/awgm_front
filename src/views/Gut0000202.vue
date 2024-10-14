@@ -1,20 +1,6 @@
 <template>
   <div class="content-area">
-    <div class="head-area ty02">
-      <!-- <a class="area-left" href="#">
-        <img class="ico-logo"
-          :src="require(`@/assets/images/icon/ico_arrow_left.png`)"
-          alt="이전페이지로 이동"
-        />
-      </a> -->
-      <h2 class="page-title">법정대리인 동의</h2>
-      <button type="button" class="area-right">
-        <img class="ico-logo"
-          :src="require(`@/assets/images/icon/ico_close.png`)"
-          alt="닫기"
-        />
-      </button>
-    </div>
+    <ContentHead title="법정대리인 동의" headType="ty02" :rightArea=true />
     <div class="login-form">
       <div class="form-box">
         <div class="box-wrap">
@@ -55,11 +41,20 @@
 <script>
 import InputField from "@/components/InputField.vue";
 import CustomButton from "@/components/CustomButton.vue";
+import ContentHead from "@/components/ContentHead.vue";
+
 export default {
   name: "Gut_0000202",
+  data() {
+    return {
+      leftArea: "",
+      rightArea: "",
+    };
+  },
   components: {
     InputField,
     CustomButton,
+    ContentHead,
   },
 };
 </script>

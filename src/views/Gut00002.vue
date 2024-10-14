@@ -1,13 +1,6 @@
 <template>  
   <div class="content-area">
-    <div class="head-area">
-      <a class="area-left" href="#">
-        <img class="ico-logo"
-          :src="require(`@/assets/images/icon/ico_arrow_left.png`)"
-          alt="이전페이지로 이동"
-        />
-      </a>
-    </div>
+    <ContentHead :leftArea=true />
     <div class="content-top">
       <div class="login-wrap">
         <div class="login-intro">
@@ -43,11 +36,20 @@
 <script>
 import InputField from "@/components/InputField.vue";
 import CustomButton from "@/components/CustomButton.vue";
+import ContentHead from "@/components/ContentHead.vue";
+
 export default {
   name: "Gut_00002",
+  data() {
+    return {
+      leftArea: "",
+      rightArea: "",
+    };
+  },
   components: {
     InputField,
     CustomButton,
+    ContentHead,
   }
 };
 </script>
