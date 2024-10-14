@@ -22,6 +22,7 @@
         <div class="card--per">
           <div class="card--per__gage"></div>
           <div class="card--per__comp">성공</div>
+          <div class="card--per__target"><img :src="require(`@/assets/images/icon_target.svg`)">목표치</div>
         </div>
       </div>
       <p class="font--c66 font--ls1"><span class="font--800">* 목표치란,</span> 챌린지를 성공하기 위하여 오늘까지 달성해야 할 최소한의 인증률을 말합니다.</p>
