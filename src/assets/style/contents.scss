@@ -110,7 +110,7 @@
 
 
 /* 팀관리 */
-.team-box-wrap {	
+.team-box-wrap {
 	.card {		
 		border-radius: 16px;
 		&:not(:last-child) {
@@ -122,6 +122,9 @@
 	}
 	.btn-area {
 		margin-bottom: 24px;
+	}
+	.list-top-wrap {
+		margin-bottom: 16px;
 	}
 }
 .team-btn-wrap {

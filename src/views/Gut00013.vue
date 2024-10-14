@@ -2,6 +2,19 @@
   <div class="content-area">
     <ContentHead title="팀원" headType="ty02" :leftArea=true />
     <div class="team-box-wrap">
+      <div class="list-top-wrap">
+        <div class="tag">        
+        </div>
+        <div class="filter">
+          <div class="box-wrap">
+            <InputField type="checkbox"  name="checkbox1"
+            :checkbox="[
+              {id: 'checkbox1_1', value: 'checkbox1_1', checked: true, label: 'ABO 미인증 팀원'},
+            ]"  />
+          </div>
+          <InputField type="select" placeholder="2024.09" :options="['2024.09', '2024.08', '2024.07']" active />
+        </div>
+      </div>
       <div class="card card--border card--p16 card--shadowc2">
         <a href="#" class="card--link">
           <div class="card__top">
@@ -10,7 +23,7 @@
               <div class="img-wrap on-flag">
                 <img class="card__img" :src="require(`@/assets/images/card_profile.png`)">
               </div>
-              <p class="card__tit">팀장김웨이팀장김웨이팀장김웨이팀장김웨이팀장김웨이팀장김웨이팀장김웨이</p>
+              <p class="card__tit">팀장김웨이</p>
             </div>
             <div class="card__text__list">
               <dl>
@@ -83,17 +96,19 @@
 
 <script>
 import ContentHead from "@/components/ContentHead.vue";
+import InputField from "@/components/InputField.vue";
 
 export default {
-  name: "Gut_00012",
+  name: "Gut_00013",
   data() {
     return {
       leftArea: "",
       rightArea: "",
     };
   },
-  components: {
+  components: {    
     ContentHead,
+    InputField,
   },
 };
 </script>

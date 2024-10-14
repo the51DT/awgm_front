@@ -11,7 +11,7 @@
         <div class="form-box">
           <div class="input-area">
             <div class="form-item">
-              <InputField title="팀명" value="아침마다 오 마이 GUT Morning"/>
+              <InputField title="팀명"/>
             </div>
             <div class="form-item">
               <h5 class="title">팀 구분</h5>
