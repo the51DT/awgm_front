@@ -104,6 +104,9 @@
   &--light {
     background-color: #E5E5E5;
     color: #B3B3B3;
+    &.ty02 {
+      color: #666;
+    }
   }
   &--gray {
     background-color: #999999;

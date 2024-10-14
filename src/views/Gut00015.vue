@@ -4,7 +4,7 @@
       <div class="login-intro">
         <img
           class="ico-logo"
-          :src="require(`@/assets/images/icon/ico_login01.png`)"
+          :src="require(`@/assets/images/content/conts-ico_login01.png`)"
           alt="자녀계정 로그인"
         />
         <h4 class="ico-title">자녀계정 로그인</h4>

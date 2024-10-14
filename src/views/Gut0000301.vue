@@ -23,7 +23,7 @@
       </ul>
     </template>
     <template v-slot:btn>
-      <div class="btn-area ty02">
+      <div class="btn-area ty03">
         <CustomButton size="sm" color="light">동의하지 않음</CustomButton>
         <CustomButton size="sm">동의</CustomButton>
       </div>

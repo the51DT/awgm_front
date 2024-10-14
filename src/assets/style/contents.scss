@@ -62,52 +62,183 @@
 			font-weight: 800;
 		}
 	}
+    &-form {
+		.input-area {
+			.inputField {
+				margin-bottom: 16px;
+			}
+		}
+		.form-box {
+			.box-wrap {
+				padding-top: 20px;
+				.img-wrap {
+					display: flex;
+					align-items: center;
+					flex-direction: column;
+					img {
+						width: 53px;
+						height: 53px;
+					}
+					.desc {
+						font-size: 16px;
+						font-weight: 800;
+						line-height: 24px;
+						color: #111;
+						margin-top: 12px;
+					}
+				}
+			}
+		}
+		.btn-area {
+			margin-top: 16px;
+			button:not(:first-child) {
+				margin-top: 16px;
+			}
+			.btn {
+				&--text {
+					display: block;
+					width: 100%;
+					text-align: right;
+				}
+			}
+		}
+		.btn-group {
+			margin-top: 40px;
+		}
+	}
 }
 
-.input-area {
-	.inputField {
-		margin-bottom: 16px;
-	}
-}
-.btn-area {
-	margin-top: 16px;
-	button:not(:first-child) {
-		margin-top: 16px;
-	}
-	.btn {
-		&--text {
-			display: block;
-			width: 100%;
-			text-align: right;
+
+/* 팀관리 */
+.team-box-wrap {	
+	.card {
+		margin-bottom: 56px;
+		border-radius: 16px;
+		&:not(:last-child) {
+			margin-bottom: 16px;
 		}
 	}
+	.form-box {
+		margin-bottom: 0;
+	}
+	.btn-area {
+		margin-bottom: 24px;
+	}
 }
-.btn-group {
-	margin-top: 40px;
-}	
-.form-box {
-	.box-wrap {
-		padding-top: 20px;
-		.img-wrap {
-			display: flex;
-			align-items: center;
-			flex-direction: column;
-			img {
-				width: 53px;
-				height: 53px;
+.team-btn-wrap {
+	margin-top: 22px;;
+}
+
+/* card */
+.card {
+	a {
+		position: relative;
+		&:after {
+			content:'';
+			background-image: url(../images/icon_arrow_r.svg);
+			background-size: contain;
+			width: 24px;
+			height: 24px;
+			display: block;
+			position: absolute;
+			top: 50%;
+			right: -8px;
+			transform: translateY(-50%);
+		}
+		.card__top {
+			gap: 20px;
+		}
+		&__text__list {
+			dl {				
+				font-size: 13px;
+				line-height: 24px;
+				dt {
+					font-weight: 800;
+					color: #333;
+				}
+				dd {
+					font-weight: 500;				
+					color: #111;
+				}
 			}
-			.desc {
+		}
+	}
+	&__profile__info {
+		.img-wrap {
+			&.on-flag {
+				position: relative;
+				padding: 4px 4px 0 0;
+				&:before {
+					content: '';
+					display: inline-block;
+					width: 14px;
+					height: 14px;
+					background-image: url('../images/icon/ico_leader.svg');
+					background-size: contain;
+					position: absolute;
+					top: 0;
+					right: 0;
+				}
+			}
+		}
+		.card {
+			&__img {
+				max-width: 56px;
+				height: 56px;
+			}
+			&__tit {
+				font-size: 11px;
+				font-weight: 800;
+				line-height: 16px;				
+				max-width: 56px;
+				height: 32px;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				display: -webkit-box;
+				-webkit-line-clamp: 2;				
+				-webkit-box-orient: vertical;
+			}
+		}
+	}
+	&__text__list {
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+		dl {
+			display: flex;
+			font-size: 15px;
+			line-height: 24px;
+			dt {
+				flex: 1.5;
+				padding-right: 8px;
 				font-size: 16px;
 				font-weight: 800;
-				line-height: 24px;
 				color: #111;
-				margin-top: 12px;
+			}
+			dd {
+				flex: 2;
+				font-weight: 500;
+				color: #666;
+				.group-info {
+					.sub {
+						color: #999;
+					}
+				}
+				.badge-info {
+					width: fit-content;
+					padding: 2px 8px;
+					border-radius: 4px;
+					background-color: #169E4A;
+					font-size: 11px;
+					font-weight: 800;
+					line-height: 16px;
+					letter-spacing: -0.5px;
+					color: #fffa01;
+				}
 			}
 		}
-	}
-}	
-.info {
-	&--list {
-		margin-top: 24px;
+		dl:not(:last-child) {
+			margin-bottom: 4px;
+		}
 	}
 }

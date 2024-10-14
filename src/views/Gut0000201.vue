@@ -1,14 +1,6 @@
 <template>
   <div class="content-area">
-    <div class="head-area ty02">
-      <h2 class="page-title"><span>$아이디$</span> 비밀번호 재설정</h2>
-      <button type="button" class="area-right">
-        <img class="ico-logo"
-          :src="require(`@/assets/images/icon/ico_close.png`)"
-          alt="닫기"
-        />
-      </button>
-    </div>
+    <ContentHead title="아이디 비밀번호 재설정" headType="ty02" :rightArea=true />
     <div class="login-form">
       <div class="form-box">
         <div class="box-wrap">
@@ -35,11 +27,20 @@
 <script>
 import InputField from "@/components/InputField.vue";
 import CustomButton from "@/components/CustomButton.vue";
+import ContentHead from "@/components/ContentHead.vue";
+
 export default {
   name: "Gut_0000201",
+  data() {
+    return {
+      leftArea: "",
+      rightArea: "",
+    };
+  },
   components: {
     InputField,
     CustomButton,
+    ContentHead,
   },
 };
 </script>
