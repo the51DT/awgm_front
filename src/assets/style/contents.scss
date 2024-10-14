@@ -1,3 +1,50 @@
+/* intro */
+.lottie-conts {
+	position: relative;
+	margin: 0 -24px;
+	&:before {
+		content:'';
+		background: url("../images/bg_intro.svg");
+		background-size: contain;		
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 0;
+	}	
+}
+.lottie-conts {
+	padding: 40px 0 20px;
+}
+.intro-text {
+	margin-bottom: 24px;
+	.text-group {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 6px;
+		.ico-img {
+			width: 32px;
+			height: 32px;
+		}
+		.count-num {
+			font-family: "GmarketSans";
+			font-size: 32px;
+			font-weight: 700;
+			line-height: 48px;
+			color: #F79C22;
+		}
+	}
+	.desc {
+		text-align: center;
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 24px;
+	}
+}
+
+
 /* login */
 .login {
 	&-intro {
@@ -12,7 +59,7 @@
 		.ico-title {
 			font-size: 18px;
 			margin-top: 16px;
-			font-weight: 700;
+			font-weight: 800;
 		}
 	}
 }

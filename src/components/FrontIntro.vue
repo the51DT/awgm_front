@@ -1,6 +1,6 @@
-<template>
+<template>  
   <div class="intro">
-    <div ref="animationContainer" style="width: 500px; height: 500px;"></div>
+    <div ref="animationContainer"></div>
   </div>
 </template>
 
@@ -16,15 +16,21 @@ onMounted(() => {
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: 'https://lottie.host/ea9bb5ed-9c25-43b1-a524-f667312a7a05/yAUqxq6FYY.json'
+    path: "https://lottie.host/88a3acf4-6312-4d56-892c-e76fb301a41f/e7dQZ0Y9V3.json" // 나의 건강과 미래를 바꾸기 시작하는 것모닝 하세요(ty04)
   });
 });
+
 </script>
 
 <script>
+
 export default {
   name: "FrontIntro",
 };
+
 </script>
 
 <style scoped></style>
+
+
+
