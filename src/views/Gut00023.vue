@@ -8,7 +8,9 @@
       <div class="card card--border card--p16 card--shadowc2 challenge__card--history">
         <p class="font--800 font--c11 font--ls1">GUT Morning Korea Challenge</p>
         <div class="card__top">
-          <img class="card__img" :src="require(`@/assets/images/card_profile.png`)">
+          <div class="card__img">
+            <img :src="require(`@/assets/images/card_profile.png`)">
+          </div>
           <div class="card__text">
             <p class="font--800 font--ls1">팀명: <span class="font--500">아침마다 오 마이 GUT Morning</span></p>
             <div class="card__info">
@@ -36,7 +38,9 @@
       <div class="card card--border card--p16 card--shadowc2 challenge__card--history">
         <p class="font--800 font--c11 font--ls1">GUT Morning Korea Challenge</p>
         <div class="card__top">
-          <img class="card__img" :src="require(`@/assets/images/card_profile.png`)">
+          <div class="card__img">
+            <img :src="require(`@/assets/images/card_profile.png`)">
+          </div>
           <div class="card__text">
             <p class="font--800 font--ls1">팀명: <span class="font--500">아침마다 오 마이 GUT Morning</span></p>
             <div class="card__info">
