@@ -3,7 +3,7 @@
     <button class="link-arrow">챌린지 이력보기<img :src="require(`@/assets/images/icon_link_arrow.svg`)"></button>
     <div class="text__title__wrap">
       <p class="text__title">GUT Morning<br />Korea Challenge</p>
-      <p class="text__subtit"><span class="text__subtit--bold">16</span>일째 참여중입니다.</p>
+      <p class="text__subtit text__subtit--mt8"><span class="text__subtit--bold">16</span>일째 참여중입니다.</p>
     </div>
     <div class="card card--border card--shadow00 card--p20 challenge__card--main">
       <button><img :src="require(`@/assets/images/icon_arrow_r.svg`)"></button>
@@ -20,9 +20,9 @@
           <p class="font--700 font--c11 font--ls1"><span class="font--green font--800 font--ls1">40</span>%</p>
         </div>
         <div class="card--per">
-          <div class="card--per__gage"></div>
-          <div class="card--per__comp">성공</div>
-          <div class="card--per__target"><img :src="require(`@/assets/images/icon_target.svg`)">목표치</div>
+          <div class="card--per__gage" data-width="40%"></div>
+          <div class="card--per__comp" data-width="20%">성공</div>
+          <div class="card--per__target" data-left="60%"><img :src="require(`@/assets/images/icon_target.svg`)">목표치</div>
         </div>
       </div>
       <p class="font--c66 font--ls1"><span class="font--800">* 목표치란,</span> 챌린지를 성공하기 위하여 오늘까지 달성해야 할 최소한의 인증률을 말합니다.</p>

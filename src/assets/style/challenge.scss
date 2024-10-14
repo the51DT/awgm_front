@@ -83,6 +83,9 @@
         align-items: center;
         gap: 28px;
         margin-top: 16px;
+        .card--per {
+          height: 40px;
+        }
         & > div:not(.card--per) {
           flex-shrink: 0;
           p:first-child {
@@ -170,9 +173,6 @@
           border-left: 1px solid #D8D8D8;
         }
       }
-      & + .challenge__card--history {
-        margin-top: 16px;
-      }
     }
   }
 }
@@ -239,10 +239,15 @@
       font-weight: 800;
       color: #333;
     }
+    &--mt8 {
+      margin-top: 8px;
+    }
   }
 }
 .card {
+  position: relative;
   border-radius: 32px;
+  background-color: #fff;
   &--p16 {
     padding: 16px;
   }
@@ -251,6 +256,9 @@
   }
   &--border {
     border: 1px solid #E5E5E5;
+  }
+  &--green {
+    border: 1px solid #169E4A;
   }
   &--shadow00 {
     box-shadow: 0px 8px 16px 0px #0000000F;
@@ -261,7 +269,7 @@
   &--per {
     position: relative;
     width: 100%;
-    height: 40px;
+    height: 32px;
     border-radius: 20px;
     background-color: #E5E5E5;
     &__gage {
@@ -269,14 +277,17 @@
       height: 100%;
       border-radius: 20px;
       background-color: #F79C22;
+      &--end {
+        background-color: #999;
+      }
     }
     &__comp {
       position: absolute;
       top: 0;
       right: 0;
       display: flex;
+      justify-content: center;
       align-items: center;
-      padding-left: 8px;
       width: 48px;
       height: 100%;
       border-radius: 0px 20px 20px 0px;
@@ -285,12 +296,12 @@
       font-weight: 800;
       line-height: 24px;
       color: #fff;
-      width: 48px;
     }
     &__target {
       position: absolute;
       top: -16px;
-      left: calc(80% - 44px);
+      left: calc(80%);
+      transform: translateX(-6px);
       display: flex;
       align-items: center;
       gap: 3px;
@@ -298,19 +309,81 @@
       line-height: 16px;
       color: #666;
     }
+    &__title {
+      width: 48px;
+      margin-right: 12px;
+      font-size: 12px;
+      font-weight: 800;
+      line-height: 16px;
+      letter-spacing: -0.5px;
+      color: #111;
+    }
+    &__state {
+      margin-left: 8px;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 24px;
+      color: #F79C22;
+      &--end {
+        color: #999;
+      }
+    }
   }
   &__top {
     display: flex;
     gap: 12px;
   }
   &__img {
+    flex-shrink: 0;
     width: 72px;
     height: 72px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &.card__leader {
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        top: -2px;
+        right: -2px;
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-image: url(../images/team_leader.png);
+        background-size: contain;
+        z-index: 3;
+      }
+    }
+  }
+  &__head {
+    margin: 8px 0 16px;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 32px;
+    letter-spacing: -0.5px;
+    color: #169E4A;
+  }
+  &__linkBtn {
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    transform: translateY(-50%);
   }
   &__text {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    &__title {
+      padding-right: 8px;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: -0.5px;
+      color: #333;
+    }
   }
   &__info {
     display: flex;
@@ -325,6 +398,10 @@
     line-height: 24px;
     letter-spacing: -0.5px;
     color: #169E4A;
+    &--always {
+      border: 1px solid #F79C22;
+      color: #F79C22;
+    }
   }
   &__num {
     display: flex;
@@ -350,6 +427,91 @@
     line-height: 16px;
     letter-spacing: -0.5px;
     color: #999;
+  }
+  &__state {
+    padding: 0 8px;
+    border-radius: 8px;
+    background-color: #169E4A;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+    color: #fff;
+    &--end {
+      background-color: #333;
+    }
+  }
+  &__ranking {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & + .card__top {
+      margin-top: 16px;
+    }
+    &--rank {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      img {
+        width: 12px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: -0.5px;
+        color: #666;
+        span {
+          font-size: 16px;
+          font-weight: 800;
+          color: #169E4A;
+        }
+      }
+    }
+    &--text {
+      display: flex;
+      gap: 12px;
+      p {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: -0.5px;
+        color: #666;
+        span {
+          font-size: 16px;
+          font-weight: 800;
+          color: #111;
+        }
+      }
+      .btn {
+        &__wrap {
+          display: flex;
+          gap: 8px;
+        }
+        &__star {
+          width: 24px;
+          height: 24px;
+          background-size: contain;
+          background-image: url(../images/icon_star.svg);
+          &.on {
+            background-image: url(../images/icon_star_fill.svg);
+          }
+        }
+        &__person {
+          width: 24px;
+          height: 24px;
+          background-size: contain;
+          background-image: url(../images/icon_add_person.svg);
+        }
+      }
+    }
+  }
+  &__bottom {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+  }
+  & + .card {
+    margin-top: 16px;
   }
   &--img {
     position: relative;
@@ -387,5 +549,56 @@
       text-align: center;
       color: #fff;
     }
+  }
+  &__comp {
+    position: absolute;
+    left: 0px;
+    top: 85px;
+    width: 100px;
+  }
+}
+.team {
+  position: relative;
+  &__add {
+    position: fixed;
+    bottom: 98px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 868px;
+    height: 56px;
+    background-image: url(../images/icon_plus.svg);
+    background-position: right 20px center;
+    z-index: 9;
+  }
+  &--main {
+    padding-bottom: 32px;
+    .tag--wrap {
+      margin: 32px 0 24px;
+    }
+    &__gray {
+      margin: 0 -20px 0;
+      padding: 32px 20px 128px;
+      background-color: #E5E5E5;
+    }
+  }
+}
+.tag {
+  padding: 8px 16px;
+  border-radius: 22px;
+  border: 1px solid #D8D8D8;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.5px;
+  color: #111;
+  &.on {
+    border: none;
+    background-color: #169E4A;
+    font-weight: 800;
+    color: #fff;
+  }
+  &--wrap {
+    display: flex;
+    gap: 4px;
   }
 }
