@@ -111,12 +111,11 @@
 
 /* 팀관리 */
 .team-box-wrap {
-	margin-bottom: 24px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	.card {		
 		border-radius: 16px;
-		&:not(:last-child) {
-			margin-bottom: 16px;
-		}
 	}
 	.form-box {
 		margin-bottom: 0;
@@ -124,15 +123,21 @@
 	.btn-area {
 		margin-bottom: 24px;
 	}
-	.list-top-wrap {
-		margin-bottom: 16px;
-		.tag-box-wrap {
-			margin-bottom: 32px;
+	.list {
+		&-top-wrap {
+		margin-bottom: 24px;			
 		}
-	}	
+		&-conts-wrap {
+			margin-bottom: 24px;
+		}
+	}
+	.conts-area {
+		height: 100%;
+		height: 100vh;
+	}
 }
 .team-btn-wrap {
-	margin-top: 22px;;
+	margin-top: 22px;
 }
 
 /* card */
@@ -264,6 +269,65 @@
 		height: 32px;
 		&.on {
 			background-image: url(../images/icon_order_asc.svg);
+		}
+	}
+}
+
+.create-team-wrap {
+	.card {
+		margin-bottom: 56px;
+	}
+	.profile-wrap {
+		.profile-area {
+			margin-bottom: 32px;
+			padding-top: 8px;
+		}
+	}
+	.btn-area {
+		margin-bottom: 20px;
+	}
+}
+
+.my-page-wrap {
+	margin: 48px 0 72px;
+	.profile-area {
+		&.small {
+			.img-wrap {
+				width: 104px;
+				height: 104px;
+				padding: 0;
+				position: relative;
+				box-shadow: 0px 8px 12px 0px #C2C2C240;
+				border-radius: 32px;
+				&::after {
+					content : '';
+					display: block;
+					width: 32px;
+					height: 32px;
+					position: absolute;
+					bottom: 0;
+					right: 0;
+					background-image: url(../images/icon/ico_file_modify.png);
+					background-size: contain;
+				}
+			}
+		}
+		.text-wrap {			
+			display: flex;
+			align-items: center;
+			gap: 4px;
+			.btn-modify {
+				width: 16px;
+				height: 16px;
+				&:after {
+					content:'';
+					display: inline-block;
+					width: 100%;
+					height: 100%;
+					background-image: url(../images/icon_modify.svg);
+					background-size: contain;
+				}
+			}
 		}
 	}
 }
