@@ -1,39 +1,53 @@
 <template>
-  <footer :class="white === false ? 'footer' : 'footer footer--white'">
-    <div class="footer__top">
-      <router-link class="footer__top--link" to="#">이용약관</router-link>
-      <router-link class="footer__top--link" to="#">개인정보처리방침</router-link>
-    </div>
-    <div class="footer__bottom">
-      <div class="footer__bottom--call">
-        <div>
-          <img :src="white === false ? require(`@/assets/images/footer_call.svg`) : require(`@/assets/images/footer_call_white.svg`)">
-          <span>암웨이 고객센터</span>
-        </div>
-        <div>
-          1588-0080
-        </div>
-      </div>
-      <div class="footer__bottom--address">
-        한국암웨이(주) 서울특별시 강남구 영동대로 517 27층<br>
-        (삼성동, 아셈타워) (대표이사: 배수정, 아샤 굽타)<br>
-        사업자 등록번호: 120-81-03391 
-      </div>
-      <div class="footer__bottom--copy">
-        ALL CONTENTS Copyright ⓒ 2024 Amway Korea LTD.<br>
-        ALL RIGHTS RESERVED
-      </div>
-    </div>
-  </footer>
+  <nav class="nav">
+    <ul>
+      <li>
+        <router-link to="/홈 첼린지-Gut00004">
+          <img :src="home === true ? require(`@/assets/images/nav_home_on.svg`): require(`@/assets/images/nav_home.svg`)">
+          <p :class="home === true ? 'on': ''">홈</p>
+        </router-link>
+      </li>
+      <li>
+        <router-link to="/홈 첼린지-Gut00008">
+          <img :src="challenge === true ? require(`@/assets/images/nav_challenge_on.svg`): require(`@/assets/images/nav_challenge.svg`)">
+          <p :class="challenge === true ? 'on': ''">챌린지</p>
+        </router-link>
+      </li>
+      <li>
+        <router-link to="/나의 팀 목록-Gut00009">
+          <img :src="team === true ? require(`@/assets/images/nav_team_on.svg`): require(`@/assets/images/nav_team.svg`)">
+          <p :class="team === true ? 'on': ''">나의 팀</p>
+        </router-link>
+      </li>
+      <li>
+        <router-link to="/마이 index-Gut00015">
+          <img :src="my === true ? require(`@/assets/images/nav_my_on.svg`): require(`@/assets/images/nav_my.svg`)">
+          <p :class="my === true ? 'on': ''">마이</p>
+        </router-link>
+      </li>
+    </ul>
+  </nav>
 </template>
 
 <script>
 export default {
   name: "AppNav",
   props: {
-    white: {
+    home: {
       type: Boolean,
-      default: false
+      default: false,
+    },
+    challenge: {
+      type: Boolean,
+      default: false,
+    },
+    team: {
+      type: Boolean,
+      default: false,
+    },
+    my: {
+      type: Boolean,
+      default: false,
     },
   }
 };

@@ -11,7 +11,7 @@
     </a>
     <h2 class="page-title">{{ title }}</h2>
     <div class="area-right" v-if="rightArea === true">
-      <div v-if="rightIcon">
+      <div v-if="rightIcon" class="area-right__icon">
         <button><img :src="require(`@/assets/images/icon_setting.svg`)"/></button>
         <button><img :src="require(`@/assets/images/icon_add_team.svg`)"/></button>
       </div>

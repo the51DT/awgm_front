@@ -34,15 +34,18 @@
       챌린지 인증 공유하기
     </CustomButton>
   </div>
+  <AppNav :challenge="true"></AppNav>
 </template>
 
 <script>
 import CustomButton from "@/components/CustomButton.vue";
+import AppNav from "@/layouts/AppNav.vue";
 
 export default {
   name: "LoginMain",
   components: {
     CustomButton,
+    AppNav,
   }
 };
 </script>
