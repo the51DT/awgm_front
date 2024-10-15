@@ -7,9 +7,9 @@
         <p class="text__subtit"><span class="text__subtit--bold">15</span>개 팀에 참여중입니다.</p>
       </div>
       <div class="tag--wrap">
-        <div class="tag on">전체 (15)</div>
-        <div class="tag">챌린지 (3)</div>
-        <div class="tag">상시 (12)</div>
+        <button type="button" class="tag on">전체 (15)</button>
+        <button type="button" class="tag">챌린지 (3)</button>
+        <button type="button" class="tag">상시 (12)</button>
       </div>
       <div class="card card--green card--p16 card--shadowc2">
         <button class="card__linkBtn">
