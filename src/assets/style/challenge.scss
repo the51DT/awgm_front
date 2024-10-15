@@ -345,6 +345,7 @@
     gap: 12px;
   }
   &__img {
+    position: relative;
     flex-shrink: 0;
     width: 72px;
     height: 72px;
@@ -438,6 +439,10 @@
     line-height: 16px;
     letter-spacing: -0.5px;
     color: #999;
+    span {
+      font-weight: 800;
+      color: #169E4A;
+    }
   }
   &__state {
     padding: 0 8px;
@@ -649,6 +654,40 @@
           background-color: #169E4A;
         }
       }
+    }
+  }
+  &__medal {
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    width: 26px;
+    height: 26px;
+    padding-top: 3.64px;
+    border-radius: 16px;
+    background-color: #666;
+    background-size: contain;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 800;
+    line-height: 20px;
+    color: #fff;
+    &.gold {
+      color: #927200;
+      height: 34px;
+      background-color: transparent;
+      background-image: url(../images/gold_medal.png);
+    }
+    &.silver {
+      color: #666;
+      height: 34px;
+      background-color: transparent;
+      background-image: url(../images/silver_medal.png);
+    }
+    &.bronze {
+      color: #A36D5E;
+      height: 34px;
+      background-color: transparent;
+      background-image: url(../images/bronze_medal.png);
     }
   }
   &--img {
@@ -917,6 +956,44 @@
         font-weight: 700;
         line-height: 18px;
         letter-spacing: -0.5px;
+      }
+    }
+  }
+  .team-box-wrap {
+    margin-bottom: 0;
+  }
+  &--ranking {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 24px;
+    &__caption {
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: -0.5px;
+      text-align: right;
+      color: #999;
+    }
+    .card--green {
+      border: 2px solid #169E4A;
+    }
+    .card:not(:last-child) {
+      margin-bottom: 0;
+    }
+    .card + .card {
+      margin-top: 0;
+    }
+    &__my {
+      position: sticky;
+      bottom: 0;
+      margin: 16px -20px 0;
+      padding: 24px 20px;
+      border-top: 1px solid #B3B3B3;
+      background-color: #8989891A;
+      backdrop-filter: blur(8px);
+      .card {
+        border: 2px solid #169E4A;
+        box-shadow: 6px 6px 24px 0px #00000040;
       }
     }
   }
