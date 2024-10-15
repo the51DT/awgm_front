@@ -1,5 +1,9 @@
 /* 전체 레이아웃 */
 
+body {
+  background-color: #f5f5f5;
+}
+
 #app {
   display: flex;
   flex-direction: column;
@@ -8,6 +12,7 @@
   max-width: 868px;
   margin: 0 auto;
   padding: 0 20px;
+  background-color: #fff;
 }
 
 .header {
@@ -36,7 +41,7 @@
       color: #333333;
       span {
         font-weight: 800;
-        color: #169E4A;
+        color: #169e4a;
       }
     }
   }
