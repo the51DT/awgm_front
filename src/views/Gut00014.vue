@@ -1,10 +1,13 @@
 <template>
-  <div class="content-area">
+  <div class="content-area bg-case">
     <ContentHead title="팀 만들기" headType="ty02" :leftArea=true />
     <div class="team-box-wrap">
       <div class="profile-area">
-        <div class="img-wrap"> <!-- 팀장일 경우 on-flag 클래스 추가시 왕관 아이콘 활성화됨 -->
-          <img class="ico-logo" :src="require(`@/assets/images/content/dummy-profile-img.png`)" alt="프로필 아이콘" />
+        <div class="upload-wrap">
+          <input type="file" id="upload-icon" hidden />
+          <label for="upload-icon" class="upload-label">
+            <img class="ico-logo" :src="require(`@/assets/images/icon/ico_file.png`)" alt="파일 업로드 등록 아이콘" />
+          </label>
         </div>
       </div>
       <div class="card card--border card--p16 card--shadowc2 ">

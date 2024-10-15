@@ -3,7 +3,13 @@
     <ContentHead title="팀원" headType="ty02" :leftArea=true />
     <div class="team-box-wrap">
       <div class="list-top-wrap">
-        <div class="tag">        
+        <div class="tag-box-wrap">
+          <div class="tag--wrap">
+            <button type="button" class="tag on">이달의 랭킹</button>
+            <button type="button" class="tag">전체인증 횟수</button>
+            <button type="button" class="tag">가입일</button>
+          </div>
+          <button type="button" class="order--icon on"></button> <!-- on 클래스 활성화인 경우(오름차순 정렬) / on 없을 경우(내림차순 정렬) -->
         </div>
         <div class="filter">
           <div class="box-wrap">
@@ -25,7 +31,7 @@
               </div>
               <p class="card__tit">팀장김웨이</p>
             </div>
-            <div class="card__text__list">
+            <div class="card__text__list ty02">
               <dl>
                 <dt>랭킹</dt>
                 <dd>1위</dd>
@@ -62,10 +68,121 @@
               </div>
               <p class="card__tit">김사무엘 유리카 딕슨 김사무엘 유리카 딕슨김사무엘 유리카 딕슨김사무엘 유리카 딕슨김사무엘 유리카 딕슨</p>
             </div>
-            <div class="card__text__list">
+            <div class="card__text__list ty02">
               <dl>
                 <dt>랭킹</dt>
                 <dd>2위</dd>
+              </dl>
+              <dl>
+                <dt>팀 가입일</dt>
+                <dd>2024.09.09</dd>
+              </dl>
+              <dl>
+                <dt>인증 횟수</dt>
+                <dd>
+                  <div class="group-info">
+                    <p class="main">223/1000회</p>
+                    <p class="sub">($9$월 30회)</p>
+                  </div>
+                </dd>
+              </dl>
+              <dl class="align-ctr">
+                <dt>ABO/Member</dt>
+                <dd>
+                  <p class="badge-info">인증</p>
+                </dd>
+              </dl>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="card card--border card--p16 card--shadowc2">
+        <a href="#" class="card--link">
+          <div class="card__top">
+            <div class="card__profile__info"> 
+              <div class="img-wrap">
+                <img class="card__img" :src="require(`@/assets/images/card_profile.png`)">
+              </div>
+              <p class="card__tit">김사무엘 유리카 딕슨 김사무엘 유리카 딕슨김사무엘 유리카 딕슨김사무엘 유리카 딕슨김사무엘 유리카 딕슨</p>
+            </div>
+            <div class="card__text__list ty02">
+              <dl>
+                <dt>랭킹</dt>
+                <dd>3위</dd>
+              </dl>
+              <dl>
+                <dt>팀 가입일</dt>
+                <dd>2024.09.09</dd>
+              </dl>
+              <dl>
+                <dt>인증 횟수</dt>
+                <dd>
+                  <div class="group-info">
+                    <p class="main">223/1000회</p>
+                    <p class="sub">($9$월 30회)</p>
+                  </div>
+                </dd>
+              </dl>
+              <dl class="align-ctr">
+                <dt>ABO/Member</dt>
+                <dd>
+                  <p class="badge-info">인증</p>
+                </dd>
+              </dl>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="card card--border card--p16 card--shadowc2">
+        <a href="#" class="card--link">
+          <div class="card__top">
+            <div class="card__profile__info"> 
+              <div class="img-wrap">
+                <img class="card__img" :src="require(`@/assets/images/card_profile.png`)">
+              </div>
+              <p class="card__tit">김사무엘 유리카 딕슨 김사무엘 유리카 딕슨김사무엘 유리카 딕슨김사무엘 유리카 딕슨김사무엘 유리카 딕슨</p>
+            </div>
+            <div class="card__text__list ty02">
+              <dl>
+                <dt>랭킹</dt>
+                <dd>4위</dd>
+              </dl>
+              <dl>
+                <dt>팀 가입일</dt>
+                <dd>2024.09.09</dd>
+              </dl>
+              <dl>
+                <dt>인증 횟수</dt>
+                <dd>
+                  <div class="group-info">
+                    <p class="main">223/1000회</p>
+                    <p class="sub">($9$월 30회)</p>
+                  </div>
+                </dd>
+              </dl>
+              <dl class="align-ctr">
+                <dt>ABO/Member</dt>
+                <dd>
+                  <p class="badge-info">인증</p>
+                </dd>
+              </dl>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="card card--border card--p16 card--shadowc2">
+        <a href="#" class="card--link">
+          <div class="card__top">
+            <div class="card__profile__info"> 
+              <div class="img-wrap">
+                <img class="card__img" :src="require(`@/assets/images/card_profile.png`)">
+              </div>
+              <p class="card__tit">김사무엘 유리카 딕슨 김사무엘 유리카 딕슨김사무엘 유리카 딕슨김사무엘 유리카 딕슨김사무엘 유리카 딕슨</p>
+            </div>
+            <div class="card__text__list ty02">
+              <dl>
+                <dt>랭킹</dt>
+                <dd>5위</dd>
               </dl>
               <dl>
                 <dt>팀 가입일</dt>
