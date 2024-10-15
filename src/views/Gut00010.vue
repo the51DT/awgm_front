@@ -1,6 +1,6 @@
 <template>
   <div class="team--sub">
-    <ContentHead title="팀 정보" headType="ty02" :leftArea=true :rightArea=true />
+    <ContentHead title="팀 정보" headType="ty02" :leftArea=true :rightArea=true :rightIcon=true />
     <div class="team-box-wrap">
       <div class="profile-area">
         <div class="img-wrap on-flag"> <!-- 팀장일 경우 on-flag 클래스 추가시 왕관 아이콘 활성화됨 -->
@@ -87,11 +87,68 @@
       <p class="accent">나의 랭킹 <span>13</span>위</p>
       <button>팀원 인증 현황 보기<img :src="require(`@/assets/images/icon_plus.svg`)"></button>
       <div class="card__chart">
-
+        <div>
+          <p>100%</p>
+          <div class="card__chart--bar"><div data-height="100%"></div></div>
+          <div class="card__chart--profile">
+            <div>
+              <img :src="require(`@/assets/images/card_profile.png`)">
+              <div class="card__chart--profile__rank first">1위</div>
+            </div>
+            <p>김 사무엘 유리카 딕슨 팀장김웨이</p>
+            <span>외 2명</span>
+          </div>
+        </div>
+        <div>
+          <p>100%</p>
+          <div class="card__chart--bar"><div data-height="100%"></div></div>
+          <div class="card__chart--profile">
+            <div>
+              <img :src="require(`@/assets/images/card_profile.png`)">
+              <div class="card__chart--profile__rank">2위</div>
+            </div>
+            <p>딕슨</p>
+            <span>외 5명</span>
+          </div>
+        </div>
+        <div>
+          <p>95%</p>
+          <div class="card__chart--bar"><div data-height="95%"></div></div>
+          <div class="card__chart--profile">
+            <div>
+              <img :src="require(`@/assets/images/card_profile.png`)">
+              <div class="card__chart--profile__rank">3위</div>
+            </div>
+            <p>김사무엘</p>
+          </div>
+        </div>
+        <div>
+          <p>80%</p>
+          <div class="card__chart--bar"><div data-height="80%"></div></div>
+          <div class="card__chart--profile">
+            <div>
+              <img :src="require(`@/assets/images/card_profile.png`)">
+              <div class="card__chart--profile__rank">4위</div>
+            </div>
+            <p>유리카</p>
+          </div>
+        </div>
+        <div>
+          <p>65%</p>
+          <div class="card__chart--bar"><div data-height="65%"></div></div>
+          <div class="card__chart--profile">
+            <div>
+              <img :src="require(`@/assets/images/card_profile.png`)">
+              <div class="card__chart--profile__rank">5위</div>
+            </div>
+            <p>팀장김웨이</p>
+            <span>외 10명</span>
+          </div>
+        </div>
       </div>
       <p class="card__caption">2025.09.17 10:49:00 기준</p>
     </div>
-    <button>팀탈퇴</button>
+    <button>팀탈퇴<img :src="require(`@/assets/images/icon_more.svg`)"></button>
   </div>
 </template>
 

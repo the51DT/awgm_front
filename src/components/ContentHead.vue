@@ -10,12 +10,18 @@
       />
     </a>
     <h2 class="page-title">{{ title }}</h2>
-    <button type="button" class="area-right" v-if="rightArea === true">
-      <img class="ico-logo"
-        :src="require(`@/assets/images/icon/ico_close.png`)"
-        alt="닫기"
-      />
-    </button>
+    <div class="area-right" v-if="rightArea === true">
+      <div v-if="rightIcon">
+        <button><img :src="require(`@/assets/images/icon_setting.svg`)"/></button>
+        <button><img :src="require(`@/assets/images/icon_add_team.svg`)"/></button>
+      </div>
+      <button v-else type="button">
+        <img class="ico-logo"
+          :src="require(`@/assets/images/icon/ico_close.png`)"
+          alt="닫기"
+        />
+      </button>
+    </div>
   </div>
 </template>
 
@@ -27,6 +33,10 @@ export default {
     headType: String,
     leftArea : Boolean,
     rightArea : Boolean,
+    rightIcon: {
+      type: Boolean,
+      default: false,
+    }
   }
 }
 </script>

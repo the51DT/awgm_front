@@ -13,5 +13,6 @@ var addRule = (function (sheet) {
 var i = 101;
 while (i--) {
   addRule("[data-width='" + i + "%']", "width:" + i + "%");
-  addRule("[data-left='" + i + "%']", "left:" + "calc(" + i + "%)");
+  addRule("[data-left='" + i + "%']", "left:" +  i + "%");
+  addRule("[data-height='" + i + "%']", "height:" + i + "% !important");
 }
