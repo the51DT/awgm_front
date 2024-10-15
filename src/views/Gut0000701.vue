@@ -32,8 +32,8 @@
         </div>
         <p><span>팀장김웨이</span>님의<br />GUT Morning</p>
       </div>
-      <div class="card card--border challenge__calender--card">
-        <div class="calender">
+      <div class="card card--border challenge__calendar--card">
+        <div class="calendar">
           캘린더 영역
         </div>
       </div>

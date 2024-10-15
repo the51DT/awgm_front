@@ -7,8 +7,8 @@
           <img class="ico-logo" :src="require(`@/assets/images/content/dummy-profile-img.png`)" alt="프로필 아이콘" />
         </div>
       </div>
-      <div class="card card--border card--p16 card--shadowc2 ">
-        <div class="form-box">
+      <div class="list-conts-wrap">
+        <div class="card card--border card--p16 card--shadowc2">
           <div class="input-area">
             <div class="form-item">
               <InputField title="팀명"/>
@@ -32,7 +32,7 @@
               <div class="form-item--sub">
                 <InputField type="checkbox" name="checkbox1"
                   :checkbox="[
-                    {id: 'checkbox1_1', value: 'checkbox1_1', checked: true, label: '라벨'},
+                    {id: 'checkbox1_1', value: 'checkbox1_1', checked: true, label: '종료일 없음'},
                   ]"  />
               </div>
             </div>
@@ -68,7 +68,7 @@
                 <InputField type="select" placeholder="선택" :options="['값1', '값2', '값3']" />
               </div>            
             </div>
-          </div>          
+          </div>
         </div>
       </div>
       <div class="btn-area ty03">
