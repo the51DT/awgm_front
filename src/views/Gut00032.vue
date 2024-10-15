@@ -31,7 +31,68 @@
             </div>
           </div>
         </div>
-        <div class="calender"> 캘린더 영역 </div>
+        <div class="calendar">
+          <div class="calendar-container">
+            <h3 class="calendar-title">나의 챌린지 참여 현황</h3>
+            <div class="calendar-header">
+              <button type="button" class="calendar-btn" id="prevBtn">이전</button>
+              <div class="calendar-title-wrap">
+                <h4 class="date" id="currentMonth">2024. 09월</h4>                
+              </div>
+              <button type="button" class="calendar-btn" id="nextBtn">다음</button>
+            </div>
+            <div class="calendar-text-wrap">                  
+              <div class="desc">
+                <p>이번 달 나의 미션 인증 횟수 <strong class="clear-count">6</strong>회</p>
+                <p>전체 70일 중에 <span class="clear-day">28</span>일 인증 완료했습니다.</p>
+              </div>
+            </div>
+            <div class="calendar-box">
+              <div class="calendar-days">
+                <div class="day">일</div>
+                <div class="day">월</div>
+                <div class="day">화</div>
+                <div class="day">수</div>
+                <div class="day">목</div>
+                <div class="day">금</div>
+                <div class="day">토</div>
+              </div>
+              <div class="calendar-dates" id="calendarDates">
+                <div class="date">1</div>
+                <div class="date">2</div>
+                <div class="date">3</div>
+                <div class="date">4</div>
+                <div class="date">5</div>
+                <div class="date">6</div>
+                <div class="date">7</div>
+                <div class="date">8</div>
+                <div class="date">9</div>
+                <div class="date">10</div>
+                <div class="date">11</div>
+                <div class="date">12</div>
+                <div class="date">13</div>
+                <div class="date">14</div>
+                <div class="date">15</div>
+                <div class="date">16</div>
+                <div class="date">17</div>
+                <div class="date">18</div>
+                <div class="date">19</div>
+                <div class="date">20</div>
+                <div class="date">21</div>
+                <div class="date">22</div>
+                <div class="date">23</div>
+                <div class="date">24</div>
+                <div class="date">25</div>
+                <div class="date">26</div>
+                <div class="date">27</div>
+                <div class="date">28</div>
+                <div class="date">29</div>
+                <div class="date">30</div>
+                <div class="date">31</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="team-btn-wrap">
         <div class="btn-area ty03">
