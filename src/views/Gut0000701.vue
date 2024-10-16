@@ -6,10 +6,10 @@
       <div class="card--img">
         <img class="card--img__comp" :src="require(`@/assets/images/challenge_comp.png`)">
         <img :src="require(`@/assets/images/challenge_card_bg.png`)">
-        <div>
-          <p>2024.09.23 (월)</p>
-          <p>나의 미션 인증 횟수</p>
-          <p><span>2</span>회</p>
+        <div class="card--img__text">
+          <p class="card--img__date">2024.09.23 (월)</p>
+          <p class="card--img__title">나의 미션 인증 횟수</p>
+          <p class="card--img__num"><span>2</span>회</p>
         </div>
         <button class="share-btn"></button>
       </div>
@@ -25,12 +25,12 @@
       <div class="card--img">
         <img class="card--img__comp" :src="require(`@/assets/images/challenge_comp.png`)">
         <img :src="require(`@/assets/images/challenge_card_bg.png`)">
-        <div>
-          <p>2024.09.23 (월)</p>
-          <p>나의 미션 인증 횟수</p>
-          <p><span>2</span>회</p>
+        <div class="card--img__text">
+          <p class="card--img__date">2024.09.23 (월)</p>
+          <p class="card--img__title">나의 미션 인증 횟수</p>
+          <p class="card--img__num"><span>2</span>회</p>
         </div>
-        <p><span>팀장김웨이</span>님의<br />GUT Morning</p>
+        <p class="card--img__title"><span>팀장김웨이</span>님의<br />GUT Morning</p>
       </div>
       <div class="card card--border challenge__calendar--card">
         <!-- calendar 영역 정리 -->
