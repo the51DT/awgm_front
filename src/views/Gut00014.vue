@@ -5,15 +5,7 @@
       <div class="profile-wrap">
         <div class="profile-area">
           <div class="upload-wrap">
-            <input
-              type="file"
-              accept="image/*"
-              id="uploadIcon"
-              class="upload-icon"
-              hidden
-              @change="handleFileUpload"
-              @click="openCamera"
-            />
+            <input type="file" id="uploadIcon" class="upload-icon" hidden />
             <label for="uploadIcon" class="upload-label">
               <img
                 class="ico-logo"
@@ -159,25 +151,7 @@ export default {
     return {
       leftArea: "",
       rightArea: "",
-      imageUrl: null,
     };
-  },
-  methods: {
-    handleFileUpload(event) {
-      const file = event.target.files[0];
-      if (file) {
-        const reader = new FileReader();
-        reader.onload = (e) => {
-          this.imageUrl = e.target.result;
-        };
-        reader.readAsDataURL(file);
-      }
-    },
-    openCamera() {
-      const input = document.getElementById("uploadIcon");
-      input.capture = "environment"; // 후면 카메라 설정
-      input.click();
-    },
   },
   components: {
     ContentHead,
