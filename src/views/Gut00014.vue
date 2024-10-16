@@ -1,30 +1,55 @@
 <template>
   <div class="content-area bg-case">
-    <ContentHead title="팀 만들기" headType="ty02" :leftArea=true />
+    <ContentHead title="팀 만들기" headType="ty02" :leftArea="true" />
     <div class="create-team-wrap">
       <div class="profile-wrap">
         <div class="profile-area">
           <div class="upload-wrap">
-            <input type="file" id="uploadIcon" class="upload-icon" hidden />
+            <input
+              type="file"
+              accept="image/*"
+              id="uploadIcon"
+              class="upload-icon"
+              hidden
+              @change="handleFileUpload"
+            />
             <label for="uploadIcon" class="upload-label">
-              <img class="ico-logo" :src="require(`@/assets/images/icon/ico_file.png`)" alt="파일 업로드 등록 아이콘" />
+              <img
+                class="ico-logo"
+                :src="require(`@/assets/images/icon/ico_file.png`)"
+                alt="파일 업로드 등록 아이콘"
+              />
             </label>
           </div>
         </div>
       </div>
-      <div class="card card--border card--p16 card--shadowc2 ">
+      <div class="card card--border card--p16 card--shadowc2">
         <div class="input-area">
           <div class="form-item">
-            <InputField title="팀명" placeholder="팀명을 입력해 주세요."/>
+            <InputField title="팀명" placeholder="팀명을 입력해 주세요." />
           </div>
           <div class="form-item">
             <h5 class="title">팀 구분</h5>
             <div class="radio-wrap">
-              <InputField type="radio" title="" name="radio1"
-              :radio="[
-                {id: 'radio1_1', value: 'radio1_1', checked: true, label: '챌린지'},
-                {id: 'radio1_2', value: 'radio1_2', checked: false, label: '상시'},
-              ]" />
+              <InputField
+                type="radio"
+                title=""
+                name="radio1"
+                :radio="[
+                  {
+                    id: 'radio1_1',
+                    value: 'radio1_1',
+                    checked: true,
+                    label: '챌린지',
+                  },
+                  {
+                    id: 'radio1_2',
+                    value: 'radio1_2',
+                    checked: false,
+                    label: '상시',
+                  },
+                ]"
+              />
             </div>
           </div>
           <!-- 기간 : type1 -->
@@ -34,16 +59,27 @@
           </div>
           <!-- 기간 : type2 -->
           <div class="form-item">
-            <InputField type="date" title="기간"
+            <InputField
+              type="date"
+              title="기간"
               :date="[
-                {value: '2024-09-30', disabled: false},
-                {value: '2024-09-30', disabled: false, placeholder: '선택'},
-              ]" />
+                { value: '2024-09-30', disabled: false },
+                { value: '2024-09-30', disabled: false, placeholder: '선택' },
+              ]"
+            />
             <div class="form-item--sub">
-              <InputField type="checkbox" name="checkbox1"
+              <InputField
+                type="checkbox"
+                name="checkbox1"
                 :checkbox="[
-                  {id: 'checkbox1_1', value: 'checkbox1_1', checked: true, label: '종료일 없음'},
-                ]"  />
+                  {
+                    id: 'checkbox1_1',
+                    value: 'checkbox1_1',
+                    checked: true,
+                    label: '종료일 없음',
+                  },
+                ]"
+              />
             </div>
           </div>
           <!-- ABC 수령 case -->
@@ -54,24 +90,44 @@
           <div class="form-item">
             <h5 class="title">보상수령방법</h5>
             <div class="radio-wrap">
-              <InputField type="radio" title="" name="radio2"
-              :radio="[
-                {id: 'radio2_1', value: 'radio2_1', checked: true, label: '팀장이 수령'},
-                {id: 'radio2_2', value: 'radio2_2', checked: false, label: '팀별 개별수령'},
-              ]" />
+              <InputField
+                type="radio"
+                title=""
+                name="radio2"
+                :radio="[
+                  {
+                    id: 'radio2_1',
+                    value: 'radio2_1',
+                    checked: true,
+                    label: '팀장이 수령',
+                  },
+                  {
+                    id: 'radio2_2',
+                    value: 'radio2_2',
+                    checked: false,
+                    label: '팀별 개별수령',
+                  },
+                ]"
+              />
             </div>
           </div>
           <div class="form-item">
             <h5 class="title">보상수령처</h5>
             <div class="select-wrap">
-              <InputField type="select" placeholder="선택" :options="['값1', '값2', '값3']" />
-            </div>            
+              <InputField
+                type="select"
+                placeholder="선택"
+                :options="['값1', '값2', '값3']"
+              />
+            </div>
           </div>
           <!-- //ABC 수령 case -->
           <!-- 바우처 case -->
           <div class="form-item">
             <h5 class="title">성공조건</h5>
-            <p class="desc"><span class="font--yellow">80% 이상</span> (인증횟수 300회 이상)</p>
+            <p class="desc">
+              <span class="font--yellow">80% 이상</span> (인증횟수 300회 이상)
+            </p>
           </div>
           <div class="form-item">
             <h5 class="title">참여 가능 팀원</h5>
@@ -107,7 +163,7 @@ export default {
   components: {
     ContentHead,
     InputField,
-    CustomButton
+    CustomButton,
   },
 };
 </script>
