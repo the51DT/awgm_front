@@ -1,7 +1,8 @@
 /* intro */
 .lottie-conts {
 	position: relative;
-	margin: 0 -24px;
+	margin: 0 -20px;
+	padding: 40px 0 20px;
 	&:before {
 		content:'';
 		background: url("../images/bg_intro.svg");
@@ -12,11 +13,15 @@
 		top: 0;
 		left: 0;
 		z-index: 0;
-	}	
+	}
+	&--green {
+		background: #169E4A;
+	}
+	&--white {
+		background: #fff;
+	}
 }
-.lottie-conts {
-	padding: 40px 0 20px;
-}
+
 .intro-text {
 	margin-bottom: 24px;
 	.text-group {
@@ -324,6 +329,109 @@
 					background-size: contain;
 				}
 			}
+		}
+	}
+}
+
+/* main */
+.main {
+	&-bot-section {
+		background: #169E4A;
+		height: 100vh;
+		.lottie-conts {
+			&:before {
+				display: none;
+			}
+			display: block;
+			margin-top: 20px;
+			height: 360px;
+		}	
+	}	
+	&-card-box {
+		position: relative;
+		&:first-child {
+			margin-top: 48px;
+		}
+		&:not(:first-child) {
+			margin-top: 60px;
+		}
+		.card {
+			margin-top: 0;
+			.challenge__card--main__top {
+				display: none;
+				.challenge__card--main__top.active {
+					display: block;
+				}
+				p {
+					width: calc(100% - 95px);
+				}
+			}
+			.challenge__card--main__per {
+				margin-top: 0;
+			}
+			&--sub-info {
+				margin-top: 16px;
+				strong {
+					font-size: 24px;
+					line-height: 32px;
+				}
+			}
+		}
+		.card--icon {
+			position: absolute;
+			display: none;
+			width: 90px;
+			height: 105px;
+			top:0;
+			right: 5px;
+			z-index: 50;
+		}
+		.text-link {
+			display: block;
+			padding-left: 22px;
+			padding: 20px 0 8px 22px;
+		}
+		.card-title {
+			color: #fff;
+			font-size: 22px;
+			font-weight: 800;
+			line-height: 24px;
+			letter-spacing: -0.5px;
+			position: relative;
+			padding-right: 20px;
+			display: inline-block;
+			&:after {
+				content:"";
+				display: inline-block;
+				width: 12px;
+				height: 12px;
+				background-image: url(../images/icon_arrow_r_white.svg);
+				background-size: contain;
+				position: absolute;
+				top: 50%;
+				right: 0;
+				transform: translateY(-50%);
+			}
+
+		}
+	}
+	&-card-box.active {
+		.card {
+			.challenge__card--main__top {
+				display: block;
+			}
+			.challenge__card--main__per {
+				margin-top: 16px;
+			}
+		}
+		.card--icon {
+			display: block;
+		}
+		.text-link {
+			
+		}
+		.card-title {			
+			
 		}
 	}
 }

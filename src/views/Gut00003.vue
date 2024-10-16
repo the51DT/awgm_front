@@ -38,6 +38,7 @@
           <CustomButton size="sm" color="gray">인증</CustomButton>
         </div>
         <div class="btn-area">
+          <!-- ty-chk on 클래스 추가시, active 처리됨 : 미체크가 디폴트 버튼 선택시 약관동의팝업 호출 -> 동의 선택 시 팝업 닫기 및 체크 활성화  -->
           <CustomButton color="dark" class="ty-chk"><span>법정대리인 개인정보 활용 동의</span></CustomButton>
         </div>
       </div>
