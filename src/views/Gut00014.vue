@@ -5,9 +5,22 @@
       <div class="profile-wrap">
         <div class="profile-area">
           <div class="upload-wrap">
-            <input type="file" id="uploadIcon" class="upload-icon" hidden />
+            <input
+              type="file"
+              id="uploadIcon"
+              class="upload-icon"
+              @change="onFileChange"
+              hidden
+            />
             <label for="uploadIcon" class="upload-label">
               <img
+                v-if="imageUrl"
+                class="uploaded-img"
+                :src="imageUrl"
+                alt="업로드된 이미지"
+              />
+              <img
+                v-else
                 class="ico-logo"
                 :src="require(`@/assets/images/icon/ico_file.png`)"
                 alt="파일 업로드 등록 아이콘"
@@ -151,12 +164,25 @@ export default {
     return {
       leftArea: "",
       rightArea: "",
+      imageUrl: null,
     };
   },
   components: {
     ContentHead,
     InputField,
     CustomButton,
+  },
+  methods: {
+    onFileChange(event) {
+      const file = event.target.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = (e) => {
+          this.imageUrl = e.target.result;
+        };
+        reader.readAsDataURL(file);
+      }
+    },
   },
 };
 </script>
