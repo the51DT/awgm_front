@@ -1,6 +1,6 @@
 <template>
   <div class="popup" :id=id>
-    <div class="popup__box">
+    <div class="popup__box" :class="sm ? 'popup__box--sm' : ''">
       <button class="popup__box--close">
         <img :src="require(`@/assets/images/icon_close.svg`)">
       </button>
@@ -24,6 +24,7 @@ export default {
   name: "PopupDefault",
   props: {
     id: String,
+    sm: Boolean,
   }
 }
 </script>
