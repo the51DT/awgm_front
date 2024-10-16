@@ -187,11 +187,11 @@
           <InputField type="radio" name="radio1"
           :radio="[
             {id: 'radio1_1', value: 'radio1_1', checked: false, label: '월별'},
-            {id: 'radio1_2', value: 'radio1_2', checked: true, label: '회계년도'},
+            {id: 'radio1_2', value: 'radio1_2', checked: true, label: '회계연도'},
           ]" />
         </div>
         <div class="filter">
-          <InputField type="select" placeholder="2025 회계연도" :options="['전체']" />
+          <InputField type="select" placeholder="2025 회계연도" :options="['전체', '2025 회계연도']" />
           <InputField type="select" placeholder="21~50명" :options="['전체', '0~20명', '21명~50명', '51명~100명', '101명~200명', '201명~300명', '300명 이상']" />
         </div>
       </div>
