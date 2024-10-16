@@ -12,6 +12,7 @@
               class="upload-icon"
               hidden
               @change="handleFileUpload"
+              @click="openCamera"
             />
             <label for="uploadIcon" class="upload-label">
               <img
@@ -173,7 +174,7 @@ export default {
       }
     },
     openCamera() {
-      const input = document.getElementById("cameraInput");
+      const input = document.getElementById("uploadIcon");
       input.capture = "environment"; // 후면 카메라 설정
       input.click();
     },
