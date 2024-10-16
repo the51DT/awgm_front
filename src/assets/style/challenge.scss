@@ -4,6 +4,7 @@
 .challenge {
   position: relative;
   &--main {
+    padding-bottom: 112px;
     .custom-btn {
       margin-top: 16px;
     }
@@ -197,10 +198,10 @@
     font-weight: 800;
   }
   &--green {
-    color: #169E4A;
+    color: #169E4A !important;
   }
   &--yellow {
-    color: #F79C22;
+    color: #F79C22 !important;
   }
   &--c11 {
     color: #111;
@@ -301,7 +302,7 @@
     &__target {
       position: absolute;
       top: -16px;
-      left: calc(80%);
+      left: calc(50%);
       transform: translateX(-6px);
       display: flex;
       align-items: center;
@@ -309,6 +310,12 @@
       font-size: 11px;
       line-height: 16px;
       color: #666;
+      p {
+        flex-shrink: 0;
+      }
+      span {
+        font-weight: 800;
+      }
     }
     &__title {
       width: 48px;
@@ -322,8 +329,9 @@
     &__state {
       margin-left: 8px;
       font-size: 14px;
-      font-weight: 700;
+      font-weight: 800;
       line-height: 24px;
+      letter-spacing: -0.5px;
       color: #F79C22;
       &--end {
         color: #999;
@@ -335,6 +343,7 @@
     gap: 12px;
   }
   &__img {
+    position: relative;
     flex-shrink: 0;
     width: 72px;
     height: 72px;
@@ -428,6 +437,10 @@
     line-height: 16px;
     letter-spacing: -0.5px;
     color: #999;
+    span {
+      font-weight: 800;
+      color: #169E4A;
+    }
   }
   &__state {
     padding: 0 8px;
@@ -514,6 +527,167 @@
   & + .card {
     margin-top: 16px;
   }
+  &--box {
+    padding: 11px 16px;
+    border-radius: 12px;
+    background-color: #F5F5F5;
+    &--flex2 {
+      display: flex;
+      align-items: center;
+      & > div {
+        width: 50%;
+        text-align: center;
+        padding-right: 12px;
+        &:last-child {
+          padding-right: 0;
+          padding-left: 12px;
+          border-left: 1px solid #D8D8D8;
+        }
+        p:first-child {
+          font-size: 13px;
+          line-height: 24px;
+          letter-spacing: -0.5px;
+          color: #666;
+        }
+        p:last-child {
+          font-size: 18px;
+          font-weight: 800;
+          line-height: 24px;
+          letter-spacing: -0.5px;
+          color: #333;
+        }
+      }
+    }
+  }
+  &__caption {
+    position: relative;
+    padding-left: 9px;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.5px;
+    color: #666;
+    &::before {
+      content: '*';
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+  &__chart {
+    display: flex;
+    gap: 4px;
+    & > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      width: 20%;
+      & > p {
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: -0.5px;
+        color: #666;
+      }
+    }
+    &--bar {
+      position: relative;
+      height: 128px;
+      div {
+        position: absolute;
+        bottom: 0;
+        transform: translateX(-50%);
+        width: 32px;
+        height: 100%;
+        border-radius: 16px;
+        background-color: #169E4A;
+      }
+    }
+    &--profile {
+      display: flex;
+      flex-direction: column;
+      & > div {
+        position: relative;
+        width: 48px;
+        height: 48px;
+        margin: 0 auto 24px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      & > p {
+        @include ellipsis(2);
+        font-size: 11px;
+        font-weight: 800;
+        line-height: 16px;
+        letter-spacing: -0.5px;
+        text-align: center;
+      }
+      & > span {
+        font-size: 11px;
+        line-height: 16px;
+        letter-spacing: -0.5px;
+        text-align: center;
+      }
+      &__rank {
+        position: absolute;
+        top: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 28px;
+        height: 28px;
+        border: 3px solid #fff;
+        border-radius: 24px;
+        background-color: #666;
+        font-size: 12px;
+        font-weight: 800;
+        line-height: 16px;
+        letter-spacing: -0.5px;
+        color: #fff;
+        &.first {
+          background-color: #169E4A;
+        }
+      }
+    }
+  }
+  &__medal {
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    width: 26px;
+    height: 26px;
+    padding-top: 3.64px;
+    border-radius: 16px;
+    background-color: #666;
+    background-size: contain;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 800;
+    line-height: 20px;
+    color: #fff;
+    &.gold {
+      color: #927200;
+      height: 34px;
+      background-color: transparent;
+      background-image: url(../images/gold_medal.png);
+    }
+    &.silver {
+      color: #666;
+      height: 34px;
+      background-color: transparent;
+      background-image: url(../images/silver_medal.png);
+    }
+    &.bronze {
+      color: #A36D5E;
+      height: 34px;
+      background-color: transparent;
+      background-image: url(../images/bronze_medal.png);
+    }
+  }
   &--img {
     position: relative;
     width: 100%;
@@ -560,6 +734,25 @@
 }
 .team {
   position: relative;
+  &--nodata {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 30px 0;
+    img {
+      width: 82px;
+    }
+    p {
+      font-size: 24px;
+      font-weight: 800;
+      line-height: 32px;
+      letter-spacing: -0.5px;
+      text-align: center;
+      color: #111;
+    }
+  }
   &__add {
     position: fixed;
     bottom: 98px;
@@ -568,7 +761,7 @@
     width: 100%;
     max-width: 868px;
     height: 56px;
-    background-image: url(../images/icon_plus.svg);
+    background-image: url(../images/icon_plus_button.svg);
     background-position: right 20px center;
     z-index: 9;
   }
@@ -581,6 +774,225 @@
       margin: 0 -20px 0;
       padding: 32px 20px 128px;
       background-color: #E5E5E5;
+    }
+  }
+  &--sub {
+    margin: 0 -20px;
+    padding: 0 20px 38px;
+    background-color: #F5F5F5;
+    &__title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .title {
+        &__top {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          div {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            p {
+              font-size: 18px;
+              font-weight: 800;
+              line-height: 24px;
+              letter-spacing: -0.5px;
+              color: #666;
+              span {
+                font-size: 24px;
+                line-height: 32px;
+                color: #169E4A;
+              }
+            }
+          }
+          button {
+            display: flex;
+            align-items: center;
+            height: fit-content;
+            padding: 2px 4px 2px 8px;
+            border-radius: 7px;
+            background-color: #E5E5E5;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 16px;
+            letter-spacing: -0.5px;
+            color: #333;
+          }
+        }
+        &__big {
+          margin-top: 8px;
+          font-size: 24px;
+          font-weight: 800;
+          line-height: 32px;
+          letter-spacing: -0.5px;
+          text-align: center;
+          color: #169E4A;
+        }
+        &__main {
+          margin-top: 8px;
+          font-size: 18px;
+          font-weight: 800;
+          line-height: 24px;
+          letter-spacing: -0.5px;
+          text-align: center;
+          color: #111;
+        }
+      }
+      & + .card {
+        margin-top: 32px;
+      }
+    }
+    .card {
+      & + .card {
+        margin-top: 32px;
+      }
+      &--per {
+        height: 40px;
+      }
+      &__head {
+        margin: 32px auto 9px;
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 24px;
+        letter-spacing: -0.5px;
+        text-align: center;
+        color: #111;
+      }
+    }
+    &__card1 {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding-top: 32px;
+    }
+    &__card2 {
+      display: flex;
+      flex-direction: column;
+      padding-top: 12px;
+      & > div {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 8px 0;
+        p:first-child {
+          flex-shrink: 0;
+          width: 80px;
+          font-size: 15px;
+          font-weight: 800;
+          line-height: 24px;
+          letter-spacing: -0.5px;
+          color: #111;
+        }
+        p:last-child {
+          font-size: 15px;
+          line-height: 24px;
+          letter-spacing: -0.5px;
+          color: #666;
+          &.sm {
+            font-size: 13px;
+          }
+        }
+        select {
+          height: 40px;
+          padding: 8px 40px 8px 12px;
+        }
+      }
+    }
+    &__card3 {
+      padding: 33px 12px 16px;
+      .accent {
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 24px;
+        letter-spacing: -0.5px;
+        text-align: center;
+        color: #111;
+        span {
+          position: relative;
+          font-size: 24px;
+          line-height: 32px;
+          color: #169E4A;
+          &::before {
+            content: '';
+            position: absolute;
+            top: -11px;
+            left: -2px;
+            display: block;
+            width: 36.5px;
+            height: 12.88px;
+            background-image: url(../images/text_accent.svg);
+          }
+        }
+      }
+      & > button {
+        display: flex;
+        gap: 8px;
+        margin: 4px auto 0;
+        padding: 4px 12px;
+        border-radius: 4px;
+        background-color: #F5F5F5;
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: -0.5px;
+        color: #111;
+      }
+      .card__chart {
+        margin-top: 16px;
+      }
+      .card__caption {
+        margin: 15px 8px 0;
+      }
+      & + button {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 6px;
+        width: 100%;
+        margin-top: 32px;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 18px;
+        letter-spacing: -0.5px;
+      }
+    }
+  }
+  .team-box-wrap {
+    margin-bottom: 0;
+  }
+  &--ranking {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 24px;
+    &__caption {
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: -0.5px;
+      text-align: right;
+      color: #999;
+    }
+    .card--green {
+      border: 2px solid #169E4A;
+    }
+    .card:not(:last-child) {
+      margin-bottom: 0;
+    }
+    .card + .card {
+      margin-top: 0;
+    }
+    &__my {
+      position: sticky;
+      bottom: 0;
+      margin: 16px -20px 0;
+      padding: 24px 20px;
+      border-top: 1px solid #B3B3B3;
+      background-color: #8989891A;
+      backdrop-filter: blur(8px);
+      .card {
+        border: 2px solid #169E4A;
+        box-shadow: 6px 6px 24px 0px #00000040;
+      }
     }
   }
 }
