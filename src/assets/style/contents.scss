@@ -337,35 +337,121 @@
 .main {
 	&-bot-section {
 		background: #169E4A;
-		height: 100vh;
+    overflow-x: hidden;
+    padding-top: 28px;
 		.lottie-conts {
 			&:before {
 				display: none;
 			}
 			display: block;
 			margin-top: 20px;
-			height: 360px;
+      height: 100vh;
+			.intro {
+        min-height: 360px;
+      }
 		}	
 	}	
 	&-card-box {
 		position: relative;
-		&:first-child {
-			margin-top: 48px;
+		&:not(:last-child) {
+			margin-bottom: 60px;
 		}
-		&:not(:first-child) {
-			margin-top: 60px;
-		}
+    &.fixed-card {
+      position: fixed;
+      bottom: 88px;
+      left: 50%;
+      width: calc(100% - 40px);
+      transform: translateX(-50%);
+      z-index: 90;
+      margin-bottom: 0;
+      .card {
+        border: 1px solid #169E4A;
+      }
+    }
 		.card {
 			margin-top: 0;
+      &--per {
+        &__gage {
+          &::before {
+            content: '';
+            display: block;
+            width: 18px;
+            height: 18px;
+            background: #333;
+            border-radius: 2px;
+            position: absolute;
+            top: 44px;
+            right: 0;
+            transform: rotate(45deg);
+            z-index: 15;
+          }
+        }
+        &__tooltip {
+          padding: 8px 10px;
+          width: 240px;
+          min-height: 56px;
+          background-color: #333;
+          border-radius: 16px;
+          position: absolute;
+          left: 50%;
+          top: 120%;
+          transform: translateX(-50%);
+          z-index: 20;
+          .close--wrap {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            z-index: 20;
+          }
+          
+          .close--btn {
+            display: block;
+            width: 12px;
+            height: 12px;
+            background-image: url(../images/icon_close_white.svg);
+            background-size: contain;
+          }
+          .desc {
+            &--main {
+              color: #fff;
+              font-size: 16px;
+              font-weight: 800;
+              line-height: 24px;
+            }
+            &--sub {
+              color: #b3b3b3;
+              font-size: 12px;
+              font-weight: 500;
+              line-height: 16px;
+            }
+          }      
+        }
+      }
+			&--badge {
+        display: inline-block;
+				padding: 0 12px;      
+        border-radius: 16px;
+        background: #fff;
+        margin-bottom: 8px;
+        font-size: 14px;
+        font-weight: 800;
+        line-height: 24px;
+        &.ty-green {
+          border: 1px solid #169e4a;
+          color: #169e4a;
+        }
+        &.ty-orange {
+          border: 1px solid #F79C22;
+          color: #F79C22;
+        }
+			}
 			.challenge__card--main__top {
 				display: none;
 				.challenge__card--main__top.active {
 					display: block;
 				}
-				p {
-					width: calc(100% - 95px);
-				}
 			}
+			
 			.challenge__card--main__per {
 				margin-top: 0;
 			}
@@ -387,7 +473,7 @@
 			z-index: 50;
 		}
 		.text-link {
-			display: block;
+			display: none;
 			padding-left: 22px;
 			padding: 20px 0 8px 22px;
 		}
@@ -415,7 +501,23 @@
 
 		}
 	}
+  &-card-box:not(.active) {
+    // transform: translateY(0);
+    .card--per {
+      &__tooltip {
+        display: none; 
+        &::before {
+          display: none;
+        }
+      }
+      &__gage::before {
+        display: none;
+      }
+    }
+  }
 	&-card-box.active {
+    
+    transition: 1s;
 		.card {
 			.challenge__card--main__top {
 				display: block;
@@ -427,11 +529,8 @@
 		.card--icon {
 			display: block;
 		}
-		.text-link {
-			
-		}
-		.card-title {			
-			
-		}
+    .text-link {
+      display: block;
+    }
 	}
 }

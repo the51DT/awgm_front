@@ -621,9 +621,10 @@
 	&--addBtn {
 		position: fixed;
 		right: 28px;
-		bottom: 10%;
+		bottom: 20%;
 		padding: 16px 0 24px;
 		text-align: center;
+    z-index: 30;
 		&-area {
 			position:relative;
 			display: flex;
