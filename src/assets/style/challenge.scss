@@ -845,15 +845,32 @@
   }
   &__add {
     position: fixed;
-    bottom: 98px;
+    bottom: 88px;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
     max-width: 868px;
-    height: 56px;
-    background-image: url(../images/icon_plus_button.svg);
-    background-position: right 20px center;
+    height: 88px;
+    padding: 0 16px;
     z-index: 9;
+    button {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      width: 88px;
+      height: 88px;
+      margin-left: auto;
+      border-radius: 48px;
+      background-color: #169E4A;
+      box-shadow: 8px 10px 12px 0px #C2C2C273;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 16px;
+      letter-spacing: -0.5px;
+      color: #fff;
+    }
   }
   &--main {
     padding-bottom: 32px;

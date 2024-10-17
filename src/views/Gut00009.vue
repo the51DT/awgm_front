@@ -1,7 +1,12 @@
 <template>
   <!-- 참여중인 팀이 있을 때 -->
   <div class="team">
-    <button class="team__add"></button>
+    <div class="team__add">
+      <button>
+        <img :src="require(`@/assets/images/icon_plus_white.svg`)">
+        <span>팀만들기</span>
+      </button>
+    </div>
     <div class="team team--main">
       <div class="text__title__wrap">
         <p class="text__title">팀장김웨이님은</p>
@@ -189,16 +194,21 @@
 
   <!-- 참여중인 팀이 없을 때 -->
   <!-- <div class="team">
-    <button class="team__add"></button>
+    <div class="team__add">
+      <button>
+        <img :src="require(`@/assets/images/icon_plus_white.svg`)">
+        <span>팀만들기</span>
+      </button>
+    </div>
     <div class="team team--main">
       <div class="text__title__wrap">
         <p class="text__title">팀장김웨이님은</p>
         <p class="text__subtit"><span class="text__subtit--bold">0</span>개 팀에 참여중입니다.</p>
       </div>
       <div class="tag--wrap">
-        <div class="tag on">전체 (0)</div>
-        <div class="tag">챌린지 (0)</div>
-        <div class="tag">상시 (0)</div>
+        <button class="tag on">전체 (0)</button>
+        <button class="tag">챌린지 (0)</button>
+        <button class="tag">상시 (0)</button>
       </div>
       <div class="team--nodata">
         <img :src="require(`@/assets/images/team_no_data.png`)">
