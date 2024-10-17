@@ -59,8 +59,8 @@ export const menuRoutes = [
         isCompleted: true,
       },
       {
-        text: "나의 인증 현황-Gut00007",
-        path: "/나의 인증 현황-Gut00007",
+        text: "나의 인증 현황-Gut0000-7",
+        path: "/나의 인증 현황-Gut0000-7",
         isCompleted: true,
       },
       {
