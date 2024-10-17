@@ -1,40 +1,60 @@
 <template>
   <div class="content-area bg-case">
     <div class="my-page-wrap">
-      <div class="conts-area">
-        <div class="profile-area small">
-          <input type="file" id="uploadIcon" class="upload-icon" hidden />
-          <label for="uploadIcon" >
-            <div class="img-wrap">
-              <img class="ico-logo" :src="require(`@/assets/images/icon/ico_profile.png`)" alt="프로필 이미지 수정 아이콘" />
-            </div>
-          </label>
-          <div class="text-wrap">
-            <h4 class="profile-name">팀장김웨이</h4>
-            <button type="button" class="btn-modify" title="프로필명 변경"><span class="blind">프로필명 변경</span></button>
+      <div class="profile-area small">
+        <input
+            type="file"
+            id="uploadIcon"
+            class="upload-icon"
+            @change="onFileChange"
+            hidden
+          />
+        <label for="uploadIcon" class="upload-label">
+          <div class="img-wrap">
+            <img
+              v-if="imageUrl"
+              class="uploaded-img"
+              :src="imageUrl"
+              alt="업로드된 이미지"
+            />
+            <img
+              v-else
+              class="ico-logo"
+              :src="require(`@/assets/images/icon/ico_profile.png`)"
+              alt="프로필 이미지 수정 아이콘"
+            />
           </div>
-        </div>        
-        <div class="card card--border card--p16 card--shadowc2">
-          <div class="card__top">
-            <div class="card__text__list">
-              <dl>
-                <dt>팀 가입일</dt> 
-                <dd>2024.09.09</dd>
-              </dl>
-              <dl>
-                <dt>인증 횟수</dt>
-                <dd>223/1000회 (9월 22회)</dd>
-              </dl>
-              <dl class="align-ctr">
-                <dt>ABO/Member</dt>
-                <dd>
-                  <p class="badge-info">인증</p>
-                </dd>
-              </dl>
-            </div>
+        </label>
+        <div class="text-wrap">
+          <h4 class="profile-name">팀장김웨이</h4>
+          <button type="button" class="btn-modify" title="프로필명 변경"><span class="blind">프로필명 변경</span></button>
+        </div>
+      </div>
+      <div class="my-page-conts">
+        <div class="my-page-conts-item">
+          <p class="title">회원정보 관리</p>
+          <div class="card card--shadow00">          
+            <a href="#" class="link">
+              개인회원 정보
+            </a>
           </div>
         </div>
-        <div class="calender"> 캘린더 영역 </div>
+        <div class="my-page-conts-item">
+          <p class="title">회원정보 관리</p>
+          <div class="card card--shadow00">          
+            <a href="#" class="link">
+              개인회원 정보
+            </a>
+          </div>
+        </div>
+        <div class="my-page-conts-item">
+          <p class="title">회원정보 관리</p>
+          <div class="card card--shadow00">          
+            <a href="#" class="link">
+              개인회원 정보
+            </a>
+          </div>
+        </div>
       </div>
       <div class="team-btn-wrap">
         <div class="btn-area ty03">
@@ -54,10 +74,23 @@ export default {
     return {
       leftArea: "",
       rightArea: "",
+      imageUrl: null,
     };
   },
   components: {
     CustomButton
   },
+  methods: {
+    onFileChange(event) {
+      const file = event.target.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = (e) => {
+          this.imageUrl = e.target.result;
+        };
+        reader.readAsDataURL(file);
+      }
+    }
+  }
 };
 </script>

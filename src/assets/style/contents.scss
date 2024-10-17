@@ -289,53 +289,71 @@
 	}
 }
 
-.my-page-wrap {
-	margin: 48px 0 72px;
-	.profile-area {
-		&.small {
-			.img-wrap {
-				width: 104px;
-				height: 104px;
-				padding: 0;
-				position: relative;
-				box-shadow: 0px 8px 12px 0px #C2C2C240;
-				border-radius: 32px;
-				&::after {
-					content : '';
-					display: block;
-					width: 32px;
-					height: 32px;
-					position: absolute;
-					bottom: 0;
-					right: 0;
-					background-image: url(../images/icon/ico_file_modify.png);
-					background-size: contain;
-				}
-			}
-		}
-		.text-wrap {			
-			display: flex;
-			align-items: center;
-			gap: 4px;
-			.btn-modify {
-				width: 16px;
-				height: 16px;
-				&:after {
-					content:'';
-					display: inline-block;
-					width: 100%;
-					height: 100%;
-					background-image: url(../images/icon_modify.svg);
-					background-size: contain;
-				}
-			}
-		}
-	}
+.my-page {
+  &-wrap {
+    margin: 48px 0 72px;
+    .profile-area {
+      &.small {
+        .upload-label {
+          display: flex;
+          justify-content: center;
+        }
+        .img-wrap {
+          padding: 0;
+          position: relative;
+          box-shadow: 0px 8px 12px 0px #C2C2C240;
+          border-radius: 32px;
+          width: 104px;
+          height: 104px;
+          &::after {
+            content : '';
+            display: block;
+            width: 32px;
+            height: 32px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background-image: url(../images/icon/ico_file_modify.png);
+            background-size: contain;
+          }
+          img {
+            width: 100%;
+            height: 100%;
+            max-width: 104px;
+            height: 104px;
+            object-fit: cover;
+          }
+        }
+      }
+      .text-wrap {			
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        .btn-modify {
+          width: 16px;
+          height: 16px;
+          &:after {
+            content:'';
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            background-image: url(../images/icon_modify.svg);
+            background-size: contain;
+          }
+        }
+      }
+    }
+  }
+  &-conts {
+    &-item:not(:first-child) {
+      padding-top: 24px;
+    }
+  }
 }
 
-/* main */
-.main {
-	&-bot-section {
+/* home */
+.home {
+	&--bot-section {
 		background: #169E4A;
     overflow-x: hidden;
     padding-top: 28px;
@@ -356,14 +374,11 @@
 		&:not(:last-child) {
 			margin-bottom: 60px;
 		}
-    &.fixed-card {
-      position: fixed;
+    &.sticky {
+      position: sticky;
       bottom: 88px;
       left: 50%;
-      width: calc(100% - 40px);
-      transform: translateX(-50%);
       z-index: 90;
-      margin-bottom: 0;
       .card {
         border: 1px solid #169E4A;
       }
@@ -389,7 +404,7 @@
         &__tooltip {
           padding: 8px 10px;
           width: 240px;
-          min-height: 56px;
+          height: 56px;
           background-color: #333;
           border-radius: 16px;
           position: absolute;
@@ -470,7 +485,7 @@
 			height: 105px;
 			top:0;
 			right: 5px;
-			z-index: 50;
+			z-index: 15;
 		}
 		.text-link {
 			display: none;
@@ -502,7 +517,6 @@
 		}
 	}
   &-card-box:not(.active) {
-    // transform: translateY(0);
     .card--per {
       &__tooltip {
         display: none; 
@@ -516,9 +530,9 @@
     }
   }
 	&-card-box.active {
-    
-    transition: 1s;
-		.card {
+		.card {      
+      transform: translateY(10%);
+      transition: 1s;
 			.challenge__card--main__top {
 				display: block;
 			}
@@ -533,4 +547,31 @@
       display: block;
     }
 	}
+}
+
+/* notice */
+.notice {
+  &--detail {
+    padding: 16px 0 0;
+    &__head {
+      padding: 14px 0;
+    }
+    &__conts {
+      margin-bottom: 16px;      
+      &:before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: #d8d8d8;
+        margin-bottom: 16px;
+      }
+      .desc {
+        font-size: 13px;
+        line-height: 24px;
+        font-weight: 500;
+        letter-spacing: -0.5px;
+      }
+    }
+  }
 }
