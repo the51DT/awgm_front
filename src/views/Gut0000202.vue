@@ -31,7 +31,10 @@
         </div>
       </div>
       <div class="btn-group">
-        <CustomButton color="dark" class="ty-chk"><span>법정대리인 개인정보 활용 동의</span></CustomButton>
+        <!-- 10.16 수정 ty-chk on 클래스 추가시, active 처리됨 : 미체크가 디폴트 /
+           버튼 선택시 약관동의팝업 호출 -> 동의 선택 시 팝업 닫기 및 체크 활성화  -->
+        <CustomButton color="dark" class="ty-chk"><span>법정대리인 개인정보 활용 동의</span></CustomButton> 
+        <!-- <CustomButton color="dark" class="ty-chk on"><span>법정대리인 개인정보 활용 동의</span></CustomButton>  -->
         <CustomButton>로그인</CustomButton>
       </div>
     </div>

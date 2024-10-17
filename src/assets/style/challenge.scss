@@ -203,6 +203,9 @@
   &--yellow {
     color: #F79C22 !important;
   }
+  &--light-yellow {
+    color: #FEE500 !important;
+  }
   &--c11 {
     color: #111;
   }
@@ -274,11 +277,37 @@
     height: 32px;
     border-radius: 20px;
     background-color: #E5E5E5;
+    &.success {
+      .card--per__gage {
+        &::before {
+          display: none;
+        }
+      }
+      .card--per__tooltip {
+        left: auto;
+        right: -20px;
+        transform: revert;
+        &::before {
+          content: '';
+          display: block;
+          width: 18px;
+          height: 18px;
+          background: #333;
+          border-radius: 2px;
+          position: absolute;
+          top: -5px;
+          left: calc(100% - 50px);
+          transform: rotate(45deg);
+          z-index: 15;
+        }
+      }
+    }
     &__gage {
       width: 88px;
       height: 100%;
       border-radius: 20px;
       background-color: #F79C22;
+      position: relative;
       &--end {
         background-color: #999;
       }
@@ -310,6 +339,12 @@
       font-size: 11px;
       line-height: 16px;
       color: #666;
+      &.ty02 {
+        left: 0;
+        transform: translateX(0);
+        justify-content: center;
+        width: 100%;
+      }
       p {
         flex-shrink: 0;
       }
