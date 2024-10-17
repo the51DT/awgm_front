@@ -1,9 +1,6 @@
 <template>
   <div class="popup--pull">
-    <div class="popup--pull__top">
-      <p>챌린지 이력보기</p>
-      <button class="popup--pull__close"></button>
-    </div>
+    <ContentHead title="챌린지 이력보기" :rightArea=true />
     <div class="popup--pull__cont">
       <div class="card card--border card--p16 card--shadowc2 challenge__card--history">
         <p class="font--800 font--c11 font--ls1">GUT Morning Korea Challenge</p>
@@ -70,8 +67,13 @@
 </template>
 
 <script>
+import ContentHead from "@/components/ContentHead.vue";
+
 export default {
   name: "LoginMain",
+  components: {
+    ContentHead,
+  }
 };
 </script>
 
