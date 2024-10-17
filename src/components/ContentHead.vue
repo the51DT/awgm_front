@@ -2,6 +2,7 @@
   <div class="head-area"
   :class="[
     headType === 'ty02' ? 'ty02' : '',
+    headType === 'ty03' ? 'ty03' : '',
   ]">
     <a class="area-left" href="#" v-if="leftArea === true">
       <img class="ico-logo"
@@ -9,7 +10,8 @@
         alt="이전페이지로 이동"
       />
     </a>
-    <h2 class="page-title">{{ title }}</h2>
+    <h2  v-if="headType === 'ty03'" class="page-title"><slot name="title"></slot></h2>
+    <h2 v-else class="page-title">{{ title }}</h2>
     <div class="area-right" v-if="rightArea === true">
       <div v-if="rightIcon" class="area-right__icon">
         <button><img :src="require(`@/assets/images/icon_setting.svg`)"/></button>

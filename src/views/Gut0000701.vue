@@ -19,10 +19,11 @@
   </div> -->
   <!-- 공유하기 버튼 클릭 시 -->
   <div class="popup--pull">
-    <div class="popup--pull__top">
-      <p>챌린지 이력보기</p>
-      <button class="popup--pull__close"></button>
-    </div>
+    <ContentHead title="팀 정보" headType="ty03" :rightArea=true>
+      <template v-slot:title>
+        이미지를 저장하여<br/><span>SNS로</span> 공유해 보세요!
+      </template>
+    </ContentHead>
     <div class="popup--pull__cont">
       <div class="card--img">
         <img class="card--img__comp" :src="require(`@/assets/images/challenge_comp.png`)">
@@ -213,6 +214,7 @@
 
 <script>
 import CustomButton from "@/components/CustomButton.vue";
+import ContentHead from "@/components/ContentHead.vue";
 
 // import { Navigation } from 'swiper/modules';
 // import { Swiper, SwiperSlide } from 'swiper/vue';
@@ -225,6 +227,7 @@ export default {
     // Swiper,
     // SwiperSlide,
     CustomButton,
+    ContentHead,
   },
   // setup() {
   //   const onSwiper = (swiper) => {
