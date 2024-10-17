@@ -1,21 +1,30 @@
 <template>
-  <div class="content-top">
-    <div class="login-wrap">
-      <div class="login-intro">
-        <img
-          class="ico-logo"
-          :src="require(`@/assets/images/content/conts-ico_login01.png`)"
-          alt="자녀계정 로그인"
-        />
-        <h4 class="ico-title">자녀계정 로그인</h4>
-      </div>
-    </div>
+  <ContentHead title="나의 인증 현황" :leftArea=true />
+  <div class="content-area">
+    <VCalendar />
   </div>
+  <CustomButton>
+    인증 공유하기
+  </CustomButton>
 </template>
 
 <script>
+import VCalendar from "@/components/VCalendar.vue";
+import ContentHead from "@/components/ContentHead.vue";
+import CustomButton from "@/components/CustomButton.vue";
+
 export default {
   name: "LoginMain",
+  data() {
+    return {
+      type: "",
+    };
+  },
+  components: {
+    VCalendar,
+    ContentHead,
+    CustomButton,
+  },
 };
 </script>
 
