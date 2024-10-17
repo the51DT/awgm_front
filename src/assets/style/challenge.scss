@@ -113,6 +113,7 @@
       display: flex;
       flex-direction: column;
       gap: 16px;
+      border-radius: 24px !important;
       & > div:last-child {
         display: flex;
         padding: 11px 16px 13px;
@@ -859,6 +860,9 @@
 }
 .team {
   position: relative;
+  .card {
+    border-radius: 24px;
+  }
   &--nodata {
     display: flex;
     flex-direction: column;
@@ -986,6 +990,7 @@
       }
     }
     .card {
+      border-radius: 16px;
       & + .card {
         margin-top: 32px;
       }
@@ -1113,6 +1118,9 @@
       text-align: right;
       color: #999;
     }
+    .card {
+      border-radius: 16px;
+    }
     .card--green {
       border: 2px solid #169E4A;
     }
@@ -1132,6 +1140,7 @@
       backdrop-filter: blur(8px);
       .card {
         border: 2px solid #169E4A;
+        border-radius: 16px;
         box-shadow: 6px 6px 24px 0px #00000040;
       }
     }
