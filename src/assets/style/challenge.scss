@@ -1218,3 +1218,53 @@
     gap: 4px;
   }
 }
+.notice {
+  &--list {
+    padding: 16px 0 20px;
+    .card {
+      width: 100%;
+      padding: 14px 12px;
+      border-radius: 16px;
+      text-align: left;
+      background-color: #fff;
+      &--green {
+        .notice--list__title {
+          font-weight: 800;
+        }
+      }
+      & + .card {
+        margin-top: 8px;
+      }
+    }
+    &__title {
+      display: flex;
+      gap: 4px;
+      width: 100%;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: -0.5px;
+      color: #333;
+      span {
+        @include ellipsis(1);
+      }
+      &.new {
+        &::after {
+          content: '';
+          flex-shrink: 0;
+          display: block;
+          width: 8px;
+          height: 8px;
+          background-image: url(../images/icon_new.svg);
+        }
+      }
+    }
+    &__date {
+      margin-top: 4px;
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: -0.5px;
+      color: #B3B3B3;
+    }
+  }
+}
