@@ -253,6 +253,11 @@ export const menuRoutes = [
         path: "/팝업 템플릿-Gut0000101",
         isCompleted: true,
       },
+      {
+        text: "GutCalendar",
+        path: "/Gut00100",
+        isCompleted: true,
+      },
     ],
   },
 ];
