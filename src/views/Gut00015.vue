@@ -26,47 +26,136 @@
           </div>
         </label>
         <div class="text-wrap">
-          <h4 class="profile-name">팀장김웨이</h4>
-          <button type="button" class="btn-modify" title="프로필명 변경"><span class="blind">프로필명 변경</span></button>
+          <div class="text-wrap-default">
+            <p class="profile-name">팀장김웨이</p>
+            <button type="button" class="btn-modify" title="프로필명 변경"><span class="blind">프로필명 변경</span></button>
+          </div>
+          <!-- 프로필명 변경 클릭 시, 하단 modify 박스 노출 / 위 영역 default -->
+          <div class="text-wrap-modify">
+            <div class="text-wrap-modify-form">
+              <InputField placeholder="자녀계정 아이디" />
+              <CustomButton size="sm" color="dark">확인</CustomButton>
+            </div>
+            <p class="info-desc">※ 개인정보가 식별되는 닉네임사용은 자제해 주세요.</p>
+          </div>
         </div>
       </div>
       <div class="my-page-conts">
         <div class="my-page-conts-item">
-          <p class="title">회원정보 관리</p>
-          <div class="card card--shadow00">          
-            <a href="#" class="link">
-              개인회원 정보
-            </a>
+          <div class="title-wrap">
+            <p class="title">회원정보 관리</p>
+          </div>
+          <div class="card card--shadow00">
+            <button><img :src="require(`@/assets/images/icon_arrow_r.svg`)"></button>
+            <div class="text-box-wrap">
+              <div class="text-wrap">
+                <p class="card-title">개인회원 정보</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="my-page-conts-item">          
+          <div class="title-wrap">
+            <p class="title">ABO/Member 인증 </p>
+          </div>
+          <div class="card card--shadow00">
+            <button><img :src="require(`@/assets/images/icon_arrow_r.svg`)"></button>
+            <div class="text-box-wrap">
+              <!-- 인증 전 case : default -->
+              <div class="text-wrap">
+                <p class="card-title">회원인증 하기</p>
+                <p class="card-desc">*인증한 ABO/Member 정보는 변경할 수 없습니다.</p>
+              </div><!-- //인증 전 case : default -->
+              <!-- 인증 후 case : 인증 후에는 우측 화살표 button 삭제 필요 -->
+              <!-- <div class="text-wrap ty02">
+                <p class="card-title">ABO 번호</p>
+                <p class="card-desc">123456789</p>
+              </div>
+              <ul class="sub-wrap">
+                <li><CustomButton size="sm" color="light">인증완료</CustomButton></li>
+              </ul> -->
+              <!-- //인증 후 case -->              
+            </div>
           </div>
         </div>
         <div class="my-page-conts-item">
-          <p class="title">회원정보 관리</p>
-          <div class="card card--shadow00">          
-            <a href="#" class="link">
-              개인회원 정보
-            </a>
+          <div class="title-wrap">
+            <p class="title">자녀계정 관리</p>
+            <p class="sub">현재 등록된 자녀계정 : <strong>3개</strong></p>
+          </div>
+          <div class="card card--shadow00">
+            <button><img :src="require(`@/assets/images/icon_arrow_r.svg`)"></button>
+            <div class="text-box-wrap">
+              <div class="text-wrap">
+                <p class="card-title">자녀계정 등록/관리</p>
+              </div>
+            </div>
           </div>
         </div>
         <div class="my-page-conts-item">
-          <p class="title">회원정보 관리</p>
-          <div class="card card--shadow00">          
-            <a href="#" class="link">
-              개인회원 정보
-            </a>
+          <div class="title-wrap">
+            <p class="title">계정 연동 정보</p>
+          </div>
+          <div class="card-group">
+            <div class="card card--shadow00">
+              <div class="text-box-wrap">
+                <div class="text-wrap">
+                  <p class="card-title">다타익선</p>
+                  <p class="card-desc">* 카카오 uid는 개인회원 정보 페이지에서 확인 가능합니다.</p>
+                </div>
+                <ul class="sub-wrap">
+                  <li><CustomButton size="sm">인증하기</CustomButton></li>
+                </ul>
+              </div>
+            </div>
+            <div class="card card--shadow00">
+              <div class="text-box-wrap">
+                <div class="text-wrap">
+                  <p class="card-title">그로잉랩</p>
+                </div>
+                <ul class="sub-wrap">
+                  <li><p class="user-name">$프로필명$</p></li>
+                  <li><CustomButton size="sm" color="light">인증완료</CustomButton></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="team-btn-wrap">
-        <div class="btn-area ty03">
-          <CustomButton color="light">강퇴</CustomButton>
+        <div class="section">
+          <div class="btn-area">
+            <a href="#" class="btn--text">로그아웃</a>
+          </div>
         </div>
       </div>
     </div>
   </div>
+  <!-- ABO/Member 회원인증 팝업 -->
+  <PopupDefault style="display:none;">
+    <template v-slot:title>
+      ABO/Member 회원인증
+    </template>
+    <template v-slot:cont>
+      <div class="login-form">
+        <div class="form-box mb0">
+          <div class="input-area">
+            <InputField placeholder="ABO 번호 / Member 아이디" />
+            <InputField type="password" placeholder="비밀번호" />
+          </div>
+        </div>
+      </div>
+    </template>
+    <template v-slot:btn>
+      <div class="btn-area ty03">
+        <CustomButton size="sm" color="light">취소</CustomButton>
+        <CustomButton size="sm">확인</CustomButton>
+      </div>
+    </template>
+  </PopupDefault>
 </template>
-
 <script>
 import CustomButton from "@/components/CustomButton.vue";
+import InputField from '@/components/InputField.vue';
+import PopupDefault from "@/components/PopupDefault.vue";
 
 export default {
   name: "Gut_00015",
@@ -78,7 +167,9 @@ export default {
     };
   },
   components: {
-    CustomButton
+    CustomButton,
+    InputField,
+    PopupDefault,
   },
   methods: {
     onFileChange(event) {

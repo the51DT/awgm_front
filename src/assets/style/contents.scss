@@ -290,6 +290,14 @@
 }
 
 .my-page {
+  &-box {
+    &-info {
+      padding-top: 16px;
+      .info--list {
+        color: #666;
+      }
+    }
+  }
   &-wrap {
     margin: 48px 0 72px;
     .profile-area {
@@ -316,6 +324,9 @@
             background-image: url(../images/icon/ico_file_modify.png);
             background-size: contain;
           }
+          &.not-ico::after {
+            display: none;
+          }
           img {
             width: 100%;
             height: 100%;
@@ -328,7 +339,41 @@
       .text-wrap {			
         display: flex;
         align-items: center;
+        flex-direction: column;
         gap: 4px;
+        &-default {
+          display: flex;
+          align-items: center;
+          gap: 4px;
+        }
+        &-modify {
+          &-form {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+            .inputField {
+              max-width: 192px;
+              background: #fff;
+              border-radius: 8px;
+              margin-right: 4px;
+              &__input {
+                padding: 6px 12px;
+              }
+            }
+            .custom-btn {
+              font-size: 13px;
+            }
+          }
+          .info-desc {
+            color: #666;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 16px;
+            letter-spacing: -0.5px;
+            text-align: center;
+            margin-top: 8px;
+          }
+        }
         .btn-modify {
           width: 16px;
           height: 16px;
@@ -343,10 +388,187 @@
         }
       }
     }
-  }
+  }  
   &-conts {
     &-item:not(:first-child) {
       padding-top: 24px;
+    }
+    &-item {
+      .title-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .title {
+          font-size: 15px;
+          font-weight: 800;
+          line-height: 24px;
+          letter-spacing: -0.5px;
+          color: #111;
+        }
+        .sub {
+          font-size: 12px;
+          line-height: 16px;
+          color: #666;
+          margin-right: 8px;
+          strong {
+            font-weight: 800;
+          }
+        }
+      }      
+      .card {
+        padding: 12px 16px;
+        border-radius: 16px;
+        margin-top: 4px;
+        position: relative;
+        > button {
+          position: absolute;
+          top:50%;
+          right: 16px;
+          transform: translateY(-50%);
+          width: 24px;
+          height: 24px;
+          font-size: 13px;
+          line-height: 24px;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+      .text-box-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 4px 0;
+        &.ty02 {
+          justify-content: center;
+          margin: 8px 0;
+          .text-wrap {
+            margin: 4px 0;
+          }
+          .list-wrap {
+            display: flex;
+            justify-content: center;
+            li:not(:last-child) {
+              position: relative;
+              display: flex;
+              flex-direction: column;
+              padding-right: 32px;
+              &:after {
+                content: "";
+                display: inline-block;
+                width: 1px;
+                height: 34px;
+                background: #e5e5e5;
+                position: absolute;
+                right: 0;
+                margin: 0 16px;
+              }
+            }
+            &-icon {
+              width: 18px;
+              height: 18px;
+              margin: 0 auto 4px;
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+            &-txt {
+              font-size: 12px;
+              line-height: 16px;
+              letter-spacing: -0.5px;
+              text-align: center;
+              color: #000;
+            }
+          }
+        }
+        .text-wrap {
+          display: flex;
+          justify-content: flex-start;
+          flex-direction: column;
+          &.ty02 {
+            flex-direction: row;
+            align-items: center;
+            .card {
+              &-desc {
+                color: #333;
+                font-size: 15px;
+                font-weight: 800;
+                margin-left: 8px;
+              }
+            }
+          }
+          .card {
+            &-title {
+              font-size: 15px;
+              line-height: 24px;
+              letter-spacing: -0.5px;
+              color: #333;
+            }
+            &-desc {
+              font-size: 12px;
+              font-weight: 500;
+              line-height: 16px;
+              color: #999;
+            }
+          }
+        }        
+        .sub-wrap {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          padding-left: 26px;
+          li {
+            display: flex;
+            align-items: center;
+            .user-name {
+              color: #169E4A;
+              font-size: 12px;
+              font-weight: 500;
+              line-height: 16px;
+              letter-spacing: -0.5px;
+            }
+            .custom-btn {
+              padding: 6px 13px;
+              font-size: 13px;
+              width: 72px;
+            }
+          }
+          li:not(:last-child) {
+            &:after {
+              content:'';
+              display: inline-block;
+              width: 2px;
+              height: 2px;
+              background: #d9d9d9;
+              margin: 0 8px;
+            }
+          }
+
+          
+        }
+        .copy-link {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          &:after {
+            content: "";
+            display: block;
+            width: 16px;
+            height: 16px;
+            background-size: contain;
+            background-image: url(../images/icon_copy.svg);
+            margin-left: 8px;
+          }
+        }
+      }
+    }
+    .section {
+      .btn-area {
+        text-align: right;
+      }
     }
   }
 }
@@ -355,7 +577,7 @@
 .home {
 	&--bot-section {
 		background: #169E4A;
-    overflow-x: hidden;
+    overflow: hidden;
     padding-top: 28px;
 		.lottie-conts {
 			&:before {
