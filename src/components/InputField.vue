@@ -110,6 +110,16 @@
         :id="id"
         :name="name"
       />
+      <!-- 복사 인풋 -->
+      <input
+        v-else-if="type === 'copy'"
+        type="text"
+        class="inputField__input inputField__copy"
+        :id="id"
+        :name="name"
+        :value="placeholder"
+        readonly="readonly"
+      />
       <!-- 그외 -->
       <input
         v-else
@@ -124,8 +134,6 @@
         :placeholder="placeholder"
         :readonly="readonly"
         :checked="checked"
-        :value="defaultText"
-        @input="$emit('update:defaultText', $event.target.value)"
       />
 
       <!-- 패스워드 눈 버튼 -->
@@ -134,6 +142,11 @@
         class="inputField__button"
         :readonly="readonly"
         @click="passwordView"
+      ></button>
+      <!-- 패스워드 눈 버튼 -->
+      <button
+        v-if="type === 'copy'"
+        class="inputField__button--copy"
       ></button>
       <!-- 토글 라벨 -->
       <label
@@ -172,7 +185,6 @@ export default {
     name: String,
     placeholder: String,
     label: String,
-    defaultText: String,
     readonly: Boolean,
     warn: Boolean,
     checked: Boolean,

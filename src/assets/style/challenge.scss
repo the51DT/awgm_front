@@ -1355,6 +1355,9 @@
         padding: 0;
         width: 104px;
         height: 104px;
+        img {
+          border-radius: 32px;
+        }
       }
       .text-wrap {
         text-align: center;
