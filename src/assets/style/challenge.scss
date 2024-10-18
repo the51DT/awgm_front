@@ -1227,6 +1227,12 @@
     display: flex;
     gap: 4px;
   }
+  &_cont {
+    display: none;
+    &.on {
+      display: block;
+    }
+  }
 }
 .notice {
   &--list {

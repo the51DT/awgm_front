@@ -18,8 +18,28 @@ function dataVaule () {
     addRule("[data-height='" + i + "%']", "height:" + i + "% !important");
   }
 }
+
+function tabFn() {
+  const tagList = document.querySelectorAll(".tag");
+  const tagCont = document.querySelectorAll(".tag_cont");
+  tagList.forEach((el, i) => {
+    el.addEventListener("click", () => {
+      tagList.forEach((x) => {
+        x.classList.remove("on");
+      });
+      tagCont.forEach((x) => {
+        x.classList.remove("on");
+      });
+      tagList[i].classList.add("on");
+      tagCont[i].classList.add("on");
+    });
+  });
+}
+
 dataVaule();
+tabFn();
 
 window.onload = function() {
   dataVaule();
+  tabFn();
 }

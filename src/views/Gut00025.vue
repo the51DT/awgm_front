@@ -21,29 +21,59 @@
         </swiper>
       </div>
       <div class="faq__cont">
-        <div class="faq__acco">
-          <button class="acco">바탕화면 바로가기는 어떻게 하나요?</button>
-          <div class="acco__cont"></div>
+        <div class="tag_cont on">
+          <div class="faq__acco">
+            <button class="acco">바탕화면 바로가기는 어떻게 하나요?</button>
+            <div class="acco__cont">내용</div>
+          </div>
+
+          <div class="faq__acco">
+            <button class="acco">ABO 인증은 어떻게 하나요?</button>
+            <div class="acco__cont">내용</div>
+          </div>
+
+          <div class="faq__acco on">
+            <button class="acco">이벤트 챌린지는 참여는 어떻게 하나요?</button>
+            <div class="acco__cont">본 개인정보처리방침은 2024년 08월 26일부터 적용됩니다. 내용의 추가, 삭제 및 수정이 있을 시에는 시행일 이전에 공지사항 등을 통하여 고지할 것입니다. 또한 개인정보 처리방침에 버전번호 및 공고일자, 시행일자 등을 부여하여 개정여부를 쉽게 알 수 있도록 하고 있습니다.</div>
+          </div>
+
+          <div class="faq__acco">
+            <button class="acco">자주 묻는 질문 제목 입니다. 자주 묻는 질문 제목 입니다.</button>
+            <div class="acco__cont">내용</div>
+          </div>
+
+          <div class="faq__acco">
+            <button class="acco">자주 묻는 질문 제목 입니다.</button>
+            <div class="acco__cont">내용</div>
+          </div>
         </div>
 
-        <div class="faq__acco">
-          <button class="acco">ABO 인증은 어떻게 하나요?</button>
-          <div class="acco__cont"></div>
+        <div class="tag_cont">
+          <div class="faq__acco">
+            <button class="acco">탭1</button>
+            <div class="acco__cont">내용</div>
+          </div>
         </div>
 
-        <div class="faq__acco on">
-          <button class="acco">이벤트 챌린지는 참여는 어떻게 하나요?</button>
-          <div class="acco__cont">본 개인정보처리방침은 2024년 08월 26일부터 적용됩니다. 내용의 추가, 삭제 및 수정이 있을 시에는 시행일 이전에 공지사항 등을 통하여 고지할 것입니다. 또한 개인정보 처리방침에 버전번호 및 공고일자, 시행일자 등을 부여하여 개정여부를 쉽게 알 수 있도록 하고 있습니다.</div>
+        <div class="tag_cont">
+          <div class="faq__acco">
+            <button class="acco">탭2</button>
+            <div class="acco__cont">내용</div>
+          </div>
         </div>
 
-        <div class="faq__acco">
-          <button class="acco">자주 묻는 질문 제목 입니다. 자주 묻는 질문 제목 입니다.</button>
-          <div class="acco__cont"></div>
+        <div class="tag_cont">
+          <div class="faq__acco">
+            <button class="acco">탭3</button>
+            <div class="acco__cont">내용</div>
+          </div>
         </div>
 
-        <div class="faq__acco">
-          <button class="acco">자주 묻는 질문 제목 입니다.</button>
-          <div class="acco__cont"></div>
+        <div class="tag_cont">
+          <div class="faq__acco">
+            <button class="acco">탭4</button>
+            <div class="acco__cont">내용</div>
+          </div>
         </div>
       </div>
     </div>
@@ -76,6 +106,29 @@ export default {
       modules: [FreeMode],
     };
   },
+  mounted() {
+    this.faqAcco()
+  },
+  methods: {
+    faqAcco() {
+      const tagList = document.querySelectorAll(".tag")
+      const accoList = document.querySelectorAll(".faq__acco")
+      tagList.forEach((el) => {
+        el.addEventListener("click", () => {
+          accoList.forEach((e) => {
+            e.classList.remove("on")
+          })
+        })
+      })
+
+      const accoBtn = document.querySelectorAll(".acco")
+      accoBtn.forEach((e) => {
+        e.addEventListener("click", () => {
+          e.closest(".faq__acco").classList.toggle("on")
+        })
+      })
+    }
+  }
 };
 </script>
 
