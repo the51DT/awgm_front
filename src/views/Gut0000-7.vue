@@ -1,11 +1,11 @@
 <template>
-  <ContentHead title="나의 인증 현황" :leftArea=true />
   <div class="content-area">
+    <ContentHead title="나의 인증 현황" :leftArea=true />
     <VCalendar />
+    <CustomButton>
+      인증 공유하기
+    </CustomButton>
   </div>
-  <CustomButton>
-    인증 공유하기
-  </CustomButton>
 </template>
 
 <script>

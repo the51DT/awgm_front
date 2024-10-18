@@ -9,6 +9,7 @@
       color === 'dark' ? 'custom-btn--dark' : '',
       color === 'yellow' ? 'custom-btn--yellow' : '',
       color === 'black' ? 'custom-btn--black' : '',
+      color === 'white' ? 'custom-btn--white' : '',
     ]"
   >
     <slot></slot>

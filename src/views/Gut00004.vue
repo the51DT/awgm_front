@@ -34,7 +34,7 @@
         <swiper-slide>
           <div class="slider-wrap">
             <div class="card--img card--shadowc2">
-              <img class="card--img__comp" :src="require(`@/assets/images/challenge_comp.png`)">
+              <img class="card--img__comp ani" :src="require(`@/assets/images/challenge_comp.png`)">
               <div class="card--img__uploaded">
                 <img :src="require(`@/assets/images/challenge_card_bg.png`)">
               </div>

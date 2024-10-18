@@ -17,11 +17,9 @@ function dataVaule () {
     addRule("[data-left='" + i + "%']", "left:" + i + "%");
     addRule("[data-height='" + i + "%']", "height:" + i + "% !important");
   }
-  console.log("data-value add rule")
 }
 dataVaule();
 
 window.onload = function() {
-  console.log("common.js load");
   dataVaule();
 }
