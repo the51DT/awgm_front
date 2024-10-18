@@ -30,6 +30,7 @@
         :pagination="{ clickable: true }"
         @swiper="onSwiper"
         @slideChange="onSlideChange"
+        @reachEnd="uploadFn"
       >
         <swiper-slide>
           <div class="slider-wrap">
@@ -69,15 +70,13 @@
                     :src="imageUrl"
                     alt="업로드된 이미지"
                   />
-                  <img
-                    v-else
-                    class="ico-logo"
-                    :src="require(`@/assets/images/icon/ico_file.png`)"
-                    alt="파일 업로드 등록 아이콘"
-                  />
+                  <div v-else class="upload_ani">
+                    <img
+                      :src="require(`@/assets/images/${uploadAni}`)"
+                    />
+                  </div>
                 </label>
                 <p v-if="!imageUrl" class="date">2025년 5월 16일 (금)</p>
-                <p v-if="!imageUrl" class="accent">오늘의 <span>인증</span>하기</p>
                 <div v-if="imageUrl" class="card--img__text">
                   <p class="card--img__text__date">2024.09.23 (월)</p>
                   <p class="card--img__text__title">나의 미션 인증 횟수</p>
@@ -327,6 +326,7 @@ export default {
   data() {
     return {
       imageUrl: null,
+      uploadAni: "upload.png",
     }
   },
   setup() {
@@ -356,6 +356,9 @@ export default {
         };
         reader.readAsDataURL(file);
       }
+    },
+    uploadFn() {
+      this.uploadAni = "upload_ani.gif";
     },
     // scrollEvents(event) {
     //   let scrollY = window.scrollY;
