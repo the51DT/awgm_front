@@ -175,6 +175,11 @@
       }
     }
   }
+  &__calendar {
+    &--card {
+      margin: 16px 0 24px;
+    }
+  }
 }
 .link-arrow {
   position: absolute;
