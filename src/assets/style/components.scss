@@ -461,12 +461,12 @@
     margin-bottom: 4px;
   }
   &-text-wrap {
-    margin-top: 5px;
+    margin-top: 5px; 
     .desc {
       text-align: center;
     }
   }
-}
+
   .vc-orange {
     --vc-accent-600: #e5e5e5; /* active되는 vc-orange 기본컬러 제거하기위함 */
   }
@@ -608,6 +608,7 @@
       }
     }
   }
+}
 
 .home {  
 	&--addBtn {

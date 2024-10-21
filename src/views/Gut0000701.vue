@@ -38,7 +38,7 @@
         <p class="card--img__title"><span>팀장김웨이</span>님의<br />GUT Morning</p>
       </div>
       <div class="card card--border challenge__calendar--card">
-        <!-- calendar -->
+        <!-- calendar 영역 -->
         <div class="calendar">
           <VCalendar />
         </div>

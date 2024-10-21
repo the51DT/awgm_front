@@ -32,7 +32,7 @@
           </div>
         </div>
 
-        <!-- calendar -->
+        <!-- calendar 영역 -->
         <div class="calendar">
           <VCalendar />
         </div>
