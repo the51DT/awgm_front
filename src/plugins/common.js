@@ -43,3 +43,7 @@ window.onload = function() {
   dataVaule();
   tabFn();
 }
+
+export default {
+  tabFn
+};
