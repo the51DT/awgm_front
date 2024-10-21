@@ -40,22 +40,19 @@
     </CustomButton>
   </div>
   <AppNav :challenge="true"></AppNav>
-  <TopButton></TopButton>
 </template>
 
 <script>
 import CustomButton from "@/components/CustomButton.vue";
 import AppNav from "@/layouts/AppNav.vue";
 import VCalendar from "@/components/VCalendar.vue";
-import TopButton from "../components/TopButton.vue";
 
 export default {
-  name: "LoginMain",
+  name: "Gut_00008",
   components: {
     CustomButton,
     AppNav,
     VCalendar,
-    TopButton,
   },
 };
 </script>

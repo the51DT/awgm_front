@@ -1,5 +1,7 @@
 <template>
-  <VCalendar />
+  <div class="calendar">
+    <VCalendar />
+  </div>
 </template>
 
 <script>

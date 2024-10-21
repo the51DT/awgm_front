@@ -296,6 +296,7 @@
       <CustomButton size="md">확인</CustomButton>
     </template>
   </PopupDefault> -->
+  <TopButton style="display:none;"></TopButton>
 </template>
 
 <script>
@@ -309,6 +310,7 @@ import PopupDefault from "@/components/PopupDefault.vue";
 import CustomButton from "@/components/CustomButton.vue";
 import AddBtnHome from "@/components/AddBtnHome.vue";
 import FrontIntro from "../components/FrontIntro.vue";
+import TopButton from "../components/TopButton.vue";
 
 export default {
   name: "Gut_00004",
@@ -322,6 +324,7 @@ export default {
     CustomButton,
     AddBtnHome,
     FrontIntro,
+    TopButton,
   },
   data() {
     return {
@@ -377,5 +380,3 @@ export default {
   },
 };
 </script>
-
-<style scoped></style>
