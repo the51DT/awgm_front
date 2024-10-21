@@ -1,19 +1,11 @@
 /* intro */
+#app:has(.lottie-conts:not(.lottie-conts--green)) {
+  background: linear-gradient(180deg, #EDFFF4 0%, #FAFFF8 43%);
+}
 .lottie-conts {
 	position: relative;
 	margin: 0 -20px;
 	padding: 40px 0 20px;
-	&:before {
-		content:'';
-		background: url("../images/bg_intro.svg");
-		background-size: contain;		
-		width: 100%;
-		height: 100%;
-		position: absolute;
-		top: 0;
-		left: 0;
-		z-index: 0;
-	}
 	&--green {
 		background: #169E4A;
 	}

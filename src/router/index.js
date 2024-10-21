@@ -37,6 +37,7 @@ const dynamicRoutes = menuRoutes.map((route) => {
         component: () =>
           // import(`@/views/Gut${subItem.path.match(/\d+/)[0]}.vue`),
           import(`@/views/Gut${subItem.path.match(/\d+-*\d+/)[0]}.vue`),
+        meta: subItem.meta,
       })),
     };
   }
@@ -55,6 +56,7 @@ menuRoutes.forEach((item) => {
         component: () =>
           // import(`@/views/Gut${subItem.path.match(/\d+/)[0]}.vue`),
           import(`@/views/Gut${subItem.path.match(/\d+-*\d+]/)[0]}.vue`),
+        meta: subItem.meta,
       });
     });
   }
