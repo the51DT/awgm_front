@@ -13,8 +13,10 @@
         </div>
       </div>
     </div>
-    <div class="card card--border card--p16">
-      <VCalendar />
+    <div class="card card--border">
+      <div class="calendar">
+        <VCalendar />
+      </div>
     </div>
     <div class="my__card">
       <div class="card card--green card--p16 card--shadowc2">
