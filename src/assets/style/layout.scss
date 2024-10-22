@@ -110,9 +110,16 @@ body {
   &--white {
     padding-bottom: 104px;
     background-color: #169e4a;
-    *, a {
-    color: #fff;
+    a {
+      color: #fff;
     }
+    .footer__bottom {
+      color: #ffffff99;
+      &--call {
+        color: #ffffffB3;
+      }
+    }
+    
   }
   &__top {
     display: flex;
