@@ -1,7 +1,7 @@
 <template>
-  <AppHeader v-if="showHeader" />
+  <AppHeader v-if="showHeader" :mypage="route.meta.mypage ? true : false" />
   <router-view />
-  <AppFooter v-if="showFooter" />
+  <AppFooter v-if="showFooter" :white="route.meta.white ? true : false" />
 </template>
 
 <script setup>
