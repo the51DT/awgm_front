@@ -1,7 +1,9 @@
 <template>
   <div class="content-area">
     <ContentHead title="나의 인증 현황" :leftArea=true />
-    <VCalendar />
+    <div class="calendar">
+      <VCalendar />
+    </div>
     <CustomButton>
       인증 공유하기
     </CustomButton>

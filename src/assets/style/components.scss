@@ -612,25 +612,23 @@
 
 .home {  
 	&--addBtn {
+    &.hidden {
+      display: none !important;
+    }
 		position: fixed;
-		right: 28px;
-		top: 408px;
+    top: auto;
+    bottom: 104px;
+    right: 16px;
 		padding: 16px 0 24px;
 		text-align: center;
     z-index: 30;
-    &.active {
-      position: fixed;
-      top: auto;
-      bottom: 104px;
-      right: 28px;
-      .home--addBtn-hidden {
-        color: #fff;
+    .home--addBtn-hidden {
+      color: #fff;
+    }
+    .home--addBtn-close {
+      &:after {
+        background-image: url(../images/icon_close_white.svg);
       }
-      .home--addBtn-close {
-        &:after {
-          background-image: url(../images/icon_close_white.svg);
-        }
-		}
     }
 		&-area {
 			position:relative;
@@ -695,10 +693,10 @@
     border-radius: 48px;
     border: 2px solid #169e4a;
     background: #fff;
-    opacity: 0.7;
+    box-shadow: 8px 10px 12px 0px #0000001A;
     position: fixed;
     right: 16px;
-    bottom: 88px;
+    bottom: 104px;
     z-index: 50;
     button {
       width: 100%;
