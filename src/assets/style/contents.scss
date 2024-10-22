@@ -291,7 +291,7 @@
     }
   }
   &-wrap {
-    margin: 48px 0 72px;
+    padding: 48px 0 72px;
     .profile-area {
       &.small {
         .upload-label {
@@ -577,10 +577,15 @@
 				display: none;
 			}
 			display: block;
-			margin-top: 20px;
-      height: 100vh;
+      padding: 0 0 41px;
+      position: relative;
+      top: 13px;
 			.intro {
-        min-height: 360px;
+        height: 360px;
+        > div {
+          width: 100%;
+          height: 100%;
+        }
       }
 		}	
 	}	

@@ -264,7 +264,7 @@
     </div>
 
     <div class="lottie-conts lottie-conts--green">
-      <FrontIntro />
+      <FrontIntro :lottieColorType="fontColorType" />
     </div>    
   </div>
   <AddBtnHome></AddBtnHome>
@@ -330,6 +330,7 @@ export default {
     return {
       imageUrl: null,
       uploadAni: "upload.png",
+      fontColorType: "white",
     }
   },
   setup() {
@@ -373,7 +374,11 @@ export default {
       var stickyCardBoxY = stickyCardBox.offsetTop;    
       
       if( scrollY >= stickyCardBoxY) {
-        stickyCardBox.classList.add("active");                
+        stickyCardBox.classList.add("active");
+
+        for(var i = 0; i < homeCardBox.length; i++) {
+          homeCardBox[i].classList.add("active");
+        }
       } else {
         stickyCardBox.classList.remove("active");
       }
