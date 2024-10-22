@@ -349,11 +349,12 @@
               border-radius: 8px;
               margin-right: 4px;
               &__input {
-                padding: 6px 12px;
+                padding: 5px 12px;
               }
             }
             .custom-btn {
               font-size: 13px;
+              padding: 6px 13px;
             }
           }
           .info-desc {
@@ -592,7 +593,7 @@
       position: sticky;
       bottom: 88px;
       left: 50%;
-      z-index: 90;
+      z-index: 45;
       .card {
         border: 1px solid #169E4A;
       }
@@ -744,9 +745,9 @@
     }
   }
 	&-card-box.active {
-		.card {      
-      transform: translateY(10%);
-      transition: 1s;
+    transform: translateY(10%);
+    transition: 0.5s;
+		.card {
 			.challenge__card--main__top {
 				display: block;
 			}

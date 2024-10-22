@@ -134,7 +134,7 @@
       </div>
     </div>
 
-    <div class="home-card-box active"> <!-- active 클래스에 따라 펼침/닫힘 -->
+    <div class="home-card-box"> <!-- active 클래스에 따라 펼침/닫힘 -->
       <a href="#" class="text-link">
         <p class="card-title">챌린지</p>
       </a>
@@ -174,7 +174,7 @@
       </div>
     </div>
 
-    <div class="home-card-box active"> <!-- active 클래스에 따라 펼침/닫힘 -->
+    <div class="home-card-box"> <!-- active 클래스에 따라 펼침/닫힘 -->
       <div class="text-link">
         <a href="#" class="card-title">나의 팀</a>
       </div>
@@ -343,12 +343,12 @@ export default {
       modules: [Navigation, Pagination, A11y],
     };
   },
-  // mounted() {
-  //   document.addEventListener("scroll", this.scrollEvents, true);
-  // },
-  // beforeUnmount() {
-  //   document.addEventListener("scroll", this.scrollEvents);
-  // },
+  mounted() {
+    document.addEventListener("scroll", this.scrollEvents, true);
+  },
+  beforeUnmount() {
+    document.addEventListener("scroll", this.scrollEvents);
+  },
   methods: {
     onFileChange(event) {
       const file = event.target.files[0];
@@ -363,20 +363,21 @@ export default {
     uploadFn() {
       this.uploadAni = "upload_ani.gif";
     },
-    // scrollEvents(event) {
-    //   let scrollY = window.scrollY;
+    scrollEvents(event) {
+      let scrollY = window.scrollY;
 
-    //   // 추 후 기능 개선 작업 필요 - css , js 애니메이션처리
-    //   var stickyCardBox = document.querySelector(".home-card-box.sticky");
-    //   var stickyCardBoxAll = document.querySelectorAll(".home-card-box");
-    //   var stickyCardBoxY = stickyCardBox.offsetTop;    
+      // 추 후 기능 개선 작업 필요 - css , js 애니메이션처리
       
-    //   if( scrollY >= stickyCardBoxY) {
-    //     stickyCardBox.classList.add("active");
-    //   } else {
-    //     stickyCardBox.classList.remove("active");
-    //   }
-    // }
+      var homeCardBox = document.querySelectorAll(".home-card-box");
+      var stickyCardBox = document.querySelector(".home-card-box.sticky");
+      var stickyCardBoxY = stickyCardBox.offsetTop;    
+      
+      if( scrollY >= stickyCardBoxY) {
+        stickyCardBox.classList.add("active");                
+      } else {
+        stickyCardBox.classList.remove("active");
+      }
+    }
   },
 };
 </script>
