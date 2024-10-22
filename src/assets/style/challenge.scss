@@ -1,3 +1,18 @@
+.pc-only {
+  display: block;
+}
+.mo-only {
+  display: none;
+}
+@media screen and (max-width: 868px) {
+  .pc-only {
+    display: none;
+  }
+  .mo-only {
+    display: block;
+  }
+}
+
 .calendar {
   margin-top: 32px;
 }
@@ -8,6 +23,7 @@
 }
 .challenge {
   position: relative;
+  flex-grow: 1;
   &--main {
     padding-bottom: 112px;
     .custom-btn {
@@ -883,6 +899,7 @@
 }
 .team {
   position: relative;
+  flex-grow: 1;
   .card {
     border-radius: 24px;
   }
@@ -948,6 +965,7 @@
     }
   }
   &--sub {
+    flex-grow: 1;
     margin: 0 -20px;
     padding: 0 20px 38px;
     background-color: #F5F5F5;
