@@ -63,7 +63,7 @@
       </div>
       <div>
         <p>성공조건</p>
-        <p><span class="font--yellow font--800">80%</span> (인증횟수 300회 이상)</p>
+        <p class="font--yellow font--800">80%</p>
       </div>
       <div>
         <p>성공 보상</p>

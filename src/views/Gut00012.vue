@@ -46,7 +46,7 @@
             </div>
             <div class="form-item">
               <h5 class="title">성공조건</h5>
-              <p class="desc"><span class="font--yellow">80%</span> (인증횟수 300회 이상)</p>
+              <p class="desc"><span class="font--800 font--yellow">80%</span></p>
             </div>
             <div class="form-item">
               <h5 class="title">성공 보상</h5>
