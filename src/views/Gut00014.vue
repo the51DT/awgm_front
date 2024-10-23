@@ -60,7 +60,7 @@
           </div>
           <!-- 기간 : type1 -->
           <div class="form-item">
-            <h5 class="title">기간</h5>
+            <h5 class="title">전체 기간</h5>
             <p class="desc">2025.09.01 ~ 2025.11.15 (70일)</p>
           </div>
           <!-- 기간 : type2 -->
