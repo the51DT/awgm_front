@@ -101,7 +101,7 @@ export const menuRoutes = [
         text: "첼린지 미 진행시-Gut00007",
         path: "/첼린지 미 진행시-Gut00007",
         isCompleted: true,
-        meta: { layout: "none" },
+        meta: { layout: "headerOnly" },
       },
       {
         text: "(pu)미션 인증 공유-Gut0000701",

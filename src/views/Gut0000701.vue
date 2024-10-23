@@ -44,7 +44,7 @@
         </div>
       </div>
       <div class="challenge__btn--wrap">
-        <CustomButton color="yellow">카카오로 공유</CustomButton>
+        <CustomButton color="yellow"><img :src="require(`@/assets/images/icon_kakao_login.svg`)">카카오로 공유</CustomButton>
         <CustomButton>전체 이미지 저장</CustomButton>
         <CustomButton>오늘 인증 이미지 저장</CustomButton>
       </div>
