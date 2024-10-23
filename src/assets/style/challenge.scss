@@ -1609,6 +1609,32 @@
     &:last-child {
       margin-bottom: 96px;
     }
+    .safari_title {
+      margin-bottom: 24px;
+      font-size: 18px;
+      font-weight: 800;
+      line-height: 24px;
+      text-align: center;
+      color: #111;
+      .img {
+        position: relative;
+        display: inline-block;
+        width: 21px;
+        img {
+          position: absolute;
+          top: -16px;
+          left: 0;
+          width: 100%;
+        }
+      }
+    }
+    .safari_img {
+      margin: 14px auto 24px;
+      width: 83.333%;
+    }
+    & + .service__label {
+      margin-top: 64px;
+    }
   }
   &__title {
     display: flex;
@@ -1656,6 +1682,28 @@
             background-size: cover;
           }
         }
+        .safari_icon1 {
+          position: relative;
+          display: inline-block;
+          width: 16px;
+          img {
+            position: absolute;
+            left: 0;
+            top: -13px;
+            width: 100%;
+          }
+        }
+        .safari_icon2 {
+          position: relative;
+          display: inline-block;
+          width: 21px;
+          img {
+            position: absolute;
+            left: 0;
+            top: -15px;
+            width: 100%;
+          }
+        }
       }
       &__img {
         height: 40px;
@@ -1681,6 +1729,27 @@
       text-align: center;
       color: #999;
     }
+    .add_icon {
+      position: relative;
+      display: inline-block;
+      width: 24px;
+      img {
+        position: absolute;
+        top: -16px;
+        left: 0;
+        width: 100%;
+      }
+    }
+  }
+  &__label {
+    margin: 24px -20px 0;
+    padding: 12px;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 32px;
+    text-align: center;
+    color: #169E4A;
+    background-color: #E5F6EC;
   }
   &__division {
     width: 144px;
@@ -1720,6 +1789,21 @@
     .img1_4 {
       width: 90%;
       margin-left: -1.11%;
+      justify-self: center;
+    }
+    .img2_1 {
+      width: 62.222%;
+      margin-left: 5.555%;
+      justify-self: center;
+    }
+    .img2_2 {
+      width: 90%;
+      margin-left: -1.111%;
+      justify-self: center;
+    }
+    .img2_3 {
+      width: 62.222%;
+      margin-left: 5.555%;
       justify-self: center;
     }
   }
