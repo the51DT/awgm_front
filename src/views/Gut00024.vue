@@ -176,16 +176,19 @@
       </div>
     </div>
   </div>
+  <TopButton></TopButton>
 </template>
 
 <script>
 import ContentHead from "@/components/ContentHead.vue";
 import tabFn from "../plugins/common.js";
+import TopButton from "../components/TopButton.vue";
 
 export default {
   name: "LoginMain",
   components: {
     ContentHead,
+    TopButton,
   },
   mounted() {
     tabFn.tabFn()
