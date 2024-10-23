@@ -87,7 +87,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import ContentHead from "@/components/ContentHead.vue";
-import tabFn from "../plugins/common.js";
+import tabFn from "@/plugins/common.js";
 
 export default {
   name: "LoginMain",

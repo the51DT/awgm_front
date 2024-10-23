@@ -1,7 +1,7 @@
 <template>
   <PopupDefault>
     <template v-slot:title>
-      개인정보 제 3자 정보제공 이용동의
+      TITLE
     </template>
     <template v-slot:cont>
       <div class="box-wrap">
@@ -23,9 +23,12 @@
       </ul>
     </template>
     <template v-slot:btn>
-      <div class="btn-area ty03">
-        <CustomButton size="sm" color="light">동의하지 않음</CustomButton>
-        <CustomButton size="sm">동의</CustomButton>
+      <div class="btn-area ty04">        
+        <InputField type="checkbox" name="checkbox1"
+        :checkbox="[
+        {id: 'checkbox1_1', value: 'checkbox1_1', checked: false, label: '오늘 하루 열지 않기'},
+        ]"  />
+        <CustomButton size="sm" class="pop-btn-Close">닫기</CustomButton>
       </div>
     </template>
   </PopupDefault> 
@@ -34,13 +37,15 @@
 <script>
 import PopupDefault from "@/components/PopupDefault.vue";
 import CustomButton from "@/components/CustomButton.vue";
+import InputField from "@/components/InputField.vue";
 import layerClose from "@/plugins/common.js";
 
 export default {
-  name: "AppSub",
+  name: "Gut_0000101",
   components: {    
     PopupDefault,
     CustomButton,
+    InputField,
   },
   mounted() {
     layerClose.layerClose("popup");

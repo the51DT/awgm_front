@@ -104,7 +104,7 @@
       <div class="card card--border card--shadow00 card--p20 challenge__card--main">        
         <div class="challenge__card--main__top">
           <p class="font--c33 font--700 font--ls3">아침마다 오 마이 GUT Morning</p>
-          <div>
+          <div class="card--main-info">
             <p class="font--c11 font--700 font--ls2">성공조건 : 팀 인증 <span class="font--green">80%</span> 이상</p>
             <p class="font--c66 font--ls1">(2025.04.01 ~ 2025.06.10)</p>
           </div>
@@ -144,7 +144,7 @@
       <div class="card card--border card--shadow00 card--p20 challenge__card--main">        
         <div class="challenge__card--main__top">
           <p class="font--c33 font--700 font--ls3">아침마다 오 마이 GUT Morning</p>
-          <div>
+          <div class="card--main-info">
             <p class="font--c11 font--700 font--ls2">성공조건 : 팀 인증 <span class="font--green">80%</span> 이상</p>
             <p class="font--c66 font--ls1">(2025.04.01 ~ 2025.06.10)</p>
           </div>
@@ -187,7 +187,7 @@
             <span class="font--ls1">챌린지</span> <!-- 챌린지 또는 상시 노출 (챌린지 : ty-green / 상시 : ty-orange) -->
           </div>
           <p class="font--c33 font--700 font--ls3">지금부터 우리는 GUT Morning</p>
-          <div>
+          <div class="card--main-info">
             <p class="font--c11 font--700 font--ls2">성공조건 : 팀 인증 <span class="font--green">80%</span> 이상</p>
             <p class="font--c66 font--ls1">2025.04.10에 참여</p>
           </div>
@@ -221,7 +221,7 @@
     </div>
 
     <!-- 나의팀 : 상시 case -->
-    <div class="home-card-box active">
+    <div class="home-card-box ty02"> <!-- 나의 팀 일경우, ty02 클래스 추가 -->
       <div class="text-link">
         <a href="#" class="card-title">나의 팀</a>
       </div>
@@ -234,8 +234,7 @@
             <span class="font--ls1">상시</span>
           </div>
           <p class="font--c33 font--700 font--ls3">지금부터 우리는 GUT Morning</p>
-          <div>
-            <p class="font--c11 font--700 font--ls2">성공조건 : 팀 인증 <span class="font--green">80%</span> 이상</p>
+          <div class="card--main-info">
             <p class="font--c66 font--ls1">2025.04.10에 참여</p>
           </div>
           <div class="card--sub-info">
@@ -249,15 +248,7 @@
           </div>
           <div class="card--per"> 
             <div class="card--per__gage" data-width="60%"></div>
-            <div class="card--per__comp" data-width="20%">성공</div>
             <div class="card--per__target ty02" data-left="60%">이전 달 인증률 <span class="font--800">80%</span> <img :src="require(`@/assets/images/icon_target.svg`)"></div>
-            <div class="card--per__tooltip">              
-              <p class="desc--main">현재 <strong class="font--light-yellow">60%</strong>를 달성하였습니다.</p>
-              <p class="desc--sub">목표치까지 <strong class="font--white">20%</strong> 남았습니다.</p>
-              <div class="close--wrap">
-                <button type="button" class="close--btn" title="툴팁 닫기"><span class="blind">닫기</span></button>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -306,11 +297,14 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import AppNav from "@/layouts/AppNav.vue";
+import layerClose from "@/plugins/common.js";
 import PopupDefault from "@/components/PopupDefault.vue";
 import CustomButton from "@/components/CustomButton.vue";
 import AddBtnHome from "@/components/AddBtnHome.vue";
-import FrontIntro from "../components/FrontIntro.vue";
-import TopButton from "../components/TopButton.vue";
+import FrontIntro from "@/components/FrontIntro.vue";
+import TopButton from "@/components/TopButton.vue";
+
+
 
 export default {
   name: "Gut_00004",
@@ -346,6 +340,7 @@ export default {
   },
   mounted() {
     document.addEventListener("scroll", this.scrollEvents, true);
+    layerClose.layerClose("card");
   },
   beforeUnmount() {
     document.addEventListener("scroll", this.scrollEvents);
@@ -365,24 +360,29 @@ export default {
       this.uploadAni = "upload_ani.gif";
     },
     scrollEvents(event) {
-      let scrollY = window.scrollY;
-
-      // 추 후 기능 개선 작업 필요 - css , js 애니메이션처리
+      let scrollY = window.scrollY;      
+      const homeAddBtn = document.querySelector(".home--addBtn");
+      const homeCardBox = document.querySelectorAll(".home-card-box");
+      const stickyCardBox = document.querySelector(".home-card-box.sticky");
+      const stickyCardBoxY = stickyCardBox.offsetTop;
       
-      var homeCardBox = document.querySelectorAll(".home-card-box");
-      var stickyCardBox = document.querySelector(".home-card-box.sticky");
-      var stickyCardBoxY = stickyCardBox.offsetTop;    
       
       if( scrollY >= stickyCardBoxY) {
         stickyCardBox.classList.add("active");
+        homeAddBtn.classList.add("active");
 
-        for(var i = 0; i < homeCardBox.length; i++) {
+        for(let i = 0; i < homeCardBox.length; i++) {
           homeCardBox[i].classList.add("active");
         }
       } else {
         stickyCardBox.classList.remove("active");
+        homeAddBtn.classList.remove("active");
+
+        for(let j = 0; j < homeCardBox.length; j++) {
+          homeCardBox[j].classList.remove("active");
+        }
       }
-    }
+    },
   },
 };
 </script>
