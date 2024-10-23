@@ -6,7 +6,7 @@
         <div class="tag on">것모닝 인증방법 안내</div>
         <div class="tag">팀 만들기 안내</div>
       </div>
-      <div class="tag_cont">
+      <div class="tag_cont on">
         <div class="service__area">
           <div class="service__title">
             <p class="title__num">01</p>
@@ -83,7 +83,7 @@
         </div>
       </div>
 
-      <div class="tag_cont on">
+      <div class="tag_cont">
         <div class="service__label">챌린지 팀 만들기</div>
 
         <div class="service__area">
