@@ -47,10 +47,8 @@ export default {
 
     if(fontColorType == "green") {
       lottiePath = lottieItem.typeGreen[Math.floor(Math.random() * lottieItem.typeGreen.length)].path;
-      console.log("type green: **** " + lottiePath);
     } else if(fontColorType == "white") {
-      lottiePath = lottieItem.typeWhite[Math.floor(Math.random() * lottieItem.typeWhite.length)].path;  
-      console.log("type white: **** " + lottiePath);
+      lottiePath = lottieItem.typeWhite[Math.floor(Math.random() * lottieItem.typeWhite.length)].path;
     }
 
     lottie.loadAnimation({

@@ -21,12 +21,16 @@
 <script>
 import PopupDefault from "@/components/PopupDefault.vue";
 import CustomButton from "@/components/CustomButton.vue";
+import layerClose from "@/plugins/common.js";
 
 export default {
   name: "LoginMain",
   components: {
     PopupDefault,
     CustomButton,
+  },
+  mounted() {
+    layerClose.layerClose("popup");
   }
 };
 </script>

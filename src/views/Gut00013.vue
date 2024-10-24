@@ -222,7 +222,7 @@
 <script>
 import ContentHead from "@/components/ContentHead.vue";
 import InputField from "@/components/InputField.vue";
-import tabFn from "../plugins/common.js";
+import tabFn from "@/plugins/common.js";
 
 export default {
   name: "Gut_00013",

@@ -345,7 +345,8 @@
 <script>
 import ContentHead from "@/components/ContentHead.vue";
 import InputField from "@/components/InputField.vue";
-import tabFn from "../plugins/common.js";
+import tabFn from "@/plugins/common.js";
+import layerClose from "@/plugins/common.js";
 
 export default {
   name: "LoginMain",
@@ -360,7 +361,8 @@ export default {
     InputField,
   },
   mounted() {
-    tabFn.tabFn()
+    tabFn.tabFn();
+    layerClose.layerClose("medal");
   },
 };
 </script>
