@@ -29,6 +29,29 @@
     .custom-btn {
       margin-top: 16px;
     }
+    &__banner {
+      width: 100%;
+      margin-top: 16px;
+      padding: 8px 0;
+      border-radius: 12px;
+      background-color: #F79C22;
+      text-align: center;
+      .tit {
+        font-size: 16px;
+        font-weight: 800;
+        line-height: 24px;
+        color: #FFFA01;
+      }
+      .member {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 16px;
+        color: #fff;
+        .num {
+          font-weight: 800;
+        }
+      }
+    }
     &__not {
       display: flex;
       flex-direction: column;
@@ -96,6 +119,9 @@
         & > div {
           font-size: 16px;
           line-height: 24px;
+          p:not(:first-child) {
+            font-size: 14px;
+          }
         }
       }
       &__per {
@@ -286,6 +312,7 @@
     }
     &--mt8 {
       margin-top: 8px;
+      font-size: 20px;
     }
   }
 }
