@@ -1414,6 +1414,14 @@
         img {
           border-radius: 32px;
         }
+        .delete_btn {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          width: 32px;
+          height: 32px;
+          background-image: url(../images/delete_btn.svg);
+        }
       }
       .text-wrap {
         text-align: center;

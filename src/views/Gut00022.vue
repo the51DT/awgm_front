@@ -5,6 +5,7 @@
       <div class="profile-area small">
         <div class="img-wrap">
           <img :src="require(`@/assets/images/child_profile.png`)" />
+          <button class="delete_btn"></button>
         </div>
         <div class="text-wrap">
           <p class="profile-name">팀장김웨이 주니어</p>

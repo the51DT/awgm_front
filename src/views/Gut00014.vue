@@ -60,7 +60,7 @@
           </div>
           <!-- 기간 : type1 -->
           <div class="form-item">
-            <h5 class="title">기간</h5>
+            <h5 class="title">전체 기간</h5>
             <p class="desc">2025.09.01 ~ 2025.11.15 (70일)</p>
           </div>
           <!-- 기간 : type2 -->
@@ -94,7 +94,7 @@
             <p class="desc">$보상명$</p>
           </div>
           <div class="form-item">
-            <h5 class="title">보상수령방법</h5>
+            <h5 class="title">보상수령방법 <span>(팀 생성 이후 변경불가)</span></h5>
             <div class="radio-wrap">
               <InputField
                 type="radio"
@@ -132,7 +132,7 @@
           <div class="form-item">
             <h5 class="title">성공조건</h5>
             <p class="desc">
-              <span class="font--800 font--yellow">80%</span>
+              <span class="font--800 font--yellow">80% 이상</span>
             </p>
           </div>
           <div class="form-item">
