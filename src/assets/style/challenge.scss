@@ -543,6 +543,9 @@
       font-weight: 800;
       color: #169E4A;
     }
+    strong {
+      font-weight: 800;
+    }
   }
   &__state {
     padding: 0 8px;
@@ -1053,6 +1056,17 @@
           letter-spacing: -0.5px;
           text-align: center;
           color: #111;
+        }
+        &__date {
+          margin-top: 8px;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 24px;
+          text-align: center;
+          color: #666;
+          span {
+            font-weight: 800;
+          }
         }
       }
       & + .card {

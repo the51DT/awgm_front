@@ -41,7 +41,14 @@
                   <div class="card__title">챌린지</div>
                   <div class="card__num">64명</div>
                 </div> 
-                <p class="card__date">2025.09.01 ~ 2025.09.30 (70일)</p>
+                <p class="card__date">
+                  <strong>전체기간</strong><br/>
+                  2025.09.01 ~ 2025.09.30 / 70일
+                </p>
+                <p class="card__date">
+                  <strong>2회차 진행 중</strong><br/>
+                  2025.09.01 ~ 2025.09.30 / 70일
+                </p>
               </div>
             </div>
             <div class="card__bottom">
@@ -175,10 +182,17 @@
               <div class="card__text">
                 <p class="card__text__title">팀명: 우리몸은 GUT Morning</p>
                 <div class="card__info">
-                  <div class="card__title card__title--always">상시</div>
-                  <div class="card__num">99명</div>
+                  <div class="card__title">챌린지</div>
+                  <div class="card__num">64명</div>
                 </div> 
-                <p class="card__date">2024.09.01 ~ 2025.08.31 (365일)</p>
+                <p class="card__date">
+                  <strong>전체기간</strong><br/>
+                  2025.09.01 ~ 2025.09.30 / 70일
+                </p>
+                <p class="card__date">
+                  <strong>2회차 진행</strong><br/>
+                  2025.09.01 ~ 2025.09.30 / 30일
+                </p>
               </div>
             </div>
             <div class="card__bottom">

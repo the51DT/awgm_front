@@ -26,9 +26,9 @@
         <p class="font--c33 font--700 font--ls3">팀명: 아침마다 오 마이 GUT Morning</p>
         <div>
           <p class="font--c11 font--700 font--ls2">성공조건 : 팀 인증 <span class="font--green">80%</span> 이상</p>
-          <p class="font--c66 font--ls1"><span class="font--800">전체기간 : </span>2025.04.01~2025.06.10 / <span class="font--800">70</span>일</p>
-          <p class="font--c66 font--ls1"><span class="font--800">2회차 진행 중 : </span>2025.05.13~2025.06.10 / <span class="font--800">35</span>일</p>
-          <!-- <p class="font--c66 font--ls1"><span class="font--800">3회차 진행 중 : </span>2025.05.13~2025.06.10 / <span class="font--800">35</span>일</p> -->
+          <p class="font--c66 font--ls1"><span class="font--800">전체기간 : </span>2025.04.01~2025.06.10 / 70일</p>
+          <p class="font--c66 font--ls1"><span class="font--800">2회차 진행 중 : </span>2025.05.13~2025.06.10 / 35일</p>
+          <!-- <p class="font--c66 font--ls1"><span class="font--800">3회차 진행 중 : </span>2025.05.13~2025.06.10 / 35일</p> -->
         </div>
       </div>
       <div class="challenge__card--main__per">

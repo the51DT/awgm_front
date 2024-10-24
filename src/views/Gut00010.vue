@@ -19,6 +19,7 @@
       </div>
       <p class="title__big">GUT Morning Korea<br/>Challenge</p>
       <p class="title__main">팀명: 아침마다 오 마이 GUT Morning</p>
+      <p class="title__date"><span>3회차 진행 중 : </span>2025.04.01~2025.06.10 / 70일</p>
     </div>
     <div class="card card--p20 card--shadow00 team--sub__card1">
       <div class="card--per">
@@ -48,7 +49,7 @@
       </div>
       <div>
         <p>전체 기간</p>
-        <p>2025.09.01 ~ 2025.11.15 (70일)</p>
+        <p>2025.09.01 ~ 2025.11.15 / 70일</p>
       </div>
       <div>
         <p>팀 가입일</p>
@@ -80,7 +81,7 @@
       </div>
       <div>
         <p>보상 수령처</p>
-        <InputField type="select" placeholder="선택" :options="['1', '2', '3']"/>
+        <InputField type="select" placeholder="선택" :options="['분당', '강서', '인천', '대전', '청주', '부산', '대구', '창원', '울산', '광주', '전주', '강릉', '제주', '스타시티']"/>
       </div>
     </div>
     <p class="card__head">팀원 인증률 순위</p>
