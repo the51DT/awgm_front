@@ -22,12 +22,16 @@
 <script>
 import PopupDefault from "@/components/PopupDefault.vue";
 import InputField from "@/components/InputField.vue";
+import layerClose from "@/plugins/common.js";
 
 export default {
   name: "LoginMain",
   components: {
     PopupDefault,
     InputField,
+  },
+  mounted() {
+    layerClose.layerClose("popup");
   }
 };
 </script>

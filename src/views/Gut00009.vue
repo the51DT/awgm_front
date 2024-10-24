@@ -234,7 +234,7 @@
 
 <script>
 import AppNav from "@/layouts/AppNav.vue";
-import tabFn from "../plugins/common.js";
+import tabFn from "@/plugins/common.js";
 
 export default {
   name: "LoginMain",

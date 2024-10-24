@@ -277,13 +277,13 @@ export const menuRoutes = [
       },
       {
         text: "500 error-Gut00030",
-        path: "/500 error-Gut00030",
+        path: "/error-Gut00030",
         isCompleted: true,
         meta: { layout: "none" },
       },
       {
         text: "404 error-Gut00031",
-        path: "/404 error-Gut00031",
+        path: "/error-Gut00031",
         isCompleted: true,
         meta: { layout: "none" },
       },

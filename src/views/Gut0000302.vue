@@ -40,6 +40,7 @@
 import PopupDefault from "@/components/PopupDefault.vue";
 import CustomButton from "@/components/CustomButton.vue";
 import InputField from "@/components/InputField.vue";
+import layerClose from "@/plugins/common.js";
 
 export default {
   name: "AppSub",
@@ -47,6 +48,9 @@ export default {
     PopupDefault,
     CustomButton,
     InputField,
+  },
+  mounted() {
+    layerClose.layerClose("popup");
   }
 };
 </script>

@@ -36,14 +36,59 @@ function tabFn() {
   });
 }
 
+function layerClose (type) {
+  if (type === "card") {
+    const closeBtn = document.querySelectorAll(".close--btn");
+
+    closeBtn.forEach((el, i) => {
+      el.addEventListener("click", () => {
+        const cardTooltip = closeBtn[i].closest(".card--per__tooltip");
+        const cardGage =
+          cardTooltip.parentNode.querySelector(".card--per__gage");
+        closeBtn[i].closest(".card--per__tooltip").style.display = "none";
+        cardGage.classList.add("none-arrow");
+      });
+    });
+  } else if (type === "medal") {
+    const medalBtn = document.querySelector(".medal_btn > button");
+    const medalPopBtn = document.querySelector(".medal_btn__pop > button");
+
+    medalBtn.addEventListener("click", function (e) {
+      const target = e.target;
+      const targetMedalPop = target.closest(".medal_btn").querySelector(".medal_btn__pop");
+      if (!targetMedalPop.classList.contains("on")) {
+        targetMedalPop.classList.add("on");
+      }
+    });
+
+    medalPopBtn.addEventListener("click", function (e) {
+      const target = e.target;
+      target.closest(".medal_btn__pop").classList.remove("on");
+    });
+  } else if (type === "popup") {
+    const btnClose = document.querySelector(".popup__box--close");
+
+    btnClose.addEventListener("click", function (e) {
+      const target = e.target;
+      target.closest(".popup").style.display = "none";
+    });    
+
+  } else {
+    // console.log("unknown type");
+  }
+}
+
 dataVaule();
 tabFn();
+layerClose();
 
 window.onload = function() {
   dataVaule();
   tabFn();
+  layerClose();
 }
 
 export default {
-  tabFn
+  tabFn,
+  layerClose,
 };
