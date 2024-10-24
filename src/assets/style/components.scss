@@ -30,16 +30,18 @@
 }
 
 .head-area {
-  margin: 24px 0 0;
+  // margin: 24px 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-left: 32px;
   padding-right: 32px;
+  padding-top: 24px;
   min-height: 32px;
   position: relative;
   &.ty02 {
-    margin: 24px 0;
+    // margin: 24px 0;
+    padding: 24px 0;
   }
   &.ty03 {
     .page-title {
@@ -56,14 +58,14 @@
     &-left {
       display: block;
       position: absolute;
-      top: 0;
       left: 0;
+      height: 32px;
     }
     &-right {
       display: block;
       position: absolute;
-      top: 0;
       right: 0;
+      height: 32px;
       &__icon {
         display: flex;
         height: 32px;

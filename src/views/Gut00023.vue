@@ -1,7 +1,7 @@
 <template>
-  <div class="popup--pull">
+  <div class="popup--full">
     <ContentHead title="챌린지 이력보기" :rightArea=true />
-    <div class="popup--pull__cont">
+    <div class="popup--full__cont">
       <div class="card card--border card--p16 card--shadowc2 challenge__card--history">
         <p class="font--800 font--c11 font--ls1">GUT Morning Korea Challenge</p>
         <div class="card__top">
