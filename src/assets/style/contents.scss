@@ -298,16 +298,10 @@
     .profile-area {
       &.small {
         .upload-label {
+          position: relative;
           display: flex;
           justify-content: center;
-        }
-        .img-wrap {
-          padding: 0;
-          position: relative;
-          box-shadow: 0px 8px 12px 0px #C2C2C240;
-          border-radius: 32px;
-          width: 104px;
-          height: 104px;
+          width: fit-content;
           &::after {
             content : '';
             display: block;
@@ -319,6 +313,15 @@
             background-image: url(../images/icon/ico_file_modify.png);
             background-size: contain;
           }
+        }
+        .img-wrap {
+          padding: 0;
+          position: relative;
+          box-shadow: 0px 8px 12px 0px #C2C2C240;
+          border-radius: 32px;
+          width: 104px;
+          height: 104px;
+          overflow: hidden;
           &.not-ico::after {
             display: none;
           }

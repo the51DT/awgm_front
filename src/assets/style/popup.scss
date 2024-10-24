@@ -1,3 +1,6 @@
+html, body {
+  overflow: overlay;
+}
 .popup {
   position: fixed;
   top: 0;
@@ -96,11 +99,23 @@
       background-image: url(../images/icon_close_white.svg);
     }
   }
-  &--pull {
+  &--full {
     width: 100%;
-    height: 100%;
+    max-width: 868px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: #fff;
     &__cont {
       margin-top: 16px;
+    }
+    &__wrap {
+      background-color: transparent;
+      overflow-y: auto;
+      z-index: 99;
+      &::-webkit-scrollbar {
+        display: none;
+      }
     }
   }
   &--toast {

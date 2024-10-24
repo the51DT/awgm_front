@@ -1,5 +1,10 @@
 <template>
-  <div class="popup" :id=id>
+  <div v-if="full" class="popup popup--full__wrap" :id=id>
+    <div class="popup--full">
+      <slot name="full"></slot>
+    </div>
+  </div>
+  <div v-else class="popup" :id=id>
     <div class="popup__box" :class="sm ? 'popup__box--sm' : ''">
       <button class="popup__box--close">
         <img :src="require(`@/assets/images/icon_close.svg`)">
@@ -25,6 +30,7 @@ export default {
   props: {
     id: String,
     sm: Boolean,
+    full: Boolean,
   }
 }
 </script>
