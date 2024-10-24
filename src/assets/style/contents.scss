@@ -13,7 +13,7 @@
 		background: #fff;
 	}
   .intro {
-    min-height: 500px;
+    min-height: 360px;
   }
 }
 
@@ -607,10 +607,11 @@
         }
       }
     }
-    &.sticky {
-      position: sticky;
-      bottom: 88px;
-      left: 50%;
+    &.fixed {
+      position: fixed;
+      bottom: 30px;
+      width: 828px;
+      max-width: calc(100% - 40px);
       z-index: 45;
       .card {
         border: 1px solid #169E4A;
@@ -874,6 +875,22 @@
       line-height: 24px;
       margin-top: 16px;
       
+    }
+  }
+}
+
+/* loading */
+/* loading 페이지 필요시 사용 - 현재, 로그인 홈에서 사용중 */
+.loading-box-wrap {
+  position: relative;
+  min-height: 100vh;
+  .loading-wrap {
+    position: absolute;
+    top: 190px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .content-etc-img-area {
+      margin-bottom: 0;
     }
   }
 }
