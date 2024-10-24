@@ -2,32 +2,28 @@
   
   <div class="content-etc-wrap"> 
     <div class="content-etc-box">
-      <div class="content-etc-img-area">
-        <img :src="require('@/assets/images/icon/ico_etc04.png')" alt="404 에러페이지 아이콘">
+      <div class="content-etc-img-area active">
+        <img :src="require('@/assets/images/icon/ico_etc02_loading.png')" alt="로딩페이지 아이콘">
       </div>
       <div class="content-etc-text-area">
         <h2 class="page-title">
-          404 Page Not Found
-          <strong class="sub-title">페이지를 표시할 수 없습니다</strong>
+          Loading...
         </h2>
         <p class="page-desc">
-          찾으려는 페이지는 존재하지 않는 페이지입니다. <br/>
-          입력하신 페이지 주소가 정확한지 <br/>
-          다시 한번 확인하여 주시기 바랍니다. 
+          데이터를 불러오고 있습니다. <br/>
+          잠시만 기다려 주세요.
         </p>
       </div>      
     </div>
-    <CustomButton>홈으로</CustomButton>  
   </div>  
 </template>
 
 <script>
-import CustomButton from "@/components/CustomButton.vue";
 
 export default {
-  name: "Gut_00031",
-  components: {
-    CustomButton
+  name: "Gut_00029",
+  components: {  
+
   }
 };
 </script>
