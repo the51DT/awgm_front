@@ -4,7 +4,7 @@
             <button type="button" class="home--addBtn-create">홈 화면에 추가</button>
         </div>
         <button type="button" class="home--addBtn-hidden" @click="closeEvt('hidden')">다시 안보기</button>
-        <button type="button" class="home--addBtn-close" title="닫기" @click="closeEvt()"></button>
+        <button type="button" class="home--addBtn-close" title="닫기" @click="closeEvt('hidden')"></button>
     </div>
 </template>
 
