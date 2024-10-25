@@ -4,7 +4,7 @@ html {
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: "RixSinHead";
+  font-family: 'RixSinHead';
   font-weight: normal;
   background-color: var(--color-basic1);
   letter-spacing: -0.5px;
@@ -157,11 +157,11 @@ input::-webkit-inner-spin-button {
 }
 
 // RixSinHead password 타입 지원하지 않아, 대체 폰트 지정하였음
-input[type=password] {
-    font-family:"Nanum Gothic", sans-serif !important;
-    &::placeholder {
-        font-family: "RixSinHead";
-    }
+input[type='password'] {
+  font-family: 'Nanum Gothic', sans-serif !important;
+  &::placeholder {
+    font-family: 'RixSinHead';
+  }
 }
 
 /* FireFox 

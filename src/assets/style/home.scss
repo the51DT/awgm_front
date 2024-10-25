@@ -10,7 +10,7 @@
       font-weight: 800;
       line-height: 24px;
       letter-spacing: -0.5px;
-      color: #FFFA01;
+      color: #fffa01;
     }
     &__text {
       margin-top: 5px;
@@ -44,13 +44,13 @@
         margin-left: 10px;
       }
       &.select {
-        background-color: #F79C22;
+        background-color: #f79c22;
         font-weight: 800;
         color: #fff;
       }
       &.today {
         background-color: #fff;
-        border: 4px solid #F79C22;
+        border: 4px solid #f79c22;
         font-weight: 800;
         color: #111;
         &::after {
@@ -137,7 +137,7 @@
               font-weight: 700;
               line-height: 24px;
               letter-spacing: -0.5px;
-              color: #169E4A;
+              color: #169e4a;
             }
             .accent {
               position: absolute;
@@ -211,7 +211,7 @@
         border-radius: 10px;
         &-active {
           width: 24px;
-          background: #169E4A;
+          background: #169e4a;
         }
       }
     }

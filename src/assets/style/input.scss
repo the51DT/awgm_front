@@ -11,7 +11,7 @@
     appearance: none;
     outline: none;
     padding: 12px;
-    border: solid 1px #D8D8D8;
+    border: solid 1px #d8d8d8;
     border-radius: 8px;
     font-size: 14px;
     color: #111111;
@@ -20,14 +20,14 @@
       color: #999999;
     }
     &:focus {
-      border: solid 1px #169E4A;
+      border: solid 1px #169e4a;
     }
     &--warn {
       &:not(:placeholder-shown) {
-        border: solid 1px #E42864;
+        border: solid 1px #e42864;
       }
       &:focus {
-        border: solid 1px #E42864;
+        border: solid 1px #e42864;
       }
     }
     &[type='password'] {
@@ -54,7 +54,7 @@
         background-color: #ffffff;
       }
       &:checked {
-        background-color: #169E4A;
+        background-color: #169e4a;
         border: none;
       }
       &--label {
@@ -84,15 +84,15 @@
       cursor: pointer;
       &:checked {
         border: 0;
-				background-image: url(../images/checkbox_arrow_fill.svg);
-				background-size: 16px 16px;
+        background-image: url(../images/checkbox_arrow_fill.svg);
+        background-size: 16px 16px;
         background-position: center;
         &:focus {
-          border: solid 1px #169E4A;
+          border: solid 1px #169e4a;
         }
       }
       &:focus {
-        border: solid 1px #D8D8D8;
+        border: solid 1px #d8d8d8;
       }
       &--label {
         margin-left: 6px;
@@ -139,7 +139,7 @@
       &::before {
         content: attr(placeholder);
         display: block;
-        color: #D8D8D8;
+        color: #d8d8d8;
       }
     }
     &[contenteditable] * {
@@ -154,7 +154,7 @@
         &::before {
           content: attr(placeholder);
           display: block;
-          color: #D8D8D8;
+          color: #d8d8d8;
         }
       }
     }
@@ -172,7 +172,7 @@
     color: #666666;
     margin-top: 8px;
     &--warn {
-      color: #E42864;
+      color: #e42864;
     }
   }
   &__button {
@@ -207,7 +207,7 @@
       position: relative;
       width: 27px;
       height: 16px;
-      background-color: #D8D8D8;
+      background-color: #d8d8d8;
       border-radius: 20px;
       transition: all 0.3s;
       &--circle {
@@ -225,7 +225,7 @@
     }
     &:checked {
       & + .inputField__toggle--label {
-        background-color: #169E4A;
+        background-color: #169e4a;
         .inputField__toggle--label--circle {
           left: 13px;
         }
@@ -252,11 +252,11 @@
       height: 100%;
       color: #111111;
       opacity: 1;
-      background: url("../images/icon_date.svg") no-repeat right 8px center;
+      background: url('../images/icon_date.svg') no-repeat right 8px center;
       background-size: 20px 20px;
     }
     &:disabled {
-      background-color: #F5F5F5;
+      background-color: #f5f5f5;
       color: #999999;
     }
   }

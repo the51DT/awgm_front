@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   overflow: overlay;
 }
 .popup {
@@ -18,7 +19,7 @@ html, body {
     min-width: 280px;
     max-width: 320px;
     padding: 32px 16px 24px;
-    border: 1px solid #D8D8D8;
+    border: 1px solid #d8d8d8;
     border-radius: 16px;
     background-color: #fff;
     &--sm {
@@ -33,7 +34,7 @@ html, body {
       font-size: 15px;
       font-weight: 800;
       line-height: 24px;
-      color: #169E4A;
+      color: #169e4a;
       text-align: center;
       & + .popup__box--middle {
         margin-top: 8px;
@@ -101,7 +102,7 @@ html, body {
   }
   &--full {
     width: 100%;
-    max-width: 868px;
+    max-width: 620px;
     height: auto;
     margin: 0 auto;
     padding: 0 20px;
@@ -145,7 +146,7 @@ html, body {
       gap: 12px;
       padding: 12px 10px;
       border-radius: 8px;
-      border: 1px solid #E5E5E5;
+      border: 1px solid #e5e5e5;
       background-color: #fff;
       font-size: 13px;
       font-weight: 800;
@@ -157,8 +158,8 @@ html, body {
         height: 24px;
       }
       &:hover {
-        border: 1px solid #169E4A;
-        background-color: #E5F6EC;
+        border: 1px solid #169e4a;
+        background-color: #e5f6ec;
       }
     }
     &__caption {
