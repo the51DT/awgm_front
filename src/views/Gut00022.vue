@@ -4,7 +4,7 @@
     <div class="my__profile">
       <div class="profile-area small">
         <div class="img-wrap">
-          <img :src="require(`@/assets/images/child_profile.png`)" />
+          <img :src="require(`@/assets/images/child_profile1.png`)" />
           <button class="delete_btn"></button>
         </div>
         <div class="text-wrap">
