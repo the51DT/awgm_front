@@ -1,5 +1,5 @@
 <template>
-  <PopupDefault full>
+  <PopupDefault full :isTopBtn="true">
     <template v-slot:full>
       <div class="content-area">
         <ContentHead title="서비스 이용안내" :rightArea=true />

@@ -1,5 +1,5 @@
 <template>
-  <div v-if="full" class="popup popup--full__wrap" :id=id>
+  <div v-if="full" class="popup popup--full__wrap" :class="isTopBtn === true ? 'sticky' : ''" :id=id>
     <div class="popup--full">
       <slot name="full"></slot>
     </div>
@@ -31,6 +31,7 @@ export default {
     id: String,
     sm: Boolean,
     full: Boolean,
+    isTopBtn: Boolean,
   }
 }
 </script>
