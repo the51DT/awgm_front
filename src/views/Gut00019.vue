@@ -9,7 +9,7 @@
           <button class="favorites_btn on"></button>
           <div class="card__top">
             <div class="my__list__img">
-              <img :src="require(`@/assets/images/child_profile.png`)">
+              <img :src="require(`@/assets/images/child_profile1.png`)">
             </div>
             <div class="my__list__text">
               <p class="id">qwert123456</p>
@@ -27,7 +27,7 @@
           <button class="favorites_btn"></button>
           <div class="card__top">
             <div class="my__list__img">
-              <img :src="require(`@/assets/images/child_profile.png`)">
+              <img :src="require(`@/assets/images/child_profile2.png`)">
             </div>
             <div class="my__list__text">
               <p class="id">qwert123456</p>
@@ -45,7 +45,7 @@
           <button class="favorites_btn"></button>
           <div class="card__top">
             <div class="my__list__img">
-              <img :src="require(`@/assets/images/child_profile.png`)">
+              <img :src="require(`@/assets/images/child_profile3.png`)">
             </div>
             <div class="my__list__text">
               <p class="id">qwert123456</p>
@@ -63,7 +63,7 @@
           <button class="favorites_btn"></button>
           <div class="card__top">
             <div class="my__list__img">
-              <img :src="require(`@/assets/images/child_profile.png`)">
+              <img :src="require(`@/assets/images/child_profile4.png`)">
             </div>
             <div class="my__list__text">
               <p class="id">qwert123456</p>
@@ -81,7 +81,7 @@
           <button class="delete_btn"></button>
           <div class="card__top">
             <div class="my__list__img">
-              <img :src="require(`@/assets/images/child_profile.png`)">
+              <img :src="require(`@/assets/images/child_profile5.png`)">
             </div>
             <div class="my__list__text">
               <p class="incomplete">미완료 계정 ①</p>
