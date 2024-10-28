@@ -12,9 +12,6 @@
         ></InputField>
       </div>
     </template>
-    <template v-slot:btn>
-      <CustomButton size="md">확인</CustomButton>
-    </template>
   </PopupDefault>
   <div class="popup--toast">
     URL 복사가 완료되었습니다
@@ -23,7 +20,6 @@
 
 <script>
 import PopupDefault from "@/components/PopupDefault.vue";
-import CustomButton from "@/components/CustomButton.vue";
 import InputField from "@/components/InputField.vue";
 import layerClose from "@/plugins/common.js";
 
@@ -31,7 +27,6 @@ export default {
   name: "LoginMain",
   components: {
     PopupDefault,
-    CustomButton,
     InputField,
   },
   mounted() {

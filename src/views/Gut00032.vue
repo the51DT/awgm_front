@@ -20,7 +20,7 @@
               </dl>
               <dl>
                 <dt>인증 횟수</dt>
-                <dd>223/1000회 (9월 22회)</dd>
+                <dd>223/1000회</dd>
               </dl>
               <dl class="align-ctr">
                 <dt>ABO/Member</dt>

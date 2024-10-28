@@ -421,6 +421,7 @@
       }
     }
     &__title {
+      flex-shrink: 0;
       width: 48px;
       margin-right: 12px;
       font-size: 12px;
@@ -678,6 +679,10 @@
       left: 0;
       top: 0;
     }
+  }
+  &__list {
+    font-size: 14px;
+    line-height: 24px;
   }
   &__chart {
     display: flex;

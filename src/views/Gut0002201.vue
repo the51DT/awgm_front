@@ -18,6 +18,7 @@
       </div>
       <p class="title__big">GUT Morning Korea<br/>Challenge</p>
       <p class="title__main">팀명: 아침마다 오 마이 GUT Morning</p>
+      <p class="title__date"><span>3회차 진행 중 : </span>2025.04.01~2025.06.10 / 70일</p>
     </div>
     <div class="card card--p20 card--shadow00 team--sub__card1">
       <div class="card--per">
@@ -42,15 +43,15 @@
         <p class="font--green font--800">챌린지</p>
       </div>
       <div>
-        <p>기간</p>
-        <p>2025.09.01 ~ 2025.11.15 (70일)</p>
+        <p>챌린지 기간</p>
+        <p>2025.09.01 ~ 2025.11.15 / 70일</p>
       </div>
       <div>
         <p>팀 가입일</p>
         <p>2025.09.12</p>
       </div>
       <div>
-        <p>인증 시작일</p>
+        <p>챌린지 시작일</p>
         <p>2025.09.12</p>
       </div>
       <div>
@@ -176,7 +177,7 @@
           <p>40%</p>
         </div>
         <div>
-          <p>팀 인증횟수/목표횟수</p>
+          <p>월 인증횟수/목표횟수</p>
           <p>58/300회</p>
         </div>
       </div>
@@ -188,7 +189,7 @@
       </div>
       <div>
         <p>기간</p>
-        <p>2025.09.01 ~ 2025.11.15 (70일)</p>
+        <p>2025.09.01 ~ 2025.11.15 / 70일</p>
       </div>
       <div>
         <p>팀 가입일</p>
