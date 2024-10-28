@@ -10,7 +10,7 @@
     <div class="team team--main">
       <div class="text__title__wrap">
         <p class="text__title">팀장김웨이님은</p>
-        <p class="text__subtit"><span class="text__subtit--bold">15</span>개 팀에 참여중입니다.</p>
+        <p class="text__subtit"><span class="text__subtit--bold">3</span>개 팀에 참여중입니다.</p>
       </div>
       <div class="tag--wrap">
         <button type="button" class="tag on">전체 (15)</button>
@@ -85,7 +85,7 @@
                   <div class="card__title card__title--always">상시</div>
                   <div class="card__num">99명</div>
                 </div> 
-                <p class="card__date">2024.09.01 ~ 2025.08.31 (365일)</p>
+                <p class="card__date">2024.09.01 ~ 2025.08.31 / 365일</p>
               </div>
             </div>
             <div class="card__bottom">
@@ -121,7 +121,7 @@
                   <div class="card__title card__title--always">상시</div>
                   <div class="card__num">99명</div>
                 </div> 
-                <p class="card__date">2024.09.01 ~ 2025.08.31 (365일)</p>
+                <p class="card__date">2024.09.01 ~ 2025.08.31 / 365일</p>
               </div>
             </div>
             <div class="card__bottom">
@@ -152,7 +152,7 @@
                   <div class="card__title card__title--always">상시</div>
                   <div class="card__num">99명</div>
                 </div> 
-                <p class="card__date">2024.09.01 ~ 2025.08.31 (365일)</p>
+                <p class="card__date">2024.09.01 ~ 2025.08.31</p>
               </div>
             </div>
             <div class="card__bottom">
@@ -196,7 +196,7 @@
               </div>
             </div>
             <div class="card__bottom">
-              <p class="card--per__title">이번달<br />인증률</p>
+              <p class="card--per__title">전체기간<br />인증률</p>
               <div class="card--per">
                 <div class="card--per__gage card--per__gage--end" data-width="70%"></div>
               </div>

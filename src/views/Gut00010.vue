@@ -37,10 +37,10 @@
           <p>58/300회</p>
         </div>
       </div>
-      <div class="card__caption">
-        목표치란?<br>
-        챌린지를 성공하기 위하여 오늘까지 달성해야 할 최소한의 인증률을 말합니다.
-      </div>
+      <ul class="card__list">
+        <li>1회차: 팀 인증률 <span class="font--800">75% (실패)</span></li>
+        <li>2회차: 팀 인증률 <span class="font--800">85% (성공)</span></li>
+      </ul>
     </div>
     <div class="card card--p20 card--shadow00 team--sub__card2">
       <div>
@@ -196,7 +196,7 @@
       </div>
       <div>
         <p>기간</p>
-        <p>2025.09.01 ~ 2025.11.15 (70일)</p>
+        <p>2025.09.01 ~ 2025.11.15 / 70일</p>
       </div>
       <div>
         <p>팀 가입일</p>
