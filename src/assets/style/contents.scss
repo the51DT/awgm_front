@@ -509,6 +509,14 @@
               font-weight: 500;
               line-height: 16px;
               color: #999;
+              a {
+                font-weight: 500;
+                text-decoration: underline;
+                color: #169e4a;
+                &::after {
+                  display: none;
+                }
+              }
             }
           }
         }

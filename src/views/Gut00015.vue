@@ -101,7 +101,7 @@
               <div class="text-box-wrap">
                 <div class="text-wrap">
                   <p class="card-title">다타익선</p>
-                  <p class="card-desc">* 카카오 uid는 개인회원 정보 페이지에서 확인 가능합니다.</p>
+                  <p class="card-desc">* 카카오 UID는 <a href="#">개인회원 정보 페이지</a>에서 확인 가능합니다.</p>
                 </div>
                 <ul class="sub-wrap">
                   <li><CustomButton size="sm">인증하기</CustomButton></li>
