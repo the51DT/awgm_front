@@ -4,7 +4,7 @@
 .mo-only {
   display: none;
 }
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 500px) {
   .pc-only {
     display: none;
   }
@@ -959,7 +959,7 @@
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    max-width: 620px;
+    max-width: 500px;
     height: 88px;
     padding: 0 16px;
     z-index: 9;
@@ -1821,7 +1821,7 @@
     display: grid;
     margin: 24px -20px 0;
     width: 100vw;
-    max-width: 620px;
+    max-width: 500px;
     height: auto;
     overflow: hidden;
     .img1_1 {
