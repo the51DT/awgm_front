@@ -40,6 +40,28 @@
       >
         <swiper-slide>
           <div class="slider-wrap">
+            <div class="card--img card--shadowc2">
+              <img
+                class="card--img__comp ani"
+                :src="require(`@/assets/images/challenge_comp.png`)"
+              />
+              <div class="card--img__uploaded">
+                <img :src="require(`@/assets/images/challenge_card_bg.png`)" />
+              </div>
+              <div class="card--img__text">
+                <p class="card--img__text__date">2024.09.23 (월)</p>
+                <p class="card--img__text__title">나의 미션 인증 횟수</p>
+                <p class="card--img__text__num"><span>2</span>회</p>
+              </div>
+              <div class="btn_wrap">
+                <button class="share-btn"></button>
+                <button class="replace-btn"></button>
+              </div>
+            </div>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="slider-wrap">
             <div class="profile-area">
               <div
                 class="upload-wrap card--shadowc2 card--img"
@@ -82,28 +104,6 @@
                   <button class="share-btn"></button>
                   <button class="replace-btn"></button>
                 </div>
-              </div>
-            </div>
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div class="slider-wrap">
-            <div class="card--img card--shadowc2">
-              <img
-                class="card--img__comp ani"
-                :src="require(`@/assets/images/challenge_comp.png`)"
-              />
-              <div class="card--img__uploaded">
-                <img :src="require(`@/assets/images/challenge_card_bg.png`)" />
-              </div>
-              <div class="card--img__text">
-                <p class="card--img__text__date">2024.09.23 (월)</p>
-                <p class="card--img__text__title">나의 미션 인증 횟수</p>
-                <p class="card--img__text__num"><span>2</span>회</p>
-              </div>
-              <div class="btn_wrap">
-                <button class="share-btn"></button>
-                <button class="replace-btn"></button>
               </div>
             </div>
           </div>
