@@ -697,6 +697,9 @@
       }
       .challenge__card--main__top {
         display: block;
+        & > p {
+          padding-right: 48px;
+        }
       }
       &--main-info {
         margin-top: 8px;

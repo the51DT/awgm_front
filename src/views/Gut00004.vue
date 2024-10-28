@@ -36,7 +36,7 @@
         :pagination="{ clickable: true }"
         @swiper="onSwiper"
         @slideChange="onSlideChange"
-        @reachEnd="uploadFn"
+        dir="rtl"
       >
         <swiper-slide>
           <div class="slider-wrap">
@@ -69,7 +69,7 @@
                     alt="업로드된 이미지"
                   />
                   <div v-else class="upload_ani">
-                    <img :src="require(`@/assets/images/${uploadAni}`)" />
+                    <img :src="require(`@/assets/images/upload_ani.gif`)" />
                   </div>
                 </label>
                 <p v-if="!imageUrl" class="date">2025년 5월 16일 (금)</p>
@@ -339,7 +339,6 @@ export default {
   data() {
     return {
       imageUrl: null,
-      uploadAni: "upload.png",
       fontColorType: "white",
     };
   },
@@ -369,9 +368,6 @@ export default {
         };
         reader.readAsDataURL(file);
       }
-    },
-    uploadFn() {
-      this.uploadAni = "upload_ani.gif";
     },
     scrollEvents(event) {
       //1024 수정 : 클래스 구조 변경에 따른 내용 수정
