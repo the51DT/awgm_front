@@ -1885,3 +1885,29 @@
     }
   }
 }
+
+.terms {
+  &__cont {
+    margin: 16px -20px 0;
+    padding: 20px;
+    border-radius: 32px 32px 0px 0px;
+    background-color: #fff;
+  }
+  &__btn {
+    position: sticky;
+    bottom: 20px;
+    margin-top: 84px;
+    &::before {
+      position: absolute;
+      bottom: -20px;
+      content: '';
+      display: block;
+      margin: 0 -20px;
+      width: 100vw;
+      max-width: 500px;
+      height: 160px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 50%);
+      z-index: -1;
+    }
+  }
+}
