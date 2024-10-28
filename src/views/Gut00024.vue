@@ -131,7 +131,7 @@
               </div>
             </div>
 
-            <div class="service__label">상시 팀 만들기</div>
+            <!-- <div class="service__label">상시 팀 만들기</div>
 
             <div class="service__area">
               <div class="service__title">
@@ -174,7 +174,7 @@
               <div class="service__img">
                 <img class="img2_3" :src="require('@/assets/images/service2_6.png')">
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
