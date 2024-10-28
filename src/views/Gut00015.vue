@@ -151,11 +151,13 @@
       </div>
     </template>
   </PopupDefault>
+  <AppNav :my="true"></AppNav>
 </template>
 <script>
 import CustomButton from "@/components/CustomButton.vue";
 import InputField from '@/components/InputField.vue';
 import PopupDefault from "@/components/PopupDefault.vue";
+import AppNav from "@/layouts/AppNav.vue";
 
 export default {
   name: "Gut_00015",
@@ -170,6 +172,7 @@ export default {
     CustomButton,
     InputField,
     PopupDefault,
+    AppNav,
   },
   methods: {
     onFileChange(event) {
