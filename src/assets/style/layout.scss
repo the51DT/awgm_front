@@ -98,12 +98,22 @@ body {
   }
 }
 .footer {
-  padding: 32px 0;
-  // position: fixed;
-  // bottom: 0;
-  width: 100%;
+  margin: 0 -20px;
+  padding: 32px 20px;
+  width: 100vw;
+  max-width: 500px;
   &--white {
-    color: #fff;
+    padding-bottom: 104px;
+    background-color: #169e4a;
+    a {
+      color: #fff;
+    }
+    .footer__bottom {
+      color: #ffffff99;
+      &--call {
+        color: #ffffffB3;
+      }
+    }
   }
   &__top {
     display: flex;

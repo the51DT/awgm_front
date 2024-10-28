@@ -291,7 +291,7 @@
     }
   }
   &-wrap {
-    padding: 48px 0 72px;
+    padding: 48px 0 140px;
     .profile-area {
       &.small {
         .upload-label {
@@ -697,6 +697,9 @@
       }
       .challenge__card--main__top {
         display: block;
+        & > p {
+          padding-right: 48px;
+        }
       }
       &--main-info {
         margin-top: 8px;
