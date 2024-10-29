@@ -1406,6 +1406,7 @@
       letter-spacing: -0.5px;
       text-align: left;
       color: #111;
+      word-break: break-all;
       &::before {
         content: 'Q';
         font-size: 18px;
