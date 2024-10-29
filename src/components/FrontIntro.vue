@@ -28,23 +28,17 @@ export default {
     let lottiePath = "";
     let fontColorType = "";
     let lottieItem = {
-
       typeGreen : [
-        {path: "https://lottie.host/1207fb35-4ac4-4f1c-979d-bfc773303977/F2ptuVKnVK.json"},
-        {path: "https://lottie.host/b5fe3092-e245-474d-b760-a892d8665a0a/NNqHNlLL2S.json"},
-        {path: "https://lottie.host/143d01f1-13c7-485c-84ec-46d2a12c4473/W6QABDh4RY.json"},
-        {path: "https://lottie.host/88a3acf4-6312-4d56-892c-e76fb301a41f/e7dQZ0Y9V3.json"},
+        {path: "/json/gut_green.json"},
       ],
       typeWhite : [
-        {path: "https://lottie.host/032b0ec2-ada4-40ae-a88c-c77598fc0fa2/ptWCAmtzvJ.json"},
-        {path: "https://lottie.host/20e71e3a-2731-451d-9acd-afe7c49390ed/hVG2tM1hFE.json"},
-        {path: "https://lottie.host/5b7e9799-ed2d-45f7-bc02-dcd132c8033a/r0nPTzQpMl.json"},
-        {path: "https://lottie.host/b27c1973-a5b6-4490-98dc-c1da7c0db8d4/c2TweErqpP.json"},
+        {path: "/json/gut_white.json"},
       ]
     };
     
     fontColorType = document.querySelector(".intro").getAttribute("id");
 
+    // 여러개의 로티이미지 랜덤 json 노출 원할 경우 위해 기존 로직 호출 구조 남겨놓았음 (배열에 값 1개 있을 경우, 1개만 노출됨)
     if(fontColorType == "green") {
       lottiePath = lottieItem.typeGreen[Math.floor(Math.random() * lottieItem.typeGreen.length)].path;
     } else if(fontColorType == "white") {
