@@ -1,5 +1,5 @@
 <template>
-  <PopupDefault full :isTopBtn="true">
+  <PopupDefault full>
     <template v-slot:full>
       <div class="terms bg-case">
         <ContentHead title="이용약관" :rightArea=true />
