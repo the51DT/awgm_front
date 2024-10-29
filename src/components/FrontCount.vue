@@ -15,20 +15,28 @@
 export default {
   name: "FrontCount",
   props: {
-    desc : String,
-    total : Number,
+    desc: String,
+    total: {
+      Number,
+      required: true,
+    },
+  },
+  computed: {
+    Total() {
+      return this.total.toLocaleString();
+    },
   },
   methods: {
     countingType() {
       let countNum = document.querySelector(".count-num");
-      let total = document.querySelector(".count-num").dataset.total;
+      let total = this.total;
       let now = total;
       const handle = setInterval(() => {
-        countNum.innerHTML = Math.ceil(total - now);
+        countNum.innerHTML = Math.ceil(total - now).toLocaleString();
         if (now < 1) {
           clearInterval(handle);
         }
-        const step = now / 10;
+        const step = now / 2;
         now -= step;
       }, 50);
     },
@@ -38,5 +46,3 @@ export default {
   },
 };
 </script>
-
-<style scoped></style>

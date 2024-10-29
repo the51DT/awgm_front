@@ -2,7 +2,10 @@
   <div class="loading-box-wrap">
     <div class="loading-wrap">
       <div class="content-etc-img-area active">
-        <img :src="require('@/assets/images/icon/ico_etc02_loading.png')" alt="로딩페이지 아이콘">
+        <img
+          :src="require('@/assets/images/icon/ico_etc02_loading.png')"
+          alt="로딩페이지 아이콘"
+        />
       </div>
     </div>
     <div class="content-area">
@@ -11,7 +14,7 @@
       </div>
 
       <div class="intro-text">
-        <FrontCount desc="명이 함께하고 있어요!" total="1000" />
+        <FrontCount desc="명이 함께하고 있어요!" total="16160" />
       </div>
 
       <KakaoButton />
@@ -29,8 +32,8 @@ import ChildButton from "@/components/ChildButton.vue";
 export default {
   name: "Gut_00001",
   data() {
-    return {    
-        fontColorType : "green",
+    return {
+      fontColorType: "green",
     };
   },
   components: {
@@ -44,14 +47,16 @@ export default {
   },
   methods: {
     loadingStart() {
-      const contentArea = document.querySelector(".content-area")
-      const loadingArea = document.querySelector(".loading-box-wrap .loading-wrap");
+      const contentArea = document.querySelector(".content-area");
+      const loadingArea = document.querySelector(
+        ".loading-box-wrap .loading-wrap"
+      );
       contentArea.style.display = "none";
       setTimeout(() => {
         loadingArea.style.display = "none";
       }, 500);
-      contentArea.style.display = "block";  
-    }
-  }
+      contentArea.style.display = "block";
+    },
+  },
 };
 </script>
