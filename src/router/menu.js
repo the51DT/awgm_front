@@ -61,12 +61,6 @@ export const menuRoutes = [
         meta: { layout: "", white: true },
       },
       {
-        text: "팀활동 종료-Gut0000401",
-        path: "/팀활동 종료-Gut0000401",
-        isCompleted: true,
-        meta: { layout: "none" },
-      },
-      {
         text: "나의 인증 현황-Gut0000-7",
         path: "/나의 인증 현황-Gut0000-7",
         isCompleted: true,
