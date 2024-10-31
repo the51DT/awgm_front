@@ -11,6 +11,18 @@ export const menuRoutes = [
         meta: { layout: "footerOnly" },
       },
       {
+        text: "로그인-Gut00001-1",
+        path: "/로그인-Gut00001111",
+        isCompleted: true,
+        meta: { layout: "footerOnly" },
+      },
+      {
+        text: "로그인-Gut00001-1.5",
+        path: "/로그인-Gut00001112",
+        isCompleted: true,
+        meta: { layout: "footerOnly" },
+      },
+      {
         text: "자녀계정 로그인-Gut00002",
         path: "/자녀계정 로그인-Gut00002",
         isCompleted: true,
