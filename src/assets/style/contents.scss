@@ -13,7 +13,7 @@
     background: #fff;
   }
   .intro {
-    min-height: 360px;
+    // min-height: 360px;
   }
 }
 
@@ -875,7 +875,7 @@
 /* loading 페이지 필요시 사용 - 현재, 로그인 홈에서 사용중 */
 .loading-box-wrap {
   position: relative;
-  min-height: 100vh;
+  // min-height: 100vh;
   .loading-wrap {
     position: absolute;
     top: 190px;
