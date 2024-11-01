@@ -1,15 +1,10 @@
 function dataVaule () {
-  var addRule = (function (sheet) {
-    if (!sheet) return;
-    return function (selector, styles) {
-      if (sheet.insertRule)
-        return sheet.insertRule(
-          selector + " {" + styles + "}",
-          sheet.cssRules.length
-        );
-      if (sheet.addRule) return sheet.addRule(selector, styles);
-    };
-  })(document.styleSheets[document.styleSheets.length - 1]);
+  var style = document.createElement("style");
+  document.head.appendChild(style);
+
+  var addRule = function (selector, styles) {
+    style.appendChild(document.createTextNode(selector + " {" + styles + "}"));
+  };
 
   var i = 101;
   while (i--) {
@@ -82,11 +77,11 @@ dataVaule();
 tabFn();
 layerClose();
 
-window.onload = function() {
+document.addEventListener("DOMContentLoaded", function () {
   dataVaule();
   tabFn();
   layerClose();
-}
+});
 
 export default {
   tabFn,

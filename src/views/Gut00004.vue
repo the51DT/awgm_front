@@ -356,7 +356,7 @@ export default {
     layerClose.layerClose("card");
   },
   beforeUnmount() {
-    document.addEventListener("scroll", this.scrollEvents);
+    document.removeEventListener("scroll", this.scrollEvents, true);
   },
   methods: {
     onFileChange(event) {
