@@ -12,13 +12,13 @@
     </div>
 
     <div class="home__date">
-      <div class="date select">일</div>
-      <div class="date select">월</div>
-      <div class="date">화</div>
-      <div class="date select">수</div>
-      <div class="date select">목</div>
-      <div class="date select today">금</div>
-      <div class="date">토</div>
+      <button data-day="sun" class="date">일</button>
+      <button data-day="mon" class="date">월</button>
+      <button data-day="tue" class="date">화</button>
+      <button data-day="wed" class="date">수</button>
+      <button data-day="thu" class="date">목</button>
+      <button data-day="fri" class="date today">금</button>
+      <button data-day="sat" class="date">토</button>
       <button class="date--more">
         <img :src="require(`@/assets/images/icon_plus.svg`)" /><span
           >더보기</span
@@ -38,7 +38,7 @@
         @slideChange="onSlideChange"
         dir="rtl"
       >
-        <swiper-slide>
+        <swiper-slide data-day="fri">
           <div class="slider-wrap">
             <div class="profile-area">
               <div
@@ -86,11 +86,33 @@
             </div>
           </div>
         </swiper-slide>
-        <swiper-slide>
+        <swiper-slide data-day="thu">
           <div class="slider-wrap">
             <div class="card--img card--shadowc2">
               <img
                 class="card--img__comp ani"
+                :src="require(`@/assets/images/challenge_comp.png`)"
+              />
+              <div class="card--img__uploaded">
+                <img :src="require(`@/assets/images/card_profile.png`)" />
+              </div>
+              <div class="card--img__text">
+                <p class="card--img__text__date">2024.00.00 (목)</p>
+                <p class="card--img__text__title">나의 미션 인증 횟수</p>
+                <p class="card--img__text__num"><span>2</span>회</p>
+              </div>
+              <div class="btn_wrap">
+                <button class="share-btn"></button>
+                <button class="replace-btn"></button>
+              </div>
+            </div>
+          </div>
+        </swiper-slide>
+        <swiper-slide data-day="mon">
+          <div class="slider-wrap">
+            <div class="card--img card--shadowc2">
+              <img
+                class="card--img__comp"
                 :src="require(`@/assets/images/challenge_comp.png`)"
               />
               <div class="card--img__uploaded">
@@ -311,6 +333,7 @@
 <script>
 import { Navigation, Pagination, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/vue";
+import { ref } from 'vue';
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -343,17 +366,22 @@ export default {
     };
   },
   setup() {
-    const onSwiper = (swiper) => {};
+    const homeSwiper = ref(null);
+    const onSwiper = (swiper) => {
+      homeSwiper.value = swiper;
+    };
     const onSlideChange = () => {};
     return {
       onSwiper,
       onSlideChange,
       modules: [Navigation, Pagination, A11y],
+      homeSwiper,
     };
   },
   mounted() {
     document.addEventListener("scroll", this.scrollEvents, true);
     layerClose.layerClose("card");
+    this.dayBtn();
   },
   beforeUnmount() {
     document.removeEventListener("scroll", this.scrollEvents, true);
@@ -391,6 +419,24 @@ export default {
         stickyCardBox.classList.add("sticky");
         homeAddBtn.classList.remove("active");
       }
+    },
+    dayBtn() {
+      const dayBtn = document.querySelectorAll(".home__date .date");
+      const swiperList = Array.from(document.querySelectorAll(".home .swiper__area .swiper-slide"))
+      dayBtn.forEach((el) => {
+        const dayValue = el.dataset.day;
+        const matchIndex = swiperList.findIndex(slide => slide.dataset.day === dayValue)
+
+        if (matchIndex !== -1) {
+          el.classList.add("select");
+        }
+
+        el.addEventListener("click", () => {
+          if (matchIndex !== -1) {
+            this.homeSwiper.slideTo(matchIndex);
+          }
+        });
+      });
     },
   },
 };
