@@ -380,8 +380,11 @@ export default {
       const stickyNotCardBox = document.querySelectorAll(
         ".home-card-box:not(.home-card-box.sticky)"
       );
+      const stickyArea = document.querySelector(".home--bot-section");
+      const stickyAreaY = stickyArea.offsetTop;
+      const winHeight = window.innerHeight;
 
-      if (scrollY >= stickyCardBoxY) {
+      if (scrollY + (winHeight / 2) >= stickyAreaY) {
         stickyCardBox.classList.remove("sticky");
         homeAddBtn.classList.add("active");
       } else {
