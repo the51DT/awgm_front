@@ -17,8 +17,8 @@
       <button data-day="tue" class="date">화</button>
       <button data-day="wed" class="date">수</button>
       <button data-day="thu" class="date">목</button>
-      <button data-day="fri" class="date today">금</button>
-      <button data-day="sat" class="date">토</button>
+      <button data-day="fri" class="date">금</button>
+      <button data-day="sat" class="date today">토</button>
       <button class="date--more">
         <img :src="require(`@/assets/images/icon_plus.svg`)" /><span
           >더보기</span
@@ -38,7 +38,7 @@
         @slideChange="onSlideChange"
         dir="rtl"
       >
-        <swiper-slide data-day="fri">
+        <swiper-slide data-day="sat">
           <div class="slider-wrap">
             <div class="profile-area">
               <div
@@ -72,7 +72,7 @@
                     <img :src="require(`@/assets/images/upload_ani.gif`)" />
                   </div>
                 </label>
-                <p v-if="!imageUrl" class="date">2025년 5월 16일 (금)</p>
+                <p v-if="!imageUrl" class="date">2025년 5월 16일 (토)</p>
                 <div v-if="imageUrl" class="card--img__text">
                   <p class="card--img__text__date">2024.09.23 (월)</p>
                   <p class="card--img__text__title">나의 미션 인증 횟수</p>
@@ -82,6 +82,28 @@
                   <button class="share-btn"></button>
                   <button class="replace-btn"></button>
                 </div>
+              </div>
+            </div>
+          </div>
+        </swiper-slide>
+        <swiper-slide data-day="fri">
+          <div class="slider-wrap">
+            <div class="card--img card--shadowc2">
+              <img
+                class="card--img__comp"
+                :src="require(`@/assets/images/challenge_comp.png`)"
+              />
+              <div class="card--img__uploaded">
+                <img :src="require(`@/assets/images/challenge_card_bg.png`)" />
+              </div>
+              <div class="card--img__text">
+                <p class="card--img__text__date">2024.09.23 (금)</p>
+                <p class="card--img__text__title">나의 미션 인증 횟수</p>
+                <p class="card--img__text__num"><span>2</span>회</p>
+              </div>
+              <div class="btn_wrap">
+                <button class="share-btn"></button>
+                <button class="replace-btn"></button>
               </div>
             </div>
           </div>
@@ -108,6 +130,50 @@
             </div>
           </div>
         </swiper-slide>
+        <swiper-slide data-day="wed">
+          <div class="slider-wrap">
+            <div class="card--img card--shadowc2">
+              <img
+                class="card--img__comp"
+                :src="require(`@/assets/images/challenge_comp.png`)"
+              />
+              <div class="card--img__uploaded">
+                <img :src="require(`@/assets/images/challenge_card_bg.png`)" />
+              </div>
+              <div class="card--img__text">
+                <p class="card--img__text__date">2024.09.23 (수)</p>
+                <p class="card--img__text__title">나의 미션 인증 횟수</p>
+                <p class="card--img__text__num"><span>2</span>회</p>
+              </div>
+              <div class="btn_wrap">
+                <button class="share-btn"></button>
+                <button class="replace-btn"></button>
+              </div>
+            </div>
+          </div>
+        </swiper-slide>
+        <swiper-slide data-day="tue">
+          <div class="slider-wrap">
+            <div class="card--img card--shadowc2">
+              <img
+                class="card--img__comp"
+                :src="require(`@/assets/images/challenge_comp.png`)"
+              />
+              <div class="card--img__uploaded">
+                <img :src="require(`@/assets/images/challenge_card_bg.png`)" />
+              </div>
+              <div class="card--img__text">
+                <p class="card--img__text__date">2024.09.23 (화)</p>
+                <p class="card--img__text__title">나의 미션 인증 횟수</p>
+                <p class="card--img__text__num"><span>2</span>회</p>
+              </div>
+              <div class="btn_wrap">
+                <button class="share-btn"></button>
+                <button class="replace-btn"></button>
+              </div>
+            </div>
+          </div>
+        </swiper-slide>
         <swiper-slide data-day="mon">
           <div class="slider-wrap">
             <div class="card--img card--shadowc2">
@@ -120,6 +186,28 @@
               </div>
               <div class="card--img__text">
                 <p class="card--img__text__date">2024.09.23 (월)</p>
+                <p class="card--img__text__title">나의 미션 인증 횟수</p>
+                <p class="card--img__text__num"><span>2</span>회</p>
+              </div>
+              <div class="btn_wrap">
+                <button class="share-btn"></button>
+                <button class="replace-btn"></button>
+              </div>
+            </div>
+          </div>
+        </swiper-slide>
+        <swiper-slide data-day="sun">
+          <div class="slider-wrap">
+            <div class="card--img card--shadowc2">
+              <img
+                class="card--img__comp"
+                :src="require(`@/assets/images/challenge_comp.png`)"
+              />
+              <div class="card--img__uploaded">
+                <img :src="require(`@/assets/images/challenge_card_bg.png`)" />
+              </div>
+              <div class="card--img__text">
+                <p class="card--img__text__date">2024.09.23 (일)</p>
                 <p class="card--img__text__title">나의 미션 인증 횟수</p>
                 <p class="card--img__text__num"><span>2</span>회</p>
               </div>
