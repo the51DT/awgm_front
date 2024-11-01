@@ -82,6 +82,7 @@
       <div>
         <p>보상 수령처</p>
         <InputField type="select" placeholder="선택" :options="['분당', '강서', '인천', '대전', '청주', '부산', '대구', '창원', '울산', '광주', '전주', '강릉', '제주', '스타시티']"/>
+        <button>저장</button>
       </div>
     </div>
     <p class="card__head">팀원 인증률 순위</p>

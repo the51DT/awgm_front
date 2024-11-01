@@ -1134,6 +1134,18 @@
           height: 40px;
           padding: 8px 40px 8px 12px;
         }
+        button {
+          flex-shrink: 0;
+          margin-left: -2px;
+          padding: 8px 12.5px;
+          height: 100%;
+          border-radius: 8px;
+          background-color: #666;
+          font-size: 13px;
+          font-weight: 800;
+          line-height: 24px;
+          color: #fff;
+        }
       }
     }
     &__card3 {
