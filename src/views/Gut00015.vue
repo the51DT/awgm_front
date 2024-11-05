@@ -92,6 +92,20 @@
             </div>
           </div>
         </div>
+        <!-- ABO 미인증 시 -->
+        <div class="my-page-conts-item">
+          <div class="title-wrap">
+            <p class="title">자녀계정 관리</p>
+          </div>
+          <div class="card card--shadow00">
+            <div class="text-box-wrap">
+              <div class="text-wrap">
+                <p class="card-desc">자녀계정 등록을 위해서는 ABO/ Member 회원 인증이 필요합니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- //ABO 미인증 시 -->
         <div class="my-page-conts-item">
           <div class="title-wrap">
             <p class="title">계정 연동 정보</p>
