@@ -86,7 +86,7 @@
             </div>
           </div>
         </swiper-slide>
-        <swiper-slide data-day="fri">
+        <!-- <swiper-slide data-day="fri">
           <div class="slider-wrap">
             <div class="card--img card--shadowc2">
               <img
@@ -217,7 +217,7 @@
               </div>
             </div>
           </div>
-        </swiper-slide>
+        </swiper-slide> -->
       </swiper>
     </div>
   </div>
