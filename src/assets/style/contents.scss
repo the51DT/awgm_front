@@ -172,6 +172,10 @@
           right: 0;
         }
       }
+      img {
+        border-radius: 16px;
+        object-fit: cover;
+      }
     }
     .card {
       &__img {
