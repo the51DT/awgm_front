@@ -86,7 +86,7 @@
             </div>
           </div>
         </swiper-slide>
-        <!-- <swiper-slide data-day="fri">
+        <swiper-slide data-day="fri">
           <div class="slider-wrap">
             <div class="card--img card--shadowc2">
               <img
@@ -94,7 +94,7 @@
                 :src="require(`@/assets/images/challenge_comp.png`)"
               />
               <div class="card--img__uploaded">
-                <img :src="require(`@/assets/images/challenge_card_bg.png`)" />
+                <img :src="require(`@/assets/images/home_nodata.png`)" />
               </div>
               <div class="card--img__text">
                 <p class="card--img__text__date">2024.09.23 (금)</p>
@@ -217,7 +217,7 @@
               </div>
             </div>
           </div>
-        </swiper-slide> -->
+        </swiper-slide>
       </swiper>
     </div>
   </div>
