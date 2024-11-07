@@ -994,6 +994,9 @@
     }
     &__sub {
       padding-bottom: 32px;
+      &:only-child {
+        padding-bottom: 128px;
+      }
     }
     &__gray {
       margin: 0 -20px 0;
