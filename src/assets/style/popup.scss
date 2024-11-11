@@ -82,6 +82,9 @@ body {
     .box-wrap {
       margin-top: 24px;
     }
+    .box-gray {
+      padding: 16px 15.5px;
+    }
   }
   &__select {
     margin-top: 24px;
@@ -103,7 +106,7 @@ body {
   &--full {
     width: 100%;
     max-width: 500px;
-    height: auto;
+    height: 100%;
     margin: 0 auto;
     padding: 0 20px;
     background-color: #fff;

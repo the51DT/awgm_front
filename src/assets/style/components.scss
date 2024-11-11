@@ -172,9 +172,13 @@
       }
     }
     .terms-conts {
+      font-size: 12px;
+      line-height: 16px;
       text-align: left;
-      height: 144px;
-      overflow-y: scroll;
+      color: #666;
+      span {
+        font-weight: 800;
+      }
     }
   }
 }
