@@ -103,9 +103,6 @@
               <p class="name">회원탈퇴가 진행중에 있습니다.</p>
             </div>
           </div>
-          <div class="btn_wrap">
-            <CustomButton color="white">자녀계정 등록 링크 다시 공유</CustomButton>
-          </div>
         </div>
       </div>
       <div class="my__list--add">
