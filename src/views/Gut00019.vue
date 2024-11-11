@@ -92,6 +92,21 @@
             <CustomButton color="white">자녀계정 등록 링크 다시 공유</CustomButton>
           </div>
         </div>
+        <div class="card card--border card--p16 card--shadow00">
+          <div class="card__top">
+            <div class="my__list__img">
+              <img :src="require(`@/assets/images/child_profile5.png`)">
+            </div>
+            <div class="my__list__text">
+              <p class="incomplete">자녀 계정 ID</p>
+              <p class="id">qwert123456</p>
+              <p class="name">회원탈퇴가 진행중에 있습니다.</p>
+            </div>
+          </div>
+          <div class="btn_wrap">
+            <CustomButton color="white">자녀계정 등록 링크 다시 공유</CustomButton>
+          </div>
+        </div>
       </div>
       <div class="my__list--add">
         <CustomButton>자녀계정 생성하기 <img :src="require(`@/assets/images/icon_plus_white.svg`)"></CustomButton>
