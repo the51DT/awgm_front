@@ -493,12 +493,16 @@ export default {
       const stickyAreaY = stickyArea.offsetTop;
       const winHeight = window.innerHeight;
 
-      if (scrollY + (winHeight / 2) >= stickyAreaY) {
-        stickyCardBox.classList.remove("sticky");
-        homeAddBtn.classList.add("active");
+      if (!stickyCardBox) {
+        return
       } else {
-        stickyCardBox.classList.add("sticky");
-        homeAddBtn.classList.remove("active");
+        if (scrollY + (winHeight / 2) >= stickyAreaY) {
+          stickyCardBox.classList.remove("sticky");
+          homeAddBtn.classList.add("active");
+        } else {
+          stickyCardBox.classList.add("sticky");
+          homeAddBtn.classList.remove("active");
+        }
       }
     },
     dayBtn() {
