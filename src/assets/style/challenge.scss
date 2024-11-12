@@ -220,6 +220,9 @@
           border-left: 1px solid #d8d8d8;
         }
       }
+      .card__img img {
+        border-radius: 24px;
+      }
     }
   }
   &__calendar {
@@ -998,6 +1001,11 @@
       &:only-child {
         padding-bottom: 192px;
       }
+      .card {
+        .card__img img {
+          border-radius: 24px;
+        }
+      }
     }
     &__gray {
       margin: 0 -20px 0;
@@ -1227,6 +1235,9 @@
     }
     .card {
       border-radius: 16px;
+      .card__img img {
+        border-radius: 16px;
+      }
     }
     .card--green {
       border: 2px solid #169e4a;
@@ -1521,6 +1532,9 @@
       margin: 0 -20px;
       padding: 24px 20px;
       background-color: #e5e5e5;
+    }
+    .card__img img {
+      border-radius: 24px;
     }
   }
   &__list {
