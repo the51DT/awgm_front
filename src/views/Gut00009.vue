@@ -155,13 +155,6 @@
                 <p class="card__date">2024.09.01 ~ 2025.08.31</p>
               </div>
             </div>
-            <div class="card__bottom">
-              <p class="card--per__title">이번달<br />인증률</p>
-              <div class="card--per">
-                <div class="card--per__gage card--per__gage--end" data-width="70%"></div>
-              </div>
-              <p class="card--per__state card--per__state--end">70%</p>
-            </div>
           </div>
 
           <div class="card card--border card--p16 card--shadowc2">
@@ -170,10 +163,6 @@
             </button>
             <div class="card__ranking">
               <div class="card__state card__state--end">진행종료</div>
-              <div class="card__ranking--rank">
-                <img :src="require(`@/assets/images/icon_ranking.svg`)">
-                <p>챌린지팀 랭킹 <span>532</span>위</p>
-              </div>
             </div>
             <div class="card__top">
               <div class="card__img">
@@ -194,13 +183,6 @@
                   2025.09.01 ~ 2025.09.30 / 30일
                 </p>
               </div>
-            </div>
-            <div class="card__bottom">
-              <p class="card--per__title">전체기간<br />인증률</p>
-              <div class="card--per">
-                <div class="card--per__gage card--per__gage--end" data-width="70%"></div>
-              </div>
-              <p class="card--per__state card--per__state--end">70%</p>
             </div>
             <div class="card__comp">
               <img :src="require(`@/assets/images/challenge_comp_green.png`)">

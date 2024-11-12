@@ -222,9 +222,8 @@
     </div>
   </div>
   <div class="home--bot-section bg-case">
-    <div class="home-card-box sticky">
-      <!-- 1025 수정 : 클래스 구조 변경 -
-    sticky 클래스있는 경우에 따라 펼침/닫힘 적용 -->
+    <div class="home-card-box home-sticky sticky">
+      <!-- 1025 수정 : 클래스 구조 변경 - sticky 클래스있는 경우에 따라 펼침/닫힘 적용 -->
       <a href="#" class="text-link">
         <p class="card-title">챌린지</p>
       </a>
@@ -489,13 +488,7 @@ export default {
       //1024 수정 : 클래스 구조 변경에 따른 내용 수정
       let scrollY = window.scrollY;
       const homeAddBtn = document.querySelector(".home--addBtn");
-      const stickyCardBox = document.querySelector(
-        ".home--bot-section .home-card-box:first-child"
-      );
-      const stickyCardBoxY = stickyCardBox.offsetTop;
-      const stickyNotCardBox = document.querySelectorAll(
-        ".home-card-box:not(.home-card-box.sticky)"
-      );
+      const stickyCardBox = document.querySelector(".home-sticky");
       const stickyArea = document.querySelector(".home--bot-section");
       const stickyAreaY = stickyArea.offsetTop;
       const winHeight = window.innerHeight;
