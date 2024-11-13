@@ -53,6 +53,13 @@ body {
         font-size: 11px;
         line-height: 16px;
       }
+      .notice {
+        margin-top: 8px;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 21px;
+        color: #999;
+      }
       & + .popup__box--bottom {
         margin-top: 24px;
       }
@@ -88,6 +95,9 @@ body {
   }
   &__select {
     margin-top: 24px;
+    & + .notice {
+      margin-top: 24px;
+    }
   }
   &--img {
     position: relative;
