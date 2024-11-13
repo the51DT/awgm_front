@@ -1,34 +1,29 @@
 <template>
   <PopupDefault>
     <template v-slot:title>
-      TITLE
+      자녀 개인정보 수집 이용 동의
     </template>
     <template v-slot:cont>
       <div class="box-wrap">
         <div class="box-gray">
           <div class="terms-conts">
-            제1조 (목적)<br/>
-            본 약관은 한국암웨이 주식회사(이하 "회사"라 합니다)가 제공하는 GUT Morning 미션 사이트와 관련된 "회사"와 "이용자" 간의 권리, 의무 및 책임사항과 절차 등을 규정함을 목적으로 합니다.<br/>
+            것모닝(Gut Morning) 서비스 내 이용자 식별, 회원관리 및 것모닝(Gut Morning) 서비스 제공, 회원비교식별을 위하여 귀하의 개인정보를 ㈜한국암웨이에 제공합니다. 해당 정보는 동의 철회나 서비스 탈퇴 시 또는 제공 목적 달성 시 지체없이 파기됩니다. 아래 동의를 거부할 권리가 있으며, 필수 동의를 거부할 경우 서비스 이용이 제한됩니다.<br/>
             <br/>
-            제2조 (정의)<br/>
-            본 약관에서 사용하는 용어의 의미는 다음과 같습니다.<br/>
-            ① "이용자"란 GUT Morning 미션 사이트 회원을 말하는 것으로, GUT Morning 미션 사이트를 통해 "서비스"를 제공받을 수 있습니다.<br/>
-            ② "서비스"란 GUT Morning 미션 사이트를 통해 "회사"가 "이용자"에게 제공하는 모든 프로그램 일체를 말합니다.<br/>
+            [제공 받는 자] ㈜한국암웨이<br/>
+            [필수 제공 항목] 생일, 프로필 사진, 성별, 성명, 휴대전화번호, 출생연도, UID, 닉네임<br/>
+            [제공 목적] 이용자 식별 및 회원관리, 각종 서비스 관련 편의, 혜택 제공 및 고지사항 전달<br/>
+            [보유기간] <span>동의 철회 또는 서비스 탈퇴시 지체 없이 파기</span>
           </div>
         </div>
       </div>
       <ul class="info--list">
-        <li>* 자녀계정은 부모계정에서 생성이 가능합니다.</li>
-        <li>* 자녀계정 아이디는 부모계정에서 확인이 가능합니다.</li>
+        <li>원활한 서비스 이용을 위하여 개인정보 제3자 제공에 대하여 동의가 필요합니다. 동의하지 않으실 경우 서비스 이용이 제한됩니다.</li>
       </ul>
     </template>
     <template v-slot:btn>
-      <div class="btn-area ty04">        
-        <InputField type="checkbox" name="checkbox1"
-        :checkbox="[
-        {id: 'checkbox1_1', value: 'checkbox1_1', checked: false, label: '오늘 하루 열지 않기'},
-        ]"  />
-        <CustomButton size="sm" class="pop-btn-Close">닫기</CustomButton>
+      <div class="btn-area ty03">
+        <CustomButton size="sm" color="light">동의하지 않음</CustomButton>
+        <CustomButton size="sm">동의</CustomButton>
       </div>
     </template>
   </PopupDefault> 
@@ -37,15 +32,13 @@
 <script>
 import PopupDefault from "@/components/PopupDefault.vue";
 import CustomButton from "@/components/CustomButton.vue";
-import InputField from "@/components/InputField.vue";
 import layerClose from "@/plugins/common.js";
 
 export default {
-  name: "Gut_0000101",
+  name: "AppSub",
   components: {    
     PopupDefault,
     CustomButton,
-    InputField,
   },
   mounted() {
     layerClose.layerClose("popup");

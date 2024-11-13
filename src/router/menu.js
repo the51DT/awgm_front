@@ -23,6 +23,12 @@ export const menuRoutes = [
         meta: { layout: "footerOnly" },
       },
       {
+        text: "카카오톡 회원가입 약관동의-Gut0000101",
+        path: "/카카오톡 회원가입 약관동의-Gut0000101",
+        isCompleted: true,
+        meta: { layout: "none" },
+      },
+      {
         text: "자녀계정 로그인-Gut00002",
         path: "/자녀계정 로그인-Gut00002",
         isCompleted: true,
@@ -294,8 +300,8 @@ export const menuRoutes = [
         meta: { layout: "none" },
       },
       {
-        text: "팝업 템플릿-Gut0000101",
-        path: "/팝업 템플릿-Gut0000101",
+        text: "팝업 템플릿-Gut0000001",
+        path: "/팝업 템플릿-Gut0000001",
         isCompleted: true,
         meta: { layout: "none" },
       },
