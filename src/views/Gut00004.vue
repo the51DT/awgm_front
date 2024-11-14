@@ -256,27 +256,30 @@
           </div>
           <div class="card--per">
             <!-- 목표달성 성공시, success 클래스 추가, 클래스 존재시 gage화살표 성공 영역으로 이동 -->
-            <div class="card--per__gage" data-width="40%"></div>
-            <div class="card--per__comp" data-width="20%">성공</div>
-            <div class="card--per__target" data-left="60%">
-              <img :src="require(`@/assets/images/icon_target.svg`)" />목표치
+            <div class="card--per__gage--wrap">
+              <div class="card--per__gage" data-width="0%"></div>
             </div>
-            <div class="card--per__tooltip">
-              <!-- 목표치 초과 시 -->
-              <!-- <p class="desc--main">목표치를 초과 달성 중입니다.</p>
-              <p class="desc--sub">챌린지 성공시 까지 계속 인증해 주세요.</p> -->
-              <!-- 목표치 진행중일 시 -->
-              <p class="desc--main">
-                현재 <strong class="font--light-yellow">40%</strong>를
-                달성하였습니다.
-              </p>
-              <p class="desc--sub">
-                목표치까지 <strong class="font--white">10%</strong> 남았습니다.
-              </p>
-              <div class="close--wrap">
-                <button type="button" class="close--btn" title="툴팁 닫기">
-                  <span class="blind">닫기</span>
-                </button>
+            <div class="card--per__comp" data-width="20%">성공</div>
+            <div class="card--per__target" data-left="100%">목표치</div>
+            <div class="card--per__tooltip--wrap">
+              <div class="card--per__tooltip--top" data-left="0%"></div>
+              <div class="card--per__tooltip">
+                <!-- 목표치 초과 시 -->
+                <!-- <p class="desc--main">목표치를 초과 달성 중입니다.</p>
+                <p class="desc--sub">챌린지 성공시 까지 계속 인증해 주세요.</p> -->
+                <!-- 목표치 진행중일 시 -->
+                <p class="desc--main">
+                  현재 <strong class="font--light-yellow">40%</strong>를
+                  달성하였습니다.
+                </p>
+                <p class="desc--sub">
+                  목표치까지 <strong class="font--white">10%</strong> 남았습니다.
+                </p>
+                <div class="close--wrap">
+                  <button type="button" class="close--btn" title="툴팁 닫기">
+                    <span class="blind">닫기</span>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -324,8 +327,10 @@
             <p class="font--700 font--c11 font--ls1"><span class="font--green font--800 font--ls1">60</span>%</p>
           </div>
           <div class="card--per">
-            <div class="card--per__gage" data-width="60%"></div>
-            <div class="card--per__target ty02" data-left="60%">이전 달 인증률 <span class="font--800">80%</span> <img :src="require(`@/assets/images/icon_target.svg`)"></div>
+            <div class="card--per__gage--wrap">
+              <div class="card--per__gage" data-width="60%"></div>
+            </div>
+            <div class="card--per__target ty02" data-left="60%">이전 달 인증률 <span class="font--800">80%</span></div>
           </div>
         </div> -->
       </div>
@@ -371,10 +376,11 @@
             </p>
           </div>
           <div class="card--per">
-            <div class="card--per__gage" data-width="60%"></div>
+            <div class="card--per__gage--wrap">
+              <div class="card--per__gage" data-width="60%"></div>
+            </div>
             <div class="card--per__target ty02" data-left="60%">
               이전 달 인증률 <span class="font--800">80%</span>
-              <img :src="require(`@/assets/images/icon_target.svg`)" />
             </div>
           </div>
         </div>
@@ -468,6 +474,7 @@ export default {
   mounted() {
     document.addEventListener("scroll", this.scrollEvents, true);
     layerClose.layerClose("card");
+    layerClose.posValue(document.querySelectorAll(".card--per__target"));
     this.dayBtn();
   },
   beforeUnmount() {

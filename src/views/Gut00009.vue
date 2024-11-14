@@ -54,7 +54,9 @@
             <div class="card__bottom">
               <p class="card--per__title">챌린지<br />인증률</p>
               <div class="card--per">
-                <div class="card--per__gage" data-width="60%"></div>
+                <div class="card--per__gage--wrap">
+                  <div class="card--per__gage" data-width="60%"></div>
+                </div>
                 <div class="card--per__comp" data-width="25%">성공</div>
               </div>
               <p class="card--per__state">60%</p>
@@ -91,7 +93,9 @@
             <div class="card__bottom">
               <p class="card--per__title">이번달<br />인증률</p>
               <div class="card--per">
-                <div class="card--per__gage" data-width="50%"></div>
+                <div class="card--per__gage--wrap">
+                  <div class="card--per__gage" data-width="50%"></div>
+                </div>
               </div>
               <p class="card--per__state">50%</p>
             </div>
@@ -127,7 +131,9 @@
             <div class="card__bottom">
               <p class="card--per__title">이번달<br />인증률</p>
               <div class="card--per">
-                <div class="card--per__gage" data-width="50%"></div>
+                <div class="card--per__gage--wrap">
+                  <div class="card--per__gage" data-width="50%"></div>
+                </div>
               </div>
               <p class="card--per__state">50%</p>
             </div>

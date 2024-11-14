@@ -37,11 +37,7 @@ function layerClose (type) {
 
     closeBtn.forEach((el, i) => {
       el.addEventListener("click", () => {
-        const cardTooltip = closeBtn[i].closest(".card--per__tooltip");
-        const cardGage =
-          cardTooltip.parentNode.querySelector(".card--per__gage");
-        closeBtn[i].closest(".card--per__tooltip").style.display = "none";
-        cardGage.classList.add("none-arrow");
+        closeBtn[i].closest(".card--per__tooltip--wrap").style.display = "none";
       });
     });
   } else if (type === "medal") {
@@ -73,6 +69,18 @@ function layerClose (type) {
   }
 }
 
+function posValue(list) {
+  list.forEach((el) => {
+    const elAttr = el.getAttribute("data-left");
+    const attrNum = elAttr.replace("%", "")
+    if (Number(attrNum) >= 60) {
+      el.classList.add("ty02")
+    } else {
+      el.classList.remove("ty02");
+    }
+  });
+}
+
 dataVaule();
 tabFn();
 layerClose();
@@ -84,6 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 export default {
+  posValue,
   tabFn,
   layerClose,
 };

@@ -37,9 +37,11 @@
           <p class="font--700 font--c11 font--ls1"><span class="font--green font--800 font--ls1">40</span>%</p>
         </div>
         <div class="card--per">
-          <div class="card--per__gage" data-width="40%"></div>
+          <div class="card--per__gage--wrap">
+            <div class="card--per__gage" data-width="40%"></div>
+          </div>
           <div class="card--per__comp" data-width="20%">성공</div>
-          <div class="card--per__target" data-left="60%"><img :src="require(`@/assets/images/icon_target.svg`)">목표치</div>
+          <div class="card--per__target" data-left="60%">목표치</div>
         </div>
       </div>
       <p class="font--c66 font--ls1"><span class="font--800">* 목표치란,</span> 챌린지를 성공하기 위하여 오늘까지 달성해야 할 최소한의 인증률을 말합니다.</p>
@@ -63,6 +65,7 @@
 import CustomButton from "@/components/CustomButton.vue";
 import AppNav from "@/layouts/AppNav.vue";
 import VCalendar from "@/components/VCalendar.vue";
+import commonJs from "@/plugins/common.js";
 
 export default {
   name: "Gut_00008",
@@ -70,6 +73,9 @@ export default {
     CustomButton,
     AppNav,
     VCalendar,
+  },
+  mounted() {
+    commonJs.posValue(document.querySelectorAll(".card--per__target"));
   },
 };
 </script>

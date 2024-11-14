@@ -366,7 +366,7 @@
           background: #333;
           border-radius: 2px;
           position: absolute;
-          top: -5px;
+          top: -3px;
           left: calc(100% - 50px);
           transform: rotate(45deg);
           z-index: 15;
@@ -381,6 +381,14 @@
       position: relative;
       &--end {
         background-color: #999;
+      }
+      &--wrap {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
       }
     }
     &__comp {
@@ -410,11 +418,17 @@
       font-size: 11px;
       line-height: 16px;
       color: #666;
+      width: 100%;
+      &::before {
+        content: '';
+        display: block;
+        width: 12px;
+        height: 8px;
+        background-image: url(../images/icon_target.svg);
+      }
       &.ty02 {
-        left: 0;
-        transform: translateX(0);
-        justify-content: center;
-        width: 100%;
+        flex-direction: row-reverse;
+        transform: translateX(calc(-100% + 6px));
       }
       p {
         flex-shrink: 0;

@@ -23,9 +23,11 @@
     </div>
     <div class="card card--p20 card--shadow00 team--sub__card1">
       <div class="card--per">
-        <div class="card--per__gage" data-width="40%"></div>
+        <div class="card--per__gage--wrap">
+          <div class="card--per__gage" data-width="40%"></div>
+        </div>
         <div class="card--per__comp" data-width="20%">성공</div>
-        <div class="card--per__target" data-left="60%"><img :src="require(`@/assets/images/icon_target.svg`)">목표치</div>
+        <div class="card--per__target" data-left="60%">목표치</div>
       </div>
       <div class="card--box card--box--flex2">
         <div>
@@ -176,8 +178,10 @@
     </div>
     <div class="card card--p20 card--shadow00 team--sub__card1">
       <div class="card--per">
-        <div class="card--per__gage" data-width="40%"></div>
-        <div class="card--per__target" data-left="50%"><img :src="require(`@/assets/images/icon_target.svg`)"><p>지난 달 인증률 <span>80%</span></p></div>
+        <div class="card--per__gage--wrap">
+          <div class="card--per__gage" data-width="40%"></div>
+        </div
+        <div class="card--per__target" data-left="50%"><p>지난 달 인증률 <span>80%</span></p></div>
       </div>
       <div class="card--box card--box--flex2">
         <div>
@@ -289,6 +293,7 @@
 <script>
 import ContentHead from "@/components/ContentHead.vue";
 import InputField from "@/components/InputField.vue";
+import commonJs from "@/plugins/common.js";
 
 export default {
   name: "LoginMain",
@@ -302,6 +307,9 @@ export default {
     ContentHead,
     // eslint-disable-next-line vue/no-unused-components
     InputField,
+  },
+  mounted() {
+    commonJs.posValue(document.querySelectorAll(".card--per__target"));
   },
 };
 </script>
