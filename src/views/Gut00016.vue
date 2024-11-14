@@ -23,7 +23,7 @@
               <p class="title">개인정보</p>
             </div>
             <div class="card card--shadow00">
-              <div class="text-box-wrap ty02">
+              <div class="text-box-wrap ty03">
                 <ul class="list-wrap">
                   <li>
                     <div class="list-wrap-icon">

@@ -497,6 +497,27 @@
             }
           }
         }
+        &.ty03 {
+          .list-wrap {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            padding: 4px;
+            li {
+              display: flex;
+              align-items: center;
+              gap: 16px;
+              font-size: 12px;
+              font-weight: 500;
+              line-height: 16px;
+              .list-wrap-icon {
+                flex-shrink: 0;
+                width: 18px;
+                height: 18px;
+              }
+            }
+          }
+        }
         .text-wrap {
           display: flex;
           justify-content: flex-start;
