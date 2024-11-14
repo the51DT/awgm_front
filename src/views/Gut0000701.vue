@@ -39,7 +39,6 @@
           <p class="card--img__title"><span>팀장김웨이</span>님의<br />GUT Morning</p>
         </div>
         <div class="card card--border challenge__calendar--card">
-          <!-- calendar 영역 -->
           <div class="calendar">
             <VCalendar />
           </div>
@@ -52,6 +51,31 @@
       </div>
     </template>
   </PopupDefault>
+
+  <!-- 공유용 (상단 타이틀, 공유버튼 3개 없는 버전) -->
+  <!-- <PopupDefault full>
+    <template v-slot:full>
+      <div class="popup--full__cont">
+        <div class="card--img">
+          <img class="card--img__comp" :src="require(`@/assets/images/challenge_comp.png`)">
+          <div class="card--img__uploaded">
+            <img :src="require(`@/assets/images/challenge_card_bg.png`)">
+          </div>
+          <div class="card--img__text">
+            <p class="card--img__text__date">2024.09.23 (월)</p>
+            <p class="card--img__text__title">나의 미션 인증 횟수</p>
+            <p class="card--img__text__num"><span>2</span>회</p>
+          </div>
+          <p class="card--img__title"><span>팀장김웨이</span>님의<br />GUT Morning</p>
+        </div>
+        <div class="card card--border challenge__calendar--card">
+          <div class="calendar">
+            <VCalendar />
+          </div>
+        </div>
+      </div>
+    </template>
+  </PopupDefault> -->
 </template>
 
 <script>

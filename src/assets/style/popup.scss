@@ -122,6 +122,10 @@ body {
     background-color: #fff;
     &__cont {
       margin-top: 16px;
+      padding-bottom: 16px;
+      &:only-child {
+        margin-top: 40px;
+      }
     }
     &__wrap {
       background-color: transparent;
