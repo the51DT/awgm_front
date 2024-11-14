@@ -116,12 +116,13 @@ body {
   &--full {
     width: 100%;
     max-width: 500px;
-    height: 100%;
+    height: fit-content;
+    min-height: 100vh;
     margin: 0 auto;
     padding: 0 20px;
     background-color: #fff;
     &__cont {
-      margin-top: 16px;
+      padding-top: 16px;
       padding-bottom: 16px;
       &:only-child {
         margin-top: 40px;
