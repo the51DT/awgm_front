@@ -39,7 +39,7 @@
               <CustomButton color="dark" class="ty-chk"><span>자녀 개인정보 수집 이용 동의</span></CustomButton>
               <!-- <CustomButton color="dark" class="ty-chk on"><span>자녀 개인정보 수집 이용 동의</span></CustomButton>  -->
               <!-- 1017 추가 : 기획 변경 해당 화면에 추가 버튼 생성됨 -->
-              <CustomButton color="dark" class="ty-chk"><span>자녀 개인정보 제3자 제공 이용동의</span></CustomButton> 
+              <CustomButton color="dark" class="ty-chk"><span>개인정보 제3자 제공 이용동의</span></CustomButton> 
             <CustomButton>로그인</CustomButton>
           </div>
         </div>

@@ -42,10 +42,10 @@
             <div class="btn-area">
               <!-- ty-chk on 클래스 추가시, active 처리됨 : 미체크가 디폴트 /
               버튼 선택시 약관동의팝업 호출 -> 동의 선택 시 팝업 닫기 및 체크 활성화  -->
-              <CustomButton color="dark" class="ty-chk"><span>자녀 개인정보 수집 이용 동의</span></CustomButton>
-              <!-- <CustomButton color="dark" class="ty-chk on"><span>자녀 개인정보 수집 이용 동의</span></CustomButton>  -->
+              <CustomButton color="dark" class="ty-chk"><span>자녀 개인정보 제3자 제공 동의</span></CustomButton>
+              <!-- <CustomButton color="dark" class="ty-chk on"><span>자녀 개인정보 제3자 제공 동의</span></CustomButton>  -->
               <!-- 1017 추가 : 기획 변경 해당 화면에 추가 버튼 생성됨 -->
-              <CustomButton color="dark" class="ty-chk"><span>자녀 개인정보 제3자 제공 이용동의</span></CustomButton> 
+              <CustomButton color="dark" class="ty-chk"><span>개인정보 제3자 제공 이용동의</span></CustomButton> 
             </div>
           </div>
           <div class="bdr-gray"></div>
