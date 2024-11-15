@@ -54,7 +54,7 @@
                   type="file"
                   id="uploadIcon"
                   class="upload-icon"
-                  @change="onFileChange"
+                  @change="handleFileUpload"
                   hidden
                 />
                 <label
@@ -69,7 +69,10 @@
                     alt="업로드된 이미지"
                   />
                   <div v-else class="upload_ani">
-                    <img :src="require(`@/assets/images/upload_ani.gif`)" />
+                    <img
+                      @click="openCamera"
+                      :src="require(`@/assets/images/upload_ani.gif`)"
+                    />
                   </div>
                 </label>
                 <p v-if="!imageUrl" class="date">2025년 5월 16일 (토)</p>
@@ -273,7 +276,8 @@
                   달성하였습니다.
                 </p>
                 <p class="desc--sub">
-                  목표치까지 <strong class="font--white">10%</strong> 남았습니다.
+                  목표치까지
+                  <strong class="font--white">10%</strong> 남았습니다.
                 </p>
                 <div class="close--wrap">
                   <button type="button" class="close--btn" title="툴팁 닫기">
@@ -426,7 +430,7 @@
 <script>
 import { Navigation, Pagination, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/vue";
-import { ref } from 'vue';
+import { ref } from "vue";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -481,6 +485,21 @@ export default {
     document.removeEventListener("scroll", this.scrollEvents, true);
   },
   methods: {
+    handleFileUpload(event) {
+      const file = event.target.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = (e) => {
+          this.imageUrl = e.target.result;
+        };
+        reader.readAsDataURL(file);
+      }
+    },
+    openCamera() {
+      const input = document.getElementById("uploadIcon");
+      input.capture = "environment"; // 후면 카메라 설정
+      input.click();
+    },
     onFileChange(event) {
       const file = event.target.files[0];
       if (file) {
@@ -501,9 +520,9 @@ export default {
       const winHeight = window.innerHeight;
 
       if (!stickyCardBox) {
-        return
+        return;
       } else {
-        if (scrollY + (winHeight / 2) >= stickyAreaY) {
+        if (scrollY + winHeight / 2 >= stickyAreaY) {
           stickyCardBox.classList.remove("sticky");
           homeAddBtn.classList.add("active");
         } else {
@@ -514,10 +533,14 @@ export default {
     },
     dayBtn() {
       const dayBtn = document.querySelectorAll(".home__date .date");
-      const swiperList = Array.from(document.querySelectorAll(".home .swiper__area .swiper-slide"))
+      const swiperList = Array.from(
+        document.querySelectorAll(".home .swiper__area .swiper-slide")
+      );
       dayBtn.forEach((el) => {
         const dayValue = el.dataset.day;
-        const matchIndex = swiperList.findIndex(slide => slide.dataset.day === dayValue)
+        const matchIndex = swiperList.findIndex(
+          (slide) => slide.dataset.day === dayValue
+        );
 
         if (matchIndex !== -1) {
           el.classList.add("select");
