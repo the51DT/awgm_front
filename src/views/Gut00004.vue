@@ -54,7 +54,7 @@
                   type="file"
                   id="uploadIcon"
                   class="upload-icon"
-                  @change="handleFileUpload"
+                  @change="onFileChange"
                   hidden
                 />
                 <label
@@ -485,16 +485,6 @@ export default {
     document.removeEventListener("scroll", this.scrollEvents, true);
   },
   methods: {
-    handleFileUpload(event) {
-      const file = event.target.files[0];
-      if (file) {
-        const reader = new FileReader();
-        reader.onload = (e) => {
-          this.imageUrl = e.target.result;
-        };
-        reader.readAsDataURL(file);
-      }
-    },
     openCamera() {
       const input = document.getElementById("uploadIcon");
       input.capture = "environment"; // 후면 카메라 설정
