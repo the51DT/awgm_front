@@ -944,6 +944,13 @@
       height: 40px;
       background-image: url(../images/icon_share.svg);
     }
+    &__wrap {
+      margin: -20px;
+      padding: 20px;
+      .card--img {
+        max-width: none;
+      }
+    }
   }
   &__comp {
     position: absolute;
@@ -1960,8 +1967,13 @@
     p {
       text-indent: 8px;
     }
+    &--sub {
+      padding-left: 16px;
+      text-indent: 0 !important;
+    }
   }
   &__table {
+    width: 100%;
     margin: 24px 0;
     border-collapse: collapse;
     text-align: left;
@@ -1973,6 +1985,9 @@
       padding: 4px 8px;
       vertical-align: top;
       border: 0.5px solid #666;
+      a {
+        word-break: break-all;
+      }
     }
   }
   &__btn {
