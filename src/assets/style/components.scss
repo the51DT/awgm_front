@@ -366,6 +366,7 @@
     width: 168px;
     height: 168px;
     position: relative;
+    margin-right: -8px;
     padding: 8px 8px 0 0;
     &.on-flag:before {
       content: '';
@@ -396,6 +397,7 @@
     .img-wrap {
       width: 116px;
       height: 116px;
+      margin-right: -16px;
       padding: 16px 16px 0 0;
       &.on-flag:before {
         top: 3px;
