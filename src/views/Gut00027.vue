@@ -4,12 +4,288 @@
       <div class="terms bg-case">
         <ContentHead title="개인정보처리방침" :rightArea=true />
         <div class="terms__cont">
-          <InputField type="select" placeholder="2022.12.02 개정" :options="['1', '2', '3']"/>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. A mollitia magnam earum ab, doloremque, dolores iusto error iure placeat voluptas perferendis eum animi molestiae molestias, temporibus asperiores exercitationem dolor saepe.
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum unde praesentium placeat similique enim quia explicabo cum modi accusantium totam voluptatum incidunt perferendis eum, veniam tempora aliquid at error! Expedita.
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem et rerum, ducimus voluptatibus, vero aspernatur ipsam unde veniam eaque cumque sit. Tenetur asperiores fuga nesciunt aliquam quos, a unde accusantium!
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil veniam error esse, nesciunt recusandae alias obcaecati blanditiis consequatur impedit id perferendis cupiditate, mollitia delectus molestias odio. Id ea distinctio fugiat.
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus deleniti ipsam reprehenderit praesentium omnis atque quae ullam laboriosam pariatur, beatae, recusandae fugiat aut earum expedita nemo ut corporis obcaecati quas.
+          <InputField
+            type="select"
+            placeholder="2022.12.02 개정"
+            :options="['1', '2', '3']"
+          />
+          <div class="terms__text">
+            <span>한국암웨이 GUT Morning 미션 사이트 개인정보 처리방침</span
+            ><br />
+            <br />
+            한국암웨이 주식회사(이하 “한국암웨이”)는 이용자의 개인정보를
+            소중하게 다루고 있으며, 「정보통신망 이용촉진 및 정보보호 등에 관한
+            법률」, 「개인정보보호법」을 준수하기 위하여 노력하고 있습니다.
+            한국암웨이는 개인정보처리방침을 통하여 이용자로부터 제공받은
+            개인정보를 어떠한 용도와 방식으로 이용하고 있으며, 개인정보보호를
+            위해 어떠한 조치를 취하고 있는 지 알려드립니다.<br />
+            <br />
+            <span>1. 개인정보의 수집 항목 및 이용 목적</span><br />
+            한국암웨이는 원활한 고객상담, 각종 서비스의 제공을 위해 아래와 같은
+            개인정보를 수집하고 있습니다. 이용자의 개인정보는 밝힌 목적 이외에는
+            절대로 사용하지 아니하고 개인정보의 사용목적과 용도가 변경될 경우에
+            반드시 이용자로 등록된 모든 분에게 동의를 구할 것을 약속합니다.
+            개인정보의 수집 및 이용에 대한 동의 철회 시, 한국암웨이는 일정기간
+            보관 후 개인정보를 삭제합니다.
+            <table class="terms__table">
+              <colgroup>
+                <col width="48px" />
+                <col width="48px" />
+                <col width="33%" />
+                <col />
+              </colgroup>
+              <tr>
+                <th>구분</th>
+                <th>유형</th>
+                <th>개인정보항목</th>
+                <th>이용목적</th>
+              </tr>
+              <tr>
+                <td>19세 이상 성인</td>
+                <td>필수 정보</td>
+                <td>
+                  (카카오 간편 회원가입 시)<br />
+                  생일, 프로필 사진, 성별, 성명, 휴대폰번호, 출생연도, UID,
+                  닉네임, (한국암웨이 회원 인증을 하는 경우에는 “한국암웨이 회원
+                  ID”)<br />
+                  (서비스 이용 시)<br />
+                  회원의 GUT Morning 미션 인증 정보, 미션 인증 사진, 접속로그,
+                  쿠키 (Cookie)
+                </td>
+                <td rowspan="3">
+                  이용자 식별 및 회원관리, 각종 서비스 관련 편의, 혜택 제공 및
+                  고지사항 전달<br />
+                  고객상담, 불만 및 민원처리<br />
+                  사업자 윤리강령 소정의 스폰서십 라인 규정 준수 확인<br />
+                  서비스 및 제품 품질 향상을 위한 통계 작성 등 활용<br />
+                  기타 ABO 사업관리 및 서비스 지원<br />
+                  부모 동의 여부 확인
+                </td>
+              </tr>
+              <tr>
+                <td>14세 이상 청소년</td>
+                <td>필수 정보</td>
+                <td>
+                  (서비스 가입시)<br />
+                  아이디, 닉네임<br />
+                  (서비스 이용시)<br />
+                  GUT Morning 미션 인증 정보, 접속로그, 쿠키 (Cookie)
+                </td>
+              </tr>
+              <tr>
+                <td>14세 미만 어린이</td>
+                <td>필수 정보</td>
+                <td>
+                  (서비스 가입 시)<br />
+                  아이디, 닉네임<br />
+                  (법정대리인 동의 인증 시)<br />
+                  한국암웨이 회원 ID, 비밀번호<br />
+                  (서비스 이용 시)<br />
+                  GUT Morning 미션 인증 정보, 접속로그, 쿠키 (Cookie)
+                </td>
+              </tr>
+            </table>
+            * 필수 정보는 ABO 윤리강령 소정의 스폰서십 라인 규정 준수 확인 등의
+            목적으로 이용될 수 있습니다.<br />
+            * 위 정보는 가입 당시 정보 뿐만 아니라 정보 수정으로 변경된 정보를
+            포함합니다.<br />
+            <br />
+            <span>한국암웨이는 다음과 같은 방법으로 개인정보를 수집합니다.</span
+            ><br />
+            <p>
+              - 회원가입 및 서비스 이용 시 이용자가 개인정보 수집에 동의를 하고
+              GUT Morning 미션 사이트를 통해 직접 정보를 입력하는 경우
+            </p>
+            <p>- 고객센터를 통한 상담 과정에서 메일, 팩스, 전화 등</p>
+            <p>- 온·오프라인에서 진행되는 이벤트/행사 등 참여</p>
+            <p>
+              - 기기정보와 같은 생성정보는 GUT Morning 미션 사이트 이용 과정에서
+              자동으로 생성되어 수집될 수 있음
+            </p>
+            <br />
+            <span>2. 개인정보의 처리 및 보유기간</span><br />
+            한국암웨이는 이용자의 개인정보를 개인정보 제공 동의를 철회하시거나
+            또는 본 서비스를 탈퇴 시 지체없이 파기합니다. 그리고 정보통신망
+            이용촉진 및 정보보호 등에 관한 법률, 상법, 전자상거래 등에서의
+            소비자보호에 관한 법률 등 관계법령의 규정, 부정이용방지, 탈퇴 회원
+            재가입 방지 등 보존할 필요가 있는 경우, 일정기간동안 이용자의
+            개인정보를 아래 명시한 기간 동안 보관합니다. 이 경우, 한국암웨이는
+            보관하는 정보를 그 보관의 목적으로만 이용합니다.
+            <p>① 관련법령에 의한 정보보유 사유</p>
+            <p>&lt;전자상거래 등에서의 소비자 보호에 관한 법률&gt;</p>
+            <p class="terms__text--sub">
+              - 표시, 광고에 관한 기록: 6개월<br />
+              - 계약 또는 청약철회 등에 관한 기록: 5년<br />
+              - 대금결제 및 재화 등의 공급에 관한 기록: 5년<br />
+              - 소비자 불만 또는 분쟁처리에 관한 기록: 3년
+            </p>
+            <p>&lt;통신비밀보호법&gt;</p>
+            <p class="terms__text--sub">
+              - 이용자의 인터넷 등 로그기록: 3개월<br />
+              - 이용자의 접속지 추적자료, 그 외의 통신사실 확인 자료: 1년
+            </p>
+            <p>② 회사 내부 방침에 의한 정보보유 사유</p>
+            <p class="terms__text--sub">
+              - 부정이용기록: 사업종료 시까지<br />
+              - 탈퇴 회원 재가입 방지를 위한 최소 식별 정보보유: 6개월<br />
+              - ABO 윤리강령 소정의 스폰서십 라인 규정 준수 확인을 위한 기록:
+              2년
+            </p>
+            <br />
+            <span>3. 개인정보의 제3 자 제공에 관한 사항</span>
+            한국암웨이는 이용자의 개인정보를 고지한 범위 내에서 사용하며,
+            이용자의 동의를 받거나, 법령에 규정된 경우를 제외하고는 제3자에게
+            제공하지 않습니다. 다만, 필요한 경우에는 합당한 절차를 통해 이용자의
+            동의를 얻어 개인정보를 제공 또는 이용할 수 있습니다.<br />
+            한국암웨이는 서비스의 제공을 위하여 이용자로부터 사전 동의를 받고
+            다음과 같이 개인정보를 제3자에 제공합니다.
+            <table class="terms__table">
+              <colgroup>
+                <col width="48px" />
+                <col width="48px" />
+                <col width="33%" />
+                <col width="48px" />
+                <col width="48px" />
+              </colgroup>
+              <tr>
+                <th>구분</th>
+                <th>제공 받는 자</th>
+                <th>개인정보항목</th>
+                <th>이용목적</th>
+                <th>제공 기간</th>
+              </tr>
+              <tr>
+                <td>19세 이상 성인</td>
+                <td>팀장</td>
+                <td>
+                  (팀 가입 시)<br />
+                  프로필 사진, 닉네임<br />
+                  (팀 활동 시)<br />
+                  회원의 GUT Morning 미션 인증 정보, 미션 인증 사진<br />
+                </td>
+                <td rowspan="3">
+                  팀 가입 및 활동 참가<br />
+                  팀원 미션 인증 확인
+                </td>
+                <td rowspan="3">팀 탈퇴 및 개인정보 제3자 제공 동의 철회 시</td>
+              </tr>
+              <tr>
+                <td>14세 이상 청소년</td>
+                <td>팀장, 부모 계정</td>
+                <td>
+                  (팀 가입시)<br />
+                  아이디, 닉네임<br />
+                  (팀 활동 시)<br />
+                  GUT Morning 미션 인증 정보
+                </td>
+              </tr>
+              <tr>
+                <td>14세 미만 어린이</td>
+                <td>팀장</td>
+                <td>
+                  (서비스 가입 시)<br />
+                  아이디, 닉네임<br />
+                  (팀 활동 시)<br />
+                  GUT Morning 미션 인증 정보
+                </td>
+              </tr>
+            </table>
+            <br/>
+            <span>4. 개인정보처리의 위탁에 관한 사항</span><br/>
+            한국암웨이는 약속한 서비스 제공 및 향상을 목적으로 이용자의 개인정보의 수집, 취급, 관리 등을 아래 업체에 위탁하여 처리할 수 있으며 관계 법령에 따라 위탁계약 시 개인정보가 안전하게 관리될 수 있도록 필요한 사항을 규정하고 있습니다. GUT Morning 미션 사이트의 개인정보 위탁 처리 업체 및 위탁업무 내용은 다음과 같습니다.<br/>
+            <table class="terms__table">
+              <colgroup>
+                <col width="50%" />
+                <col width="50%" />
+              </colgroup>
+              <tr>
+                <th>수탁업체(수탁자)</th>
+                <th>위탁업무 내용</th>
+              </tr>
+              <tr>
+                <td>(주) 피비지</td>
+                <td>GUT Morning 미션 사이트 운영</td>
+              </tr>
+            </table>
+            <span>5. 개인정보의 국외 이전</span><br/>
+            한국암웨이는 GUT Morning 미션 사이트 서비스 제공과 관련하여 회원정보를 국외로 이전하지 않습니다.<br/>
+            <br/>
+            <span>6. 만 14세 미만 아동에 대한 정보보호에 관한 사항</span><br/>
+            것모닝 미션 사이트는 법정대리인의 동의를 받은 경우에만 만 14세 미만의 아동의 사이트 이용을 허용합니다.<br/>
+            <br/>
+            <span>7. 개인정보의 관리(열람, 정정, 삭제 등)와 파기 절차 및 방법</span><br/>
+            이용자로부터 수집한 개인정보를 수집·이용 목적이 달성된 후에는 해당 정보를 지체없이 파기합니다.<br/>
+            이용자는 언제든지 GUT Morning 미션 사이트에 등록되어 있는 자신의 개인정보를 열람하거나 정정할 수 있으며 이용자 개인정보 삭제를 요청하실 수 있습니다.<br/>
+            이용자는 개인정보의 수집, 이용에 대한 동의 철회(해지) 및 제3자 제공 동의의 철회를 전화, 팩스, 기타의 방법을 통하여 요청할 수 있으며 이 경우, 이용자 본인임을 확인한 후 처리가 이루어지게 됩니다. 수정된 정보는 처리가 완료된 시점부터 바로 적용이 되며 이용자 가입 해지를 원하실 경우 해지 신청 즉시 이용자와의 연락 후 한국암웨이 정책에 준하여 해지 절차를 밟게 됩니다.<br/>
+            이용자가 개인정보의 오류에 대한 정정을 요청한 경우 정정을 완료하기 전까지 당해 개인정보를 이용 또는 제공하지 않습니다. 또한 잘못된 개인정보를 제3자에게 이미 제공한 경우에는 정정 처리결과를 제3자에게 지체 없이 통지하여 정정이 이루어지도록 하겠습니다.<br/>
+            한국암웨이는 이용자의 요청에 의해 해지 또는 삭제된 개인정보를 "개인정보 처리 및 보유기간"에 명시된 바에 따라 처리하고 그 외의 용도로 열람 또는 이용할 수 있도록 처리하고 있습니다.<br/>
+            또한 개인정보의 수집 목적 또는 제공받은 목적이 달성된 때에는 이용자의 개인정보를 지체 없이 파기합니다. 파기 절차와 방법은 다음과 같습니다.<br/>
+            <span>① 개인정보의 파기 절차</span><br/>
+            이용자가 가입 등을 위해 입력하신 정보는 개인정보의 수집 및 이용 목적이 달성된 후 내부 방침 및 기타 관련 법령에 의한 정보보유 사유에 따라(개인정보 처리 및 보유기간 참조) 일정기간 저장된 후 파기됩니다. 이용자의 개인정보는 법률에 의한 경유가 아니고서는 보유되는 이외의 다른 목적으로 이용되지 않습니다.<br/>
+            <span>② 개인정보의 파기 방법</span><br/>
+            한국암웨이는 귀중한 이용자의 개인정보를 안전하게 처리하며, 유출의 방지를 위하여 다음과 같은 방법을 통하여 개인정보를 파기합니다.<br/>
+            <p>- 종이에 출력된 개인정보는 분쇄기로 분쇄하거나 소각을 통한 파기</p>
+            <p>- 전자적 파일 형태로 저장된 개인정보는 기록을 재생할 수 없는 기술적 방법 사용</p>
+            <br/>
+            <span>8. 개인정보의 기술적/관리적 보호 대책</span><br/>
+            한국암웨이 GUT Morning 미션 사이트는 이용자의 개인정보를 처리함에 있어 개인정보가 분실, 도난, 누출, 위조, 변조 또는 훼손되지 않도록 안전성 확보를 위하여 다음과 같은 기술적 대책을 강구하고 있습니다.<br/>
+            <p>- 카카오 계정과 연동된 이용자의 개인정보는 한국암웨이의 보안으로 철저히 보호되고 있습니다. 회원의 로그인과 회원정보는 카카오 계정의 아이디(ID)와 비밀번호로 보호되고 있으므로, 이용자 여러분께서는 카카오의 아이디와 비밀번호를 누구에게도 알려주시면 안됩니다. 본인의 개인정보는 책임 있게 관리되어야 하며 비밀번호나 개인정보 등의 유출에 대해서 회사는 어떠한 책임도 지지 않습니다.</p>
+            <p>- 한국암웨이는 해킹이나 컴퓨터 바이러스 등에 의해 이용자의 개인정보가 유출되거나 훼손되는 것을 막기 위해 최선을 다하고 있습니다.</p>
+            <p>- 개인정보의 훼손에 대비하여 자료를 수시로 백업하고 있고, 최신 백신프로그램을 이용하여 이용자들의 개인정보나 자료가 누출되거나 손상되지 않도록 방지하고 있으며, 암호 알고리즘 등을 통하여 네트워크상에서 개인정보를 안전하게 전송할 수 있도록 하고 있습니다.</p>
+            <p>- 침입차단시스템을 이용하여 외부로부터의 무단 접근을 통제하고 있고, 24시간 전문 보안 업체를 통하여 모니터링 및 응급대처방안을 준비하고 있으며, 기타 시스템적으로 안정성을 확보하기 위한 가능한 모든 기술적 보호장치를 갖추려 노력하고 있습니다.</p>
+            <p>- 한국암웨이의 개인정보관련 처리자는 담당자에 한정시키고 있고 이를 위한 별도의 비밀번호를 부여하여 정기적으로 갱신하고 있으며, 담당자에 대한 수시 교육을 통하여 개인정보 보호정책의 준수를 항상 강조하고 있습니다. 그리고 사내 정보보호 전담조직 등을 통하여 개인정보 보호정책의 이행사항 및 담당자의 준수여부를 확인하여 문제가 발견될 경우 즉시 수정하고 바로잡을 수 있도록 노력하고 있습니다.</p>
+            <br/>
+            <span>9. 개인정보보호책임자와 담당부서</span><br/>
+            개인정보보호책임자: 신은자 대표이사<br/>
+            <p>- 소속/직위: CEO / CPO / 대표이사</p>
+            <p>- E-mail: securityteam@amway.com</p>
+            <p>- 문의 전화 : 1588-0080</p>
+            <br/>
+            개인정보보호 담당부서<br/>
+            <p>- E-mail: securityteam@amway.com</p>
+            <p>- 문의 전화 : 1588-0080</p>
+            <br/>
+            <span>10. 개인정보관련 의견수렴 및 불만 처리</span><br/>
+            한국암웨이는 개인정보보호와 관련하여 이용자 여러분들의 의견을 수렴하고 있으며 불만을 처리하기 위하여 모든 절차와 방법을 마련하고 있습니다. 이용자들은 “한국암웨이 개인정보보호책임자와 담당부서”를 참고하여 전화나 메일을 통하여 불만사항을 신고할 수 있고, 한국암웨이는 이용자들의 신고사항에 대하여 신속한 답변을 드릴 것입니다. GUT Morning 미션 사이트 이용 중 한국 암웨이의 개인정보보호에 관련된 처리에 대해 만족하지 못하실 경우에는 정부에서 운영중인 아래 기관을 통해 분쟁을 조정할 수 있습니다.
+            <table class="terms__table">
+              <colgroup>
+                <col width="35%" />
+                <col width="35%" />
+                <col width="30%" />
+              </colgroup>
+              <tr>
+                <th>구분</th>
+                <th>홈페이지</th>
+                <th>전화</th>
+              </tr>
+              <tr>
+                <td>경찰청 사이버안전국</td>
+                <td><a href="http://cyberbureau.police.go.kr" target="blank">http://cyberbureau.police.go.kr</a></td>
+                <td>(국번없이) 182</td>
+              </tr>
+              <tr>
+                <td>대검찰청 사이버수사과</td>
+                <td><a href="http://www.spo.go.kr" target="blank">http://www.spo.go.kr</a></td>
+                <td>(국번없이) 1301</td>
+              </tr>
+              <tr>
+                <td>개인정보 침해신고센터<br/>(한국인터넷 진흥원 운영)</td>
+                <td><a href="http://privacy.kisa.or.kr" target="blank">http://privacy.kisa.or.kr</a></td>
+                <td>(국번없이) 118</td>
+              </tr>
+              <tr>
+                <td>개인정보 분쟁조정위원회<br/>(개인정보보호위원회 운영)</td>
+                <td><a href="http://kopico.go.kr" target="blank">http://kopico.go.kr</a></td>
+                <td>02-1833-6972</td>
+              </tr>
+            </table>
+            <span>11. 고지의 의무</span><br/>
+            본 개인정보처리방침은 2024년 12월 15일부터 적용됩니다. 내용의 추가, 삭제 및 수정이 있을 시에는 시행일 이전에 공지사항 등을 통하여 고지할 것입니다. 또한 개인정보 처리방침에 버전번호 및 공고일자, 시행일자 등을 부여하여 개정여부를 쉽게 알 수 있도록 하고 있습니다.<br/>
+            <br/>
+            - 개인정보 처리방침 버전: v1.0<br/>
+            - 공고일자: 2024년 12월 15일<br/>
+            - 시행일자: 2024년 12월 15일
+          </div>
           <div class="terms__btn">
             <CustomButton>닫기</CustomButton>
           </div>
