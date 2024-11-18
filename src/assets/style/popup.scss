@@ -91,6 +91,19 @@ body {
     }
     .box-gray {
       padding: 16px 15.5px;
+      &:has(.terms__text) {
+        max-height: 30vh;
+        overflow-y: auto;
+        text-align: left;
+        &::-webkit-scrollbar {
+          width: 4px;
+          background-color: transparent;
+        }
+        &::-webkit-scrollbar-thumb {
+          border-radius: 2px;
+          background-color: #999;
+        }
+      }
     }
   }
   &__select {
