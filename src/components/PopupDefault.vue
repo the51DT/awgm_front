@@ -5,7 +5,7 @@
     </div>
   </div>
   <div v-else class="popup" :id=id>
-    <div class="popup__box" :class="sm ? 'popup__box--sm' : ''">
+    <div class="popup__box" :class="[sm ? 'popup__box--sm' : '', lg ? 'popup__box--lg' : '']">
       <button class="popup__box--close">
         <img :src="require(`@/assets/images/icon_close.svg`)">
       </button>
@@ -30,6 +30,7 @@ export default {
   props: {
     id: String,
     sm: Boolean,
+    lg: Boolean,
     full: Boolean,
     isTopBtn: Boolean,
   }

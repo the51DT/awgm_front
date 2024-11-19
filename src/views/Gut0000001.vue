@@ -1,26 +1,12 @@
 <template>
-  <PopupDefault>
+  <PopupDefault lg>
     <template v-slot:title>
       TITLE
     </template>
     <template v-slot:cont>
-      <div class="box-wrap">
-        <div class="box-gray">
-          <div class="terms-conts">
-            제1조 (목적)<br/>
-            본 약관은 한국암웨이 주식회사(이하 "회사"라 합니다)가 제공하는 GUT Morning 미션 사이트와 관련된 "회사"와 "이용자" 간의 권리, 의무 및 책임사항과 절차 등을 규정함을 목적으로 합니다.<br/>
-            <br/>
-            제2조 (정의)<br/>
-            본 약관에서 사용하는 용어의 의미는 다음과 같습니다.<br/>
-            ① "이용자"란 GUT Morning 미션 사이트 회원을 말하는 것으로, GUT Morning 미션 사이트를 통해 "서비스"를 제공받을 수 있습니다.<br/>
-            ② "서비스"란 GUT Morning 미션 사이트를 통해 "회사"가 "이용자"에게 제공하는 모든 프로그램 일체를 말합니다.<br/>
-          </div>
-        </div>
+      <div class="popup__scroll">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, harum! Assumenda temporibus natus dicta, beatae maxime voluptas repellat eveniet magni ratione illo enim corrupti nemo illum molestiae, maiores harum officiis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta excepturi nobis dignissimos, dolor error, a temporibus ipsum vel iusto sapiente non tempora optio quas esse nemo molestiae possimus, impedit explicabo? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam rerum sequi minima quaerat unde eos expedita ratione obcaecati, laborum nesciunt ipsum aliquam. Iure doloremque fuga cum? Iusto quibusdam tempore doloremque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolore cupiditate, possimus aperiam, eligendi, dolor facere provident necessitatibus delectus modi beatae eum! Optio quibusdam quos iste excepturi incidunt quo natus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum architecto, quam quis voluptates libero nesciunt placeat in magnam excepturi et beatae delectus voluptate inventore necessitatibus ducimus fugit at. Porro, earum.
       </div>
-      <ul class="info--list">
-        <li>* 자녀계정은 부모계정에서 생성이 가능합니다.</li>
-        <li>* 자녀계정 아이디는 부모계정에서 확인이 가능합니다.</li>
-      </ul>
     </template>
     <template v-slot:btn>
       <div class="btn-area ty04">        

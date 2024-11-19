@@ -407,7 +407,6 @@
         <button class="popup--photo__take"><img :src="require(`@/assets/images/icon_take_photo.svg`)"/>사진 찍기</button>
         <button class="popup--photo__storage"><img :src="require(`@/assets/images/icon_storage_photo.svg`)"/>사진 보관함</button>
         <button class="popup--photo__file"><img :src="require(`@/assets/images/icon_file.svg`)"/>파일 선택</button>
-        <p class="popup--photo__caption">※ 얼굴이 포함된 사진은 업로드 하지 말아주세요.</p>
       </div>
     </template>
   </PopupDefault> -->
