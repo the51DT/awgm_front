@@ -1,7 +1,7 @@
 <template>
   <PopupDefault>
     <template v-slot:title>
-      자녀 개인정보 수집 이용 동의
+      개인정보 제3자 정보제공 이용동의
     </template>
     <template v-slot:cont>
       <div class="box-wrap">
