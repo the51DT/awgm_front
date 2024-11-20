@@ -128,9 +128,10 @@ button {
   border: 0;
   background-color: transparent;
   font-weight: 700;
-  outline: 0;
-  // -webkit-tap-highlight-color: transparent;
-  // -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  // -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+  &:active {
+    filter: contrast(70%);
+  }
 }
 a[role='button'] {
   cursor: pointer;
