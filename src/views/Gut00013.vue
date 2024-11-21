@@ -1,6 +1,6 @@
 <template>
   <div class="content-area">
-    <ContentHead title="팀원" headType="ty02" :leftArea=true />
+    <ContentHead title="팀원 인증 현황보기" headType="ty02" :leftArea=true />
     <div class="team-box-wrap">
       <div class="list-top-tag">
         <div class="tag-box-wrap">
