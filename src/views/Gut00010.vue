@@ -15,7 +15,7 @@
           <img :src="require(`@/assets/images/icon_ranking.svg`)">
           <p>챌린지 랭킹 <span>5</span>위</p>
         </div>
-        <button>더보기<img :src="require(`@/assets/images/icon_arrow_r_gray.svg`)"></button>
+        <button>팀 랭킹보기<img :src="require(`@/assets/images/icon_arrow_r_white.svg`)"></button>
       </div>
       <p class="title__big">GUT Morning Korea<br/>Challenge</p>
       <p class="title__main">팀명: 아침마다 오 마이 GUT Morning</p>
@@ -172,7 +172,7 @@
           <img :src="require(`@/assets/images/icon_ranking.svg`)">
           <p>상시 랭킹 <span>5</span>위</p>
         </div>
-        <button>더보기<img :src="require(`@/assets/images/icon_arrow_r_gray.svg`)"></button>
+        <button>팀 랭킹보기<img :src="require(`@/assets/images/icon_arrow_r_white.svg`)"></button>
       </div>
       <p class="title__main">팀명: 아침마다 오 마이 GUT Morning</p>
     </div>

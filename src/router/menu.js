@@ -94,6 +94,12 @@ export const menuRoutes = [
         isCompleted: true,
         meta: { layout: "none" },
       },
+      {
+        text: "(PU) 인증완료 팝업-Gut0000309",
+        path: "/(PU) 인증완료 팝업-Gut0000309",
+        isCompleted: true,
+        meta: { layout: "none" },
+      },
     ],
   },
 
