@@ -12,7 +12,9 @@
         <img :src="require(`@/assets/images/header_info.svg`)">
         <img :src="require(`@/assets/images/header_faq.svg`)">
       </template>
-      <img v-else class="header__right--notice" :src="require(`@/assets/images/header_notice.svg`)">
+      <object v-else class="header__right--notice"> 
+        <img :src="require(`@/assets/images/header_notice.svg`)">
+      </object>
     </div>
   </header>
 </template>

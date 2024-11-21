@@ -53,8 +53,12 @@ body {
     gap: 8px;
     img {
       width: 34px;
-      &.header__right--notice {
-        width: 42px;
+    }
+    &--notice {
+      width: 42px;
+      height: 42px;
+      img {
+        width: 100%;
       }
     }
   }
