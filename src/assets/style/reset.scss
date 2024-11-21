@@ -128,7 +128,7 @@ button {
   border: 0;
   background-color: transparent;
   font-weight: 700;
-  // -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
   &:active {
     filter: contrast(70%);
   }
