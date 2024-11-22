@@ -62,6 +62,9 @@ function layerClose (type) {
     btnClose.addEventListener("click", function (e) {
       const target = e.target;
       target.closest(".popup").style.display = "none";
+      if (document.querySelector("html").classList.contains("pop-open")) {
+        document.querySelector("html").classList.remove("pop-open");
+      }
     });    
 
   } else {
