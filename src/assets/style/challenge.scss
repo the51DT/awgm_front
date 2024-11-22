@@ -1378,6 +1378,9 @@
     background-color: #169e4a;
     font-weight: 800;
     color: #fff;
+    &.tag-gray {
+      background-color: #333;
+    }
   }
   &--wrap {
     display: flex;
