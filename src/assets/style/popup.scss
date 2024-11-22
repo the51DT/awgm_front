@@ -2,6 +2,9 @@ html,
 body {
   overflow-y: overlay;
 }
+html.pop-open {
+  overflow: hidden !important;
+}
 .popup {
   position: fixed;
   top: 0;
