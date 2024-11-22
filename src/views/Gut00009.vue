@@ -13,9 +13,8 @@
         <p class="text__subtit"><span class="text__subtit--bold">3</span>개 팀에 참여중입니다.</p>
       </div>
       <div class="tag--wrap">
-        <button type="button" class="tag on">전체 (15)</button>
-        <button type="button" class="tag">챌린지 (3)</button>
-        <button type="button" class="tag">상시 (12)</button>
+        <button type="button" class="tag on">진행중 (15)</button>
+        <button type="button" class="tag">진행종료 (3)</button>
       </div>
       <div class="tag_cont on">
         <div class="team--main__sub">
@@ -106,7 +105,7 @@
               <img :src="require(`@/assets/images/icon_arrow_r.svg`)">
             </button>
             <div class="card__ranking">
-              <div class="card__state">진행중</div>
+              <div class="card__state card__state--wait">진행대기</div>
               <div class="card__ranking--text">
                 <p>상시팀 랭킹 <span>101</span>위</p>
                 <div class="btn__wrap">
@@ -139,8 +138,10 @@
             </div>
           </div>
         </div>
+      </div>
 
-        <section class="team--main__gray">
+      <div class="tag_cont">
+        <div class="team--main__sub">
           <div class="card card--border card--p16 card--shadowc2">
             <button class="card__linkBtn">
               <img :src="require(`@/assets/images/icon_arrow_r.svg`)">
@@ -155,7 +156,7 @@
               <div class="card__text">
                 <p class="card__text__title">팀명: 우리몸은 GUT Morning</p>
                 <div class="card__info">
-                  <div class="card__title card__title--always">상시</div>
+                  <div class="card__title card__title--end">상시</div>
                   <div class="card__num">99명</div>
                 </div> 
                 <p class="card__date">2024.09.01 ~ 2025.08.31</p>
@@ -177,7 +178,7 @@
               <div class="card__text">
                 <p class="card__text__title">팀명: 우리몸은 GUT Morning</p>
                 <div class="card__info">
-                  <div class="card__title">챌린지</div>
+                  <div class="card__title card__title--end">챌린지</div>
                   <div class="card__num">64명</div>
                 </div> 
                 <p class="card__date">
@@ -194,11 +195,8 @@
               <img :src="require(`@/assets/images/challenge_comp_green.png`)">
             </div>
           </div>
-        </section>
+        </div>
       </div>
-
-      <div class="tag_cont">탭1</div>
-      <div class="tag_cont">탭2</div>
     </div>
   </div>
 

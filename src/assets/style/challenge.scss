@@ -534,6 +534,10 @@
       border: 1px solid #f79c22;
       color: #f79c22;
     }
+    &--end {
+      border: 1px solid #666;
+      color: #666;
+    }
   }
   &__num {
     display: flex;
@@ -578,6 +582,9 @@
     color: #fff;
     &--end {
       background-color: #333;
+    }
+    &--wait {
+      background-color: #F79C22;
     }
   }
   &__ranking {

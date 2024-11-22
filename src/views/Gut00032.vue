@@ -39,7 +39,7 @@
       </div>
       <div class="team-btn-wrap">
         <div class="btn-area ty03">
-          <CustomButton color="light">강퇴</CustomButton>
+          <CustomButton color="light">팀에서 내보내기</CustomButton>
         </div>
       </div>
     </div>

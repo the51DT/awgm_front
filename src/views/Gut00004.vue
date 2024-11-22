@@ -18,7 +18,7 @@
       <button data-day="wed" class="date">수</button>
       <button data-day="thu" class="date">목</button>
       <button data-day="fri" class="date">금</button>
-      <button data-day="sat" class="date today">토</button>
+      <button data-day="sat" class="date today on">토</button>
       <button class="date--more">
         <img :src="require(`@/assets/images/icon_plus.svg`)" /><span
           >더보기</span
@@ -536,6 +536,8 @@ export default {
         }
 
         el.addEventListener("click", () => {
+          dayBtn.forEach((list) => {list.classList.remove("on");})
+          el.classList.add("on");
           if (matchIndex !== -1) {
             this.homeSwiper.slideTo(matchIndex);
           }

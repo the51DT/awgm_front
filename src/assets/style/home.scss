@@ -85,6 +85,29 @@
           letter-spacing: -0.5px;
           color: #666;
         }
+        &::before {
+          margin-top: -4px;
+        }
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        display: block;
+        width: 0;
+        height: 0;
+        border-radius: 10px;
+        background-color: #111;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+      }
+      &.on {
+        &::before {
+          top: -12px;
+          width: 6px;
+          height: 6px;
+          opacity: 1;
+        }
       }
       &--more {
         flex-shrink: 0;
