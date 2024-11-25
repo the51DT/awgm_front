@@ -20,8 +20,8 @@
         사업자 등록번호: 120-81-03391 
       </div>
       <div class="footer__bottom--copy">
-        ALL CONTENTS Copyright ⓒ 2024 Amway Korea LTD.<br>
-        ALL RIGHTS RESERVED
+        ALL CONTENTS Copyright ⓒ 2024<br>
+        Amway Korea LTD.ALL RIGHTS RESERVED
       </div>
     </div>
   </footer>
