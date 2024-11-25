@@ -1298,6 +1298,11 @@
         border: 2px solid #169e4a;
         border-radius: 16px;
         box-shadow: 6px 6px 24px 0px #00000040;
+        &__img {
+          img {
+            border-radius: 16px;
+          }
+        }
       }
     }
   }
