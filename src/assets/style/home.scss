@@ -278,3 +278,23 @@
     }
   }
 }
+
+.home-sticky {
+  display: none;
+  &-target {
+    display: none;
+  }
+  &.sticky {
+    transform: translateY(10%);
+    transition: 1s;
+    position: fixed;
+    display: block;
+    width: calc(100% - 40px);
+    max-width: 460px;
+    bottom: 30px;
+    z-index: 45;
+  }
+  .challenge__card--main__per {
+    margin-top: 0;
+  }
+}

@@ -771,30 +771,6 @@
         }
       }
     }
-    &.sticky {
-      transform: translateY(10%);
-      transition: 1s;
-      position: fixed;
-      width: calc(100% - 40px);
-      max-width: 460px;
-      bottom: 30px;
-      z-index: 45;
-      .card {
-        border: 1px solid #169e4a;
-      }
-      .text-link {
-        display: none;
-      }
-      .card--icon {
-        display: none;
-      }
-      .challenge__card--main__top {
-        display: none;
-      }
-      .challenge__card--main__per {
-        margin-top: 0;
-      }
-    }
     .card--icon {
       position: absolute;
       width: 90px;

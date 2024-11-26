@@ -205,6 +205,26 @@
   <div class="home--bot-section bg-case">
     <div class="home-card-box home-sticky sticky">
       <!-- 1025 수정 : 클래스 구조 변경 - sticky 클래스있는 경우에 따라 펼침/닫힘 적용 -->
+      <div class="card card--border card--shadow00 card--p20 challenge__card--main">
+        <div class="challenge__card--main__per">
+          <div>
+            <p class="font--700 font--ls1">팀 인증률</p>
+            <p class="font--700 font--c11 font--ls1">
+              <span class="font--green font--800 font--ls1">40</span>%
+            </p>
+          </div>
+          <div class="card--per">
+            <div class="card--per__gage--wrap">
+              <div class="card--per__gage" data-width="0%"></div>
+            </div>
+            <div class="card--per__comp" data-width="20%">성공</div>
+            <div class="card--per__target" data-left="100%">목표치</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="home-card-box">
       <a href="#" class="text-link">
         <p class="card-title">챌린지</p>
       </a>
@@ -228,7 +248,7 @@
             <p class="font--c66 font--ls1">(2025.04.01 ~ 2025.06.10)</p>
           </div>
         </div>
-        <div class="challenge__card--main__per">
+        <div class="challenge__card--main__per home-sticky-target">
           <div>
             <p class="font--700 font--ls1">팀 인증률</p>
             <p class="font--700 font--c11 font--ls1">
@@ -498,6 +518,7 @@ export default {
       const stickyArea = document.querySelector(".home--bot-section");
       const stickyAreaY = stickyArea.offsetTop;
       const winHeight = window.innerHeight;
+      const stickyTarget = document.querySelector(".home-sticky-target");
 
       if (!stickyCardBox) {
         return;
@@ -505,9 +526,11 @@ export default {
         if (scrollY + winHeight / 2 >= stickyAreaY) {
           stickyCardBox.classList.remove("sticky");
           homeAddBtn.classList.add("active");
+          stickyTarget.style.display = "flex";
         } else {
           stickyCardBox.classList.add("sticky");
           homeAddBtn.classList.remove("active");
+          stickyTarget.style.display = "none";
         }
       }
     },
