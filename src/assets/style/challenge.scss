@@ -20,6 +20,9 @@
   margin-top: 16px;
   border-radius: 32px;
   overflow: hidden;
+  .vc-header {
+    padding: 0 20px !important;
+  }
 }
 .challenge {
   position: relative;
