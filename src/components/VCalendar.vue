@@ -16,6 +16,7 @@
       :attributes="attrs"
       @update:page="addMessages"
       :masks="{ title: 'YYYY. MMMM' }"
+      disable-page-swipe
     >
       <template v-slot:title="{ month, year }">
         <span>{{ year }}. {{ month + 1 }}월</span>
