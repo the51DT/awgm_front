@@ -2,6 +2,9 @@
   padding-bottom: 40px;
   &__speech {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
     height: 88px;
     margin-top: 26px;
