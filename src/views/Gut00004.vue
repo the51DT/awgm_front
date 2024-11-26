@@ -155,28 +155,6 @@
             </div>
           </div>
         </swiper-slide>
-        <swiper-slide data-day="tue">
-          <div class="slider-wrap">
-            <div class="card--img card--shadowc2">
-              <img
-                class="card--img__comp"
-                :src="require(`@/assets/images/challenge_comp.png`)"
-              />
-              <div class="card--img__uploaded">
-                <img :src="require(`@/assets/images/challenge_card_bg.png`)" />
-              </div>
-              <div class="card--img__text">
-                <p class="card--img__text__date">2024.09.23 (화)</p>
-                <p class="card--img__text__title">나의 미션 인증 횟수</p>
-                <p class="card--img__text__num"><span>2</span>회</p>
-              </div>
-              <div class="btn_wrap">
-                <button class="share-btn"></button>
-                <button class="replace-btn"></button>
-              </div>
-            </div>
-          </div>
-        </swiper-slide>
         <swiper-slide data-day="mon">
           <div class="slider-wrap">
             <div class="card--img card--shadowc2">
@@ -466,7 +444,20 @@ export default {
     const onSwiper = (swiper) => {
       homeSwiper.value = swiper;
     };
-    const onSlideChange = () => {};
+    const onSlideChange = (swiper) => {
+      let dayList = document.querySelectorAll(".home__date .date");
+      dayList.forEach(el => {
+        const dayListValue = el.getAttribute("data-day");
+        const swiperActiveValue = swiper.slides[swiper.activeIndex].getAttribute("data-day");
+
+        if (dayListValue === swiperActiveValue) {
+          dayList.forEach(element => {
+            element.classList.remove("on")
+          })
+          el.classList.add("on")
+        }
+      })
+    };
     return {
       onSwiper,
       onSlideChange,
@@ -536,8 +527,6 @@ export default {
         }
 
         el.addEventListener("click", () => {
-          dayBtn.forEach((list) => {list.classList.remove("on");})
-          el.classList.add("on");
           if (matchIndex !== -1) {
             this.homeSwiper.slideTo(matchIndex);
           }
