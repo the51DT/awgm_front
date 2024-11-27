@@ -14,7 +14,7 @@
       </div>
 
       <div class="intro-text">
-        <FrontCount desc="명이 함께하고 있어요!" total="16160" />
+        <FrontCount desc="참여자가 함께하고 있어요!" total="16160" />
       </div>
 
       <KakaoButton />

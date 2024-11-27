@@ -189,15 +189,15 @@
       background: url(@/assets/images/icon_eye_off.svg) no-repeat;
     }
     &--copy {
-      position: absolute;
-      top: 50%;
-      right: 12px;
-      background: url(@/assets/images/icon_copy.svg) no-repeat;
-      width: 16px;
-      height: 16px;
-      border: none;
-      transform: translateY(-50%);
-      cursor: pointer;
+      flex-shrink: 0;
+      margin-left: 6px;
+      padding: 4px 12px;
+      border-radius: 8px;
+      background-color: #169E4A;
+      font-size: 13px;
+      font-weight: 800;
+      line-height: 24px;
+      color: #fff;
     }
   }
   &__toggle {
@@ -261,7 +261,7 @@
     }
   }
   &__copy {
-    padding: 8px 36px 8px 12px;
+    padding: 8px 12px;
     font-size: 12px;
     font-weight: 500;
     line-height: 16px;

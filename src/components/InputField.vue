@@ -144,10 +144,6 @@
         @click="passwordView"
       ></button>
       <!-- 패스워드 눈 버튼 -->
-      <button
-        v-if="type === 'copy'"
-        class="inputField__button--copy"
-      ></button>
       <!-- 토글 라벨 -->
       <label
         v-if="type === 'toggle'"
@@ -156,6 +152,8 @@
       >
         <span class="inputField__toggle--label--circle"></span>
       </label>
+      <!-- 복사하기 버튼 -->
+      <button class="inputField__button--copy">복사하기</button>
     </div>
     <!-- 캡션 -->
     <p

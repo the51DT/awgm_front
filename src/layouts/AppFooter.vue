@@ -8,7 +8,7 @@
       <div class="footer__bottom--call">
         <div>
           <img :src="white === false ? require(`@/assets/images/footer_call.svg`) : require(`@/assets/images/footer_call_white.svg`)">
-          <span>암웨이 고객센터</span>
+          <span>고객센터</span>
         </div>
         <div>
           1588-0080
