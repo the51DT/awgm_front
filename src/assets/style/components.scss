@@ -612,7 +612,7 @@
           &.start {
             .date-info {
               &:after {
-                content: 'Start';
+                content: '시작일';
               }
             }
           }
@@ -634,7 +634,7 @@
                 z-index: -1;
               }
               &:after {
-                content: 'Today' !important;
+                content: '오늘' !important;
               }
             }
           }
@@ -778,4 +778,9 @@
       transform: translate(-50%, -50%);
     }
   }
+}
+
+.share-img-wrap {
+  margin: -20px;
+  padding: 20px;
 }
