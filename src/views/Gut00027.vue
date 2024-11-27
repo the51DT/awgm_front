@@ -34,56 +34,58 @@
                 <col width="33%" />
                 <col />
               </colgroup>
-              <tr>
-                <th>구분</th>
-                <th>유형</th>
-                <th>개인정보항목</th>
-                <th>이용목적</th>
-              </tr>
-              <tr>
-                <td>19세 이상 성인</td>
-                <td>필수 정보</td>
-                <td>
-                  (카카오 간편 회원가입 시)<br />
-                  생일, 프로필 사진, 성별, 성명, 휴대폰번호, 출생연도, UID,
-                  닉네임, (한국암웨이 회원 인증을 하는 경우에는 “한국암웨이 회원
-                  ID”)<br />
-                  (서비스 이용 시)<br />
-                  회원의 GUT Morning 미션 인증 정보, 미션 인증 사진, 접속로그,
-                  쿠키 (Cookie)
-                </td>
-                <td rowspan="3">
-                  이용자 식별 및 회원관리, 각종 서비스 관련 편의, 혜택 제공 및
-                  고지사항 전달<br />
-                  고객상담, 불만 및 민원처리<br />
-                  사업자 윤리강령 소정의 스폰서십 라인 규정 준수 확인<br />
-                  서비스 및 제품 품질 향상을 위한 통계 작성 등 활용<br />
-                  기타 ABO 사업관리 및 서비스 지원<br />
-                  부모 동의 여부 확인
-                </td>
-              </tr>
-              <tr>
-                <td>14세 이상 청소년</td>
-                <td>필수 정보</td>
-                <td>
-                  (서비스 가입시)<br />
-                  아이디, 닉네임<br />
-                  (서비스 이용시)<br />
-                  GUT Morning 미션 인증 정보, 접속로그, 쿠키 (Cookie)
-                </td>
-              </tr>
-              <tr>
-                <td>14세 미만 어린이</td>
-                <td>필수 정보</td>
-                <td>
-                  (서비스 가입 시)<br />
-                  아이디, 닉네임<br />
-                  (법정대리인 동의 인증 시)<br />
-                  한국암웨이 회원 ID, 비밀번호<br />
-                  (서비스 이용 시)<br />
-                  GUT Morning 미션 인증 정보, 접속로그, 쿠키 (Cookie)
-                </td>
-              </tr>
+              <tbody>
+                <tr>
+                  <th>구분</th>
+                  <th>유형</th>
+                  <th>개인정보항목</th>
+                  <th>이용목적</th>
+                </tr>
+                <tr>
+                  <td>19세 이상 성인</td>
+                  <td>필수 정보</td>
+                  <td>
+                    (카카오 간편 회원가입 시)<br />
+                    생일, 프로필 사진, 성별, 성명, 휴대폰번호, 출생연도, UID,
+                    닉네임, (한국암웨이 회원 인증을 하는 경우에는 “한국암웨이 회원
+                    ID”)<br />
+                    (서비스 이용 시)<br />
+                    회원의 GUT Morning 미션 인증 정보, 미션 인증 사진, 접속로그,
+                    쿠키 (Cookie)
+                  </td>
+                  <td rowspan="3">
+                    이용자 식별 및 회원관리, 각종 서비스 관련 편의, 혜택 제공 및
+                    고지사항 전달<br />
+                    고객상담, 불만 및 민원처리<br />
+                    사업자 윤리강령 소정의 스폰서십 라인 규정 준수 확인<br />
+                    서비스 및 제품 품질 향상을 위한 통계 작성 등 활용<br />
+                    기타 ABO 사업관리 및 서비스 지원<br />
+                    부모 동의 여부 확인
+                  </td>
+                </tr>
+                <tr>
+                  <td>14세 이상 청소년</td>
+                  <td>필수 정보</td>
+                  <td>
+                    (서비스 가입시)<br />
+                    아이디, 닉네임<br />
+                    (서비스 이용시)<br />
+                    GUT Morning 미션 인증 정보, 접속로그, 쿠키 (Cookie)
+                  </td>
+                </tr>
+                <tr>
+                  <td>14세 미만 어린이</td>
+                  <td>필수 정보</td>
+                  <td>
+                    (서비스 가입 시)<br />
+                    아이디, 닉네임<br />
+                    (법정대리인 동의 인증 시)<br />
+                    한국암웨이 회원 ID, 비밀번호<br />
+                    (서비스 이용 시)<br />
+                    GUT Morning 미션 인증 정보, 접속로그, 쿠키 (Cookie)
+                  </td>
+                </tr>
+              </tbody>
             </table>
             * 필수 정보는 ABO 윤리강령 소정의 스폰서십 라인 규정 준수 확인 등의
             목적으로 이용될 수 있습니다.<br />
@@ -147,48 +149,50 @@
                 <col width="48px" />
                 <col width="48px" />
               </colgroup>
-              <tr>
-                <th>구분</th>
-                <th>제공 받는 자</th>
-                <th>개인정보항목</th>
-                <th>이용목적</th>
-                <th>제공 기간</th>
-              </tr>
-              <tr>
-                <td>19세 이상 성인</td>
-                <td>팀장</td>
-                <td>
-                  (팀 가입 시)<br />
-                  프로필 사진, 닉네임<br />
-                  (팀 활동 시)<br />
-                  회원의 GUT Morning 미션 인증 정보, 미션 인증 사진<br />
-                </td>
-                <td rowspan="3">
-                  팀 가입 및 활동 참가<br />
-                  팀원 미션 인증 확인
-                </td>
-                <td rowspan="3">팀 탈퇴 및 개인정보 제3자 제공 동의 철회 시</td>
-              </tr>
-              <tr>
-                <td>14세 이상 청소년</td>
-                <td>팀장, 부모 계정</td>
-                <td>
-                  (팀 가입시)<br />
-                  아이디, 닉네임<br />
-                  (팀 활동 시)<br />
-                  GUT Morning 미션 인증 정보
-                </td>
-              </tr>
-              <tr>
-                <td>14세 미만 어린이</td>
-                <td>팀장</td>
-                <td>
-                  (서비스 가입 시)<br />
-                  아이디, 닉네임<br />
-                  (팀 활동 시)<br />
-                  GUT Morning 미션 인증 정보
-                </td>
-              </tr>
+              <tbody>
+                <tr>
+                  <th>구분</th>
+                  <th>제공 받는 자</th>
+                  <th>개인정보항목</th>
+                  <th>이용목적</th>
+                  <th>제공 기간</th>
+                </tr>
+                <tr>
+                  <td>19세 이상 성인</td>
+                  <td>팀장</td>
+                  <td>
+                    (팀 가입 시)<br />
+                    프로필 사진, 닉네임<br />
+                    (팀 활동 시)<br />
+                    회원의 GUT Morning 미션 인증 정보, 미션 인증 사진<br />
+                  </td>
+                  <td rowspan="3">
+                    팀 가입 및 활동 참가<br />
+                    팀원 미션 인증 확인
+                  </td>
+                  <td rowspan="3">팀 탈퇴 및 개인정보 제3자 제공 동의 철회 시</td>
+                </tr>
+                <tr>
+                  <td>14세 이상 청소년</td>
+                  <td>팀장, 부모 계정</td>
+                  <td>
+                    (팀 가입시)<br />
+                    아이디, 닉네임<br />
+                    (팀 활동 시)<br />
+                    GUT Morning 미션 인증 정보
+                  </td>
+                </tr>
+                <tr>
+                  <td>14세 미만 어린이</td>
+                  <td>팀장</td>
+                  <td>
+                    (서비스 가입 시)<br />
+                    아이디, 닉네임<br />
+                    (팀 활동 시)<br />
+                    GUT Morning 미션 인증 정보
+                  </td>
+                </tr>
+              </tbody>
             </table>
             <br/>
             <span>4. 개인정보처리의 위탁에 관한 사항</span><br/>
@@ -198,14 +202,16 @@
                 <col width="50%" />
                 <col width="50%" />
               </colgroup>
-              <tr>
-                <th>수탁업체(수탁자)</th>
-                <th>위탁업무 내용</th>
-              </tr>
-              <tr>
-                <td>(주) 피비지</td>
-                <td>GUT Morning 미션 사이트 운영</td>
-              </tr>
+              <tbody>
+                <tr>
+                  <th>수탁업체(수탁자)</th>
+                  <th>위탁업무 내용</th>
+                </tr>
+                <tr>
+                  <td>(주) 피비지</td>
+                  <td>GUT Morning 미션 사이트 운영</td>
+                </tr>
+              </tbody>
             </table>
             <span>5. 개인정보의 국외 이전</span><br/>
             한국암웨이는 GUT Morning 미션 사이트 서비스 제공과 관련하여 회원정보를 국외로 이전하지 않습니다.<br/>
@@ -253,31 +259,33 @@
                 <col width="35%" />
                 <col width="30%" />
               </colgroup>
-              <tr>
-                <th>구분</th>
-                <th>홈페이지</th>
-                <th>전화</th>
-              </tr>
-              <tr>
-                <td>경찰청 사이버안전국</td>
-                <td><a href="http://cyberbureau.police.go.kr" target="blank">http://cyberbureau.police.go.kr</a></td>
-                <td>(국번없이) 182</td>
-              </tr>
-              <tr>
-                <td>대검찰청 사이버수사과</td>
-                <td><a href="http://www.spo.go.kr" target="blank">http://www.spo.go.kr</a></td>
-                <td>(국번없이) 1301</td>
-              </tr>
-              <tr>
-                <td>개인정보 침해신고센터<br/>(한국인터넷 진흥원 운영)</td>
-                <td><a href="http://privacy.kisa.or.kr" target="blank">http://privacy.kisa.or.kr</a></td>
-                <td>(국번없이) 118</td>
-              </tr>
-              <tr>
-                <td>개인정보 분쟁조정위원회<br/>(개인정보보호위원회 운영)</td>
-                <td><a href="http://kopico.go.kr" target="blank">http://kopico.go.kr</a></td>
-                <td>02-1833-6972</td>
-              </tr>
+              <tbody>
+                <tr>
+                  <th>구분</th>
+                  <th>홈페이지</th>
+                  <th>전화</th>
+                </tr>
+                <tr>
+                  <td>경찰청 사이버안전국</td>
+                  <td><a href="http://cyberbureau.police.go.kr" target="blank">http://cyberbureau.police.go.kr</a></td>
+                  <td>(국번없이) 182</td>
+                </tr>
+                <tr>
+                  <td>대검찰청 사이버수사과</td>
+                  <td><a href="http://www.spo.go.kr" target="blank">http://www.spo.go.kr</a></td>
+                  <td>(국번없이) 1301</td>
+                </tr>
+                <tr>
+                  <td>개인정보 침해신고센터<br/>(한국인터넷 진흥원 운영)</td>
+                  <td><a href="http://privacy.kisa.or.kr" target="blank">http://privacy.kisa.or.kr</a></td>
+                  <td>(국번없이) 118</td>
+                </tr>
+                <tr>
+                  <td>개인정보 분쟁조정위원회<br/>(개인정보보호위원회 운영)</td>
+                  <td><a href="http://kopico.go.kr" target="blank">http://kopico.go.kr</a></td>
+                  <td>02-1833-6972</td>
+                </tr>
+              </tbody>
             </table>
             <span>11. 고지의 의무</span><br/>
             본 개인정보처리방침은 2024년 12월 15일부터 적용됩니다. 내용의 추가, 삭제 및 수정이 있을 시에는 시행일 이전에 공지사항 등을 통하여 고지할 것입니다. 또한 개인정보 처리방침에 버전번호 및 공고일자, 시행일자 등을 부여하여 개정여부를 쉽게 알 수 있도록 하고 있습니다.<br/>
