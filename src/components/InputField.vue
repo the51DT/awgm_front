@@ -153,7 +153,7 @@
         <span class="inputField__toggle--label--circle"></span>
       </label>
       <!-- 복사하기 버튼 -->
-      <button class="inputField__button--copy">복사하기</button>
+      <button v-if="type === 'copy'" class="inputField__button--copy">복사하기</button>
     </div>
     <!-- 캡션 -->
     <p
