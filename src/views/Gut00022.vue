@@ -14,7 +14,7 @@
         </div>
       </div>
     </div>
-    <div class="card card--border">
+    <div class="card card--border mb-end">
       <div class="calendar">
         <VCalendar />
       </div>
