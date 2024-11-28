@@ -13,8 +13,8 @@
         <p class="text__subtit"><span class="text__subtit--bold">3</span>개 팀에 참여중입니다.</p>
       </div>
       <div class="tag--wrap">
-        <button type="button" class="tag on">진행중 (15)</button>
-        <button type="button" class="tag tag-gray">진행종료 (3)</button>
+        <button type="button" class="tag on">진행중</button>
+        <button type="button" class="tag tag-gray">진행종료</button>
       </div>
       <div class="tag_cont on">
         <div class="team--main__sub">
