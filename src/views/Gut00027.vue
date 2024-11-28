@@ -208,7 +208,7 @@
                   <th>위탁업무 내용</th>
                 </tr>
                 <tr>
-                  <td>(주) 피비지</td>
+                  <td>(주) 바이어스 컬쳐 앤 콘텐츠</td>
                   <td>GUT Morning 미션 사이트 운영</td>
                 </tr>
               </tbody>
