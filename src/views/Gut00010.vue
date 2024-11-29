@@ -51,7 +51,15 @@
       </div>
       <div>
         <p>전체 기간</p>
-        <p>2025.09.01 ~ 2025.11.15 / 70일</p>
+        <p>2025.09.01 ~ 2025.11.15</p>
+      </div>
+      <div>
+        <p>1회차 진행</p>
+        <p>2025.01.01 ~ 2025.01.31</p>
+      </div>
+      <div>
+        <p>2회차 진행</p>
+        <p>2025.02.01 ~ 2025.02.28</p>
       </div>
       <div>
         <p>팀 가입일</p>
@@ -90,7 +98,7 @@
     <p class="card__head">팀원 인증률 순위</p>
     <div class="card card--p20 card--shadow00 team--sub__card3">
       <p class="accent">나의 랭킹 <span>13</span>위</p>
-      <button>팀원 인증 현황 보기<img :src="require(`@/assets/images/icon_plus.svg`)"></button>
+      <button>팀원 현황 보기<img :src="require(`@/assets/images/icon_plus_white.svg`)"></button>
       <div class="card__chart">
         <div>
           <p>100%</p>
@@ -223,7 +231,7 @@
     <p class="card__head"><span>2025년 09월 </span>팀원 인증률 순위</p>
     <div class="card card--p20 card--shadow00 team--sub__card3">
       <p class="accent">나의 랭킹 <span>13</span>위</p>
-      <button>팀원 인증 현황 보기<img :src="require(`@/assets/images/icon_plus.svg`)"></button>
+      <button>팀원 현황 보기<img :src="require(`@/assets/images/icon_plus_white.svg`)"></button>
       <div class="card__chart">
         <div>
           <p>100%</p>
