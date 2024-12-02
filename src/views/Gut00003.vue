@@ -37,7 +37,10 @@
             </div>
             <div class="btn-area ty02">
               <p class="label-txt">인증이 완료되었습니다.</p>
-              <CustomButton size="sm" color="gray">인증</CustomButton>
+              <!-- 비활성화 -->
+              <CustomButton size="sm" color="gray">인증하기</CustomButton>
+              <!-- 활성화 -->
+              <!-- <CustomButton size="sm" color="green">인증하기</CustomButton> -->
             </div>
             <div class="btn-area">
               <!-- ty-chk on 클래스 추가시, active 처리됨 : 미체크가 디폴트 /
