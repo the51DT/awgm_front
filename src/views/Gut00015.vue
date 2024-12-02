@@ -111,11 +111,24 @@
             <p class="title">계정 연동 정보</p>
           </div>
           <div class="card-group">
+            <!-- 카카오(성인) 일 때 -->
             <div class="card card--shadow00">
               <div class="text-box-wrap">
                 <div class="text-wrap">
                   <p class="card-title">다타익선</p>
                   <p class="card-desc">* 카카오 UID는 <a href="#">개인회원 정보 페이지</a>에서 확인 가능합니다.</p>
+                </div>
+                <ul class="sub-wrap">
+                  <li><CustomButton size="sm">인증하기</CustomButton></li>
+                </ul>
+              </div>
+            </div>
+            <!-- 자녀계정일 때 -->
+            <div class="card card--shadow00">
+              <div class="text-box-wrap">
+                <div class="text-wrap">
+                  <p class="card-title">다타익선</p>
+                  <p class="card-desc">* 아이디는 <a href="#">개인회원 정보 페이지</a>에서 확인 가능합니다.</p>
                 </div>
                 <ul class="sub-wrap">
                   <li><CustomButton size="sm">인증하기</CustomButton></li>
