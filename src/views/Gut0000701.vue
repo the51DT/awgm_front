@@ -10,7 +10,7 @@
         </div>
         <div class="card--img__text">
           <p class="card--img__text__date">2024.09.23 (월)</p>
-          <p class="card--img__text__title">나의 미션 인증 횟수</p>
+          <p class="card--img__text__title">누적 인증 횟수</p>
           <p class="card--img__text__num"><span>2</span>회</p>
         </div>
         <button class="share-btn"></button>
@@ -34,7 +34,7 @@
             </div>
             <div class="card--img__text">
               <p class="card--img__text__date">2024.09.23 (월)</p>
-              <p class="card--img__text__title">나의 미션 인증 횟수</p>
+              <p class="card--img__text__title">누적 인증 횟수</p>
               <p class="card--img__text__num"><span>2</span>회</p>
             </div>
             <p class="card--img__title"><span>팀장김웨이</span>님의<br />GUT Morning</p>
@@ -67,7 +67,7 @@
               </div>
               <div class="card--img__text">
                 <p class="card--img__text__date">2024.09.23 (월)</p>
-                <p class="card--img__text__title">나의 미션 인증 횟수</p>
+                <p class="card--img__text__title">누적 인증 횟수</p>
                 <p class="card--img__text__num"><span>2</span>회</p>
               </div>
               <p class="card--img__title"><span>팀장김웨이</span>님의<br />GUT Morning</p>

@@ -102,6 +102,11 @@
           text-align: right;
         }
       }
+      &.ty02 {
+        .custom-btn--sm {
+          padding: 8px 16px;
+        }
+      }
     }
     .btn-group {
       margin-top: 40px;

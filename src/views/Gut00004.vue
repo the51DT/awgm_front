@@ -78,7 +78,7 @@
                 <p v-if="!imageUrl" class="date">2025년 5월 16일 (토)</p>
                 <div v-if="imageUrl" class="card--img__text">
                   <p class="card--img__text__date">2024.09.23 (월)</p>
-                  <p class="card--img__text__title">나의 미션 인증 횟수</p>
+                  <p class="card--img__text__title">누적 인증 횟수</p>
                   <p class="card--img__text__num"><span>2</span>회</p>
                 </div>
                 <div v-if="imageUrl" class="btn_wrap">
@@ -101,7 +101,7 @@
               </div>
               <div class="card--img__text">
                 <p class="card--img__text__date">2024.09.23 (금)</p>
-                <p class="card--img__text__title">나의 미션 인증 횟수</p>
+                <p class="card--img__text__title">누적 인증 횟수</p>
                 <p class="card--img__text__num"><span>2</span>회</p>
               </div>
               <div class="btn_wrap">
@@ -123,7 +123,7 @@
               </div>
               <div class="card--img__text">
                 <p class="card--img__text__date">2024.00.00 (목)</p>
-                <p class="card--img__text__title">나의 미션 인증 횟수</p>
+                <p class="card--img__text__title">누적 인증 횟수</p>
                 <p class="card--img__text__num"><span>2</span>회</p>
               </div>
               <div class="btn_wrap">
@@ -145,7 +145,7 @@
               </div>
               <div class="card--img__text">
                 <p class="card--img__text__date">2024.09.23 (수)</p>
-                <p class="card--img__text__title">나의 미션 인증 횟수</p>
+                <p class="card--img__text__title">누적 인증 횟수</p>
                 <p class="card--img__text__num"><span>2</span>회</p>
               </div>
               <div class="btn_wrap">
@@ -167,7 +167,7 @@
               </div>
               <div class="card--img__text">
                 <p class="card--img__text__date">2024.09.23 (월)</p>
-                <p class="card--img__text__title">나의 미션 인증 횟수</p>
+                <p class="card--img__text__title">누적 인증 횟수</p>
                 <p class="card--img__text__num"><span>2</span>회</p>
               </div>
               <div class="btn_wrap">
@@ -189,7 +189,7 @@
               </div>
               <div class="card--img__text">
                 <p class="card--img__text__date">2024.09.23 (일)</p>
-                <p class="card--img__text__title">나의 미션 인증 횟수</p>
+                <p class="card--img__text__title">누적 인증 횟수</p>
                 <p class="card--img__text__num"><span>2</span>회</p>
               </div>
               <div class="btn_wrap">
