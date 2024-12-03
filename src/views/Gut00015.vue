@@ -139,14 +139,6 @@
               <div class="text-box-wrap">
                 <div class="text-wrap">
                   <p class="card-title">그로잉랩</p>
-                  <p class="card-desc">* 계정 연동 정보 (계정 연동은 각 사이트에서 진행 할수 있습니다.)</p>
-                </div>
-              </div>
-            </div>
-            <div class="card card--shadow00">
-              <div class="text-box-wrap">
-                <div class="text-wrap">
-                  <p class="card-title">그로잉랩</p>
                 </div>
                 <ul class="sub-wrap">
                   <li><p class="user-name">$프로필명$</p></li>
@@ -154,6 +146,9 @@
                 </ul>
               </div>
             </div>
+            <ul class="info--list indent">
+              <li class="font--green">* 계정 연동은 각 서비스에서 진행할 수 있습니다.</li>
+            </ul>
           </div>
         </div>
         <div class="section">
