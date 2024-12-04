@@ -65,7 +65,7 @@ body {
 }
 .nav {
   position: fixed;
-  bottom: 0;
+  bottom: calc(env(safe-area-inset-bottom) + 0px);
   width: 100%;
   max-width: 500px;
   height: 72px;
