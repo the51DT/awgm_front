@@ -245,8 +245,7 @@
             <p class="font--c11 font--700 font--ls2">
               성공조건 : 팀 인증 <span class="font--green">80%</span> 이상
             </p>
-            <p class="font--c66 font--ls1"><span class="font--800">전체기간 : </span>2025.04.01~2025.06.10 / 70일</p>
-            <p class="font--c66 font--ls1"><span class="font--800">2회차 진행 : </span>2025.05.13~2025.06.10 / 35일</p>
+            <p class="font--c66 font--ls1">(2025.04.01 ~ 2025.06.10)</p>
           </div>
         </div>
         <div class="challenge__card--main__per home-sticky-target">

@@ -18,7 +18,7 @@
       </div>
       <p class="title__big">GUT Morning Korea<br/>Challenge</p>
       <p class="title__main">팀명: 아침마다 오 마이 GUT Morning</p>
-      <p class="title__date"><span>3회차 진행 : </span>2025.04.01~2025.06.10 / 70일</p>
+      <p class="title__date"><span>3회차 진행 중 : </span>2025.04.01~2025.06.10 / 70일</p>
     </div>
     <div class="card card--p20 card--shadow00 team--sub__card1">
       <div class="card--per">
