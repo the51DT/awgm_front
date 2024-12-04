@@ -866,16 +866,29 @@
 
 /* etc */
 .content-etc {
+  &-area {
+    position: relative;
+    height: 100vh;
+    overflow-y: auto;
+    margin: 0 -20px;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
   &-wrap {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    margin: 0 -20px;
+    min-height: 105vh;
+    padding: 0 20px;
     .custom-btn {
-      margin-bottom: 20px;
+      position: sticky;
+      bottom: 20px;
     }
   }
   &-box {
+    position: sticky;
+    top: 50%;
+    transform: translateY(-50%);
     margin: auto;
     display: flex;
     justify-content: center;
