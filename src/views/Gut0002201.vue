@@ -173,11 +173,11 @@
         <div class="card--per__gage--wrap">
           <div class="card--per__gage" data-width="40%"></div>
         </div>
-        <div class="card--per__target" data-left="50%"><p>지난 달 인증률 <span>80%</span></p></div>
+        <div class="card--per__target" data-left="50%"><p>이번 달 인증률 <span>80%</span></p></div>
       </div>
       <div class="card--box card--box--flex2">
         <div>
-          <p>팀 인증률</p>
+          <p>이번 달 팀 인증률</p>
           <p>40%</p>
         </div>
         <div>
