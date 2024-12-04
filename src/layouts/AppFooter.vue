@@ -16,7 +16,7 @@
       </div>
       <div class="footer__bottom--address">
         한국암웨이(주) 서울특별시 강남구 영동대로 517 27층<br>
-        (삼성동, 아셈타워) (대표이사: 신은자)<br>
+        (삼성동, 아셈타워) (대표이사 : 신은자, 존패트릭파커)<br>
         사업자 등록번호: 120-81-03391 
       </div>
       <div class="footer__bottom--copy">
