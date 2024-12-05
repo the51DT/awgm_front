@@ -127,9 +127,12 @@ body {
     gap: 20px;
     &--link {
       font-size: 13px;
-      font-weight: 800;
+      font-weight: 500;
       line-height: 24px;
       color: #333333;
+      &:last-child {
+        font-weight: 800;
+      }
     }
   }
   &__bottom {
