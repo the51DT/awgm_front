@@ -1,5 +1,5 @@
 <template>
-  <nav ref="nav" class="nav">
+  <nav class="nav">
     <ul>
       <li>
         <router-link to="/홈 첼린지-Gut00004">
@@ -30,8 +30,6 @@
 </template>
 
 <script>
-import { onMounted, onBeforeUnmount, ref } from 'vue';
-
 export default {
   name: "AppNav",
   props: {
@@ -51,40 +49,6 @@ export default {
       type: Boolean,
       default: false,
     },
-  },
-  setup() {
-    const nav = ref(null);
-
-    const forceViewportUpdate = () => {
-      window.scrollTo(0, window.scrollY + 1);
-      window.scrollTo(0, window.scrollY - 1);
-    };
-
-    const updateNavPosition = () => {
-      if (nav.value) {
-        const viewportHeight = window.innerHeight;
-
-        nav.value.style.bottom = `${viewportHeight === window.innerHeight ? 0 : 20}px`;
-      }
-    };
-
-    const handleResize = () => {
-      updateNavPosition();
-      forceViewportUpdate();
-    };
-
-    onMounted(() => {
-      window.addEventListener('resize', handleResize);
-      handleResize();
-    });
-
-    onBeforeUnmount(() => {
-      window.removeEventListener('resize', handleResize);
-    });
-
-    return {
-      nav,
-    };
-  },
+  }
 };
 </script>
