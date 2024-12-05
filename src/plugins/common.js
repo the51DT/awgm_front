@@ -84,9 +84,17 @@ function posValue(list) {
   });
 }
 
+const setVh = () => {
+  let vh = 0;
+  vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty("--vh", `${vh}px`);
+};
+window.addEventListener("resize", setVh);
+
 dataVaule();
 tabFn();
 layerClose();
+setVh();
 
 document.addEventListener("DOMContentLoaded", function () {
   dataVaule();

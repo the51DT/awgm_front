@@ -123,6 +123,7 @@ html.pop-open {
       border: 1px solid #E5E5E5;
       &:has(.terms__text) {
         max-height: 30vh;
+        max-height: calc(var(--vh, 1vh) * 30);
         overflow-y: auto;
         text-align: left;
         padding-right: 2px;
@@ -149,7 +150,7 @@ html.pop-open {
   &__scroll {
     padding: 6px;
     width: 100%;
-    max-height: min(440px, calc(100vh - 122px));
+    max-height: min(440px, calc((var(--vh, 1vh) * 100) - 122px));
     border: 1px solid #e5e5e5;
     background-color: #fff;
     text-align: left;
@@ -202,6 +203,7 @@ html.pop-open {
     max-width: 500px;
     height: fit-content;
     min-height: 100vh;
+    min-height: calc(var(--vh, 1vh) * 100);
     margin: 0 auto;
     padding: 0 20px;
     background-color: #fff;

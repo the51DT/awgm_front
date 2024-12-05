@@ -9,6 +9,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 100);
   max-width: 500px;
   margin: 0 auto;
   padding: 0 20px;
