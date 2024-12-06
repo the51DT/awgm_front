@@ -1,5 +1,5 @@
 /* intro */
-.wrap:has(.lottie-conts:not(.lottie-conts--green)) {
+#app:has(.lottie-conts:not(.lottie-conts--green)) {
   background: linear-gradient(180deg, #edfff4 0%, #fafff8 43%);
 }
 .lottie-conts {

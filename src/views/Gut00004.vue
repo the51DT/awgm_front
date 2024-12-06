@@ -513,7 +513,7 @@ export default {
     },
     scrollEvents(event) {
       //1024 수정 : 클래스 구조 변경에 따른 내용 수정
-      let scrollY = document.querySelector("#app").scrollTop;
+      let scrollY = window.scrollY;
       const homeAddBtn = document.querySelector(".home--addBtn");
       const stickyCardBox = document.querySelector(".home-sticky");
       const stickyArea = document.querySelector(".home--bot-section");
