@@ -1,9 +1,7 @@
 <template>
-  <div class="wrap">
-    <AppHeader v-if="showHeader" :mypage="route.meta.mypage ? true : false" />
-    <router-view />
-    <AppFooter v-if="showFooter" :white="route.meta.white ? true : false" />
-  </div>
+  <AppHeader v-if="showHeader" :mypage="route.meta.mypage ? true : false" />
+  <router-view />
+  <AppFooter v-if="showFooter" :white="route.meta.white ? true : false" />
 </template>
 
 <script setup>
