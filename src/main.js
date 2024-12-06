@@ -2,7 +2,7 @@ import { createApp } from "vue";
 import Vue3Lottie from "vue3-lottie";
 import App from "./App.vue";
 import VCalendar from "v-calendar";
-import vuetify from "./plugins/vuetify";
+
 import { loadFonts } from "./plugins/webfontloader";
 import router from "./router";
 import "./assets/style/index.scss";
@@ -12,7 +12,7 @@ loadFonts();
 
 createApp(App)
   .use(router)
-  .use(vuetify)
+
   .use(VCalendar)
   .use(Vue3Lottie, { name: "LottieAnimation" })
   .use(common)

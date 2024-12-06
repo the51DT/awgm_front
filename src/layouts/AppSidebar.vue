@@ -62,40 +62,35 @@ const isSelected = (item) => {
   font-size: 20px;
 }
 .lnb_front {
-  background: #3f4d66;
+  background: transparent;
 
-  /* Ensure menu list takes up available space and makes sidebar scrollable */
   .menu-list {
-    overflow-y: auto; /* Enables scrolling if content overflows */
+    overflow-y: auto;
+    padding: 16px;
   }
   .menu-list::-webkit-scrollbar {
     display: none;
   }
   .v-list {
     padding: 0;
+    background: transparent;
+    display: block;
+
     .v-list-item {
       min-height: 40px;
       white-space: normal;
+      display: block;
+      margin-bottom: 8px;
     }
     .v-list-item-title {
       white-space: normal;
     }
     .v-list-item.list_1dep {
       min-height: 50px;
-    }
-  }
-  .subTitle {
-    margin: 0;
-
-    height: 60px;
-    background-color: #2c3e50;
-
-    .btn_menu {
-      font-weight: 700;
-      color: #ffffff;
-
-      font-size: 20px;
-      transition: background 0.3s ease;
+      background: #3d4a62;
+      margin-bottom: 12px;
+      border-radius: 8px;
+      display: block;
     }
   }
 
@@ -105,58 +100,28 @@ const isSelected = (item) => {
       display: block;
       font-size: 18px;
       font-weight: 700;
-      color: #ffffff;
-
-      transition: background 0.3s ease;
-    }
-
-    &.select .btn_menu {
-      background-color: #2c3e50;
-      color: #ffffff;
-    }
-
-    &.select .btn_menu::after {
-      content: "";
-      display: block;
-      width: 100%;
-
-      background: #ffffff;
-      border-radius: 6px;
-      opacity: 0.2;
+      color: #333;
+      padding: 15px;
     }
   }
 
   .menu_2dep {
+    background: transparent;
+    padding-left: 20px;
+    display: block;
+
     .list_2dep {
+      display: block;
+      margin-bottom: 8px;
+
       .btn_menu {
         position: relative;
-        margin: 0;
+        display: block;
         font-size: 14px;
-        font-weight: 700;
-        color: #c2c2c2;
-        margin-left: 14px;
+        font-weight: 500;
+        color: #666;
+        padding: 10px 15px;
       }
-    }
-  }
-
-  .sidebar-buttons {
-    margin-top: auto;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    padding: 16px;
-    background-color: #3f4d66;
-
-    a {
-      text-decoration: none;
-    }
-
-    .sidebar-btn {
-      width: 100%;
-      background-color: #ffffff;
-      color: #000000;
-      height: 48px;
     }
   }
 }
