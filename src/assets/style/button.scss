@@ -1,4 +1,7 @@
 .login-button {
+  & + .login-button {
+    margin-top: 12px;
+  }
   max-width: var(--max-width);
   box-sizing: border-box;
   text-align: center;

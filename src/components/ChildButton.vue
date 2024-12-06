@@ -1,5 +1,5 @@
 <template>
-  <div class="login-button mt-3">
+  <div class="login-button">
     <button class="login-button__item login-button__item--child">
       <span>
         <img :src="require(`@/assets/images/icon_child_login.svg`)">
