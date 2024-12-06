@@ -18,7 +18,7 @@
         },
         methods: {
           handleScroll() {
-            this.addBtnHomeShow = window.scrollY > 0;
+            this.addBtnHomeShow = document.querySelector("#app").scrollTop > 0;
 
             if(this.addBtnHomeShow) {
               const addBtnHome = document.querySelector(".home--addBtn");
@@ -48,10 +48,10 @@
           },
         },
         mounted() {
-            window.addEventListener('scroll', this.handleScroll);
+            document.addEventListener('scroll', this.handleScroll, true);
         },
         beforeUnmount() {
-            window.removeEventListener('scroll', this.handleScroll);
+            document.removeEventListener('scroll', this.handleScroll, true);
         },
     }
 </script>

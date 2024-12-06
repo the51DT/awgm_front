@@ -19,14 +19,14 @@ export default {
     },
     methods: {
       handleScroll() {
-        this.goTopBtnShow = window.scrollY > 0;
+        this.goTopBtnShow = document.querySelector("#app").scrollTop > 0;
       },
       goTop() {
-        window.scrollTo({ top: 0, behavior:'smooth' });
+        document.querySelector("#app").scrollTo({ top: 0, behavior:'smooth' });
       }  
     },
     mounted() {
-        window.addEventListener('scroll', this.handleScroll);
+        document.addEventListener('scroll', this.handleScroll, true);
     },
 }
 </script>

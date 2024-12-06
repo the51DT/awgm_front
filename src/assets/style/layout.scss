@@ -5,6 +5,13 @@ body {
 }
 
 #app {
+  height: calc(var(--vh, 1vh) * 100);
+  @supports (-webkit-touch-callout: none) {
+    height: -webkit-fill-available;
+  }
+  overflow-y: auto;
+}
+.wrap {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
