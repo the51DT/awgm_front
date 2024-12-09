@@ -215,7 +215,7 @@
     <p class="card__head"><span>2025년 09월 </span>팀원 인증률 순위</p>
     <div class="card card--p20 card--shadow00 team--sub__card3">
       <p class="accent">나의 랭킹 <span>13</span>위</p>
-      <button>팀원 인증 현황 보기<img :src="require(`@/assets/images/icon_plus.svg`)"></button>
+      <button>팀원 인증 현황 보기<img :src="require(`@/assets/images/icon_plus_white.svg`)"></button>
       <div class="card__chart">
         <div>
           <p>100%</p>

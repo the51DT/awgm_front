@@ -642,6 +642,7 @@
           width: 24px;
           height: 24px;
           background-size: contain;
+          background-repeat: no-repeat;
           background-image: url(../images/icon_star.svg);
           &.on {
             background-image: url(../images/icon_star_fill.svg);
@@ -1556,6 +1557,7 @@
           width: 32px;
           height: 32px;
           background-image: url(../images/delete_btn.svg);
+          background-repeat: no-repeat;
         }
       }
       .text-wrap {
@@ -1633,6 +1635,7 @@
           height: 24px;
           background-image: url(../images/icon_star.svg);
           background-position: center;
+          background-repeat: no-repeat;
           &.on {
             background-image: url(../images/icon_star_fill.svg);
           }
@@ -1645,6 +1648,7 @@
           height: 24px;
           background-image: url(../images/icon_delete.svg);
           background-position: center;
+          background-repeat: no-repeat;
         }
         & + .card {
           margin-top: 8px;
