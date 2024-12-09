@@ -1,6 +1,5 @@
 <template>
   <v-app>
-    <stamp-effect />
     <app-sidebar />
 
     <!-- 메인 컨텐츠 -->
@@ -11,7 +10,6 @@
 import { ref, computed, provide } from "vue";
 import { useRoute } from "vue-router";
 import AppSidebar from "@/layouts/AppSidebar.vue";
-import StampEffect from "@/components/StampEffect.vue";
 
 const drawer = ref(true);
 const route = useRoute();
