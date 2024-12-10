@@ -17,7 +17,7 @@
                 <div class="card__title">챌린지</div>
                 <div class="card__num">64명</div>
               </div> 
-              <p class="card__date">2025.09.01 ~ 2025.09.30 (70일)</p>
+              <p class="card__date"><strong>1회차 진행 : </strong>2025.09.01 ~ 2025.09.30 (70일)</p>
             </div>
           </div>
           <div class="challenge__card--history--bottom">
@@ -47,7 +47,7 @@
                 <div class="card__title">챌린지</div>
                 <div class="card__num">64명</div>
               </div> 
-              <p class="card__date">2025.09.01 ~ 2025.09.30 (70일)</p>
+              <p class="card__date"><strong>2회차 진행 : </strong>2025.09.01 ~ 2025.09.30 (70일)</p>
             </div>
           </div>
           <div>
