@@ -112,7 +112,10 @@
                 챌린지 팀을 만들 수 있습니다.
               </p>
               <div class="service__img">
-                <img class="img2_2" :src="require('@/assets/images/service2_2.png')">
+                <!-- 상시 팀 만들기 내용도 있을때 -->
+                <!-- <img class="img2_2" :src="require('@/assets/images/service2_2.png')"> -->
+                <!-- 챌린지 팀 만들기 내용만 있을때 -->
+                <img class="img2_1" :src="require('@/assets/images/service2_2_only.png')">
               </div>
             </div>
 
