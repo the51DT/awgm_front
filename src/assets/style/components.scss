@@ -466,6 +466,9 @@
     &:has(.inputField__input__radio) {
       height: auto;
     }
+    & + div {
+      flex: 0 1 38.75%;
+    }
   }
   .filter-box-wrap {
     border: 1px solid #e5e5e5;
