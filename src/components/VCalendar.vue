@@ -1,4 +1,12 @@
 <template>
+  <!-- calendar 영역 정리 -->
+  <!--
+    * 캘린더 마크업 내 사용된 클래스 정리 [클래스명]
+    1 팀 시작일 : (문구) [vc-day-content에 start 클래스 존재시]
+    2 인증일 : (노란배경 + bold +텍스트흰색 , 선택시 ) [ vc-day-content에 success 클래스 존재사 ]
+    3 챌린지 진행 기간 : active (배경색 gray) [ vc-highlight-bg-light ]
+    4 Today : today (문구 + 노란테두리) [vc-day-content에 today 클래스 존재시]
+  -->
   <div ref="calendarContainer">
     <h3 class="calendar-title"><slot name="title"></slot></h3>
     <VCalendar
