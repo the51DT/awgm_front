@@ -217,7 +217,10 @@
             <div class="card--per__gage--wrap">
               <div class="card--per__gage" data-width="0%"></div>
             </div>
-            <div class="card--per__comp" data-width="20%">성공</div>
+            <!-- 성공 전 케이스 / 회색 = card--per__comp 클래스에 gray 클래스 추가 -->
+            <div class="card--per__comp gray" data-width="20%">성공!</div>
+            <!-- 성공 후 케이스 / 초록색 -->
+            <!-- <div class="card--per__comp" data-width="20%">성공!</div> -->
             <div class="card--per__target" data-left="100%">목표치</div>
           </div>
         </div>
@@ -261,7 +264,7 @@
             <div class="card--per__gage--wrap">
               <div class="card--per__gage" data-width="0%"></div>
             </div>
-            <div class="card--per__comp" data-width="20%">성공</div>
+            <div class="card--per__comp" data-width="20%">성공!</div>
             <div class="card--per__target" data-left="100%">목표치</div>
             <div class="card--per__tooltip--wrap">
               <div class="card--per__tooltip--top" data-left="0%"></div>

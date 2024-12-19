@@ -25,7 +25,7 @@
         <div class="card--per__gage--wrap">
           <div class="card--per__gage" data-width="40%"></div>
         </div>
-        <div class="card--per__comp" data-width="20%">성공</div>
+        <div class="card--per__comp" data-width="20%">성공!</div>
         <div class="card--per__target" data-left="60%">목표치</div>
       </div>
       <div class="card--box card--box--flex2">
