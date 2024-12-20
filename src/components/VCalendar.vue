@@ -96,6 +96,17 @@ const addMessages = () => {
 
 function parseDate(dateString) {
   if (!dateString) return "";
+
+  // 영문 날짜 포맷 처리 (예: "October 5, 2024")
+  const date = new Date(dateString);
+  if (!isNaN(date.getTime())) {
+    return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(
+      2,
+      "0"
+    )}-${String(date.getDate()).padStart(2, "0")}`;
+  }
+
+  // 한글 날짜 포맷 처리 (예: "2024년 10월 5일")
   const parts = dateString.match(/\d+/g);
   if (!parts || parts.length < 3) return "";
   return `${parts[0]}-${parts[1].padStart(2, "0")}-${parts[2].padStart(
