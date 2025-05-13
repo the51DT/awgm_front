@@ -1,3 +1,4 @@
+<!-- 로그인페이지 숫자 카운팅 -->
 <template>
   <div class="text-group">
     <img

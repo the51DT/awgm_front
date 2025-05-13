@@ -1,13 +1,21 @@
 <template>
-  <div v-if="full" class="popup popup--full__wrap" :class="isTopBtn === true ? 'sticky' : ''" :id=id>
+  <div
+    v-if="full"
+    class="popup popup--full__wrap"
+    :class="isTopBtn === true ? 'sticky' : ''"
+    :id="id"
+  >
     <div class="popup--full">
       <slot name="full"></slot>
     </div>
   </div>
-  <div v-else class="popup" :id=id>
-    <div class="popup__box" :class="[sm ? 'popup__box--sm' : '', lg ? 'popup__box--lg' : '']">
+  <div v-else class="popup" :id="id">
+    <div
+      class="popup__box"
+      :class="[sm ? 'popup__box--sm' : '', lg ? 'popup__box--lg' : '']"
+    >
       <button class="popup__box--close">
-        <img :src="require(`@/assets/images/icon_close.svg`)">
+        <img :src="require(`@/assets/images/icon_close.svg`)" />
       </button>
       <div class="popup__box--cont">
         <div v-if="$slots.title" class="popup__box--top">
@@ -33,6 +41,6 @@ export default {
     lg: Boolean,
     full: Boolean,
     isTopBtn: Boolean,
-  }
-}
+  },
+};
 </script>

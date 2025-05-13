@@ -1,3 +1,4 @@
+<!-- Basic Button -->
 <template>
   <button
     class="custom-btn"
@@ -22,6 +23,6 @@ export default {
   props: {
     size: String,
     color: String,
-  }
-}
+  },
+};
 </script>

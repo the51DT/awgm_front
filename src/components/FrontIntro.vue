@@ -1,3 +1,4 @@
+<!-- 로그인페이지 lottie animation -->
 <template>
   <div class="intro" :id="lottieColorType == 'green' ? 'green' : 'white'">
     <div ref="animationContainer"></div>
