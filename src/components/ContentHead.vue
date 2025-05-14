@@ -4,7 +4,7 @@
     headType === 'ty02' ? 'ty02' : '',
     headType === 'ty03' ? 'ty03' : '',
     { 'bgGray': bgGray },
-    { 'scrolled' : isScrolled },
+    { 'scrolled': isScrolled },
   ]">
     <a class="area-left" href="#" v-if="leftArea === true">
       <img class="ico-logo" :src="require(`@/assets/images/icon/ico_arrow_left.png`)" alt="이전페이지로 이동" />
@@ -31,7 +31,7 @@
 <script>
 export default {
   name: "ContentHead",
-  data(){
+  data() {
     return {
       isScrolled: false
     }
@@ -50,13 +50,13 @@ export default {
       default: false,
     },
   },
-  mounted(){
+  mounted() {
     window.addEventListener('scroll', this.handleScroll)
   },
-  beforeDestroy(){
+  beforeDestroy() {
     window.removeEventListener('scroll', this.handleScroll)
   },
-  methods:{
+  methods: {
     handleScroll() {
       this.isScrolled = window.scrollY > 0
     }
