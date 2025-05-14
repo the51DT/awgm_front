@@ -42,7 +42,7 @@
   align-items: center;
   padding: 20px 32px 0 32px;
   min-height: 32px;
-  // position: relative;
+  transition: all 0.3s ease;
   &.ty02 {
     position: fixed;
     top: 0;
@@ -57,6 +57,10 @@
   }
   &.bgGray{
     background: #f5f5f5;
+  }
+  &.ty02.scrolled {
+    box-shadow: 0px 8px 12px 0px #C2C2C240;
+    transition: all 0.3s ease;
   }
   &.ty03 {
     position: relative;
