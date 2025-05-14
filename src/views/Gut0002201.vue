@@ -151,7 +151,7 @@
 
   <!-- 상시 팀 관리 -->
   <div class="team--sub">
-    <ContentHead title="팀 정보" headType="ty02" :leftArea=true />
+    <ContentHead title="팀 정보" headType="ty02" :leftArea=true bgGray="true"/>
     <div class="team-box-wrap">
       <div class="profile-area">
         <div class="img-wrap">

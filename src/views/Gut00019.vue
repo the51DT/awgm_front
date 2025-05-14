@@ -1,6 +1,6 @@
 <template>
   <div class="content-area">
-    <ContentHead title="자녀계정 등록/관리" :leftArea="true" />
+    <ContentHead title="자녀계정 등록/관리" :leftArea="true" :headType="'ty02'" />
     <!-- 자녀계정이 있는 경우 -->
     <div class="my__list">
       <p class="my__list__title">
@@ -130,6 +130,7 @@ export default {
   data() {
     return {
       type: "",
+      headType: 'ty02'
     };
   },
   components: {

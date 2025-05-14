@@ -1,7 +1,7 @@
 <template>
   <!-- 챌린지 팀 관리 -->
   <div class="team--sub">
-    <ContentHead title="팀 정보" headType="ty02" :leftArea=true :rightArea=true :rightIcon=true />
+    <ContentHead title="팀 정보" headType="ty02" :leftArea=true :rightArea=true :rightIcon=true bgGray="true"/>
     <div class="team-box-wrap">
       <div class="profile-area">
         <div class="img-wrap on-flag">

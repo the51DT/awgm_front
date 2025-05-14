@@ -1,6 +1,6 @@
 <template>  
   <div class="content-area">
-    <ContentHead :leftArea=true />
+    <ContentHead :leftArea=true headType="ty02" />
     <div class="content-top">
       <div class="login-wrap">
         <div class="login-intro">

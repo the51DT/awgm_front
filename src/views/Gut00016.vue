@@ -1,6 +1,6 @@
 <template>
   <div class="content-area bg-case">
-    <ContentHead :leftArea=true title="개인회원 정보" />
+    <ContentHead :leftArea=true title="개인회원 정보" headType="ty02" bgGray="true"/>
     <div class="my-page-box-info">
       <div class="my-page-wrap">      
         <div class="profile-area small">

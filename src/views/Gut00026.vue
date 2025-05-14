@@ -2,7 +2,7 @@
   <PopupDefault full :isTopBtn="true">
     <template v-slot:full>
       <div class="terms bg-case">
-        <ContentHead title="이용약관" :rightArea=true />
+        <ContentHead title="이용약관" :rightArea=true :headType="ty03"/>
         <div class="terms__cont">
           <div class="terms__text">
             <span>것모닝 마이크로 미션 사이트 이용 약관</span><br/>

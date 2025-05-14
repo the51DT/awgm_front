@@ -1,6 +1,6 @@
 <template>
   <div class="faq--wrap">
-    <ContentHead title="FAQ" :leftArea=true />
+    <ContentHead title="FAQ" :leftArea=true headType="ty02"/>
     <div class="faq">
       <div class="faq__tag">
         <swiper

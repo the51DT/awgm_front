@@ -1,7 +1,7 @@
 <template>
   <PopupDefault full>
     <template v-slot:full>
-      <ContentHead title="챌린지 이력보기" :rightArea=true />
+      <ContentHead title="챌린지 이력보기" :rightArea=true headType="ty02"/>
       <!-- 1025 수정 : 챌린지 nodata 케이스 추가 -->
       <!-- 챌린지 이력보기 데이터 존재하는 경우 -->
       <div v-if="challengeData" class="popup--full__cont">

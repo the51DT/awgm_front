@@ -24,10 +24,19 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 14px 0px;
+  // border: 1px solid red;
+  max-width: 500px;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  background: #fff;
+  z-index: 100;
+  margin-left: -20px;
   &__left {
     display: flex;
     gap: 4px;
     height: 44px;
+    padding-left: 20px;
     &--cont {
       display: flex;
       flex-direction: column;
@@ -52,17 +61,22 @@ body {
   &__right {
     display: flex;
     gap: 8px;
+    padding-right: 20px;
     img {
-      width: 34px;
+      width: 32px;
     }
     &--notice {
-      width: 42px;
-      height: 42px;
+      width: 32px;
+      height: 32px;
       img {
         width: 100%;
       }
     }
   }
+}
+.header-space{
+  width: 100%;
+  height: 72px;
 }
 .nav {
   position: fixed;

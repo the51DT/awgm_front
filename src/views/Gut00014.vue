@@ -1,6 +1,6 @@
 <template>
   <div class="content-area bg-case">
-    <ContentHead title="팀 만들기" headType="ty02" :leftArea="true" />
+    <ContentHead title="팀 만들기" headType="ty02" :leftArea="true"  bgGray="true"/>
     <div class="create-team-wrap">
       <div class="profile-wrap">
         <div class="profile-area">

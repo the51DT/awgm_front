@@ -1,6 +1,6 @@
 <template>
   <div class="content-area">
-    <ContentHead title="나의 인증 현황" :leftArea=true />
+    <ContentHead title="나의 인증 현황" :leftArea=true headType="ty02" />
     <div class="calendar">
       <VCalendar />
     </div>

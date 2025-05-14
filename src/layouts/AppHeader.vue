@@ -4,7 +4,7 @@
       <h1><img :src="require(`@/assets/images/header_logo.svg`)"></h1>
       <div class="header__left--cont">
         <img :src="require(`@/assets/images/header_text.svg`)">
-        <div class="header__left--text">누적 <span>128만</span>회(<span>10.5만</span>명), 오늘 <span>7.8천</span>회</div>
+        <div class="header__left--text">누적 <span> nnn만</span>회(<span>nn.n만</span>명), 오늘 <span>n.n천</span>회</div>
       </div>
     </div>
     <div class="header__right">
@@ -17,6 +17,7 @@
       </object>
     </div>
   </header>
+  <div class="header-space"> </div>
 </template>
 
 <script>
@@ -34,3 +35,5 @@ export default {
 };
 </script>
 <style scoped></style>
+
+

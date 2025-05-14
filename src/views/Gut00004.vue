@@ -205,7 +205,9 @@
   <div class="home--bot-section bg-case">
     <div class="home-card-box home-sticky sticky">
       <!-- 1025 수정 : 클래스 구조 변경 - sticky 클래스있는 경우에 따라 펼침/닫힘 적용 -->
-      <div class="card card--border card--shadow00 card--p20 challenge__card--main">
+      <div
+        class="card card--border card--shadow00 card--p20 challenge__card--main"
+      >
         <div class="challenge__card--main__per">
           <div>
             <p class="font--700 font--ls1">팀 인증률</p>
@@ -248,8 +250,14 @@
             <p class="font--c11 font--700 font--ls2">
               성공조건 : 팀 인증 <span class="font--green">80%</span> 이상
             </p>
-            <p class="font--c66 font--ls1"><span class="font--800">전체기간 : </span>2025.04.01~2025.06.10 / 70일</p>
-            <p class="font--c66 font--ls1"><span class="font--800">2회차 진행 : </span>2025.05.13~2025.06.10 / 35일</p>
+            <p class="font--c66 font--ls1">
+              <span class="font--800">전체기간 : </span>2025.04.01~2025.06.10 /
+              70일
+            </p>
+            <p class="font--c66 font--ls1">
+              <span class="font--800">2회차 진행 : </span>2025.05.13~2025.06.10
+              / 35일
+            </p>
           </div>
         </div>
         <div class="challenge__card--main__per home-sticky-target">
@@ -470,17 +478,18 @@ export default {
     };
     const onSlideChange = (swiper) => {
       let dayList = document.querySelectorAll(".home__date .date");
-      dayList.forEach(el => {
+      dayList.forEach((el) => {
         const dayListValue = el.getAttribute("data-day");
-        const swiperActiveValue = swiper.slides[swiper.activeIndex].getAttribute("data-day");
+        const swiperActiveValue =
+          swiper.slides[swiper.activeIndex].getAttribute("data-day");
 
         if (dayListValue === swiperActiveValue) {
-          dayList.forEach(element => {
-            element.classList.remove("on")
-          })
-          el.classList.add("on")
+          dayList.forEach((element) => {
+            element.classList.remove("on");
+          });
+          el.classList.add("on");
         }
-      })
+      });
     };
     return {
       onSwiper,

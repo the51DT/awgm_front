@@ -1,6 +1,6 @@
 <template>
   <div class="content-area">
-    <ContentHead title="자녀활동 정보" :leftArea=true />
+    <ContentHead title="자녀활동 정보" :leftArea=true headType="ty02"/>
     <div class="my__profile">
       <div class="profile-area small">
         <div class="img-wrap">
