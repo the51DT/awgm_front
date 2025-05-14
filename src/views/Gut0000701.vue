@@ -26,6 +26,13 @@
         </template>
       </ContentHead>
       <div class="popup--full__cont">
+        <div class="visit_counting">
+          <h1><img :src="require(`@/assets/images/header_logo.svg`)"></h1>
+          <div class="header__left--cont">
+            <img :src="require(`@/assets/images/header_text.svg`)">
+            <div class="header__left--text">누적 <span> nnn만</span>회(<span>nn.n만</span>명), 오늘 <span>n.n천</span>회</div>
+          </div>
+        </div>
         <div class="card--img__wrap">
           <div class="card--img">
             <img class="card--img__comp" :src="require(`@/assets/images/challenge_comp.png`)">
