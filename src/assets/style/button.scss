@@ -139,3 +139,34 @@
     color: #b3b3b3;
   }
 }
+
+.picture-btn{
+  border: 1px solid #e5e5e5;
+  background: #fff;
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 12px 10px;
+  gap: 12px;
+  &-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  span{
+    font-family: RixSinHead;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+
+  }
+  &:active{
+    border: 1px solid #169E4A;
+    background: #E5F6EC;
+  }
+}

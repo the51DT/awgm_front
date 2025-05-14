@@ -20,59 +20,24 @@
       <button data-day="fri" class="date">금</button>
       <button data-day="sat" class="date today on">토</button>
       <button class="date--more">
-        <img :src="require(`@/assets/images/icon_plus.svg`)" /><span
-          >더보기</span
-        >
+        <img :src="require(`@/assets/images/icon_plus.svg`)" /><span>더보기</span>
       </button>
     </div>
 
     <div class="swiper__area">
-      <swiper
-        :modules="modules"
-        :slides-per-view="'auto'"
-        :space-between="24"
-        :slidesOffsetBefore="20"
-        :slidesOffsetAfter="20"
-        :pagination="{ clickable: true }"
-        @swiper="onSwiper"
-        @slideChange="onSlideChange"
-        dir="rtl"
-      >
+      <swiper :modules="modules" :slides-per-view="'auto'" :space-between="24" :slidesOffsetBefore="20"
+        :slidesOffsetAfter="20" :pagination="{ clickable: true }" @swiper="onSwiper" @slideChange="onSlideChange"
+        dir="rtl">
         <swiper-slide data-day="sat">
           <div class="slider-wrap">
             <div class="profile-area">
-              <div
-                class="upload-wrap card--shadowc2 card--img"
-                :class="imageUrl ? 'upload-wrap--noborder' : ''"
-              >
-                <img
-                  v-if="imageUrl"
-                  class="card--img__comp"
-                  :src="require(`@/assets/images/challenge_comp.png`)"
-                />
-                <input
-                  type="file"
-                  id="uploadIcon"
-                  class="upload-icon"
-                  @change="onFileChange"
-                  hidden
-                />
-                <label
-                  for="uploadIcon"
-                  class="upload-label"
-                  :class="imageUrl ? 'card--img__uploaded' : ''"
-                >
-                  <img
-                    v-if="imageUrl"
-                    class="uploaded-img"
-                    :src="imageUrl"
-                    alt="업로드된 이미지"
-                  />
+              <div class="upload-wrap card--shadowc2 card--img" :class="imageUrl ? 'upload-wrap--noborder' : ''">
+                <img v-if="imageUrl" class="card--img__comp" :src="require(`@/assets/images/challenge_comp.png`)" />
+                <input type="file" id="uploadIcon" class="upload-icon" @change="onFileChange" hidden />
+                <label for="uploadIcon" class="upload-label" :class="imageUrl ? 'card--img__uploaded' : ''">
+                  <img v-if="imageUrl" class="uploaded-img" :src="imageUrl" alt="업로드된 이미지" />
                   <div v-else class="upload_ani">
-                    <img
-                      @click="openCamera"
-                      :src="require(`@/assets/images/upload_ani.gif`)"
-                    />
+                    <img @click="openCamera" :src="require(`@/assets/images/upload_ani.gif`)" />
                   </div>
                 </label>
                 <p v-if="!imageUrl" class="date">2025년 5월 16일 (토)</p>
@@ -92,10 +57,7 @@
         <swiper-slide data-day="fri">
           <div class="slider-wrap">
             <div class="card--img card--shadowc2">
-              <img
-                class="card--img__comp"
-                :src="require(`@/assets/images/challenge_comp.png`)"
-              />
+              <img class="card--img__comp" :src="require(`@/assets/images/challenge_comp.png`)" />
               <div class="card--img__uploaded">
                 <img :src="require(`@/assets/images/home_nodata.png`)" />
               </div>
@@ -114,10 +76,7 @@
         <swiper-slide data-day="thu">
           <div class="slider-wrap">
             <div class="card--img card--shadowc2">
-              <img
-                class="card--img__comp ani"
-                :src="require(`@/assets/images/challenge_comp.png`)"
-              />
+              <img class="card--img__comp ani" :src="require(`@/assets/images/challenge_comp.png`)" />
               <div class="card--img__uploaded">
                 <img :src="require(`@/assets/images/card_profile.png`)" />
               </div>
@@ -136,10 +95,7 @@
         <swiper-slide data-day="wed">
           <div class="slider-wrap">
             <div class="card--img card--shadowc2">
-              <img
-                class="card--img__comp"
-                :src="require(`@/assets/images/challenge_comp.png`)"
-              />
+              <img class="card--img__comp" :src="require(`@/assets/images/challenge_comp.png`)" />
               <div class="card--img__uploaded">
                 <img :src="require(`@/assets/images/challenge_card_bg.png`)" />
               </div>
@@ -158,10 +114,7 @@
         <swiper-slide data-day="mon">
           <div class="slider-wrap">
             <div class="card--img card--shadowc2">
-              <img
-                class="card--img__comp"
-                :src="require(`@/assets/images/challenge_comp.png`)"
-              />
+              <img class="card--img__comp" :src="require(`@/assets/images/challenge_comp.png`)" />
               <div class="card--img__uploaded">
                 <img :src="require(`@/assets/images/challenge_card_bg.png`)" />
               </div>
@@ -180,10 +133,7 @@
         <swiper-slide data-day="sun">
           <div class="slider-wrap">
             <div class="card--img card--shadowc2">
-              <img
-                class="card--img__comp"
-                :src="require(`@/assets/images/challenge_comp.png`)"
-              />
+              <img class="card--img__comp" :src="require(`@/assets/images/challenge_comp.png`)" />
               <div class="card--img__uploaded">
                 <img :src="require(`@/assets/images/challenge_card_bg.png`)" />
               </div>
@@ -205,9 +155,7 @@
   <div class="home--bot-section bg-case">
     <div class="home-card-box home-sticky sticky">
       <!-- 1025 수정 : 클래스 구조 변경 - sticky 클래스있는 경우에 따라 펼침/닫힘 적용 -->
-      <div
-        class="card card--border card--shadow00 card--p20 challenge__card--main"
-      >
+      <div class="card card--border card--shadow00 card--p20 challenge__card--main">
         <div class="challenge__card--main__per">
           <div>
             <p class="font--700 font--ls1">팀 인증률</p>
@@ -234,14 +182,9 @@
         <p class="card-title">챌린지</p>
       </a>
       <div class="card--icon">
-        <img
-          :src="require(`@/assets/images/content/conts-ico_challenge.png`)"
-          alt="챌린지 아이콘"
-        />
+        <img :src="require(`@/assets/images/content/conts-ico_challenge.png`)" alt="챌린지 아이콘" />
       </div>
-      <div
-        class="card card--border card--shadow00 card--p20 challenge__card--main"
-      >
+      <div class="card card--border card--shadow00 card--p20 challenge__card--main">
         <div class="challenge__card--main__top">
           <p class="font--c33 font--700 font--ls3">
             아침마다 오 마이 GUT Morning
@@ -308,14 +251,9 @@
         <a href="#" class="card-title">나의 팀</a>
       </div>
       <div class="card--icon">
-        <img
-          :src="require(`@/assets/images/content/conts-ico_team.png`)"
-          alt="나의팀 아이콘"
-        />
+        <img :src="require(`@/assets/images/content/conts-ico_team.png`)" alt="나의팀 아이콘" />
       </div>
-      <div
-        class="card card--border card--shadow00 card--p20 challenge__card--main"
-      >
+      <div class="card card--border card--shadow00 card--p20 challenge__card--main">
         <div class="challenge__card--main__top">
           <!-- 챌린지 진행시에만 노출 / -->
           <div class="card--badge ty-green">
@@ -357,14 +295,9 @@
         <a href="#" class="card-title">나의 팀</a>
       </div>
       <div class="card--icon">
-        <img
-          :src="require(`@/assets/images/content/conts-ico_team.png`)"
-          alt="나의팀 아이콘"
-        />
+        <img :src="require(`@/assets/images/content/conts-ico_team.png`)" alt="나의팀 아이콘" />
       </div>
-      <div
-        class="card card--border card--shadow00 card--p20 challenge__card--main"
-      >
+      <div class="card card--border card--shadow00 card--p20 challenge__card--main">
         <div class="challenge__card--main__top">
           <div class="card--badge ty-orange">
             <span class="font--ls1">상시</span>
@@ -412,14 +345,14 @@
     <template v-slot:title>
       인증방법 선택
     </template>
-    <template v-slot:cont>
+<template v-slot:cont>
       <div class="popup--photo">
         <button class="popup--photo__take"><img :src="require(`@/assets/images/icon_take_photo.svg`)"/>사진 찍기</button>
         <button class="popup--photo__storage"><img :src="require(`@/assets/images/icon_storage_photo.svg`)"/>사진 보관함</button>
         <button class="popup--photo__file"><img :src="require(`@/assets/images/icon_file.svg`)"/>파일 선택</button>
       </div>
     </template>
-  </PopupDefault> -->
+</PopupDefault> -->
 
   <!-- 인증완료 팝업 -->
   <!-- <PopupDefault>
