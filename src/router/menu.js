@@ -213,8 +213,14 @@ export const menuRoutes = [
         meta: { layout: "none" },
       },
       {
-        text: "팀원-Gut00013",
-        path: "/팀원-Gut00013",
+        text: "팀원인증현황-Gut00013",
+        path: "/팀원인증현황-Gut00013",
+        isCompleted: true,
+        meta: { layout: "none" },
+      },
+      {
+        text: "전체 팀원 보기-Gut00018",
+        path: "/전체 팀원 보기-Gut00018",
         isCompleted: true,
         meta: { layout: "none" },
       },
@@ -249,12 +255,12 @@ export const menuRoutes = [
         isCompleted: true,
         meta: { layout: "none" },
       },
-      {
-        text: "바디키인증-Gut00018",
-        path: "/바디키인증-Gut00018",
-        isCompleted: true,
-        meta: { layout: "none" },
-      },
+      // {
+      //   text: "바디키인증-Gut00018",
+      //   path: "/바디키인증-Gut00018",
+      //   isCompleted: true,
+      //   meta: { layout: "none" },
+      // },
       {
         text: "자녀계정 등록관리-Gut00019",
         path: "/자녀계정 등록관리-Gut00019",
@@ -356,6 +362,12 @@ export const menuRoutes = [
       {
         text: "GutCalendar",
         path: "/Gut00100",
+        isCompleted: true,
+        meta: { layout: "none" },
+      },
+      {
+        text: "Gut00",
+        path: "/Gut00",
         isCompleted: true,
         meta: { layout: "none" },
       },

@@ -170,3 +170,22 @@
     background: #E5F6EC;
   }
 }
+
+
+
+// 즐겨찾기 버튼
+.bookmark {
+  position: relative;
+  &__btn {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../images/icon_star.svg);
+
+    &.on {
+      background-image: url(../images/icon_star_fill.svg);
+    }
+  }
+}
