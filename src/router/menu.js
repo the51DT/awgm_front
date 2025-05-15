@@ -100,6 +100,12 @@ export const menuRoutes = [
         isCompleted: true,
         meta: { layout: "none" },
       },
+      {
+        text: "(PU) 자녀계정 비밀번호 재설정 안내 팝업 - Gut00033",
+        path: "/(PU) 자녀계정 비밀번호 재설정 안내 팝업 - Gut00033",
+        isCompleted: true,
+        meta: { layout: "none" },
+      },
     ],
   },
 

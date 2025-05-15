@@ -2,9 +2,11 @@ html,
 body {
   overflow-y: overlay;
 }
+
 html.pop-open {
   overflow: hidden !important;
 }
+
 .popup {
   position: fixed;
   top: 0;
@@ -13,6 +15,7 @@ html.pop-open {
   height: 100%;
   background-color: rgba(17, 17, 17, 0.8);
   z-index: 98;
+
   &__box {
     position: relative;
     left: 50%;
@@ -25,18 +28,23 @@ html.pop-open {
     border: 1px solid #d8d8d8;
     border-radius: 16px;
     background-color: #fff;
+
     &--sm {
       width: 280px;
     }
+
     &--lg {
       max-width: 320px;
       width: 100%;
       padding: 8px;
       overflow: hidden;
+
       .popup__box--close {
         top: 8px;
         right: 8px;
+
       }
+
       .popup__box--top {
         padding: 0 36px 0 8px;
         font-size: 18px;
@@ -45,43 +53,61 @@ html.pop-open {
         color: #111;
         text-align: left;
       }
+
       .popup__box--bottom {
         margin: 8px -8px -8px !important;
       }
     }
+
     &--close {
       position: absolute;
       top: 16px;
       right: 16px;
     }
+
     &--top {
       font-size: 15px;
       font-weight: 800;
       line-height: 24px;
       color: #169e4a;
       text-align: center;
-      & + .popup__box--middle {
+
+      &+.popup__box--middle {
         margin-top: 8px;
       }
     }
+
     &--middle {
       font-size: 13px;
       font-weight: 500;
       line-height: 20px;
       text-align: center;
       letter-spacing: -0.5px;
-      & > span {
+      max-width: 248px;
+
+      &>span {
         font-weight: 800;
       }
-      & > p {
+
+      &>p {
         font-size: 11px;
         line-height: 16px;
       }
+
       .gray_text {
         font-size: 13px;
         line-height: 20px;
         color: #666;
       }
+
+      .gray333_text {
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 24px;
+        letter-spacing: -0.5px;
+        color: #333
+      }
+
       .notice {
         margin-top: 8px;
         font-size: 13px;
@@ -89,21 +115,26 @@ html.pop-open {
         line-height: 21px;
         color: #999;
       }
-      & + .popup__box--bottom {
+
+      &+.popup__box--bottom {
         margin-top: 24px;
       }
-      .custom-btn + .custom-btn {
+
+      .custom-btn+.custom-btn {
         margin: 8px 0 12px;
       }
+
       .flex {
         display: flex;
         flex-direction: column;
         gap: 10px;
-        p:not(.font--green) + div {
+
+        p:not(.font--green)+div {
           margin-top: 8px;
         }
       }
     }
+
     &--bottom {
       .btn-area {
         .custom-btn {
@@ -111,26 +142,32 @@ html.pop-open {
         }
       }
     }
+
     .info--list {
       margin-top: 16px;
       text-align: left;
     }
+
     .box-wrap {
       margin-top: 24px;
     }
+
     .box-gray {
       padding: 16px 15.5px;
       border: 1px solid #E5E5E5;
+
       &:has(.terms__text) {
         max-height: 30vh;
         max-height: calc(var(--vh, 1vh) * 30);
         overflow-y: auto;
         text-align: left;
         padding-right: 2px;
+
         &::-webkit-scrollbar {
           width: 20px;
           background-color: transparent;
         }
+
         &::-webkit-scrollbar-thumb {
           cursor: pointer;
           width: 20px;
@@ -140,6 +177,7 @@ html.pop-open {
           border: 6px solid transparent;
           background-clip: padding-box;
         }
+
         .terms__text {
           font-size: 12px;
           line-height: 16px;
@@ -147,6 +185,7 @@ html.pop-open {
       }
     }
   }
+
   &__scroll {
     padding: 6px;
     width: 100%;
@@ -160,15 +199,19 @@ html.pop-open {
     font-weight: 500;
     line-height: 24px;
     color: #111;
-    img, div {
+
+    img,
+    div {
       display: block;
       width: 100%;
       height: auto;
     }
+
     &::-webkit-scrollbar {
       width: 20px;
       background-color: transparent;
     }
+
     &::-webkit-scrollbar-thumb {
       width: 20px;
       height: 240px;
@@ -178,18 +221,22 @@ html.pop-open {
       background-clip: padding-box;
     }
   }
+
   &__select {
     margin-top: 24px;
-    & + .notice {
+
+    &+.notice {
       margin-top: 24px;
     }
   }
+
   &--img {
     position: relative;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     width: 280px;
+
     &__close {
       display: block;
       width: 32px;
@@ -198,6 +245,7 @@ html.pop-open {
       background-image: url(../images/icon_close_white.svg);
     }
   }
+
   &--full {
     width: 100%;
     max-width: 500px;
@@ -207,34 +255,42 @@ html.pop-open {
     margin: 0 auto;
     padding: 0 20px;
     background-color: #fff;
-    .visit_counting{
+
+    .visit_counting {
       display: flex;
       justify-content: flex-start;
       align-items: center;
       margin-bottom: 16px;
     }
+
     &__cont {
       padding-top: 16px;
       padding-bottom: 16px;
+
       &:only-child {
         margin-top: 40px;
       }
     }
+
     &__wrap {
       background-color: transparent;
       overflow-y: auto;
       z-index: 99;
+
       &::-webkit-scrollbar {
         display: none;
       }
+
       &.sticky {
         position: sticky;
+
         .popup--full {
           padding: 0;
         }
       }
     }
   }
+
   &--toast {
     position: fixed;
     bottom: 20px;
@@ -252,11 +308,13 @@ html.pop-open {
     color: #fff;
     z-index: 99;
   }
+
   &--photo {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    & > button {
+
+    &>button {
       display: flex;
       align-items: center;
       gap: 12px;
@@ -269,15 +327,18 @@ html.pop-open {
       line-height: 24px;
       letter-spacing: -0.5px;
       color: #333;
+
       img {
         width: 24px;
         height: 24px;
       }
+
       &:hover {
         border: 1px solid #169e4a;
         background-color: #e5f6ec;
       }
     }
+
     &__caption {
       margin-top: 2px;
       font-size: 12px;
@@ -286,5 +347,18 @@ html.pop-open {
       text-align: center;
       color: #666;
     }
+  }
+}
+
+.popup__box--close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  &.is-hidden {
+    display: none;
   }
 }
