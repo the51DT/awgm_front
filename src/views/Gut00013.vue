@@ -25,9 +25,7 @@
         </div>
         <div class="list-conts-wrap" v-for="(item, index) in card_profile" :key="index">
           <div class="card card--border card--p16 card--shadowc2 card--link">
-            <div class="btn__wrap">
-              <button class="btn__star"></button>
-            </div>
+            <BookMarkBtn />
             <button class="card__linkBtn">
               <img :src="require(`@/assets/images/icon_arrow_r.svg`)" />
             </button>
@@ -84,6 +82,7 @@
 import ContentHead from "@/components/ContentHead.vue";
 import InputField from "@/components/InputField.vue";
 import TopButton from "@/components/TopButton.vue"
+import BookMarkBtn from "@/components/BookMarkBtn.vue"
 import tabFn from "@/plugins/common.js";
 
 export default {
@@ -104,7 +103,8 @@ export default {
   components: {
     ContentHead,
     InputField,
-    TopButton
+    TopButton,
+    BookMarkBtn
   },
   mounted() {
     tabFn.tabFn()
