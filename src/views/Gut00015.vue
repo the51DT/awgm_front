@@ -65,15 +65,20 @@
               <div class="text-wrap">
                 <p class="card-title">회원인증 하기</p>
                 <p class="card-desc">*인증한 ABO/Member 정보는 변경할 수 없습니다.</p>
-              </div><!-- //인증 전 case : default -->
+              </div>
+              <!-- //인증 전 case : default -->
+            </div>
+          </div>
+          <div class="card card--shadow00">
+            <div class="text-box-wrap">
               <!-- 인증 후 case : 인증 후에는 우측 화살표 button 삭제 필요 -->
-              <!-- <div class="text-wrap ty02">
+              <div class="text-wrap ty02">
                 <p class="card-title">ABO 번호</p>
                 <p class="card-desc">123456789</p>
               </div>
               <ul class="sub-wrap">
                 <li><CustomButton size="sm" color="light">인증완료</CustomButton></li>
-              </ul> -->
+              </ul>
               <!-- //인증 후 case -->              
             </div>
           </div>
@@ -91,12 +96,7 @@
               </div>
             </div>
           </div>
-        </div>
-        <!-- ABO 미인증 시 -->
-        <div class="my-page-conts-item">
-          <div class="title-wrap">
-            <p class="title">자녀계정 관리</p>
-          </div>
+          <!-- ABO 미인증 시 -->
           <div class="card card--shadow00">
             <div class="text-box-wrap">
               <div class="text-wrap">
@@ -152,6 +152,30 @@
                 </div>
                 <ul class="sub-wrap">
                   <li><CustomButton size="sm">인증하기</CustomButton></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- 인증 후 계정연동정보 -->
+            <div class="card card--shadow00">
+              <div class="text-box-wrap">
+                <div class="text-wrap">
+                  <p class="card-title">바디키</p>
+                </div>
+                <ul class="sub-wrap">
+                  <li><p class="user-name">$프로필명$</p></li>
+                  <li><CustomButton size="sm" color="light">인증완료</CustomButton></li>
+                </ul>
+              </div>
+            </div>
+            <div class="card card--shadow00">
+              <div class="text-box-wrap">
+                <div class="text-wrap">
+                  <p class="card-title">다타익선</p>
+                </div>
+                <ul class="sub-wrap">
+                  <li><p class="user-name">$프로필명$</p></li>
+                  <li><CustomButton size="sm" color="light">인증완료</CustomButton></li>
                 </ul>
               </div>
             </div>
