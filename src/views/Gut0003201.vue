@@ -4,7 +4,7 @@
     <div class="team-box-wrap">
       <div class="conts-area">
         <div class="profile-area small">
-          <div class="img-wrap">
+          <div class="img-wrap on-flag">
             <img class="ico-logo" :src="require(`@/assets/images/ico_profile.png`)" alt="프로필 이미지">
             <div class="certify-badge on manage"></div>
           </div>
@@ -33,11 +33,11 @@
           <VCalendar />
         </div>
       </div>
-      <div class="team-btn-wrap">
+      <!-- <div class="team-btn-wrap">
         <div class="btn-area ty03">
           <CustomButton color="light" class="ty02">팀에서 내보내기</CustomButton>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
   
