@@ -43,6 +43,7 @@
   padding: 20px 32px 0 32px;
   min-height: 32px;
   transition: all 0.3s ease;
+
   &.ty02 {
     position: fixed;
     top: 0;
@@ -55,20 +56,25 @@
     background: #fff;
     min-height: 72px;
   }
-  &.bgGray{
+
+  &.bgGray {
     background: #f5f5f5;
   }
+
   &.ty02.scrolled {
     box-shadow: 0px 8px 12px 0px #C2C2C240;
     transition: all 0.3s ease;
   }
+
   &.ty03 {
     position: relative;
+
     .page-title {
       font-size: 18px;
       line-height: 24px;
       letter-spacing: -0.5px;
       text-align: center;
+
       span {
         color: #169e4a;
       }
@@ -82,11 +88,13 @@
       left: 20px;
       height: 32px;
     }
+
     &-right {
       display: block;
       position: absolute;
       right: 20px;
       height: 32px;
+
       &__icon {
         display: flex;
         height: 32px;
@@ -465,6 +473,12 @@
     font-weight: 800;
     line-height: 24px;
   }
+  .text-wrap.manage{
+    text-align: center;
+    .profile-name{
+      margin-top: 4px;
+    }
+  }
 
   &.small {
     margin-bottom: 32px;
@@ -484,6 +498,25 @@
         max-width: 104px;
         height: 104px;
         border-radius: 32px;
+      }
+
+      .certify-badge.on::before {
+        content: "";
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        background-image: url('../images/certify_badge.svg');
+        background-size: contain;
+        position: absolute;
+        bottom: 4px;
+        right: 3px;
+        border: 1px solid #333333;
+        border-radius: 50%;
+      }
+      
+      .certify-badge.on.manage::before {
+        bottom: -2px;
+        right: 15px;
       }
     }
   }
@@ -924,4 +957,16 @@
 .share-img-wrap {
   margin: 0 -20px;
   padding: 0 20px;
+}
+
+.kickout-btn{
+  padding: 8px 15px;
+  background: #E5E5E5;
+  color: #b3b3b3;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.5px;
+  border-radius: 12px;
+  border: 1px solid #B3B3B3;
 }

@@ -17,7 +17,6 @@
       </object>
     </div>
   </header>
-  <div class="header-space"> </div>
 </template>
 
 <script>

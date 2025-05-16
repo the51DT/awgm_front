@@ -143,12 +143,23 @@
 
   .card {
     border-radius: 16px;
-
+    
+    .bookmark__btn{
+      right: 0;
+    }
     &__linkBtn {
       padding: 0;
       right: 18px;
       width: 24px;
       height: 24px;
+    }
+    .kickout-btn{
+      position: absolute;
+      right: 12px;
+      bottom: 16px;
+    }
+    .kickout-btn.leaderOn{
+      display: none;
     }
   }
 
@@ -173,6 +184,10 @@
 
 .team-btn-wrap {
   margin-top: 22px;
+}
+.team-box-wrap.child-manage{
+  height: 92vh;
+
 }
 
 /* card */
@@ -231,6 +246,8 @@
           position: absolute;
           bottom: 4px;
           right: 3px;
+          border: 1px solid #333333;
+          border-radius: 50%;
         }
       }
 
@@ -267,6 +284,17 @@
     flex-direction: column;
     flex: 1;
     max-width: 160px;
+    &.manage{
+      max-width: 100%;
+      dl{
+        flex: 1 1; 
+        min-height: 40px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+    }
+
     &.ty02 {
       dl {
         font-size: 13px;
@@ -293,6 +321,10 @@
           }
         }
       }
+    }
+
+    &.ty02.team-list-view{
+      max-width: 210px;
     }
 
     dl {
@@ -1121,23 +1153,18 @@
   }
 }
 
-.card {
-  .btn__wrap {
-    position: relative;
 
-    .btn__star {
-      position: absolute;
-      right: 0;
-      width: 24px;
-      height: 24px;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-image: url(../images/icon_star.svg);
-
-      &.on {
-        background-image: url(../images/icon_star_fill.svg);
+/* 마이인덱스 ABO 회원인증 팝업 시 로그인*/
+.myindex.content-area{
+  .login-form{
+    padding-bottom: 0;
+    .input-area{
+      .inputField:nth-child(1){
+        margin-bottom: 8px;
+      }
+      .inputField:nth-child(2){
+        margin-bottom: 0;
       }
     }
   }
-
 }

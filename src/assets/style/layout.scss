@@ -24,14 +24,10 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 14px 0px;
-  // border: 1px solid red;
   max-width: 500px;
   width: 100vw;
-  position: fixed;
-  top: 0;
-  background: #fff;
-  z-index: 100;
-  margin-left: -20px;
+  position: relative;
+  margin: 0 -20px;
   &__left {
     display: flex;
     gap: 4px;

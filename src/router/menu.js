@@ -225,8 +225,26 @@ export const menuRoutes = [
         meta: { layout: "none" },
       },
       {
+        text: "전체 팀원 보기 상세팝업-Gut00001801",
+        path: "/전체 팀원 보기 상세팝업-Gut00001801",
+        isCompleted: true,
+        meta: { layout: "none" },
+      },
+      {
         text: "팀원상세-Gut00032",
         path: "/팀원상세-Gut00032",
+        isCompleted: true,
+        meta: { layout: "none" },
+      },
+      {
+        text: "팀원상세 상시-Gut0003201",
+        path: "/팀원상세 상시-Gut0003201",
+        isCompleted: true,
+        meta: { layout: "none" },
+      },
+      {
+        text: "팀원상세(자녀)-Gut0003202",
+        path: "/팀원상세(자녀)-Gut0003202",
         isCompleted: true,
         meta: { layout: "none" },
       },
@@ -248,6 +266,12 @@ export const menuRoutes = [
         path: "/마이 index-Gut00015",
         isCompleted: true,
         meta: { layout: "headerOnly", mypage: true },
+      },
+      {
+        text: "마이 index 계정인증 팝업-Gut0001501",
+        path: "/마이 index 계정인증 팝업-Gut0001501",
+        isCompleted: true,
+        meta: { layout: "" },
       },
       {
         text: "회원정보-Gut00016",

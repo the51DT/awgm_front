@@ -327,6 +327,9 @@
   position: relative;
   border-radius: 32px;
   background-color: #fff;
+  &--p1220{
+    padding: 12px 20px;
+  }
   &--p16 {
     padding: 16px;
   }
@@ -583,9 +586,18 @@
     letter-spacing: -0.5px;
     color: #666;
     font-weight: 300;
-    display: grid;
-    grid-template-columns: 52px auto;
-    gap: 8px;
+    span {
+      font-weight: 800;
+      color: #169e4a;
+    }
+    strong {
+      font-weight: 800;
+    }
+    &.grid{
+      display: grid;
+      grid-template-columns: 52px auto;
+      gap: 8px;
+    }
     p{
       display: inline;
     }
