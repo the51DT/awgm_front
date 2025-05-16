@@ -8,7 +8,7 @@
           <button type="button" class="kickout-btn"  :class="{ 'leaderOn': item.isLeader }"> 강퇴 </button>
           <div class="card__top">
             <ProfileImg :data="item"/>
-            <p class="card__tit">{{ item.nick }}</p>
+            <!-- <p class="card__tit">{{ item.nick }}</p> -->
             <div class="card__text__list ty02 team-list-view">
                 <dl>
                   <dt>팀 가입일</dt>

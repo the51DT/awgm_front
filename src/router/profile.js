@@ -80,3 +80,9 @@ export const profileList = [
     accreditABO: false,
   },
 ];
+
+// import { profileList } from '@/router/profile.js'
+
+// components: {
+//   ProfileImg
+// },
