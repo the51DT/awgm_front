@@ -8,16 +8,11 @@
     4 Today : today (문구 + 노란테두리) [vc-day-content에 today 클래스 존재시]
   -->
   <div ref="calendarContainer">
-    <h3 class="calendar-title"><slot name="title"></slot></h3>
-    <VCalendar
-      borderless
-      :initial-page="{ month: 10, year: 2024 }"
-      :color="selectedColor"
-      :attributes="attrs"
-      @update:page="addMessages"
-      :masks="{ title: 'YYYY. MMMM' }"
-      disable-page-swipe
-    >
+    <h3 class="calendar-title">
+      <slot name="title"></slot>
+    </h3>
+    <VCalendar borderless :initial-page="{ month: 10, year: 2024 }" :color="selectedColor" :attributes="attrs"
+      @update:page="addMessages" :masks="{ title: 'YYYY. MMMM' }" disable-page-swipe>
       <template v-slot:title="{ month, year }">
         <span>{{ year }}. {{ month + 1 }}월</span>
       </template>

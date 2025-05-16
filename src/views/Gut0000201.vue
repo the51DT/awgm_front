@@ -1,4 +1,3 @@
-
 <template>
   <PopupDefault full>
     <template v-slot:full>
@@ -8,7 +7,8 @@
           <div class="form-box">
             <div class="box-wrap">
               <div class="img-wrap">
-                <img class="ico-logo" :src="require(`@/assets/images/content/conts-ico_lock01.png`)" alt="자녀계정 비밀번호를 재설정 해주세요 이미지" />
+                <img class="ico-logo" :src="require(`@/assets/images/content/conts-ico_lock01.png`)"
+                  alt="자녀계정 비밀번호를 재설정 해주세요 이미지" />
                 <p class="desc">자녀계정 비밀번호를 재설정 해주세요</p>
               </div>
             </div>

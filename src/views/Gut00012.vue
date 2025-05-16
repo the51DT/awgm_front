@@ -3,7 +3,8 @@
     <ContentHead title="챌린지 팀 관리" headType="ty02" :leftArea=true />
     <div class="team-box-wrap">
       <div class="profile-area">
-        <div class="img-wrap on-flag edit-profile"> <!-- 팀장일 경우 on-flag 클래스 추가시 왕관 아이콘 활성화됨 -->
+        <div class="img-wrap on-flag edit-profile"> 
+          <!-- 팀장일 경우 on-flag 클래스 추가시 왕관 아이콘 활성화됨 -->
           <img class="ico-logo" :src="require(`@/assets/images/content/dummy-profile-img.png`)" alt="프로필 아이콘" />
         </div>
       </div>

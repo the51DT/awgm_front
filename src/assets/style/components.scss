@@ -473,9 +473,11 @@
     font-weight: 800;
     line-height: 24px;
   }
-  .text-wrap.manage{
+
+  .text-wrap.manage {
     text-align: center;
-    .profile-name{
+
+    .profile-name {
       margin-top: 4px;
     }
   }
@@ -513,7 +515,7 @@
         border: 1px solid #333333;
         border-radius: 50%;
       }
-      
+
       .certify-badge.on.manage::before {
         bottom: -2px;
         right: 15px;
@@ -959,7 +961,7 @@
   padding: 0 20px;
 }
 
-.kickout-btn{
+.kickout-btn {
   padding: 8px 15px;
   background: #E5E5E5;
   color: #b3b3b3;
@@ -969,4 +971,91 @@
   letter-spacing: -0.5px;
   border-radius: 12px;
   border: 1px solid #B3B3B3;
+}
+
+/* 프로필 이미지 컴포넌트 */
+.profile_img {
+  &__info {
+    .user__tit{
+      font-size: 11px;
+      font-weight: 800;
+      line-height: 16px;
+      max-width: 56px;
+      height: 32px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      text-align: center;
+    }
+    .user_img-wrap {
+      width: fit-content;
+      &.on-flag {
+        position: relative;
+        padding: 4px 4px 0 0;
+      }
+      &.on-flag:before {
+        top: 3px;
+        right: 3px;
+      }
+      &.leaderOn::before {
+        content: '';
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        background-image: url('../images/icon_leader.svg');
+        background-size: contain;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      .user_img {
+        border-radius: 16px;
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+      .certify-badge.on::before {
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-image: url('../images/certify_badge.svg');
+        background-size: contain;
+        position: absolute;
+        bottom: 4px;
+        right: 3px;
+        border: 1px solid #333333;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+
+/* 프로필 뱃지 */
+.badge{
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin: 0 auto;
+    background-size: contain;
+    border-radius: 50%;
+    background: #333333;
+  }
+  &__edit{
+    
+  }
 }
