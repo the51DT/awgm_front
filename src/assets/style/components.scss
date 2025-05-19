@@ -502,18 +502,20 @@
         border-radius: 32px;
       }
 
+      .certify-badge.on{
+        overflow: hidden;
+      }
+
       .certify-badge.on::before {
         content: "";
         display: inline-block;
-        width: 32px;
-        height: 32px;
-        background-image: url('../images/certify_badge.svg');
+        width: 20px;
+        height: 20px;
+        background-image: #333 url('../images/certify_badge.svg');
         background-size: contain;
         position: absolute;
         bottom: 4px;
         right: 3px;
-        border: 1px solid #333333;
-        border-radius: 50%;
       }
 
       .certify-badge.on.manage::before {
@@ -1009,33 +1011,42 @@
         position: absolute;
         top: 0;
         right: 0;
+        z-index: 10;
       }
       .user_img {
         border-radius: 16px;
         overflow: hidden;
-        width: 100%;
-        height: auto;
+        // width: 100%;
+        // height: auto;
+        width: 56px; height: 56px;
+        position: relative;
         img {
           width: 100%;
           object-fit: cover;
         }
+      }
+      .certify-badge{
+        position: absolute;
       }
       .certify-badge.on::before {
         content: "";
         display: inline-block;
         width: 20px;
         height: 20px;
-        background-image: url('../images/certify_badge.svg');
-        background-size: contain;
+        background: #333 url('../images/certify_badge.svg') no-repeat top left/80%;
         position: absolute;
-        bottom: 4px;
-        right: 3px;
-        border: 1px solid #333333;
-        border-radius: 50%;
+        top: -25px;
+        right: -57px;
+        border-top-left-radius: 4px;
+        border-bottom-right-radius: 16px;
+        padding: 2px;
       }
     }
   }
 }
+
+
+
 
 
 /* 프로필 뱃지 */
@@ -1054,8 +1065,5 @@
     background-size: contain;
     border-radius: 50%;
     background: #333333;
-  }
-  &__edit{
-    
   }
 }

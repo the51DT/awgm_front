@@ -30,7 +30,9 @@
               <img :src="require(`@/assets/images/icon_arrow_r.svg`)" />
             </button>
             <div class="card__top">
-              <ProfileImg :data="item" />
+              <div class="card__top__profile_img">
+                <ProfileImg :data="item" />
+              </div>
               <div class="card__text__list ty02">
                 <dl>
                   <dt>랭킹</dt>
@@ -40,10 +42,6 @@
                   <dt>이름</dt>
                   <dd>{{ item.name }}</dd>
                 </dl>
-                <!-- <dl>
-                  <dt>팀 가입일</dt>
-                  <dd>2024.09.09</dd>
-                </dl> -->
                 <dl>
                   <dt>인증 횟수</dt>
                   <dd>

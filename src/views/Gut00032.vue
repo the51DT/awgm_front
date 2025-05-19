@@ -49,6 +49,7 @@ import ContentHead from "@/components/ContentHead.vue";
 import CustomButton from "@/components/CustomButton.vue";
 import VCalendar from "@/components/VCalendar.vue";
 
+
 export default {
   name: "Gut_00032",
   components: {

@@ -220,48 +220,45 @@
   }
 
   &__profile__info {
-    .img-wrap {
-      &.on-flag {
-        position: relative;
-        padding: 4px 4px 0 0;
+    // .img-wrap {
+    //   &.on-flag {
+    //     position: relative;
+    //     padding: 4px 4px 0 0;
 
-        &.leaderOn::before {
-          content: '';
-          display: inline-block;
-          width: 14px;
-          height: 14px;
-          background-image: url('../images/icon_leader.svg');
-          background-size: contain;
-          position: absolute;
-          top: 0;
-          right: 0;
-        }
-        .certify-badge.on::before {
-          content: "";
-          display: inline-block;
-          width: 20px;
-          height: 20px;
-          background-image: url('../images/certify_badge.svg');
-          background-size: contain;
-          position: absolute;
-          bottom: 4px;
-          right: 3px;
-          border: 1px solid #333333;
-          border-radius: 50%;
-        }
-      }
+    //     &.leaderOn::before {
+    //       content: '';
+    //       display: inline-block;
+    //       width: 14px;
+    //       height: 14px;
+    //       background-image: url('../images/icon_leader.svg');
+    //       background-size: contain;
+    //       position: absolute;
+    //       top: 0;
+    //       right: 0;
+    //     }
+    //   }
 
-      img {
-        border-radius: 16px;
-        object-fit: cover;
-      }
-    }
+    //   img {
+    //     border-radius: 16px;
+    //     object-fit: cover;
+    //   }
+    // }
 
     .card {
-      &__img {
-        max-width: 56px;
-        height: 56px;
+      &___top__profile_img{
+        width: 56px;
+        max-height: 56px;
+        .profile_img__info.user_img-wrap.on-flag{
+          height: 56px;
+        }
+        .user_img{
+          height: 56px;
+        }
       }
+      // &__img {
+      //   max-width: 56px;
+      //   height: 56px;
+      // }
 
       &__tit {
         font-size: 11px;
@@ -283,7 +280,7 @@
     display: flex;
     flex-direction: column;
     flex: 1;
-    max-width: 160px;
+    max-width: 200px;
     &.manage{
       max-width: 100%;
       dl{
