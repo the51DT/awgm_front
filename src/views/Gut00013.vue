@@ -40,10 +40,10 @@
                   <dt>이름</dt>
                   <dd>{{ item.name }}</dd>
                 </dl>
-                <dl>
+                <!-- <dl>
                   <dt>팀 가입일</dt>
                   <dd>2024.09.09</dd>
-                </dl>
+                </dl> -->
                 <dl>
                   <dt>인증 횟수</dt>
                   <dd>
@@ -101,12 +101,7 @@ export default {
     tabFn.tabFn()
   },
   methods: {
-    moveToTop(targetItem) {
-      // 선택한 아이템 제외한 나머지 리스트
-      const rest = this.list.filter(item => item.id !== targetItem.id)
-      // 맨 앞에 targetItem 넣어서 정렬
-      this.list = [targetItem, ...rest]
-    }
+
   }
 };
 </script>
