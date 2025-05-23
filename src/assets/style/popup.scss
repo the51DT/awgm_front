@@ -21,7 +21,8 @@ html.pop-open {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: fit-content;
+    // width: fit-content;
+    width: 100%;
     min-width: 280px;
     max-width: 320px;
     padding: 32px 16px 24px;
@@ -83,7 +84,7 @@ html.pop-open {
       line-height: 20px;
       text-align: center;
       letter-spacing: -0.5px;
-      max-width: 248px;
+      // max-width: 248px;
 
       &>span {
         font-weight: 800;
@@ -118,6 +119,8 @@ html.pop-open {
 
       &+.popup__box--bottom {
         margin-top: 24px;
+        width: 100%;
+        // button 크기 때문에 일단 추가 
       }
 
       .custom-btn+.custom-btn {
