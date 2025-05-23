@@ -389,7 +389,7 @@
   &.ty-chk.on {
     span {
       &:before {
-        background-image: url(@/assets/images/icon/ico_chk_on.png);
+        background: url(@/assets/images/checkbox_arrow_fill.svg) center/20px ;
       }
     }
   }
@@ -436,7 +436,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 42px;
+  margin-bottom: 20px;
   flex-direction: column;
   gap: 16px;
 
