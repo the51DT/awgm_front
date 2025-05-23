@@ -1078,12 +1078,14 @@
   &--sub {
     flex-grow: 1;
     margin: 0 -20px;
-    padding: 0 20px 38px;
-    background-color: #f5f5f5;
+    padding: 0 20px;
+    background-color: #169E4A;
+    // background: #fff;
     &__title {
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
+      gap: 12px;
       .title {
         &__top {
           display: flex;
@@ -1126,32 +1128,37 @@
           }
         }
         &__big {
-          margin-top: 8px;
           font-size: 24px;
           font-weight: 800;
           line-height: 32px;
           letter-spacing: -0.5px;
-          text-align: center;
-          color: #169e4a;
+          text-align: left;
+          color: #fff;
+          max-width: 320px;
         }
         &__main {
-          margin-top: 8px;
           font-size: 18px;
           font-weight: 800;
           line-height: 24px;
           letter-spacing: -0.5px;
           text-align: center;
-          color: #111;
+          color: #fff;
+          i{
+            font-weight: 500;
+            font-style: normal;
+          }
         }
         &__date {
-          margin-top: 8px;
-          font-size: 14px;
-          font-weight: 500;
-          line-height: 24px;
-          text-align: center;
-          color: #666;
-          span {
+          p {
+            display: block;
+            font-size: 14px;
             font-weight: 800;
+            line-height: 24px;
+            text-align: left;
+            color: #fff;
+          }
+          p:nth-child(2){
+            font-weight: 500;
           }
         }
       }
@@ -1162,7 +1169,7 @@
     .card {
       border-radius: 16px;
       & + .card {
-        margin-top: 32px;
+        margin-top: 12px;
       }
       &--per {
         height: 40px;
@@ -1173,8 +1180,79 @@
         font-weight: 800;
         line-height: 24px;
         letter-spacing: -0.5px;
-        text-align: center;
+        // text-align: center;
         color: #111;
+      }
+    }
+    &__card-rank{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 16px;
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 24px;
+      letter-spacing: -0.5px;
+      color: #666;
+      .card-rank-title::after{
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: -30px;
+        right: 20px; 
+        background: url(../images/rankcard_trophy.svg) no-repeat;
+        width: 74px; height: 85px;
+      }
+      .card-rank-title.myRank::after{
+        background: url(../images/myRank_trophy.svg) no-repeat 100%;
+        transform: rotate(-16deg);
+        width: 100px; height: 100px;
+        top: -35px; right: 10px;
+      }
+      .card__display-rank{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        p span{
+          font-family: 'GmarketSans';
+          font-weight: 700;
+          font-size: 40px;
+          line-height: 40px;
+          // letter-spacing: -0.5px;
+          letter-spacing: -4.5px;
+          font-style: normal;
+          color: #169E4A;
+        }
+      }
+      button{
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        height: fit-content;
+        padding: 4px 12px;
+        border-radius: 8px;
+        background-color: #333;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 24px;
+        letter-spacing: -0.5px;
+        color: #fff;
+        position: relative;
+        img {
+          margin-left: 4px;
+          height: 10px;
+        }
+      }
+
+
+    }
+    .terms-tab{
+      padding: 0 20px 136px;
+      margin: 24px -20px 0;
+      background: #f5f5f5;
+      border-radius: 32px 32px 0 0 ;
+      &__cont{
+        padding-top: 24px;
       }
     }
     &__card1 {
@@ -1182,17 +1260,65 @@
       flex-direction: column;
       gap: 16px;
       padding-top: 32px;
+      ul.card__list{
+        li:nth-child(1){
+          margin-bottom: 4px;
+        }
+        li{
+          display: flex;
+          i{
+            font-style: normal;
+            font-family: "RixSinHead";
+            font-weight: 800;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: -0.5px;
+          }
+          span{
+            font-family: "RixSinHead";
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: -0.5px;
+
+          }
+          span:nth-child(1){
+            margin-right: 8px;
+          }
+          .tag-rate{
+            padding: 2px 8px;
+            border-radius: 4px;
+            color: #fff;
+            font-family: "RixSinHead";
+            font-weight: 800;
+            font-size: 12px;
+            line-height: 18px;
+            vertical-align: bottom;
+            letter-spacing: -0.5px;
+            margin-left: 6px;
+          }
+          .tag-rate.fail{
+            background: #999;
+          }
+          .tag-rate.success{
+            background: #169E4A;
+          }
+        }
+      }
     }
     &__card2 {
       display: flex;
       flex-direction: column;
       padding-top: 12px;
-      & > div {
-        display: flex;
+      & > dl:last-child{
         align-items: center;
+      }
+      & > dl {
+        display: flex;
+        align-items: flex-start;
         gap: 12px;
         padding: 8px 0;
-        p:first-child {
+        dt {
           flex-shrink: 0;
           width: 80px;
           font-size: 15px;
@@ -1201,7 +1327,7 @@
           letter-spacing: -0.5px;
           color: #111;
         }
-        p:last-child {
+        dd {
           font-size: 15px;
           line-height: 24px;
           letter-spacing: -0.5px;
@@ -1209,6 +1335,18 @@
           &.sm {
             font-size: 13px;
           }
+          span{
+            font-weight: 800;
+          }
+          & > div{
+            margin-top: 6px;
+          }
+        }
+        dd.orange{
+          color: #F79C22;
+        }
+        dd.bold{
+          font-weight: 800;
         }
         select {
           height: 40px;
@@ -1229,7 +1367,7 @@
       }
     }
     &__card3 {
-      padding: 33px 12px 16px;
+      padding: 4px 12px 16px;
       .accent {
         font-size: 18px;
         font-weight: 800;
