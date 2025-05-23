@@ -20,6 +20,12 @@
         </router-link>
       </li>
       <li>
+        <router-link to="/나의 Gut index-Gut00034">
+          <img :src="my === true ? require(`@/assets/images/myGut_on.svg`): require(`@/assets/images/myGut.svg`)">
+          <p :class="my === true ? 'on': ''">나의 Gut</p>
+        </router-link>
+      </li>
+      <li>
         <router-link to="/마이 index-Gut00015">
           <img :src="my === true ? require(`@/assets/images/nav_my_on.svg`): require(`@/assets/images/nav_my.svg`)">
           <p :class="my === true ? 'on': ''">마이</p>
