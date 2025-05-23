@@ -10,13 +10,6 @@
       </div>
     </div>
     <div class="team--sub__title">
-      <!-- <div class="title__top">
-        <div>
-          <img :src="require(`@/assets/images/icon_ranking.svg`)">
-          <p>챌린지 랭킹 <span>5</span>위</p>
-        </div>
-        <button>팀 랭킹보기<img :src="require(`@/assets/images/icon_arrow_r_white.svg`)"></button>
-      </div> -->
       <p class="title__big">GUT Morning Korea Challenge</p>
       <p class="title__main"><i> 팀명 </i> 아침마다 오 마이 GUT Morning</p>
       <div class="title__date">
@@ -136,8 +129,6 @@
           </div>
         </div>
         <div class="card card--p20 card--shadow00 team--sub__card3">
-          <!-- <p class="accent">나의 랭킹 <span>13</span>위</p>
-      <button>팀원 현황 보기<img :src="require(`@/assets/images/icon_plus_white.svg`)"></button> -->
           <div class="card__chart">
             <div>
               <p>100%</p>
