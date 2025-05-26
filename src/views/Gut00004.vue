@@ -437,35 +437,49 @@ export default {
     layerClose.posValue(document.querySelectorAll(".card--per__target"));
     this.dayBtn();
 
-
+    // 프로그레스 바 애니메이션 2025.05.26 추가
     const $perGage = document.querySelector(".animation");
-    // console.log($perGage.dataset)
     const achieveGoal = document.querySelector(".achieve-goal").innerText;
-    // console.log(achieveGoal)
     const scrollAnimationSection = document.querySelector(".scroll-animation-sec");
 
-    // 상태 플래그
-    let isAnimated = false;
+    let lastScrollY = window.scrollY;
+    let isAnimating = false;
 
-    const observer = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry =>{
-        if(entry.isIntersecting && Number(achieveGoal) === 100){
-          $perGage.dataset.width = "100%";
-          $perGage.style.width = $perGage.dataset.width;
-          isAnimated = true;
-          // observer.unobserve(entry.target)
-        }
-        // 섹션이 화면에서 벗어났을 때 초기화
-        if (!entry.isIntersecting && isAnimated) {
-          $perGage.dataset.width = "0%";
-          $perGage.style.width = "0%";
-          isAnimated = false;
+    const animateGauge = () => {
+      if (isAnimating) return;
+      isAnimating = true;
+
+      // 초기화
+      $perGage.style.transition = "none";
+      $perGage.style.width = "0%";
+      void $perGage.offsetWidth; // 강제로 다시 리플레이
+
+      // 애니메이션 적용
+      $perGage.style.transition = "width 1.7s ease-in-out";
+      $perGage.dataset.width = "100%";
+      $perGage.style.width = "100%";
+
+      $perGage.addEventListener("transitionend", () => {
+        isAnimating = false;
+      }, { once: true });
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        const currentScrollY = window.scrollY;
+        const isScrollingDown = currentScrollY > lastScrollY;
+        lastScrollY = currentScrollY;
+
+        // 아래 방향으로 진입 시
+        if (entry.isIntersecting && isScrollingDown && Number(achieveGoal) === 100) {
+          animateGauge();
         }
       });
-    },{
-      threshold: 0.9 // 90% 보였을때 인터렉션 시작
-    })
-    observer.observe(scrollAnimationSection)
+    }, {
+      threshold: 0.9 // 90% 섹션이 보였을때 플레이
+    });
+
+    observer.observe(scrollAnimationSection);
 
 
   },
