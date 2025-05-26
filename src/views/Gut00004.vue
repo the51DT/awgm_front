@@ -289,7 +289,7 @@
     </div>
 
     <!-- 나의팀 : 상시 case -->
-    <div class="home-card-box ty02">
+    <div class="home-card-box ty02 scroll-animation-sec">
       <!-- 나의 팀 일경우, ty02 클래스 추가 -->
       <div class="text-link">
         <a href="#" class="card-title">나의 팀</a>
@@ -319,12 +319,12 @@
           <div>
             <p class="font--700 font--ls1">이번 달 팀 인증률</p>
             <p class="font--700 font--c11 font--ls1">
-              <span class="font--green font--800 font--ls1">60</span>%
+              <span class="font--green font--800 font--ls1 achieve-goal">100</span>%
             </p>
           </div>
           <div class="card--per">
             <div class="card--per__gage--wrap">
-              <div class="card--per__gage" data-width="60%"></div>
+              <div class="card--per__gage animation" data-width="0%"></div>
             </div>
             <div class="card--per__target ty02" data-left="60%">
               이전 달 인증률 <span class="font--800">80%</span>
@@ -436,6 +436,35 @@ export default {
     layerClose.layerClose("card");
     layerClose.posValue(document.querySelectorAll(".card--per__target"));
     this.dayBtn();
+
+
+    const $perGage = document.querySelector(".animation");
+    // console.log($perGage.dataset)
+    const achieveGoal = document.querySelector(".achieve-goal").innerText;
+    // console.log(achieveGoal)
+    const scrollAnimationSection = document.querySelector(".scroll-animation-sec");
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry =>{
+        if(entry.isIntersecting && Number(achieveGoal) === 100){
+          $perGage.dataset.width = "100%";
+          $perGage.style.width = $perGage.dataset.width;
+
+          observer.unobserve(entry.target)
+        }
+      });
+    },{
+      threshold: 0.6
+    })
+    observer.observe(scrollAnimationSection)
+
+    // // 문자열로 가져오니 숫자 비교를 위해 Number로 변환
+    // if (Number(achieveGoal) === 100) {
+    //   $perGage.dataset.width = "100%";
+    //   $perGage.style.width = $perGage.dataset.width;
+    // }
+    // console.log($perGage.dataset.width); // "100%"
+
   },
   beforeUnmount() {
     document.removeEventListener("scroll", this.scrollEvents, true);
