@@ -444,7 +444,13 @@ export default {
 
     let lastScrollY = window.scrollY;
     let isAnimating = false;
+    let hasScrolled = false;
+    let fallbackTimeout = null;
 
+    // 사용자 스크롤 감지
+    window.addEventListener('scroll', () => {
+      hasScrolled = true;
+    });
     const animateGauge = () => {
       if (isAnimating) return;
       isAnimating = true;
@@ -452,15 +458,18 @@ export default {
       // 초기화
       $perGage.style.transition = "none";
       $perGage.style.width = "0%";
+
       void $perGage.offsetWidth; // 강제로 다시 리플레이
 
-      // 애니메이션 적용
-      setTimeout(() => {
-        $perGage.style.transition = "width 1.7s ease-in-out";
-        $perGage.dataset.width = "100%";
-        $perGage.style.width = "100%";
-      }, 50); 
-
+      requestAnimationFrame(() => {
+        // Step 3: 두 번째 프레임에서 트랜지션과 width 적용 → 모바일에서 가장 안정적
+        requestAnimationFrame(() => {
+          $perGage.style.transition = "width 1.7s ease-in-out";
+          $perGage.dataset.width = "100%";
+          $perGage.style.width = "100%";
+        });
+      });
+      // 애니메이션 완료 후 상태 복구
       $perGage.addEventListener("transitionend", () => {
         isAnimating = false;
       }, { once: true });
@@ -473,8 +482,13 @@ export default {
         lastScrollY = currentScrollY;
 
         // 아래 방향으로 진입 시
-        if (entry.isIntersecting && isScrollingDown && Number(achieveGoal) === 100) {
+        if (entry.isIntersecting && isScrollingDown && hasScrolled && Number(achieveGoal) === 100) {
           animateGauge();
+            // 만약 Observer가 불안정하면 fallback으로 1.5초 뒤 강제 실행
+          clearTimeout(fallbackTimeout);
+          fallbackTimeout = setTimeout(() => {
+            if (!isAnimating) animateGauge();
+          }, 100);
         }
       });
     }, {
@@ -482,6 +496,19 @@ export default {
     });
 
     observer.observe(scrollAnimationSection);
+
+    // ✅ 초기 진입 fallback 처리 (스크롤 없이도 화면에 걸쳐 있으면 실행)
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    const rect = scrollAnimationSection.getBoundingClientRect();
+    const inView = rect.top < window.innerHeight && rect.bottom > 0;
+    const isTop = window.scrollY === 0;
+
+    if (inView && !isTop && Number(achieveGoal) === 100) {
+      animateGauge();
+    }
+  }, 500); // 이미지/폰트 로딩 여유
+});
 
 
   },
