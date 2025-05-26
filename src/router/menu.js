@@ -291,6 +291,12 @@ export const menuRoutes = [
         isCompleted: true,
         meta: { layout: "none" },
       },
+      {
+        text: "보상지급이력-Gut00036",
+        path: "/보상지급이력-Gut00036",
+        isCompleted: true,
+        meta: { layout: "none" },
+      },
       // {
       //   text: "바디키인증-Gut00018",
       //   path: "/바디키인증-Gut00018",
