@@ -455,9 +455,11 @@ export default {
       void $perGage.offsetWidth; // 강제로 다시 리플레이
 
       // 애니메이션 적용
-      $perGage.style.transition = "width 1.7s ease-in-out";
-      $perGage.dataset.width = "100%";
-      $perGage.style.width = "100%";
+      setTimeout(() => {
+        $perGage.style.transition = "width 1.7s ease-in-out";
+        $perGage.dataset.width = "100%";
+        $perGage.style.width = "100%";
+      }, 50); 
 
       $perGage.addEventListener("transitionend", () => {
         isAnimating = false;

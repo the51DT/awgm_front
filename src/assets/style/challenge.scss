@@ -386,6 +386,7 @@
       background-color: #f79c22;
       position: relative;
       transition: width 1.7s ease-in-out;
+      will-change: width;
       &--end {
         background-color: #999;
       }
