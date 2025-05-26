@@ -13,7 +13,7 @@
       <p class="font--c66">초대하고자 하는 이전 팀을 선택 후 하단 버튼 선택 시
         해당 팀 모든 팀원에게 초대 링크가 발송됩니다</p>
         <CustomButton size="md" color="gray">
-        초대링크 발송하기
+        초대하기
       </CustomButton>
     </template>
   </PopupDefault>
