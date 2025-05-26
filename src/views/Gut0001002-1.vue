@@ -10,8 +10,8 @@
       <div class="filter">
         <InputField type="select" placeholder="선택" :options="['전체', '오 마이 GUT Morning', '팀 이름', '팀 이름', '팀 이름', '팀 이름']" />
       </div>
-      <p class="font--c66">초대하고자 하는 이전 팀을 선택 후 하단 버튼 선택 시
-        해당 팀 모든 팀원에게 초대 링크가 발송됩니다</p>
+      <p class="font--c66">팀원을 초대하고자 하는 이전 팀을 선택해주세요. <br />
+        *초대받은 팀원의 경우, 초대받은 팀 목록에서 '참여하기'를 선택해야 팀에 참여됩니다.</p>
         <CustomButton size="md" color="gray">
         초대하기
       </CustomButton>
