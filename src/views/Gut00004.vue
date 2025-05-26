@@ -454,7 +454,7 @@ export default {
         }
       });
     },{
-      threshold: 0.6
+      threshold: 0.9 // 90% 보였을때 인터렉션 시작
     })
     observer.observe(scrollAnimationSection)
 
