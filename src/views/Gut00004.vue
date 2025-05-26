@@ -444,13 +444,22 @@ export default {
     // console.log(achieveGoal)
     const scrollAnimationSection = document.querySelector(".scroll-animation-sec");
 
+    // 상태 플래그
+    let isAnimated = false;
+
     const observer = new IntersectionObserver((entries, observer) => {
       entries.forEach(entry =>{
         if(entry.isIntersecting && Number(achieveGoal) === 100){
           $perGage.dataset.width = "100%";
           $perGage.style.width = $perGage.dataset.width;
-
-          observer.unobserve(entry.target)
+          isAnimated = true;
+          // observer.unobserve(entry.target)
+        }
+        // 섹션이 화면에서 벗어났을 때 초기화
+        if (!entry.isIntersecting && isAnimated) {
+          $perGage.dataset.width = "0%";
+          $perGage.style.width = "0%";
+          isAnimated = false;
         }
       });
     },{
