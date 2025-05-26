@@ -458,12 +458,6 @@ export default {
     })
     observer.observe(scrollAnimationSection)
 
-    // // 문자열로 가져오니 숫자 비교를 위해 Number로 변환
-    // if (Number(achieveGoal) === 100) {
-    //   $perGage.dataset.width = "100%";
-    //   $perGage.style.width = $perGage.dataset.width;
-    // }
-    // console.log($perGage.dataset.width); // "100%"
 
   },
   beforeUnmount() {
