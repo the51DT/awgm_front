@@ -5,6 +5,7 @@
     :class="[
       size === 'sm' ? 'custom-btn--sm' : '',
       size === 'md' ? 'custom-btn--md' : '',
+      size === 'md-b12' ? 'custom-btn--md-b12' : '',
       color === 'light' ? 'custom-btn--light' : '',
       color === 'gray' ? 'custom-btn--gray' : '',
       color === 'dark' ? 'custom-btn--dark' : '',

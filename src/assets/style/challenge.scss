@@ -474,6 +474,9 @@
     display: flex;
     gap: 12px;
   }
+  &__bottom{
+    gap: 8px;
+  }
   &__img {
     position: relative;
     flex-shrink: 0;
@@ -560,6 +563,10 @@
       border: 1px solid #666;
       color: #666;
     }
+    &--challenge{
+      border: 1px solid #169E4A;
+      color: #169E4A;
+    }
   }
   &__num {
     display: flex;
@@ -578,6 +585,25 @@
       width: 13px;
       height: 10px;
       background-image: url(../images/icon_people.svg);
+    }
+  }
+  &__team--nick {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 0 10px;
+    border-radius: 16px;
+    background-color: #e5e5e5;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -0.5px;
+    color: #333;
+    &::before {
+      content: '';
+      display: block;
+      width: 13px;
+      height: 10px;
+      background-image: url(../images/team--nick.svg);
     }
   }
   &__date {

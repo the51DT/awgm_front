@@ -189,6 +189,12 @@ export const menuRoutes = [
         meta: { layout: "headerOnly" },
       },
       {
+        text: "나의 팀 목록 초대받은팀-Gut00034",
+        path: "/나의 팀 목록 초대받은팀-Gut00034",
+        isCompleted: true,
+        meta: { layout: "headerOnly" },
+      },
+      {
         text: "나의 팀 상세-Gut00010",
         path: "/나의 팀 상세-Gut00010",
         isCompleted: true,
@@ -197,6 +203,12 @@ export const menuRoutes = [
       {
         text: "(pu)팀 초대하기-Gut0001002",
         path: "/pu)팀 초대하기-Gut0001002",
+        isCompleted: true,
+        meta: { layout: "none" },
+      },
+      {
+        text: "(pu)이전 팀 초대하기-Gut0001002-1",
+        path: "/pu)이전 팀 초대하기-Gut0001002-1",
         isCompleted: true,
         meta: { layout: "none" },
       },
