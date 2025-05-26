@@ -220,6 +220,24 @@
               <CustomButton size="md-b12"> 참여하기 </CustomButton>
             </div>
           </div>
+          <div class="card card--border card--p16 card--shadowc2">
+            <div class="card__top">
+              <div class="card__img">
+                <img :src="require(`@/assets/images/card_profile.png`)">
+              </div>
+              <div class="card__text">
+                <p class="card__text__title"> 우리몸은 GUT Morning을 원한다!</p>
+                <div class="card__info">
+                  <div class="card__title card__title--always">상시</div>
+                  <div class="card__team--nick">팀장닉네임</div>
+                </div> 
+              </div>
+            </div>
+            <div class="card__bottom">
+              <CustomButton size="md-b12" color="dark"> 거절하기 </CustomButton>
+              <CustomButton size="md-b12"> 참여하기 </CustomButton>
+            </div>
+          </div>
         </div>
       </div>
     </div>
