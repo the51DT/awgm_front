@@ -1,6 +1,6 @@
 <template>
-  <div class="content-area bg-case">
-    <ContentHead :leftArea=true title="보상 지급 이력" headType="ty02" bgGray="true"/>
+  <div class="content-area">
+    <ContentHead :leftArea=true title="보상 지급 이력" headType="ty02"/>
     <div class="my-page-wrap">
       <div class="card card--border card--p16 card--shadowc2">
         <p class="card__head">GUT Morning Korea Challenge</p>
