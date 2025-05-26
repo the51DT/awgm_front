@@ -11,6 +11,9 @@
         초대링크 복사하기
       </CustomButton>
       <p class="font--c66">초대링크를 복사하여<br/>문자 또는 SNS 등으로 팀원을 초대하세요</p>
+      <CustomButton size="md" color="black" class="last-btn">
+        이전 팀의 팀원 초대하기
+      </CustomButton>
     </template>
   </PopupDefault>
   <div class="popup--toast">
@@ -35,4 +38,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+  .last-btn{
+    margin-top: 24px;
+  }
+</style>
