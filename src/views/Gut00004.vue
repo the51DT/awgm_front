@@ -20,24 +20,59 @@
       <button data-day="fri" class="date">금</button>
       <button data-day="sat" class="date today on">토</button>
       <button class="date--more">
-        <img :src="require(`@/assets/images/icon_plus.svg`)" /><span>더보기</span>
+        <img :src="require(`@/assets/images/icon_plus.svg`)" /><span
+          >더보기</span
+        >
       </button>
     </div>
 
     <div class="swiper__area">
-      <swiper :modules="modules" :slides-per-view="'auto'" :space-between="24" :slidesOffsetBefore="20"
-        :slidesOffsetAfter="20" :pagination="{ clickable: true }" @swiper="onSwiper" @slideChange="onSlideChange"
-        dir="rtl">
+      <swiper
+        :modules="modules"
+        :slides-per-view="'auto'"
+        :space-between="24"
+        :slidesOffsetBefore="20"
+        :slidesOffsetAfter="20"
+        :pagination="{ clickable: true }"
+        @swiper="onSwiper"
+        @slideChange="onSlideChange"
+        dir="rtl"
+      >
         <swiper-slide data-day="sat">
           <div class="slider-wrap">
             <div class="profile-area">
-              <div class="upload-wrap card--shadowc2 card--img" :class="imageUrl ? 'upload-wrap--noborder' : ''">
-                <img v-if="imageUrl" class="card--img__comp" :src="require(`@/assets/images/challenge_comp.png`)" />
-                <input type="file" id="uploadIcon" class="upload-icon" @change="onFileChange" hidden />
-                <label for="uploadIcon" class="upload-label" :class="imageUrl ? 'card--img__uploaded' : ''">
-                  <img v-if="imageUrl" class="uploaded-img" :src="imageUrl" alt="업로드된 이미지" />
+              <div
+                class="upload-wrap card--shadowc2 card--img"
+                :class="imageUrl ? 'upload-wrap--noborder' : ''"
+              >
+                <img
+                  v-if="imageUrl"
+                  class="card--img__comp"
+                  :src="require(`@/assets/images/challenge_comp.png`)"
+                />
+                <input
+                  type="file"
+                  id="uploadIcon"
+                  class="upload-icon"
+                  @change="onFileChange"
+                  hidden
+                />
+                <label
+                  for="uploadIcon"
+                  class="upload-label"
+                  :class="imageUrl ? 'card--img__uploaded' : ''"
+                >
+                  <img
+                    v-if="imageUrl"
+                    class="uploaded-img"
+                    :src="imageUrl"
+                    alt="업로드된 이미지"
+                  />
                   <div v-else class="upload_ani">
-                    <img @click="openCamera" :src="require(`@/assets/images/upload_ani.gif`)" />
+                    <img
+                      @click="openCamera"
+                      :src="require(`@/assets/images/upload_ani.gif`)"
+                    />
                   </div>
                 </label>
                 <p v-if="!imageUrl" class="date">2025년 5월 16일 (토)</p>
@@ -57,7 +92,10 @@
         <swiper-slide data-day="fri">
           <div class="slider-wrap">
             <div class="card--img card--shadowc2">
-              <img class="card--img__comp" :src="require(`@/assets/images/challenge_comp.png`)" />
+              <img
+                class="card--img__comp"
+                :src="require(`@/assets/images/challenge_comp.png`)"
+              />
               <div class="card--img__uploaded">
                 <img :src="require(`@/assets/images/home_nodata.png`)" />
               </div>
@@ -76,7 +114,10 @@
         <swiper-slide data-day="thu">
           <div class="slider-wrap">
             <div class="card--img card--shadowc2">
-              <img class="card--img__comp ani" :src="require(`@/assets/images/challenge_comp.png`)" />
+              <img
+                class="card--img__comp ani"
+                :src="require(`@/assets/images/challenge_comp.png`)"
+              />
               <div class="card--img__uploaded">
                 <img :src="require(`@/assets/images/card_profile.png`)" />
               </div>
@@ -95,7 +136,10 @@
         <swiper-slide data-day="wed">
           <div class="slider-wrap">
             <div class="card--img card--shadowc2">
-              <img class="card--img__comp" :src="require(`@/assets/images/challenge_comp.png`)" />
+              <img
+                class="card--img__comp"
+                :src="require(`@/assets/images/challenge_comp.png`)"
+              />
               <div class="card--img__uploaded">
                 <img :src="require(`@/assets/images/challenge_card_bg.png`)" />
               </div>
@@ -114,7 +158,10 @@
         <swiper-slide data-day="mon">
           <div class="slider-wrap">
             <div class="card--img card--shadowc2">
-              <img class="card--img__comp" :src="require(`@/assets/images/challenge_comp.png`)" />
+              <img
+                class="card--img__comp"
+                :src="require(`@/assets/images/challenge_comp.png`)"
+              />
               <div class="card--img__uploaded">
                 <img :src="require(`@/assets/images/challenge_card_bg.png`)" />
               </div>
@@ -133,7 +180,10 @@
         <swiper-slide data-day="sun">
           <div class="slider-wrap">
             <div class="card--img card--shadowc2">
-              <img class="card--img__comp" :src="require(`@/assets/images/challenge_comp.png`)" />
+              <img
+                class="card--img__comp"
+                :src="require(`@/assets/images/challenge_comp.png`)"
+              />
               <div class="card--img__uploaded">
                 <img :src="require(`@/assets/images/challenge_card_bg.png`)" />
               </div>
@@ -155,7 +205,9 @@
   <div class="home--bot-section bg-case">
     <div class="home-card-box home-sticky sticky">
       <!-- 1025 수정 : 클래스 구조 변경 - sticky 클래스있는 경우에 따라 펼침/닫힘 적용 -->
-      <div class="card card--border card--shadow00 card--p20 challenge__card--main">
+      <div
+        class="card card--border card--shadow00 card--p20 challenge__card--main"
+      >
         <div class="challenge__card--main__per">
           <div>
             <p class="font--700 font--ls1">팀 인증률</p>
@@ -182,9 +234,14 @@
         <p class="card-title">챌린지</p>
       </a>
       <div class="card--icon">
-        <img :src="require(`@/assets/images/content/conts-ico_challenge.png`)" alt="챌린지 아이콘" />
+        <img
+          :src="require(`@/assets/images/content/conts-ico_challenge.png`)"
+          alt="챌린지 아이콘"
+        />
       </div>
-      <div class="card card--border card--shadow00 card--p20 challenge__card--main">
+      <div
+        class="card card--border card--shadow00 card--p20 challenge__card--main"
+      >
         <div class="challenge__card--main__top">
           <p class="font--c33 font--700 font--ls3">
             아침마다 오 마이 GUT Morning
@@ -251,9 +308,14 @@
         <a href="#" class="card-title">나의 팀</a>
       </div>
       <div class="card--icon">
-        <img :src="require(`@/assets/images/content/conts-ico_team.png`)" alt="나의팀 아이콘" />
+        <img
+          :src="require(`@/assets/images/content/conts-ico_team.png`)"
+          alt="나의팀 아이콘"
+        />
       </div>
-      <div class="card card--border card--shadow00 card--p20 challenge__card--main">
+      <div
+        class="card card--border card--shadow00 card--p20 challenge__card--main"
+      >
         <div class="challenge__card--main__top">
           <!-- 챌린지 진행시에만 노출 / -->
           <div class="card--badge ty-green">
@@ -295,9 +357,14 @@
         <a href="#" class="card-title">나의 팀</a>
       </div>
       <div class="card--icon">
-        <img :src="require(`@/assets/images/content/conts-ico_team.png`)" alt="나의팀 아이콘" />
+        <img
+          :src="require(`@/assets/images/content/conts-ico_team.png`)"
+          alt="나의팀 아이콘"
+        />
       </div>
-      <div class="card card--border card--shadow00 card--p20 challenge__card--main">
+      <div
+        class="card card--border card--shadow00 card--p20 challenge__card--main"
+      >
         <div class="challenge__card--main__top">
           <div class="card--badge ty-orange">
             <span class="font--ls1">상시</span>
@@ -319,7 +386,9 @@
           <div>
             <p class="font--700 font--ls1">이번 달 팀 인증률</p>
             <p class="font--700 font--c11 font--ls1">
-              <span class="font--green font--800 font--ls1 achieve-goal">100</span>%
+              <span class="font--green font--800 font--ls1 achieve-goal"
+                >100</span
+              >%
             </p>
           </div>
           <div class="card--per">
@@ -444,16 +513,15 @@ export default {
 
     let lastScrollY = window.scrollY;
     let isAnimating = false;
-    let hasScrolled = false;
-    let fallbackTimeout = null;
 
     // 사용자 스크롤 감지
-    window.addEventListener('scroll', () => {
+    window.addEventListener("scroll", () => {
       hasScrolled = true;
     });
     const animateGauge = () => {
       if (isAnimating) return;
       isAnimating = true;
+      console.log("애니메이션 실행");
 
       // 초기화
       $perGage.style.transition = "none";
@@ -470,46 +538,67 @@ export default {
         });
       });
       // 애니메이션 완료 후 상태 복구
-      $perGage.addEventListener("transitionend", () => {
-        isAnimating = false;
-      }, { once: true });
+      $perGage.addEventListener( "transitionend", () => {   isAnimating = false;    console.log("애니메이션 종료"); }, { once: true } );
     };
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        const currentScrollY = window.scrollY;
-        const isScrollingDown = currentScrollY > lastScrollY;
-        lastScrollY = currentScrollY;
+    let $threshold = window.innerWidth > 768 ? 0.9 : 0.3;
+    console.log($threshold)
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const currentScrollY = window.scrollY;
+          lastScrollY = currentScrollY;
 
-        // 아래 방향으로 진입 시
-        if (entry.isIntersecting && isScrollingDown && hasScrolled && Number(achieveGoal) === 100) {
-          animateGauge();
-            // 만약 Observer가 불안정하면 fallback으로 1.5초 뒤 강제 실행
-          clearTimeout(fallbackTimeout);
-          fallbackTimeout = setTimeout(() => {
-            if (!isAnimating) animateGauge();
-          }, 100);
-        }
-      });
-    }, {
-      threshold: 0.9 // 90% 섹션이 보였을때 플레이
-    });
-
+          if (entry.isIntersecting) {
+            console.log("보임 감지");
+            animateGauge();
+          }
+        });
+      },
+      {
+        threshold: $threshold, // 그만큼 섹션이 보였을때 플레이
+      }
+    );
     observer.observe(scrollAnimationSection);
 
     // ✅ 초기 진입 fallback 처리 (스크롤 없이도 화면에 걸쳐 있으면 실행)
-window.addEventListener('load', () => {
-  setTimeout(() => {
-    const rect = scrollAnimationSection.getBoundingClientRect();
-    const inView = rect.top < window.innerHeight && rect.bottom > 0;
-    const isTop = window.scrollY === 0;
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        const rect = scrollAnimationSection.getBoundingClientRect();
+        const inView = rect.top < window.innerHeight && rect.bottom > 0;
+        const isTop = window.scrollY === 0;
 
-    if (inView && !isTop && Number(achieveGoal) === 100) {
-      animateGauge();
-    }
-  }, 500); // 이미지/폰트 로딩 여유
-});
+        if (inView && !isTop && Number(achieveGoal) === 100) {
+          animateGauge();
+        }
+      }, 600); // 이미지 등 렌더 완료 이후 타이밍 확보
+    });
 
+    // if(window.scrollY >= location){
+    //   // location 값에 다다르면 애니메이션 초기화 후 
+    //   // 스크롤 시 다시 애니메이션 작동되도록
+    //   $perGage.style.transition = "none";
+    //   $perGage.style.width = "0%";
+
+    //   void $perGage.offsetWidth; // 강제로 다시 리플레이
+    // }else{
+    //   requestAnimationFrame(() => {
+    //     // Step 3: 두 번째 프레임에서 트랜지션과 width 적용 → 모바일에서 가장 안정적
+    //     requestAnimationFrame(() => {
+    //       $perGage.style.transition = "width 1.7s ease-in-out";
+    //       $perGage.dataset.width = "100%";
+    //       $perGage.style.width = "100%";
+    //     });
+    //   });
+    //   // 애니메이션 완료 후 상태 복구
+    //   $perGage.addEventListener(
+    //     "transitionend",
+    //     () => {
+    //       isAnimating = false;
+    //     },
+    //     { once: true }
+    //   );
+    // }
 
   },
   beforeUnmount() {
