@@ -385,8 +385,11 @@
       border-radius: 20px;
       background-color: #f79c22;
       position: relative;
-      // transition: width 1.7s ease-in-out;
+      transition: width 1.7s ease-in-out;
       will-change: width;
+      & .animation[data-width]{
+        width: 100%;
+      }
       &--end {
         background-color: #999;
       }
