@@ -258,7 +258,7 @@ import CustomButton from  "@/components/CustomButton.vue"
 import tabFn from "@/plugins/common.js";
 
 export default {
-  name: "LoginMain",
+  name: "Gut00034",
   components: {
     AppNav,
     CustomButton,
