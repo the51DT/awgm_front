@@ -275,6 +275,10 @@ html.pop-open {
         margin-top: 40px;
       }
     }
+    &__cont.pb-50{
+      padding-top: 0;
+      padding-bottom: 50px;
+    }
 
     &__wrap {
       background-color: transparent;
