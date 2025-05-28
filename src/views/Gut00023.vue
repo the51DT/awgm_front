@@ -93,7 +93,7 @@
             </div>
           </div>
           <div class="card__date grid">
-            <p> <strong class="font-800"> 2회차 진행 </strong></p>
+            <p> <strong class="font-800"> 1회차 진행 </strong></p>
             <p> 2025.09.01 ~ 2025.09.30 / (70일) </p>
           </div>
         </div>
