@@ -2,27 +2,11 @@
   <div class="content-area bg-case">
     <div class="my-page-wrap">
       <div class="profile-area small">
-        <input
-            type="file"
-            id="uploadIcon"
-            class="upload-icon"
-            @change="onFileChange"
-            hidden
-          />
+        <input type="file" id="uploadIcon" class="upload-icon" @change="onFileChange" hidden />
         <label for="uploadIcon" class="upload-label">
           <div class="img-wrap">
-            <img
-              v-if="imageUrl"
-              class="uploaded-img"
-              :src="imageUrl"
-              alt="업로드된 이미지"
-            />
-            <img
-              v-else
-              class="ico-logo"
-              :src="require(`@/assets/images/icon/ico_profile.png`)"
-              alt="프로필 이미지 수정 아이콘"
-            />
+            <img v-if="imageUrl" class="uploaded-img" :src="imageUrl" alt="업로드된 이미지" />
+            <img v-else class="ico-logo" :src="require(`@/assets/images/icon/ico_profile.png`)" alt="프로필 이미지 수정 아이콘" />
           </div>
         </label>
         <div class="text-wrap">
@@ -43,13 +27,26 @@
       <div class="my-page-conts">
         <div class="my-page-conts-item">
           <div class="title-wrap">
-            <p class="title">회원정보 관리</p>
+            <p class="title">회원정보</p>
           </div>
           <div class="card card--shadow00">
             <button><img :src="require(`@/assets/images/icon_arrow_r.svg`)"></button>
             <div class="text-box-wrap">
               <div class="text-wrap">
                 <p class="card-title">개인회원 정보</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="my-page-conts-item">
+          <div class="title-wrap">
+            <p class="title">성공보상</p>
+          </div>
+          <div class="card card--shadow00">
+            <button><img :src="require(`@/assets/images/icon_arrow_r.svg`)"></button>
+            <div class="text-box-wrap">
+              <div class="text-wrap">
+                <p class="card-title">보상 지급 이력</p>
               </div>
             </div>
           </div>
@@ -85,7 +82,7 @@
         </div>
         <div class="my-page-conts-item">
           <div class="title-wrap">
-            <p class="title">자녀계정 관리</p>
+            <p class="title">자녀계정</p>
             <p class="sub">현재 등록된 자녀계정 : <strong>3개</strong></p>
           </div>
           <div class="card card--shadow00">
