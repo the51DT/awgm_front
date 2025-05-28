@@ -20,6 +20,10 @@
                 <dd> - </dd>
               </dl>
               <dl>
+                <dt> 성공보상수령방법 </dt>
+                <dd> - </dd>
+              </dl>
+              <dl>
                 <dt> 지급일 </dt>
                 <dd> 2025년 10월 31일 </dd>
               </dl>
@@ -45,6 +49,10 @@
                   <dd> - </dd>
                 </dl>
                 <dl>
+                <dt> 성공보상수령방법 </dt>
+                <dd> - </dd>
+              </dl>
+                <dl>
                   <dt> 지급일 </dt>
                   <dd> 2025년 10월 31일 </dd>
                 </dl>
@@ -67,6 +75,10 @@
                 </dl>
                 <dl>
                   <dt> 바우처명 </dt>
+                  <dd> - </dd>
+                </dl>
+                <dl>
+                  <dt> 성공보상수령방법 </dt>
                   <dd> - </dd>
                 </dl>
                 <dl>
@@ -109,6 +121,7 @@
 <style scoped>
   .ty02.card__text__list dl dt, .ty02.card__text__list dl dd{
     color: #666;
+    flex: 2;
   }
   .my-page-wrap{
     padding: 0 0 140px 0;

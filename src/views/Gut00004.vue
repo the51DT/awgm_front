@@ -549,7 +549,7 @@ export default {
       let hasAnimated = false;
 
       const $perGage = document.querySelector(".animation");
-      const achieveGoal = document.querySelector(".achieve-goal")?.innerText || "";
+      const achieveGoal = document.querySelector(".achieve-goal").innerText;
       let isAnimating = false;
 
       const animateGauge = () => {
@@ -563,7 +563,7 @@ export default {
         void $perGage.offsetWidth; // 강제로 다시 리플레이
 
         requestAnimationFrame(() => {
-          // Step 3: 두 번째 프레임에서 트랜지션과 width 적용 → 모바일에서 가장 안정적
+          // 두 번째 프레임에서 트랜지션과 width 적용 → 모바일에서 가장 안정적
           requestAnimationFrame(() => {
             $perGage.style.transition = "width 1.3s ease-in-out";
             $perGage.dataset.width = "100%";
@@ -571,7 +571,7 @@ export default {
           });
         });
         // 애니메이션 완료 후 상태 복구
-        $perGage.addEventListener( "transitionend", () => {   
+        $perGage.addEventListener("transitionend", () => {   
           isAnimating = false;    
           // console.log("애니메이션 종료"); 
         }, 
@@ -583,7 +583,7 @@ export default {
         const currentScrollY = window.scrollY; 
         const crossedTrigger = lastScrollY < triggerPoint && currentScrollY >= triggerPoint;
         if (!hasAnimated && crossedTrigger && Number(achieveGoal) === 100) {
-          console.log("triggerPoint 위치 통과");
+          // console.log("triggerPoint 위치 통과");
           hasAnimated = true;
           animateGauge();
         }
