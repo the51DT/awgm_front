@@ -20,9 +20,7 @@
       <button data-day="fri" class="date">금</button>
       <button data-day="sat" class="date today on">토</button>
       <button class="date--more">
-        <img :src="require(`@/assets/images/icon_plus.svg`)" /><span
-          >더보기</span
-        >
+        <img :src="require(`@/assets/images/icon_plus.svg`)" /><span>더보기</span>
       </button>
     </div>
 
@@ -357,14 +355,9 @@
         <a href="#" class="card-title">나의 팀</a>
       </div>
       <div class="card--icon">
-        <img
-          :src="require(`@/assets/images/content/conts-ico_team.png`)"
-          alt="나의팀 아이콘"
-        />
+        <img :src="require(`@/assets/images/content/conts-ico_team.png`)" alt="나의팀 아이콘" />
       </div>
-      <div
-        class="card card--border card--shadow00 card--p20 challenge__card--main"
-      >
+      <div class="card card--border card--shadow00 card--p20 challenge__card--main">
         <div class="challenge__card--main__top">
           <div class="card--badge ty-orange">
             <span class="font--ls1">상시</span>
@@ -509,10 +502,7 @@ export default {
   beforeUnmount() {
     document.removeEventListener("scroll", this.scrollEvents, true);
   },
-  methods: {
-    transitionWidth(){
-
-    },  
+  methods: { 
     openCamera() {
       const input = document.getElementById("uploadIcon");
       input.capture = "environment"; // 후면 카메라 설정
@@ -554,8 +544,8 @@ export default {
 
       /* *****************  */
       // data-width 트랜지션 애니메이션
-      const triggerPoint = window.innerHeight * 0.89;
-      let lastScrollTop = window.scrollY; // 이전 스크롤 위치용
+      const triggerPoint = window.innerHeight * 0.95;
+      let lastScrollY = window.scrollY; // 이전 스크롤 위치용 
       let hasAnimated = false;
 
       const $perGage = document.querySelector(".animation");
@@ -564,8 +554,8 @@ export default {
 
       const animateGauge = () => {
         if (isAnimating) return;
-        // isAnimating = true;
-        console.log("애니메이션 실행");
+        isAnimating = true;
+        // console.log("애니메이션 실행");
 
         // 초기화
         $perGage.style.transition = "none";
@@ -583,29 +573,23 @@ export default {
         // 애니메이션 완료 후 상태 복구
         $perGage.addEventListener( "transitionend", () => {   
           isAnimating = false;    
-          console.log("애니메이션 종료"); 
+          // console.log("애니메이션 종료"); 
         }, 
         { once: true } 
         );
       };
 
       window.addEventListener("scroll", () => {
-        const scrollY = window.scrollY;
-        const isScrollingDown = scrollY > lastScrollTop;
-        lastScrollTop = scrollY;
-
-        if (
-          !hasAnimated &&
-          isScrollingDown &&
-          Number(achieveGoal) === 100 &&
-          scrollY > triggerPoint
-        ) {
-          animateGauge();
+        const currentScrollY = window.scrollY; 
+        const crossedTrigger = lastScrollY < triggerPoint && currentScrollY >= triggerPoint;
+        if (!hasAnimated && crossedTrigger && Number(achieveGoal) === 100) {
+          console.log("triggerPoint 위치 통과");
           hasAnimated = true;
+          animateGauge();
         }
+        lastScrollY = currentScrollY;
       });
 
-      
     }, 
     dayBtn() {
       const dayBtn = document.querySelectorAll(".home__date .date");
