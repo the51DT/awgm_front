@@ -8,6 +8,7 @@
             <div class="login-intro">
               <img class="ico-logo" :src="require(`@/assets/images/content/conts-ico_login01.png`)" alt="자녀계정 등록 아이콘">
               <h4 class="ico-title">자녀계정 등록</h4>
+              <p class="ico-desc"> 자녀의 팀 가입은 자녀계정 생성 후 팀 참여 링크를 통해 진행해주세요. </p>
             </div>
           </div>
         </div>
