@@ -2,7 +2,7 @@
   <PopupDefault full>
     <template v-slot:full>
       <div class="content-area">
-        <ContentHead :leftArea=true headType="ty02"/>
+        <ContentHead headType="ty02" :rightArea=true />
         <div class="content-top">
           <div class="login-wrap">
             <div class="login-intro">
