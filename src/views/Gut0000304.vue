@@ -1,74 +1,48 @@
-
 <template>
-  <PopupDefault full>
-    <template v-slot:full>
-      <div class="content-area">
-        <ContentHead title="법정대리인 동의" headType="ty02" :rightArea=true />
-        <div class="login-form">
-          <div class="form-box">
-            <div class="box-wrap">
-              <div class="box-gray">
-                <dl>
-                  <dt>팀명</dt>
-                  <dd>아침마다 오 마이 GUT Morning</dd>
-                </dl>
-                <dl>
-                  <dt>팀장</dt>
-                  <dd>팀장김웨이</dd>
-                </dl>
-              </div>
-            </div>
-          </div>
-          <div class="form-box">
-            <h4 class="title">부모계정 인증</h4>
-            <ul class="info--list">
-              <li>* 자녀계정일 경우 부모의 동의가 필요합니다.</li>
-            </ul>
-            <div class="input-area">
-              <InputField placeholder="ABO 번호/Member 아이디" />
-              <InputField type="password" placeholder="비밀번호" />
-            </div>
-            <div class="btn-area ty02">
-              <!-- 비활성화 -->
-              <CustomButton size="sm" color="gray">인증하기</CustomButton>
-              <!-- 활성화 -->
-              <!-- <CustomButton size="sm" color="green">인증하기</CustomButton> -->
-              <p class="label-txt">인증이 완료되었습니다.</p>
-            </div>
-          </div>
-          <div class="btn-group">
-            <!-- 10.16 수정 ty-chk on 클래스 추가시, active 처리됨 : 미체크가 디폴트 /           
-              버튼 선택시 약관동의팝업 호출 -> 동의 선택 시 팝업 닫기 및 체크 활성화  -->
-              <CustomButton color="dark" class="ty-chk"><span>자녀의 팀 참가 동의</span></CustomButton>
-              <!-- <CustomButton color="dark" class="ty-chk on"><span>자녀의 팀 참가 동의</span></CustomButton>  -->
-              <!-- 1017 추가 : 기획 변경 해당 화면에 추가 버튼 생성됨 -->
-            <CustomButton>확인</CustomButton>
+  <PopupDefault>
+    <template v-slot:title>
+      개인정보 제3자 제공 이용동의
+    </template>
+    <template v-slot:cont>
+      <div class="box-wrap">
+        <div class="box-gray">
+          <div class="terms-conts">
+            것모닝(Gut Morning) 서비스 내 이용자 식별, 회원관리 및 것모닝(Gut Morning) 서비스 제공, 회원비교식별을 위하여 귀하의 개인정보를 가입을 신청한 팀의 팀장에게 제공합니다. 해당 정보는 동의 철회나 서비스 탈퇴 시 또는 제공 목적 달성 시 지체없이 파기됩니다. 아래 동의를 거부할 권리가 있으며, 필수 동의를 거부할 경우 서비스 이용이 제한됩니다. <br/>
+            <br/>
+            [제공 받는 자] 팀장<br/>
+            [필수 제공 항목] 아이디, 구매이력, 닉네임, 인증 횟수, 인증 사진 <br/>
+            [이용목적] 팀 가입 및 활동 참가, 팀원의 미션 인증 확인 <br />
+            [제공 기간] 팀 탈퇴 및 개인정보 제3자 제공 동의 철회 시<br/>
+            [보유기간] <span>동의 철회 또는 서비스 탈퇴 시 지체 없이 파기</span>
           </div>
         </div>
       </div>
+      <ul class="info--list">
+        <li>원활한 서비스 이용을 위하여 개인정보 제3자 제공에 대하여 동의가 필요합니다. 동의하지 않으실 경우 서비스 이용이 제한됩니다.</li>
+      </ul>
     </template>
-  </PopupDefault>
+    <template v-slot:btn>
+      <div class="btn-area ty03">
+        <CustomButton size="sm" color="light">동의하지 않음</CustomButton>
+        <CustomButton size="sm">동의</CustomButton>
+      </div>
+    </template>
+  </PopupDefault> 
 </template>
 
 <script>
-import InputField from "@/components/InputField.vue";
-import CustomButton from "@/components/CustomButton.vue";
-import ContentHead from "@/components/ContentHead.vue";
 import PopupDefault from "@/components/PopupDefault.vue";
+import CustomButton from "@/components/CustomButton.vue";
+import layerClose from "@/plugins/common.js";
 
 export default {
-  name: "Gut_0000202",
-  data() {
-    return {
-      leftArea: "",
-      rightArea: "",
-    };
-  },
-  components: {
-    InputField,
-    CustomButton,
-    ContentHead,
+  name: "AppSub",
+  components: {    
     PopupDefault,
+    CustomButton,
   },
+  mounted() {
+    layerClose.layerClose("popup");
+  }
 };
 </script>

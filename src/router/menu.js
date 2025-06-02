@@ -75,10 +75,15 @@ export const menuRoutes = [
       meta: { layout: "none" },
     },
     {
-      text: "(PU) 법정대리인 동의 (부모계정 인증 팝업)-Gut0000304",
-      path: "/(PU) 법정대리인 동의 (부모계정 인증 팝업)-Gut0000304",
+      text: "(PU) 개인정보 제3자 제공 이용동의(팀장)-Gut0000304",
+      path: "/(PU) 개인정보 제3자 제공 이용동의(팀장)-Gut0000304",
       meta: { layout: "none" },
     },
+    // {
+    //   text: "(PU) 법정대리인 동의 (부모계정 인증 팝업)-Gut0000304",
+    //   path: "/(PU) 법정대리인 동의 (부모계정 인증 팝업)-Gut0000304",
+    //   meta: { layout: "none" },
+    // },
     {
       text: "(PU) 자녀의 팀 참가 동의-Gut0000305",
       path: "/(PU) 자녀의 팀 참가 동의-Gut0000305",
