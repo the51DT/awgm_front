@@ -1,8 +1,8 @@
 <!-- Basic Button -->
 <template>
   <button class="btn--icon" :class="IconButtonClass">
-    <img :src="buttonImage" alt="button icon" />
     <slot />
+    <img :src="buttonImage" alt="button icon" />
   </button>
 </template>
 
