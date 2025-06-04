@@ -179,8 +179,23 @@ export const menuRoutes = [
       meta: { layout: "headerOnly" },
     },
     {
+      text: "(PU)나의 팀 목록 초대받은팀-Gut0003401",
+      path: "/(PU)나의 팀 목록 초대받은팀-Gut0003401",
+      meta: { layout: "headerOnly" },
+    },
+    {
+      text: "나의 팀 목록 초대받은팀 (없을 시) -Gut0003402",
+      path: "/나의 팀 목록 초대받은팀 (없을 시)-Gut0003402",
+      meta: { layout: "headerOnly" },
+    },
+    {
       text: "나의 팀 상세-Gut00010",
       path: "/나의 팀 상세-Gut00010",
+      meta: { layout: "none" },
+    },
+    {
+      text: "나의 팀 상세-Gut00010_test",
+      path: "/나의 팀 상세-Gut00010_test",
       meta: { layout: "none" },
     },
     {
