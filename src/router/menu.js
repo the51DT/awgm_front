@@ -194,11 +194,6 @@ export const menuRoutes = [
       meta: { layout: "none" },
     },
     {
-      text: "나의 팀 상세-Gut00010_test",
-      path: "/나의 팀 상세-Gut00010_test",
-      meta: { layout: "none" },
-    },
-    {
       text: "(pu)팀 초대하기-Gut0001002",
       path: "/pu)팀 초대하기-Gut0001002",
       meta: { layout: "none" },
