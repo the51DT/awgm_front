@@ -133,7 +133,7 @@
 <style scoped>
   .ty02.card__text__list dl dt, .ty02.card__text__list dl dd{
     color: #666;
-    flex: 2;
+    /* flex: 2; */
   }
   .my-page-wrap{
     padding: 0 0 140px 0;
