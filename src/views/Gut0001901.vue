@@ -5,7 +5,10 @@
     </template>
     <template v-slot:cont>
       <div class="flex">
-        <p>아래 링크를 자녀에게 공유하여,<br/>자녀가 직접 계정을 생성할 수 있게 해주세요.</p>
+        <div>
+          <p>아래 링크를 자녀에게 공유하여,<br/>자녀가 직접 계정을 생성할 수 있게 해주세요.</p>
+          <p class="notice">*자녀의 팀 가입은 자녀계정 생성 후 팀 참여 링크를 통해 진행해주세요.</p>
+        </div>
         <InputField
           type="copy"
           placeholder="https://gutmorning.co.kr/child01"
@@ -35,4 +38,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+  p.notice{
+    margin-top: 0;
+  }
+</style>
