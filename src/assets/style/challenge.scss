@@ -134,6 +134,7 @@
         margin-top: 16px;
         .card--per {
           height: 40px;
+
         }
         & > div:not(.card--per) {
           flex-shrink: 0;
@@ -330,6 +331,9 @@
   position: relative;
   border-radius: 32px;
   background-color: #fff;
+  &--pl8{
+    padding-left: 8px;
+  }
   &--p1220{
     padding: 12px 20px;
   }
@@ -1053,7 +1057,7 @@
     justify-content: center;
     align-items: center;
     gap: 24px;
-    padding: 30px 0;
+    padding: 65px 0;
     img {
       width: 82px;
     }
@@ -1125,7 +1129,7 @@
     &__title {
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
       gap: 12px;
       .title {
         &__top {
@@ -1173,7 +1177,7 @@
           font-weight: 800;
           line-height: 32px;
           letter-spacing: -0.5px;
-          text-align: left;
+          text-align: center;
           color: #fff;
           max-width: 320px;
         }
@@ -1183,7 +1187,8 @@
           line-height: 24px;
           letter-spacing: -0.5px;
           text-align: center;
-          color: #fff;
+          color: #111;
+          margin-top: 24px;
           i{
             font-weight: 500;
             font-style: normal;
@@ -1210,10 +1215,26 @@
     .card {
       border-radius: 16px;
       & + .card {
-        margin-top: 12px;
+        margin-top: 24px;
+      }
+      & + .custom-btn{
+        margin-top : 24px;
       }
       &--per {
         height: 40px;
+        &__desc{
+          p{
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 16px;
+            letter-spacing: -0.5px;
+            color: #666;
+            i{
+              font-style: normal;
+              font-weight: 800;
+            }
+          }
+        }
       }
       &__head {
         margin: 32px auto 9px;
@@ -1235,6 +1256,11 @@
       line-height: 24px;
       letter-spacing: -0.5px;
       color: #666;
+      .card__head_title{
+        // margin-left: 8px;
+        text-align: left;
+        color: #111
+      }
       .card-rank-title::after{
         content: "";
         display: inline-block;
@@ -1245,10 +1271,8 @@
         width: 74px; height: 85px;
       }
       .card-rank-title.myRank::after{
-        background: url(../images/myRank_trophy.svg) no-repeat 100%;
-        transform: rotate(-16deg);
-        width: 100px; height: 100px;
-        top: -35px; right: 10px;
+        background:none;
+        display: none;
       }
       .card__display-rank{
         display: flex;
@@ -1270,30 +1294,45 @@
         align-items: center;
         gap: 7px;
         height: fit-content;
-        padding: 4px 12px;
+        padding: 8px 12px 8px 16px;
         border-radius: 8px;
         background-color: #333;
         font-weight: 500;
-        font-size: 13px;
+        font-size: 15px;
         line-height: 24px;
         letter-spacing: -0.5px;
         color: #fff;
         position: relative;
         img {
           margin-left: 4px;
-          height: 10px;
+          height:24px;
         }
       }
 
 
     }
     .terms-tab{
-      padding: 0 20px 136px;
+      padding: 24px 20px 136px;
       margin: 24px -20px 0;
       background: #f5f5f5;
       border-radius: 32px 32px 0 0 ;
       &__cont{
         padding-top: 24px;
+      }
+      &__title{
+        display: flex;
+        justify-content: flex-start;
+        p{
+          // font-family: RixSinHead;
+          font-weight: 800;
+          font-size: 18px;
+          line-height: 24px;
+          letter-spacing: -0.5px;
+          i{
+            font-style: normal;
+            font-weight: 500;
+          }
+        }
       }
     }
     &__card1 {
@@ -1347,7 +1386,7 @@
         }
       }
     }
-    &__card2 {
+    &__card-team-info  {
       display: flex;
       flex-direction: column;
       padding-top: 12px;
@@ -1407,8 +1446,8 @@
         }
       }
     }
-    &__card3 {
-      padding: 4px 12px 16px;
+    &__team-rate-ranking {
+      padding: 20px 12px 16px;
       .accent {
         font-size: 18px;
         font-weight: 800;
@@ -1471,6 +1510,18 @@
         line-height: 18px;
         letter-spacing: -0.5px;
       }
+    }
+    .break-team-btn{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 6px;
+      width: 100%;
+      margin-top: 32px;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 18px;
+      letter-spacing: -0.5px;
     }
   }
   .team-box-wrap {
