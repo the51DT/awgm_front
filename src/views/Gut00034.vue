@@ -216,7 +216,7 @@
               </div>
             </div>
             <div class="card__bottom">
-              <CustomButton size="md-b12" color="dark"> 거절하기 </CustomButton>
+              <IconButton type="delete"> </IconButton>
               <CustomButton size="md-b12"> 참여하기 </CustomButton>
             </div>
           </div>
@@ -234,7 +234,7 @@
               </div>
             </div>
             <div class="card__bottom">
-              <CustomButton size="md-b12" color="dark"> 거절하기 </CustomButton>
+              <IconButton type="delete"> </IconButton>
               <CustomButton size="md-b12"> 참여하기 </CustomButton>
             </div>
           </div>
@@ -255,6 +255,7 @@
 <script>
 import AppNav from "@/layouts/AppNav.vue";
 import CustomButton from  "@/components/CustomButton.vue"
+import IconButton from "@/components/IconButton.vue"
 import tabFn from "@/plugins/common.js";
 
 export default {
@@ -262,6 +263,7 @@ export default {
   components: {
     AppNav,
     CustomButton,
+    IconButton,
   },
   mounted() {
     tabFn.tabFn()
