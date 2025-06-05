@@ -388,7 +388,7 @@
             <div class="card--per__gage--wrap">
               <div class="card--per__gage animation" data-width="0%"></div>
             </div>
-            <div class="card--per__target ty02" data-left="60%">
+            <div class="card--per__target ty02" data-left="80%">
               이전 달 인증률 <span class="font--800">80%</span>
             </div>
           </div>
