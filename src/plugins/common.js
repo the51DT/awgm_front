@@ -56,7 +56,42 @@ function layerClose (type) {
       const target = e.target;
       target.closest(".medal_btn__pop").classList.remove("on");
     });
-  } else if (type === "popup") {
+  }
+  else if (type === "invite") {
+    const inviteOpenBtn = document.querySelector(".invite_btn__open");
+    const invitePop = document.querySelector(".invite_btn__pop");
+    const inviteCloseBtn = document.querySelector(".invite_btn__pop__close");
+    
+    if (inviteOpenBtn && invitePop) {
+      inviteOpenBtn.addEventListener("click", () => {
+        invitePop.classList.add("on");
+      });
+    }
+    
+    if (inviteCloseBtn && invitePop) {
+      inviteCloseBtn.addEventListener("click", () => {
+        invitePop.classList.remove("on");
+      });
+    }
+  }
+  // else if (type === "invite") {
+  //   const inviteBtn = document.querySelector(".invite_btn > button");
+  //   const invitePopBtn = document.querySelector(".invite_btn__pop > button");
+
+  //   inviteBtn.addEventListener("click", function (e) {
+  //     const target = e.target;
+  //     const targetInvitePop = target.closest(".invite_btn").querySelector(".invite_btn__pop");
+  //     if (!targetInvitePop.classList.contains("on")) {
+  //       targetInvitePop.classList.add("on");
+  //     }
+  //   });
+
+  //   invitePopBtn.addEventListener("click", function (e) {
+  //     const target = e.target;
+  //     target.closest(".invite_btn__pop").classList.remove("on");
+  //   });
+  // } 
+  else if (type === "popup") {
     const btnClose = document.querySelector(".popup__box--close");
 
     btnClose.addEventListener("click", function (e) {

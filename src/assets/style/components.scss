@@ -110,6 +110,41 @@
           align-items: center;
         }
       }
+
+      .invite_btn {
+        position: relative;
+        &__pop {
+          display: none;
+          position: absolute;
+          top: 35px;
+          right: 8px;
+          width: 168px;
+          height: 58px;
+          // padding: 28px 20px 16px 25px;
+          padding: 25px 20px 16px 25px;
+          background: url(../images/speech_box_s.svg) no-repeat center/100%;
+          z-index: 2;
+          &.on {
+            display: block;
+          }
+          &__close {
+            position: absolute;
+            top: 26px;
+            right: 14px;
+            width: 21px;
+            height: 21px;
+            background-image: url(../images/icon_close_white.svg);
+            background-size: contain;
+          }
+          & > span {
+            font-size: 13px;
+            font-weight: 800;
+            line-height: 24px;
+            letter-spacing: -0.5px;
+            color: #fff;
+          }
+        }
+      }
     }
   }
 

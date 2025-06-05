@@ -9,7 +9,6 @@
   ]"
   >
     <a class="area-left" href="#" v-if="leftArea === true">
-      <!-- <img class="ico-logo" :src="require(`@/assets/images/icon/ico_arrow_left.png`)" alt="이전페이지로 이동" /> -->
       <img
         class="ico-logo"
         :src="require(bgClass === 'bgGray'
@@ -26,8 +25,6 @@
     <h2 v-else class="page-title">{{ title }}</h2>
     <div class="area-right" v-if="rightArea === true">
       <div v-if="rightIcon" class="area-right__icon">
-        <!-- <button><img :src="require(`@/assets/images/icon_setting.svg`)" /></button>
-        <button><img :src="require(`@/assets/images/icon_add_team.svg`)" /></button> -->
         <img
           :src="require(bgClass === 'bgGray'
             ? '@/assets/images/icon_setting.svg'
@@ -39,9 +36,16 @@
             :src="require(bgClass === 'bgGray'
               ? '@/assets/images/icon_add_team.svg'
               : '@/assets/images/icon_add_team_w.svg')"
-            alt="설정"
+            alt="팀원 추가"
           />
         </button>
+        <div class="invite_btn">
+          <div class="invite_btn__pop on">
+            <span>팀원을 초대해주세요</span>
+            <button class="invite_btn__pop__close"></button>
+          </div>
+        </div>
+
       </div>
       <button v-else type="button">
         <img class="ico-logo" :src="require(`@/assets/images/icon/ico_close.png`)" alt="닫기" />
@@ -67,6 +71,9 @@
 </template>
 
 <script>
+import tabFn from "@/plugins/common.js";
+import layerClose from "@/plugins/common.js";
+
 export default {
   name: "ContentHead",
   data() {
@@ -95,6 +102,9 @@ export default {
   },
   mounted() {
     window.addEventListener('scroll', this.handleScroll)
+
+    tabFn.tabFn();
+    layerClose.layerClose("invite");
   },
   beforeUnmount() {
     window.removeEventListener('scroll', this.handleScroll)
