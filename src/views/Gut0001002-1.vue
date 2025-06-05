@@ -8,7 +8,7 @@
         <li class="gray_text"> 이전 팀 목록 </li>
       </ul>
       <div class="filter">
-        <InputField type="select" placeholder="선택" :options="['전체', '오 마이 GUT Morning', '팀 이름', '팀 이름', '팀 이름', '팀 이름']" />
+        <InputField type="select" placeholder="선택" :options="['전체', '오 마이 GUT Morning (34명)', '팀 이름', '팀 이름', '팀 이름', '팀 이름']" />
       </div>
       <p class="font--c66">팀원을 초대하고자 하는 이전 팀을 선택해주세요. <br />
         *초대받은 팀원의 경우, 초대받은 팀 목록에서 '참여하기'를 선택해야 팀에 참여됩니다.</p>
@@ -18,7 +18,7 @@
     </template>
   </PopupDefault>
   <div class="popup--toast">
-    초대링크를 발송했어요
+    초대 알림을 보냈어요
   </div>
 </template>
 
