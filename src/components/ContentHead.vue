@@ -97,7 +97,7 @@ export default {
     },
     bgClass: {
       type: String,
-      default: 'bgGray' // 기본 배경색 클래스
+      default: ' ' // 기본 배경색 클래스
     }
 
   },
