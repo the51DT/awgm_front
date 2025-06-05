@@ -337,6 +337,9 @@
   &--p1220{
     padding: 12px 20px;
   }
+  &--p12 {
+    padding: 12px 20px;
+  }
   &--p16 {
     padding: 16px;
   }
@@ -394,6 +397,22 @@
       position: relative;
       transition: width 1.7s ease-in-out;
       will-change: width;
+      p{
+        display: none;
+        color: #fff;
+        font-family: RixSinHead;
+        font-weight: 800;
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: -0.5px;
+        text-align: right;
+
+      }
+      p.full-width{
+        display: block;
+        padding: 8px 15px;
+        text-align: center;
+      }
       & .animation[data-width]{
         width: 100%;
       }
@@ -1308,6 +1327,40 @@
       }
 
 
+    }
+    &__card-drop{
+      ul{
+        margin-left: 20px;
+      }
+      li{
+        position: relative;
+        color: #666;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: -0.5px;
+        padding-top: 8px;
+        .percent{
+          margin-left: 4px;
+          letter-spacing: -0.5px;
+          i{
+            font-style: normal;
+            font-weight: 800;
+          }
+          &.full{
+            color: #F79C22
+          }
+        }
+      }
+      li::before{
+        content: "";
+        position: absolute;
+        top: 16px; left: -11px;
+        display: block;
+        width: 4px; height: 4px;
+        border-radius: 50%;
+        background: #666;
+      }
     }
     .terms-tab{
       padding: 24px 20px 136px;

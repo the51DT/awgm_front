@@ -226,9 +226,9 @@
         <div class="card card--p20 card--shadow00 team--sub__card1">
           <div class="card--per">
             <div class="card--per__gage--wrap">
-              <div class="card--per__gage" data-width="100%"></div>
+              <!-- full-width일때 텍스트 나타나도록 -->
+              <div class="card--per__gage" data-width="100%"> <p class="full-width"> 100% 달성 완료 !</p> </div>
             </div>
-            <!-- <div class="card--per__comp" data-width="20%">성공!</div> -->
             <div class="card--per__target" data-left="80%">지난 달 인증 률 80%</div>
           </div>
           <div class="card--box card--box--flex2">
@@ -242,9 +242,18 @@
             </div>
           </div>
         </div>
-        <!-- 여기에 드롭박스 -->
+        <div class="card card--p12 card--shadow00 team--sub__card-drop">
+          <Panel title="월별 지난 팀 인증률 추이 보기">
+            <ul>
+              <li> <span> 2025</span>년 <span> 6</span>월 <span class="percent"> <i> 25</i> %</span> </li>
+              <li> <span> 2025</span>년 <span> 6</span>월 <span class="percent full"> <i> 100</i> %</span> </li>
+              <li> <span> 2025</span>년 <span> 6</span>월 <span class="percent"> <i> 25</i> %</span> </li>
+            </ul>  
+          </Panel>
+        </div>
+
         <div class="card card--p20 card--shadow00 team--sub__card-rank">
-          <p class="card-rank-title">팀 랭킹</p>
+          <p class="card-rank-title">상시 랭킹</p>
           <div class="card__display-rank">
             <p><span> 5 </span>위</p>
             <button type="button">
@@ -380,6 +389,7 @@ import ContentHead from "@/components/ContentHead.vue";
 import InputField from "@/components/InputField.vue";
 import TopButton from "@/components/TopButton.vue";
 import CustomButton from "@/components/CustomButton.vue"
+import Panel from "@/components/Panel.vue";
 import commonJs from "@/plugins/common.js";
 
 export default {
@@ -404,6 +414,7 @@ export default {
     InputField,
     TopButton,
     CustomButton,
+    Panel,
   },
   mounted() {
     commonJs.posValue(document.querySelectorAll(".card--per__target"));
