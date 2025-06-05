@@ -38,13 +38,14 @@
               : '@/assets/images/icon_add_team_w.svg')"
             alt="팀원 추가"
           />
-        </button>
-        <div class="invite_btn">
+          <div class="invite_btn">
           <div class="invite_btn__pop on">
             <span>팀원을 초대해주세요</span>
             <button class="invite_btn__pop__close"></button>
           </div>
         </div>
+
+        </button>
 
       </div>
       <button v-else type="button">

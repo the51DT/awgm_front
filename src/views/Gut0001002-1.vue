@@ -8,11 +8,13 @@
         <li class="gray_text"> 이전 팀 목록 </li>
       </ul>
       <div class="filter">
-        <InputField type="select" placeholder="선택" :options="['전체', '오 마이 GUT Morning (34명)', '팀 이름', '팀 이름', '팀 이름', '팀 이름']" />
+        <InputField type="select" placeholder="선택"  
+        :options="teamOptions"
+        @change="handleTeamChange" />
       </div>
       <p class="font--c66">팀원을 초대하고자 하는 이전 팀을 선택해주세요. <br />
         *초대받은 팀원의 경우, 초대받은 팀 목록에서 '참여하기'를 선택해야 팀에 참여됩니다.</p>
-        <CustomButton size="md" color="gray">
+        <CustomButton size="md" :color="selectedTeam ? 'primary' : 'gray'">
         초대하기
       </CustomButton>
     </template>
@@ -37,7 +39,24 @@ export default {
   },
   mounted() {
     layerClose.layerClose("popup");
+  },
+  data() {
+    return {
+      selectedTeam: "", // 선택된 팀 이름
+      teamOptions: [
+        "오 마이 GUT Morning (34명)",
+        "오 마이 GUT Morning (34명)",
+        "오 마이 GUT Morning (34명)",
+        "오 마이 GUT Morning (34명)",
+      ]
+    }
+  },
+  methods: {
+    handleTeamChange(event) {
+      this.selectedTeam = event.target.value;
+    }
   }
+
 };
 </script>
 
