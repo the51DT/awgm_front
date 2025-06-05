@@ -15,7 +15,7 @@
       <div class="tag--wrap">
         <button type="button" class="tag tag-gray">진행중</button>
         <button type="button" class="tag tag-gray">진행종료</button>
-        <button type="button" class="tag on">초대받은 팀 23</button>
+        <button type="button" class="tag on">초대받은 팀 <span> 23 </span></button>
       </div>
       <div class="tag_cont">
         <div class="team--main__sub">
