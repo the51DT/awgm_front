@@ -2,7 +2,6 @@
   <div class="panel">
     <div class="panel--title" @click="toggle">
       <p>{{ title }}</p>
-      <!-- <span>{{ isOpen ? '▲' : '▼' }}</span> -->
       <img
         :src=ArrowIcon
         :style="{ transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)'}"
