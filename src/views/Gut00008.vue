@@ -11,10 +11,10 @@
       </p> -->
     </div>
     <!-- 서브 챌린지 다건 진행 시 -->
-    <button class="challenge--main__banner">
+    <!-- <button class="challenge--main__banner">
       <p class="tit">1차 미션 성공</p>
       <p class="member">팀원 수 <span class="num">200</span>명</p>
-    </button>
+    </button> -->
     <!-- 전체 챌린지 종료 시 -->
     <!-- <button class="challenge--main__banner">
       <p class="tit">전체 미션 성공</p>
@@ -26,9 +26,9 @@
         <p class="font--c33 font--700 font--ls3">팀명: 아침마다 오 마이 GUT Morning</p>
         <div>
           <p class="font--c11 font--700 font--ls2">성공조건 : 팀 인증 <span class="font--green">80%</span> 이상</p>
-          <p class="font--c66 font--ls1"><span class="font--800">전체기간 : </span>2025.04.01~2025.06.10 / 70일</p>
-          <p class="font--c66 font--ls1"><span class="font--800">2회차 진행 : </span>2025.05.13~2025.06.10 / 35일</p>
-          <!-- <p class="font--c66 font--ls1"><span class="font--800">3회차 진행 : </span>2025.05.13~2025.06.10 / 35일</p> -->
+          <p class="font--c66 font--ls1"><span class="font--800">전체기간 : </span>2025.04.01~2025.06.10 <span class="date_progress"> / 70일</span></p>
+          <!-- <p class="font--c66 font--ls1"><span class="font--800">2회차 진행  </span>2025.05.13~2025.06.10 <span class="date_progress"> / 35일</span></p> -->
+          <!-- <p class="font--c66 font--ls1"><span class="font--800">3회차 진행  </span>2025.05.13~2025.06.10 <span class="date_progress"> / 35일</span></p> -->
         </div>
       </div>
       <div class="challenge__card--main__per">
@@ -44,7 +44,30 @@
           <div class="card--per__target" data-left="60%">목표치</div>
         </div>
       </div>
-      <p class="font--c66 font--ls1"><span class="font--800">* 목표치란,</span> 챌린지를 성공하기 위하여 오늘까지 달성해야 할 최소한의 인증률을 말합니다.</p>
+      <!-- <p class="font--c66 font--ls1"><span class="font--800">* 목표치란,</span> 챌린지를 성공하기 위하여 오늘까지 달성해야 할 최소한의 인증률을 말합니다.</p> -->
+    </div>
+    <div class="card card--border card--shadow00 card--p20 challenge__card--main">
+      <div class="challenge__card--main__top">
+        <div>
+          <p class="font--c11 font--700 font--ls2">나의 챌린지 보상 신호등</p>
+          <p class="font--c66 font--ls1 challenge__card--traffic">
+            챌린지 미션 성공 시, ABO/Member 회원인증,
+            최근 2개월 내 것모닝 제품 구매 이력 등에 따라
+            보상이 차등 지급됩니다.
+          </p>
+        </div>
+      </div>
+      <div class="challenge__card--badge">
+        <button class="challenge__badge">
+          <img src="@/assets/images/ico-abo-completed-badge.svg" alt="ABO 인증 완료 뱃지 아이콘" />
+          <span> ABO 인증 완료 </span>
+        </button>
+        <button class="challenge__badge">
+          <img src="@/assets/images/ico-purchase-badge.svg" alt="것모닝 구매 완료 아이콘" />
+          <span> ABO 인증 완료 </span>
+        </button>
+      </div>
+      <p class="font--c66 font--ls1 mt-8">* Lamp 달성의 경우 전일 기준으로 확인 가능합니다.</p>
     </div>
     <!-- calendar 영역 -->
     <div class="calendar">
@@ -80,4 +103,9 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.font--c66.font--ls1.mt-8{
+  margin-top: 8px;
+}
+
+</style>

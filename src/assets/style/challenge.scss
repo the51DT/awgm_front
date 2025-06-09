@@ -125,6 +125,12 @@
           p:not(:first-child) {
             font-size: 14px;
           }
+          p:nth-child(2){
+            margin-top: 4px;
+          }
+          .date_progress{
+            font-weight: 800;
+          }
         }
       }
       &__per {
@@ -158,6 +164,35 @@
         margin-top: 16px;
         font-size: 12px;
         line-height: 16px;
+      }
+
+    }
+    &--badge{
+      margin-top: 8px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 8px;
+      .challenge__badge{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 4px;
+        border-radius: 16px;
+        padding: 4px 12px;
+        font-weight: 800;
+        font-size: 13px;
+        line-height: 24px;
+        letter-spacing: -0.5px ;
+
+      }
+      .challenge__badge:nth-child(1){
+        background-color:#FFE6EE ;
+        color: #E42864
+      }
+      .challenge__badge:nth-child(2){
+        background-color:#E5F6EC ;
+        color: #169E4A
       }
     }
     &--history {
@@ -228,6 +263,10 @@
         border-radius: 24px;
       }
     }
+    &--traffic{
+      max-width: 260px;
+    }
+
   }
   &__calendar {
     &--card {
