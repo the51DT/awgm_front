@@ -15,7 +15,7 @@
       <div class="tag--wrap">
         <button type="button" class="tag on">진행중</button>
         <button type="button" class="tag tag-gray">진행종료</button>
-        <button type="button" class="tag tag-gray">초대받은 팀</button>
+        <button type="button" class="tag tag-gray">초대받은 팀 <span> 23 </span></button>
       </div>
       <div class="tag_cont on">
         <div class="team--main__sub">
@@ -36,9 +36,9 @@
                 <img :src="require(`@/assets/images/card_profile.png`)">
               </div>
               <div class="card__text">
-                <p class="card__text__title">팀명: 아침마다 오 마이 GUT Morning</p>
+                <p class="card__text__title">팀명 <b> 아침마다 오 마이 GUT Morning</b></p>
                 <div class="card__info">
-                  <div class="card__title">챌린지</div>
+                  <div class="card__title card__title--challenge">챌린지</div>
                   <div class="card__num">64명</div>
                 </div> 
                 <p class="card__date">
@@ -82,7 +82,7 @@
                 <img :src="require(`@/assets/images/card_profile.png`)">
               </div>
               <div class="card__text">
-                <p class="card__text__title">팀명: 우리몸은 GUT Morning</p>
+                <p class="card__text__title">팀명 <b> 아침마다 오 마이 GUT Morning</b></p>
                 <div class="card__info">
                   <div class="card__title card__title--always">상시</div>
                   <div class="card__num">99명</div>
@@ -120,7 +120,7 @@
                 <img :src="require(`@/assets/images/card_profile.png`)">
               </div>
               <div class="card__text">
-                <p class="card__text__title">팀명: 우리몸은 GUT Morning</p>
+                <p class="card__text__title">팀명 <b> 아침마다 오 마이 GUT Morning</b></p>
                 <div class="card__info">
                   <div class="card__title card__title--always">상시</div>
                   <div class="card__num">99명</div>
@@ -155,7 +155,7 @@
                 <img :src="require(`@/assets/images/card_profile.png`)">
               </div>
               <div class="card__text">
-                <p class="card__text__title">팀명: 우리몸은 GUT Morning</p>
+                <p class="card__text__title">팀명 우리몸은 GUT Morning</p>
                 <div class="card__info">
                   <div class="card__title card__title--end">상시</div>
                   <div class="card__num">99명</div>
@@ -177,7 +177,7 @@
                 <img :src="require(`@/assets/images/card_profile.png`)">
               </div>
               <div class="card__text">
-                <p class="card__text__title">팀명: 우리몸은 GUT Morning</p>
+                <p class="card__text__title">팀명 우리몸은 GUT Morning</p>
                 <div class="card__info">
                   <div class="card__title card__title--end">챌린지</div>
                   <div class="card__num">64명</div>
