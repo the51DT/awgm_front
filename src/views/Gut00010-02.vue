@@ -22,7 +22,7 @@
               <!-- 100% 아닐 시 텍스트 -->
               <!-- <div class="card--per__gage" data-width="60%"> <p> 100% 달성 완료 !</p> </div> -->
             </div>
-            <div class="card--per__target" data-left="80%">지난 달 인증 률 80%</div>
+            <div class="card--per__target" data-left="80%">목표치</div>
           </div>
           <div class="card--box card--box--flex2">
             <div>
