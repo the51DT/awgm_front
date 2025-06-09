@@ -189,8 +189,13 @@ export const menuRoutes = [
       meta: { layout: "headerOnly" },
     },
     {
-      text: "나의 팀 상세-Gut00010",
-      path: "/나의 팀 상세-Gut00010",
+      text: "나의 팀 상세(챌린지)-Gut00010",
+      path: "/나의 팀 상세(챌린지)-Gut00010",
+      meta: { layout: "none" },
+    },
+    {
+      text: "나의 팀 상세(상시)-Gut00010-02",
+      path: "/나의 팀 상세(상시)-Gut00010-02",
       meta: { layout: "none" },
     },
     {

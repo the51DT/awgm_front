@@ -1,5 +1,5 @@
 <template>
-  <!-- 챌린지 팀 관리 -->
+  <!-- 상시 팀 관리 -->
   <div class="team--sub">
     <ContentHead title="팀 정보" headType="ty02" :leftArea="true" :rightArea="true" :rightIcon="true" :bgClass="headerBgClass"/>
     <div class="team-box-wrap">
@@ -9,9 +9,6 @@
         </div>
       </div>
     </div>
-    <div class="team--sub__title">
-      <p class="title__big">GUT Morning Korea Challenge</p>
-    </div>
     <div class="terms-tab">
       <div class="terms-tab__title"  ref="targetSection">
         <p> <i> 팀명 </i> 아침마다 오 마이 GUT Morning</p>
@@ -20,46 +17,36 @@
         <div class="card card--p20 card--shadow00 team--sub__card1">
           <div class="card--per">
             <div class="card--per__gage--wrap">
-              <div class="card--per__gage" data-width="40%"></div>
+              <!-- full-width일때 텍스트 나타나도록 -->
+              <div class="card--per__gage" data-width="100%"> <p class="full-width"> 100% 달성 완료 !</p> </div>
+              <!-- 100% 아닐 시 텍스트 -->
+              <!-- <div class="card--per__gage" data-width="60%"> <p> 100% 달성 완료 !</p> </div> -->
             </div>
-            <div class="card--per__comp" data-width="20%">성공!</div>
-            <div class="card--per__target" data-left="60%">목표치</div>
+            <div class="card--per__target" data-left="80%">지난 달 인증 률 80%</div>
           </div>
           <div class="card--box card--box--flex2">
             <div>
-              <p>팀 인증률</p>
-              <p>40%</p>
+              <p>이번 달 팀 인증률</p>
+              <p>100%</p>
             </div>
             <div>
-              <p>팀 인증횟수/성공횟수</p>
+              <p>월 인증횟수/성공횟수</p>
               <p>58/300회</p>
             </div>
           </div>
-          <div class="card--per__desc">
-            <p>
-              <i> * 목표치란,</i> 챌린지를 성공하기 위하여 오늘까지 달성해야 할 최소한의 인증률을 말합니다.
-            </p>
-          </div>
-          <ul class="card__list">
-            <li>
-              <span class="card__list--round"> 1회차 </span>
-              <span> 팀 인증률 <i> 75%</i></span>
-              <div class="tag-rate fail">실패</div>
-            </li>
-            <li>
-              <span class="card__list--round"> 2회차 </span>
-              <span> 팀 인증률 <i> 85%</i></span>
-              <div class="tag-rate success">성공</div>
-            </li>
-            <li>
-              <span class="card__list--round green"> 3회차 </span>
-              <span> <b>2025.04.01</b>~<b>2025.06.10</b></span>
-              <div class="date green"> <i>70</i>일</div>
-            </li>
-          </ul>
         </div>
+        <div class="card card--p12 card--shadow00 team--sub__card-drop">
+          <Panel title="월별 지난 팀 인증률 추이 보기">
+            <ul>
+              <li> <span> 2025</span>년 <span> 6</span>월 <span class="percent"> <i> 25</i> %</span> </li>
+              <li> <span> 2025</span>년 <span> 6</span>월 <span class="percent full"> <i> 100</i> %</span> </li>
+              <li> <span> 2025</span>년 <span> 6</span>월 <span class="percent"> <i> 25</i> %</span> </li>
+            </ul>  
+          </Panel>
+        </div>
+
         <div class="card card--p20 card--shadow00 team--sub__card-rank">
-          <p class="card-rank-title">팀 랭킹</p>
+          <p class="card-rank-title">상시 랭킹</p>
           <div class="card__display-rank">
             <p><span> 5 </span>위</p>
             <button type="button">
@@ -68,9 +55,10 @@
             </button>
           </div>
         </div>
+
         <div class="card card--p20 card--shadow00 team--sub__team-rate-ranking">
           <div class="card--pl8 team--sub__card-rank">
-            <p class="card__head_title">챌린지 $n$회차 팀원 인증률 순위</p>
+            <p class="card__head_title"><span> 2025</span>년 <span>09</span>월 팀원 인증률 순위</p>
             <p class="card-rank-title  myRank">나의 랭킹</p>
             <div class="card__display-rank">
               <p><span> 13 </span>위</p>
@@ -152,23 +140,16 @@
           </div>
           <p class="card__caption">2025.09.17 10:49:00 기준</p>
         </div>
+
         <div class="card card--p20 card--shadow00 team--sub__card-team-info">
           <dl>
             <dt>팀 구분</dt>
-            <dd><p class="card__title card__title--challenge"> 챌린지 </p></dd>
+            <dd><p class="card__title card__title--always"> 상시 </p></dd>
           </dl>
           <dl>
             <dt>전체 기간</dt>
             <dd>
               <p>2025.01.01 ~ 2025.02.28</p>
-              <div>
-                <span> 1회차 기간</span>
-                <p>2025.01.01 ~ 2025.01.31</p>
-              </div>
-              <div>
-                <span> 2회차 기간</span>
-                <p>2025.01.01 ~ 2025.01.31</p>
-              </div>
             </dd>
           </dl>
           <dl>
@@ -187,33 +168,12 @@
             <dt>참여인원</dt>
             <dd>68명</dd>
           </dl>
-          <dl>
-            <dt>성공조건</dt>
-            <dd class="orange">80%</dd>
-          </dl>
-          <dl>
-            <dt>성공 보상</dt>
-            <dd>
-              $보상명 (20자까지 노출 가능)$ $보상명 (20자까지 노출 가능)$ 
-            </dd>
-          </dl>
-          <dl>
-            <dt>보상수령방법</dt>
-            <dd class="bold">팀원 개별수령</dd>
-          </dl>
-          <dl>
-            <dt>보상 수령처</dt>
-            <InputField type="select" placeholder="선택"
-              :options="['분당', '강서', '인천', '대전', '청주', '부산', '대구', '창원', '울산', '광주', '전주', '강릉', '제주', '스타시티']" />
-            <button>저장</button>
-          </dl>
         </div>
         <CustomButton> 초대한 팀원 보기</CustomButton>
         <button class="break-team-btn">팀탈퇴<img :src="require(`@/assets/images/icon_more.svg`)"></button>
       </div>
     </div>
   </div>
-
   <TopButton></TopButton>
 </template>
 
@@ -257,8 +217,6 @@ export default {
         if (!target) return;
 
         this.observer = new IntersectionObserver(([entry]) => {
-          // console.log('entry.intersectionRatio:', entry.intersectionRatio);
-          // console.log('entry.isIntersecting:', entry.isIntersecting);
           this.isIntersecting = !entry.isIntersecting;
         }, { threshold: 0.1 });
 

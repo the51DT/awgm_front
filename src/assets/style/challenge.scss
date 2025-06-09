@@ -1400,9 +1400,14 @@
           .card__list--round{
             font-weight: 800;
           }
+          .card__list--round.green{
+            color: #169E4A;
+          }
+          .date{
+            font-weight: 800;
+          }
           i{
             font-style: normal;
-            font-family: "RixSinHead";
             font-weight: 800;
             font-size: 14px;
             line-height: 24px;
@@ -1414,9 +1419,7 @@
             line-height: 24px;
             letter-spacing: -0.5px;
           }
-          .card__list--round.green{
-            color: #169E4A;
-          }
+
           span:nth-child(1){
             margin-right: 8px;
           }
