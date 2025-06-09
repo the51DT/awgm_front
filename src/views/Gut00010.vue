@@ -36,9 +36,7 @@
             </div>
           </div>
           <div class="card--per__desc">
-            <p>
-              <i> * 목표치란,</i> 챌린지를 성공하기 위하여 오늘까지 달성해야 할 최소한의 인증률을 말합니다.
-            </p>
+ <p class="font--c66 font--ls1"><span class="font--800">* 목표치란,</span> 챌린지를 성공하기 위하여 오늘까지 달성해야 할 최소한의 인증률을 말합니다.</p>
           </div>
           <ul class="card__list">
             <li>
@@ -257,8 +255,6 @@ export default {
         if (!target) return;
 
         this.observer = new IntersectionObserver(([entry]) => {
-          // console.log('entry.intersectionRatio:', entry.intersectionRatio);
-          // console.log('entry.isIntersecting:', entry.isIntersecting);
           this.isIntersecting = !entry.isIntersecting;
         }, { threshold: 0.1 });
 
