@@ -1129,13 +1129,15 @@
     align-items: center;
     gap: 2px;
     color: #666;
-
     p{
       font-weight: 800;
       font-size: 14px;
       line-height: 24px;
       letter-spacing: -0.5px;
       text-align: center;
+    }
+    img{
+      // transition: all 0.3s;
     }
   }
   &--content{
