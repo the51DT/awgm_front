@@ -357,7 +357,8 @@
       <div class="card--icon">
         <img :src="require(`@/assets/images/content/conts-ico_team.png`)" alt="나의팀 아이콘" />
       </div>
-      <div class="card card--border card--shadow00 card--p20 challenge__card--main">
+      <div class="card card--border card--shadow00 card--p20 challenge__card--main" ref="observe-sec">
+        <!-- ref 섹션 -->
         <div class="challenge__card--main__top">
           <div class="card--badge ty-orange">
             <span class="font--ls1">상시</span>
@@ -464,6 +465,8 @@ export default {
     return {
       imageUrl: null,
       fontColorType: "white",
+      observer: null,
+      isVisible: false,
     };
   },
   setup() {
@@ -498,6 +501,101 @@ export default {
     layerClose.layerClose("card");
     layerClose.posValue(document.querySelectorAll(".card--per__target"));
     this.dayBtn();
+
+
+    // 프로그레스 바 애니메이션 2025.05.26 추가
+    const $perGage = document.querySelector(".animation");
+    const achieveGoal = document.querySelector(".achieve-goal").innerText;
+    const scrollAnimationSection = document.querySelector(".scroll-animation-sec");
+
+    let lastScrollY = window.scrollY;
+    let isAnimating = false;
+    let hasScrolled = false;
+    let fallbackTimeout = null;
+
+    // 사용자 스크롤 감지
+    window.addEventListener('scroll', () => {
+      hasScrolled = true;
+    });
+
+    const animateGauge = () => {
+      if (isAnimating) return;
+      isAnimating = true;
+
+      // 초기화
+      $perGage.style.transition = "none";
+      $perGage.style.width = "0%";
+      $perGage.offsetHeight; // 강제 리플로우 (Safari 안정성 ↑)
+
+      // void $perGage.offsetWidth; // 강제로 다시 리플레이
+
+      // requestAnimationFrame(() => {
+      //   // Step 3: 두 번째 프레임에서 트랜지션과 width 적용 → 모바일에서 가장 안정적
+      //   requestAnimationFrame(() => {
+      //     $perGage.style.transition = "width 1.3s ease-in-out";
+      //     $perGage.dataset.width = "100%";
+      //     $perGage.style.width = "100%";
+      //   });
+      // });
+      // // 애니메이션 완료 후 상태 복구
+      // $perGage.addEventListener("transitionend", () => {
+      //   isAnimating = false;
+      // }, { once: true });
+      setTimeout(() => {
+        $perGage.style.transition = "width 1.3s ease-in-out";
+        $perGage.dataset.width = "100%";
+        $perGage.style.width = "100%";
+      }, 16); // Safari에서는 rAF보다 setTimeout이 더 확실할 때가 있음
+
+      // 애니메이션 완료 후 상태 복구
+      const onTransitionEnd = () => {
+        isAnimating = false;
+        $perGage.removeEventListener("transitionend", onTransitionEnd);
+      };
+      $perGage.addEventListener("transitionend", onTransitionEnd);
+
+      setTimeout(() => {
+        if (isAnimating) {
+          isAnimating = false; // 강제로 해제
+        }
+      }, 1500); // 트랜지션 시간보다 약간 더 길게
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        const currentScrollY = window.scrollY;
+        const isScrollingDown = currentScrollY > lastScrollY;
+        lastScrollY = currentScrollY;
+
+        // 아래 방향으로 진입 시
+        if (entry.isIntersecting && isScrollingDown && hasScrolled && Number(achieveGoal) === 100) {
+          animateGauge();
+          // 만약 Observer가 불안정하면 fallback으로 1.5초 뒤 강제 실행
+          clearTimeout(fallbackTimeout);
+          fallbackTimeout = setTimeout(() => {
+            if (!isAnimating) animateGauge();
+          }, 1000);
+        }
+      });
+    }, {
+      threshold: 0.9 // 90% 섹션이 보였을때 플레이
+    });
+
+    observer.observe(scrollAnimationSection);
+
+    // ✅ 초기 진입 fallback 처리 (스크롤 없이도 화면에 걸쳐 있으면 실행)
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        const rect = scrollAnimationSection.getBoundingClientRect();
+        const inView = rect.top < window.innerHeight && rect.bottom > 0;
+        const isTop = window.scrollY === 0;
+
+        if (inView && !isTop && Number(achieveGoal) === 100) {
+          animateGauge();
+        }
+      }, 500); // 이미지/폰트 로딩 여유
+    });
+
   },
   beforeUnmount() {
     document.removeEventListener("scroll", this.scrollEvents, true);
@@ -544,51 +642,51 @@ export default {
 
       /* *****************  */
       // data-width 트랜지션 애니메이션
-      const triggerPoint = window.innerHeight * 0.95;
-      let lastScrollY = window.scrollY; // 이전 스크롤 위치용 
-      let hasAnimated = false;
+      // const triggerPoint = window.innerHeight * 0.95;
+      // let lastScrollY = window.scrollY; // 이전 스크롤 위치용 
+      // let hasAnimated = false;
 
-      const $perGage = document.querySelector(".animation");
-      const achieveGoal = document.querySelector(".achieve-goal").innerText;
-      let isAnimating = false;
+      // const $perGage = document.querySelector(".animation");
+      // const achieveGoal = document.querySelector(".achieve-goal").innerText;
+      // let isAnimating = false;
 
-      const animateGauge = () => {
-        if (isAnimating) return;
-        isAnimating = true;
-        // console.log("애니메이션 실행");
+      // const animateGauge = () => {
+      //   if (isAnimating) return;
+      //   isAnimating = true;
+      //   // console.log("애니메이션 실행");
 
-        // 초기화
-        $perGage.style.transition = "none";
-        $perGage.style.width = "0%";
-        void $perGage.offsetWidth; // 강제로 다시 리플레이
+      //   // 초기화
+      //   $perGage.style.transition = "none";
+      //   $perGage.style.width = "0%";
+      //   void $perGage.offsetWidth; // 강제로 다시 리플레이
 
-        requestAnimationFrame(() => {
-          // 두 번째 프레임에서 트랜지션과 width 적용 → 모바일에서 가장 안정적
-          requestAnimationFrame(() => {
-            $perGage.style.transition = "width 1.3s ease-in-out";
-            $perGage.dataset.width = "100%";
-            $perGage.style.width = "100%";
-          });
-        });
-        // 애니메이션 완료 후 상태 복구
-        $perGage.addEventListener("transitionend", () => {   
-          isAnimating = false;    
-          // console.log("애니메이션 종료"); 
-        }, 
-        { once: true } 
-        );
-      };
+      //   requestAnimationFrame(() => {
+      //     // 두 번째 프레임에서 트랜지션과 width 적용 → 모바일에서 가장 안정적
+      //     requestAnimationFrame(() => {
+      //       $perGage.style.transition = "width 1.3s ease-in-out";
+      //       $perGage.dataset.width = "100%";
+      //       $perGage.style.width = "100%";
+      //     });
+      //   });
+      //   // 애니메이션 완료 후 상태 복구
+      //   $perGage.addEventListener("transitionend", () => {   
+      //     isAnimating = false;    
+      //     // console.log("애니메이션 종료"); 
+      //   }, 
+      //   { once: true } 
+      //   );
+      // };
 
-      window.addEventListener("scroll", () => {
-        const currentScrollY = window.scrollY; 
-        const crossedTrigger = lastScrollY < triggerPoint && currentScrollY >= triggerPoint;
-        if (!hasAnimated && crossedTrigger && Number(achieveGoal) === 100) {
-          // console.log("triggerPoint 위치 통과");
-          hasAnimated = true;
-          animateGauge();
-        }
-        lastScrollY = currentScrollY;
-      });
+      // window.addEventListener("scroll", () => {
+      //   const currentScrollY = window.scrollY; 
+      //   const crossedTrigger = lastScrollY < triggerPoint && currentScrollY >= triggerPoint;
+      //   if (!hasAnimated && crossedTrigger && Number(achieveGoal) === 100) {
+      //     // console.log("triggerPoint 위치 통과");
+      //     hasAnimated = true;
+      //     animateGauge();
+      //   }
+      //   lastScrollY = currentScrollY;
+      // });
 
     }, 
     dayBtn() {
