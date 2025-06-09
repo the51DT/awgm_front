@@ -27,6 +27,21 @@
 .challenge {
   position: relative;
   flex-grow: 1;
+  &__info-item{
+    display: flex;
+    font-size: 14px;
+    &:first-child{
+      margin-top: 4px;
+    }
+    .period{
+      width: 75px;
+      font-weight: bold;
+      flex-shrink: 0;
+    }
+    .period_date{
+      flex: 1;
+    }
+  }
   &--main {
     padding-bottom: 112px;
     .custom-btn {
@@ -106,9 +121,12 @@
     &--main {
       position: relative;
       margin-top: 32px;
+      .if-terms{
+        margin-left: 10px;
+      }
       & > button {
         position: absolute;
-        top: 68px;
+        top: 26px;
         right: 4px;
       }
       &__top {
@@ -264,7 +282,7 @@
       }
     }
     &--traffic{
-      max-width: 260px;
+      // max-width: 260px;
     }
 
   }
@@ -299,6 +317,9 @@
   line-height: 24px;
   letter-spacing: -0.5px;
   color: #111;
+}
+p i{
+  font-style: normal;
 }
 .font {
   &--size18{
@@ -434,7 +455,6 @@
       border-radius: 20px;
       background-color: #f79c22;
       position: relative;
-      transition: width 1.7s ease-in-out;
       will-change: width;
       p{
         display: none;

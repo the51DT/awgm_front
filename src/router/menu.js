@@ -151,6 +151,16 @@ export const menuRoutes = [
       meta: { layout: "headerOnly" },
     },
     {
+      text: "홈 첼린지(다건진행 시)-Gut00008-02",
+      path: "/홈 첼린지(다건진행 시)-Gut00008-02",
+      meta: { layout: "headerOnly" },
+    },
+    {
+      text: "홈 첼린지(전체 챌린지 종료 시)-Gut00008-03",
+      path: "/홈 첼린지(전체 랠린지 종료 시)-Gut00008-03",
+      meta: { layout: "headerOnly" },
+    },
+    {
       text: "첼린지 미 진행시-Gut00007",
       path: "/첼린지 미 진행시-Gut00007",
       meta: { layout: "headerOnly" },
