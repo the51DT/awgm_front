@@ -155,7 +155,7 @@
                 <img :src="require(`@/assets/images/card_profile.png`)">
               </div>
               <div class="card__text">
-                <p class="card__text__title">팀명 우리몸은 GUT Morning</p>
+                <p class="card__text__title">팀명 <b> 아침마다 오 마이 GUT Morning</b></p>
                 <div class="card__info">
                   <div class="card__title card__title--end">상시</div>
                   <div class="card__num">99명</div>
@@ -177,9 +177,9 @@
                 <img :src="require(`@/assets/images/card_profile.png`)">
               </div>
               <div class="card__text">
-                <p class="card__text__title">팀명 우리몸은 GUT Morning</p>
+                <p class="card__text__title">팀명 <b> 아침마다 오 마이 GUT Morning</b></p>
                 <div class="card__info">
-                  <div class="card__title card__title--end">챌린지</div>
+                  <div class="card__title card__title--end-challenge">챌린지</div>
                   <div class="card__num">64명</div>
                 </div> 
                 <p class="card__date">
@@ -202,56 +202,40 @@
       <div class="tag_cont">
         <div class="team--main__sub">
           <div class="card card--border card--p16 card--shadowc2">
-            <button class="card__linkBtn">
-              <img :src="require(`@/assets/images/icon_arrow_r.svg`)">
-            </button>
-            <div class="card__ranking">
-              <div class="card__state card__state--end">진행종료</div>
-            </div>
             <div class="card__top">
               <div class="card__img">
                 <img :src="require(`@/assets/images/card_profile.png`)">
               </div>
               <div class="card__text">
-                <p class="card__text__title">팀명: 우리몸은 GUT Morning</p>
+                <p class="card__text__title"> 우리몸은 GUT Morning을 원한다!</p>
                 <div class="card__info">
-                  <div class="card__title card__title--end">상시</div>
-                  <div class="card__num">99명</div>
+                  <div class="card__title card__title--challenge">챌린지</div>
+                  <div class="card__team--nick">팀장닉네임</div>
                 </div> 
-                <p class="card__date">2024.09.01 ~ 2025.08.31</p>
+                <p class="card__date">챌린지 시작까지 <strong> D-248 </strong> </p>
               </div>
+            </div>
+            <div class="card__bottom">
+              <IconButton type="delete"> </IconButton>
+              <CustomButton size="md-b12"> 참여하기 </CustomButton>
             </div>
           </div>
-
           <div class="card card--border card--p16 card--shadowc2">
-            <button class="card__linkBtn">
-              <img :src="require(`@/assets/images/icon_arrow_r.svg`)">
-            </button>
-            <div class="card__ranking">
-              <div class="card__state card__state--end">진행종료</div>
-            </div>
             <div class="card__top">
               <div class="card__img">
                 <img :src="require(`@/assets/images/card_profile.png`)">
               </div>
               <div class="card__text">
-                <p class="card__text__title">팀명: 우리몸은 GUT Morning</p>
+                <p class="card__text__title"> 우리몸은 GUT Morning을 원한다!</p>
                 <div class="card__info">
-                  <div class="card__title card__title--end">챌린지</div>
-                  <div class="card__num">64명</div>
+                  <div class="card__title card__title--always">상시</div>
+                  <div class="card__team--nick">팀장닉네임</div>
                 </div> 
-                <p class="card__date">
-                  <strong>전체기간</strong><br/>
-                  2025.09.01 ~ 2025.09.30 / 70일
-                </p>
-                <p class="card__date">
-                  <strong>2회차 진행</strong><br/>
-                  2025.09.01 ~ 2025.09.30 / 30일
-                </p>
               </div>
             </div>
-            <div class="card__comp">
-              <img :src="require(`@/assets/images/challenge_comp_green.png`)">
+            <div class="card__bottom">
+              <IconButton type="delete"> </IconButton>
+              <CustomButton size="md-b12"> 참여하기 </CustomButton>
             </div>
           </div>
         </div>
@@ -293,12 +277,16 @@
 
 <script>
 import AppNav from "@/layouts/AppNav.vue";
+import CustomButton from  "@/components/CustomButton.vue"
+import IconButton from "@/components/IconButton.vue"
 import tabFn from "@/plugins/common.js";
 
 export default {
   name: "LoginMain",
   components: {
     AppNav,
+    CustomButton,
+    IconButton,
   },
   mounted() {
     tabFn.tabFn()
