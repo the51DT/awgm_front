@@ -16,7 +16,7 @@
 
 <script setup>
 import { ref } from 'vue'
-import ArrowIcon from "@/assets/images/icon_arrow_down.svg";
+import ArrowIcon from "@/assets/images/icon_arrow_down_gray.svg";
 
 defineProps({
   title: {

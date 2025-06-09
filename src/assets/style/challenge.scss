@@ -1392,11 +1392,14 @@
       gap: 16px;
       padding-top: 32px;
       ul.card__list{
-        li:nth-child(1){
+        li:not(:last-child){
           margin-bottom: 4px;
         }
         li{
           display: flex;
+          .card__list--round{
+            font-weight: 800;
+          }
           i{
             font-style: normal;
             font-family: "RixSinHead";
@@ -1406,12 +1409,13 @@
             letter-spacing: -0.5px;
           }
           span{
-            font-family: "RixSinHead";
             font-weight: 500;
             font-size: 14px;
             line-height: 24px;
             letter-spacing: -0.5px;
-
+          }
+          .card__list--round.green{
+            color: #169E4A;
           }
           span:nth-child(1){
             margin-right: 8px;
@@ -1433,6 +1437,12 @@
           }
           .tag-rate.success{
             background: #169E4A;
+          }
+          .date{
+            margin-left: 4px;
+          }
+          .date.green{
+            color: #169E4A;
           }
         }
       }
@@ -1573,6 +1583,7 @@
       font-weight: 700;
       line-height: 18px;
       letter-spacing: -0.5px;
+      color: #000;
     }
   }
   .team-box-wrap {

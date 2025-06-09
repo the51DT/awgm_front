@@ -42,14 +42,19 @@
           </div>
           <ul class="card__list">
             <li>
-              <span> 1회차 </span>
+              <span class="card__list--round"> 1회차 </span>
               <span> 팀 인증률 <i> 75%</i></span>
               <div class="tag-rate fail">실패</div>
             </li>
             <li>
-              <span> 2회차 </span>
+              <span class="card__list--round"> 2회차 </span>
               <span> 팀 인증률 <i> 85%</i></span>
               <div class="tag-rate success">성공</div>
+            </li>
+            <li>
+              <span class="card__list--round green"> 3회차 </span>
+              <span> <b>2025.04.01</b>~<b>2025.06.10</b></span>
+              <div class="date green"> <i>70</i>일</div>
             </li>
           </ul>
         </div>
@@ -228,6 +233,8 @@
             <div class="card--per__gage--wrap">
               <!-- full-width일때 텍스트 나타나도록 -->
               <div class="card--per__gage" data-width="100%"> <p class="full-width"> 100% 달성 완료 !</p> </div>
+              <!-- 100% 아닐 시 텍스트 -->
+              <!-- <div class="card--per__gage" data-width="60%"> <p> 100% 달성 완료 !</p> </div> -->
             </div>
             <div class="card--per__target" data-left="80%">지난 달 인증 률 80%</div>
           </div>
@@ -398,7 +405,7 @@ export default {
     return {
       leftArea: "",
       rightArea: "",
-      allTimes: true,
+      allTimes: false,
       isIntersecting: false,
       observer: null
     };
