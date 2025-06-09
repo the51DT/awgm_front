@@ -237,9 +237,8 @@
           alt="챌린지 아이콘"
         />
       </div>
-      <div
-        class="card card--border card--shadow00 card--p20 challenge__card--main"
-      >
+      <div class="card card--border card--shadow00 card--p20 challenge__card--main">
+        <!-- 이 섹션 삭제 시 script와 충돌 -->
         <div class="challenge__card--main__top">
           <p class="font--c33 font--700 font--ls3">
             아침마다 오 마이 GUT Morning
@@ -505,8 +504,11 @@ export default {
 
     // 프로그레스 바 애니메이션 2025.05.26 추가
     const $perGage = document.querySelector(".animation");
-    const achieveGoal = document.querySelector(".achieve-goal").innerText;
+    const achieveGoalEl = document.querySelector(".achieve-goal");
+    const achieveGoal = achieveGoalEl ? achieveGoalEl.innerText : "0";
     const scrollAnimationSection = document.querySelector(".scroll-animation-sec");
+
+    if (!$perGage) return; // 요소 없으면 실행 중단
 
     let lastScrollY = window.scrollY;
     let isAnimating = false;
@@ -527,25 +529,11 @@ export default {
       $perGage.style.width = "0%";
       $perGage.offsetHeight; // 강제 리플로우 (Safari 안정성 ↑)
 
-      // void $perGage.offsetWidth; // 강제로 다시 리플레이
-
-      // requestAnimationFrame(() => {
-      //   // Step 3: 두 번째 프레임에서 트랜지션과 width 적용 → 모바일에서 가장 안정적
-      //   requestAnimationFrame(() => {
-      //     $perGage.style.transition = "width 1.3s ease-in-out";
-      //     $perGage.dataset.width = "100%";
-      //     $perGage.style.width = "100%";
-      //   });
-      // });
-      // // 애니메이션 완료 후 상태 복구
-      // $perGage.addEventListener("transitionend", () => {
-      //   isAnimating = false;
-      // }, { once: true });
       setTimeout(() => {
         $perGage.style.transition = "width 1.3s ease-in-out";
         $perGage.dataset.width = "100%";
         $perGage.style.width = "100%";
-      }, 16); // Safari에서는 rAF보다 setTimeout이 더 확실할 때가 있음
+      }, 16); // Safari에서는 ref보다 setTimeout이 더 확실할 때가 있음
 
       // 애니메이션 완료 후 상태 복구
       const onTransitionEnd = () => {
