@@ -1,4 +1,5 @@
 <template>
+  <!-- 챌린지 단건진행 시 -->
   <div class="challenge challenge--main">
     <button class="link-arrow">챌린지 이력보기<img :src="require(`@/assets/images/icon_link_arrow.svg`)"></button>
     <div class="text__title__wrap">

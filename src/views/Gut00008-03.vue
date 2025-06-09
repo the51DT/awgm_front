@@ -1,9 +1,9 @@
 <template>
+  <!-- 전체 챌린지 종료 시 -->
   <div class="challenge challenge--main">
     <button class="link-arrow">챌린지 이력보기<img :src="require(`@/assets/images/icon_link_arrow.svg`)"></button>
     <div class="text__title__wrap">
       <p class="text__title">GUT Morning<br />Korea Challenge</p>
-      <!-- 전체 챌린지 종료 시 -->
       <p class="text__subtit text__subtit--mt8">
         <span class="text__subtit--bold"> <b>6</b>월 <b>10</b>일</span>에 챌린지가 종료되었습니다.<br/>
         전체기간의 팀 인증률은 <span class="font--800 font--green">76</span>% 입니다.
