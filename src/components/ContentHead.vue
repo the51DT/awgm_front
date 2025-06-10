@@ -11,9 +11,11 @@
     <a class="area-left" href="#" v-if="leftArea === true">
       <img
         class="ico-logo"
-        :src="require(bgClass === 'bgGray' || ' '
-          ? '@/assets/images/icon/ico_arrow_left.png'
-          : '@/assets/images/icon_arrow_left_w.svg')"
+        :src="customLeftIcon || (
+          bgClass === 'bgGray'
+            ? require('@/assets/images/icon_arrow_left_w.svg')
+            : require('@/assets/images/icon/ico_arrow_left.png')
+        )"
         alt="이전페이지로 이동"
       />
     </a>
@@ -55,19 +57,6 @@
   </div>
   <div v-if="headType === 'ty02'" class="header-space2"></div>
 
-<!-- <div class="medal_btn">
-<button><img :src="require(`@/assets/images/icon_medal.svg`)"></button>
-<div class="medal_btn__pop on">
-<span>메달 부여 기준</span>
-<button class="medal_btn__pop__close"></button>
-<ul>
-  <li><p><img :src="require(`@/assets/images/gold_medal.png`)">금메달</p><span>1위</span></li>
-  <li><p><img :src="require(`@/assets/images/silver_medal.png`)">은메달</p><span>2위~10위</span></li>
-  <li><p><img :src="require(`@/assets/images/bronze_medal.png`)">동메달</p><span>11위~30위</span></li>
-</ul>
-</div>
-</div> -->
-
 
 </template>
 
@@ -98,7 +87,11 @@ export default {
     bgClass: {
       type: String,
       default: ' ' // 기본 배경색 클래스
-    }
+    },
+    customLeftIcon: {
+    type: String,
+    default: '', // 아이콘 강제 지정용
+  },
 
   },
   mounted() {

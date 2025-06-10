@@ -1,7 +1,9 @@
 <template>
   <!-- 챌린지 팀 관리 -->
   <div class="team--sub">
-    <ContentHead title="팀 정보" headType="ty02" :leftArea="true" :rightArea="true" :rightIcon="true" :bgClass="headerBgClass"/>
+    <ContentHead title="팀 정보" headType="ty02" :leftArea="true" :rightArea="true" :rightIcon="true" :bgClass="headerBgClass"
+  :customLeftIcon="customLeftIcon"
+    />
     <div class="team-box-wrap">
       <div class="profile-area">
         <div class="img-wrap on-flag">
@@ -236,6 +238,11 @@ export default {
   computed: {
     headerBgClass() {
       return this.isIntersecting ? 'bgGray' : 'bgGreen'
+    },
+    customLeftIcon() {
+      return this.isIntersecting
+        ? require('@/assets/images/icon/ico_arrow_left.png')
+        : require('@/assets/images/icon_arrow_left_w.svg');
     }
   },
   components: {
@@ -251,7 +258,7 @@ export default {
     this.$nextTick(() => {
       setTimeout(() => {
         const target = this.$refs.targetSection;
-        console.log("targetSection:", target); 
+        // console.log("targetSection:", target); 
         if (!target) return;
 
         this.observer = new IntersectionObserver(([entry]) => {
