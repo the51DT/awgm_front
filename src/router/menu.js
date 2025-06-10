@@ -318,8 +318,13 @@ export const menuRoutes = [
       meta: { layout: "none" },
     },
     {
-      text: "자녀계정 활동보기 팀상세-Gut0002201",
-      path: "/자녀계정 활동보기 팀상세-Gut0002201",
+      text: "자녀계정 활동보기 팀상세(챌린지)-Gut00022-01",
+      path: "/자녀계정 활동보기 팀상세(챌린지)-Gut00022-01",
+      meta: { layout: "none" },
+    },
+    {
+      text: "자녀계정 활동보기 팀상세(상시)-Gut00022-02",
+      path: "/자녀계정 활동보기 팀상세(상시)-Gut00022-02",
       meta: { layout: "none" },
     },
     {

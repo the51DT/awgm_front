@@ -20,9 +20,9 @@
           <div class="card--per">
             <div class="card--per__gage--wrap">
               <!-- full-width일때 텍스트 나타나도록 -->
-              <div class="card--per__gage" data-width="100%"> <p class="full-width"> 100% 달성 완료 !</p> </div>
+              <!-- <div class="card--per__gage" data-width="100%"> <p class="full-width"> 100% 달성 완료 !</p> </div> -->
               <!-- 100% 아닐 시 텍스트 -->
-              <!-- <div class="card--per__gage" data-width="60%"> <p> 100% 달성 완료 !</p> </div> -->
+              <div class="card--per__gage" data-width="60%"> <p> 100% 달성 완료 !</p> </div>
             </div>
             <div class="card--per__target" data-left="80%">목표치</div>
           </div>
@@ -51,10 +51,6 @@
           <p class="card-rank-title">상시 랭킹</p>
           <div class="card__display-rank">
             <p><span> 5 </span>위</p>
-            <button type="button">
-              팀 랭킹 보기
-              <img :src="require(`@/assets/images/icon_arrow_r_white.svg`)" />
-            </button>
           </div>
         </div>
 
@@ -64,10 +60,6 @@
             <p class="card-rank-title  myRank">나의 랭킹</p>
             <div class="card__display-rank">
               <p><span> 13 </span>위</p>
-              <button type="button">
-                팀원 현황 보기
-                <img :src="require(`@/assets/images/icon_arrow_r_white.svg`)"/>
-              </button>
             </div>
           </div>
           <div class="card__chart">
@@ -171,14 +163,11 @@
             <dd>68명</dd>
           </dl>
         </div>
-        <CustomButton> 초대한 팀원 보기</CustomButton>
-        <button class="break-team-btn">팀탈퇴<img :src="require(`@/assets/images/icon_more.svg`)"></button>
       </div>
     </div>
   </div>
   <TopButton></TopButton>
 </template>
-
 
 <script>
 import ContentHead from "@/components/ContentHead.vue";

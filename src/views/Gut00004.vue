@@ -400,34 +400,10 @@
       <FrontIntro :lottieColorType="fontColorType" />
     </div>
   </div>
+
+
   <AddBtnHome></AddBtnHome>
   <AppNav :home="true"></AppNav>
-  <!-- 인증방법 선택 팝업 -->
-  <!-- <PopupDefault>
-    <template v-slot:title>
-      인증방법 선택
-    </template>
-<template v-slot:cont>
-      <div class="popup--photo">
-        <button class="popup--photo__take"><img :src="require(`@/assets/images/icon_take_photo.svg`)"/>사진 찍기</button>
-        <button class="popup--photo__storage"><img :src="require(`@/assets/images/icon_storage_photo.svg`)"/>사진 보관함</button>
-        <button class="popup--photo__file"><img :src="require(`@/assets/images/icon_file.svg`)"/>파일 선택</button>
-      </div>
-    </template>
-</PopupDefault> -->
-
-  <!-- 인증완료 팝업 -->
-  <!-- <PopupDefault>
-    <template v-slot:title>
-      인증완료
-    </template>
-    <template v-slot:cont>
-      2025년 2월 12일<br/>미션 인증이 완료되었습니다.
-    </template>
-    <template v-slot:btn>
-      <CustomButton size="md">확인</CustomButton>
-    </template>
-  </PopupDefault> -->
   <TopButton style="display: none"></TopButton>
 </template>
 
