@@ -54,6 +54,7 @@
     z-index: 100;
     background: #fff;
     min-height: 72px;
+    transition: none;
   }
 
   &.bgGray {
@@ -67,7 +68,7 @@
 
   &.ty02.scrolled {
     box-shadow: 0px 8px 12px 0px #C2C2C240;
-    transition: all 0.3s ease;
+    transition: color 0.3s ease, background-color 0.3s ease;
   }
 
   &.ty03 {
@@ -1130,10 +1131,13 @@
     color: #666;
     p{
       font-weight: 800;
-      font-size: 14px;
+      font-size: 18px;
       line-height: 24px;
       letter-spacing: -0.5px;
       text-align: center;
+    }
+    img{
+      width: 24px; height: 24px;
     }
   }
   &--content{
