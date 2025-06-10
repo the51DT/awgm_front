@@ -157,13 +157,13 @@
           </dl>
           <dl>
             <dt>전체 기간</dt>
-            <dd>
+            <dd >
               <p>2025.01.01 ~ 2025.02.28</p>
-              <div>
-                <span> 1회차 기간</span>
+              <div class="font-13">
+                <span > 1회차 기간</span>
                 <p>2025.01.01 ~ 2025.01.31</p>
               </div>
-              <div>
+              <div class="font-13">
                 <span> 2회차 기간</span>
                 <p>2025.01.01 ~ 2025.01.31</p>
               </div>
