@@ -598,6 +598,7 @@ p i{
           display: flex;
           flex-direction: row;
           gap: 8px;
+        }
           dt{
             font-weight: 800;
             color: #333;
@@ -606,7 +607,7 @@ p i{
           dd{
             min-width: 95px;
             // max-width: 200px;
-          }
+
         }
       }
     }
@@ -624,7 +625,7 @@ p i{
       flex-direction: column;
       gap: 4px;
       &.completed--join{
-        background:#E5F6EC;
+        background: #E5F6EC;
         color: #169E4A;
       }
     }
