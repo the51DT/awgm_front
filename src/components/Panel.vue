@@ -8,9 +8,6 @@
         alt="드롭박스 토글 버튼"
       />
     </div>
-    <!-- <div v-if="isOpen" class="panel--content">
-      <slot />
-    </div> -->
     <transition name="panel-fade">
       <div v-if="isOpen" class="panel--content">
         <slot />
