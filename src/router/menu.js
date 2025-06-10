@@ -303,13 +303,13 @@ export const menuRoutes = [
       meta: { layout: "none" },
     },
     {
-      text: "자녀계정 등록수정-Gut0001901",
-      path: "/자녀계정 등록수정-Gut0001901",
+      text: "(PU)자녀계정 등록수정-Gut0001901",
+      path: "/(PU)자녀계정 등록수정-Gut0001901",
       meta: { layout: "none" },
     },
     {
-      text: "자녀계정 비밀번호재설정-Gut0002001",
-      path: "/자녀계정 비밀번호재설정-Gut0002001",
+      text: "(PU)자녀계정 비밀번호재설정-Gut0002001",
+      path: "/(PU)자녀계정 비밀번호재설정-Gut0002001",
       meta: { layout: "none" },
     },
     {
