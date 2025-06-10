@@ -184,21 +184,6 @@ export const menuRoutes = [
       meta: { layout: "headerOnly" },
     },
     {
-      text: "나의 팀 목록 초대받은팀-Gut00034",
-      path: "/나의 팀 목록 초대받은팀-Gut00034",
-      meta: { layout: "headerOnly" },
-    },
-    {
-      text: "(PU)나의 팀 목록 초대받은팀-Gut0003401",
-      path: "/(PU)나의 팀 목록 초대받은팀-Gut0003401",
-      meta: { layout: "headerOnly" },
-    },
-    {
-      text: "나의 팀 목록 초대받은팀 (없을 시) -Gut0003402",
-      path: "/나의 팀 목록 초대받은팀 (없을 시)-Gut0003402",
-      meta: { layout: "headerOnly" },
-    },
-    {
       text: "나의 팀 상세(챌린지)-Gut00010",
       path: "/나의 팀 상세(챌린지)-Gut00010",
       meta: { layout: "none" },
@@ -234,6 +219,11 @@ export const menuRoutes = [
       meta: { layout: "none" },
     },
     {
+      text: "팀만들기-Gut00014",
+      path: "/팀만들기-Gut00014",
+      meta: { layout: "none" },
+    },
+    {
       text: "전체 팀원 보기-Gut00018",
       path: "/전체 팀원 보기-Gut00018",
       meta: { layout: "none" },
@@ -259,8 +249,33 @@ export const menuRoutes = [
       meta: { layout: "none" },
     },
     {
-      text: "팀만들기-Gut00014",
-      path: "/팀만들기-Gut00014",
+      text: "나의 팀 목록 초대받은팀-Gut00034",
+      path: "/나의 팀 목록 초대받은팀-Gut00034",
+      meta: { layout: "headerOnly" },
+    },
+    {
+      text: "(PU)나의 팀 목록 초대받은팀-Gut0003401",
+      path: "/(PU)나의 팀 목록 초대받은팀-Gut0003401",
+      meta: { layout: "headerOnly" },
+    },
+    {
+      text: "나의 팀 목록 초대받은팀 (없을 시) -Gut0003402",
+      path: "/나의 팀 목록 초대받은팀 (없을 시)-Gut0003402",
+      meta: { layout: "headerOnly" },
+    },
+    {
+      text: "나의 팀 목록 초대한 팀원 보기 (전체)-Gut00037",
+      path: "/나의 팀 목록 초대한 팀원 보기 (전체)-Gut00037",
+      meta: { layout: "none" },
+    },
+    {
+      text: "나의 팀 목록 초대한 팀원 보기 (참여대기)-Gut00037-02",
+      path: "/나의 팀 목록 초대한 팀원 보기 (참여대기)-Gut00037-02",
+      meta: { layout: "none" },
+    },
+    {
+      text: "나의 팀 목록 초대한 팀원 보기 (참여완료)-Gut00037-03",
+      path: "/나의 팀 목록 초대한 팀원 보기 (참여완료)-Gut00037-03",
       meta: { layout: "none" },
     },
   ]),
@@ -281,11 +296,7 @@ export const menuRoutes = [
       path: "/회원정보-Gut00016",
       meta: { layout: "none" },
     },
-    {
-      text: "보상지급이력-Gut00036",
-      path: "/보상지급이력-Gut00036",
-      meta: { layout: "none" },
-    },
+
     {
       text: "자녀계정 등록관리-Gut00019",
       path: "/자녀계정 등록관리-Gut00019",
@@ -319,6 +330,11 @@ export const menuRoutes = [
     {
       text: "FAQ-Gut00025",
       path: "/FAQ-Gut00025",
+      meta: { layout: "none" },
+    },
+    {
+      text: "보상지급이력-Gut00036",
+      path: "/보상지급이력-Gut00036",
       meta: { layout: "none" },
     },
   ]),

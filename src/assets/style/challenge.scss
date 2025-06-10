@@ -203,7 +203,6 @@
         font-size: 13px;
         line-height: 24px;
         letter-spacing: -0.5px ;
-
       }
       .challenge__badge:nth-child(1){
         background-color:#FFE6EE ;
@@ -212,6 +211,10 @@
       .challenge__badge:nth-child(2){
         background-color:#E5F6EC ;
         color: #169E4A
+      }
+      .challenge__badge.not{
+        color: #B9B9B9;
+        background-color: #F5F5F5;
       }
     }
     &--history {
@@ -410,6 +413,9 @@ p i{
   &--border {
     border: 1px solid #e5e5e5;
   }
+  &--d8border{
+    border: 1px solid #d8d8d8;
+  }
   &--green {
     border: 1px solid #169e4a;
   }
@@ -567,6 +573,61 @@ p i{
   }
   &__bottom{
     gap: 8px;
+  }
+  &--flex3{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    &-left{
+      flex: 2;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding: 16px 20px 16px 16px;
+      & > .img-wrap{
+        min-width: 56px;
+        width: 56px;
+      }
+      & > .member-info{
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 24px;
+        letter-spacing: -0.5px;
+        color: #111;
+        dl{
+          display: flex;
+          flex-direction: row;
+          gap: 8px;
+          dt{
+            font-weight: 800;
+            color: #333;
+            min-width: 35px;
+          }
+          dd{
+            min-width: 95px;
+            // max-width: 200px;
+          }
+        }
+      }
+    }
+    &-right{
+      background: #FFEEDB;
+      color: #F79C22;
+      font-weight: 800;
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: -0.5px;
+      width: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 4px;
+      &.completed--join{
+        background:#E5F6EC;
+        color: #169E4A;
+      }
+    }
   }
   &__img {
     position: relative;
@@ -1549,7 +1610,11 @@ p i{
           & > div{
             margin-top: 6px;
           }
+          .font-13{
+            font-size: 13px;
+          }
         }
+
         dd.orange{
           color: #F79C22;
         }

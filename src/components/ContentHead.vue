@@ -11,7 +11,7 @@
     <a class="area-left" href="#" v-if="leftArea === true">
       <img
         class="ico-logo"
-        :src="require(bgClass === 'bgGray'
+        :src="require(bgClass === 'bgGray' || ' '
           ? '@/assets/images/icon/ico_arrow_left.png'
           : '@/assets/images/icon_arrow_left_w.svg')"
         alt="이전페이지로 이동"
