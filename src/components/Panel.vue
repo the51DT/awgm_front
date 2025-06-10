@@ -54,4 +54,9 @@ const toggle = () => {
   max-height: 500px; /* 최대 높이 예상값 */
   opacity: 1;
 }
+
+.panel-fade-leave-to::before,
+.panel-fade-leave-to::after {
+  opacity: 0;
+}
 </style>
