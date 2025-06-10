@@ -49,14 +49,25 @@
         </div>
       </div>
       <div class="challenge__card--badge">
-        <button class="challenge__badge">
+        <!-- 인증 미완료 시 -->
+        <!-- <div class="challenge__badge not">
+          <img src="@/assets/images/ico-abo-completed-badge-not.svg" alt="ABO 인증 완료 뱃지 아이콘" />
+          <span> ABO 인증 완료 </span>
+        </div>
+        <div class="challenge__badge not">
+          <img src="@/assets/images/ico-purchase-badge-not.svg" alt="것모닝 구매 완료 아이콘" />
+          <span> 것모닝 구매 완료 </span>
+        </div> -->
+
+        <!-- 인증 완료 시-->
+        <div class="challenge__badge">
           <img src="@/assets/images/ico-abo-completed-badge.svg" alt="ABO 인증 완료 뱃지 아이콘" />
           <span> ABO 인증 완료 </span>
-        </button>
-        <button class="challenge__badge">
+        </div>
+        <div class="challenge__badge">
           <img src="@/assets/images/ico-purchase-badge.svg" alt="것모닝 구매 완료 아이콘" />
           <span> 것모닝 구매 완료 </span>
-        </button>
+        </div>
       </div>
       <p class="font--c66 font--ls1 mt-8">* Lamp 달성의 경우 전일 기준으로 확인 가능합니다.</p>
     </div>
