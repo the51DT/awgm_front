@@ -111,6 +111,86 @@ body {
     }
   }
 }
+.paid_reward{ 
+  &_btn {
+    width: 100%;
+    max-width: 500px;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 73px;
+    z-index: 100;
+    &__pop {
+      display: none;
+      // width: 64px;
+      // height: 64px;
+      margin-left: auto;
+      margin-right: 48px;
+      width: 224px;
+      height: 80px;
+      padding: 8px 28px 16px 20px;
+      background: url(../images/paid_reward_speech_box.svg) no-repeat center/100%;
+      z-index: 2;
+      position: relative;
+      &.on {
+        display: block;
+      }
+      .paid_reward_btn__pop__close {
+        position: absolute;
+        top: 9px;
+        right: 16px;
+        width: 21px;
+        height: 21px;
+        background-image: url(../images/icon_close_white.svg);
+        background-size: contain;
+      }
+      & > p {
+        font-size: 13px;
+        font-weight: 800;
+        line-height: 24px;
+        letter-spacing: -0.5px;
+        color: #fff;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.top {
+  &--button {
+    width: 100%;
+    max-width: 500px;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 104px;
+    z-index: 50;
+
+    button {
+      position: relative;
+      display: block;
+      width: 64px;
+      height: 64px;
+      margin-left: auto;
+      margin-right: 16px;
+      border-radius: 48px;
+      border: 2px solid #169e4a;
+      background: #fff;
+      box-shadow: 8px 10px 12px 0px #0000001a;
+    }
+
+    img {
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+
 .footer {
   margin: 0 -20px;
   padding: 32px 20px;

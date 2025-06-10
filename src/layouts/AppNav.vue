@@ -33,9 +33,26 @@
       </li>
     </ul>
   </nav>
+
+  <div class="paid_reward" v-show="showReward">
+    <div class="paid_reward_btn">
+      <div class="paid_reward_btn__pop on">
+        <p>챌린지 보상이 지급되었습니다! <br />
+          지금 확인해 보세요.</p>
+        <button class="paid_reward_btn__pop__close"></button>
+      </div>
+    </div>
+  </div>
+
 </template>
 
 <script>
+import tabFn from "@/plugins/common.js";
+import layerClose from "@/plugins/common.js";
+// import { watch, ref } from 'vue'
+import { useRoute } from 'vue-router'
+
+
 export default {
   name: "AppNav",
   props: {
@@ -55,6 +72,31 @@ export default {
       type: Boolean,
       default: false,
     },
+  },
+  mounted() {
+    tabFn.tabFn();
+    layerClose.layerClose("paid_reward");
+  },
+  data() {
+    return {
+      showReward: true
+    }
+  },
+
+  setup() {
+    const route = useRoute()
+    return { route }
+  },
+
+  watch: {
+    'route.path': {
+      immediate: true,
+      handler(newPath) {
+        const decoded = decodeURIComponent(newPath)
+        this.showReward = decoded !== '/마이 index-Gut00015'
+      }
+    }
   }
 };
+
 </script>

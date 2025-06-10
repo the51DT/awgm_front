@@ -74,23 +74,26 @@ function layerClose (type) {
       });
     }
   }
-  // else if (type === "invite") {
-  //   const inviteBtn = document.querySelector(".invite_btn > button");
-  //   const invitePopBtn = document.querySelector(".invite_btn__pop > button");
+  else if (type === "paid_reward") {
+    const paidRewardOpenBtn = document.querySelector(".paid_reward_btn__open");
+    const paidRewardPop = document.querySelector(".paid_reward_btn__pop");
+    const paidRewardCloseBtn = document.querySelector(".paid_reward_btn__pop__close");
+    
+    if (paidRewardOpenBtn && paidRewardPop) {
+      paidRewardOpenBtn.addEventListener("click", () => {
+        paidRewardPop.classList.add("on");
+      });
+    }
 
-  //   inviteBtn.addEventListener("click", function (e) {
-  //     const target = e.target;
-  //     const targetInvitePop = target.closest(".invite_btn").querySelector(".invite_btn__pop");
-  //     if (!targetInvitePop.classList.contains("on")) {
-  //       targetInvitePop.classList.add("on");
-  //     }
-  //   });
-
-  //   invitePopBtn.addEventListener("click", function (e) {
-  //     const target = e.target;
-  //     target.closest(".invite_btn__pop").classList.remove("on");
-  //   });
-  // } 
+    console.log('close btn:', paidRewardCloseBtn);
+    console.log('pop:', paidRewardPop);
+    
+    if (paidRewardCloseBtn && paidRewardPop) {
+      paidRewardCloseBtn.addEventListener("click", () => {
+        paidRewardPop.classList.remove("on");
+      });
+    }
+  }
   else if (type === "popup") {
     const btnClose = document.querySelector(".popup__box--close");
 
