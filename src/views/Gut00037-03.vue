@@ -8,8 +8,8 @@
           <p class="text__subtit"><span class="text__subtit--bold">초대한 팀원 이력입니다.</span></p>
         </div>
         <div class="tag--wrap">
-          <button type="button" class="tag tag-gray">전체 <span>5</span></button>
-          <button type="button" class="tag tag-gray">참여 대기 <span>2</span></button>
+          <button type="button" class="tag">전체 <span>5</span></button>
+          <button type="button" class="tag">참여 대기 <span>2</span></button>
           <button type="button" class="tag on">참여 완료 <span>3</span></button>
         </div>
         <div class="tag_cont">

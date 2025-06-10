@@ -9,8 +9,8 @@
         </div>
         <div class="tag--wrap">
           <button type="button" class="tag on">전체 <span>5</span></button>
-          <button type="button" class="tag tag-gray">참여 대기 <span>2</span></button>
-          <button type="button" class="tag tag-gray">참여 완료 <span>3</span></button>
+          <button type="button" class="tag">참여 대기 <span>2</span></button>
+          <button type="button" class="tag">참여 완료 <span>3</span></button>
         </div>
         <div class="tag_cont on">
           <div class="team--main__sub">
