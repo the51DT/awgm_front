@@ -1478,14 +1478,21 @@ p i{
           }
         }
       }
+      li:first-child{
+        padding-top: 0;
+      }
+
       li::before{
         content: "";
         position: absolute;
-        top: 16px; left: -11px;
+        top: 17px; left: -11px;
         display: block;
         width: 4px; height: 4px;
         border-radius: 50%;
         background: #666;
+      }
+      li:first-child::before{
+        top: 10px;
       }
     }
     .terms-tab{
