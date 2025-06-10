@@ -8,9 +8,14 @@
         alt="드롭박스 토글 버튼"
       />
     </div>
-    <div v-if="isOpen" class="panel--content">
+    <!-- <div v-if="isOpen" class="panel--content">
       <slot />
-    </div>
+    </div> -->
+    <transition name="panel-fade">
+      <div v-if="isOpen" class="panel--content">
+        <slot />
+      </div>
+    </transition>
   </div>
 </template>
 
@@ -31,6 +36,22 @@ const toggle = () => {
 }
 </script>
 
-<style>
+<style scoped>
+.panel-fade-enter-active,
+.panel-fade-leave-active {
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+}
 
+.panel-fade-enter-from,
+.panel-fade-leave-to {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.panel-fade-enter-to,
+.panel-fade-leave-from {
+  max-height: 500px; /* 최대 높이 예상값 */
+  opacity: 1;
+}
 </style>
