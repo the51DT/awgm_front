@@ -14,7 +14,7 @@
       <div class="tag--wrap">
         <button class="tag">진행중</button>
         <button class="tag">진행종료</button>
-        <button class="tag on">초대받은팀 0</button>
+        <button class="tag on">초대받은 팀 <span> 0 </span></button>
       </div>
       <div class="tag_cont on">
         <div class="team--nodata">

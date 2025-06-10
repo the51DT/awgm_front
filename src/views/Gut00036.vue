@@ -6,7 +6,7 @@
         <p class="card__head">GUT Morning Korea Challenge</p>
         <div class="card__top">
           <div class="card__text">
-            <p class="card__text__title">아침마다 오 마이 GUT Morning</p>
+            <p class="card__text__title">팀명 <b> 아침마다 오 마이 GUT Morning</b></p>
             <div class="card__info">
               <div class="card__team--nick">팀장닉네임</div>
             </div>
@@ -37,7 +37,7 @@
         <p class="card__head">GUT Morning Korea Challenge</p>
         <div class="card__top">
           <div class="card__text">
-            <p class="card__text__title">아침마다 오 마이 GUT Morning</p>
+            <p class="card__text__title">팀명 <b> 아침마다 오 마이 GUT Morning</b></p>
             <div class="card__info">
               <div class="card__team--nick">팀장닉네임</div>
             </div>
@@ -68,7 +68,7 @@
         <p class="card__head">GUT Morning Korea Challenge</p>
         <div class="card__top">
           <div class="card__text">
-            <p class="card__text__title">아침마다 오 마이 GUT Morning</p>
+            <p class="card__text__title">팀명 <b> 아침마다 오 마이 GUT Morning</b></p>
             <div class="card__info">
               <div class="card__team--nick">팀장닉네임</div>
             </div>
@@ -99,7 +99,7 @@
         <p class="card__head">GUT Morning Korea Challenge</p>
         <div class="card__top">
           <div class="card__text">
-            <p class="card__text__title">아침마다 오 마이 GUT Morning</p>
+            <p class="card__text__title">팀명 <b> 아침마다 오 마이 GUT Morning</b></p>
             <div class="card__info">
               <div class="card__team--nick">팀장닉네임</div>
             </div>
