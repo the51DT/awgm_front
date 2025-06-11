@@ -224,6 +224,11 @@ export const menuRoutes = [
       meta: { layout: "none" },
     },
     {
+      text: "팀만들기(상시)-Gut00014-02",
+      path: "/팀만들기(상시)-Gut00014-02",
+      meta: { layout: "none" },
+    },
+    {
       text: "전체 팀원 보기-Gut00018",
       path: "/전체 팀원 보기-Gut00018",
       meta: { layout: "none" },
