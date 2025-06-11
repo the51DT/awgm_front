@@ -310,9 +310,7 @@
           alt="나의팀 아이콘"
         />
       </div>
-      <div
-        class="card card--border card--shadow00 card--p20 challenge__card--main"
-      >
+      <div class="card card--border card--shadow00 card--p20 challenge__card--main">
         <div class="challenge__card--main__top">
           <!-- 챌린지 진행시에만 노출 / -->
           <div class="card--badge ty-green">
@@ -380,7 +378,7 @@
             <p class="font--700 font--ls1">이번 달 팀 인증률</p>
             <p class="font--700 font--c11 font--ls1">
               <span class="font--green font--800 font--ls1 achieve-goal"
-                >100</span
+                >20</span
               >%
             </p>
           </div>
@@ -507,8 +505,8 @@ export default {
 
       setTimeout(() => {
         $perGage.style.transition = "width 1.3s ease-in-out";
-        $perGage.dataset.width = "100%";
-        $perGage.style.width = "100%";
+        $perGage.dataset.width = `${parseFloat(achieveGoal)}%`;
+        $perGage.style.width = `${parseFloat(achieveGoal)}%`;
       }, 16); // Safari에서는 ref보다 setTimeout이 더 확실할 때가 있음
 
       // 애니메이션 완료 후 상태 복구
@@ -532,7 +530,7 @@ export default {
         lastScrollY = currentScrollY;
 
         // 아래 방향으로 진입 시
-        if (entry.isIntersecting && isScrollingDown && hasScrolled && Number(achieveGoal) === 100) {
+        if (entry.isIntersecting && isScrollingDown && hasScrolled && parseFloat(achieveGoal)) {
           animateGauge();
           // 만약 Observer가 불안정하면 fallback으로 1.5초 뒤 강제 실행
           clearTimeout(fallbackTimeout);
@@ -554,7 +552,7 @@ export default {
         const inView = rect.top < window.innerHeight && rect.bottom > 0;
         const isTop = window.scrollY === 0;
 
-        if (inView && !isTop && Number(achieveGoal) === 100) {
+        if (inView && !isTop && parseFloat(achieveGoal)) {
           animateGauge();
         }
       }, 500); // 이미지/폰트 로딩 여유
