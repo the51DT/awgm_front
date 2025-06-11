@@ -84,13 +84,25 @@ function layerClose (type) {
         paidRewardPop.classList.add("on");
       });
     }
-
-    console.log('close btn:', paidRewardCloseBtn);
-    console.log('pop:', paidRewardPop);
-    
     if (paidRewardCloseBtn && paidRewardPop) {
       paidRewardCloseBtn.addEventListener("click", () => {
         paidRewardPop.classList.remove("on");
+      });
+    }
+  }
+  else if (type === "traffic_reward") {
+    const trafficRewardOpenBtn = document.querySelector(".traffic_reward_btn__open");
+    const trafficRewardPop = document.querySelector(".traffic_reward_btn__pop");
+    const trafficRewardCloseBtn = document.querySelector(".traffic_reward_btn__pop__close");
+    
+    if (trafficRewardOpenBtn && trafficRewardPop) {
+      trafficRewardOpenBtn.addEventListener("click", () => {
+        trafficRewardPop.classList.add("on");
+      });
+    }
+    if (trafficRewardCloseBtn && trafficRewardPop) {
+      trafficRewardCloseBtn.addEventListener("click", () => {
+        trafficRewardPop.classList.remove("on");
       });
     }
   }

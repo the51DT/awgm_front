@@ -11,15 +11,11 @@
           </div>
         </div>
         <div class="list-btn-wrap">
-        <!-- 
-          1. *높은 랭킹순 텍스트 추가 및 선택 시 텍스트 교체되야함
-          2. 즐겨찾기 / 리스트 뷰 선택 버튼 추가
-        -->
           <span> &#183; 높은 랭킹순</span>
           <div class="list-btn-wrap-sort-list">
             <div> <BookMarkBtn /> </div>
-            <div  class="list-view"> 
-              <button  class="list-view__btn" @click="toggleListView" :class="{ on: isActive == true }"> </button>
+            <div class="list-view"> 
+              <button class="list-view__btn" @click="toggleListView" :class="{ on: isActive == true }"> </button>
             </div>
           </div>
         </div>

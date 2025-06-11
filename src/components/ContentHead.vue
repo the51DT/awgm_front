@@ -41,14 +41,24 @@
             alt="팀원 추가"
           />
           <div class="invite_btn">
-          <div class="invite_btn__pop on">
-            <span>팀원을 초대해주세요</span>
-            <button class="invite_btn__pop__close"></button>
+            <div class="invite_btn__pop on">
+              <span>팀원을 초대해주세요</span>
+              <button class="invite_btn__pop__close"></button>
+            </div>
           </div>
-        </div>
-
         </button>
-
+      </div>
+      <div v-else-if="sortIcon && rightIcon == false" class="area-right__sort">
+        <button class="sort__btn-wrap"  @click="toggleDropdown"> <img src="@/assets/images/icon-list-sort.svg" alt="리스트 정렬 선택 아이콘" /></button>
+        <div v-show="showDropdown" class="sort__drop-down-list">
+          <ul>
+            <li @click="closeDropdown"> 높은 랭킹순</li>
+            <li @click="closeDropdown"> 낮은 랭킹순</li>
+            <li @click="closeDropdown"> 전체 인증횟수 높은 순</li>
+            <li @click="closeDropdown"> 전제 인증횟수 낮은 순</li>
+            <li @click="closeDropdown"> 닉네임 가나다순</li>
+          </ul>
+        </div>
       </div>
       <button v-else type="button">
         <img class="ico-logo" :src="require(`@/assets/images/icon/ico_close.png`)" alt="닫기" />
@@ -63,12 +73,14 @@
 <script>
 import tabFn from "@/plugins/common.js";
 import layerClose from "@/plugins/common.js";
+import InputField from "@/components/InputField.vue";
 
 export default {
   name: "ContentHead",
   data() {
     return {
-      isScrolled: false
+      isScrolled: false,
+      showDropdown: false,
     }
   },
   props: {
@@ -80,6 +92,10 @@ export default {
       type: Boolean,
       default: false,
     },
+    sortIcon: {
+      type: Boolean,
+      default: true,
+    },
     bgGray: {
       type: Boolean,
       default: false,
@@ -89,16 +105,18 @@ export default {
       default: ' ' // 기본 배경색 클래스
     },
     customLeftIcon: {
-    type: String,
-    default: '', // 아이콘 강제 지정용
-  },
+      type: String,
+      default: '', // 아이콘 강제 지정용
+    },
 
   },
+  components:{InputField},
   mounted() {
     window.addEventListener('scroll', this.handleScroll)
 
     tabFn.tabFn();
     layerClose.layerClose("invite");
+
   },
   beforeUnmount() {
     window.removeEventListener('scroll', this.handleScroll)
@@ -106,6 +124,12 @@ export default {
   methods: {
     handleScroll() {
       this.isScrolled = window.scrollY > 0
+    },
+    toggleDropdown() {
+      this.showDropdown = !this.showDropdown;
+    },
+    closeDropdown() {
+      this.showDropdown = false;
     }
   }
 }
