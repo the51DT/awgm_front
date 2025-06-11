@@ -198,3 +198,19 @@
     }
   }
 }
+
+.list-view{
+  position: relative;
+  &__btn {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../images/icon_view_light_list.svg);
+
+    &.on {
+      background-image: url(../images/icon_view_all_list.svg);
+    }
+  }
+}

@@ -113,6 +113,48 @@
         }
       }
 
+      &__sort{
+        position: relative;
+        .sort{
+          &__btn-wrap{
+            background: #111;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2px;
+          }
+          &__drop-down-list{
+            position: absolute;
+            width: 150px;
+            top: 40px;
+            right: 0;
+            ul{
+              border: 1px solid #434343;
+              background: #fff;
+              box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.06);
+              li{
+                text-align: right;
+                padding: 4px 8px;
+                cursor: pointer;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: -0.5px;
+                color: #111;
+              }
+              li:hover{
+                background: #1967d2;
+                color: #fff;
+              }
+            }
+            ul.none{
+              // display: none;
+            }
+          }
+        }
+      }
+
       .invite_btn {
         position: relative;
         &__pop {
@@ -1169,22 +1211,32 @@
   }
 }
 
-/* 프로필 뱃지 */
-.badge{
-  width: 32px;
-  height: 32px;
+/* 인증 뱃지 */
+.challenge__badge {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  &::before{
-    content: "";
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    margin: 0 auto;
-    background-size: contain;
-    border-radius: 50%;
-    background: #333333;
+  gap: 4px;
+  border-radius: 16px;
+  padding: 4px 8px;
+  font-weight: 800;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: -0.5px;
+
+  &.badge--abo {
+    background-color: #FFE6EE;
+    color: #E42864;
+  }
+
+  &.badge--purchase {
+    background-color: #E5F6EC;
+    color: #169E4A;
+  }
+
+  &.not {
+    background-color: #F5F5F5 !important;
+    color: #B9B9B9 !important;
   }
 }
 
