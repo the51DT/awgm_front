@@ -38,8 +38,6 @@ import ContentHead from "@/components/ContentHead.vue";
 import TopButton from "@/components/TopButton.vue";
 import CustomButton from "@/components/CustomButton.vue";
 
-import { profileList } from '@/router/profile.js'
-
 export default {
   name: "LoginMain",
   components: {
@@ -47,11 +45,6 @@ export default {
     TopButton,
     CustomButton, 
   },
-  data() {
-    return {
-      profile: profileList
-    }
-  }
 };
 </script>
 
