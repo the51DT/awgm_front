@@ -159,19 +159,33 @@
       line-height: 16px;
       letter-spacing: -0.5px;
       color: #666;
+      padding-left: 8px;
+      position: relative;
+    }
+    span::before{
+      content: " ";
+      display: block;
+      width: 2px; height: 2px;
+      position: absolute;
+      top: 6px; left: 1px;
+      background: #666;
+      border-radius: 50%;
     }
     &-sort-list{
       display: flex;
       flex-direction: row;
       justify-content: center;
       gap: 4px;
-      div{
-        // padding: 4px;
-      }
-      button{
-        position: static;
+      & > div > div{
         border: 1px solid #D8D8D8;
         border-radius: 4px;
+        width: 28px; height: 28px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button{
+          position: static;
+        }
       }
     }
 
@@ -346,6 +360,10 @@
 
         dd {
           color: #111;
+          span{
+            color: #666;
+            font-weight: 800;
+          }
           span.green{
             color: #169E4A;
             font-weight: 800;
@@ -374,6 +392,34 @@
 
     &.ty02.team-list-view{
       max-width: 210px;
+    }
+
+    &.ty02.light-view {
+      flex-direction: row;
+      // justify-content: space-between;
+      gap: 8px;
+      & > div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      & > div:nth-child(1){
+        dt{
+          width: 60px;
+        }
+        dd{
+          width: 50px;
+        }
+      }
+      & > div:nth-child(2){
+        margin-right: 50px;
+        dt{
+          width: 82px;
+        }
+        dd{
+          width: 80px;
+        }
+      }
     }
 
     dl {

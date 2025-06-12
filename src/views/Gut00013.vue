@@ -11,11 +11,13 @@
           </div>
         </div>
         <div class="list-btn-wrap">
-          <span> &#183; 높은 랭킹순</span>
+          <span> 높은 랭킹순</span>
           <div class="list-btn-wrap-sort-list">
             <div> <BookMarkBtn /> </div>
             <div class="list-view"> 
-              <button class="list-view__btn" @click="toggleListView" :class="{ on: isActive == true }"> </button>
+              <div>
+                <button class="list-view__btn" @click="toggleListView" :class="{ on: isActive == true }"> </button>
+              </div>
             </div>
           </div>
         </div>
@@ -128,12 +130,12 @@
                 </dl>
                 <dl>
                   <div class="challenge__badge-wrap">
-                    <div class="challenge__badge badge--abo">
-                      <img src="@/assets/images/ico-abo-completed-badge.svg" alt="ABO 인증 완료 뱃지 아이콘" />
+                    <div class="challenge__badge badge--abo not">
+                      <img src="@/assets/images/ico-abo-completed-badge-not.svg" alt="ABO 인증 완료 뱃지 아이콘" />
                       <span> ABO 인증 완료 </span>
                     </div>
-                    <div class="challenge__badge badge--purchase">
-                      <img src="@/assets/images/ico-purchase-badge.svg" alt="것모닝 구매 완료 아이콘" />
+                    <div class="challenge__badge badge--purchase not">
+                      <img src="@/assets/images/ico-purchase-badge-not.svg" alt="것모닝 구매 완료 아이콘" />
                       <span> 것모닝 구매 완료 </span>
                     </div>
                   </div>
@@ -185,7 +187,7 @@
                 </dl>
                 <dl>
                   <dt> 오늘 인증</dt>
-                  <dd> <span class="green"> O </span></dd>
+                  <dd> <span> X </span></dd>
                 </dl>
                 <dl>
                   <div class="challenge__badge-wrap">
