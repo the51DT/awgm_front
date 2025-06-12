@@ -46,10 +46,6 @@
                   <dd>1위</dd>
                 </dl>
                 <dl>
-                  <dt>이름</dt>
-                  <dd>김웨이</dd>
-                </dl>
-                <dl>
                   <dt>전체 인증 횟수</dt>
                   <dd>
                     <div class="group-info">
@@ -107,10 +103,6 @@
                   <dd>2위</dd>
                 </dl>
                 <dl>
-                  <dt>이름</dt>
-                  <dd>김웨이</dd>
-                </dl>
-                <dl>
                   <dt>전체 인증 횟수</dt>
                   <dd>
                     <div class="group-info">
@@ -166,10 +158,6 @@
                 <dl>
                   <dt>랭킹</dt>
                   <dd>2위</dd>
-                </dl>
-                <dl>
-                  <dt>이름</dt>
-                  <dd>김웨이</dd>
                 </dl>
                 <dl>
                   <dt>전체 인증 횟수</dt>
@@ -229,10 +217,6 @@
                   <dd>2위</dd>
                 </dl>
                 <dl>
-                  <dt>이름</dt>
-                  <dd>김웨이</dd>
-                </dl>
-                <dl>
                   <dt>전체 인증 횟수</dt>
                   <dd>
                     <div class="group-info">
@@ -288,10 +272,6 @@
                 <dl>
                   <dt>랭킹</dt>
                   <dd>2위</dd>
-                </dl>
-                <dl>
-                  <dt>이름</dt>
-                  <dd>김웨이</dd>
                 </dl>
                 <dl>
                   <dt>전체 인증 횟수</dt>

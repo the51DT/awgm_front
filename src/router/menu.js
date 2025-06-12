@@ -219,8 +219,18 @@ export const menuRoutes = [
       meta: { layout: "none" },
     },
     {
-      text: "팀원인증현황(light)-Gut00013-02",
-      path: "/팀원인증현황(light)-Gut00013-02",
+      text: "팀원인증현황(팀원)-Gut00013-01",
+      path: "/팀원인증현황(팀원)-Gut00013-01",
+      meta: { layout: "none" },
+    },
+    {
+      text: "팀원인증현황(light 팀장)-Gut00013-02",
+      path: "/팀원인증현황(light 팀장)-Gut00013-02",
+      meta: { layout: "none" },
+    },
+    {
+      text: "팀원인증현황(light 팀원)-Gut00013-03",
+      path: "/팀원인증현황(light 팀원)-Gut00013-03",
       meta: { layout: "none" },
     },
     {
