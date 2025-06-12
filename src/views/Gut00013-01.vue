@@ -63,18 +63,6 @@
                   <dt> 오늘 인증</dt>
                   <dd> <span class="green"> O </span></dd>
                 </dl>
-                <dl>
-                  <div class="challenge__badge-wrap">
-                    <div class="challenge__badge badge--abo">
-                      <img src="@/assets/images/ico-abo-completed-badge.svg" alt="ABO 인증 완료 뱃지 아이콘" />
-                      <span> ABO 인증 완료 </span>
-                    </div>
-                    <div class="challenge__badge badge--purchase">
-                      <img src="@/assets/images/ico-purchase-badge.svg" alt="것모닝 구매 완료 아이콘" />
-                      <span> 것모닝 구매 완료 </span>
-                    </div>
-                  </div>
-                </dl>
               </div>
             </div>
           </div>
@@ -119,18 +107,6 @@
                 <dl>
                   <dt> 오늘 인증</dt>
                   <dd> <span class="green"> O </span></dd>
-                </dl>
-                <dl>
-                  <div class="challenge__badge-wrap">
-                    <div class="challenge__badge badge--abo not">
-                      <img src="@/assets/images/ico-abo-completed-badge-not.svg" alt="ABO 인증 완료 뱃지 아이콘" />
-                      <span> ABO 인증 완료 </span>
-                    </div>
-                    <div class="challenge__badge badge--purchase not">
-                      <img src="@/assets/images/ico-purchase-badge-not.svg" alt="것모닝 구매 완료 아이콘" />
-                      <span> 것모닝 구매 완료 </span>
-                    </div>
-                  </div>
                 </dl>
               </div>
             </div>
@@ -177,18 +153,6 @@
                   <dt> 오늘 인증</dt>
                   <dd> <span> X </span></dd>
                 </dl>
-                <dl>
-                  <div class="challenge__badge-wrap">
-                    <div class="challenge__badge badge--abo not">
-                      <img src="@/assets/images/ico-abo-completed-badge-not.svg" alt="ABO 인증 완료 뱃지 아이콘" />
-                      <span> ABO 인증 완료 </span>
-                    </div>
-                    <div class="challenge__badge badge--purchase">
-                      <img src="@/assets/images/ico-purchase-badge.svg" alt="것모닝 구매 완료 아이콘" />
-                      <span> 것모닝 구매 완료 </span>
-                    </div>
-                  </div>
-                </dl>
               </div>
             </div>
           </div>
@@ -234,18 +198,6 @@
                   <dt> 오늘 인증</dt>
                   <dd> <span class="green"> O </span></dd>
                 </dl>
-                <dl>
-                  <div class="challenge__badge-wrap">
-                    <div class="challenge__badge badge--abo">
-                      <img src="@/assets/images/ico-abo-completed-badge.svg" alt="ABO 인증 완료 뱃지 아이콘" />
-                      <span> ABO 인증 완료 </span>
-                    </div>
-                    <div class="challenge__badge badge--purchase not">
-                      <img src="@/assets/images/ico-purchase-badge-not.svg" alt="것모닝 구매 완료 아이콘" />
-                      <span> 것모닝 구매 완료 </span>
-                    </div>
-                  </div>
-                </dl>
               </div>
             </div>
           </div>
@@ -290,18 +242,6 @@
                 <dl>
                   <dt> 오늘 인증</dt>
                   <dd> <span class="green"> O </span></dd>
-                </dl>
-                <dl>
-                  <div class="challenge__badge-wrap">
-                    <div class="challenge__badge badge--abo">
-                      <img src="@/assets/images/ico-abo-completed-badge.svg" alt="ABO 인증 완료 뱃지 아이콘" />
-                      <span> ABO 인증 완료 </span>
-                    </div>
-                    <div class="challenge__badge badge--purchase">
-                      <img src="@/assets/images/ico-purchase-badge.svg" alt="것모닝 구매 완료 아이콘" />
-                      <span> 것모닝 구매 완료 </span>
-                    </div>
-                  </div>
                 </dl>
               </div>
             </div>

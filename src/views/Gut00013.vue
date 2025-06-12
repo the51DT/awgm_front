@@ -266,6 +266,7 @@
             </div>
           </div>
 
+          <!-- ABO미인증 회원일 시-->
           <div class="card card--border card--p16 card--shadowc2 card--link">
             <BookMarkBtn />
             <button class="card__linkBtn">
@@ -310,18 +311,6 @@
                 <dl>
                   <dt> 오늘 인증</dt>
                   <dd> <span class="green"> O </span></dd>
-                </dl>
-                <dl>
-                  <div class="challenge__badge-wrap">
-                    <div class="challenge__badge badge--abo">
-                      <img src="@/assets/images/ico-abo-completed-badge.svg" alt="ABO 인증 완료 뱃지 아이콘" />
-                      <span> ABO 인증 완료 </span>
-                    </div>
-                    <div class="challenge__badge badge--purchase">
-                      <img src="@/assets/images/ico-purchase-badge.svg" alt="것모닝 구매 완료 아이콘" />
-                      <span> 것모닝 구매 완료 </span>
-                    </div>
-                  </div>
                 </dl>
               </div>
             </div>
