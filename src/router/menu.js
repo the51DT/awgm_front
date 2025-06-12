@@ -184,13 +184,13 @@ export const menuRoutes = [
       meta: { layout: "headerOnly" },
     },
     {
-      text: "나의 팀 상세(챌린지)-Gut00010",
-      path: "/나의 팀 상세(챌린지)-Gut00010",
+      text: "나의 팀 정보(챌린지)-Gut00010",
+      path: "/나의 팀 정보(챌린지)-Gut00010",
       meta: { layout: "none" },
     },
     {
-      text: "나의 팀 상세(상시)-Gut00010-02",
-      path: "/나의 팀 상세(상시)-Gut00010-02",
+      text: "나의 팀 정보(상시)-Gut00010-02",
+      path: "/나의 팀 정보(상시)-Gut00010-02",
       meta: { layout: "none" },
     },
     {
@@ -249,23 +249,23 @@ export const menuRoutes = [
       meta: { layout: "none" },
     },
     {
-      text: "전체 팀원 보기 상세팝업-Gut00001801",
-      path: "/전체 팀원 보기 상세팝업-Gut00001801",
+      text: "전체 팀원 보기 강퇴 상세팝업-Gut00001801",
+      path: "/전체 팀원 보기 강퇴 상세팝업-Gut00001801",
       meta: { layout: "none" },
     },
     {
-      text: "팀원상세-Gut00032",
-      path: "/팀원상세-Gut00032",
+      text: "팀원관리 상세-Gut00032",
+      path: "/팀원관리 상세-Gut00032",
       meta: { layout: "none" },
     },
     {
-      text: "팀원상세 상시-Gut0003201",
-      path: "/팀원상세 상시-Gut0003201",
+      text: "팀원관리 상시-Gut0003201",
+      path: "/팀원관리 상시-Gut0003201",
       meta: { layout: "none" },
     },
     {
-      text: "팀원상세(자녀)-Gut0003202",
-      path: "/팀원상세(자녀)-Gut0003202",
+      text: "팀원관리(자녀)-Gut0003202",
+      path: "/팀원관리(자녀)-Gut0003202",
       meta: { layout: "none" },
     },
     {
@@ -312,8 +312,8 @@ export const menuRoutes = [
       meta: { layout: "" },
     },
     {
-      text: "회원정보-Gut00016",
-      path: "/회원정보-Gut00016",
+      text: "개인회원정보-Gut00016",
+      path: "/개인회원정보-Gut00016",
       meta: { layout: "none" },
     },
 
