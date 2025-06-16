@@ -78,7 +78,7 @@
           <span> 것모닝 구매 완료 </span>
         </div> -->
       </div>
-      <p class="font--c66 font--ls1 mt-8">* Lamp 달성의 경우 전일 기준으로 확인 가능합니다.</p>
+      <p class="font--c66 font--ls1 mt-8">* 인증 여부의 경우 전일 기준으로 확인 가능합니다.</p>
     </div>
     <!-- calendar 영역 -->
     <div class="calendar">
