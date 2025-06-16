@@ -49,12 +49,36 @@
     <div class="card card--border card--shadow00 card--p20 challenge__card--main">
       <div class="challenge__card--main__top">
         <div>
-          <p class="font--c11 font--700 font--ls2">나의 챌린지 보상 신호등</p>
+          <p class="font--c11 font--700 font--ls2" style="display: flex;">
+            나의 챌린지 보상 신호등 
+            <button class="traffic_reward_btn__open"> <img style="margin-left: 2px;" src="@/assets/images/icon_content_que_mark.svg" alt="나의 챌린지 보상 신호등 설명 툴팁 아이콘"/> </button>
+          </p>
           <p class="font--c66 font--ls1 challenge__card--traffic">
             챌린지 미션 성공 시, ABO/Member 회원인증,
             최근 2개월 내 것모닝 제품 구매 이력 등에 따라
             보상이 차등 지급됩니다.
           </p>
+          <div class="traffic_reward">
+            <div class="traffic_reward_btn">
+              <div class="traffic_reward_btn__pop">
+                <button class="traffic_reward_btn__pop__close"></button>
+                <div class="challenge__card--badge" style="margin: 0;">
+                  <div class="challenge__badge abo">
+                    <img src="@/assets/images/ico-abo-completed-badge.svg" alt="ABO 인증 완료 뱃지 아이콘" />
+                    <span> ABO 인증 완료 </span>
+                  </div>
+                </div>
+                <p class="traffic_reward_btn__pop_text">마이 > ABO/Member 인증 여부</p>
+                <div class="challenge__card--badge" >
+                  <div class="challenge__badge purchase">
+                    <img src="@/assets/images/ico-purchase-badge.svg" alt="것모닝 구매 완료 아이콘" />
+                    <span> 것모닝 구매 완료 </span>
+                  </div>
+                </div>
+                <p class="traffic_reward_btn__pop_text"> 챌린지 시작일 기준 최근 2개월 이내 것모닝 제품 구매 여부 </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="challenge__card--badge">
@@ -101,6 +125,9 @@ import AppNav from "@/layouts/AppNav.vue";
 import VCalendar from "@/components/VCalendar.vue";
 import commonJs from "@/plugins/common.js";
 
+import tabFn from "@/plugins/common.js";
+import layerClose from "@/plugins/common.js";
+
 export default {
   name: "Gut_00008",
   components: {
@@ -110,6 +137,9 @@ export default {
   },
   mounted() {
     commonJs.posValue(document.querySelectorAll(".card--per__target"));
+
+    tabFn.tabFn();
+    layerClose.layerClose("traffic_reward");
   },
 };
 </script>
