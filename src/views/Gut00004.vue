@@ -602,54 +602,6 @@ export default {
         }
       }
 
-      /* *****************  */
-      // data-width 트랜지션 애니메이션
-      // const triggerPoint = window.innerHeight * 0.95;
-      // let lastScrollY = window.scrollY; // 이전 스크롤 위치용 
-      // let hasAnimated = false;
-
-      // const $perGage = document.querySelector(".animation");
-      // const achieveGoal = document.querySelector(".achieve-goal").innerText;
-      // let isAnimating = false;
-
-      // const animateGauge = () => {
-      //   if (isAnimating) return;
-      //   isAnimating = true;
-      //   // console.log("애니메이션 실행");
-
-      //   // 초기화
-      //   $perGage.style.transition = "none";
-      //   $perGage.style.width = "0%";
-      //   void $perGage.offsetWidth; // 강제로 다시 리플레이
-
-      //   requestAnimationFrame(() => {
-      //     // 두 번째 프레임에서 트랜지션과 width 적용 → 모바일에서 가장 안정적
-      //     requestAnimationFrame(() => {
-      //       $perGage.style.transition = "width 1.3s ease-in-out";
-      //       $perGage.dataset.width = "100%";
-      //       $perGage.style.width = "100%";
-      //     });
-      //   });
-      //   // 애니메이션 완료 후 상태 복구
-      //   $perGage.addEventListener("transitionend", () => {   
-      //     isAnimating = false;    
-      //     // console.log("애니메이션 종료"); 
-      //   }, 
-      //   { once: true } 
-      //   );
-      // };
-
-      // window.addEventListener("scroll", () => {
-      //   const currentScrollY = window.scrollY; 
-      //   const crossedTrigger = lastScrollY < triggerPoint && currentScrollY >= triggerPoint;
-      //   if (!hasAnimated && crossedTrigger && Number(achieveGoal) === 100) {
-      //     // console.log("triggerPoint 위치 통과");
-      //     hasAnimated = true;
-      //     animateGauge();
-      //   }
-      //   lastScrollY = currentScrollY;
-      // });
-
     }, 
     dayBtn() {
       const dayBtn = document.querySelectorAll(".home__date .date");
