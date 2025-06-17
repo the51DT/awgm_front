@@ -201,10 +201,7 @@
         </div>
       </div>
     </div>
-
   </div>
-
-
 
 </template>
 
@@ -216,8 +213,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation } from 'swiper/modules';
-
-
 
 export default {
   name: "Gut_00038",
@@ -250,23 +245,34 @@ export default {
     return { swiperOptions };
   },
   mounted() {
-    const HEADER_HEIGHT = 60; // 헤더 높이(px)
-  const sentinel = this.$refs.sentinel;
-  this.observer = new IntersectionObserver(
-    ([entry]) => {
-      // sentinel이 사라지면(=섹션이 헤더를 지나면) bgGray → bgWhite
-      this.isIntersecting = entry.isIntersecting;
-    },
-    {
-      rootMargin: `-${HEADER_HEIGHT}px 0px 0px 0px`,
-      threshold: 0
-    }
-  );
-  this.observer.observe(sentinel);
-  
-  // 초기 상태 바로 반영
-  const rect = sentinel.getBoundingClientRect();
-  this.isIntersecting = rect.top >= HEADER_HEIGHT;
+    this.$nextTick(() => {
+      setTimeout(() => {
+        const HEADER_HEIGHT = 72; // 헤더 높이(px)
+        const sentinel = this.$refs.sentinel;
+        this.observer = new IntersectionObserver(
+          ([entry]) => {
+            // sentinel이 사라지면(=섹션이 헤더를 지나면) bgGray → bgWhite
+            this.isIntersecting = entry.isIntersecting || window.scrollY <= 2;
+          },
+          {
+            rootMargin: `-${HEADER_HEIGHT}px 0px 0px 0px`,
+            threshold: 0.1
+          }
+        );
+        this.observer.observe(sentinel);
+        
+        // 초기 상태 바로 반영
+        const rect = sentinel.getBoundingClientRect();
+        this.isIntersecting = rect.top >= HEADER_HEIGHT;
+
+      }, 100);
+    });
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY <= 3) {
+        this.isIntersecting = true;
+      }
+    });
   },
   beforeUnmount() {
     const target = this.$refs.targetSection
