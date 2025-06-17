@@ -12,7 +12,7 @@
       <img
         class="ico-logo"
         :src="customLeftIcon || (
-          bgClass === 'bgGray'
+          bgClass === 'bgGreen' 
             ? require('@/assets/images/icon_arrow_left_w.svg')
             : require('@/assets/images/icon/ico_arrow_left.png')
         )"

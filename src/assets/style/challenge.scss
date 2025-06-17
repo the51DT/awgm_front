@@ -2137,6 +2137,48 @@ p i{
     }
   
   }
+  &--sub{
+    flex-grow: 1;
+    margin: 0 -20px;
+    padding: 0 20px;
+  }
+  .swiper__area{
+    position: relative;
+    padding-top: 8px;
+    .swiper__area-arrow{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      z-index: 10;
+    }
+    .arrow{
+      width: 32px; height: 32px;
+      background: url(../images/icon_arrow_left.svg) no-repeat center/100%;
+    }
+    .arrow.swiper-button-disabled{
+      background: url(../images/icon_arrow_disabled.svg) no-repeat center/100%;
+      cursor: default;
+    }
+    .arrow.arrow-right{
+      transform: rotate(180deg);
+    }
+  }
+  &__period-wrap{
+    display: block;
+    width: 100%;
+    margin-bottom: 32px;
+    user-select: none;
+    .activity__period{
+      text-align: center;
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 32px;
+
+    }
+  }
 }
 .tag {
   flex-shrink: 0;
