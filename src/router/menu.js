@@ -4,6 +4,7 @@ const MENU_TYPES = {
   HOME: "home",
   CHALLENGE: "challenge",
   TEAM: "team",
+  ACTIVITY : "activity",
   MY: "my",
   FOOTER: "footer",
   ETC: "etc",
@@ -299,7 +300,7 @@ export const menuRoutes = [
       meta: { layout: "none" },
     },
   ]),
-  createMainMenu("05 나의 활동", "/나의 활동", MENU_TYPES.FOOTER, [
+  createMainMenu("05 나의 활동", "/나의 활동", MENU_TYPES.ACTIVITY, [
     {
       text: "나의 활동 홈-Gut00035",
       path: "/나의 활동 홈-Gut00035",

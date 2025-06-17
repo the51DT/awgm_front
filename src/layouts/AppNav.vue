@@ -20,9 +20,9 @@
         </router-link>
       </li>
       <li>
-        <router-link to="/나의 Gut index-Gut00034">
-          <img :src="my === true ? require(`@/assets/images/myGut_on.svg`): require(`@/assets/images/myGut.svg`)">
-          <p :class="my === true ? 'on': ''">나의 Gut</p>
+        <router-link to="/나의 활동 홈-Gut00035">
+          <img :src="activity === true ? require(`@/assets/images/nav_myGut_on.svg`): require(`@/assets/images/nav_myGut.svg`)">
+          <p :class="activity === true ? 'on': ''">나의 활동</p>
         </router-link>
       </li>
       <li>
@@ -49,7 +49,6 @@
 <script>
 import tabFn from "@/plugins/common.js";
 import layerClose from "@/plugins/common.js";
-// import { watch, ref } from 'vue'
 import { useRoute } from 'vue-router'
 
 
@@ -68,6 +67,10 @@ export default {
       type: Boolean,
       default: false,
     },
+    activity: {
+      type: Boolean,
+      default: false,
+    },
     my: {
       type: Boolean,
       default: false,
@@ -76,6 +79,7 @@ export default {
   mounted() {
     tabFn.tabFn();
     layerClose.layerClose("paid_reward");
+
   },
   data() {
     return {

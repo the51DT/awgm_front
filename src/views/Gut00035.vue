@@ -188,12 +188,14 @@
     </div>
   </div>
 
-  <AppNav></AppNav>
+  <AppNav :activity="true"></AppNav>
 </template>
 
 <script>
 import AppNav from "@/layouts/AppNav.vue";
 import BadgeDefault from "@/components/BadgeDefault.vue";
+
+
 
 export default {
   name: "Gut_000035",

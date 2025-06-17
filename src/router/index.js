@@ -35,7 +35,6 @@ const dynamicRoutes = menuRoutes.map((route) => {
       children: route.subMenu.map((subItem) => ({
         path: subItem.path,
         component: () =>
-          // import(`@/views/Gut${subItem.path.match(/\d+/)[0]}.vue`),
           import(`@/views/Gut${subItem.path.match(/\d+-*\d+/)[0]}.vue`),
         meta: subItem.meta,
       })),
@@ -54,7 +53,6 @@ menuRoutes.forEach((item) => {
       dynamicRoutes.push({
         path: subItem.path,
         component: () =>
-          // import(`@/views/Gut${subItem.path.match(/\d+/)[0]}.vue`),
           import(`@/views/Gut${subItem.path.match(/\d+-*\d+]/)[0]}.vue`),
         meta: subItem.meta,
       });
