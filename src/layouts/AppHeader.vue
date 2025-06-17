@@ -30,6 +30,10 @@ export default {
   },
   props: {
     mypage: Boolean,
+    bgClass: {
+      type: String,
+      default: ' ' // 기본 배경색 클래스
+    },
   }
 };
 </script>

@@ -299,8 +299,15 @@ export const menuRoutes = [
       meta: { layout: "none" },
     },
   ]),
+  createMainMenu("05 나의 활동", "/나의 활동", MENU_TYPES.FOOTER, [
+    {
+      text: "나의 활동 홈-Gut00035",
+      path: "/나의 활동 홈-Gut00035",
+      meta: { layout: "headerOnly" },
+    },
+  ]),
 
-  createMainMenu("05 마이", "/마이", MENU_TYPES.MY, [
+  createMainMenu("06 마이", "/마이", MENU_TYPES.MY, [
     {
       text: "마이 index-Gut00015",
       path: "/마이 index-Gut00015",
@@ -364,7 +371,7 @@ export const menuRoutes = [
     },
   ]),
 
-  createMainMenu("06 Footer", "/footer", MENU_TYPES.FOOTER, [
+  createMainMenu("07 Footer", "/footer", MENU_TYPES.FOOTER, [
     {
       text: "이용약관-Gut00026",
       path: "/이용약관-Gut00026",
@@ -377,7 +384,7 @@ export const menuRoutes = [
     },
   ]),
 
-  createMainMenu("07 ETC", "/시스템점검", MENU_TYPES.ETC, [
+  createMainMenu("08 ETC", "/시스템점검", MENU_TYPES.ETC, [
     {
       text: "시스템점검안내-Gut00028",
       path: "/시스템점검안내-Gut00028",

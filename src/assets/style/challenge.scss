@@ -1907,6 +1907,237 @@ p i{
     }
   }
 }
+.activity{
+  position: relative;
+  background: #f5f5f5;
+  .para-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    h5{
+      font-weight: 800;
+      font-size: 18px;  
+      line-height: 24px;
+      color: #111;
+    }
+    button{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 24px;
+      color: #666;
+    }
+    p{
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: -0.5px;
+        color: #666;
+        span.green{
+          color: #169E4A;
+          font-weight: 800;
+        }
+    }
+  }
+  .para-title-2rd{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    h6{
+      font-weight: 800;
+      font-size: 15px;
+      line-height: 24px;
+      color: #111;
+    }
+  }
+  &__area{
+    &-profile{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        padding-top: 4px;
+        margin-bottom: 32px;
+        margin-top: 8px;
+        .wrap{
+          text-align: center;
+          .name{
+            font-weight: 800;
+            font-size: 18px;
+            line-height: 24px;
+            letter-spacing: -0.5px;
+          }
+          .during{
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: -0.5px;
+            color: #666;
+            margin-top: 4px;
+          }
+        }
+    }
+    &-record{
+      &-box-wrap{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 20px;
+        column-gap: 12px;
+      }
+        .record-box{
+          display: inline-block;
+          width: 100%;
+          background: #fff;
+          border-radius: 16px;
+          padding: 16px;
+          box-shadow: 0px 8px 16px 0px #0000000F;
+          & > div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            p{
+              font-weight: 500;
+              font-size: 14px;
+              line-height: 24px;
+              letter-spacing: -0.5px;
+              color: #666;
+            }
+            p.green{
+              color: #169E4A;
+              font-weight: 800;
+            }
+            h7{
+              font-weight: 800;
+              font-size: 14px;
+              line-height: 24px;
+              color: #666;
+              margin-bottom: 12px;
+            }
+          }
+          & > div:nth-child(1){
+            margin-bottom: 12px;
+          }
+          & > div:nth-child(2){
+            margin-bottom: 4px;
+          }
+          & > div:nth-child(1)::after{
+            content: " ";
+            display: inline-block;
+            position: absolute;
+            right: -5px;
+            bottom: 6px;
+            width: 60px; height: 60px;
+          }
+          &:nth-child(1) > div:nth-child(1)::after{
+            background: url(../images/my_activity_stamp.svg) no-repeat center/120%;
+          }
+          &:nth-child(2) > div:nth-child(1)::after{
+            background: url(../images/my_activity_challenge.svg) no-repeat center/120%;
+          }
+          &:nth-child(3) > div:nth-child(1)::after{
+            background: url(../images/my_activity_rate.svg) no-repeat center/120%;
+          }
+          &:nth-child(4) > div:nth-child(1)::after{
+            background: url(../images/my_activity_ranking.svg) no-repeat center/140%;
+          }
+        }
+    }
+
+    &-terms-tab{
+      padding: 24px 20px 136px;
+      margin: 24px -20px 0;
+      background: #fff;
+      border-radius: 32px 32px 0 0 ;
+      .represent{
+        &__badge-wrap{
+          width: 100%;
+          margin-bottom: 24px;
+          .represent__badge-txt{
+            font-weight: 800;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: -0.5px;
+            color: #666;
+            text-align: center;
+          }
+          .represent__badge{
+            background: #EDFFD1;
+            border-radius: 32px;
+            padding: 32px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            &.no-represent{
+              background: #f5f5f5;
+              margin-bottom: 40px;
+            }
+          }
+
+          .btn{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top:  8px;
+            &-text{
+              font-weight: 500;
+              font-size: 11px;
+              line-height: 16px;
+              letter-spacing: -0.5px;
+              text-decoration: underline;
+              text-decoration-thickness: 0.5px;
+              text-underline-offset: 1.5px;
+              color: #666;
+            }
+            &-modify {
+              padding: 0;
+              width: 16px;
+              height: 16px;
+    
+              &:after {
+                content: '';
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                background-image: url(../images/icon_modify_gray.svg);
+                background-size: contain;
+                background-repeat: no-repeat;
+              }
+            }
+          }
+        }
+      }
+      .activity__area_badge-section{
+        padding: 20px 0;
+        .badge-box-wrap{
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          column-gap: 6px;
+          row-gap: 8px;
+          .badge-box{
+            background-color: #f9f9f9;
+            width: 100%;
+            border-radius: 20px;
+            padding: 8px 10px;
+            img{
+              width: 80px;
+            }
+          }
+        }
+      }
+    }
+  
+  }
+}
 .tag {
   flex-shrink: 0;
   // padding: 8px 12px;

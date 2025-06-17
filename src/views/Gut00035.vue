@@ -1,0 +1,223 @@
+<template>
+  <div class="activity bg-case">
+    <div class="activity__area">
+      <div class="activity__area-profile">
+        <img src="../assets/images/badgeImg/badge_profile-test1.svg" />
+        <div class="wrap">
+          <p class="name"> 김웨이 </p>
+          <p class="during"> <span> 2025년 9월 </span>~ <span> 2026년 8월</span></p>
+        </div>
+      </div>
+      <div class="activity__area-record">
+        <div class="para-title">
+          <h5> 현재 기록 </h5>
+          <button>이전 기록 <img src="../assets/images/icon_arrow_r_gray.svg" /> </button>
+        </div>
+        <div class="activity__area-record-box-wrap">
+          <div class="record-box">
+            <div>
+              <h7>인증횟수</h7>
+            </div>
+            <div>
+              <p> 누적 </p>
+              <p class="green"> 21개 </p>
+            </div>
+            <div>
+              <p>최대 연속 </p>
+              <p class="green"> 10개 </p>
+            </div>
+          </div>
+          <div class="record-box">
+            <div>
+              <h7>인증횟수</h7>
+            </div>
+            <div>
+              <p> 누적 </p>
+              <p class="green"> 21개 </p>
+            </div>
+            <div>
+              <p>최대 연속 </p>
+              <p class="green"> 10개 </p>
+            </div>
+          </div>
+          <div class="record-box">
+            <div>
+              <h7>인증횟수</h7>
+            </div>
+            <div>
+              <p> 누적 </p>
+              <p class="green"> 21개 </p>
+            </div>
+            <div>
+              <p>최대 연속 </p>
+              <p class="green"> 10개 </p>
+            </div>
+          </div>
+          <div class="record-box">
+            <div>
+              <h7>인증횟수</h7>
+            </div>
+            <div>
+              <p> 누적 </p>
+              <p class="green"> 21개 </p>
+            </div>
+            <div>
+              <p>최대 연속 </p>
+              <p class="green"> 10개 </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="activity__area-terms-tab">
+
+        <div class="para-title">
+          <h5> 배지 활동 </h5>
+          <p> 총 <span class="green"> 0개</span> 보유 </p>
+        </div>
+        <!-- 대표 뱃지 없을 시 -->
+        <div class="represent__badge-wrap" v-if="hasRepresent">
+          <div class="represent__badge no-represent">
+            <p class="represent__badge-txt">획득한 배지에서 대표배지를 설정해주세요   </p>
+            <div class="btn">
+              <button type="button" class="btn-text" title="대표 배지 설정 "> 대표 배지 설정</button>
+              <button type="button" class="btn-modify" title="대표 배지 설정"><span class="blind">대표 배지 설정</span></button>
+            </div>
+          </div>
+          <p class="represent__badge-txt">아직 획득한 배지가 없어요 </p>
+        </div>
+        <!--  대표 뱃지 있을 시 -->
+        <div class="represent__badge-wrap" v-else>
+          <div class="represent__badge">
+            <BadgeDefault img="badge__birthday.svg" pointColor="green">
+              나의 생일
+            </BadgeDefault>
+            <div class="btn">
+              <button type="button" class="btn-text" title="대표 배지 설정 "> 대표 배지 설정</button>
+              <button type="button" class="btn-modify" title="대표 배지 설정"><span class="blind">대표 배지 설정</span></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="activity__area_badge-section">
+          <div class="para-title-2rd">
+            <h6> 연속인증 </h6>
+          </div>
+          <div class="badge-box-wrap">
+            <div class="badge-box"> <BadgeDefault img="badge__continuous_10.svg">10일 연속 인증</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge__continuous_30.svg">30일 연속 인증</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge__continuous_60.svg">60일 연속 인증</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge__continuous_90.svg">90일 연속 인증</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge__continuous_100.svg">100일 연속 인증</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">180일 연속 인증</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">200일 연속 인증</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">240일 연속 인증</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">300일 연속 인증</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">365일 연속 인증</BadgeDefault></div>
+          </div>
+        </div>
+
+        <div class="activity__area_badge-section">
+          <div class="para-title-2rd">
+            <h6> 챌린지 참여 </h6>
+          </div>
+          <div class="badge-box-wrap">
+            <div class="badge-box"> <BadgeDefault img="badge__participate_1.svg"> 것모닝코리아 챌린지 1회 성공</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge__participate_2.svg"> 것모닝코리아 챌린지 2회 성공</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">챌린지 비기너</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">챌린지 퍼펙트</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">챌린지 막판스퍼트</BadgeDefault></div>
+          </div>
+        </div>
+
+        <div class="activity__area_badge-section">
+          <div class="para-title-2rd">
+            <h6> 팀장 </h6>
+          </div>
+          <div class="badge-box-wrap"> 
+            <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">솔플 축하</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge__iAmLeader.svg">팀장</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge__talentedLeader.svg">팀장의 자질</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge__leaderOfLeader.svg">팀장의 정석</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">우수 팀장</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">혹독한 팀장</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">가혹한 팀장</BadgeDefault></div>
+          </div>
+        </div>
+
+        <div class="activity__area_badge-section">
+          <div class="para-title-2rd">
+            <h6> 이벤트 배지 </h6>
+          </div>
+          <div class="badge-box-wrap"> 
+            <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge__newYear.svg">새해 첫날</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge__firstAttendance.svg">찻 인증</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge__birthday.svg">나의 생일</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge__welcomBack.svg">복귀왕</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge__bestTeamMate.svg">팀메이트</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <AppNav></AppNav>
+</template>
+
+<script>
+import AppNav from "@/layouts/AppNav.vue";
+import BadgeDefault from "@/components/BadgeDefault.vue";
+
+export default {
+  name: "Gut_000035",
+  components: {
+    AppNav,
+    BadgeDefault
+  },
+  data() {
+    return {
+      hasRepresent: false,
+    };
+  },
+  setup() {
+
+  },
+  mounted() {
+
+
+  },
+  beforeUnmount() {
+
+  },
+  methods: { 
+
+  },
+};
+</script>
