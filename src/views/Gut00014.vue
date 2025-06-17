@@ -1,5 +1,5 @@
 <template>
-  <div class="content-area ">
+  <div class="content-area">
     <ContentHead title="팀 만들기" headType="ty02" :leftArea="true" />
     <div class="create-team-wrap">
       <div class="profile-wrap">
