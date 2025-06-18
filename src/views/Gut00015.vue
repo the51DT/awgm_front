@@ -74,7 +74,7 @@
                 <p class="card-desc">123456789</p>
               </div>
               <ul class="sub-wrap">
-                <li><CustomButton size="sm" color="light">인증완료</CustomButton></li>
+                <li><CustomButton size="sm" color="light">연동완료</CustomButton></li>
               </ul>
               <!-- //인증 후 case -->              
             </div>
@@ -115,7 +115,7 @@
                   <p class="card-title">바디키</p>
                 </div>
                 <ul class="sub-wrap">
-                  <li><CustomButton size="sm">인증하기</CustomButton></li>
+                  <li><CustomButton size="sm">연동하기</CustomButton></li>
                 </ul>
               </div>
             </div>
@@ -126,7 +126,7 @@
                   <p class="card-desc">* 카카오 UID는 <a href="#">개인회원 정보 페이지</a>에서 확인 가능합니다.</p>
                 </div>
                 <ul class="sub-wrap">
-                  <li><CustomButton size="sm">인증하기</CustomButton></li>
+                  <li><CustomButton size="sm">연동하기</CustomButton></li>
                 </ul>
               </div>
             </div>
@@ -137,7 +137,7 @@
                   <p class="card-title">바디키</p>
                 </div>
                 <ul class="sub-wrap">
-                  <li><CustomButton size="sm">인증하기</CustomButton></li>
+                  <li><CustomButton size="sm">연동하기</CustomButton></li>
                 </ul>
               </div>
             </div>
@@ -148,7 +148,7 @@
                   <p class="card-desc">* 아이디는 <a href="#">개인회원 정보 페이지</a>에서 확인 가능합니다.</p>
                 </div>
                 <ul class="sub-wrap">
-                  <li><CustomButton size="sm">인증하기</CustomButton></li>
+                  <li><CustomButton size="sm">연동하기</CustomButton></li>
                 </ul>
               </div>
             </div>
@@ -161,7 +161,7 @@
                 </div>
                 <ul class="sub-wrap">
                   <li><p class="user-name">$프로필명$</p></li>
-                  <li><CustomButton size="sm" color="light">인증완료</CustomButton></li>
+                  <li><CustomButton size="sm" color="light">연동완료</CustomButton></li>
                 </ul>
               </div>
             </div>
@@ -172,7 +172,7 @@
                 </div>
                 <ul class="sub-wrap">
                   <li><p class="user-name">$프로필명$</p></li>
-                  <li><CustomButton size="sm" color="light">인증완료</CustomButton></li>
+                  <li><CustomButton size="sm" color="light">연동완료</CustomButton></li>
                 </ul>
               </div>
             </div>
@@ -183,7 +183,7 @@
                 </div>
                 <ul class="sub-wrap">
                   <li><p class="user-name">$프로필명$</p></li>
-                  <li><CustomButton size="sm" color="light">인증완료</CustomButton></li>
+                  <li><CustomButton size="sm" color="light">연동완료</CustomButton></li>
                 </ul>
               </div>
             </div>
