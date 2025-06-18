@@ -3,6 +3,7 @@
     <template v-slot:full>
       <div class="activity-content-area">
         <ContentHead title="대표 배지 설정" :rightArea=true />
+        <!-- hasBadges == true일 시 획득한 배지 화면 출력 -->
         <div class="represent__pop" v-if="hasBadges == true">
           <div class="activity__area_badge-section">
             <div class="badge-box-wrap">
@@ -31,6 +32,7 @@
             <CustomButton>확인</CustomButton>
           </div>
         </div>
+        <!-- hasBadges == false일 시 화면 출력 -->
         <div class="represent__pop" v-else>
           <div class="activity__area_badge-section not-badges">
             <div class="activity-badge__not">
