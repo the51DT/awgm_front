@@ -38,7 +38,7 @@
           </div>
         </div>
         <div class="card card--p12 card--shadow00 team--sub__card-drop">
-          <Panel title="월별 지난 팀 인증률 추이 보기">
+          <Panel title="월별 팀 인증률 보기">
             <ul>
               <li> <span> 2025</span>년 <span> 6</span>월 <span class="percent"> <i> 25</i> %</span> </li>
               <li> <span> 2025</span>년 <span> 6</span>월 <span class="percent full"> <i> 100</i> %</span> </li>
