@@ -106,6 +106,38 @@ function layerClose (type) {
       });
     }
   }
+  else if (type === "traffic_reward") {
+    const trafficRewardOpenBtn = document.querySelector(".traffic_reward_btn__open");
+    const trafficRewardPop = document.querySelector(".traffic_reward_btn__pop");
+    const trafficRewardCloseBtn = document.querySelector(".traffic_reward_btn__pop__close");
+    
+    if (trafficRewardOpenBtn && trafficRewardPop) {
+      trafficRewardOpenBtn.addEventListener("click", () => {
+        trafficRewardPop.classList.add("on");
+      });
+    }
+    if (trafficRewardCloseBtn && trafficRewardPop) {
+      trafficRewardCloseBtn.addEventListener("click", () => {
+        trafficRewardPop.classList.remove("on");
+      });
+    }
+  }
+  else if (type === "badges_reward") {
+    const badgesRewardOpenBtn = document.querySelector(".badges_reward_btn__open");
+    const badgesRewardPop = document.querySelector(".badges_reward_btn__pop");
+    const badgesRewardCloseBtn = document.querySelector(".badges_reward_btn__pop__close");
+    
+    if (badgesRewardOpenBtn && badgesRewardPop) {
+      badgesRewardOpenBtn.addEventListener("click", () => {
+        badgesRewardPop.classList.add("on");
+      });
+    }
+    if (badgesRewardCloseBtn && badgesRewardPop) {
+      badgesRewardCloseBtn.addEventListener("click", () => {
+        badgesRewardPop.classList.remove("on");
+      });
+    }
+  }
   else if (type === "popup") {
     const btnClose = document.querySelector(".popup__box--close");
 

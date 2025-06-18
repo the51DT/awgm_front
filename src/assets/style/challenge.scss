@@ -163,14 +163,6 @@
             margin-right: auto;
             width: 182px;
             height: 160px;
-            // position: absolute;
-            // left: 50%;
-            // transform: translateX(-50%);
-            // -webkit-user-select: none;
-            // -moz-user-select: none;
-            // -ms-user-select: none;
-            // user-select: none;
-            // pointer-events: none;
             &__pop {
               display: none;
               width: 182px;
@@ -2013,6 +2005,81 @@ p i{
         padding-top: 4px;
         margin-bottom: 32px;
         margin-top: 8px;
+        .badge__desc{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 2px;
+          position: relative;
+          span{
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            text-align: center;
+            color: #666;
+          }
+
+          .badges_reward{ 
+            width: 100%;
+            max-width: 500px;
+            position: absolute;
+            top: 90%;
+            left: -97px;
+            &_btn {
+              // width: 320px;
+              // height: 916px;
+              &-txt{
+                color: #fff;
+                font-weight: 800;
+                font-size: 14px;
+                line-height: 24px;
+                text-align: center;
+                display: block;
+              }
+              &__pop {
+                width: 320px;
+                height: 965px;
+                padding: 32px 16px 8px 16px;
+                background: url(../images/badges_speech_bg.svg) no-repeat center/contain;
+                z-index: 2;
+                position: relative;
+                display: none; 
+                &.on {
+                  display: block;
+                }
+                .badges_reward_btn__pop__close {
+                  position: absolute;
+                  top: 32px;
+                  right: 20px;
+                  width: 21px;
+                  height: 21px;
+                  background-image: url(../images/icon_close_white.svg);
+                  background-size: contain;
+                }
+              }
+            }
+            .activity__area_badge-section{
+              padding: 0;
+              .badge-box{
+                background: transparent;
+                color: #fff;
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 19.5px;
+                text-align: center;
+                .badge__wrap{
+                  margin-bottom: 0;
+                }
+                img{
+                  width: 80px; height: 80px;
+                  object-fit: contain;
+                }
+              }
+            }
+
+          }
+
+        }
         .wrap{
           text-align: center;
           .name{
