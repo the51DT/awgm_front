@@ -18,7 +18,7 @@
           <div>
             <p class="font--800 font--ls1"> <span> 팀명 </span> 아침마다 오 마이 GUT Morning</p>
             <div class="card__info">
-              <div class="card__title">챌린지</div>
+              <div class="card__title card__title--challenge">챌린지</div>
               <div class="card__num">64명</div>
             </div>
           </div>
@@ -53,7 +53,7 @@
           <div>
             <p class="font--800 font--ls1"> <span> 팀명 </span> 아침마다 오 마이 GUT Morning</p>
             <div class="card__info">
-              <div class="card__title">챌린지</div>
+              <div class="card__title card__title--challenge">챌린지</div>
               <div class="card__num">64명</div>
             </div>
           </div>
@@ -88,7 +88,7 @@
           <div>
             <p class="font--800 font--ls1"> <span> 팀명 </span> 아침마다 오 마이 GUT Morning</p>
             <div class="card__info">
-              <div class="card__title">챌린지</div>
+              <div class="card__title card__title--challenge">챌린지</div>
               <div class="card__num">64명</div>
             </div>
           </div>
@@ -123,7 +123,7 @@
           <div>
             <p class="font--800 font--ls1"> <span> 팀명 </span> 아침마다 오 마이 GUT Morning</p>
             <div class="card__info">
-              <div class="card__title">챌린지</div>
+              <div class="card__title card__title--challenge">챌린지</div>
               <div class="card__num">64명</div>
             </div>
           </div>
@@ -169,7 +169,7 @@ export default {
   props: {
     challengeData: {
       type: Boolean,
-      default: false,
+      default: true,
     }
   },
   components: {
