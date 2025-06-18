@@ -6,7 +6,7 @@
       <div class="tag_cont on">
         <div class="list-top-wrap">
           <div class="filter">
-            <InputField type="select" placeholder="2024.09" :options="['챌린지 $n$회차', '챌린지 $n$회차', '챌린지 $n$회차']" active />
+            <InputField type="select" placeholder="챌린지 $n$회차" :options="['챌린지 $n$회차', '챌린지 $n$회차', '챌린지 $n$회차']" active />
             <InputField type="select" placeholder="전체"
               :options="['전체', 'ABO 미인증 팀원', '오늘 인증한 팀원', '80% 이상 달성 팀원', '80% 미만 달성 팀원']" />
           </div>
