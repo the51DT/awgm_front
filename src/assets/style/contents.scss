@@ -271,29 +271,29 @@
   }
 
   &__profile__info {
-    // .img-wrap {
-    //   &.on-flag {
-    //     position: relative;
-    //     padding: 4px 4px 0 0;
+    .img-wrap {
+      &.on-flag {
+        position: relative;
+        padding: 4px 4px 0 0;
 
-    //     &.leaderOn::before {
-    //       content: '';
-    //       display: inline-block;
-    //       width: 14px;
-    //       height: 14px;
-    //       background-image: url('../images/icon_leader.svg');
-    //       background-size: contain;
-    //       position: absolute;
-    //       top: 0;
-    //       right: 0;
-    //     }
-    //   }
+        &.leaderOn::before {
+          content: '';
+          display: inline-block;
+          width: 14px;
+          height: 14px;
+          background-image: url('../images/icon_leader.svg');
+          background-size: contain;
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
+      }
 
-    //   img {
-    //     border-radius: 16px;
-    //     object-fit: cover;
-    //   }
-    // }
+      img {
+        border-radius: 16px;
+        object-fit: cover;
+      }
+    }
 
     .card {
       &___top__profile_img{

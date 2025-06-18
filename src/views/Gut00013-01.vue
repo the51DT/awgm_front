@@ -31,7 +31,8 @@
               <div class="card__top__profile_img">
                 <div class="profile_img">
                   <div class="profile_img__info">
-                    <div class="user_img-wrap on-flag">
+                    <!-- 팀장 마크 leaderOn 클래스 추가 -->
+                    <div class="user_img-wrap on-flag leaderOn">
                       <div class="user_img">
                         <img :src="require(`@/assets/images/card_profile_1.png`)" alt="프로필 이미지" />
                       </div>

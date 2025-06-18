@@ -215,8 +215,8 @@ export const menuRoutes = [
       meta: { layout: "none" },
     },
     {
-      text: "팀원인증현황-Gut00013",
-      path: "/팀원인증현황-Gut00013",
+      text: "팀원인증현황(팀장)-Gut00013",
+      path: "/팀원인증현황(팀장)-Gut00013",
       meta: { layout: "none" },
     },
     {
@@ -232,6 +232,26 @@ export const menuRoutes = [
     {
       text: "팀원인증현황(light 팀원)-Gut00013-03",
       path: "/팀원인증현황(light 팀원)-Gut00013-03",
+      meta: { layout: "none" },
+    },
+    {
+      text: "팀원인증현황 챌린지(팀장)-Gut00013-04",
+      path: "/팀원인증현황 챌린지(팀장)-Gut00013-04",
+      meta: { layout: "none" },
+    },
+    {
+      text: "팀원인증현황 챌린지(팀원)-Gut00013-05",
+      path: "/팀원인증현황 챌린지(팀원)-Gut00013-05",
+      meta: { layout: "none" },
+    },
+    {
+      text: "팀원인증현황 챌린지(light 팀장)-Gut00013-06",
+      path: "/팀원인증현황 챌린지(light 팀장)-Gut00013-06",
+      meta: { layout: "none" },
+    },
+    {
+      text: "팀원인증현황 챌린지(light 팀원)-Gut00013-07",
+      path: "/팀원인증현황 챌린지(light 팀원)-Gut00013-07",
       meta: { layout: "none" },
     },
     {
