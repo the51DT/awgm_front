@@ -361,8 +361,8 @@ export const menuRoutes = [
       meta: { layout: "none" },
     },
     {
-      text: "(PU)자녀계정 등록수정-Gut0001901",
-      path: "/(PU)자녀계정 등록수정-Gut0001901",
+      text: "(PU)자녀계정 생성-Gut0001901",
+      path: "/(PU)자녀계정 생성-Gut0001901",
       meta: { layout: "none" },
     },
     {
