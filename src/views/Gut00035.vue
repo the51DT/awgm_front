@@ -29,41 +29,41 @@
           </div>
           <div class="record-box">
             <div>
-              <h7>인증횟수</h7>
+              <h7>챌린지</h7>
             </div>
             <div>
-              <p> 누적 </p>
-              <p class="green"> 21개 </p>
+              <p> 참여 수 </p>
+              <p class="green"> 5회 </p>
             </div>
             <div>
-              <p>최대 연속 </p>
-              <p class="green"> 10개 </p>
-            </div>
-          </div>
-          <div class="record-box">
-            <div>
-              <h7>인증횟수</h7>
-            </div>
-            <div>
-              <p> 누적 </p>
-              <p class="green"> 21개 </p>
-            </div>
-            <div>
-              <p>최대 연속 </p>
-              <p class="green"> 10개 </p>
+              <p>성공 </p>
+              <p class="green"> 4회 </p>
             </div>
           </div>
           <div class="record-box">
             <div>
-              <h7>인증횟수</h7>
+              <h7>최고 인증률</h7>
             </div>
             <div>
-              <p> 누적 </p>
-              <p class="green"> 21개 </p>
+              <p> 상시 </p>
+              <p class="green"> 80% </p>
             </div>
             <div>
-              <p>최대 연속 </p>
-              <p class="green"> 10개 </p>
+              <p> 챌린지 </p>
+              <p class="green"> 80% </p>
+            </div>
+          </div>
+          <div class="record-box">
+            <div>
+              <h7>최고 달성 랭킹</h7>
+            </div>
+            <div>
+              <p> 상시 </p>
+              <p class="green"> 1개 </p>
+            </div>
+            <div>
+              <p> 챌린지 </p>
+              <p class="green"> 3위 </p>
             </div>
           </div>
         </div>
