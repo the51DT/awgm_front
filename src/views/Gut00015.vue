@@ -74,7 +74,7 @@
                 <p class="card-desc">123456789</p>
               </div>
               <ul class="sub-wrap">
-                <li><CustomButton size="sm" color="light">연동완료</CustomButton></li>
+                <li><CustomButton size="sm" color="light">인증완료</CustomButton></li>
               </ul>
               <!-- //인증 후 case -->              
             </div>
