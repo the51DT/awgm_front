@@ -169,7 +169,7 @@ export default {
   props: {
     challengeData: {
       type: Boolean,
-      default: true,
+      default: false,
     }
   },
   components: {

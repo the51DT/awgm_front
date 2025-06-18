@@ -307,6 +307,11 @@ export const menuRoutes = [
       meta: { layout: "headerOnly" },
     },
     {
+      text: "대표배지설정-Gut0003501",
+      path: "/대표배지설정-Gut0003501",
+      meta: { layout: "none" },
+    },
+    {
       text: "이전 기록-Gut00038",
       path: "/이전 기록-Gut00038",
       meta: { layout: "none" },

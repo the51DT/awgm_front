@@ -94,7 +94,7 @@ export default {
     },
     sortIcon: {
       type: Boolean,
-      default: true,
+      default: false,
     },
     bgGray: {
       type: Boolean,
