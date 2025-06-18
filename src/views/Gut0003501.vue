@@ -6,26 +6,24 @@
         <div class="represent__pop" v-if="hasBadges == true">
           <div class="activity__area_badge-section">
             <div class="badge-box-wrap">
-              <div class="badge-box"> <BadgeDefault img="badge__continuous_10.svg">10일 연속 인증</BadgeDefault></div>
-              <div class="badge-box"> <BadgeDefault img="badge__continuous_30.svg">30일 연속 인증</BadgeDefault></div>
-              <div class="badge-box"> <BadgeDefault img="badge__continuous_60.svg">60일 연속 인증</BadgeDefault></div>
-              <div class="badge-box"> <BadgeDefault img="badge__continuous_90.svg">90일 연속 인증</BadgeDefault></div>
-              <div class="badge-box"> <BadgeDefault img="badge__continuous_100.svg">100일 연속 인증</BadgeDefault></div>
-              <div class="badge-box"> <BadgeDefault img="badge__continuous_10.svg">10일 연속 인증</BadgeDefault></div>
-              <div class="badge-box"> <BadgeDefault img="badge__continuous_30.svg">30일 연속 인증</BadgeDefault></div>
-              <div class="badge-box"> <BadgeDefault img="badge__continuous_60.svg">60일 연속 인증</BadgeDefault></div>
-              <div class="badge-box"> <BadgeDefault img="badge__continuous_90.svg">90일 연속 인증</BadgeDefault></div>
-              <div class="badge-box"> <BadgeDefault img="badge__continuous_100.svg">100일 연속 인증</BadgeDefault></div>
-              <div class="badge-box"> <BadgeDefault img="badge__continuous_10.svg">10일 연속 인증</BadgeDefault></div>
-              <div class="badge-box"> <BadgeDefault img="badge__continuous_30.svg">30일 연속 인증</BadgeDefault></div>
-              <div class="badge-box"> <BadgeDefault img="badge__continuous_60.svg">60일 연속 인증</BadgeDefault></div>
-              <div class="badge-box"> <BadgeDefault img="badge__continuous_90.svg">90일 연속 인증</BadgeDefault></div>
-              <div class="badge-box"> <BadgeDefault img="badge__continuous_100.svg">100일 연속 인증</BadgeDefault></div>
-              <div class="badge-box"> <BadgeDefault img="badge__continuous_10.svg">10일 연속 인증</BadgeDefault></div>
-              <div class="badge-box"> <BadgeDefault img="badge__continuous_30.svg">30일 연속 인증</BadgeDefault></div>
-              <div class="badge-box"> <BadgeDefault img="badge__continuous_60.svg">60일 연속 인증</BadgeDefault></div>
-              <div class="badge-box"> <BadgeDefault img="badge__continuous_90.svg">90일 연속 인증</BadgeDefault></div>
-              <div class="badge-box"> <BadgeDefault img="badge__continuous_100.svg">100일 연속 인증</BadgeDefault></div>
+              <!-- 선택 시 click 클래스 추가 -->
+              <div class="badge-box" @click="toggleClass"> <BadgeDefault img="badge__continuous_10.svg">10일 연속 인증</BadgeDefault></div>
+              <div class="badge-box" @click="toggleClass"> <BadgeDefault img="badge__continuous_30.svg">30일 연속 인증</BadgeDefault></div>
+              <div class="badge-box" @click="toggleClass"> <BadgeDefault img="badge__continuous_60.svg">60일 연속 인증</BadgeDefault></div>
+              <div class="badge-box" @click="toggleClass"> <BadgeDefault img="badge__continuous_90.svg">90일 연속 인증</BadgeDefault></div>
+              <div class="badge-box" @click="toggleClass"> <BadgeDefault img="badge__continuous_100.svg">100일 연속 인증</BadgeDefault></div>
+
+              <div class="badge-box" @click="toggleClass"> <BadgeDefault img="badge__participate_1.svg">것모닝코리아 <br />챌린지 1회 성공</BadgeDefault></div>
+              <div class="badge-box" @click="toggleClass"> <BadgeDefault img="badge__participate_2.svg">것모닝코리아 <br />챌린지 2회 성공</BadgeDefault></div>
+              <div class="badge-box" @click="toggleClass"> <BadgeDefault img="badge__iAmLeader.svg">팀장</BadgeDefault></div>
+              <div class="badge-box" @click="toggleClass"> <BadgeDefault img="badge__talentedLeader.svg">팀장의 자질</BadgeDefault></div>
+              <div class="badge-box" @click="toggleClass"> <BadgeDefault img="badge__leaderOfLeader.svg">팀장의 정석</BadgeDefault></div>
+
+              <div class="badge-box" @click="toggleClass"> <BadgeDefault img="badge__newYear.svg">새해 첫날</BadgeDefault></div>
+              <div class="badge-box" @click="toggleClass"> <BadgeDefault img="badge__firstAttendance.svg">첫 인증</BadgeDefault></div>
+              <div class="badge-box" @click="toggleClass"> <BadgeDefault img="badge__birthday.svg">나의 생일</BadgeDefault></div>
+              <div class="badge-box" @click="toggleClass"> <BadgeDefault img="badge__welcomBack.svg">복귀왕</BadgeDefault></div>
+              <div class="badge-box" @click="toggleClass"> <BadgeDefault img="badge__bestTeamMate.svg">베스트 팀메이트</BadgeDefault></div>
             </div>
           </div>
           <div class="btn-area ty03">
@@ -58,13 +56,18 @@ import PopupDefault from "@/components/PopupDefault.vue";
 import BadgeDefault from "@/components/BadgeDefault.vue";
 import CustomButton from "@/components/CustomButton.vue";
 
+const toggleClass = (e) => {
+  e.currentTarget.classList.toggle('click');
+};
+
 export default {
   name: "LoginMain",
   data(){
     return{
       hasBadges : true,
+      
     }
-  },  
+  },    
   components: {
     ContentHead,
     PopupDefault,
@@ -73,6 +76,14 @@ export default {
   },
   mounted() {
     tabFn.tabFn()
+  },
+  methods: {
+    toggleClass(e) {
+      const boxes = document.querySelectorAll('.badge-box.click');
+      boxes.forEach((el) => el.classList.remove('click'));
+
+      e.currentTarget.classList.add('click');
+    },
   },
 };
 </script>

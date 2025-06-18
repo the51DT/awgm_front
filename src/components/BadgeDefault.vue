@@ -26,7 +26,7 @@ export default {
     isTag: {
       type: Boolean,
       default: false
-    }
+    },
   },
   computed: {
     imageSrc() {
