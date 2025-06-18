@@ -167,8 +167,8 @@ export const menuRoutes = [
       meta: { layout: "headerOnly" },
     },
     {
-      text: "(pu)미션 인증 공유-Gut0000701",
-      path: "/(pu)미션 인증 공유-Gut0000701",
+      text: "미션 인증 공유-Gut0000701",
+      path: "/미션 인증 공유-Gut0000701",
       meta: { layout: "none" },
     },
     {
@@ -277,7 +277,7 @@ export const menuRoutes = [
     {
       text: "(PU)나의 팀 목록 초대받은팀-Gut0003401",
       path: "/(PU)나의 팀 목록 초대받은팀-Gut0003401",
-      meta: { layout: "headerOnly" },
+      meta: { layout: "none" },
     },
     {
       text: "나의 팀 목록 초대받은팀 (없을 시) -Gut0003402",

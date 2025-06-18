@@ -10,6 +10,7 @@
       <div class="text__title__wrap">
         <p class="text__title">팀장김웨이님은</p>
         <p class="text__subtit"><span class="text__subtit--bold">0</span>개 팀에 참여중입니다.</p>
+        <p class="text__desc mt8"> 팀 현황을 확인해보세요</p>
       </div>
       <div class="tag--wrap">
         <button class="tag">진행중</button>
