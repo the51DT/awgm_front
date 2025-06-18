@@ -9,16 +9,16 @@
             <img v-else class="ico-logo" :src="require(`@/assets/images/icon/ico_profile.png`)" alt="프로필 이미지 수정 아이콘" />
           </div>
         </label>
+        <!-- 프로필명 <-> 하단 modify 박스 토글 -->
         <div class="text-wrap">
-          <div class="text-wrap-default">
+          <div class="text-wrap-default" v-if="default">
             <p class="profile-name">팀장김웨이</p>
-            <button type="button" class="btn-modify" title="프로필명 변경"><span class="blind">프로필명 변경</span></button>
+            <button @click="onEdit" type="button" class="btn-modify" title="프로필명 변경" ><span class="blind">프로필명 변경</span></button>
           </div>
-          <!-- 프로필명 변경 클릭 시, 하단 modify 박스 노출 / 위 영역 default -->
-          <div class="text-wrap-modify">
+          <div class="text-wrap-modify" v-else>
             <div class="text-wrap-modify-form">
               <InputField placeholder="자녀계정 아이디" />
-              <CustomButton size="sm" color="dark">확인</CustomButton>
+              <CustomButton size="sm" color="gray-333" @click="onEdit">확인</CustomButton>
             </div>
             <p class="info-desc">※ 개인정보가 식별되는 닉네임사용은 자제해 주세요.</p>
           </div>
@@ -237,6 +237,7 @@ export default {
       leftArea: "",
       rightArea: "",
       imageUrl: null,
+      default : true,
     };
   },
   components: {
@@ -255,7 +256,11 @@ export default {
         };
         reader.readAsDataURL(file);
       }
+    },
+    onEdit(){
+      this.default = !this.default
+      
     }
-  }
+  },
 };
 </script>

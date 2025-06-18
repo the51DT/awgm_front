@@ -12,6 +12,7 @@
       color === 'yellow' ? 'custom-btn--yellow' : '',
       color === 'black' ? 'custom-btn--black' : '',
       color === 'white' ? 'custom-btn--white' : '',
+      color === 'gray-333' ? 'custom-btn--gray-333' : '',
     ]"
   >
     <slot></slot>
