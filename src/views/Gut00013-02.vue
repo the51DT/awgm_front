@@ -1,4 +1,5 @@
 <template>
+  <!-- 팀원인증현황 - 상시(팀장) light view-->
   <div class="content-area">
     <ContentHead title="팀원 인증 현황보기" headType="ty02" :leftArea=true :rightArea=true :sortIcon=true />
     <div class="team-box-wrap">
@@ -162,6 +163,7 @@
               </div>
             </div>
           </div>
+          <!-- 자녀계정일 시 -->
           <div class="card card--border card--p16 card--shadowc2 card--link">
             <button class="card__linkBtn">
               <img :src="require(`@/assets/images/icon_arrow_r.svg`)" />
@@ -170,8 +172,8 @@
               <div class="card__text__list ty02 light-view">
                 <div>
                   <dl>
-                    <dt>이름</dt>
-                    <dd>코니 알렉스</dd>
+                    <dt>닉네임</dt>
+                    <dd>김사무엘 주니어</dd>
                   </dl>
                   <dl>
                     <dt> 오늘 인증</dt>

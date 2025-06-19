@@ -1,4 +1,5 @@
 <template>
+  <!-- 팀원인증현황 - 상시(팀장) normal view-->
   <div class="content-area">
     <ContentHead title="팀원 인증 현황보기" headType="ty02" :leftArea=true :rightArea=true :sortIcon=true />
     <div class="team-box-wrap">
@@ -74,10 +75,6 @@
                       <img src="@/assets/images/ico-abo-completed-badge.svg" alt="ABO 인증 완료 뱃지 아이콘" />
                       <span> ABO 인증 완료 </span>
                     </div>
-                    <div class="challenge__badge badge--purchase">
-                      <img src="@/assets/images/ico-purchase-badge.svg" alt="것모닝 구매 완료 아이콘" />
-                      <span> 것모닝 구매 완료 </span>
-                    </div>
                   </div>
                 </dl>
               </div>
@@ -134,10 +131,6 @@
                     <div class="challenge__badge badge--abo not">
                       <img src="@/assets/images/ico-abo-completed-badge-not.svg" alt="ABO 인증 완료 뱃지 아이콘" />
                       <span> ABO 인증 완료 </span>
-                    </div>
-                    <div class="challenge__badge badge--purchase not">
-                      <img src="@/assets/images/ico-purchase-badge-not.svg" alt="것모닝 구매 완료 아이콘" />
-                      <span> 것모닝 구매 완료 </span>
                     </div>
                   </div>
                 </dl>
@@ -196,16 +189,14 @@
                       <img src="@/assets/images/ico-abo-completed-badge-not.svg" alt="ABO 인증 완료 뱃지 아이콘" />
                       <span> ABO 인증 완료 </span>
                     </div>
-                    <div class="challenge__badge badge--purchase">
-                      <img src="@/assets/images/ico-purchase-badge.svg" alt="것모닝 구매 완료 아이콘" />
-                      <span> 것모닝 구매 완료 </span>
-                    </div>
                   </div>
                 </dl>
               </div>
             </div>
           </div>
 
+
+          <!-- 자녀계정 -->
           <div class="card card--border card--p16 card--shadowc2 card--link">
             <BookMarkBtn />
             <button class="card__linkBtn">
@@ -217,10 +208,10 @@
                   <div class="profile_img__info">
                     <div class="user_img-wrap on-flag">
                       <div class="user_img">
-                        <img :src="require(`@/assets/images/card_profile_1.png`)" alt="프로필 이미지" />
+                        <img :src="require(`@/assets/images/child_profile1.png`)" alt="프로필 이미지" />
                       </div>
                     </div>
-                    <p class="user__tit"> 김웨이 </p>
+                    <p class="user__tit"> 김사무엘주니어 </p>
                   </div>
                 </div>
               </div>
@@ -228,72 +219,6 @@
                 <dl>
                   <dt>랭킹</dt>
                   <dd>2위</dd>
-                </dl>
-                <dl>
-                  <dt>이름</dt>
-                  <dd>김웨이</dd>
-                </dl>
-                <dl>
-                  <dt>전체 인증 횟수</dt>
-                  <dd>
-                    <div class="group-info">
-                      <p class="main">999회</p>
-                    </div>
-                  </dd>
-                </dl>
-                <dl class="align-ctr">
-                  <dt>이 달의 인증</dt>
-                  <dd>
-                    <p> 9월 22회 <span class="green"> 60%</span> </p>
-                  </dd>
-                </dl>
-                <dl>
-                  <dt> 오늘 인증</dt>
-                  <dd> <span class="green"> O </span></dd>
-                </dl>
-                <dl>
-                  <div class="challenge__badge-wrap">
-                    <div class="challenge__badge badge--abo">
-                      <img src="@/assets/images/ico-abo-completed-badge.svg" alt="ABO 인증 완료 뱃지 아이콘" />
-                      <span> ABO 인증 완료 </span>
-                    </div>
-                    <div class="challenge__badge badge--purchase not">
-                      <img src="@/assets/images/ico-purchase-badge-not.svg" alt="것모닝 구매 완료 아이콘" />
-                      <span> 것모닝 구매 완료 </span>
-                    </div>
-                  </div>
-                </dl>
-              </div>
-            </div>
-          </div>
-
-          <!-- ABO미인증 회원일 시-->
-          <div class="card card--border card--p16 card--shadowc2 card--link">
-            <BookMarkBtn />
-            <button class="card__linkBtn">
-              <img :src="require(`@/assets/images/icon_arrow_r.svg`)" />
-            </button>
-            <div class="card__top">
-              <div class="card__top__profile_img">
-                <div class="profile_img">
-                  <div class="profile_img__info">
-                    <div class="user_img-wrap on-flag">
-                      <div class="user_img">
-                        <img :src="require(`@/assets/images/card_profile_1.png`)" alt="프로필 이미지" />
-                      </div>
-                    </div>
-                    <p class="user__tit"> 김웨이 </p>
-                  </div>
-                </div>
-              </div>
-              <div class="card__text__list ty02">
-                <dl>
-                  <dt>랭킹</dt>
-                  <dd>2위</dd>
-                </dl>
-                <dl>
-                  <dt>이름</dt>
-                  <dd>김웨이</dd>
                 </dl>
                 <dl>
                   <dt>전체 인증 횟수</dt>

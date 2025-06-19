@@ -1,4 +1,5 @@
 <template>
+  <!-- 팀원인증현황 - 상시(팀원) normal view-->
   <div class="content-area">
     <ContentHead title="팀원 인증 현황보기" headType="ty02" :leftArea=true :rightArea=true :sortIcon=true />
     <div class="team-box-wrap">
@@ -203,6 +204,7 @@
             </div>
           </div>
 
+          <!-- 자녀계정일 시 -->
           <div class="card card--border card--p16 card--shadowc2 card--link">
             <BookMarkBtn />
             <button class="card__linkBtn">
@@ -214,10 +216,10 @@
                   <div class="profile_img__info">
                     <div class="user_img-wrap on-flag">
                       <div class="user_img">
-                        <img :src="require(`@/assets/images/card_profile_1.png`)" alt="프로필 이미지" />
+                        <img :src="require(`@/assets/images/child_profile1.png`)" alt="프로필 이미지" />
                       </div>
                     </div>
-                    <p class="user__tit"> 김웨이 </p>
+                    <p class="user__tit"> 김사무엘주니어 </p>
                   </div>
                 </div>
               </div>
@@ -237,7 +239,7 @@
                 <dl class="align-ctr">
                   <dt>이 달의 인증</dt>
                   <dd>
-                    <p> 9월 22회 <span class="green"> 60%</span> </p>
+                    <p> 9월 22회 <span class="green"> 5%</span> </p>
                   </dd>
                 </dl>
                 <dl>

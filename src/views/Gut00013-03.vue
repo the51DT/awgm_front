@@ -1,4 +1,5 @@
 <template>
+  <!-- 팀원인증현황 - 상시(팀원) light view-->
   <div class="content-area">
     <ContentHead title="팀원 인증 현황보기" headType="ty02" :leftArea=true :rightArea=true :sortIcon=true />
     <div class="team-box-wrap">
@@ -40,7 +41,7 @@
                 </div>
                 <div>
                   <dl>
-                    <dt>전체 인증 횟수</dt>
+                    <dt>전체인증횟수</dt>
                     <dd>
                       <div class="group-info">
                         <p class="main">999회</p>
@@ -48,7 +49,7 @@
                     </dd>
                   </dl>
                   <dl class="align-ctr">
-                    <dt>이 달의 인증</dt>
+                    <dt>이달의인증</dt>
                     <dd>
                       <p> 9월 22회 <span class="green"> 60%</span> </p>
                     </dd>
@@ -75,7 +76,7 @@
                 </div>
                 <div>
                   <dl>
-                    <dt>전체 인증 횟수</dt>
+                    <dt>전체인증횟수</dt>
                     <dd>
                       <div class="group-info">
                         <p class="main">999회</p>
@@ -83,7 +84,7 @@
                     </dd>
                   </dl>
                   <dl class="align-ctr">
-                    <dt>이 달의 인증</dt>
+                    <dt>이달의인증</dt>
                     <dd>
                       <p> 9월 22회 <span class="green"> 60%</span> </p>
                     </dd>
@@ -110,7 +111,7 @@
                 </div>
                 <div>
                   <dl>
-                    <dt>전체 인증 횟수</dt>
+                    <dt>전체인증횟수</dt>
                     <dd>
                       <div class="group-info">
                         <p class="main">999회</p>
@@ -118,7 +119,7 @@
                     </dd>
                   </dl>
                   <dl class="align-ctr">
-                    <dt>이 달의 인증</dt>
+                    <dt>이달의인증</dt>
                     <dd>
                       <p> 9월 22회 <span class="green"> 60%</span> </p>
                     </dd>
@@ -145,7 +146,7 @@
                 </div>
                 <div>
                   <dl>
-                    <dt>전체 인증 횟수</dt>
+                    <dt>전체인증횟수</dt>
                     <dd>
                       <div class="group-info">
                         <p class="main">999회</p>
@@ -153,7 +154,7 @@
                     </dd>
                   </dl>
                   <dl class="align-ctr">
-                    <dt>이 달의 인증</dt>
+                    <dt>이달의인증</dt>
                     <dd>
                       <p> 9월 22회 <span class="green"> 60%</span> </p>
                     </dd>
@@ -180,7 +181,7 @@
                 </div>
                 <div>
                   <dl>
-                    <dt>전체 인증 횟수</dt>
+                    <dt>전체인증횟수</dt>
                     <dd>
                       <div class="group-info">
                         <p class="main">999회</p>
@@ -188,7 +189,7 @@
                     </dd>
                   </dl>
                   <dl class="align-ctr">
-                    <dt>이 달의 인증</dt>
+                    <dt>이달의인증</dt>
                     <dd>
                       <p> 9월 22회 <span class="green"> 60%</span> </p>
                     </dd>
