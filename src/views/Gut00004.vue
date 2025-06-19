@@ -393,6 +393,17 @@
         </div>
       </div>
     </div>
+    
+    <!-- 나의팀 : 상시일 떄 것모닝 welcome 페이지 링크 연결 판넬 -->
+    <a href="https://gutmorning.co.kr/welcome" class="btn__link-wrap">
+      <div class="card card--p20 btn__link">
+        <div>
+          <p> GUT Moring Korea </p>
+          <p> 현황 보러가기 <img src="@/assets/images/icon_arrow_r_white.svg" /></p>
+        </div>
+        <img src="@/assets/images/gut_welcome-logo.svg" alt="것모닝 코리아 로고"/>
+      </div>
+    </a>
 
     <div class="lottie-conts lottie-conts--green">
       <FrontIntro :lottieColorType="fontColorType" />

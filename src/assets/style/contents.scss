@@ -913,6 +913,35 @@
         }
       }
     }
+    .btn__link-wrap{
+      background: transparent;
+      .btn__link{
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("@/assets/images/gut_welcome_bg.jpg") no-repeat center/cover; 
+        display: flex; 
+        justify-content: space-between;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        & > div p:nth-child(1){
+          font-weight: 700;
+          font-size: 22px;
+          line-height: 32px;
+          letter-spacing: 0px;
+          color: #F79C22;
+        }
+        & > div p:nth-child(2){
+          font-weight: 500;
+          font-size: 13px;
+          line-height: 24px;
+          letter-spacing: 0px;
+          color: #fff;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+        }
+      }
+    }
+
+
   }
 
   &-card-box {
@@ -920,6 +949,9 @@
 
     &:not(:last-child) {
       margin-bottom: 60px;
+    }
+    &:nth-last-child(n+1) {
+      margin-bottom: 36px;;
     }
 
     &.ty02 {
