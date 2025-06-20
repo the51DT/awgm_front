@@ -8,7 +8,7 @@
         <li class="gray_text"> 이전 팀 목록 </li>
       </ul>
       <div class="filter">
-        <InputField type="select" placeholder="선택"  
+        <InputField type="select-placeholder" placeholder="선택"  
         :options="teamOptions"
         @change="handleTeamChange" />
       </div>

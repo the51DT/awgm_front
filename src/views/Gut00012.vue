@@ -74,7 +74,7 @@
             <div class="form-item">
               <h5 class="title">보상수령처</h5>
               <div class="select-wrap">
-                <InputField type="select" placeholder="선택" :options="['값1', '값2', '값3']" />
+                <InputField type="select-placeholder" placeholder="선택" :options="['값1', '값2', '값3']" />
               </div>            
             </div>
           </div>

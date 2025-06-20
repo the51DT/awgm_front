@@ -6,9 +6,9 @@
       <div class="tag_cont on">
         <div class="list-top-wrap">
           <div class="filter">
-            <InputField type="select" placeholder="2024.09" :options="['2024.09', '2024.08', '2024.07']" active />
-            <InputField type="select" placeholder="전체"
-              :options="['전체', 'ABO 미인증 팀원', '오늘 인증한 팀원', '80% 이상 달성 팀원', '80% 미만 달성 팀원']" />
+            <InputField type="select" :options="['2024.09', '2024.08', '2024.07']" active v-model="selectedDate"/>
+            <InputField type="select" v-model="selectedMember" active
+              :options="['전체', '오늘 인증 완료','오늘 미인증 팀원', '80% 이상 달성', '80% 미만 달성']" />
           </div>
         </div>
         <div class="list-btn-wrap">
@@ -222,6 +222,8 @@ export default {
       leftArea: "",
       rightArea: "",
       isActive : true,
+      selectedDate: '2024.09',
+      selectedMember :'전체'
     };
   },
   components: {

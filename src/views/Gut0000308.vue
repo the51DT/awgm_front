@@ -9,7 +9,7 @@
       챌린지 성공 보상을 위해<br/>
       <span class="font--green">보상 수령처</span>를 선택해 주세요.
       <div class="popup__select">
-        <InputField type="select" placeholder="보상수령처 선택" :options="['값1', '값2', '값3']" />
+        <InputField type="select-placeholder" placeholder="보상수령처 선택" :options="['값1', '값2', '값3']" />
       </div>
       <p class="notice">※ 챌린지 팀 가입의 경우, 카카오 알림톡을 통해<br>챌린지와 관련된 안내를 받으실 수 있습니다.</p>
     </template>

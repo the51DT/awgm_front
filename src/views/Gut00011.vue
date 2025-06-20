@@ -33,8 +33,8 @@
             ]" />
           </div>
           <div class="filter">
-            <InputField type="select" placeholder="24.09 ~ 25.01" :options="['전체', '24.09 ~ 25.01']" />
-            <InputField type="select" placeholder="21~50명" :options="['전체', '0~20명', '21명~50명', '51명~100명', '101명~200명', '201명~300명', '300명 이상']" />
+            <InputField type="select" :options="['전체', '24.09 ~ 25.01','25.02 ~ 25.06']" v-model="selectedDate" />
+            <InputField type="select" :options="['전체', '0~20명', '21명~50명', '51명~100명', '100명 이상']" v-model="selectedMember"/>
           </div>
         </div>
         <div class="team--ranking">
@@ -188,6 +188,8 @@ export default {
     return {
       leftArea: "",
       rightArea: "",
+      selectedDate: '24.09 ~ 25.01',
+      selectedMember :'0~20명'
     };
   },
   components: {
