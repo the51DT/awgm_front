@@ -67,7 +67,7 @@
             </div>
           </p>
           <p class="font--c66 font--ls1 challenge__card--traffic">
-            챌린지 미션 성공 시, ABO/Member 회원인증,
+            챌린지 미션 성공 시, ABO/Member 회원인증, 
             최근 2개월 내 것모닝 제품 구매 이력 등에 따라
             보상이 차등 지급됩니다.
           </p>
@@ -96,7 +96,7 @@
           <span> 것모닝 구매 완료 </span>
         </div>
       </div>
-      <p class="font--c66 font--ls1 mt-8">* 인증 여부의 경우 전일 기준으로 확인 가능합니다.</p>
+      <p class="font--c66 font--ls1 mt-8">* 것모닝 구매완료 여부는 직전일 기준으로 확인 가능합니다.</p>
     </div>
     <!-- calendar 영역 -->
     <div class="calendar">
