@@ -9,8 +9,8 @@
       <select v-if="type === 'select'" :class="warn === false
           ? 'inputField__input'
           : 'inputField__input inputField__input--warn'
-        " :id="id" :name="name" :readonly="readonly">
-        <option disabled selected hidden>{{ placeholder }}</option>
+        " :id="id" :name="name" :readonly="readonly" @change="onChange" :value="modelValue">
+        <option disabled hidden value="">{{ placeholder }}</option>
         <option :key="i" v-for="(options, i) in options" :value="options">
           {{ options }}
         </option>
@@ -129,7 +129,11 @@ export default {
           label: "label",
         }]
       }
-    }
+    },
+    modelValue: {
+      type: String,
+      default: ''
+    },
   },
   methods: {
     // 패스워드 눈 버튼
@@ -146,6 +150,9 @@ export default {
         }
       }
     },
+    onChange(event) {
+      this.$emit('update:modelValue', event.target.value)
+    }
   }
 }
 </script>

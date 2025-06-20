@@ -255,6 +255,11 @@ export const menuRoutes = [
       meta: { layout: "none" },
     },
     {
+      text: "팀원인증현황 none-Gut00013-08",
+      path: "/팀원인증현황 none-Gut00013-08",
+      meta: { layout: "none" },
+    },
+    {
       text: "팀만들기-Gut00014",
       path: "/팀만들기-Gut00014",
       meta: { layout: "none" },
