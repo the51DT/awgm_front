@@ -60,7 +60,8 @@
                       <span> 것모닝 구매 완료 </span>
                     </div>
                   </div>
-                  <p class="traffic_reward_btn__pop_text"> 챌린지 시작일 기준 최근 2개월 이내 것모닝 제품 구매 여부 </p>
+                  <p class="traffic_reward_btn__pop_text"> 챌린지 시작일 기준 최근 2개월 이내 <br />
+                    것모닝(푸로틴&유산균) 제품 구매 여부 </p>
                 </div>
               </div>
             </div>

@@ -159,16 +159,16 @@
           left: 0;
           margin-left: -41px;
           &_btn {
-            margin-left: 48px;
+            margin-left: 34px;
             margin-right: auto;
             width: 182px;
             height: 160px;
             &__pop {
               display: none;
-              width: 182px;
-              height: 160px;
+              width: 192px;
+              height: 172px;
               padding: 14px;
-              padding-top: 32px; 
+              padding-top: 38px; 
               background: url(../images/traffic_speech_bg.svg) no-repeat center/100%;
               z-index: 2;
               position: relative;
@@ -177,7 +177,7 @@
               }
               .traffic_reward_btn__pop__close {
                 position: absolute;
-                top: 20px;
+                top: 33px;
                 right: 10px;
                 width: 21px;
                 height: 21px;
