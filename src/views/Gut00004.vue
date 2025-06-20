@@ -395,7 +395,7 @@
     </div>
     
     <!-- 나의팀 : 상시일 떄 것모닝 welcome 페이지 링크 연결 판넬 -->
-    <a href="https://gutmorning.co.kr/welcome" class="btn__link-wrap">
+    <a href="https://gutmorning.co.kr/welcome" class="btn__link-wrap" target="_blank">
       <div class="card card--p20 btn__link">
         <div>
           <p> GUT Moring Korea </p>
