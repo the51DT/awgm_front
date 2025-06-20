@@ -12,9 +12,10 @@
         :options="teamOptions"
         @change="handleTeamChange" />
       </div>
-      <p class="font--c66">팀원을 초대하고자 하는 이전 팀을 선택해주세요. <br />
-        *초대받은 팀원의 경우, 초대받은 팀 목록에서 '참여하기'를 선택해야 팀에 참여됩니다.</p>
-        <CustomButton size="md" :color="selectedTeam ? 'primary' : 'gray'">
+      <p class="font--c66">팀원 모두에게 일괄로 초대 메시지가 전송됩니다.<br />
+        팀원은 초대받은 팀 목록에서 <span style="font-weight:800;"> 참여하기</span>를 선택해야
+        팀에 참여됩니다. </p>
+        <CustomButton size="md" :color="selectedTeam ? 'primary' : 'gray-b9'">
         초대하기
       </CustomButton>
     </template>
