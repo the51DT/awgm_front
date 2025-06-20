@@ -20,11 +20,11 @@
                 </div>
               </div>
             <div class="card__text__list ty02 team-list-view">
-                <dl>
-                  <dt>팀 가입일</dt>
-                  <dd>2024.09.09</dd>
-                </dl>
-              </div>
+              <dl>
+                <dt>팀 가입일</dt>
+                <dd>2024.09.09</dd>
+              </dl>
+            </div>
           </div>
         </div>
       </div>
