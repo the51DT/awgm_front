@@ -15,9 +15,9 @@
       <p class="font--c66">팀원 모두에게 일괄로 초대 메시지가 전송됩니다.<br />
         팀원은 초대받은 팀 목록에서 <span style="font-weight:800;"> 참여하기</span>를 선택해야
         팀에 참여됩니다. </p>
-        <CustomButton size="md" :color="selectedTeam ? 'primary' : 'gray-b9'">
-        초대하기
-      </CustomButton>
+        <CustomButton size="md" :color="selectedTeam ? 'black' : 'gray-b9'">
+          초대하기
+        </CustomButton>
     </template>
   </PopupDefault>
   <div class="popup--toast">
