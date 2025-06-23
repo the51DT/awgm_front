@@ -1,5 +1,5 @@
 <template>
-  <PopupDefault full :isTopBtn="true">
+  <PopupDefault full :isTopBtn="false">
     <template v-slot:full>
       <div class="activity-content-area">
         <ContentHead title="대표 배지 설정" :rightArea=true />
