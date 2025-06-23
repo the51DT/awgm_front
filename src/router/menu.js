@@ -324,6 +324,16 @@ export const menuRoutes = [
       path: "/나의 팀 목록 초대한 팀원 보기 (참여완료)-Gut00037-03",
       meta: { layout: "none" },
     },
+    {
+      text: "나의 팀 목록 초대한 팀원 보기 (참여대기 팀원 X)-Gut00037-04",
+      path: "/나의 팀 목록 초대한 팀원 보기 (참여대기 팀원 X)-Gut00037-04",
+      meta: { layout: "none" },
+    },
+    {
+      text: "나의 팀 목록 초대한 팀원 보기 (참여완료 팀원 X)-Gut00037-05",
+      path: "/나의 팀 목록 초대한 팀원 보기 (참여완료 팀원 X)-Gut00037-05",
+      meta: { layout: "none" },
+    },
   ]),
   createMainMenu("05 나의 활동", "/나의 활동", MENU_TYPES.ACTIVITY, [
     {
