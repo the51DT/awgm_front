@@ -161,7 +161,7 @@
       <div ref="sentinel" style="height:0"></div>
       <div class="activity__area-terms-tab" >
         <div class="para-title" ref="targetSection">
-          <h5> 획득 배지 </h5>
+          <h5> 획득한 배지 </h5>
           <p> 총 <span class="green"> 8개</span> 획득 </p>
         </div>
         <div class="activity__area_badge-section">
