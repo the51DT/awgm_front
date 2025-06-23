@@ -9,7 +9,6 @@
           </div>
           <div class="text-wrap manage">
             <h3> 김사무엘 주니어 </h3>
-            <h4 class="profile-name font--c66">김사무엘 유리카 닉슨</h4>
           </div>
         </div>        
         <div class="card card--border card--p1220 card--shadowc2">
@@ -21,7 +20,7 @@
               </dl>
               <dl>
                 <dt>인증 횟수</dt>
-                <dd>223/1000회</dd>
+                <dd>223/1000회 (9월 22회)</dd>
               </dl>
             </div>
           </div>
