@@ -190,7 +190,21 @@
     }
 
   }
-    
+  .badge-btn-wrap{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 4px;
+    button{
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 24px;
+      color: #666;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
 
   .card {
     border-radius: 16px;
@@ -407,7 +421,6 @@
 
     &.ty02.light-view {
       flex-direction: row;
-      // justify-content: space-between;
       gap: 8px;
       & > div{
         display: flex;
@@ -438,7 +451,7 @@
       font-size: 15px;
       line-height: 24px;
       &:not(:last-child) {
-        margin-bottom: 8px;
+        // margin-bottom: 8px;
       }
       dt {
         width: 110px; 
@@ -474,6 +487,56 @@
         display: flex;
         gap: 4px;
       }
+    }
+  }
+  &__bottom{
+    margin-top: 8px !important;
+    .challenge__badge{
+      font-weight: 800;
+      font-size: 13px;
+      line-height: 24px;
+      padding: 4px 12px;
+    }
+  }
+
+  .team-detail{
+    display: flex;
+    flex-direction: row;
+    .team-detail-pin{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      p.title{
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 24px;
+        color: #111;
+        margin-bottom: 8px;
+      }
+      .badge__name{
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 24px;
+        color: #666;
+      }
+      .badge__wrap{
+        margin-bottom: 0;
+      }
+    }
+  }
+  &.all-times{
+    .team-detail-pin:first-child{
+      position: relative;
+    }
+    .team-detail-pin:first-child:after{
+      content:"";
+      width: 2px;
+      height: 100px;
+      background: rgba(216, 216, 216, 1);
+      position: absolute;
+      right: 0;
     }
   }
 }

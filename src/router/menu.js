@@ -280,13 +280,13 @@ export const menuRoutes = [
       meta: { layout: "none" },
     },
     {
-      text: "팀원관리 상세-Gut00032",
-      path: "/팀원관리 상세-Gut00032",
+      text: "팀원관리 상세(챌린지)-Gut00032",
+      path: "/팀원관리 상세(챌린지)-Gut00032",
       meta: { layout: "none" },
     },
     {
-      text: "팀원관리 상시-Gut0003201",
-      path: "/팀원관리 상시-Gut0003201",
+      text: "팀원관리 상세(상시)-Gut0003201",
+      path: "/팀원관리 상세(상시)-Gut0003201",
       meta: { layout: "none" },
     },
     {
