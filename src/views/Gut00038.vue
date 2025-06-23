@@ -14,6 +14,9 @@
               </div>
               <div class="activity__area-profile">
                 <img src="../assets/images/badgeImg/badge_profile-test1.svg" />
+                <div class="badge__desc">
+                  <span> 파운더스 크라운 앰버서더 60 </span>
+                </div>
                 <div class="wrap">
                   <p class="name"> 김웨이 </p>
                   <p class="during"> <span> 2025년 9월 </span>~ <span> 2026년 8월</span></p>
@@ -85,6 +88,9 @@
               </div>
               <div class="activity__area-profile">
                 <img src="../assets/images/badgeImg/badge_profile-test1.svg" />
+                <div class="badge__desc">
+                  <span> 다이아 80 </span>
+                </div>
                 <div class="wrap">
                   <p class="name"> 김웨이 </p>
                   <p class="during"> <span> 2025년 9월 </span>~ <span> 2026년 8월</span></p>
@@ -173,7 +179,7 @@
             <h6> 챌린지 참여 </h6>
           </div>
           <div class="badge-box-wrap">
-            <div class="badge-box"> <BadgeDefault img="badge__participate_1.svg"> 것모닝코리아 챌린지 1회 성공</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge__participate_1.svg"> 것모닝코리아<br /> 챌린지 1회 성공</BadgeDefault></div>
           </div>
         </div>
 

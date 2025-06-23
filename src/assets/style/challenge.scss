@@ -2011,11 +2011,12 @@ p i{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 12px;
+        // gap: 12px;
         padding-top: 4px;
         margin-bottom: 32px;
         margin-top: 8px;
         .badge__desc{
+          margin-top: 4px;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -2097,6 +2098,7 @@ p i{
 
         }
         .wrap{
+          margin-top: 12px;
           text-align: center;
           .name{
             font-weight: 800;
