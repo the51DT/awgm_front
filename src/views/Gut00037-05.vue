@@ -15,7 +15,27 @@
         </div>
         <div class="tag_cont">
           <div class="team--main__sub">
-
+            <div class="card card--d8border card--shadowc2 card--flex3">
+              <div class="card card--flex3-left card--invite_people">
+                <div class="img-wrap on-flag">
+                  <img class="ico-logo" :src="require(`@/assets/images/ico_profile.png`)" alt="프로필 이미지">
+                </div>
+                <div class="member-info">
+                  <dl>
+                    <dt>이름</dt>
+                    <dd>김웨이</dd>
+                  </dl>
+                  <dl>
+                    <dt>닉네임</dt>
+                    <dd>것모닝관리자</dd>
+                  </dl>
+                </div>
+              </div>
+              <div class="card--flex3-right card--invite_people">
+                <img src="@/assets/images/waiting_member.svg" alt="팀원 참여 대기 아이콘" />
+                <p> 참여 대기 </p>
+              </div>
+            </div>
           </div>
         </div>
         <div class="tag_cont">
