@@ -46,7 +46,6 @@
           </div>
         </div>
       </div>
-
     </template>
   </PopupDefault>
 </template>
@@ -63,13 +62,13 @@ const toggleClass = (e) => {
 };
 
 export default {
-  name: "LoginMain",
-  data(){
-    return{
-      hasBadges : true,
-      
+  name: "Gut0003501",
+  props: {
+    hasBadges: {
+      type: Boolean,
+      default: true,
     }
-  },    
+  },   
   components: {
     ContentHead,
     PopupDefault,

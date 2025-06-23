@@ -42,7 +42,7 @@
   align-items: center;
   padding: 20px 32px 0 32px;
   min-height: 32px;
-
+  position: relative;
   &.ty02 {
     position: fixed;
     top: 0;
@@ -51,7 +51,7 @@
     width: 100vw;
     max-width: 500px;
     margin: 0 -20px;
-    z-index: 100;
+    z-index: 50;
     background: #fff;
     min-height: 72px;
     transition: none;
@@ -1347,6 +1347,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    .animation_bg{
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+    }
     h3{
       font-size: 40px;
     }
