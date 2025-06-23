@@ -415,6 +415,11 @@ export const menuRoutes = [
       path: "/보상지급이력-Gut00036",
       meta: { layout: "none" },
     },
+    {
+      text: "보상지급이력-Gut00036-02",
+      path: "/보상지급이력-Gut00036-02",
+      meta: { layout: "none" },
+    },
   ]),
 
   createMainMenu("07 Footer", "/footer", MENU_TYPES.FOOTER, [
