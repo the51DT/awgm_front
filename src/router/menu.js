@@ -200,8 +200,8 @@ export const menuRoutes = [
       meta: { layout: "none" },
     },
     {
-      text: "(pu)이전 팀 초대하기-Gut0001002-1",
-      path: "/pu)이전 팀 초대하기-Gut0001002-1",
+      text: "(pu)이전 팀의 팀원 초대하기-Gut0001002-1",
+      path: "/pu)이전 팀의 팀원 초대하기-Gut0001002-1",
       meta: { layout: "none" },
     },
     {
@@ -280,18 +280,18 @@ export const menuRoutes = [
       meta: { layout: "none" },
     },
     {
-      text: "팀원관리 상세(챌린지)-Gut00032",
-      path: "/팀원관리 상세(챌린지)-Gut00032",
+      text: "팀원 상세(챌린지)-Gut00032",
+      path: "/팀원 상세(챌린지)-Gut00032",
       meta: { layout: "none" },
     },
     {
-      text: "팀원관리 상세(상시)-Gut0003201",
-      path: "/팀원관리 상세(상시)-Gut0003201",
+      text: "팀원 상세(상시)-Gut0003201",
+      path: "/팀원 상세(상시)-Gut0003201",
       meta: { layout: "none" },
     },
     {
-      text: "팀원관리(자녀)-Gut0003202",
-      path: "/팀원관리(자녀)-Gut0003202",
+      text: "팀원 상세(자녀)-Gut0003202",
+      path: "/팀원 상세(자녀)-Gut0003202",
       meta: { layout: "none" },
     },
     {

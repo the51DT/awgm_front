@@ -1,6 +1,6 @@
 <template>
   <div class="content-area">
-    <ContentHead title="팀원 관리" headType="ty02" :leftArea=true />
+    <ContentHead title="팀원 상세" headType="ty02" :leftArea=true />
     <div class="team-box-wrap child-manage">
       <div class="conts-area">
         <div class="profile-area small">
