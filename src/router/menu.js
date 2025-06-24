@@ -129,6 +129,11 @@ export const menuRoutes = [
       meta: { layout: "none" },
     },
     {
+      text: "(PU) 홈 첼린지 인증완료 -Gut0000403",
+      path: "/(PU) 홈 첼린지 인증완료 -Gut0000403",
+      meta: { layout: "none" },
+    },
+    {
       text: "나의 인증 현황-Gut0000-7",
       path: "/나의 인증 현황-Gut0000-7",
       meta: { layout: "none" },

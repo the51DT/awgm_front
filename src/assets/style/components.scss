@@ -1328,6 +1328,29 @@
 }
 
 /* 뱃지 / 핀레벨 획득 팝업 */
+@keyframes sizeUp {
+  0%{
+    transform: scale(0);
+  }
+  90%{
+    transform: scale(110%);
+  }
+  100%{
+    transform: scale(100%);
+  }
+}
+
+@keyframes fadeUp{
+  0%{
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
 .popup--badge{
   margin: 0 -20px;
   padding: 0 20px;
@@ -1352,6 +1375,7 @@
       width: 100%;
       height: 100vh;
       position: absolute;
+      border: 1px solid red;
     }
     h3{
       font-size: 40px;
@@ -1375,6 +1399,86 @@
       margin-top: 16px;
       p:first-child{
         margin-bottom: 4px;
+      }
+    }
+  }
+  .btn-wrap{
+    width: 100%;
+    position: fixed;
+    bottom: 40px;
+    margin: 0 -20px;
+    padding: 0 20px;
+  }
+  .close-btn{
+    width: 20px; height: 20px;
+    position: fixed;
+    top: 25px;
+    right: 20px;
+    img{
+      width: 100%;
+    }
+  }
+}
+.animation_bg{
+  pointer-events: none;
+}
+.popup--pin{
+  margin: 0 -20px;
+  padding: 0 20px;
+  max-width: 500px;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(17, 17, 17, 0.8);
+  backdrop-filter: blur(12px);
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  padding-top: 150px;
+
+  .badge-wrap{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .animation_bg{
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+      // border: 1px solid red;
+    }
+
+    .badge{
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      img{
+        width: 50%;
+      }
+      .badge-name{
+        color: #76c734;
+        margin-top: 4px;
+      }
+    }
+    .popup-message{
+      text-align: center;
+      margin-top: 16px;
+      h3{
+        font-size: 40px;
+        margin-bottom: 16px;
+        animation : sizeUp 1.3s ease-in-out;
+      }
+      p:nth-of-type(1){
+        margin-bottom: 8px;
+        opacity: 0;
+        animation: fadeUp 1.3s ease-in-out 1.3s forwards;
+      }
+      p:nth-of-type(2){
+        opacity: 0;
+        animation: fadeUp 1.3s ease-in-out 2.6s forwards;
       }
     }
   }
