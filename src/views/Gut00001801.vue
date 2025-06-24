@@ -2,10 +2,11 @@
   <PopupDefault sm>
     <template v-slot:title>
       <p class="font--c11"> $닉네임$님을 <br />
-        정말 강퇴 하시겠습니까? </p>
+        팀에서 내보내시겠습니까? </p>
     </template>
     <template v-slot:cont>
-      <p class="font--c11"> 팀내 모든 활동 내역이 삭제 됩니다. </p>
+      <p class="font--c11"> 팀에서 내보낸다면, <br />
+        팀내의 모든 활동 내역이 삭제 됩니다. </p>
     </template>
     <template v-slot:btn>
       <div class="btn-area ty03">

@@ -12,11 +12,11 @@
       <div class="challenge--main__not__box">
         <div>
           <p class="font--c11 font--800">진행 일시</p>
-          <p>2025.04.01 ~ 2025.06.10 / <span class="font--c33 font--800">70</span>일</p>
+          <p class="font--c66">2025.04.01 ~ 2025.06.10 / <span class="font--c33 font--800">70</span>일</p>
         </div>
         <div>
           <p class="font--c11 font--800">성공 조건</p>
-          <p>팀 인증 <span class="font--green font--800">80%</span> 이상</p>
+          <p class="font--c66">팀 인증 <span class="font--green font--800">80%</span> 이상</p>
         </div>
       </div>
     </div>

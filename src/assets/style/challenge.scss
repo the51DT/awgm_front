@@ -1707,7 +1707,7 @@ p i{
         dd.orange{
           color: #F79C22;
         }
-        dd.bold{
+        .bold{
           font-weight: 800;
         }
         select {
@@ -2321,7 +2321,7 @@ p i{
 }
 .tag {
   flex-shrink: 0;
-  padding: 8px 20px;
+  padding: 8px 16px;
   border-radius: 22px;
   border: 1px solid #d8d8d8;
   font-size: 13px;

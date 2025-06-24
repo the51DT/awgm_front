@@ -149,9 +149,10 @@
             <dd><p class="card__title card__title--always"> 상시 </p></dd>
           </dl>
           <dl>
-            <dt>전체 기간</dt>
+            <dt>기간</dt>
             <dd>
               <p>2025.01.01 ~ 2025.02.28</p>
+              <p class="bold"> 70일 </p>
             </dd>
           </dl>
           <dl>
@@ -167,7 +168,7 @@
             <dd class="bold">팀장김웨이</dd>
           </dl>
           <dl>
-            <dt>참여인원</dt>
+            <dt>참여 팀원</dt>
             <dd>68명</dd>
           </dl>
         </div>
