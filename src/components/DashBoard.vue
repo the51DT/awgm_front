@@ -26,27 +26,58 @@ export default{
   name: "DashBoard",
   data() {
     return {
-      speed: 0,
+      // speed: 0,
       dummyData: [85],
       currentIndex: 0,
+      displaySpeed: 0,
     };
+  },
+  props: {
+    speed: {
+      type: Number,
+      default: 0,
+    },
   },
   computed: {
     dashOffset() {
-      const maxLength = 282.6;
-      return maxLength * (1 - this.speed / 100);
+      const max = 282.6;
+      return max * (1 - this.displaySpeed / 100);
     },
     angle() {
-      return (this.speed / 100) * 180 - 90;
+      return (this.displaySpeed / 100) * 180 - 90;
     },
   },
   mounted() {
-    setInterval(() => {
-      this.speed = this.dummyData[this.currentIndex];
-      this.currentIndex = (this.currentIndex + 1) % this.dummyData.length;
-    }, 1000); // 1초 간격으로 변경
-  },
+    // setInterval(() => {
+    //   this.speed = this.dummyData[this.currentIndex];
+    //   this.currentIndex = (this.currentIndex + 1) % this.dummyData.length;
+    // }, 100); // 1초 간격으로 변경
 
+
+    // const el = this.$el;
+    // const attrSpeed = el.dataset.speed;
+    // if (attrSpeed) {
+    //   this.speed = parseInt(attrSpeed);
+    // }
+
+    // // (선택) 1초마다 다시 읽어 오도록 하면 외부에서 바꾼 값도 반영 가능
+    // setInterval(() => {
+    //   const newSpeed = parseInt(el.dataset.speed);
+    //   if (!isNaN(newSpeed)) {
+    //     this.speed = newSpeed;
+    //   }
+    // }, 500);
+
+    setTimeout(() => {
+      this.displaySpeed = this.speed;
+    }, 50); // 짧은 지연 후 값 설정 → 애니메이션 유도
+    
+  },
+  watch: {
+    speed(newVal) {
+      this.displaySpeed = newVal;
+    },
+  }
 }
 </script>
 
@@ -95,5 +126,7 @@ export default{
   background: red;
   transform-origin: bottom center;
   transition: transform 0.3s ease-in-out;
+  transform: rotate(0deg);
+
 }
 </style>
