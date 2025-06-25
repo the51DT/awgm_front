@@ -9,6 +9,7 @@
             <img src="@/assets/images/icon_tooltip.svg" alt="핀레벨 뱃지 설명 툴팁 오픈 버튼"/>
           </button>
         
+          <!-- 뱃지 설명 툴팁 팝업 -->
           <div class="badges_reward">
             <div class="badges_reward_btn">
               <div class="badges_reward_btn__pop">

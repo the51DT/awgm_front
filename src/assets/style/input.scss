@@ -185,14 +185,14 @@
     position: absolute;
     top: 50%;
     right: 12px;
-    background: url(@/assets/images/icon_eye.svg) no-repeat;
+    background: url(@/assets/images/icon_eye_off.svg) no-repeat;
     width: 20px;
     height: 16px;
     border: none;
     transform: translateY(-50%);
     cursor: pointer;
     &.on {
-      background: url(@/assets/images/icon_eye_off.svg) no-repeat;
+      background: url(@/assets/images/icon_eye.svg) no-repeat;
     }
     &--copy {
       flex-shrink: 0;

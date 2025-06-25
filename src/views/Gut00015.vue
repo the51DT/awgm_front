@@ -40,7 +40,7 @@
         </div>
         <div class="my-page-conts-item">
           <div class="title-wrap">
-            <p class="title">성공보상</p>
+            <p class="title">성공 보상</p>
           </div>
           <div class="card card--shadow00">
             <button><img :src="require(`@/assets/images/icon_arrow_r.svg`)"></button>
