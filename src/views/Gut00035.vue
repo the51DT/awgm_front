@@ -17,27 +17,27 @@
                 <button class="badges_reward_btn__pop__close"></button>
                 <div class="activity__area_badge-section">
                   <div class="badge-box-wrap">
-                    <div class="badge-box"> <BadgeDefault img="badge__beginner.png">0회</BadgeDefault></div>
-                    <div class="badge-box"> <BadgeDefault img="badge__rookie.png">2회</BadgeDefault></div>
-                    <div class="badge-box"> <BadgeDefault img="badge__bronze.png">5회</BadgeDefault></div>
-                    <div class="badge-box"> <BadgeDefault img="badge__bronze.png">8회</BadgeDefault></div>
-                    <div class="badge-box"> <BadgeDefault img="badge__silver.png">11회</BadgeDefault></div>
-                    <div class="badge-box"> <BadgeDefault img="badge__gold.png">31회</BadgeDefault></div>
-                    <div class="badge-box"> <BadgeDefault img="badge__platinum.png">51회</BadgeDefault></div>
-                    <div class="badge-box"> <BadgeDefault img="badge__ruby.png">71회</BadgeDefault></div>
-                    <div class="badge-box"> <BadgeDefault img="badge__sapphire.png">9회</BadgeDefault></div>
-                    <div class="badge-box"> <BadgeDefault img="badge__emerald.png">111회</BadgeDefault></div>
-                    <div class="badge-box"> <BadgeDefault img="badge__dia.png">131회</BadgeDefault></div>
-                    <div class="badge-box"> <BadgeDefault img="badge__dia-exclutive.png">151회</BadgeDefault></div>
-                    <div class="badge-box"> <BadgeDefault img="badge__dia-double.png">181회</BadgeDefault></div>
-                    <div class="badge-box"> <BadgeDefault img="badge__dia-tripple.png">211회</BadgeDefault></div>
-                    <div class="badge-box"> <BadgeDefault img="badge__crown.png">241회</BadgeDefault></div>
-                    <div class="badge-box"> <BadgeDefault img="badge__crown-founder.png">271회</BadgeDefault></div>
-                    <div class="badge-box"> <BadgeDefault img="badge__crown-ambassador.png">301회</BadgeDefault></div>
-                    <div class="badge-box"> <BadgeDefault img="badge__founder-ambassador.png">316회</BadgeDefault></div>
-                    <div class="badge-box"> <BadgeDefault img="badge__founder-ambassador-40.png">331회</BadgeDefault></div>
-                    <div class="badge-box"> <BadgeDefault img="badge__founder-ambassador-50.png">346회</BadgeDefault></div>
-                    <div class="badge-box"> <BadgeDefault img="badge__founder-ambassador-60.png">361회</BadgeDefault></div>
+                    <div class="badge-box"> <BadgeDefault img="pin--beginner.svg">0회</BadgeDefault></div>
+                    <div class="badge-box"> <BadgeDefault img="pin--rookie.svg">2회</BadgeDefault></div>
+                    <div class="badge-box"> <BadgeDefault img="pin--bronze_builder.svg">5회</BadgeDefault></div>
+                    <div class="badge-box"> <BadgeDefault img="pin--bronze_foundation.svg">8회</BadgeDefault></div>
+                    <div class="badge-box"> <BadgeDefault img="pin--silver_producer.svg">11회</BadgeDefault></div>
+                    <div class="badge-box"> <BadgeDefault img="pin--gold_producer.svg">31회</BadgeDefault></div>
+                    <div class="badge-box"> <BadgeDefault img="pin--platinum.svg">51회</BadgeDefault></div>
+                    <div class="badge-box"> <BadgeDefault img="pin--ruby.svg">71회</BadgeDefault></div>
+                    <div class="badge-box"> <BadgeDefault img="pin--sapphire.svg">9회</BadgeDefault></div>
+                    <div class="badge-box"> <BadgeDefault img="pin--emerald.svg">111회</BadgeDefault></div>
+                    <div class="badge-box"> <BadgeDefault img="pin--diamond.svg">131회</BadgeDefault></div>
+                    <div class="badge-box"> <BadgeDefault img="pin--diamond.svg">151회</BadgeDefault></div>
+                    <div class="badge-box"> <BadgeDefault img="pin--diamond.svg">181회</BadgeDefault></div>
+                    <div class="badge-box"> <BadgeDefault img="pin--diamond.svg">211회</BadgeDefault></div>
+                    <div class="badge-box"> <BadgeDefault img="pin--crown.svg">241회</BadgeDefault></div>
+                    <div class="badge-box"> <BadgeDefault img="pin--founders_crown.svg">271회</BadgeDefault></div>
+                    <div class="badge-box"> <BadgeDefault img="pin--founders_crown_ambassador.svg">301회</BadgeDefault></div>
+                    <div class="badge-box"> <BadgeDefault img="pin--founders_crown_ambassador_40.svg">316회</BadgeDefault></div>
+                    <div class="badge-box"> <BadgeDefault img="pin--founders_crown_ambassador_50.svg">331회</BadgeDefault></div>
+                    <div class="badge-box"> <BadgeDefault img="pin--founders_crown_ambassador_60.svg">346회</BadgeDefault></div>
+                    <div class="badge-box"> <BadgeDefault img="pin--founders_crown_ambassador_60.svg">361회</BadgeDefault></div>
                   </div>
                 </div>
               </div>
