@@ -2,7 +2,7 @@
   <div class="activity bg-case">
     <div class="activity__area">
       <div class="activity__area-profile">
-        <img src="../assets/images/badgeImg/badge_profile-test1.svg" />
+        <img src="../assets/images/badgeImg/pin--diamond.svg" />
         <div class="badge__desc">
           <span> 트리플 다이아몬드 </span>
           <button type="button"  class="badges_reward_btn__open">
@@ -28,12 +28,12 @@
                     <div class="badge-box"> <BadgeDefault img="pin--sapphire.svg">9회</BadgeDefault></div>
                     <div class="badge-box"> <BadgeDefault img="pin--emerald.svg">111회</BadgeDefault></div>
                     <div class="badge-box"> <BadgeDefault img="pin--diamond.svg">131회</BadgeDefault></div>
-                    <div class="badge-box"> <BadgeDefault img="pin--diamond.svg">151회</BadgeDefault></div>
-                    <div class="badge-box"> <BadgeDefault img="pin--diamond.svg">181회</BadgeDefault></div>
-                    <div class="badge-box"> <BadgeDefault img="pin--diamond.svg">211회</BadgeDefault></div>
+                    <div class="badge-box"> <BadgeDefault img="pin--exclutive_diamond.svg">151회</BadgeDefault></div>
+                    <div class="badge-box"> <BadgeDefault img="pin--double_diamond.svg">181회</BadgeDefault></div>
+                    <div class="badge-box"> <BadgeDefault img="pin--triple_diamond.svg">211회</BadgeDefault></div>
                     <div class="badge-box"> <BadgeDefault img="pin--crown.svg">241회</BadgeDefault></div>
                     <div class="badge-box"> <BadgeDefault img="pin--founders_crown.svg">271회</BadgeDefault></div>
-                    <div class="badge-box"> <BadgeDefault img="pin--founders_crown_ambassador.svg">301회</BadgeDefault></div>
+                    <div class="badge-box"> <BadgeDefault img="pin--crown_ambassador.svg">301회</BadgeDefault></div>
                     <div class="badge-box"> <BadgeDefault img="pin--founders_crown_ambassador_40.svg">316회</BadgeDefault></div>
                     <div class="badge-box"> <BadgeDefault img="pin--founders_crown_ambassador_50.svg">331회</BadgeDefault></div>
                     <div class="badge-box"> <BadgeDefault img="pin--founders_crown_ambassador_60.svg">346회</BadgeDefault></div>

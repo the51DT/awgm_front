@@ -13,10 +13,7 @@
                 <p class="activity__period"> 25년 9월 - 26년 8월 </p>
               </div>
               <div class="activity__area-profile">
-                <img src="../assets/images/badgeImg/badge_profile-test1.svg" />
-                <div class="badge__desc">
-                  <span> 파운더스 크라운 앰버서더 60 </span>
-                </div>
+                <BadgeDefault img="pin--founders_crown_ambassador_60.svg" pointColor="use-profile">파운더스 크라운 앰버서더 60</BadgeDefault>
                 <div class="wrap">
                   <p class="name"> 김웨이 </p>
                   <p class="during"> <span> 2025년 9월 </span>~ <span> 2026년 8월</span></p>
@@ -87,10 +84,7 @@
                 <p class="activity__period"> 26년 9월 - 27년 10월 </p>
               </div>
               <div class="activity__area-profile">
-                <img src="../assets/images/badgeImg/badge_profile-test1.svg" />
-                <div class="badge__desc">
-                  <span> 다이아 80 </span>
-                </div>
+                <BadgeDefault img="pin--ruby.svg" pointColor="use-profile">루비</BadgeDefault>
                 <div class="wrap">
                   <p class="name"> 김웨이 </p>
                   <p class="during"> <span> 2025년 9월 </span>~ <span> 2026년 8월</span></p>
@@ -294,5 +288,4 @@ export default {
 .activity__area-terms-tab .para-title{
   margin-bottom: 0;
 }
-
 </style>

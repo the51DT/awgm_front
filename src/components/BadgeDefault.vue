@@ -42,7 +42,7 @@ export default {
     imgStyle() {
       const color = this.getShadowColor(this.img);
       return {
-        filter: `drop-shadow(0px 2px 8px ${color}80)` // 80 = 50% 투명도
+        filter: `drop-shadow(0px 2px 4px ${color}80)` // 80 = 50% 투명도
       };
     }
   },
@@ -58,7 +58,7 @@ export default {
       if (img.includes('sapphire')) return '#6E97FF';
       if (img.includes('emerald')) return '#29DEA5';
       if (img.includes('diamond')) return '#50CDFF';
-      if (img.includes('founders')) return '#FF4999';
+      if (img.includes('founders_crown_ambassador')) return '#FF4999';
       if (img.includes('crown')) return '#A34EFF';
       return '#000000'; // fallback
     }

@@ -1931,7 +1931,7 @@ p i{
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       column-gap: 6px;
-      row-gap: 8px;
+      row-gap: 4px;
       .badge-box{
         background-color: #f9f9f9;
         width: 100%;
@@ -1980,7 +1980,7 @@ p i{
       color: #111;
     }
     button{
-      display: flex;
+      display: flex; 
       justify-content: flex-start;
       align-items: center;
       font-weight: 500;
@@ -2045,8 +2045,6 @@ p i{
             top: 90%;
             left: -97px;
             &_btn {
-              // width: 320px;
-              // height: 916px;
               &-txt{
                 color: #fff;
                 font-weight: 800;
@@ -2057,8 +2055,7 @@ p i{
               }
               &__pop {
                 width: 320px;
-                // height: 300px;
-                height: 965px;
+                height: 976px;
                 padding: 32px 16px 8px 16px;
                 background: url(../images/badges_speech_bg.svg) no-repeat center/contain;
                 z-index: 2;
@@ -2080,9 +2077,6 @@ p i{
             }
             .activity__area_badge-section{
               padding: 0;
-              // width: 320px;
-              // height: 205px;
-              // overflow-y: scroll;
               .badge-box{
                 background: transparent;
                 color: #fff;
@@ -2098,12 +2092,9 @@ p i{
                   width: 80px; height: 80px;
                   object-fit: contain;
                 }
-
               }
             }
-
           }
-
         }
         .wrap{
           margin-top: 12px;

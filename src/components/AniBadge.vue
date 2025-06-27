@@ -8,7 +8,7 @@
       <h3> NEW BADGE !</h3>
       <div ref="animationContainer" class="animation_bg"></div>
       <div class="badge">
-        <img :src="require(`@/assets/images/badgeImg/badge__participate_2.svg`)" />
+        <img :src="require(`@/assets/images/badgeImg/pin--emerald.svg`)" />
         <span class="badge-name"> 나의 생일 </span>
       </div>
       <div class="popup-message">
@@ -26,7 +26,7 @@
     <div class="badge-wrap">
       <div ref="animationContainer" class="animation_bg"></div>
       <div class="badge">
-        <img :src="require(`@/assets/images/badgeImg/badge__participate_2.svg`)" />
+        <img :src="require(`@/assets/images/badgeImg/pin--emerald.svg`)" />
       </div>
       <div class="popup-message">
         <h3> NEW BADGE!</h3>
