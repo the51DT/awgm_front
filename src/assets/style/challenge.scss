@@ -1611,6 +1611,7 @@ p i{
         }
         li{
           display: flex;
+          align-items: center;
           .card__list--round{
             font-weight: 800;
           }
@@ -1644,7 +1645,7 @@ p i{
             font-family: "RixSinHead";
             font-weight: 800;
             font-size: 12px;
-            line-height: 18px;
+            line-height: 16px;
             vertical-align: bottom;
             letter-spacing: -0.5px;
             margin-left: 6px;
@@ -2037,7 +2038,6 @@ p i{
             text-align: center;
             color: #666;
           }
-
           .badges_reward{ 
             width: 100%;
             max-width: 500px;
