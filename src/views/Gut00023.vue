@@ -9,6 +9,9 @@
   <!-- 챌린지 이력보기 데이터 존재하는 경우 -->
   <div v-if="challengeData" class="popup--full__cont pb-50">
     <div class="card card--border card--p16 card--shadowc2 challenge__card--history">
+      <button class="card__linkBtn">
+        <img :src="require(`@/assets/images/icon_arrow_r_24.svg`)">
+      </button>
       <p class="font--800 font--c11 font--ls1 font--size18">GUT Morning Korea Challenge</p>
       <div class="card__top">
         <div class="card__img">
@@ -44,6 +47,9 @@
       </div>
     </div>
     <div class="card card--border card--p16 card--shadowc2 challenge__card--history">
+      <button class="card__linkBtn">
+        <img :src="require(`@/assets/images/icon_arrow_r_24.svg`)">
+      </button>
       <p class="font--800 font--c11 font--ls1 font--size18">GUT Morning Korea Challenge</p>
       <div class="card__top">
         <div class="card__img">
@@ -79,6 +85,9 @@
       </div>
     </div>
     <div class="card card--border card--p16 card--shadowc2 challenge__card--history">
+      <button class="card__linkBtn">
+        <img :src="require(`@/assets/images/icon_arrow_r_24.svg`)">
+      </button>
       <p class="font--800 font--c11 font--ls1 font--size18">GUT Morning Korea Challenge</p>
       <div class="card__top">
         <div class="card__img">
@@ -114,6 +123,9 @@
       </div>
     </div>
     <div class="card card--border card--p16 card--shadowc2 challenge__card--history">
+      <button class="card__linkBtn">
+        <img :src="require(`@/assets/images/icon_arrow_r_24.svg`)">
+      </button>
       <p class="font--800 font--c11 font--ls1 font--size18">GUT Morning Korea Challenge</p>
       <div class="card__top">
         <div class="card__img">
