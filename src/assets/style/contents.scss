@@ -502,6 +502,7 @@
   .team-detail{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     .team-detail-pin{
       width: 50%;
       display: flex;
@@ -525,11 +526,6 @@
         margin-bottom: 0;
       }
     }
-  }
-  &.all-times{
-    .team-detail-pin:first-child{
-      position: relative;
-    }
     .team-detail-pin:first-child:after{
       content:"";
       width: 2px;
@@ -538,10 +534,24 @@
       position: absolute;
       right: 0;
     }
-    .card__top{
+    .team-detail-pin:only-child:after{
+      content:"";
+      width: 2px;
+      height: 100px;
+      background: transparent;
+      position: absolute;
+      right: 0;
+    }
+    & + .card__top{
       margin-top: 12px;
     }
   }
+  &.all-times{
+    .team-detail-pin:first-child{
+      position: relative;
+    }
+  }
+
 }
 
 .tag-box-wrap {

@@ -18,20 +18,26 @@
         <div class="badge-btn-wrap">
           <button> 전체 배지 보기 <img src="../assets/images/icon_arrow_r_gray.svg" /> </button>
         </div>
-        <div class="card card--d8border card--p20 card--shadowc2 ">
-          <div class="team-detail">
+        <div class="card card--d8border card--p20 card--shadowc2">
+          <!-- 것모닝 핀/뱃지 둘 다 보유 시 -->
+          <!-- <div class="team-detail">
             <div class="team-detail-pin">
-              <p class="title"> 것모닝 핀</p>
+              <p class="title"> 것모닝핀</p>
               <BadgeDefault img="badge__dia.png"> 에메랄드 </BadgeDefault>
             </div>
             <div class="team-detail-pin">
               <p class="title"> 대표 배지</p>
               <BadgeDefault img="badge__dia.png"> 새해 첫날 </BadgeDefault>
             </div>
+          </div> -->
+          <!-- 것모닝 핀/뱃지 둘 중 하나만 보유 시 -->
+          <div class="team-detail">
+            <div class="team-detail-pin">
+              <p class="title"> 것모닝핀</p>
+              <BadgeDefault img="badge__dia.png"> 에메랄드 </BadgeDefault>
+            </div>
           </div>
-        </div>      
 
-        <div class="card card--d8border card--p1220 card--shadowc2">
           <div class="card__top">
             <div class="card__text__list manage">
               <dl>
@@ -39,7 +45,7 @@
                 <dd>2024.09.09</dd>
               </dl>
               <dl>
-                <dt>인증 횟수</dt>
+                <dt>인증횟수</dt>
                 <dd>223/1000회</dd>
               </dl>
             </div>
@@ -65,8 +71,7 @@
               <span> 것모닝 구매 완료 </span>
             </div> -->
           </div>
-
-        </div>
+        </div>      
 
         <!-- calendar 영역 -->
         <div class="calendar">
