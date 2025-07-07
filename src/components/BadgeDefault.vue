@@ -76,7 +76,7 @@ export default {
       if (img.includes('mission_start')) return '#FFB80C';
       if (img.includes('family_day')) return '#B1FF7B';
       if (img.includes('octopus_mode')) return '#2F66D2';
-      if (img.includes('happy_birth_day')) return '#98F055';
+      if (img.includes('happy_birthday')) return '#98F055';
       if (img.includes('returning_hero')) return '#64D3FF';
       if (img.includes('early_bird')) return '#97D2FF';
       if (img.includes('womens_day')) return '#D084FF';
