@@ -1,5 +1,5 @@
 <template>
-    <!-- 팀원 상세 - 챌린지  -->
+  <!-- 팀원 상세 - 챌린지  -->
   <div class="content-area">
     <ContentHead title="팀원 상세" headType="ty02" :leftArea=true />
     <div class="team-box-wrap">
@@ -14,7 +14,6 @@
             <h4 class="profile-name font--c66">김사무엘 유리카 닉슨</h4>
           </div>
         </div>
-        <!-- 전체 배지 보기 버튼도 위에 감싸서 추가 -->
         <div class="badge-btn-wrap">
           <button> 전체 배지 보기 <img src="../assets/images/icon_arrow_r_gray.svg" /> </button>
         </div>
@@ -78,11 +77,6 @@
           <VCalendar />
         </div>
       </div>
-      <!-- <div class="team-btn-wrap">
-        <div class="btn-area ty03">
-          <CustomButton color="light" class="ty02">팀에서 내보내기</CustomButton>
-        </div>
-      </div> -->
     </div>
   </div>
   

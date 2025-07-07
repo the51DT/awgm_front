@@ -18,7 +18,6 @@
         <div class="badge-btn-wrap">
           <button> 전체 배지 보기 <img src="../assets/images/icon_arrow_r_gray.svg" /> </button>
         </div>
-        <!-- 팀원 상세 - 상시일 경우  all-times 클래스 추가 -->
         <div class="card card--d8border card--p20 card--shadowc2 all-times">
           <!-- 것모닝 핀/뱃지 둘 다 보유 시 -->
           <div class="team-detail">
@@ -70,11 +69,6 @@
           <VCalendar />
         </div>
       </div>
-      <!-- <div class="team-btn-wrap">
-        <div class="btn-area ty03">
-          <CustomButton color="light" class="ty02">팀에서 내보내기</CustomButton>
-        </div>
-      </div> -->
     </div>
   </div>
   
