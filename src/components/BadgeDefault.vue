@@ -48,18 +48,38 @@ export default {
   },
   methods:{
     getShadowColor(img) {
-      if (img.includes('beginner')) return '#1EC159';
-      if (img.includes('rookie')) return '#FF8D2F';
+      if (img.includes('beginner') || img.includes('continuous') ) return '#1EC159';
+      if (img.includes('rookie') || img.includes('gold')) return '#FF8D2F';
       if (img.includes('bronze')) return '#B9876E';
       if (img.includes('silver')) return '#9DACAF';
-      if (img.includes('gold')) return '#FF8D2F';
       if (img.includes('platinum')) return '#636FE6';
       if (img.includes('ruby')) return '#FF5151';
       if (img.includes('sapphire')) return '#6E97FF';
       if (img.includes('emerald')) return '#29DEA5';
-      if (img.includes('diamond')) return '#50CDFF';
+      if (img.includes('diamond') || img.includes('childrens_day')) return '#50CDFF';
       if (img.includes('founders_crown_ambassador')) return '#FF4999';
       if (img.includes('crown')) return '#A34EFF';
+      if (img.includes('figure')) return '#415AFD';
+      if (img.includes('amway')) return '#F79C22';
+      if (img.includes('newYear')) return '#F98D18';
+      if (img.includes('chuseok')) return '#3578FF';
+      if (img.includes('mission_start')) return '#FFB80C';
+      if (img.includes('family_day')) return '#B1FF7B';
+      if (img.includes('octopus_mode')) return '#2F66D2';
+      if (img.includes('happy_birth_day')) return '#98F055';
+      if (img.includes('returning_hero')) return '#64D3FF';
+      if (img.includes('early_bird')) return '#97D2FF';
+      if (img.includes('womens_day')) return '#D084FF';
+      if (img.includes('earth_day')) return '#3AE0C5';
+      if (img.includes('halloween')) return '#5B1CA7';
+      if (img.includes('valentines')) return '#F2497D';
+      if (img.includes('liberation')) return '#05C7EB';
+      if (img.includes('summer')) return '#3578FF';
+      if (img.includes('winter')) return '#708EBB';
+      if (img.includes('merry_christmas')) return '#F67171';
+      if (img.includes('best_teammate')) return '#F14691';
+      if (img.includes('family_power')) return '#74F158';
+
       return '#000000'; // fallback
     }
   }

@@ -149,15 +149,16 @@
         </div>
         <div class="badge-box-wrap">
           <div class="badge-box"> <BadgeDefault img="badge__continuous_10.svg">10일 연속 인증</BadgeDefault></div>
+          <div class="badge-box"> <BadgeDefault img="badge__continuous_20.svg">20일 연속 인증</BadgeDefault></div>
           <div class="badge-box"> <BadgeDefault img="badge__continuous_30.svg">30일 연속 인증</BadgeDefault></div>
           <div class="badge-box"> <BadgeDefault img="badge__continuous_60.svg">60일 연속 인증</BadgeDefault></div>
           <div class="badge-box"> <BadgeDefault img="badge__continuous_90.svg">90일 연속 인증</BadgeDefault></div>
           <div class="badge-box"> <BadgeDefault img="badge__continuous_100.svg">100일 연속 인증</BadgeDefault></div>
-          <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">180일 연속 인증</BadgeDefault></div>
-          <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">200일 연속 인증</BadgeDefault></div>
-          <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">240일 연속 인증</BadgeDefault></div>
-          <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">300일 연속 인증</BadgeDefault></div>
-          <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">365일 연속 인증</BadgeDefault></div>
+          <div class="badge-box"> <BadgeDefault img="badge__continuous_180.svg">180일 연속 인증</BadgeDefault></div>
+          <div class="badge-box"> <BadgeDefault img="badge__continuous_200.svg">200일 연속 인증</BadgeDefault></div>
+          <div class="badge-box"> <BadgeDefault img="badge__continuous_240.svg">240일 연속 인증</BadgeDefault></div>
+          <div class="badge-box"> <BadgeDefault img="badge__continuous_300.svg">300일 연속 인증</BadgeDefault></div>
+          <div class="badge-box"> <BadgeDefault img="badge__continuous_365.svg">365일 연속 인증</BadgeDefault></div>
         </div>
       </div>
 
@@ -194,39 +195,29 @@
           <h6> 이벤트 배지 </h6>
         </div>
         <div class="badge-box-wrap"> 
-          <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
+          <div class="badge-box"> <BadgeDefault img="badge__event_figure_richDevos.svg">리치 디보스 탄생일</BadgeDefault></div>
+          <div class="badge-box"> <BadgeDefault img="badge__event_figure_jayVanAndel.svg">제이 벤 엔델 탄생일</BadgeDefault></div>
+          <div class="badge-box"> <BadgeDefault img="badge__amway_korea.svg">한국암웨이 창립기념일 </BadgeDefault></div>
+          <div class="badge-box"> <BadgeDefault img="badge__amway_korea.svg">파운더스데이 </BadgeDefault></div>
           <div class="badge-box"> <BadgeDefault img="badge__newYear.svg">새해 첫날</BadgeDefault></div>
-          <div class="badge-box"> <BadgeDefault img="badge__firstAttendance.svg">찻 인증</BadgeDefault></div>
-          <div class="badge-box"> <BadgeDefault img="badge__birthday.svg">나의 생일</BadgeDefault></div>
-          <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
-          <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
-          <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
-          <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
-          <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
-          <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
-          <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
-          <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
-          <div class="badge-box"> <BadgeDefault img="badge__welcomBack.svg">복귀왕</BadgeDefault></div>
-          <div class="badge-box"> <BadgeDefault img="badge__bestTeamMate.svg">팀메이트</BadgeDefault></div>
-          <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
-          <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
-          <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
-          <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
-          <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
-          <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
-          <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
-          <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
-          <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
-          <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
-          <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
-          <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
-          <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
-          <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
-          <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
-          <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
-          <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
-          <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
-          <div class="badge-box"> <BadgeDefault img="badge__lock.svg" pointColor="lock">배지명</BadgeDefault></div>
+          <div class="badge-box"> <BadgeDefault img="badge__chuseok.svg">추석</BadgeDefault></div>
+          <div class="badge-box"> <BadgeDefault img="badge__mission_start.svg">첫 인증</BadgeDefault></div>
+          <div class="badge-box"> <BadgeDefault img="badge__family_day.svg">패밀리데이</BadgeDefault></div>
+          <div class="badge-box"> <BadgeDefault img="badge__childrens_day.svg">어린이날</BadgeDefault></div>
+          <div class="badge-box"> <BadgeDefault img="badge__octopus_mode.svg">문어발</BadgeDefault></div>
+          <div class="badge-box"> <BadgeDefault img="badge__happy_birth_day.svg">나의 생일</BadgeDefault></div>
+          <div class="badge-box"> <BadgeDefault img="badge__returning_hero.svg">복귀왕</BadgeDefault></div>
+          <div class="badge-box"> <BadgeDefault img="badge__early_bird.svg">얼리 것모너</BadgeDefault></div>
+          <div class="badge-box"> <BadgeDefault img="badge__womens_day.svg">세계 여성의날</BadgeDefault></div>
+          <div class="badge-box"> <BadgeDefault img="badge__earth_day.svg">지구의 날</BadgeDefault></div>
+          <div class="badge-box"> <BadgeDefault img="badge__halloween_hustler.svg">고스트 것모닝</BadgeDefault></div>
+          <div class="badge-box"> <BadgeDefault img="badge__valentines_day.svg">스윗 것모닝</BadgeDefault></div>
+          <div class="badge-box"> <BadgeDefault img="badge__liberation_day.svg">광복절</BadgeDefault></div>
+          <div class="badge-box"> <BadgeDefault img="badge__summer_gutmoring.svg">썸머 것모닝</BadgeDefault></div>
+          <div class="badge-box"> <BadgeDefault img="badge__winter_gutmoring.svg">윈터 것모닝</BadgeDefault></div>
+          <div class="badge-box"> <BadgeDefault img="badge__merry_christmas.svg">메리 크리스마스</BadgeDefault></div>
+          <div class="badge-box"> <BadgeDefault img="badge__best_teammate.svg">베스트 팀메이트</BadgeDefault></div>
+          <div class="badge-box"> <BadgeDefault img="badge__family_power.svg">가족의 힘</BadgeDefault></div>
         </div>
       </div>
     </div>
