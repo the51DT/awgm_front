@@ -34,9 +34,9 @@
                     <div class="badge-box"> <BadgeDefault pointColor="white" img="pin--crown.svg">241회</BadgeDefault></div>
                     <div class="badge-box"> <BadgeDefault pointColor="white" img="pin--founders_crown.svg">271회</BadgeDefault></div>
                     <div class="badge-box"> <BadgeDefault pointColor="white" img="pin--crown_ambassador.svg">301회</BadgeDefault></div>
-                    <div class="badge-box"> <BadgeDefault pointColor="white" img="pin--founders_crown_ambassador_40.svg">316회</BadgeDefault></div>
-                    <div class="badge-box"> <BadgeDefault pointColor="white" img="pin--founders_crown_ambassador_50.svg">331회</BadgeDefault></div>
-                    <div class="badge-box"> <BadgeDefault pointColor="white" img="pin--founders_crown_ambassador_60.svg">346회</BadgeDefault></div>
+                    <div class="badge-box"> <BadgeDefault pointColor="white" img="pin--founders_crown_ambassador.svg">316회</BadgeDefault></div>
+                    <div class="badge-box"> <BadgeDefault pointColor="white" img="pin--founders_crown_ambassador_40.svg">331회</BadgeDefault></div>
+                    <div class="badge-box"> <BadgeDefault pointColor="white" img="pin--founders_crown_ambassador_50.svg">346회</BadgeDefault></div>
                     <div class="badge-box"> <BadgeDefault pointColor="white" img="pin--founders_crown_ambassador_60.svg">361회</BadgeDefault></div>
                   </div>
                 </div>
