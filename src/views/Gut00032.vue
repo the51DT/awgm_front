@@ -34,7 +34,7 @@
           <div class="team-detail">
             <div class="team-detail-pin">
               <p class="title"> 것모닝핀</p>
-              <BadgeDefault img="badge__dia.png"> 에메랄드 </BadgeDefault>
+              <BadgeDefault img="pin--diamond.svg"> 에메랄드 </BadgeDefault>
             </div>
           </div>
 

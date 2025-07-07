@@ -1306,6 +1306,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  &__wrap{
+    object, img {
+      image-rendering: optimizeQuality;
+    }
+  }
   &__name{
     p{
       font-weight: 500;
@@ -1316,6 +1321,10 @@
       margin-top: 4px;
       padding: 0 12px;
       word-break: keep-all;
+      color: #111;
+      &.white{
+        color: #fff;
+      }
       &.lock{
         color: #666666;
       }

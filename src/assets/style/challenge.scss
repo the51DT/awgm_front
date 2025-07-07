@@ -2031,6 +2031,8 @@ p i{
           align-items: center;
           gap: 2px;
           position: relative;
+          width: 100%;
+          max-width: 500px;
           span{
             font-weight: 500;
             font-size: 14px;
@@ -2038,12 +2040,19 @@ p i{
             text-align: center;
             color: #666;
           }
+          button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
           .badges_reward{ 
             width: 100%;
             max-width: 500px;
             position: absolute;
             top: 90%;
-            left: -97px;
+            left: 50%; right:50%;
+            transform: translate(-50%, 0);
+            z-index: 50;
             &_btn {
               &-txt{
                 color: #fff;
@@ -2054,6 +2063,7 @@ p i{
                 display: block;
               }
               &__pop {
+                margin: 0 auto;
                 width: 320px;
                 height: 976px;
                 padding: 32px 16px 8px 16px;

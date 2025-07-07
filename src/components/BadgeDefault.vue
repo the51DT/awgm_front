@@ -1,13 +1,23 @@
-<template>
+<!-- <template>
   <div class="badge">
     <div class="badge__wrap">
       <img v-if="imageSrc" :src="imageSrc" alt="badge" :style="imgStyle"/>
     </div>
+  </div>
+</template> -->
+<!-- 텍스트 없을 시 v-if -->
+
+<template>
+  <div class="badge">
+    <div class="badge__wrap">
+      <!-- <img v-if="imageSrc" :src="imageSrc" alt="badge" :style="imgStyle"/> -->
+      <object type="image/svg"> 
+        <img :src="imageSrc" alt="badge" :style="imgStyle"/>
+      </object>
+      <!-- <object :data="imageSrc" type="image/svg+xml" :style="imgStyle"></object>  -->
+    </div>
     <div class="badge__name" >
       <p :class="pointColor"> <slot /> </p>
-      <div v-if="isTag">
-
-      </div>
     </div>
   </div>
 </template>
@@ -48,7 +58,7 @@ export default {
   },
   methods:{
     getShadowColor(img) {
-      if (img.includes('beginner') || img.includes('continuous') ) return '#1EC159';
+      if (img.includes('beginner') || img.includes('mission_streak') ) return '#1EC159';
       if (img.includes('rookie') || img.includes('gold')) return '#FF8D2F';
       if (img.includes('bronze')) return '#B9876E';
       if (img.includes('silver')) return '#9DACAF';
