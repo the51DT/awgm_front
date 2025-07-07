@@ -1,20 +1,9 @@
-<!-- <template>
-  <div class="badge">
-    <div class="badge__wrap">
-      <img v-if="imageSrc" :src="imageSrc" alt="badge" :style="imgStyle"/>
-    </div>
-  </div>
-</template> -->
-<!-- 텍스트 없을 시 v-if -->
-
 <template>
   <div class="badge">
-    <div class="badge__wrap">
-      <!-- <img v-if="imageSrc" :src="imageSrc" alt="badge" :style="imgStyle"/> -->
+    <div class="badge__wrap" :class="width">
       <object type="image/svg"> 
-        <img :src="imageSrc" alt="badge" :style="imgStyle"/>
+        <img :src="imageSrc" alt="badge" :style="imgStyle" />
       </object>
-      <!-- <object :data="imageSrc" type="image/svg+xml" :style="imgStyle"></object>  -->
     </div>
     <div class="badge__name" >
       <p :class="pointColor"> <slot /> </p>
@@ -39,6 +28,10 @@ export default {
       type: Boolean,
       default: false
     },
+    width:{
+      type: String,
+      default: ''
+    }
   },
   computed: {
     imageSrc() {
@@ -71,12 +64,12 @@ export default {
       if (img.includes('crown')) return '#A34EFF';
       if (img.includes('figure')) return '#415AFD';
       if (img.includes('amway')) return '#F79C22';
-      if (img.includes('newYear')) return '#F98D18';
+      if (img.includes('new_year')) return '#F98D18';
       if (img.includes('chuseok')) return '#3578FF';
       if (img.includes('mission_start')) return '#FFB80C';
       if (img.includes('family_day')) return '#B1FF7B';
       if (img.includes('octopus_mode')) return '#2F66D2';
-      if (img.includes('happy_birthday')) return '#98F055';
+      if (img.includes('birthday')) return '#98F055';
       if (img.includes('returning_hero')) return '#64D3FF';
       if (img.includes('early_bird')) return '#97D2FF';
       if (img.includes('womens_day')) return '#D084FF';

@@ -1310,6 +1310,10 @@
     object, img {
       image-rendering: optimizeQuality;
     }
+    &.w-80{
+      width: 84px;
+      height: 84px;
+    }
   }
   &__name{
     p{

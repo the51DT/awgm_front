@@ -526,6 +526,12 @@
         margin-bottom: 0;
       }
     }
+    .team-detail-pin:first-child{
+      padding-right: 20px;
+    }
+    .team-detail-pin:last-child{
+      padding-left: 20px;
+    }
     .team-detail-pin:first-child:after{
       content:"";
       width: 2px;

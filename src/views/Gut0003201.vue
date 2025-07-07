@@ -24,18 +24,18 @@
           <div class="team-detail">
             <div class="team-detail-pin">
               <p class="title"> 것모닝핀</p>
-              <BadgeDefault img="badge__dia.png"> 에메랄드 </BadgeDefault>
+              <BadgeDefault img="pin--diamond.svg" width="w-80" pointColor="use-profile"> 에메랄드 </BadgeDefault>
             </div>
             <div class="team-detail-pin">
               <p class="title"> 대표 배지</p>
-              <BadgeDefault img="badge__dia.png"> 새해 첫날 </BadgeDefault>
+              <BadgeDefault img="badge--happy_new_year.svg" width="w-80" pointColor="use-profile"> 새해 첫날 </BadgeDefault>
             </div>
           </div>
           <!-- 것모닝 핀/뱃지 둘 중 하나만 보유 시 -->
           <!-- <div class="team-detail">
             <div class="team-detail-pin">
               <p class="title"> 것모닝핀</p>
-              <BadgeDefault img="badge__dia.png"> 에메랄드 </BadgeDefault>
+              <BadgeDefault img="badge__dia.png" pointColor="use-profile"> 에메랄드 </BadgeDefault>
             </div>
           </div> -->
 
