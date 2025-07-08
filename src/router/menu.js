@@ -361,6 +361,11 @@ export const menuRoutes = [
       path: "/이전 기록-Gut00038",
       meta: { layout: "none" },
     },
+    {
+      text: "이전 기록 (none)-Gut0003802",
+      path: "/이전 기록 (none)-Gut0003802",
+      meta: { layout: "none" },
+    },
   ]),
 
   createMainMenu("06 마이", "/마이", MENU_TYPES.MY, [

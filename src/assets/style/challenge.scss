@@ -1952,13 +1952,13 @@ p i{
       justify-content: center;
       align-items: center;
       width: 100%;
-      .activity-badge__not{
+      .activity-badge--not{
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         gap: 24px;
-        padding-top: 320px;
+        // padding-top: 320px;
         &__title{
           font-weight: 800;
           font-size: 24px;
@@ -2317,6 +2317,11 @@ p i{
       button:nth-child(1){
         margin-right: 8px;
       }
+    }
+    .activity__area_badge-section.not-badges{
+      height: 100vh;
+      height: calc(100vh - 80px);
+      padding: 0;
     }
   }
 }
