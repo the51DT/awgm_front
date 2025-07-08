@@ -1,9 +1,11 @@
 <template>
   <PopupDefault>
     <template v-slot:title>
-      <p class="c-33">
+      인증완료
+      <!-- color : black 일시 -->
+      <!-- <p class="c-33">
         인증완료
-      </p>
+      </p> -->
     </template>
     <template v-slot:cont>
       2025년 2월 12일 <br />

@@ -55,6 +55,15 @@
   .popup__box--close{
     top: 0;
   }
+  .replace-btn {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    width: 40px;
+    height: 40px;
+    background: url('../assets/images/icon_replace-nonebg.svg') center/100%;
+  }
+
 </style>
 
 <script>
