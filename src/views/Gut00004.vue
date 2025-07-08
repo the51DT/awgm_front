@@ -2,13 +2,18 @@
   <div class="home">
     <div class="home__speech">
       <!-- 챌린지 인증 전 -->
-      <p class="home__speech__title">이벤트 챌린지 시작 D-8일</p>
+      <!-- <p class="home__speech__title">이벤트 챌린지 시작 D-8일</p>
       <p class="home__speech__text">
         이벤트 챌린지 참여를 위해, 챌린지 시작 전 팀에 가입해 주세요.
-      </p>
-      <!-- 챌린지 인증 후 -->
+      </p> -->
+
+      <!-- 챌린지 참여 중 -->
       <!-- <p class="home__speech__title">이벤트 챌린지 68일째 참여 중</p>
       <p class="home__speech__text">이벤트 챌린지 보상 수령을 위해 ‘마이’에서 암웨이 계정을 인증해 주세요.</p> -->
+
+      <!-- 챌린지 종료-->
+      <p class="home__speech__title">챌린지 종료</p>
+      <p class="home__speech__text">종료된 챌린지 정보는 '나의 팀 > 챌린지 팀 정보' 또는 '챌린지 > 챌린지 이력보기'에서 확인 가능합니다.</p>
     </div>
 
     <div class="home__date">

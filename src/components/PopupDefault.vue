@@ -4,7 +4,7 @@
       <slot name="full"></slot>
     </div>
   </div>
-  <div v-else class="popup" :id="id">
+  <div v-else class="popup" :id="id"     :class="popupBg">
     <div class="popup__box" :class="[sm ? 'popup__box--sm' : '', lg ? 'popup__box--lg' : '']">
       <button class="popup__box--close" :class="{ 'is-hidden': !isCloseBtn }">
         <img :src="require(`@/assets/images/icon_close.svg`)" />
@@ -36,6 +36,10 @@ export default {
     isCloseBtn: {
       type: Boolean,
       default: true
+    },
+    popupBg: {
+      type: String,
+      default: "" // 없으면 클래스 없음
     }
   },
 };

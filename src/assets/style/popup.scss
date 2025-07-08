@@ -15,6 +15,13 @@ html.pop-open {
   height: 100%;
   background-color: rgba(17, 17, 17, 0.8);
   z-index: 98;
+  &--bg-none{
+    .popup__box{
+      border: 1px solid transparent;
+      border-radius: 16px;
+      background-color: transparent;
+    }
+  }
 
   &__box {
     position: relative;
@@ -29,6 +36,7 @@ html.pop-open {
     border: 1px solid #d8d8d8;
     border-radius: 16px;
     background-color: #fff;
+
 
     &--sm {
       width: 280px;
@@ -105,6 +113,7 @@ html.pop-open {
           color: #169E4A;
         }
       }
+
 
       .gray_text {
         font-size: 13px;

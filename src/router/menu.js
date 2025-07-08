@@ -159,6 +159,16 @@ export const menuRoutes = [
       meta: { layout: "none" },
     },
     {
+      text: "(PU) 홈 첼린지 팀 활동 종료 -Gut0000404",
+      path: "/(PU) 홈 첼린지 팀 활동 종료 -Gut0000404",
+      meta: { layout: "none" },
+    },
+    {
+      text: "(PU) 홈 첼린지 인증 후 -Gut0000405",
+      path: "/(PU) 홈 첼린지 인증 후 -Gut0000405",
+      meta: { layout: "none" },
+    },
+    {
       text: "나의 인증 현황-Gut0000-7",
       path: "/나의 인증 현황-Gut0000-7",
       meta: { layout: "none" },

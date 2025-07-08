@@ -20,6 +20,7 @@
   </div>
 </template>
 
+
 <script setup>
 import { ref, nextTick, onMounted } from "vue";
 
@@ -44,9 +45,12 @@ const addMessages = () => {
 
     const desc = document.createElement("div");
     desc.className = "desc";
+    // desc.innerHTML = `
+    //   <p>이번 달 나의 미션 인증 횟수 <strong class="clear-count">6</strong>회</p>
+    //   <p>전체 70일 중에 <span class="clear-day">28</span>일 인증 완료했습니다.</p>
+    // `;
     desc.innerHTML = `
       <p>이번 달 나의 미션 인증 횟수 <strong class="clear-count">6</strong>회</p>
-      <p>전체 70일 중에 <span class="clear-day">28</span>일 인증 완료했습니다.</p>
     `;
     calendarTextWrap.appendChild(desc);
     titleWrapper.appendChild(calendarTextWrap);

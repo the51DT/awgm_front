@@ -27,6 +27,14 @@
 
 .content-area {
   flex: 1 1 auto;
+  .btn-area{
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    max-width: 500px;
+    padding: 0 20px;
+    margin: 0 -20px 
+  }
 }
 
 .bg-case {
@@ -834,6 +842,9 @@
 
     .desc {
       text-align: center;
+      .clear-count{
+        color: #169E4A;
+      }
     }
   }
 

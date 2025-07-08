@@ -4,9 +4,11 @@
     <div class="calendar">
       <VCalendar />
     </div>
-    <CustomButton>
-      인증 공유하기
-    </CustomButton>
+    <div class="btn-area">
+      <CustomButton>
+        인증 공유하기
+      </CustomButton>
+    </div>
   </div>
 </template>
 
