@@ -111,6 +111,31 @@ export const menuRoutes = [
       meta: { layout: "none" },
     },
     {
+      text: "(PU) 아이디 비밀번호 틀릴 시 -Gut0000310",
+      path: "/(PU) 아이디 비밀번호 틀릴 시-Gut0000310",
+      meta: { layout: "none" },
+    },
+    {
+      text: "(PU) 비밀번호 찾기 요청 -Gut0000311",
+      path: "/(PU) 비밀번호 찾기 요청 -Gut0000311",
+      meta: { layout: "none" },
+    },
+    {
+      text: "(PU) 비밀번호 찾기 요청 확인 -Gut0000312",
+      path: "/(PU) 비밀번호 찾기 요청 확인-Gut0000312",
+      meta: { layout: "none" },
+    },
+    {
+      text: "(PU) 비밀번호 변경 요청-Gut0000313",
+      path: "/(PU) 비밀번호 변경 요청-Gut0000313",
+      meta: { layout: "none" },
+    },
+    {
+      text: "(PU) 팀 가입 완료-Gut0000314",
+      path: "/(PU) 팀 가입 완료-Gut0000314",
+      meta: { layout: "none" },
+    },
+    {
       text: "(PU) 자녀계정 비밀번호 재설정 안내 팝업 - Gut00033",
       path: "/(PU) 자녀계정 비밀번호 재설정 안내 팝업 - Gut00033",
       meta: { layout: "none" },

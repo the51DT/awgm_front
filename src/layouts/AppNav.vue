@@ -37,8 +37,8 @@
   <div class="paid_reward" v-show="showReward">
     <div class="paid_reward_btn">
       <div class="paid_reward_btn__pop on">
-        <p>챌린지 보상이 지급되었습니다! <br />
-          지금 확인해 보세요.</p>
+        <p>챌린지가 종료되었습니다. <br />
+          나의 보상 지급 이력을 확인해보세요. </p>
         <button class="paid_reward_btn__pop__close"></button>
       </div>
     </div>

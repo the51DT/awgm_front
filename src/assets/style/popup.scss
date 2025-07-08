@@ -76,6 +76,9 @@ html.pop-open {
       &+.popup__box--middle {
         margin-top: 8px;
       }
+      & > p{
+        color: #333;
+      }
     }
 
     &--middle {
@@ -94,6 +97,15 @@ html.pop-open {
         line-height: 16px;
       }
 
+      & >p.wrong{
+        font-weight: 800;
+        font-size: 15px;
+        line-height: 24px;
+        span{
+          color: #169E4A;
+        }
+      }
+
       .gray_text {
         font-size: 13px;
         line-height: 20px;
@@ -103,16 +115,16 @@ html.pop-open {
       .gray333_text {
         font-weight: 500;
         font-size: 13px;
-        line-height: 24px;
+        line-height: 21px;
         letter-spacing: -0.5px;
         color: #333
       }
 
       .notice {
         margin-top: 8px;
-        font-size: 11px;
+        font-size: 13px;
         font-weight: 500;
-        line-height: 16px;
+        line-height: 21px;
         color: #999;
       }
 
