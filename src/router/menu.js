@@ -352,6 +352,11 @@ export const menuRoutes = [
       meta: { layout: "none" },
     },
     {
+      text: "(pu)대표 배지 설정 팝업-Gut0003502",
+      path: "/(pu)대표 배지 설정 팝업-Gut0003502",
+      meta: { layout: "none" },
+    },
+    {
       text: "이전 기록-Gut00038",
       path: "/이전 기록-Gut00038",
       meta: { layout: "none" },

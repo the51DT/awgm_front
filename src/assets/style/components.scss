@@ -1316,6 +1316,18 @@
     }
   }
   &__name{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    &_tag{
+      color: #F79C22;
+      font-weight: 800;
+      font-size: 11px;
+      line-height: 16px;
+      border-radius: 16px;
+      padding: 2px 6px;
+      border: 1px solid #F79C22;
+    }
     p{
       font-weight: 500;
       font-size: 13px;
@@ -1342,6 +1354,15 @@
         font-size: 14px;
         line-height: 24px;
         margin-top: 4px;
+      }
+      &.use-popup{
+        font-weight: 800 !important;
+        padding: 0;
+        margin: 0;
+        padding-left: 4px;
+        font-size: 13px;
+        line-height: 20px;
+        color: #111;
       }
     }
 
