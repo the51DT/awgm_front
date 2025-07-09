@@ -51,7 +51,6 @@
             </div>
           </div>
           <div class="btn-area ty03">
-            <CustomButton color="light" class="ty02">취소</CustomButton>
             <CustomButton>확인</CustomButton>
           </div>
         </div>
@@ -59,6 +58,12 @@
     </template>
   </PopupDefault>
 </template>
+
+<style>
+  .activity-content-area .activity__area_badge-section.not-badges{
+    height: calc(100vh - 140px);
+  }
+</style>
 
 <script>
 import ContentHead from "@/components/ContentHead.vue";
