@@ -431,16 +431,30 @@ export const menuRoutes = [
       meta: { layout: "headerOnly", mypage: true },
     },
     {
-      text: "마이 index 계정인증 팝업-Gut0001501",
-      path: "/마이 index 계정인증 팝업-Gut0001501",
+      text: "ABO/Member 회원인증 팝업-Gut0001501",
+      path: "/ABO/Member 회원인증 팝업-Gut0001501",
       meta: { layout: "" },
+    },
+    {
+      text: "프로필 선택 팝업-Gut0001502",
+      path: "/프로필 선택 팝업-Gut0001502",
+      meta: { layout: "none" },
     },
     {
       text: "개인회원정보-Gut00016",
       path: "/개인회원정보-Gut00016",
       meta: { layout: "none" },
     },
-
+    {
+      text: "(pu)회원탈퇴안내-Gut0001602",
+      path: "/(pu)회원탈퇴안내-Gut0001602",
+      meta: { layout: "none" },
+    },
+    {
+      text: "(pu)회원탈퇴 완료-Gut0001603",
+      path: "/(pu)회원탈퇴 완료-Gut0001603",
+      meta: { layout: "none" },
+    },
     {
       text: "자녀계정 등록관리-Gut00019",
       path: "/자녀계정 등록관리-Gut00019",
@@ -487,8 +501,8 @@ export const menuRoutes = [
       meta: { layout: "none" },
     },
     {
-      text: "보상지급이력-Gut00036-02",
-      path: "/보상지급이력-Gut00036-02",
+      text: "보상지급이력 none-Gut00036-02",
+      path: "/보상지급이력 none-Gut00036-02",
       meta: { layout: "none" },
     },
   ]),

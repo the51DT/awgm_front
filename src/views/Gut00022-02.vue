@@ -24,7 +24,7 @@
               <!-- 100% 아닐 시 텍스트 -->
               <div class="card--per__gage" data-width="60%"> <p> 100% 달성 완료 !</p> </div>
             </div>
-            <div class="card--per__target" data-left="80%">목표치</div>
+            <div class="card--per__target" data-left="80%">  <b> 80%</b> 지난 달 인증률 </div>
           </div>
           <div class="card--box card--box--flex2">
             <div>
@@ -36,15 +36,6 @@
               <p>58/300회</p>
             </div>
           </div>
-        </div>
-        <div class="card card--p12 card--shadow00 team--sub__card-drop">
-          <Panel title="월별 지난 팀 인증률 추이 보기">
-            <ul>
-              <li> <span> 2025</span>년 <span> 6</span>월 <span class="percent"> <i> 25</i> %</span> </li>
-              <li> <span> 2025</span>년 <span> 6</span>월 <span class="percent full"> <i> 100</i> %</span> </li>
-              <li> <span> 2025</span>년 <span> 6</span>월 <span class="percent"> <i> 25</i> %</span> </li>
-            </ul>  
-          </Panel>
         </div>
 
         <div class="card card--p20 card--shadow00 team--sub__card-rank">
@@ -141,9 +132,12 @@
             <dd><p class="card__title card__title--always"> 상시 </p></dd>
           </dl>
           <dl>
-            <dt>전체 기간</dt>
+            <dt>기간</dt>
             <dd>
-              <p>2025.01.01 ~ 2025.02.28</p>
+              <p>
+                2025.01.01 ~ 2025.02.28
+                <br /> <b> 70일</b>
+              </p>
             </dd>
           </dl>
           <dl>
@@ -174,7 +168,6 @@ import ContentHead from "@/components/ContentHead.vue";
 import InputField from "@/components/InputField.vue";
 import TopButton from "@/components/TopButton.vue";
 import CustomButton from "@/components/CustomButton.vue"
-import Panel from "@/components/Panel.vue";
 import commonJs from "@/plugins/common.js";
 
 export default {
@@ -203,7 +196,6 @@ export default {
     InputField,
     TopButton,
     CustomButton,
-    Panel,
   },
   mounted() {
     commonJs.posValue(document.querySelectorAll(".card--per__target"));

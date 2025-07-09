@@ -11,6 +11,7 @@
           type="copy"
           placeholder="https://gutmorning.co.kr/child02"
         ></InputField>
+        <CustomButton size="md" style="margin-top:8px;">확인</CustomButton>
       </div>
     </template>
   </PopupDefault>
@@ -22,13 +23,15 @@
 <script>
 import PopupDefault from "@/components/PopupDefault.vue";
 import InputField from "@/components/InputField.vue";
+import CustomButton from "@/components/CustomButton.vue";
 import layerClose from "@/plugins/common.js";
 
 export default {
-  name: "LoginMain",
+  name: "Gut0002001",
   components: {
     PopupDefault,
     InputField,
+    CustomButton,
   },
   mounted() {
     layerClose.layerClose("popup");

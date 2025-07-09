@@ -176,7 +176,7 @@
             <dd class="bold">팀장김웨이</dd>
           </dl>
           <dl>
-            <dt>참여인원</dt>
+            <dt>참여 팀원</dt>
             <dd>68명</dd>
           </dl>
           <dl>

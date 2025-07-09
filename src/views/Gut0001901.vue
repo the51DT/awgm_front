@@ -29,7 +29,7 @@ import CustomButton from "@/components/CustomButton.vue";
 import layerClose from "@/plugins/common.js";
 
 export default {
-  name: "LoginMain",
+  name: "Gut0001901",
   components: {
     PopupDefault,
     InputField,

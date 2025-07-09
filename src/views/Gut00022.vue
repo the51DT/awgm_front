@@ -21,41 +21,48 @@
     </div>
     <div class="my__card">
       <div class="card card--green card--p16 card--shadowc2">
-        <button class="card__linkBtn">
-          <img :src="require(`@/assets/images/icon_arrow_r.svg`)">
-        </button>
-        <div class="card__ranking">
-          <div class="card__state">진행중</div>
-          <div class="card__ranking--rank">
-            <img :src="require(`@/assets/images/icon_ranking.svg`)">
-            <p>챌린지팀 랭킹 <span>5</span>위</p>
-          </div>
-        </div>
-        <p class="card__head">GUT Morning Korea Challenge</p>
-        <div class="card__top">
-          <div class="card__img card__leader">
-            <img :src="require(`@/assets/images/card_profile.png`)">
-          </div>
-          <div class="card__text">
-            <p class="card__text__title">팀명: 아침마다 오 마이 GUT Morning</p>
-            <div class="card__info">
-              <div class="card__title">챌린지</div>
-              <div class="card__num">64명</div>
-            </div> 
-            <p class="card__date">2025.09.01 ~ 2025.09.30 (70일)</p>
-          </div>
-        </div>
-        <div class="card__bottom">
-          <p class="card--per__title">챌린지<br />인증률</p>
-          <div class="card--per">
-            <div class="card--per__gage--wrap">
-              <div class="card--per__gage" data-width="60%"></div>
+            <button class="card__linkBtn">
+              <img :src="require(`@/assets/images/icon_arrow_r.svg`)">
+            </button>
+            <div class="card__ranking">
+              <div class="card__state">진행중</div>
+              <div class="card__ranking--rank">
+                <img :src="require(`@/assets/images/icon_ranking.svg`)">
+                <p>챌린지팀 랭킹 <span>5</span>위</p>
+              </div>
             </div>
-            <div class="card--per__comp" data-width="25%">성공!</div>
+            <p class="card__head">GUT Morning Korea Challenge</p>
+            <div class="card__top">
+              <div class="card__img card__leader">
+                <img :src="require(`@/assets/images/card_profile.png`)">
+              </div>
+              <div class="card__text">
+                <p class="card__text__title">팀명 <b> 아침마다 오 마이 GUT Morning</b></p>
+                <div class="card__info">
+                  <div class="card__title card__title--challenge">챌린지</div>
+                  <div class="card__num">64명</div>
+                </div> 
+                <p class="card__date">
+                  <strong>전체기간</strong><br/>
+                  2025.09.01 ~ 2025.09.30 / 70일
+                </p>
+                <p class="card__date">
+                  <strong>2회차 진행</strong><br/>
+                  2025.09.01 ~ 2025.09.30 / 70일
+                </p>
+              </div>
+            </div>
+            <div class="card__bottom">
+              <p class="card--per__title">챌린지<br />인증률</p>
+              <div class="card--per">
+                <div class="card--per__gage--wrap">
+                  <div class="card--per__gage" data-width="60%"></div>
+                </div>
+                <div class="card--per__comp" data-width="25%">성공!</div>
+              </div>
+              <p class="card--per__state">60%</p>
+            </div>
           </div>
-          <p class="card--per__state">60%</p>
-        </div>
-      </div>
 
       <div class="card card--border card--p16 card--shadowc2">
         <button class="card__linkBtn">
@@ -108,18 +115,49 @@
             <img :src="require(`@/assets/images/card_profile.png`)">
           </div>
           <div class="card__text">
-            <p class="card__text__title">팀명: 우리몸은 GUT Morning</p>
+            <p class="card__text__title">팀명 <b> 우리 몸은 GUT Morning</b></p>
             <div class="card__info">
               <div class="card__title card__title--always">상시</div>
               <div class="card__num">99명</div>
             </div> 
-            <p class="card__date">2024.09.01 ~ 2025.08.31 (365일)</p>
+            <p class="card__date">2024.09.01 ~ 2025.08.31</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card--border card--p16 card--shadowc2">
+        <button class="card__linkBtn">
+          <img :src="require(`@/assets/images/icon_arrow_r.svg`)">
+        </button>
+        <div class="card__ranking">
+          <div class="card__state card__state--end">진행종료</div>
+        </div>
+        <div class="card__top">
+          <div class="card__img">
+            <img :src="require(`@/assets/images/card_profile.png`)">
+          </div>
+          <div class="card__text">
+            <p class="card__text__title">팀명 <b> 아침마다 오 마이 GUT Morning</b></p>
+            <div class="card__info">
+              <div class="card__title card__title--challenge">챌린지</div>
+              <div class="card__num">64명</div>
+            </div> 
+            <p class="card__date">
+              <strong>전체기간</strong><br/>
+              2025.09.01 ~ 2025.09.30 / 70일
+            </p>
+            <p class="card__date">
+              <strong>2회차 진행</strong><br/>
+              2025.09.01 ~ 2025.09.30 / 70일
+            </p>
           </div>
         </div>
         <div class="card__comp">
           <img :src="require(`@/assets/images/challenge_comp_green.png`)">
         </div>
       </div>
+
+
     </div>
   </div>
 </template>

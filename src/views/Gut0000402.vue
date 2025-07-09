@@ -6,7 +6,7 @@
     <template v-slot:cont>
       <!-- 사진 찍기 버튼 -->
       <div>
-        <input type="file" accept = "image/*" id="takePicture" @change="onFileChange" capture="environment" hidden />
+        <input type="file" accept = "image/*" id="takePicture" @change="openCamera" capture="environment" hidden />
         <label for="takePicture">
           <div class="picture-btn">
             <div class="picture-btn-icon">
