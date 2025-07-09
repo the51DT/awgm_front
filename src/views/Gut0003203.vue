@@ -3,7 +3,6 @@
     <template v-slot:full>
       <div class="activity-content-area">
         <ContentHead title="획득한 배지 전체보기" :rightArea=true />
-        <!-- hasBadges == true일 시 획득한 배지 화면 출력 -->
         <div class="represent__pop">
           <div class="activity__area_badge-section">
             <div class="badge-box-wrap">
@@ -38,12 +37,6 @@ import BadgeDefault from "@/components/BadgeDefault.vue";
 
 export default {
   name: "Gut0003503",
-  props: {
-    hasBadges: {
-      type: Boolean,
-      default: true,
-    }
-  },   
   components: {
     ContentHead,
     PopupDefault,
