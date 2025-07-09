@@ -20,9 +20,26 @@
   </div>
 </template>
 
+<style>
+  p.desc__text{
+    font-size: 16px;
+    color: #666;
+  }
+  b.clear-day{
+    color: #000;
+  }
+  .clear-count{
+    font-size: 20px;
+  }
+</style>
 
 <script setup>
 import { ref, nextTick, onMounted } from "vue";
+
+const showDetail = ref(true) // true일 때만 두 번째 줄 보임
+const props = defineProps({
+  showDetail: Boolean
+})
 
 const selectedColor = ref("orange");
 const attrs = ref([
@@ -45,13 +62,22 @@ const addMessages = () => {
 
     const desc = document.createElement("div");
     desc.className = "desc";
-    // desc.innerHTML = `
+    // let descText = '<p>이번 달 나의 미션 인증 횟수 <strong class="clear-count">6</strong>회</p>';
+    // if(showDetail) {
+    //   descText = descText + '<p>전체 70일 중에 <span class="clear-day">28</span>일 인증 완료했습니다.</p>'
+    // }
+    // desc.innerHTML = descText;
+    // desc.innerHTML = ` 
     //   <p>이번 달 나의 미션 인증 횟수 <strong class="clear-count">6</strong>회</p>
-    //   <p>전체 70일 중에 <span class="clear-day">28</span>일 인증 완료했습니다.</p>
     // `;
-    desc.innerHTML = `
-      <p>이번 달 나의 미션 인증 횟수 <strong class="clear-count">6</strong>회</p>
-    `;
+
+    // ✅ 조건 분기
+    let descText = `<p class="desc__text">이번 달 나의 미션 인증 횟수 <strong class="clear-count">6</strong>회</p>`;
+    if (props.showDetail) {
+      descText += `<p class="desc__text">전체 70일 중에 <b class="clear-day">28</b>일 인증 완료했습니다.</p>`;
+    }
+    desc.innerHTML = descText;
+
     calendarTextWrap.appendChild(desc);
     titleWrapper.appendChild(calendarTextWrap);
 

@@ -212,6 +212,11 @@ export const menuRoutes = [
       meta: { layout: "none" },
     },
     {
+      text: "(pu)미션 인증 공유-Gut0000702",
+      path: "/(pu)미션 인증 공유-Gut0000702",
+      meta: { layout: "none" },
+    },
+    {
       text: "첼린지 이력보기-Gut00023",
       path: "/첼린지 이력보기-Gut00023",
       meta: { layout: "none" },

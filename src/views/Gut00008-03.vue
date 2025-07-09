@@ -53,7 +53,7 @@
       <div class="challenge__card--main__top">
         <div>
           <p class="font--c11 font--700 font--ls2" style="display: flex;">
-            나의 챌린지 보상 신호등 
+            나의 것모닝 구매 인증 정보
             <button class="traffic_reward_btn__open"> <img style="margin-left: 2px;" src="@/assets/images/icon_content_que_mark.svg" alt="나의 챌린지 보상 신호등 설명 툴팁 아이콘"/> </button>
             <div class="traffic_reward">
             <div class="traffic_reward_btn">
@@ -127,11 +127,11 @@
           <span> 것모닝 구매 완료 </span>
         </div> -->
       </div>
-      <p class="font--c66 font--ls1 mt-8">* 인증 여부의 경우 전일 기준으로 확인 가능합니다.</p>
+      <p class="font--c66 font--ls1 mt-8">* 것모닝 구매완료 여부는 직전일 기준으로 확인 가능합니다.</p>
     </div>
     <!-- calendar 영역 -->
     <div class="calendar">
-      <VCalendar>
+      <VCalendar :show-detail="true">
         <template v-slot:title>
           나의 챌린지 참여 현황
         </template>

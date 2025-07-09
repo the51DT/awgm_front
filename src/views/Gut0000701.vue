@@ -44,6 +44,9 @@
               <p class="card--img__text__title">누적 인증 횟수</p>
               <p class="card--img__text__num"><span>2</span>회</p>
             </div>
+            <div class="card--img__badge">
+              <BadgeDefault img="pin--crown.svg" />
+            </div>
             <p class="card--img__title"><span>팀장김웨이</span>님의<br />GUT Morning</p>
           </div>
         </div>
@@ -100,6 +103,7 @@ import CustomButton from "@/components/CustomButton.vue";
 import ContentHead from "@/components/ContentHead.vue";
 import PopupDefault from "@/components/PopupDefault.vue";
 import VCalendar from "../components/VCalendar.vue";
+import BadgeDefault from '@/components/BadgeDefault.vue'
 
 export default {
   name: "Gut_0000701",
@@ -108,6 +112,7 @@ export default {
     ContentHead,
     VCalendar,
     PopupDefault,
+    BadgeDefault,
   },
 };
 </script>

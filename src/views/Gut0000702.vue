@@ -13,12 +13,11 @@
           </div>
           <div class="card--img__text">
             <p class="card--img__text__date">2024.09.23 (금)</p>
-            <p class="card--img__text__title">나의 미션 인증 횟수</p>
+            <p class="card--img__text__title">누적 인증 횟수</p>
             <p class="card--img__text__num"><span>2</span>회</p>
           </div>
           <div class="btn_wrap">
             <button class="share-btn"></button>
-            <button class="replace-btn"></button>
           </div>
         </div>
         </div>
@@ -29,8 +28,8 @@
 
 <style scoped>
   .share-btn {
-    background: url('../assets/images/icon_share-fill.svg') no-repeat center/100%;
-    right: 64px;
+    background: url('../assets/images/icon_share.svg') no-repeat center/100%;
+    right: 16x;
   }
   .popup__box--close{
     top: 0;
@@ -52,7 +51,7 @@ import CustomButton from "@/components/CustomButton.vue";
 import layerClose from "@/plugins/common.js";
 
 export default {
-  name: "Gut0000405",
+  name: "Gut0000702",
   components: {
     PopupDefault,
     CustomButton,

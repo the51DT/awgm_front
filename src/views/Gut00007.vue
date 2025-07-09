@@ -6,16 +6,16 @@
       <img :src="require(`@/assets/images/challenge_calender.png`)">
       <div>
         <p class="challenge--main__not__title">챌린지 시작 <span class="font--green">D-104</span></p>
-        <p class="challenge--main__not__subtit"><span class="font--green font--800">GUT Morning Korea Challenge</span>이 <br class="mo-only"/>2025년 04월 01일에 시작 예정입니다.</p>
+        <p class="challenge--main__not__subtit"><span class="font--green font--800">GUT Morning Korea Challenge</span>이 <br />2025년 04월 01일에 시작 예정입니다.</p>
       </div>
-      <p>챌린지 참여를 위해, <br class="mo-only" />챌린지 시작 전 팀에 참여해주세요.</p>
+      <p>챌린지 참여를 위해, <br />챌린지 시작 전 팀에 참여해주세요.</p>
       <div class="challenge--main__not__box">
         <div>
-          <p class="font--c11 font--800">진행 일시</p>
+          <p class="font--c11 font--800">진행일시</p>
           <p class="font--c66">2025.04.01 ~ 2025.06.10 / <span class="font--c33 font--800">70</span>일</p>
         </div>
         <div>
-          <p class="font--c11 font--800">성공 조건</p>
+          <p class="font--c11 font--800">성공조건</p>
           <p class="font--c66">팀 인증 <span class="font--green font--800">80%</span> 이상</p>
         </div>
       </div>

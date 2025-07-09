@@ -6,7 +6,7 @@
       </object>
     </div>
     <div class="badge__name">
-      <span  v-if="show" class="badge__name_tag"> 대표배지 </span>
+      <span v-if="show" class="badge__name_tag"> 대표배지 </span>
       <p :class="pointColor"> <slot /> </p>
     </div>
   </div>

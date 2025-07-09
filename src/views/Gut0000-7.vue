@@ -2,7 +2,7 @@
   <div class="content-area">
     <ContentHead title="나의 인증 현황" :leftArea=true headType="ty02" />
     <div class="calendar">
-      <VCalendar />
+      <VCalendar :show-detail="false"/>
     </div>
     <div class="btn-area">
       <CustomButton>
@@ -16,6 +16,8 @@
 import VCalendar from "@/components/VCalendar.vue";
 import ContentHead from "@/components/ContentHead.vue";
 import CustomButton from "@/components/CustomButton.vue";
+
+
 
 export default {
   name: "LoginMain",

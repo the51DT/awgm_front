@@ -1,8 +1,8 @@
 <template>
   <!-- 뱃지 획득 시 팝업 -->
-  <!-- <AniBadge /> -->
+  <AniBadge />
 
-  <DashBoard :speed="currentSpeed" />
+  <!-- <DashBoard :speed="currentSpeed" /> -->
   
 </template>
 
