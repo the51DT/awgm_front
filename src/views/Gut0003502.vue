@@ -1,6 +1,6 @@
 <template>
   <!-- 대표배지 설정 -->
-  <PopupDefault>
+  <!-- <PopupDefault>
     <template v-slot:cont>
       <div class="getBadge">
         <BadgeDefault img="badge--happy_birthday.svg" pointColor="use-popup"> 나의 생일 </BadgeDefault>
@@ -14,10 +14,10 @@
         대표배지 설정
       </CustomButton>
     </template>
-  </PopupDefault>
+  </PopupDefault> -->
 
   <!-- 대표배지 설정 해제 -->
-  <!-- <PopupDefault>
+  <PopupDefault>
     <template v-slot:cont>
       <div class="getBadge">
         <BadgeDefault img="badge--happy_birthday.svg" :show="true" pointColor="use-popup"> 나의 생일 </BadgeDefault>
@@ -31,7 +31,7 @@
         대표배지 설정 해제
       </CustomButton>
     </template>
-  </PopupDefault> -->
+  </PopupDefault>
 
   <!-- 미획득 배지 선택 시 -->
   <!-- <PopupDefault>
