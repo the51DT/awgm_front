@@ -119,19 +119,8 @@
         <h5> 배지 활동 </h5>
         <p> 총 <span class="green"> 0개</span> 보유 </p>
       </div>
-      <!-- 대표 뱃지 없을 시 -->
-      <div class="represent__badge-wrap" v-if="hasRepresent">
-        <div class="represent__badge no-represent">
-          <p class="represent__badge-txt">획득한 배지에서 대표배지를 설정해주세요   </p>
-          <div class="btn">
-            <button type="button" class="btn-text" title="대표 배지 설정 "> 대표 배지 설정</button>
-            <button type="button" class="btn-modify" title="대표 배지 설정"><span class="blind">대표 배지 설정</span></button>
-          </div>
-        </div>
-        <p class="represent__badge-txt">아직 획득한 배지가 없어요 </p>
-      </div>
       <!--  대표 뱃지 있을 시 -->
-      <div class="represent__badge-wrap" v-else>
+      <div class="represent__badge-wrap">
         <div class="represent__badge">
           <BadgeDefault img="badge--happy_birthday.svg" pointColor="green">
             나의 생일
@@ -141,6 +130,17 @@
             <button type="button" class="btn-modify" title="대표 배지 설정"><span class="blind">대표 배지 설정</span></button>
           </div>
         </div>
+      </div>
+      <!-- 대표 뱃지 없을 시 -->
+      <div class="represent__badge-wrap">
+        <div class="represent__badge no-represent">
+          <p class="represent__badge-txt">획득한 배지에서 대표배지를 설정해주세요   </p>
+          <div class="btn">
+            <button type="button" class="btn-text" title="대표 배지 설정 "> 대표 배지 설정</button>
+            <button type="button" class="btn-modify" title="대표 배지 설정"><span class="blind">대표 배지 설정</span></button>
+          </div>
+        </div>
+        <p class="represent__badge-txt">아직 획득한 배지가 없어요 </p>
       </div>
 
       <div class="activity__area_badge-section">

@@ -10,10 +10,12 @@
       <p :class="pointColor"> <slot /> </p>
     </div>
   </div>
+
+  
 </template>
 
 <script>
-
+// <BadgeDefault img="이미지이름.svg" pointColor="white">
 
 export default {
   props: {
@@ -93,7 +95,7 @@ export default {
   }
 }
 
-// <BadgeDefault img="gold.svg" pointColor="gold-style">
+
 </script>
 
 <style>

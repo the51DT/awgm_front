@@ -234,8 +234,8 @@
             <h6> 연속인증 </h6>
           </div>
           <div class="badge-box-wrap">
-            <div class="badge-box"> <BadgeDefault img="badge__continuous_10.svg">10일 연속 인증</BadgeDefault></div>
-            <div class="badge-box"> <BadgeDefault img="badge__continuous_30.svg">30일 연속 인증</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge--mission_streak_10.svg">10일 연속 인증</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge--mission_streak_30.svg">30일 연속 인증</BadgeDefault></div>
           </div>
         </div>
 
@@ -244,7 +244,7 @@
             <h6> 챌린지 참여 </h6>
           </div>
           <div class="badge-box-wrap">
-            <div class="badge-box"> <BadgeDefault img="badge__participate_1.svg"> 것모닝코리아<br /> 챌린지 1회 성공</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge--earth_day.svg"> 것모닝코리아<br /> 챌린지 1회 성공</BadgeDefault></div>
           </div>
         </div>
 
@@ -253,8 +253,8 @@
             <h6> 팀장 </h6>
           </div>
           <div class="badge-box-wrap"> 
-            <div class="badge-box"> <BadgeDefault img="badge__iAmLeader.svg">팀장</BadgeDefault></div>
-            <div class="badge-box"> <BadgeDefault img="badge__talentedLeader.svg">팀장의 자질</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge--earth_day.svg">팀장</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge--earth_day.svg">팀장의 자질</BadgeDefault></div>
           </div>
         </div>
 
@@ -263,9 +263,9 @@
             <h6> 이벤트 뱃지 </h6>
           </div>
           <div class="badge-box-wrap"> 
-            <div class="badge-box"> <BadgeDefault img="badge__firstAttendance.svg">첫 인증</BadgeDefault></div>
-            <div class="badge-box"> <BadgeDefault img="badge__birthday.svg">나의 생일</BadgeDefault></div>
-            <div class="badge-box"> <BadgeDefault img="badge__welcomBack.svg">복귀왕</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge--mission_start.svg">첫 인증</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge--happy_birthday.svg">나의 생일</BadgeDefault></div>
+            <div class="badge-box"> <BadgeDefault img="badge--returning_hero.svg">복귀왕</BadgeDefault></div>
           </div>
         </div>
       </div>
