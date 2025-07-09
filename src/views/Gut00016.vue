@@ -109,6 +109,12 @@
   </div>
 </template>
 
+<style>
+  .my-page-wrap .profile-area.small .upload-label::after{
+    display: none;
+  }
+</style>
+
 <script>
 import ContentHead from "@/components/ContentHead.vue";
 
