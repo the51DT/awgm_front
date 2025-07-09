@@ -35,7 +35,11 @@
   </div>
   
 </template>
-
+<style>
+  .team-box-wrap .btn-area{
+    margin-bottom: 0;
+  }
+</style>
 
 <script>
 import ContentHead from "@/components/ContentHead.vue";

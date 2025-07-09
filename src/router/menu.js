@@ -224,11 +224,7 @@ export const menuRoutes = [
   ]),
 
   createMainMenu("04 나의 팀", "/나의 팀", MENU_TYPES.TEAM, [
-    {
-      text: "나의 팀 목록-Gut00009",
-      path: "/나의 팀 목록-Gut00009",
-      meta: { layout: "headerOnly" },
-    },
+
     {
       text: "나의 팀 정보(챌린지)-Gut00010",
       path: "/나의 팀 정보(챌린지)-Gut00010",
@@ -255,28 +251,33 @@ export const menuRoutes = [
       meta: { layout: "none" },
     },
     {
-      text: "팀 관리-Gut00012",
-      path: "/팀 관리-Gut00012",
+      text: "팀 관리(챌린지)-Gut00012",
+      path: "/팀 관리(챌린지)-Gut00012",
       meta: { layout: "none" },
     },
     {
-      text: "팀원인증현황(팀장)-Gut00013",
-      path: "/팀원인증현황(팀장)-Gut00013",
+      text: "팀 관리(상시)-Gut0001202",
+      path: "/팀 관리(상시)-Gut0001202",
       meta: { layout: "none" },
     },
     {
-      text: "팀원인증현황(팀원)-Gut00013-01",
-      path: "/팀원인증현황(팀원)-Gut00013-01",
+      text: "팀원인증현황 상시(팀장)-Gut00013",
+      path: "/팀원인증현황 상시(팀장)-Gut00013",
       meta: { layout: "none" },
     },
     {
-      text: "팀원인증현황(light 팀장)-Gut00013-02",
-      path: "/팀원인증현황(light 팀장)-Gut00013-02",
+      text: "팀원인증현황 상시(팀원)-Gut00013-01",
+      path: "/팀원인증현황 상시(팀원)-Gut00013-01",
       meta: { layout: "none" },
     },
     {
-      text: "팀원인증현황(light 팀원)-Gut00013-03",
-      path: "/팀원인증현황(light 팀원)-Gut00013-03",
+      text: "팀원인증현황 상시(light 팀장)-Gut00013-02",
+      path: "/팀원인증현황 상시(light 팀장)-Gut00013-02",
+      meta: { layout: "none" },
+    },
+    {
+      text: "팀원인증현황 상시(light 팀원)-Gut00013-03",
+      path: "/팀원인증현황 상시(light 팀원)-Gut00013-03",
       meta: { layout: "none" },
     },
     {
@@ -305,8 +306,8 @@ export const menuRoutes = [
       meta: { layout: "none" },
     },
     {
-      text: "팀만들기-Gut00014",
-      path: "/팀만들기-Gut00014",
+      text: "팀만들기(챌린지)-Gut00014",
+      path: "/팀만들기(챌린지)-Gut00014",
       meta: { layout: "none" },
     },
     {
@@ -314,16 +315,16 @@ export const menuRoutes = [
       path: "/팀만들기(상시)-Gut00014-02",
       meta: { layout: "none" },
     },
-    {
-      text: "전체 팀원 보기-Gut00018",
-      path: "/전체 팀원 보기-Gut00018",
-      meta: { layout: "none" },
-    },
-    {
-      text: "전체 팀원 보기 강퇴 상세팝업-Gut00001801",
-      path: "/전체 팀원 보기 강퇴 상세팝업-Gut00001801",
-      meta: { layout: "none" },
-    },
+    // {
+    //   text: "전체 팀원 보기-Gut00018",
+    //   path: "/전체 팀원 보기-Gut00018",
+    //   meta: { layout: "none" },
+    // },
+    // {
+    //   text: "전체 팀원 보기 강퇴 상세팝업-Gut00001801",
+    //   path: "/전체 팀원 보기 강퇴 상세팝업-Gut00001801",
+    //   meta: { layout: "none" },
+    // },
     {
       text: "팀원 상세(챌린지)-Gut00032",
       path: "/팀원 상세(챌린지)-Gut00032",
@@ -340,19 +341,29 @@ export const menuRoutes = [
       meta: { layout: "none" },
     },
     {
-      text: "나의 팀 목록 초대받은팀-Gut00034",
-      path: "/나의 팀 목록 초대받은팀-Gut00034",
+      text: "나의 팀 목록-Gut00009",
+      path: "/나의 팀 목록-Gut00009",
       meta: { layout: "headerOnly" },
     },
     {
-      text: "(PU)나의 팀 목록 초대받은팀-Gut0003401",
-      path: "/(PU)나의 팀 목록 초대받은팀-Gut0003401",
+      text: "나의 팀 목록 (초대받은팀)-Gut00034",
+      path: "/나의 팀 목록 (초대받은팀)-Gut00034",
+      meta: { layout: "headerOnly" },
+    },
+    {
+      text: "(PU) 가입하지 않은 팀이 있을 시-Gut0003401",
+      path: "/(PU) 가입하지 않은 팀이 있을 시-Gut0003401",
       meta: { layout: "none" },
     },
     {
       text: "나의 팀 목록 초대받은팀 (없을 시) -Gut0003402",
       path: "/나의 팀 목록 초대받은팀 (없을 시)-Gut0003402",
       meta: { layout: "headerOnly" },
+    },
+    {
+      text: "(PU) ABO 인증회원 아닐 시-Gut0003403",
+      path: "/(PU) ABO 인증회원 아닐 시-Gut0003403",
+      meta: { layout: "none" },
     },
     {
       text: "나의 팀 목록 초대한 팀원 보기 (전체)-Gut00037",

@@ -524,6 +524,9 @@
       }
       .badge__wrap{
         margin-bottom: 0;
+        img{
+          width: 80px;
+        }
       }
     }
     .team-detail-pin:first-child{
@@ -536,9 +539,9 @@
       content:"";
       width: 2px;
       height: 100px;
-      background: rgba(216, 216, 216, 1);
+      background: #D8D8D8;
       position: absolute;
-      right: 0;
+      right: 50%;
     }
     .team-detail-pin:only-child:after{
       content:"";

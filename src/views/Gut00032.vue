@@ -19,23 +19,23 @@
         </div>
         <div class="card card--d8border card--p20 card--shadowc2">
           <!-- 것모닝 핀/뱃지 둘 다 보유 시 -->
-          <!-- <div class="team-detail">
+          <div class="team-detail">
             <div class="team-detail-pin">
               <p class="title"> 것모닝핀</p>
-              <BadgeDefault img="badge__dia.png"> 에메랄드 </BadgeDefault>
+              <BadgeDefault img="pin--diamond.svg"> 에메랄드 </BadgeDefault>
             </div>
             <div class="team-detail-pin">
               <p class="title"> 대표 배지</p>
-              <BadgeDefault img="badge__dia.png"> 새해 첫날 </BadgeDefault>
+              <BadgeDefault img="badge--happy_new_year.svg"> 새해 첫날 </BadgeDefault>
             </div>
-          </div> -->
+          </div>
           <!-- 것모닝 핀/뱃지 둘 중 하나만 보유 시 -->
-          <div class="team-detail">
+          <!-- <div class="team-detail">
             <div class="team-detail-pin">
               <p class="title"> 것모닝핀</p>
               <BadgeDefault img="pin--diamond.svg" width="w-80" pointColor="use-profile"> 새해 첫날 </BadgeDefault>
             </div>
-          </div>
+          </div> -->
 
           <div class="card__top">
             <div class="card__text__list manage">
@@ -74,7 +74,7 @@
 
         <!-- calendar 영역 -->
         <div class="calendar">
-          <VCalendar />
+          <VCalendar :show-detail="true" />
         </div>
       </div>
     </div>

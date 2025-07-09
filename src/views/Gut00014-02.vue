@@ -102,6 +102,19 @@
   </div>
 </template>
 
+<style scoped>
+  .btn-area{
+    position: static;
+    padding: 0; 
+    margin: 0;
+    margin-bottom: 20px;
+    gap: 8px;
+  }
+  .profile-area{
+    margin-bottom: 44px;
+  }
+</style>
+
 <script>
 import ContentHead from "@/components/ContentHead.vue";
 import InputField from "@/components/InputField.vue";

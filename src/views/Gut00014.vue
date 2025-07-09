@@ -51,7 +51,7 @@
             <p class="desc">2025.02.01 ~ 2025.02.28</p>
           </div>
           <!-- 기간 : type2 -->
-          <div class="form-item">
+          <!-- <div class="form-item">
             <InputField type="date" title="기간" :date="[
               { value: '2024-09-30', disabled: false },
               { value: '2024-09-30', disabled: false, placeholder: '선택' },
@@ -66,6 +66,16 @@
                 },
               ]" />
             </div>
+          </div> -->
+          <div class="form-item">
+            <h5 class="title">성공조건</h5>
+            <p class="desc">
+              <span class="font--800 font--yellow">80% 이상</span>
+            </p>
+          </div>
+          <div class="form-item">
+            <h5 class="title">참여 가능 팀원</h5>
+            <p class="desc">5 ~ 99</p>
           </div>
           <!-- ABC 수령 case -->
           <div class="form-item">
@@ -100,20 +110,14 @@
           <!-- //ABC 수령 case -->
           <!-- 바우처 case -->
           <div class="form-item">
-            <h5 class="title">성공조건</h5>
-            <p class="desc">
-              <span class="font--800 font--yellow">80% 이상</span>
-            </p>
-          </div>
-          <div class="form-item">
             <h5 class="title">참여 가능 팀원</h5>
             <p class="desc">5 ~ 99</p>
           </div>
           <div class="form-item">
             <h5 class="title">보상</h5>
-            <p class="desc">$바우처명$ 바우처</p>
+            <p class="desc">$보상명$ 바우처</p>
           </div>
-          <!-- 바우처 case -->
+          <!-- //바우처 수령 case -->
         </div>
       </div>
       <div class="btn-area">
@@ -122,6 +126,19 @@
     </div>
   </div>
 </template>
+
+<style scoped>
+  .btn-area{
+    position: static;
+    padding: 0; 
+    margin: 0;
+    margin-bottom: 20px;
+    gap: 8px;
+  }
+  .profile-area{
+    margin-bottom: 44px;
+  }
+</style>
 
 <script>
 import ContentHead from "@/components/ContentHead.vue";

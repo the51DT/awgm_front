@@ -20,6 +20,8 @@
   </div>
 </template>
 
+<!-- <VCalendar :show-detail="true">  -->
+
 <style>
   p.desc__text{
     font-size: 16px;

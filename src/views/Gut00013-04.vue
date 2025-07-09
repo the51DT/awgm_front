@@ -6,7 +6,7 @@
       <div class="tag_cont on">
         <div class="list-top-wrap">
           <div class="filter">
-            <InputField type="select" :options="['2024.09', '2024.08', '2024.07']" active v-model="selectedDate"/>
+            <InputField type="select" :options="['챌린지 3회차', '챌린지 3회차', '챌린지 3회차']" active v-model="selectedDate"/>
             <InputField type="select" v-model="selectedMember" active
               :options="['전체', 'ABO 미인증 팀원', '오늘 인증 완료','오늘 미인증 팀원', '80% 이상 달성', '80% 미만 달성']" />
           </div>
@@ -228,7 +228,7 @@ export default {
       leftArea: "",
       rightArea: "",
       isActive : false,
-      selectedDate: '2024.09',
+      selectedDate: '챌린지 3회차',
       selectedMember :'전체'
     };
   },

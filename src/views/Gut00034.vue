@@ -14,7 +14,7 @@
         <p class="text__desc mt8"> 팀 현황을 확인해보세요</p>
       </div>
       <div class="tag--wrap">
-        <button type="button" class="tag tag-gray">진행중</button>
+        <button type="button" class="tag">진행중</button>
         <button type="button" class="tag tag-gray">진행종료</button>
         <button type="button" class="tag on">초대받은 팀 <span> 23 </span></button>
       </div>
@@ -208,7 +208,7 @@
                 <img :src="require(`@/assets/images/card_profile.png`)">
               </div>
               <div class="card__text">
-                <p class="card__text__title"> 우리몸은 GUT Morning을 원한다!</p>
+                <p class="card__text__title"> <b>우리몸은 GUT Morning을 원한다! </b></p>
                 <div class="card__info">
                   <div class="card__title card__title--challenge">챌린지</div>
                   <div class="card__team--nick">팀장닉네임</div>
@@ -227,7 +227,7 @@
                 <img :src="require(`@/assets/images/card_profile.png`)">
               </div>
               <div class="card__text">
-                <p class="card__text__title"> 우리몸은 GUT Morning을 원한다!</p>
+                <p class="card__text__title"> <b>우리몸은 GUT Morning을 원한다! </b></p>
                 <div class="card__info">
                   <div class="card__title card__title--always">상시</div>
                   <div class="card__team--nick">팀장닉네임</div>
