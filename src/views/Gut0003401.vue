@@ -2,16 +2,13 @@
   <PopupDefault>
     <template v-slot:cont>
       <div class="popup__box--middle">
-        아직 가입하지 않은 팀이 있습니다. <br />
-          확인하시겠습니까?
+        $가장 최근 초대받은 팀 명$ 외 $n$개의 <br />
+        챌린지팀에 초대 받았습니다.
       </div>
 
     </template>
     <template v-slot:btn>
-      <div class="btn-area ty03">
-        <CustomButton size="sm" color="light">다시 보지 않기</CustomButton>
-        <CustomButton size="sm">확인하러 가기</CustomButton>
-      </div>
+      <CustomButton size="md">확인하러 가기</CustomButton>
     </template>
   </PopupDefault> 
 </template>

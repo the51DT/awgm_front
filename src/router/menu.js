@@ -321,8 +321,8 @@ export const menuRoutes = [
     //   meta: { layout: "none" },
     // },
     {
-      text: "전체 팀원 보기 강퇴 상세팝업-Gut00001801",
-      path: "/전체 팀원 보기 강퇴 상세팝업-Gut00001801",
+      text: "(pu) 전체 팀원 보기 강퇴 상세팝업-Gut00001801",
+      path: "/(pu) 전체 팀원 보기 강퇴 상세팝업-Gut00001801",
       meta: { layout: "none" },
     },
     {
@@ -356,8 +356,8 @@ export const menuRoutes = [
       meta: { layout: "headerOnly" },
     },
     {
-      text: "(PU) 가입하지 않은 팀이 있을 시-Gut0003401",
-      path: "/(PU) 가입하지 않은 팀이 있을 시-Gut0003401",
+      text: "(PU) 팀 초대 알림-Gut0003401",
+      path: "/(PU) 팀 초대 알림-Gut0003401",
       meta: { layout: "none" },
     },
     {
