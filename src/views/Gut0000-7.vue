@@ -4,7 +4,7 @@
     <div class="calendar">
       <VCalendar :show-detail="false"/>
     </div>
-    <div class="btn-area">
+    <div class="btn-area ty05">
       <CustomButton>
         인증 공유하기
       </CustomButton>
