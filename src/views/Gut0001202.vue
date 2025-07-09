@@ -65,6 +65,9 @@
     margin-bottom: 0;
     gap: 8px;
   }
+  .profile-area{
+    margin-bottom: 44px;
+  }
 </style>
 
 <script>
