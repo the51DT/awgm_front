@@ -52,7 +52,7 @@
         </div>
         <div class="card card--border challenge__calendar--card">
           <div class="calendar">
-            <VCalendar>
+            <VCalendar :show-detail="true">
               <template v-slot:title>
                 나의 챌린지 참여 현황
               </template>
