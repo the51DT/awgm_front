@@ -320,11 +320,11 @@ export const menuRoutes = [
     //   path: "/전체 팀원 보기-Gut00018",
     //   meta: { layout: "none" },
     // },
-    // {
-    //   text: "전체 팀원 보기 강퇴 상세팝업-Gut00001801",
-    //   path: "/전체 팀원 보기 강퇴 상세팝업-Gut00001801",
-    //   meta: { layout: "none" },
-    // },
+    {
+      text: "전체 팀원 보기 강퇴 상세팝업-Gut00001801",
+      path: "/전체 팀원 보기 강퇴 상세팝업-Gut00001801",
+      meta: { layout: "none" },
+    },
     {
       text: "팀원 상세(챌린지)-Gut00032",
       path: "/팀원 상세(챌린지)-Gut00032",
@@ -338,6 +338,11 @@ export const menuRoutes = [
     {
       text: "팀원 상세(자녀)-Gut0003202",
       path: "/팀원 상세(자녀)-Gut0003202",
+      meta: { layout: "none" },
+    },
+    {
+      text: "획득한 배지 전체보기-Gut0003203",
+      path: "/획득한 배지 전체보기-Gut0003203",
       meta: { layout: "none" },
     },
     {

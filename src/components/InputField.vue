@@ -51,7 +51,7 @@
           :max="date[0].max" :disabled="date[0].disabled" required>
         <span>~</span>
         <input type="date" class="inputField__input inputField__date" :defaultValue="date[1].value" :min="date[1].min"
-          :max="date[1].max" :disabled="date[1].disabled" required>
+          :max="date[1].max" :disabled="date[1].disabled" required data-placeholder="선택">
       </div>
       <!-- 파일 / 케이스 2개 작업중 -->
       <input v-else-if="type === 'file'" :type="type" class="inputField__file" :id="id" :name="name" />
@@ -84,6 +84,21 @@
     </p>
   </div>
 </template>
+
+<style>
+    input[type='date']::before {
+    content: attr(data-placeholder);
+    width: 100%;
+    position: absolute;
+    background: white;
+  }
+  input[type='date']:focus::before,
+  input[type='date']:valid::before {
+    display: none;
+  }
+
+  
+</style>
 
 <script>
 export default {

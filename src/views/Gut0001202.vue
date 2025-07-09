@@ -36,7 +36,7 @@
               <InputField type="date" title="기간"
                 :date="[
                   {value: '2024-02-14', disabled: true},
-                  {disabled: false, placeholder: '선택'},
+                  {disabled: false, placeholder: '선택' },
                 ]" />
               <div class="form-item--sub">
                 <InputField type="checkbox" name="checkbox1"
