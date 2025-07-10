@@ -158,7 +158,7 @@ function posValue(list) {
   list.forEach((el) => {
     const elAttr = el.getAttribute("data-left");
     const attrNum = elAttr.replace("%", "")
-    if (Number(attrNum) >= 60) {
+    if (Number(attrNum) >= 10) {
       el.classList.add("ty02")
     } else {
       el.classList.remove("ty02");
