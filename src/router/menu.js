@@ -431,8 +431,8 @@ export const menuRoutes = [
       meta: { layout: "headerOnly", mypage: true },
     },
     {
-      text: "ABO/Member 회원인증 팝업-Gut0001501",
-      path: "/ABO/Member 회원인증 팝업-Gut0001501",
+      text: "(pu)ABO/Member 회원인증 팝업-Gut0001501",
+      path: "/(pu)ABO/Member 회원인증 팝업-Gut0001501",
       meta: { layout: "" },
     },
     {
