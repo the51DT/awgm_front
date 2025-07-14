@@ -1,17 +1,17 @@
 <template>
   <div class="badge">
     <div class="badge__wrap" :class="width">
-      <object type="image/svg"> 
+      <object type="image/svg">
         <img :src="imageSrc" alt="badge" :style="imgStyle" />
       </object>
     </div>
     <div class="badge__name">
       <span v-if="show" class="badge__name_tag"> 대표배지 </span>
-      <p :class="pointColor"> <slot /> </p>
+      <p :class="pointColor">
+        <slot />
+      </p>
     </div>
   </div>
-
-  
 </template>
 
 <script>
@@ -31,7 +31,7 @@ export default {
       type: Boolean,
       default: false
     },
-    width:{
+    width: {
       type: String,
       default: ''
     },
@@ -56,9 +56,10 @@ export default {
       };
     }
   },
-  methods:{
+  methods: {
+    // 배지 이미지 이름마다 shadow값 지정
     getShadowColor(img) {
-      if (img.includes('beginner') || img.includes('mission_streak') ) return '#1EC159';
+      if (img.includes('beginner') || img.includes('mission_streak')) return '#1EC159';
       if (img.includes('rookie') || img.includes('gold')) return '#FF8D2F';
       if (img.includes('bronze')) return '#B9876E';
       if (img.includes('silver')) return '#9DACAF';
@@ -70,7 +71,7 @@ export default {
       if (img.includes('founders_crown_ambassador')) return '#FF4999';
       if (img.includes('crown')) return '#A34EFF';
       if (img.includes('figure')) return '#415AFD';
-      if (img.includes('amway')) return '#F79C22';
+      if (img.includes('amway')) return '#B547FF';
       if (img.includes('new_year')) return '#F98D18';
       if (img.includes('chuseok')) return '#3578FF';
       if (img.includes('mission_start')) return '#FFB80C';
@@ -88,9 +89,22 @@ export default {
       if (img.includes('winter')) return '#708EBB';
       if (img.includes('merry_christmas')) return '#F67171';
       if (img.includes('best_teammate')) return '#F14691';
-      if (img.includes('family_power')) return '#74F158';
+      if (img.includes('family_duo')) return '#FF9797';
+      if (img.includes('big_family')) return '#96AFFF';
+      if (img.includes('challenge_complete_1')) return '#636FE6';
+      if (img.includes('challenge_complete_2')) return '#C98AE2';
+      if (img.includes('challenge_perfect') || img.includes('challenge_beginner')) return '#51DFD8';
+      if (img.includes('challenge_final_sprint')) return '#00FFAA';
+      if (img.includes('self_starter')) return '#FF968C';
+      if (img.includes('new_leader')) return '#FFAD73';
+      if (img.includes('proven_leader')) return '#7BE81D';
+      if (img.includes('inspiring_leader')) return '#59F4BE';
+      if (img.includes('elite_leader')) return '#539DFF';
+      if (img.includes('ultimate_leader')) return '#8361FF';
+      if (img.includes('flawless_leader')) return '#FF80AA';
 
-      return '#000000'; // fallback
+
+      return '#000000';
     }
   }
 }
@@ -98,6 +112,4 @@ export default {
 
 </script>
 
-<style>
-
-</style>
+<style></style>
