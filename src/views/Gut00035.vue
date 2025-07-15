@@ -290,7 +290,7 @@
             <BadgeDefault img="badge--event_figure_jayVanAndel.svg">제이 벤 엔델 탄생일</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--amway_global.svg">한국암웨이 창립기념일 </BadgeDefault>
+            <BadgeDefault img="badge--amway_korea.svg">한국암웨이 창립기념일 </BadgeDefault>
           </div>
           <div class="badge-box">
             <BadgeDefault img="badge--amway_global.svg">파운더스데이 </BadgeDefault>
@@ -305,10 +305,10 @@
             <BadgeDefault img="badge--mission_start.svg">첫 인증</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--family_duo.svg">첫 인증</BadgeDefault>
+            <BadgeDefault img="badge--family_duo.svg">2대 것모너</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--big_family.svg">2대 것모너</BadgeDefault>
+            <BadgeDefault img="badge--big_family.svg">다둥이</BadgeDefault>
           </div>
           <div class="badge-box">
             <BadgeDefault img="badge--family_day.svg">패밀리데이</BadgeDefault>
@@ -327,6 +327,9 @@
           </div>
           <div class="badge-box">
             <BadgeDefault img="badge--early_bird.svg">얼리 것모너</BadgeDefault>
+          </div>
+          <div class="badge-box">
+            <BadgeDefault img="badge--brunch_lover.svg">브런치 것모너</BadgeDefault>
           </div>
           <div class="badge-box">
             <BadgeDefault img="badge--womens_day.svg">세계 여성의날</BadgeDefault>

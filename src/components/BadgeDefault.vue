@@ -59,6 +59,7 @@ export default {
   methods: {
     // 배지 이미지 이름마다 shadow값 지정
     getShadowColor(img) {
+      if (img.includes('challenge_perfect') || img.includes('challenge_beginner')) return '#51DFD8';
       if (img.includes('beginner') || img.includes('mission_streak')) return '#1EC159';
       if (img.includes('rookie') || img.includes('gold')) return '#FF8D2F';
       if (img.includes('bronze')) return '#B9876E';
@@ -71,7 +72,8 @@ export default {
       if (img.includes('founders_crown_ambassador')) return '#FF4999';
       if (img.includes('crown')) return '#A34EFF';
       if (img.includes('figure')) return '#415AFD';
-      if (img.includes('amway')) return '#B547FF';
+      if (img.includes('amway_korea')) return '#F79C22';
+      if (img.includes('amway_global')) return '#B547FF';
       if (img.includes('new_year')) return '#F98D18';
       if (img.includes('chuseok')) return '#3578FF';
       if (img.includes('mission_start')) return '#FFB80C';
@@ -89,11 +91,11 @@ export default {
       if (img.includes('winter')) return '#708EBB';
       if (img.includes('merry_christmas')) return '#F67171';
       if (img.includes('best_teammate')) return '#F14691';
+      if (img.includes('family_power')) return '#74F158';
       if (img.includes('family_duo')) return '#FF9797';
       if (img.includes('big_family')) return '#96AFFF';
       if (img.includes('challenge_complete_1')) return '#636FE6';
       if (img.includes('challenge_complete_2')) return '#C98AE2';
-      if (img.includes('challenge_perfect') || img.includes('challenge_beginner')) return '#51DFD8';
       if (img.includes('challenge_final_sprint')) return '#00FFAA';
       if (img.includes('self_starter')) return '#FF968C';
       if (img.includes('new_leader')) return '#FFAD73';
@@ -102,6 +104,7 @@ export default {
       if (img.includes('elite_leader')) return '#539DFF';
       if (img.includes('ultimate_leader')) return '#8361FF';
       if (img.includes('flawless_leader')) return '#FF80AA';
+      if (img.includes('brunch_lover')) return '#A1D7F7';
 
 
       return '#000000';
