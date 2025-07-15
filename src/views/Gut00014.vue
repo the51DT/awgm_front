@@ -83,6 +83,10 @@
             <p class="desc">$보상명$</p>
           </div>
           <div class="form-item">
+            <h5 class="title">바우처명</h5>
+            <p class="desc">없을 경우 ‘-’ 처리</p>
+          </div>
+          <div class="form-item">
             <h5 class="title">보상수령방법 <span>(팀 생성 이후 변경불가)</span></h5>
             <div class="radio-wrap">
               <InputField type="radio" title="" name="radio2" :radio="[
@@ -128,16 +132,17 @@
 </template>
 
 <style scoped>
-  .btn-area{
-    position: static;
-    padding: 0; 
-    margin: 0;
-    margin-bottom: 20px;
-    gap: 8px;
-  }
-  .profile-area{
-    margin-bottom: 44px;
-  }
+.btn-area {
+  position: static;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  gap: 8px;
+}
+
+.profile-area {
+  margin-bottom: 44px;
+}
 </style>
 
 <script>

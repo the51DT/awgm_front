@@ -27,13 +27,14 @@
 
 .content-area {
   flex: 1 1 auto;
-  .btn-area.ty05{
+
+  .btn-area.ty05 {
     position: absolute;
     bottom: 20px;
     width: 100%;
     max-width: 500px;
     padding: 0 20px;
-    margin: 0 -20px 
+    margin: 0 -20px
   }
 }
 
@@ -51,6 +52,7 @@
   padding: 20px 32px 0 32px;
   min-height: 32px;
   position: relative;
+
   &.ty02 {
     position: fixed;
     top: 0;
@@ -69,11 +71,13 @@
     background: #f5f5f5;
     color: #111;
   }
-  &.bgGreen{
+
+  &.bgGreen {
     background: #169E4A;
     color: #fff;
   }
-  &.bgWhite{
+
+  &.bgWhite {
     background: #fff;
     color: #111;
   }
@@ -119,17 +123,19 @@
         justify-content: flex-end;
         gap: 16px;
         padding-right: 20px;
+
         button {
           display: flex;
           align-items: center;
         }
       }
 
-      &__sort{
+      &__sort {
         position: relative;
         padding-right: 20px;
-        .sort{
-          &__btn-wrap{
+
+        .sort {
+          &__btn-wrap {
             background: #111;
             border-radius: 12px;
             display: flex;
@@ -137,16 +143,19 @@
             align-items: center;
             padding: 2px;
           }
-          &__drop-down-list{
+
+          &__drop-down-list {
             position: absolute;
             width: 150px;
             top: 40px;
             right: 20px;
-            ul{
+
+            ul {
               border: 1px solid #434343;
               background: #fff;
               box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.06);
-              li{
+
+              li {
                 text-align: right;
                 padding: 4px 8px;
                 cursor: pointer;
@@ -156,7 +165,8 @@
                 letter-spacing: -0.5px;
                 color: #111;
               }
-              li:hover{
+
+              li:hover {
                 background: #1967d2;
                 color: #fff;
               }
@@ -167,6 +177,7 @@
 
       .invite_btn {
         position: relative;
+
         &__pop {
           display: none;
           position: absolute;
@@ -177,9 +188,11 @@
           padding: 26px 38px 16px 20px;
           background: url(../images/speech_box_s.svg) no-repeat center/100%;
           z-index: 2;
+
           &.on {
             display: block;
           }
+
           &__close {
             position: absolute;
             top: 26px;
@@ -189,7 +202,8 @@
             background-image: url(../images/icon_close_white.svg);
             background-size: contain;
           }
-          & > span {
+
+          &>span {
             font-size: 13px;
             font-weight: 800;
             line-height: 24px;
@@ -283,7 +297,7 @@
       color: #169e4a;
     }
 
-    small{
+    small {
       font-weight: 500;
       color: #169e4a;
     }
@@ -329,7 +343,7 @@
           width: 1px;
           display: none;
 
-          & + label {
+          &+label {
             cursor: pointer;
             font-size: 13px;
             font-weight: 500;
@@ -353,7 +367,7 @@
             }
           }
 
-          &:checked + label {
+          &:checked+label {
             color: #f79c22;
 
             &::before {
@@ -423,7 +437,7 @@
 }
 
 .btn {
-  &--icon{
+  &--icon {
     border: 2px solid #d8d8d8;
     border-radius: 16px;
     display: flex;
@@ -432,12 +446,14 @@
     padding: 6px;
     width: 40px;
     height: 40px;
-    img{
+
+    img {
       width: 28px;
       height: 28px;
       max-width: none;
     }
   }
+
   &--text {
     color: #111;
     font-size: 12px;
@@ -572,7 +588,7 @@
   &.ty-chk.on {
     span {
       &:before {
-        background: url(@/assets/images/checkbox_arrow_fill.svg) center/20px ;
+        background: url(@/assets/images/checkbox_arrow_fill.svg) center/20px;
       }
     }
   }
@@ -697,7 +713,7 @@
         border-radius: 32px;
       }
 
-      .certify-badge.on{
+      .certify-badge.on {
         overflow: hidden;
       }
 
@@ -730,6 +746,7 @@
       background-color: #fff;
       position: relative;
       overflow: hidden;
+      box-shadow: 0px 8px 16px 0px #0000000F;
     }
 
     &-icon+label {
@@ -848,7 +865,8 @@
 
     .desc {
       text-align: center;
-      .clear-count{
+
+      .clear-count {
         color: #169E4A;
       }
     }
@@ -1177,7 +1195,7 @@
 /* 프로필 이미지 컴포넌트 */
 .profile_img {
   &__info {
-    .user__tit{
+    .user__tit {
       font-size: 11px;
       font-weight: 800;
       line-height: 16px;
@@ -1191,16 +1209,20 @@
       text-align: center;
       margin-top: 4px;
     }
+
     .user_img-wrap {
       width: fit-content;
+
       &.on-flag {
         position: relative;
         padding: 4px 4px 0 0;
       }
+
       &.on-flag:before {
         top: 3px;
         right: 3px;
       }
+
       &.leaderOn::before {
         content: '';
         display: inline-block;
@@ -1213,21 +1235,26 @@
         right: 0;
         z-index: 10;
       }
+
       .user_img {
         border-radius: 16px;
         overflow: hidden;
         // width: 100%;
         // height: auto;
-        width: 56px; height: 56px;
+        width: 56px;
+        height: 56px;
         position: relative;
+
         img {
           width: 100%;
           object-fit: cover;
         }
       }
-      .certify-badge{
+
+      .certify-badge {
         position: absolute;
       }
+
       .certify-badge.on::before {
         content: "";
         display: inline-block;
@@ -1257,6 +1284,7 @@
   font-size: 11px;
   line-height: 16px;
   letter-spacing: -0.5px;
+
   &.badge--abo {
     background-color: #FFE6EE;
     color: #E42864;
@@ -1276,31 +1304,38 @@
 /* expansion Panel */
 .panel {
   transition: opacity 0.1s ease, max-height 0.3s ease;
-  &--title{
+
+  &--title {
     cursor: pointer;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 2px;
     color: #666;
-    p{
+
+    p {
       font-weight: 800;
       font-size: 18px;
       line-height: 24px;
       letter-spacing: -0.5px;
       text-align: center;
     }
-    img{
-      width: 24px; height: 24px;
+
+    img {
+      width: 24px;
+      height: 24px;
     }
   }
-  &--content{
+
+  &--content {
     padding: 12px 0 0 0;
     background: #fff;
     position: relative;
     margin-top: 10px;
   }
-  &--content::after, &--content::before{
+
+  &--content::after,
+  &--content::before {
     content: "";
     position: absolute;
     display: inline-block;
@@ -1309,35 +1344,43 @@
     background: #E5E5E5;
     top: 0;
   }
-  &--content::before{
+
+  &--content::before {
     left: -20px;
   }
-  &--content::after{
+
+  &--content::after {
     right: -20px;
   }
 }
 
 /* BadgeDefault */
-.badge{
+.badge {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  &__wrap{
-    object, img {
+
+  &__wrap {
+
+    object,
+    img {
       image-rendering: optimizeQuality;
     }
-    &.w-80{
+
+    &.w-80 {
       width: 84px;
       height: 84px;
     }
   }
-  &__name{
+
+  &__name {
     display: flex;
     justify-items: center;
     align-items: center;
-    &_tag{
+
+    &_tag {
       color: #F79C22;
       font-weight: 800;
       font-size: 11px;
@@ -1346,7 +1389,8 @@
       padding: 2px 6px;
       border: 1px solid #F79C22;
     }
-    p{
+
+    p {
       font-weight: 500;
       font-size: 13px;
       line-height: 19.5px;
@@ -1356,24 +1400,29 @@
       // padding: 0 18px;
       word-break: keep-all;
       color: #111;
-      &.white{
+
+      &.white {
         color: #fff;
       }
-      &.lock{
+
+      &.lock {
         color: #666666;
       }
-      &.green{
+
+      &.green {
         color: #357300;
         font-weight: 800;
       }
-      &.use-profile{
+
+      &.use-profile {
         color: #666666;
         font-weight: 500;
         font-size: 14px;
         line-height: 24px;
         margin-top: 4px;
       }
-      &.use-popup{
+
+      &.use-popup {
         font-weight: 800 !important;
         padding: 0;
         margin: 0;
@@ -1389,29 +1438,32 @@
 
 /* 뱃지 / 핀레벨 획득 팝업 */
 @keyframes sizeUp {
-  0%{
+  0% {
     transform: scale(0);
   }
-  90%{
+
+  90% {
     transform: scale(110%);
   }
-  100%{
+
+  100% {
     transform: scale(100%);
   }
 }
 
-@keyframes fadeUp{
-  0%{
+@keyframes fadeUp {
+  0% {
     opacity: 0;
     transform: translateY(15px);
   }
-  100%{
+
+  100% {
     opacity: 1;
     transform: translateY(0px);
   }
 }
 
-.popup--badge{
+.popup--badge {
   margin: 0 -20px;
   padding: 0 20px;
   max-width: 500px;
@@ -1424,65 +1476,78 @@
   top: 0;
   padding-top: 150px;
 
-  .badge-wrap{
+  .badge-wrap {
     color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
-    .animation_bg{
+
+    .animation_bg {
       width: 100%;
       height: 100vh;
       position: absolute;
       border: 1px solid red;
     }
-    h3{
+
+    h3 {
       font-size: 40px;
     }
-    .badge{
+
+    .badge {
       margin-top: 10px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      img{
+
+      img {
         width: 50%;
       }
-      .badge-name{
+
+      .badge-name {
         color: #76c734;
         margin-top: 4px;
       }
     }
-    .popup-message{
+
+    .popup-message {
       text-align: center;
       margin-top: 16px;
-      p:first-child{
+
+      p:first-child {
         margin-bottom: 4px;
       }
     }
   }
-  .btn-wrap{
+
+  .btn-wrap {
     width: 100%;
     position: fixed;
     bottom: 40px;
     margin: 0 -20px;
     padding: 0 20px;
   }
-  .close-btn{
-    width: 20px; height: 20px;
+
+  .close-btn {
+    width: 20px;
+    height: 20px;
     position: fixed;
     top: 25px;
     right: 20px;
-    img{
+
+    img {
       width: 100%;
     }
   }
 }
-.animation_bg{
+
+.animation_bg {
   pointer-events: none;
 }
-.popup--pin{
+
+.popup--pin {
   margin: 0 -20px;
   padding: 0 20px;
   max-width: 500px;
@@ -1495,93 +1560,108 @@
   top: 0;
   padding-top: 150px;
 
-  .badge-wrap{
+  .badge-wrap {
     color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
-    .animation_bg{
+
+    .animation_bg {
       width: 100%;
       height: 100vh;
       position: absolute;
       // border: 1px solid red;
     }
 
-    .badge{
+    .badge {
       margin-top: 10px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      img{
+
+      img {
         width: 50%;
       }
-      .badge-name{
+
+      .badge-name {
         color: #76c734;
         margin-top: 4px;
       }
     }
-    .popup-message{
+
+    .popup-message {
       text-align: center;
       margin-top: 16px;
-      h3{
+
+      h3 {
         font-size: 40px;
         margin-bottom: 16px;
-        animation : sizeUp 1.3s ease-in-out;
+        animation: sizeUp 1.3s ease-in-out;
       }
-      p:nth-of-type(1){
+
+      p:nth-of-type(1) {
         margin-bottom: 8px;
         opacity: 0;
         animation: fadeUp 1.3s ease-in-out 1.3s forwards;
       }
-      p:nth-of-type(2){
+
+      p:nth-of-type(2) {
         opacity: 0;
         animation: fadeUp 1.3s ease-in-out 2.6s forwards;
       }
     }
   }
-  .btn-wrap{
+
+  .btn-wrap {
     width: 100%;
     position: fixed;
     bottom: 40px;
     margin: 0 -20px;
     padding: 0 20px;
   }
-  .close-btn{
-    width: 20px; height: 20px;
+
+  .close-btn {
+    width: 20px;
+    height: 20px;
     position: fixed;
     top: 25px;
     right: 20px;
-    img{
+
+    img {
       width: 100%;
     }
   }
 }
 
-.select_profile{
+.select_profile {
   margin-top: 20px;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 6px;
-  &_card{
+
+  &_card {
     border-radius: 16px;
     border: 1px solid #999;
     padding: 16px 20px 8px;
     background: #F5F5F5;
-    p{
+
+    p {
       font-weight: 800;
       font-size: 10px;
       line-height: 14px;
       color: #999;
     }
   }
-  &_card.is-active{
+
+  &_card.is-active {
     border: 1px solid #169E4A;
     background: #EAFFF2;
-    p{
+
+    p {
       color: #111;
     }
   }
@@ -1590,8 +1670,8 @@
 
 
 /* 노화속도 계기판 dashboard*/
-.dashboard{
-  &-box{
+.dashboard {
+  &-box {
     width: 500px;
     height: 500px;
     border: 1px solid red;
@@ -1599,22 +1679,26 @@
     position: relative;
     padding: 20px;
   }
-  &-wrap{
+
+  &-wrap {
     position: relative;
     width: 100%;
     height: 100%;
   }
-  &-sec{
+
+  &-sec {
     width: 100px;
     height: 100px;
     background: #fff;
     position: absolute;
-    top: 50%; left: 50%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 100%;
     z-index: 4;
   }
-  &-hand{
+
+  &-hand {
     z-index: 3;
     background: blue;
     width: 50%;
