@@ -3,7 +3,7 @@
     <ContentHead title="챌린지 팀 관리" headType="ty02" :leftArea=true />
     <div class="team-box-wrap">
       <div class="profile-area">
-        <div class="img-wrap on-flag edit-profile"> 
+        <div class="img-wrap on-flag edit-profile">
           <!-- 팀장일 경우 on-flag 클래스 추가시 왕관 아이콘 활성화됨 -->
           <img class="ico-logo" :src="require(`@/assets/images/content/dummy-profile-img.png`)" alt="프로필 아이콘" />
         </div>
@@ -12,7 +12,7 @@
         <div class="card card--border card--p16 card--shadowc2">
           <div class="input-area">
             <div class="form-item">
-              <InputField title="팀명"/>
+              <InputField title="팀명" />
             </div>
             <div class="form-item">
               <h5 class="title">팀 구분</h5>
@@ -62,15 +62,18 @@
               <p class="desc">$보상명$</p>
             </div>
             <div class="form-item">
+              <h5 class="title">바우처명</h5>
+              <p class="desc">없을 경우 ‘-’ 처리</p>
+            </div>
+            <div class="form-item">
               <h5 class="title">
                 보상수령방법
                 <small> (팀 생성 이후 변경불가) </small>
               </h5>
               <div class="radio-wrap">
-                <InputField type="radio" title="" name="radio1"
-                :radio="[
-                  {id: 'radio1_1', value: 'radio1_1', checked: true, label: '팀장이 수령'},
-                  {id: 'radio1_2', value: 'radio1_2', checked: false, label: '팀별 개별수령'},
+                <InputField type="radio" title="" name="radio1" :radio="[
+                  { id: 'radio1_1', value: 'radio1_1', checked: true, label: '팀장이 수령' },
+                  { id: 'radio1_2', value: 'radio1_2', checked: false, label: '팀별 개별수령' },
                 ]" />
               </div>
             </div>
@@ -78,7 +81,7 @@
               <h5 class="title">보상수령처</h5>
               <div class="select-wrap">
                 <InputField type="select-placeholder" placeholder="선택" :options="['값1', '값2', '값3']" />
-              </div>            
+              </div>
             </div>
           </div>
         </div>
@@ -93,16 +96,17 @@
 </template>
 
 <style scoped>
-  .btn-area.ty03{
-    position: static;
-    padding: 0; 
-    margin: 0;
-    margin-bottom: 104px;
-    gap: 8px;
-  }
-  .profile-area{
-    margin-bottom: 44px;
-  }
+.btn-area.ty03 {
+  position: static;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 104px;
+  gap: 8px;
+}
+
+.profile-area {
+  margin-bottom: 44px;
+}
 </style>
 
 <script>

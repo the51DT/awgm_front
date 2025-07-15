@@ -40,8 +40,8 @@
           <!-- 기간 : type2 -->
           <div class="form-item">
             <InputField type="date" title="기간" :date="[
-              { value: '2024-09-30', disabled: false },
-              { value: '2024-09-30', disabled: false, placeholder: '선택' },
+              { value: '2024-02-14', disabled: true },
+              { disabled: false, placeholder: '선택' },
             ]" />
             <div class="form-item--sub">
               <InputField type="checkbox" name="checkbox1" :checkbox="[
@@ -55,40 +55,40 @@
             </div>
           </div>
           <div class="form-item">
-          <h5 class="title">목표 인증률</h5>
-          <div class="inputField__radio--wrap">
-            <ul>
-              <li>
-                <input type="radio" name="targetRate" value="70" id="radio-select01" />
-                <label for="radio-select01">70%</label>
-              </li>
-              <li>
-                <input type="radio" name="targetRate" value="75" id="radio-select02" />
-                <label for="radio-select02">75%</label>
-              </li>
-              <li>
-                <input type="radio" name="targetRate" value="80" id="radio-select03" />
-                <label for="radio-select03">80%</label>
-              </li>
-              <li>
-                <input type="radio" name="targetRate" value="85" id="radio-select04" />
-                <label for="radio-select04">85%</label>
-              </li>
-              <li>
-                <input type="radio" name="targetRate" value="90" id="radio-select05" />
-                <label for="radio-select05">90%</label>
-              </li>
-              <li>
-                <input type="radio" name="targetRate" value="95" id="radio-select06" />
-                <label for="radio-select06">95%</label>
-              </li>
-              <li>
-                <input type="radio" name="targetRate" value="100" id="radio-select07" />
-                <label for="radio-select07">100%</label>
-              </li>
-            </ul>
+            <h5 class="title">목표 인증률</h5>
+            <div class="inputField__radio--wrap">
+              <ul>
+                <li>
+                  <input type="radio" name="targetRate" value="70" id="radio-select01" />
+                  <label for="radio-select01">70%</label>
+                </li>
+                <li>
+                  <input type="radio" name="targetRate" value="75" id="radio-select02" />
+                  <label for="radio-select02">75%</label>
+                </li>
+                <li>
+                  <input type="radio" name="targetRate" value="80" id="radio-select03" />
+                  <label for="radio-select03">80%</label>
+                </li>
+                <li>
+                  <input type="radio" name="targetRate" value="85" id="radio-select04" />
+                  <label for="radio-select04">85%</label>
+                </li>
+                <li>
+                  <input type="radio" name="targetRate" value="90" id="radio-select05" />
+                  <label for="radio-select05">90%</label>
+                </li>
+                <li>
+                  <input type="radio" name="targetRate" value="95" id="radio-select06" />
+                  <label for="radio-select06">95%</label>
+                </li>
+                <li>
+                  <input type="radio" name="targetRate" value="100" id="radio-select07" />
+                  <label for="radio-select07">100%</label>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
           <div class="form-item">
             <h5 class="title">참여 가능 팀원</h5>
             <p class="desc">5 ~ 99</p>
@@ -103,16 +103,17 @@
 </template>
 
 <style scoped>
-  .btn-area{
-    position: static;
-    padding: 0; 
-    margin: 0;
-    margin-bottom: 20px;
-    gap: 8px;
-  }
-  .profile-area{
-    margin-bottom: 44px;
-  }
+.btn-area {
+  position: static;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  gap: 8px;
+}
+
+.profile-area {
+  margin-bottom: 44px;
+}
 </style>
 
 <script>

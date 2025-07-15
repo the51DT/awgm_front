@@ -17,7 +17,7 @@
         <button class="tag tag-gray">진행종료</button>
         <button class="tag on">초대받은 팀 <span> 0 </span></button>
       </div>
-      <div class="tag_cont on">
+      <div class="tag_cont ">
         <div class="team--nodata">
           <img :src="require(`@/assets/images/team_no_data.png`)">
           <p>지금은 참여중인 <br />팀이 없습니다.</p>
@@ -27,7 +27,7 @@
       <div class="tag_cont">
         탭2
       </div>
-      <div class="tag_cont">
+      <div class="tag_cont on">
         <div class="team--nodata">
           <img :src="require(`@/assets/images/team_no_data.png`)">
           <p>초대받은 팀이 없습니다.</p>
@@ -47,7 +47,7 @@
 
 <script>
 import AppNav from "@/layouts/AppNav.vue";
-import CustomButton from  "@/components/CustomButton.vue"
+import CustomButton from "@/components/CustomButton.vue"
 import IconButton from "@/components/IconButton.vue"
 import tabFn from "@/plugins/common.js";
 
