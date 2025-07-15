@@ -1,28 +1,22 @@
 <template>
   <div class="box">
     <div class="gauge-container">
-    <svg class="gauge" viewBox="0 0 200 100">
-      <!-- 배경 원 -->
-      <path class="gauge-bg" d="M10 100 A90 90 0 0 1 190 100" />
 
-      <!-- 진행도 -->
-      <path
-        class="gauge-fill"
-        :stroke-dashoffset="dashOffset"
-        d="M10 100 A90 90 0 0 1 190 100"
-      />
-    </svg>
+      <img :src="require(`@/assets/images/gauge_t.svg`)" />
 
-    <div class="needle" :style="{ transform: `rotate(${angle}deg)` }"></div>
+      <div class="needle-wrap" :style="{ transform: `rotate(${angle}deg)` }">
+        <img class="needle-center" :src="require(`@/assets/images/needle-center.svg`)" />
+        <img class="needle" :src="require(`@/assets/images/needle-line.svg`)" />
+      </div>
+    </div>
   </div>
-  </div>
-  
+
 </template>
 
 <script>
 
 
-export default{
+export default {
   name: "DashBoard",
   data() {
     return {
@@ -71,7 +65,7 @@ export default{
     setTimeout(() => {
       this.displaySpeed = this.speed;
     }, 50); // 짧은 지연 후 값 설정 → 애니메이션 유도
-    
+
   },
   watch: {
     speed(newVal) {
@@ -82,7 +76,7 @@ export default{
 </script>
 
 <style>
-.box{
+.box {
   width: 100vw;
   max-width: 500px;
   display: flex;
@@ -91,6 +85,7 @@ export default{
   justify-content: center;
   align-items: center;
 }
+
 .gauge-container {
   position: relative;
   width: 200px;
@@ -117,16 +112,23 @@ export default{
   transition: stroke-dashoffset 0.5s ease;
 }
 
-.needle {
+.needle-wrap {
   position: absolute;
   bottom: 0;
   left: 50%;
-  width: 2px;
-  height: 90px;
-  background: red;
+}
+
+.needle {
+  /* background: red; */
   transform-origin: bottom center;
   transition: transform 0.3s ease-in-out;
   transform: rotate(0deg);
+}
 
+.needle-center {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  right: 50%;
 }
 </style>

@@ -9,15 +9,15 @@
         <p> 본인 생일에 인증</p>
       </div>
     </template>
-    <template v-slot:btn>
+<template v-slot:btn>
       <CustomButton size="md">
         대표배지 설정
       </CustomButton>
     </template>
-  </PopupDefault> -->
+</PopupDefault> -->
 
   <!-- 대표배지 설정 해제 -->
-  <PopupDefault>
+  <!-- <PopupDefault>
     <template v-slot:cont>
       <div class="getBadge">
         <BadgeDefault img="badge--happy_birthday.svg" :show="true" pointColor="use-popup"> 나의 생일 </BadgeDefault>
@@ -31,10 +31,10 @@
         대표배지 설정 해제
       </CustomButton>
     </template>
-  </PopupDefault>
+  </PopupDefault> -->
 
   <!-- 미획득 배지 선택 시 -->
-  <!-- <PopupDefault>
+  <PopupDefault>
     <template v-slot:cont>
       <div class="getBadge getBadge-lock">
         <BadgeDefault img="badge--lock.svg" pointColor="use-popup"> 스윗 것모닝 </BadgeDefault>
@@ -42,7 +42,7 @@
         <p> 2/14 발렌타인 데이 것모닝 인증 시 제공 </p>
       </div>
     </template>
-  </PopupDefault> -->
+  </PopupDefault>
 
 </template>
 
@@ -54,7 +54,7 @@ import layerClose from "@/plugins/common.js";
 
 export default {
   name: "Gut0003502",
-  components: {    
+  components: {
     PopupDefault,
     CustomButton,
     BadgeDefault
