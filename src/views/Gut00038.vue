@@ -107,7 +107,7 @@
                 </div>
                 <div class="badge-box-wrap">
                   <div class="badge-box">
-                    <BadgeDefault img="badge--earth_day.svg"> 것모닝코리아<br /> 챌린지 1회 성공</BadgeDefault>
+                    <BadgeDefault img="badge--challenge_complete_1.svg"> 것모닝코리아 챌린지 1회 성공</BadgeDefault>
                   </div>
                 </div>
               </div>
@@ -118,10 +118,10 @@
                 </div>
                 <div class="badge-box-wrap">
                   <div class="badge-box">
-                    <BadgeDefault img="badge--earth_day.svg">팀장</BadgeDefault>
+                    <BadgeDefault img="badge--new_leader.svg">팀장</BadgeDefault>
                   </div>
                   <div class="badge-box">
-                    <BadgeDefault img="badge--earth_day.svg">팀장의 자질</BadgeDefault>
+                    <BadgeDefault img="badge--proven_leader.svg">팀장의 자질</BadgeDefault>
                   </div>
                 </div>
               </div>
@@ -243,7 +243,7 @@
                 </div>
                 <div class="badge-box-wrap">
                   <div class="badge-box">
-                    <BadgeDefault img="badge--earth_day.svg"> 것모닝코리아<br /> 챌린지 1회 성공</BadgeDefault>
+                    <BadgeDefault img="badge--challenge_complete_1.svg"> 것모닝코리아 챌린지 1회 성공</BadgeDefault>
                   </div>
                 </div>
               </div>
@@ -254,10 +254,10 @@
                 </div>
                 <div class="badge-box-wrap">
                   <div class="badge-box">
-                    <BadgeDefault img="badge--earth_day.svg">팀장</BadgeDefault>
+                    <BadgeDefault img="badge--new_leader.svg">팀장</BadgeDefault>
                   </div>
                   <div class="badge-box">
-                    <BadgeDefault img="badge--earth_day.svg">팀장의 자질</BadgeDefault>
+                    <BadgeDefault img="badge--proven_leader.svg">팀장의 자질</BadgeDefault>
                   </div>
                 </div>
               </div>
