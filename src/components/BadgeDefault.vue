@@ -2,7 +2,7 @@
   <div class="badge">
     <div class="badge__wrap" :class="width">
       <object type="image/svg">
-        <img :src="imageSrc" alt="badge" :style="imgStyle" />
+        <img :src="imageSrc" alt="badge" :style="imgStyle" />z
       </object>
     </div>
     <div class="badge__name">

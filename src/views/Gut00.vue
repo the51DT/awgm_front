@@ -1,8 +1,11 @@
 <template>
   <!-- 뱃지 획득 시 팝업 -->
-  <!-- <AniBadge /> -->
+  <div class="test-bg">
+    <img :src="require(`@/assets/images/AniBadge__test_Bg.png`)"/>
+  </div>
+  <AniBadge />
 
-  <DashBoard :speed="currentSpeed" />
+  <!-- <DashBoard :speed="currentSpeed" /> -->
 
 </template>
 
@@ -11,7 +14,7 @@ import BadgeDefault from "@/components/BadgeDefault.vue";
 import AniBadge from "@/components/AniBadge.vue"
 import DashBoard from "@/components/DashBoard.vue"
 
-import tabFn from "@/plugins/common.js";
+import tabFn from "@/plugins/common.js";   
 import layerClose from "@/plugins/common.js";
 
 export default {

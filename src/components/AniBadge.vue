@@ -2,14 +2,26 @@
   <!-- 뱃지 획득 시 -->
   <div class="popup--badge" v-if="isBadge === true">
     <button type="button" class="close-btn">
-        <img class="ico-logo" :src="require(`@/assets/images/icon/ico_close_w.svg`)" alt="닫기" />
+      <img class="ico-logo" :src="require(`@/assets/images/icon/ico_close_w.svg`)" alt="닫기" />
     </button>
     <div class="badge-wrap">
-      <h3> NEW BADGE !</h3>
+      <h3> NEW BADGE!</h3>
       <div ref="animationContainer" class="animation_bg"></div>
       <div class="badge">
-        <img :src="require(`@/assets/images/badgeImg/pin--emerald.svg`)" />
-        <span class="badge-name"> 나의 생일 </span>
+        <!-- <div class="badge-img">
+          <img :src="require(`@/assets/images/badgeImg/pin--ruby.svg`)" class="badge-front" />
+          <img :src="require(`@/assets/images/badgeImg/back/pin--ruby-back.svg`)" class="badge-back" />
+        </div> -->
+        <div class="card">
+          <div class="card-img card-front">
+            <img :src="require(`@/assets/images/badgeImg/pin--ruby.svg`)" class="badge-front" />
+          </div>
+          <div class="card-img card-back">
+            <img :src="require(`@/assets/images/badgeImg/back/pin--ruby-back.svg`)" class="badge-back" />
+          </div>
+        </div>
+        <div class="card--shadow"> </div>
+        <span class="badge-name"> $배지 명칭$ </span>
       </div>
       <div class="popup-message">
         <p> 축하합니다! </p>
@@ -21,7 +33,7 @@
   <!-- 핀레벨 획득 시 -->
   <div class="popup--pin" v-else>
     <button type="button" class="close-btn">
-        <img class="ico-logo" :src="require(`@/assets/images/icon/ico_close_w.svg`)" alt="닫기" />
+      <img class="ico-logo" :src="require(`@/assets/images/icon/ico_close_w.svg`)" alt="닫기" />
     </button>
     <div class="badge-wrap">
       <div ref="animationContainer" class="animation_bg"></div>
@@ -52,19 +64,19 @@ export default {
     // const animationContainer = ref(null);
     // return { animationContainer };
   },
-  data(){
-    return{
-      isBadge : false,
+  data() {
+    return {
+      isBadge: true,
       // isPin : true,
     }
   },
-  mounted(){
-      lottie.loadAnimation({
+  mounted() {
+    lottie.loadAnimation({
       container: this.$refs.animationContainer,
       renderer: "svg",
       loop: false,
       autoplay: true,
-      path: '/json/ani_test2.json',
+      path: '/json/confetti.json',
     });
   }
 
@@ -73,6 +85,4 @@ export default {
 
 </script>
 
-<style>
-
-</style>
+<style></style>

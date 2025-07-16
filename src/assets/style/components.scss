@@ -1463,6 +1463,90 @@
   }
 }
 
+
+@keyframes rotateBadge {
+  0% {
+    transform: rotateY(0);
+    transform: translateY(0);
+  }
+
+  5% {
+    transform: rotateY(360deg);
+  }
+
+  10% {
+    transform: rotateY(0);
+  }
+
+  15% {
+    transform: rotateY(360deg);
+  }
+
+  20% {
+    transform: rotateY(0);
+  }
+
+  25% {
+    transform: rotateY(360deg);
+  }
+
+  30% {
+    transform: rotateY(0);
+  }
+
+  35% {
+    transform: rotateY(360deg);
+  }
+
+  40% {
+    transform: rotateY(0);
+  }
+
+  45% {
+    transform: rotateY(360deg);
+  }
+
+  // 60% {
+  //   transform: rotateY(0);
+  // }
+
+  // 70% {
+  //   transform: rotateY(360deg);
+  // }
+
+  80% {
+    transform: translateY(0);
+  }
+
+  90% {
+    transform: translateY(-48px);
+
+  }
+
+  95% {
+    transform: translateY(-50px);
+  }
+
+  100% {
+    transform: rotateY(0);
+  }
+}
+
+@keyframes shadow {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.4);
+  }
+
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 .popup--badge {
   margin: 0 -20px;
   padding: 0 20px;
@@ -1474,9 +1558,12 @@
   z-index: 9999;
   position: fixed;
   top: 0;
-  padding-top: 150px;
+  display: flex;
+  justify-content: center;
+  // align-items: center;
 
   .badge-wrap {
+    width: 100%;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -1488,36 +1575,95 @@
       width: 100%;
       height: 100vh;
       position: absolute;
-      border: 1px solid red;
     }
 
     h3 {
+      font-family: Montserrat;
+      font-weight: 800;
+      font-style: Italic;
       font-size: 40px;
+      line-height: 100%;
+      text-align: center;
+      letter-spacing: 0.5px;
+      text-shadow: #FFFFFF70 1px 0 10px;
     }
 
     .badge {
-      margin-top: 10px;
+      margin-top: 24px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
 
-      img {
-        width: 50%;
+      .card {
+        display: inline-grid;
+        transition: transform 0.3s;
+        transform: rotateY(0deg);
+        transform-style: preserve-3d;
+        background: transparent;
+        animation: rotateBadge 2s ease-in-out;
+        position: relative;
       }
 
-      .badge-name {
-        color: #76c734;
-        margin-top: 4px;
+
+      .card>* {
+        grid-area: 1 / 1 / 1 / 1;
+        width: 200px;
+        height: 200px;
+        backface-visibility: hidden;
+      }
+
+      .card-img {
+        z-index: 99;
+      }
+
+      .card-img img {
+        width: 200px;
+        height: 200px;
+      }
+
+      .card-front {}
+
+      .card-back {
+        transform: rotateY(180deg);
+      }
+
+      .card--shadow {
+        position: relative;
+        bottom: 10px;
+        width: 200px;
+        height: 50px;
+        background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.7) 0%, transparent 60%);
+        filter: blur(6px);
+        animation: shadow 0.8s ease-in-out 1.5s;
+      }
+
+
+      &-name {
+        color: #fff;
+        margin-top: 24px;
+        font-family: RixSinHead;
+        font-weight: 800;
+        font-style: 800;
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
       }
     }
 
     .popup-message {
       text-align: center;
-      margin-top: 16px;
+      margin-top: 36px;
+      font-family: RixSinHead;
+      font-weight: 800;
+      font-style: ExtraBold;
+      font-size: 18px;
+      leading-trim: NONE;
+      line-height: 24px;
+      text-align: center;
 
       p:first-child {
-        margin-bottom: 4px;
+        margin-bottom: 8px;
       }
     }
   }
