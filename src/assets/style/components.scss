@@ -1541,7 +1541,6 @@
     transform: scale(0.4);
   }
 
-
   100% {
     transform: scale(1);
   }
@@ -1632,7 +1631,7 @@
         position: relative;
         bottom: 10px;
         width: 200px;
-        height: 50px;
+        height: 24px;
         background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.7) 0%, transparent 60%);
         filter: blur(6px);
         animation: shadow 0.8s ease-in-out 1.5s;
@@ -1641,7 +1640,7 @@
 
       &-name {
         color: #fff;
-        margin-top: 24px;
+        // margin-top: 24px;
         font-family: RixSinHead;
         font-weight: 800;
         font-style: 800;
