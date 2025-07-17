@@ -1,9 +1,10 @@
 <template>
   <!-- 뱃지 획득 시 팝업 -->
   <div class="test-bg">
-    <img :src="require(`@/assets/images/AniBadge__test_Bg.png`)"/>
+    <img :src="require(`@/assets/images/AniBadge__test_Bg.png`)" />
   </div>
-  <AniBadge />
+  <!-- <AniBadge type="badge"> $배지 명칭$ </AniBadge> -->
+  <AniBadge type="pin"> $것모닝핀 명칭$ </AniBadge>
 
   <!-- <DashBoard :speed="currentSpeed" /> -->
 
@@ -14,7 +15,7 @@ import BadgeDefault from "@/components/BadgeDefault.vue";
 import AniBadge from "@/components/AniBadge.vue"
 import DashBoard from "@/components/DashBoard.vue"
 
-import tabFn from "@/plugins/common.js";   
+import tabFn from "@/plugins/common.js";
 import layerClose from "@/plugins/common.js";
 
 export default {
@@ -44,4 +45,4 @@ export default {
 
   },
 };
-</script> 
+</script>
