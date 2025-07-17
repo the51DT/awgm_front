@@ -311,13 +311,13 @@
             <BadgeDefault img="badge--lock-circle.svg" pointColor="lock">다둥이</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--lock-hex2.svg" pointColor="lock">패밀리데이</BadgeDefault>
+            <BadgeDefault img="badge--lock-hex-rotate.svg" pointColor="lock">패밀리데이</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--lock-octagon.svg" pointColor="lock">어린이날</BadgeDefault>
+            <BadgeDefault img="badge--lock-octagon-rotate.svg" pointColor="lock">어린이날</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--lock-octagon2.svg" pointColor="lock">문어발</BadgeDefault>
+            <BadgeDefault img="badge--lock-octagon.svg" pointColor="lock">문어발</BadgeDefault>
           </div>
           <div class="badge-box">
             <BadgeDefault img="badge--lock-semicircle.svg" pointColor="lock">나의 생일</BadgeDefault>
@@ -332,7 +332,7 @@
             <BadgeDefault img="badge--lock-drape.svg" pointColor="lock">브런치 것모너</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--lock-octagon2.svg" pointColor="lock">세계 여성의날</BadgeDefault>
+            <BadgeDefault img="badge--lock-octagon.svg" pointColor="lock">세계 여성의날</BadgeDefault>
           </div>
           <div class="badge-box">
             <BadgeDefault img="badge--lock-circle.svg" pointColor="lock">지구의 날</BadgeDefault>
@@ -344,22 +344,22 @@
             <BadgeDefault img="badge--lock-star.svg" pointColor="lock">스윗 것모닝</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--lock-octagon2.svg" pointColor="lock">광복절</BadgeDefault>
+            <BadgeDefault img="badge--lock-octagon.svg" pointColor="lock">광복절</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--lock-hex2.svg" pointColor="lock">썸머 것모닝</BadgeDefault>
+            <BadgeDefault img="badge--lock-hex-rotate.svg" pointColor="lock">썸머 것모닝</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--lock-hex2.svg" pointColor="lock">윈터 것모닝</BadgeDefault>
+            <BadgeDefault img="badge--lock-hex-rotate.svg" pointColor="lock">윈터 것모닝</BadgeDefault>
           </div>
           <div class="badge-box">
             <BadgeDefault img="badge--lock-star.svg" pointColor="lock">메리 크리스마스</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--lock-hex2.svg" pointColor="lock">베스트 팀메이트</BadgeDefault>
+            <BadgeDefault img="badge--lock-hex-rotate.svg" pointColor="lock">베스트 팀메이트</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--lock-octagon.svg" pointColor="lock">가족의 힘</BadgeDefault>
+            <BadgeDefault img="badge--lock-octagon-rotate.svg" pointColor="lock">가족의 힘</BadgeDefault>
           </div>
         </div>
       </div>
