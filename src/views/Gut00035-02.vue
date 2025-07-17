@@ -162,7 +162,7 @@
         <p> 총 <span class="green"> 0개</span> 보유 </p>
       </div>
       <!--  대표 뱃지 있을 시 -->
-      <div class="represent__badge-wrap">
+      <!-- <div class="represent__badge-wrap">
         <div class="represent__badge">
           <BadgeDefault img="badge--happy_birthday.svg" pointColor="green">
             나의 생일
@@ -172,9 +172,9 @@
             <button type="button" class="btn-modify" title="대표 배지 설정"><span class="blind">대표 배지 설정</span></button>
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- 대표 뱃지 없을 시 -->
-      <!-- <div class="represent__badge-wrap">
+      <div class="represent__badge-wrap">
         <div class="represent__badge no-represent">
           <p class="represent__badge-txt">획득한 배지에서 대표배지를 설정해주세요 </p>
           <div class="btn">
@@ -183,7 +183,7 @@
           </div>
         </div>
         <p class="represent__badge-txt">아직 획득한 배지가 없어요 </p>
-      </div> -->
+      </div>
 
       <div class="activity__area_badge-section">
         <div class="para-title-2rd">
@@ -191,37 +191,37 @@
         </div>
         <div class="badge-box-wrap">
           <div class="badge-box">
-            <BadgeDefault img="badge--mission_streak_10.svg">10일 연속 인증</BadgeDefault>
+            <BadgeDefault img="badge--lock-wave.svg" pointColor="lock">10일 연속 인증</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--mission_streak_20.svg">20일 연속 인증</BadgeDefault>
+            <BadgeDefault img="badge--lock-wave.svg" pointColor="lock">20일 연속 인증</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--mission_streak_30.svg">30일 연속 인증</BadgeDefault>
+            <BadgeDefault img="badge--lock-wave.svg" pointColor="lock">30일 연속 인증</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--mission_streak_60.svg">60일 연속 인증</BadgeDefault>
+            <BadgeDefault img="badge--lock-wave.svg" pointColor="lock">60일 연속 인증</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--mission_streak_90.svg">90일 연속 인증</BadgeDefault>
+            <BadgeDefault img="badge--lock-wave.svg" pointColor="lock">90일 연속 인증</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--mission_streak_100.svg">100일 연속 인증</BadgeDefault>
+            <BadgeDefault img="badge--lock-wave.svg" pointColor="lock">100일 연속 인증</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--mission_streak_180.svg">180일 연속 인증</BadgeDefault>
+            <BadgeDefault img="badge--lock-wave.svg" pointColor="lock">180일 연속 인증</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--mission_streak_200.svg">200일 연속 인증</BadgeDefault>
+            <BadgeDefault img="badge--lock-wave.svg" pointColor="lock">200일 연속 인증</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--mission_streak_240.svg">240일 연속 인증</BadgeDefault>
+            <BadgeDefault img="badge--lock-wave.svg" pointColor="lock">240일 연속 인증</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--mission_streak_300.svg">300일 연속 인증</BadgeDefault>
+            <BadgeDefault img="badge--lock-wave.svg" pointColor="lock">300일 연속 인증</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--mission_streak_365.svg">365일 연속 인증</BadgeDefault>
+            <BadgeDefault img="badge--lock-wave.svg" pointColor="lock">365일 연속 인증</BadgeDefault>
           </div>
         </div>
       </div>
@@ -232,19 +232,19 @@
         </div>
         <div class="badge-box-wrap">
           <div class="badge-box">
-            <BadgeDefault img="badge--challenge_complete_1.svg"> 것모닝코리아 챌린지 1회 성공</BadgeDefault>
+            <BadgeDefault img="badge--lock-hex.svg" pointColor="lock"> 것모닝코리아 챌린지 1회 성공</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--challenge_complete_2.svg"> 것모닝코리아 챌린지 2회 성공</BadgeDefault>
+            <BadgeDefault img="badge--lock-hex.svg" pointColor="lock"> 것모닝코리아 챌린지 2회 성공</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--challenge_beginner.svg">챌린지 비기너</BadgeDefault>
+            <BadgeDefault img="badge--lock-hex.svg" pointColor="lock">챌린지 비기너</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--challenge_perfect.svg">챌린지 퍼펙트</BadgeDefault>
+            <BadgeDefault img="badge--lock-hex.svg" pointColor="lock">챌린지 퍼펙트</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--challenge_final_sprint.svg">챌린지 막판스퍼트</BadgeDefault>
+            <BadgeDefault img="badge--lock-hex.svg" pointColor="lock">챌린지 막판스퍼트</BadgeDefault>
           </div>
         </div>
       </div>
@@ -255,25 +255,25 @@
         </div>
         <div class="badge-box-wrap">
           <div class="badge-box">
-            <BadgeDefault img="badge--self_starter.svg">솔플 축하</BadgeDefault>
+            <BadgeDefault img="badge--lock-drape.svg" pointColor="lock">솔플 축하</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--new_leader.svg">팀장</BadgeDefault>
+            <BadgeDefault img="badge--lock-drape.svg" pointColor="lock">팀장</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--proven_leader.svg">팀장의 자질</BadgeDefault>
+            <BadgeDefault img="badge--lock-drape.svg" pointColor="lock">팀장의 자질</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--inspiring_leader.svg">팀장의 정석</BadgeDefault>
+            <BadgeDefault img="badge--lock-drape.svg" pointColor="lock">팀장의 정석</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--elite_leader.svg">우수 팀장</BadgeDefault>
+            <BadgeDefault img="badge--lock-drape.svg" pointColor="lock">우수 팀장</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--ultimate_leader.svg">혹독한 팀장</BadgeDefault>
+            <BadgeDefault img="badge--lock-drape.svg" pointColor="lock">혹독한 팀장</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--flawless_leader.svg">가혹한 팀장</BadgeDefault>
+            <BadgeDefault img="badge--lock-drape.svg" pointColor="lock">가혹한 팀장</BadgeDefault>
           </div>
         </div>
       </div>
@@ -284,85 +284,82 @@
         </div>
         <div class="badge-box-wrap">
           <div class="badge-box">
-            <BadgeDefault img="badge--event_figure_richDevos.svg">리치 디보스 탄생일</BadgeDefault>
+            <BadgeDefault img="badge--lock-semicircle.svg" pointColor="lock">리치 디보스 탄생일</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--event_figure_jayVanAndel.svg">제이 벤 엔델 탄생일</BadgeDefault>
+            <BadgeDefault img="badge--lock-semicircle.svg" pointColor="lock">제이 벤 엔델 탄생일</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--amway_korea.svg">한국암웨이 창립기념일 </BadgeDefault>
+            <BadgeDefault img="badge--lock-semicircle.svg" pointColor="lock">한국암웨이 창립기념일 </BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--amway_global.svg">파운더스데이 </BadgeDefault>
+            <BadgeDefault img="badge--lock-semicircle.svg" pointColor="lock">파운더스데이 </BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--happy_new_year.svg">새해 첫날</BadgeDefault>
+            <BadgeDefault img="badge--lock-wave.svg" pointColor="lock">새해 첫날</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--happy_chuseok.svg">추석</BadgeDefault>
+            <BadgeDefault img="badge--lock-wave.svg" pointColor="lock">추석</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--mission_start.svg">첫 인증</BadgeDefault>
+            <BadgeDefault img="badge--lock-hex.svg" pointColor="lock">첫 인증</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--family_duo.svg">2대 것모너</BadgeDefault>
+            <BadgeDefault img="badge--lock-circle.svg" pointColor="lock">2대 것모너</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--big_family.svg">다둥이</BadgeDefault>
+            <BadgeDefault img="badge--lock-circle.svg" pointColor="lock">다둥이</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--family_day.svg">패밀리데이</BadgeDefault>
+            <BadgeDefault img="badge--lock-hex2.svg" pointColor="lock">패밀리데이</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--childrens_day.svg">어린이날</BadgeDefault>
+            <BadgeDefault img="badge--lock-octagon.svg" pointColor="lock">어린이날</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--octopus_mode.svg">문어발</BadgeDefault>
+            <BadgeDefault img="badge--lock-octagon2.svg" pointColor="lock">문어발</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--happy_birthday.svg">나의 생일</BadgeDefault>
+            <BadgeDefault img="badge--lock-semicircle.svg" pointColor="lock">나의 생일</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--returning_hero.svg">복귀왕</BadgeDefault>
+            <BadgeDefault img="badge--lock-circle.svg" pointColor="lock">복귀왕</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--early_bird.svg">얼리 것모너</BadgeDefault>
+            <BadgeDefault img="badge--lock-drape.svg" pointColor="lock">얼리 것모너</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--brunch_lover.svg">브런치 것모너</BadgeDefault>
+            <BadgeDefault img="badge--lock-drape.svg" pointColor="lock">브런치 것모너</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--womens_day.svg">세계 여성의날</BadgeDefault>
+            <BadgeDefault img="badge--lock-octagon2.svg" pointColor="lock">세계 여성의날</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--earth_day.svg">지구의 날</BadgeDefault>
+            <BadgeDefault img="badge--lock-circle.svg" pointColor="lock">지구의 날</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--halloween_hustler.svg">고스트 것모닝</BadgeDefault>
+            <BadgeDefault img="badge--lock-semicircle.svg" pointColor="lock">고스트 것모닝</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--valentines_day.svg">스윗 것모닝</BadgeDefault>
+            <BadgeDefault img="badge--lock-star.svg" pointColor="lock">스윗 것모닝</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--liberation_day.svg">광복절</BadgeDefault>
+            <BadgeDefault img="badge--lock-octagon2.svg" pointColor="lock">광복절</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--summer_gutmoring.svg">썸머 것모닝</BadgeDefault>
+            <BadgeDefault img="badge--lock-hex2.svg" pointColor="lock">썸머 것모닝</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--winter_gutmoring.svg">윈터 것모닝</BadgeDefault>
+            <BadgeDefault img="badge--lock-hex2.svg" pointColor="lock">윈터 것모닝</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--merry_christmas.svg">메리 크리스마스</BadgeDefault>
+            <BadgeDefault img="badge--lock-star.svg" pointColor="lock">메리 크리스마스</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--best_teammate.svg">베스트 팀메이트</BadgeDefault>
+            <BadgeDefault img="badge--lock-hex2.svg" pointColor="lock">베스트 팀메이트</BadgeDefault>
           </div>
           <div class="badge-box">
-            <BadgeDefault img="badge--family_power.svg">가족의 힘</BadgeDefault>
-          </div>
-          <div class="badge-box">
-            <BadgeDefault img="badge--lock.svg" pointColor="lock">$미획득 배지$</BadgeDefault>
+            <BadgeDefault img="badge--lock-octagon.svg" pointColor="lock">가족의 힘</BadgeDefault>
           </div>
         </div>
       </div>

@@ -107,6 +107,7 @@ export default {
       if (img.includes('ultimate_leader')) return '#8361FF';
       if (img.includes('flawless_leader')) return '#FF80AA';
       if (img.includes('brunch_lover')) return '#A1D7F7';
+      if (img.includes('lock')) return '#DADADA';
 
 
       return '#000000';
