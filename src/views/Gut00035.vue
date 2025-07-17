@@ -361,6 +361,9 @@
           <div class="badge-box">
             <BadgeDefault img="badge--family_power.svg">가족의 힘</BadgeDefault>
           </div>
+          <div class="badge-box">
+            <BadgeDefault img="badge--lock.svg" pointColor="lock">$미획득 배지$</BadgeDefault>
+          </div>
         </div>
       </div>
     </div>

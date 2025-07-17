@@ -2,7 +2,7 @@
   <div class="badge">
     <div class="badge__wrap" :class="width">
       <object type="image/svg">
-        <img :src="imageSrc" alt="badge" :style="imgStyle" />z
+        <img :src="imageSrc" alt="badge" :style="imgStyle" />
       </object>
     </div>
     <div class="badge__name">
@@ -15,7 +15,9 @@
 </template>
 
 <script>
-// <BadgeDefault img="이미지이름.svg" pointColor="white">
+// <BadgeDefault img="배지이미지이름.svg" pointColor="white"> $배지이름$ </BadgeDefault>
+// <BadgeDefault img="핀레벨이미지이름.svg" pointColor="white"> $핀레벨이름$ </BadgeDefault>
+// <BadgeDefault img="badge--lock.svg" pointColor="lock">$미획득 배지$</BadgeDefault>
 
 export default {
   props: {
