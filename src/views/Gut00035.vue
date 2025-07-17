@@ -159,7 +159,7 @@
 
       <div class="para-title">
         <h5> 배지 활동 </h5>
-        <p> 총 <span class="green"> 0개</span> 보유 </p>
+        <p> 총 <span class="green"> 13개</span> 보유 </p>
       </div>
       <!--  대표 뱃지 있을 시 -->
       <div class="represent__badge-wrap">

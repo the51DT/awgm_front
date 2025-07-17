@@ -12,6 +12,20 @@
       </p>
     </div>
   </div>
+  <!-- 
+    lock 배지 네이밍
+    - lock-wave
+    - lock-circle
+    - lock-drape
+    - lock-hex
+    - lock-hex-rotate
+    - lock-octagon
+    - lock-octagon-rotate
+    - lock-semicircle
+    - lock-star
+
+    lock 배지 노출 시 pointColor="lock" 필수
+  -->
 </template>
 
 <script>
