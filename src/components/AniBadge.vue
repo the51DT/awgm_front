@@ -17,8 +17,12 @@
           </div>
         </div>
         <div class="card--shadow"></div>
-        <span class="badge-name" v-if="type === 'badge'"> <slot /></span>
-        <span class="badge-name" v-else> <slot /></span>
+        <span class="badge-name" v-if="type === 'badge'">
+          <slot />
+        </span>
+        <span class="badge-name" v-else>
+          <slot />
+        </span>
       </div>
       <div class="popup-message">
         <p>축하합니다!</p>
@@ -55,6 +59,7 @@ export default {
     }
   },
   mounted() {
+    fetch('/json/confetti.json');
     lottie.loadAnimation({
       container: this.$refs.animationContainer,
       renderer: "svg",
