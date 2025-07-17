@@ -59,14 +59,17 @@ export default {
     }
   },
   mounted() {
-    fetch('/json/confetti.json');
-    lottie.loadAnimation({
+    const play = lottie.loadAnimation({
       container: this.$refs.animationContainer,
       renderer: "svg",
       loop: false,
-      autoplay: true,
+      autoplay: false,
       path: '/json/confetti.json',
     });
+    setTimeout(() => {
+      play.play()
+    }, 200)
+
   }
 
 
