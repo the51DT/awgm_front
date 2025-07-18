@@ -17,10 +17,7 @@
           </div>
         </div>
         <div class="card--shadow"></div>
-        <span class="badge-name" v-if="type === 'badge'">
-          <slot />
-        </span>
-        <span class="badge-name" v-else>
+        <span class="badge-name">
           <slot />
         </span>
       </div>
@@ -38,88 +35,72 @@
 
 <script>
 import lottie from "lottie-web";
-import CustomButton from "@/components/CustomButton.vue"
-
+import CustomButton from "@/components/CustomButton.vue";
 
 export default {
   name: "AniBadge",
   components: { CustomButton },
   data() {
     return {
-      isReady: false
-    }
+      isReady: false,
+    };
   },
   props: {
     type: {
       type: String,
-      required: true
+      required: true,
     },
     badgeName: {
       type: String,
-      default: ""
+      default: "",
     },
     pinName: {
       type: String,
-      default: ""
-    }
+      default: "",
+    },
   },
   methods: {
     async startAnimation() {
-      // 시뮬레이션 로딩 대기
-      await new Promise(resolve => setTimeout(resolve, 300));
+      // 로딩 대기
+      await new Promise(r => setTimeout(r, 300));
+      const box = this.$refs.box;
+      if (!box) return;
 
-      // 렌더 완료 후 requestAnimationFrame
-      this.$nextTick(() => {
+      // 실제 애니메이션
+      requestAnimationFrame(() => {
         requestAnimationFrame(() => {
-          const box = this.$refs.box;
-
-          if (!box) return;
-
-          const startTime = performance.now(); // 🔸 애니메이션 시작 시점 기록
-
-          const animation = box.animate(
+          box.animate(
             [
-              { offset: 0, transform: 'rotateY(0deg)', transform: 'translateY(0)' },
-              { offset: 0.05, transform: 'rotateY(360deg)', },
+              { offset: 0, transform: 'rotateY(0deg) translateY(0)' },
+              { offset: 0.05, transform: 'rotateY(360deg)' },
 
-              { offset: 0.1, transform: 'rotateY(0deg)', },
-              { offset: 0.15, transform: 'rotateY(360deg)', },
+              { offset: 0.1, transform: 'rotateY(0deg)' },
+              { offset: 0.15, transform: 'rotateY(360deg)' },
 
-              { offset: 0.22, transform: 'rotateY(0deg)', },
-              { offset: 0.29, transform: 'rotateY(360deg)', },
+              { offset: 0.22, transform: 'rotateY(0deg)' },
+              { offset: 0.29, transform: 'rotateY(360deg)' },
 
-              { offset: 0.36, transform: 'rotateY(0deg)', },
-              { offset: 0.48, transform: 'rotateY(180deg)', },
-              { offset: 0.6, transform: 'rotateY(90deg)', },
-              { offset: 0.73, transform: 'rotateY(0deg)', },
+              { offset: 0.36, transform: 'rotateY(0deg)' },
+              { offset: 0.48, transform: 'rotateY(180deg)' },
+              { offset: 0.6, transform: 'rotateY(90deg)' },
 
-              { offset: 0.9, transform: 'rotateY(0deg)', transform: 'translateY(-48px)' },
-              { offset: 0.93, transform: 'translateY(-50px)' },
-              { offset: 0.99, transform: 'translateY(-50px)' },
-              { offset: 1, transform: 'rotateY(0deg)', transform: 'translateY(0)' },
+              { offset: 0.73, transform: 'rotateY(0deg)' },
+              { offset: 0.9, transform: 'rotateY(0deg) translateY(-48px)' },
+              { offset: 0.93, transform: 'rotateY(0deg) translateY(-50px)' },
+              { offset: 0.97, transform: 'rotateY(0deg) translateY(-50px)' },
+              /* …생략… */
+              { offset: 1, transform: 'rotateY(0deg) translateY(0)' }
             ],
-            {
-              duration: 2700,
-              easing: 'ease-out',
-              fill: 'forwards'
-            }
+            { duration: 2700, easing: 'ease-in', fill: 'forwards' }
           );
 
-          console.log('card animation started at', startTime);
-
-          animation.onfinish = () => {
-            console.log('card animation finished');
-          };
-
-          animation.oncancel = () => {
-            console.warn('card animation canceled');
-          };
         });
       });
+
     }
   },
-  mounted() {
 
+  mounted() {
     const play = lottie.loadAnimation({
       container: this.$refs.animationContainer,
       renderer: "svg",
@@ -127,36 +108,13 @@ export default {
       autoplay: false,
       path: '/json/confetti.json',
     });
+
     setTimeout(() => {
-      play.play()
-    }, 850)
-    // console.log(this.startAnimation) // ✅ 함수여야 함
-    // this.startAnimation()
-    this.startAnimation()
-    // setTimeout(() => {
+      play.play();
+    }, 850);
 
-    // }, 2000)
-
-
-    // // 애니메이션 시간 디버깅용(나중에삭제)
-    // const box = this.$refs.box
-    // if (box) {
-    //   box.addEventListener('animationstart', () => {
-    //     console.log('animationstart', performance.now())
-    //   })
-
-    //   box.addEventListener('animationend', () => {
-    //     console.log('animationend', performance.now())
-    //   })
-    // }
+    this.startAnimation();
 
   },
-
-
-
-
 };
-
 </script>
-
-<style></style>
