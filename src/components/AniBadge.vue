@@ -39,7 +39,7 @@
 <script>
 /*
     사용 예시
-    <AniBadge type="pin" frontImg="pin--ruby.svg" backImg="back/pin--ruby-back.svg"> $명칭$ </AniBadge>  
+    <AniBadge type="pin" frontImg="pin--ruby.svg" backImg="back/pin--ruby.svg"> $명칭$ </AniBadge>  
     
     - type : pin/badge 선택 
     - frontImg : 이미지 네임만 작성
