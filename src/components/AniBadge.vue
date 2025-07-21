@@ -1,5 +1,5 @@
 <template>
-  <div class="popup popup--badge" :class="isTopBtn === true ? 'sticky' : ''" :id="id">
+  <div class="popup--badge" :class="isTopBtn === true ? 'sticky' : ''" :id="id">
     <button type="button" class="close-btn">
       <img class="ico-logo" :src="require('@/assets/images/icon/ico_close_w.svg')" alt="닫기" />
     </button>
