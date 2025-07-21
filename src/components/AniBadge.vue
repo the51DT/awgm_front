@@ -66,34 +66,27 @@ export default {
       const box = this.$refs.box;
       if (!box) return;
 
-      // 실제 애니메이션
+      // 애니메이션
       requestAnimationFrame(() => {
         requestAnimationFrame(() => {
           box.animate(
             [
-              { offset: 0, transform: 'rotateY(0deg) translateY(0)' },
+              { offset: 0, transform: 'rotateY(0deg)' },
               { offset: 0.05, transform: 'rotateY(360deg)' },
-
               { offset: 0.1, transform: 'rotateY(0deg)' },
-              { offset: 0.15, transform: 'rotateY(360deg)' },
-
-              { offset: 0.22, transform: 'rotateY(0deg)' },
-              { offset: 0.29, transform: 'rotateY(360deg)' },
-
-              { offset: 0.36, transform: 'rotateY(0deg)' },
-              { offset: 0.48, transform: 'rotateY(180deg)' },
-              { offset: 0.6, transform: 'rotateY(90deg)' },
-
-              { offset: 0.73, transform: 'rotateY(0deg)' },
-              { offset: 0.9, transform: 'rotateY(0deg) translateY(-48px)' },
-              { offset: 0.93, transform: 'rotateY(0deg) translateY(-50px)' },
-              { offset: 0.97, transform: 'rotateY(0deg) translateY(-50px)' },
-              /* …생략… */
+              { offset: 0.2, transform: 'rotateY(360deg)' },
+              { offset: 0.3, transform: 'rotateY(0deg)' },
+              { offset: 0.45, transform: 'rotateY(360deg)' },
+              { offset: 0.6, transform: 'rotateY(180deg)' },
+              { offset: 0.7, transform: 'rotateY(90deg)' },
+              { offset: 0.75, transform: 'rotateY(45deg)' },
+              { offset: 0.8, transform: 'rotateY(0deg)' },
+              { offset: 0.89, transform: 'rotateY(0deg) translateY(-55px)' },
+              { offset: 0.96, transform: 'rotateY(0deg) translateY(-55px)' },
               { offset: 1, transform: 'rotateY(0deg) translateY(0)' }
             ],
             { duration: 2700, easing: 'ease-in', fill: 'forwards' }
           );
-
         });
       });
 
