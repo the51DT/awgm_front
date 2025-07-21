@@ -8,15 +8,15 @@
       <h3 v-else>LEVEL UP!</h3>
       <div ref="animationContainer" class="animation_bg"></div>
       <div class="badge">
-        <div class="card" ref="box" :class="{ start: isReady }">
-          <div class="card-img card-front">
-            <img :src="require('@/assets/images/badgeImg/pin--ruby.svg')" class="badge-front" />
+        <div class="badge--wrap" ref="box" :class="{ start: isReady }">
+          <div class="badge-img badge-front">
+            <img :src="getImgSrc(frontImg)" class="badge-front" />
           </div>
-          <div class="card-img card-back">
-            <img :src="require('@/assets/images/badgeImg/back/pin--ruby-back.svg')" class="badge-back" />
+          <div class="badge-img badge-back">
+            <img :src="getImgSrc(backImg)" class="badge-back" />
           </div>
         </div>
-        <div class="card--shadow"></div>
+        <div class="badge--shadow"></div>
         <span class="badge-name">
           <slot />
         </span>
@@ -31,6 +31,17 @@
       <CustomButton>보러가기</CustomButton>
     </div>
   </div>
+
+  <!--    
+    사용 예시
+    <AniBadge type="pin" frontImg="pin--ruby.svg" backImg="back/pin--ruby-back.svg"> $명칭$ </AniBadge>  
+    
+    - type : pin/badge 선택 
+    - frontImg : 이미지 네임만 작성
+    - backImg : back/이미지네임 작성
+    - $명칭$ : 핀/배지 명칭 작성
+  -->
+
 </template>
 
 <script>
@@ -58,6 +69,14 @@ export default {
       type: String,
       default: "",
     },
+    frontImg: {
+      type: String,
+      required: true
+    },
+    backImg: {
+      type: String,
+      required: true
+    }
   },
   methods: {
     async startAnimation() {
@@ -89,7 +108,15 @@ export default {
           );
         });
       });
+    },
 
+    getImgSrc(path) {
+      try {
+        return require(`@/assets/images/badgeImg/${path}`)
+      } catch (e) {
+        console.warn('이미지 경로 오류:', path)
+        return ''
+      }
     }
   },
 
@@ -104,7 +131,7 @@ export default {
 
     setTimeout(() => {
       play.play();
-    }, 850);
+    }, 750);
 
     this.startAnimation();
 

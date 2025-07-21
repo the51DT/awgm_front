@@ -1532,7 +1532,7 @@
       justify-content: center;
       align-items: center;
 
-      .card {
+      &--wrap {
         display: inline-grid;
         transition: transform 0.3s;
         transform: rotateY(0deg);
@@ -1541,29 +1541,29 @@
         position: relative;
       }
 
-      .card>* {
+      &--wrap>* {
         grid-area: 1 / 1 / 1 / 1;
         width: 200px;
         height: 200px;
         backface-visibility: hidden;
       }
 
-      .card-img {
-        z-index: 99;
+      &-img {
+        z-index: 30;
+
+        img {
+          width: 200px;
+          height: 200px;
+        }
+
       }
 
-      .card-img img {
-        width: 200px;
-        height: 200px;
-      }
-
-      .card-front {}
-
-      .card-back {
+      &-back {
+        display: block;
         transform: rotateY(180deg);
       }
 
-      .card--shadow {
+      &--shadow {
         position: relative;
         bottom: 10px;
         width: 200px;
@@ -1573,7 +1573,6 @@
         animation: shadow 1s ease-in-out 2.3s;
         z-index: -1;
       }
-
 
       &-name {
         color: #fff;

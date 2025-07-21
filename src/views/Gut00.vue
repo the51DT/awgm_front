@@ -3,8 +3,8 @@
   <div class="test-bg">
     <img :src="require(`@/assets/images/AniBadge__test_Bg.png`)" />
   </div>
-  <!-- <AniBadge type="badge"> $배지 명칭$ </AniBadge> -->
-  <AniBadge type="pin"> $것모닝핀 명칭$ </AniBadge>
+  <!-- <AniBadge type="badge" frontImg="pin--ruby.svg" backImg="back/pin--ruby-back.svg"> $배지 명칭$ </AniBadge> -->
+  <AniBadge type="pin" frontImg="pin--ruby.svg" backImg="back/pin--ruby-back.svg"> $것모닝핀 명칭$ </AniBadge>
 
   <!-- <DashBoard :speed="currentSpeed" /> -->
 
