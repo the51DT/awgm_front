@@ -44,6 +44,8 @@
 
 </template>
 
+
+
 <script>
 import lottie from "lottie-web";
 import CustomButton from "@/components/CustomButton.vue";
