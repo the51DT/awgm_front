@@ -1,5 +1,5 @@
 <template>
-  <div class="popup--badge">
+  <div class="popup popup--badge" :class="isTopBtn === true ? 'sticky' : ''" :id="id">
     <button type="button" class="close-btn">
       <img class="ico-logo" :src="require('@/assets/images/icon/ico_close_w.svg')" alt="닫기" />
     </button>
@@ -32,7 +32,12 @@
     </div>
   </div>
 
-  <!--    
+</template>
+
+
+
+<script>
+/*
     사용 예시
     <AniBadge type="pin" frontImg="pin--ruby.svg" backImg="back/pin--ruby-back.svg"> $명칭$ </AniBadge>  
     
@@ -40,13 +45,7 @@
     - frontImg : 이미지 네임만 작성
     - backImg : back/이미지네임 작성
     - $명칭$ : 핀/배지 명칭 작성
-  -->
-
-</template>
-
-
-
-<script>
+*/
 import lottie from "lottie-web";
 import CustomButton from "@/components/CustomButton.vue";
 
@@ -119,6 +118,23 @@ export default {
         console.warn('이미지 경로 오류:', path)
         return ''
       }
+    },
+    scrollDisable() {
+      document.body.classList.add('scroll-disable');
+      document.body.addEventListener('wheel', this.preventScroll, { passive: false });
+      document.body.addEventListener('touchmove', this.preventScroll, { passive: false });
+      document.body.addEventListener('scroll', this.preventScroll, { passive: false });
+    },
+
+    scrollAble() {
+      document.body.classList.remove('scroll-disable');
+      document.body.removeEventListener('wheel', this.preventScroll);
+      document.body.removeEventListener('touchmove', this.preventScroll);
+      document.body.removeEventListener('scroll', this.preventScroll);
+    },
+
+    preventScroll(e) {
+      e.preventDefault();
     }
   },
 
@@ -137,6 +153,11 @@ export default {
 
     this.startAnimation();
 
+    this.scrollDisable();
+
+  },
+  unmounted() {
+    this.scrollAble();
   },
 };
 </script>

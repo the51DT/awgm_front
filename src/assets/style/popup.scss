@@ -7,6 +7,12 @@ html.pop-open {
   overflow: hidden !important;
 }
 
+.scroll-disable {
+  min-height: 100%;
+  overflow: hidden !important;
+  touch-action: none;
+}
+
 .popup {
   position: fixed;
   top: 0;
