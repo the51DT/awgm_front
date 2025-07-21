@@ -3,18 +3,18 @@
   <PopupDefault>
     <template v-slot:cont>
       <div class="getBadge">
-        <BadgeDefault img="badge--big_family.svg" pointColor="use-popup"> 나의 생일 </BadgeDefault>
+        <BadgeDefault img="badge--amway_korea.svg" pointColor="use-popup"> 나의 생일 </BadgeDefault>
         <p class="getBadge_txt"> 배지를 획득하셨어요!</p>
         <span class="badge__get_tag"> 획득방법 </span>
         <p> 본인 생일에 인증</p>
       </div>
     </template>
-<template v-slot:btn>
+    <template v-slot:btn>
       <CustomButton size="md">
         대표배지 설정
       </CustomButton>
     </template>
-</PopupDefault>
+  </PopupDefault>
 
   <!-- 대표배지 설정 해제 -->
   <!-- <PopupDefault>
