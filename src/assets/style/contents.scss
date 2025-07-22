@@ -412,6 +412,10 @@
             }
           }
         }
+        dd:has(> img){
+          display: flex;
+          align-items: center;
+        }
       }
     }
 
@@ -1169,7 +1173,6 @@
 
       .challenge__card--main__top {
         display: block;
-
         &>p {
           padding-right: 48px;
         }

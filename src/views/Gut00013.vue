@@ -67,7 +67,7 @@
                 </dl>
                 <dl>
                   <dt> 오늘 인증</dt>
-                  <dd> <span class="green"> O </span></dd>
+                  <dd> <img :src="require(`@/assets/images/today_prove_O.svg`)" /></dd>
                 </dl>
                 <dl>
                   <div class="challenge__badge-wrap">
@@ -124,7 +124,7 @@
                 </dl>
                 <dl>
                   <dt> 오늘 인증</dt>
-                  <dd> <span class="green"> O </span></dd>
+                  <dd> <img :src="require(`@/assets/images/today_prove_O.svg`)" /></dd>
                 </dl>
                 <dl>
                   <div class="challenge__badge-wrap">
@@ -181,7 +181,7 @@
                 </dl>
                 <dl>
                   <dt> 오늘 인증</dt>
-                  <dd> <span> X </span></dd>
+                  <dd> <img :src="require(`@/assets/images/today_prove_X.svg`)" /></dd>
                 </dl>
                 <dl>
                   <div class="challenge__badge-wrap">
@@ -236,7 +236,7 @@
                 </dl>
                 <dl>
                   <dt> 오늘 인증</dt>
-                  <dd> <span class="green"> O </span></dd>
+                   <dd> <img :src="require(`@/assets/images/today_prove_O.svg`)" /></dd>
                 </dl>
               </div>
             </div>
