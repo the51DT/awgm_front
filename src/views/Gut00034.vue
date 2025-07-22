@@ -10,13 +10,13 @@
     <div class="team team--main">
       <div class="text__title__wrap">
         <p class="text__title">팀장김웨이님은</p>
-        <p class="text__subtit"><span class="text__subtit--bold">3</span>개 팀에 참여중입니다.</p>
+        <p class="text__subtit"><span class="text__subtit--bold">$n$</span>개 팀에 참여중입니다.</p>
         <p class="text__desc mt8"> 팀 현황을 확인해보세요</p>
       </div>
       <div class="tag--wrap">
         <button type="button" class="tag">진행중</button>
         <button type="button" class="tag tag-gray">진행종료</button>
-        <button type="button" class="tag on">초대받은 팀 <span> 23 </span></button>
+        <button type="button" class="tag on">초대받은 팀 <span> $n$ </span></button>
       </div>
       <div class="tag_cont">
         <div class="team--main__sub">
@@ -41,13 +41,13 @@
                 <div class="card__info">
                   <div class="card__title card__title--challenge">챌린지</div>
                   <div class="card__num">64명</div>
-                </div> 
+                </div>
                 <p class="card__date">
-                  <strong>전체기간</strong><br/>
+                  <strong>전체기간</strong><br />
                   2025.09.01 ~ 2025.09.30 / 70일
                 </p>
                 <p class="card__date">
-                  <strong>2회차 진행</strong><br/>
+                  <strong>2회차 진행</strong><br />
                   2025.09.01 ~ 2025.09.30 / 70일
                 </p>
               </div>
@@ -87,7 +87,7 @@
                 <div class="card__info">
                   <div class="card__title card__title--always">상시</div>
                   <div class="card__num">99명</div>
-                </div> 
+                </div>
                 <p class="card__date">2024.09.01 ~ 2025.08.31 / 365일</p>
               </div>
             </div>
@@ -125,7 +125,7 @@
                 <div class="card__info">
                   <div class="card__title card__title--always">상시</div>
                   <div class="card__num">99명</div>
-                </div> 
+                </div>
                 <p class="card__date">2024.09.01 ~ 2025.08.31 / 365일</p>
               </div>
             </div>
@@ -160,7 +160,7 @@
                 <div class="card__info">
                   <div class="card__title card__title--end">상시</div>
                   <div class="card__num">99명</div>
-                </div> 
+                </div>
                 <p class="card__date">2024.09.01 ~ 2025.08.31</p>
               </div>
             </div>
@@ -182,13 +182,13 @@
                 <div class="card__info">
                   <div class="card__title card__title--end-challenge">챌린지</div>
                   <div class="card__num">64명</div>
-                </div> 
+                </div>
                 <p class="card__date">
-                  <strong>전체기간</strong><br/>
+                  <strong>전체기간</strong><br />
                   2025.09.01 ~ 2025.09.30 / 70일
                 </p>
                 <p class="card__date">
-                  <strong>2회차 진행</strong><br/>
+                  <strong>2회차 진행</strong><br />
                   2025.09.01 ~ 2025.09.30 / 30일
                 </p>
               </div>
@@ -212,7 +212,7 @@
                 <div class="card__info">
                   <div class="card__title card__title--challenge">챌린지</div>
                   <div class="card__team--nick">팀장닉네임</div>
-                </div> 
+                </div>
                 <p class="card__date">챌린지 시작까지 <strong> D-248 </strong> </p>
               </div>
             </div>
@@ -231,7 +231,7 @@
                 <div class="card__info">
                   <div class="card__title card__title--always">상시</div>
                   <div class="card__team--nick">팀장닉네임</div>
-                </div> 
+                </div>
               </div>
             </div>
             <div class="card__bottom">
