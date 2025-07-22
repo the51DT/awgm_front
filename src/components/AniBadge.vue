@@ -80,9 +80,9 @@ export default {
     }
   },
   methods: {
-    async startAnimation() {
+    startAnimation() {
       // 로딩 대기
-      await new Promise(r => setTimeout(r, 300));
+      // await new Promise(r => setTimeout(r, 300));
       const box = this.$refs.box;
       if (!box) return;
 
@@ -144,12 +144,19 @@ export default {
       renderer: "svg",
       loop: false,
       autoplay: false,
-      path: '/json/confetti.json',
+      path: '/json/confetti2.json',
     });
 
     setTimeout(() => {
       play.play();
-    }, 750);
+
+      const container = this.$refs.animationContainer;
+      if (container) {
+        container.style.display = 'block'; // ✅ 표시
+      }
+    }, 2700);
+
+    // play.play();
 
     this.startAnimation();
 

@@ -1593,7 +1593,6 @@
       font-weight: 800;
       font-style: ExtraBold;
       font-size: 18px;
-      leading-trim: NONE;
       line-height: 24px;
       text-align: center;
 
@@ -1627,6 +1626,7 @@
 
 .animation_bg {
   pointer-events: none;
+  display: none;
 }
 
 
@@ -1665,42 +1665,112 @@
 
 /* 노화속도 계기판 dashboard*/
 .dashboard {
-  &-box {
-    width: 500px;
-    height: 500px;
-    border: 1px solid red;
-    border-radius: 50%;
-    position: relative;
-    padding: 20px;
-  }
-
-  &-wrap {
+  &-container {
+    padding-top: 30px;
     position: relative;
     width: 100%;
     height: 100%;
+
+    .needle {
+      &-wrap {
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 12px;
+      }
+
+      &-center {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        right: 50%;
+        z-index: 5;
+        width: 100%;
+        object-fit: contain;
+      }
+
+      &-line {
+        position: absolute;
+        bottom: 5px;
+
+        img {
+          transform-origin: bottom center;
+          transition: transform 0.3s ease-in-out;
+          transform: rotate(-90deg);
+          width: 100%;
+          object-fit: contain;
+        }
+      }
+    }
   }
 
-  &-sec {
-    width: 100px;
-    height: 100px;
-    background: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 100%;
-    z-index: 4;
+  &__bg {
+    position: relative;
+
+    &-img {
+      display: block;
+      margin: 0 auto;
+      width: 226px;
+
+      img {
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+
+    &-text {
+      width: 100%;
+      position: absolute;
+
+      &-graph {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 156px;
+        // margin: 0 auto 0 auto;
+      }
+
+      &-head {
+        padding-top: 8px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: -1px;
+        text-align: center;
+      }
+    }
   }
 
-  &-hand {
-    z-index: 3;
-    background: blue;
-    width: 50%;
-    height: 6px;
+
+  &__first-prove {
     position: absolute;
-    top: 50%;
-    transform: rotate(90deg);
-    transform-origin: 100%;
-    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+    bottom: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      border-radius: 50%;
+      width: 50%;
+      height: 100%;
+      transform-origin: 50% 100%;
+      transform: rotate(-30deg);
+
+      span {
+        font-size: 14px;
+      }
+    }
+
   }
+
 }
