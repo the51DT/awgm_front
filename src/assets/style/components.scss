@@ -151,7 +151,7 @@
             right: 20px;
 
             ul {
-              border: 1px solid #434343;
+              border: 1px solid #e5e5e5;
               background: #fff;
               box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.06);
 
@@ -1720,30 +1720,86 @@
       }
     }
 
-    &-text {
-      width: 100%;
-      position: absolute;
+  }
 
-      &-graph {
-        width: 100%;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 156px;
-        // margin: 0 auto 0 auto;
+  &__text {
+    position: relative;
+    bottom: 20px;
+    width: 100%;
+
+    &-graph {
+      width: 260px;
+      display: block;
+      margin: 0 auto;
+
+      span {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: -0.5px;
+        vertical-align: middle;
       }
 
-      &-head {
-        padding-top: 8px;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 16px;
-        letter-spacing: -1px;
-        text-align: center;
+      span:nth-child(1) {
+        padding-left: 12px;
+        padding-right: 176px;
+      }
+    }
+
+    &-head {
+      padding-top: 8px;
+      font-weight: 700;
+      font-size: 16px !important;
+      line-height: 16px;
+      letter-spacing: -1px;
+      text-align: center;
+    }
+
+    &-graph-list {
+      margin-top: 8px;
+
+      ul {
+        padding-right: 12px;
+        display: flex;
+        justify-content: flex-end;
+
+        li {
+          font-weight: 500;
+          font-size: 10px;
+          line-height: 16px;
+          letter-spacing: -0.5px;
+          vertical-align: middle;
+          color: #666;
+        }
+
+        li:not(:last-child) {
+          margin-right: 8px;
+        }
+
+        li::before {
+          content: "";
+          display: inline-block;
+          width: 8px;
+          height: 8px;
+          border-radius: 1.33px;
+          transform: translateY(1px);
+          margin-right: 4px;
+        }
+
+        li:nth-child(1)::before {
+          background-color: #E95371;
+        }
+
+        li:nth-child(2)::before {
+          background-color: #F8B500;
+        }
+
+        li:nth-child(3)::before {
+          background-color: #5AB651;
+        }
       }
     }
   }
-
 
   &__first-prove {
     position: absolute;
@@ -1764,7 +1820,8 @@
       width: 50%;
       height: 100%;
       transform-origin: 50% 100%;
-      transform: rotate(-30deg);
+      transform: rotate(0deg);
+      border: 1px solid red;
 
       span {
         font-size: 14px;
@@ -1772,5 +1829,6 @@
     }
 
   }
+
 
 }
