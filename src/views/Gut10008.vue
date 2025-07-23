@@ -23,6 +23,15 @@
               <b class="date_progress"> / 70일</b>
             </div>
           </div>
+          <div class="challenge__info-item font--c66 font--ls1">
+            <span class="period font--800">2회차 진행중</span>
+            <div class="period_date font--c66 font--ls1">
+              <span>2025.04.01</span>
+              ~
+              <span>2025.06.10</span>
+              <b class="date_progress"> / 70일</b>
+            </div>
+          </div>
         </div>
       </div>
       <div class="challenge__card--main__per">
@@ -84,7 +93,7 @@
           </p>
         </div>
       </div>
-      <DashBoard />
+      <DashBoard :value="0.9" :beforeValue="0.5" />
       <div class="challenge__card--main__bottom">
         <div class="challenge__card--main__bottom-result">
           <div class="result-box">
@@ -100,7 +109,8 @@
               </div>
             </div>
           </div>
-          <div class="result-box">
+          <!-- 2차결과 O -->
+          <!-- <div class="result-box">
             <div class="result-box__date">
               <p> $2025년 4월 2일$ </p>
               <p><b> 2차 분석 결과</b> </p>
@@ -112,6 +122,18 @@
                 <p class="result-box__aging-rate--num pink"> 1.57 </p>
               </div>
             </div>
+          </div> -->
+          <!-- 2차결과 X -->
+          <div class="result-box no-result">
+            <p>
+              팀 미션 성공 후 <br />
+              2차 분석 결과를<br />
+              측정해 주세요.
+            </p>
+            <p>
+              (챌린지 종료일 이후 <br />
+              2개월 이내)
+            </p>
           </div>
         </div>
 
@@ -125,13 +147,9 @@
           </p>
           <CustomButton size="md-b12"> 2차 건강 분석 결과 다시 불러오기 </CustomButton>
         </div>
-
-
         <div class="result-view-date">
           <p> 분석 결과 조회 가능일 </p> <span>D-$45$ </span>
         </div>
-
-
       </div>
     </div>
 

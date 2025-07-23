@@ -353,6 +353,25 @@
               }
             }
           }
+
+          .result-box.no-result {
+            text-align: center;
+            color: #111;
+            background-color: #c4c4c4;
+
+            p:nth-child(1) {
+              font-size: 13px;
+              line-height: 150%;
+              letter-spacing: -0.5px;
+              margin-bottom: 14px;
+
+            }
+
+            p:nth-child(2) {
+              font-size: 11px;
+              line-height: 16px;
+            }
+          }
         }
 
         .btn-wrap {

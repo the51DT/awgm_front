@@ -1,7 +1,7 @@
 <template>
   <div class="dashboard-container">
     <div class="dashboard__first-prove">
-      <div>
+      <div :style="{ transform: `rotate(${beforeAngle}deg)` }">
         <span class="font--c66 font--ls1"> 1차 </span>
         <img :src="require(`@/assets/images/first_prove_unit.svg`)" />
       </div>
@@ -17,8 +17,7 @@
         <img :src="require(`@/assets/images/needle-center.svg`)" />
       </div>
       <div class="needle-line">
-        <!-- <img :src="require(`@/assets/images/needle-line.svg`)" :style="{ transform: `rotate(${angle}deg)` }" /> -->
-        <img :src="require(`@/assets/images/needle-line.svg`)" />
+        <img :src="require(`@/assets/images/needle-line.svg`)" :style="{ transform: `rotate(${angle}deg)` }" />
       </div>
     </div>
   </div>
@@ -47,13 +46,24 @@ export default {
     };
   },
   props: {
-
+    value: {
+      type: Number,
+      required: true
+    },
+    beforeValue: {
+      type: Number,
+      required: true
+    }
   },
   computed: {
-
-  },
-  mounted() {
-
+    angle() {
+      if (this.value >= 1.5) return 90
+      return (this.value / 1.5) * 180 - 90
+    },
+    beforeAngle() {
+      if (this.beforeValue >= 1.5) return 90
+      return (this.beforeValue / 1.5) * 180 - 90
+    }
   },
 }
 </script>
