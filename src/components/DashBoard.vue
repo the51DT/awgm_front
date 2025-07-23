@@ -1,21 +1,44 @@
 <template>
-  <div class="box">
-    <div class="gauge-container">
+  <div class="dashboard-container">
+    <div class="dashboard__first-prove">
+      <div>
+        <span class="font--c66 font--ls1"> 1차 </span>
+        <img :src="require(`@/assets/images/first_prove_unit.svg`)" />
+      </div>
+    </div>
+    <div class="dashboard__bg">
+      <div class="dashboard__bg-img">
+        <img :src="require(`@/assets/images/gauge_t.svg`)" />
+      </div>
+    </div>
 
-      <img :src="require(`@/assets/images/gauge_t.svg`)" />
-
-      <div class="needle-wrap" :style="{ transform: `rotate(${angle}deg)` }">
-        <img class="needle-center" :src="require(`@/assets/images/needle-center.svg`)" />
-        <img class="needle" :src="require(`@/assets/images/needle-line.svg`)" />
+    <div class="needle-wrap">
+      <div class="needle-center">
+        <img :src="require(`@/assets/images/needle-center.svg`)" />
+      </div>
+      <div class="needle-line">
+        <!-- <img :src="require(`@/assets/images/needle-line.svg`)" :style="{ transform: `rotate(${angle}deg)` }" /> -->
+        <img :src="require(`@/assets/images/needle-line.svg`)" />
       </div>
     </div>
   </div>
-
+  <div class="dashboard__text">
+    <div class="dashboard__text-graph">
+      <span> x0.5 </span>
+      <span> x1.5 이상 </span>
+    </div>
+    <p class="dashboard__text-head"> 노화속도 </p>
+    <div class="dashboard__text-graph-list">
+      <ul>
+        <li> 주의 </li>
+        <li> 관리 </li>
+        <li> 좋음 </li>
+      </ul>
+    </div>
+  </div>
 </template>
 
 <script>
-
-
 export default {
   name: "DashBoard",
   data() {
@@ -24,6 +47,7 @@ export default {
       dummyData: [85],
       currentIndex: 0,
       displaySpeed: 0,
+      angle: 100,
     };
   },
   props: {
@@ -74,61 +98,3 @@ export default {
   }
 }
 </script>
-
-<style>
-.box {
-  width: 100vw;
-  max-width: 500px;
-  display: flex;
-  height: 100vh;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.gauge-container {
-  position: relative;
-  width: 200px;
-  height: 100px;
-}
-
-.gauge {
-  width: 100%;
-  height: 100%;
-  transform: rotate(0deg);
-}
-
-.gauge-bg {
-  fill: none;
-  stroke: #ddd;
-  stroke-width: 10;
-}
-
-.gauge-fill {
-  fill: none;
-  stroke: blue;
-  stroke-width: 10;
-  stroke-dasharray: 282.6;
-  transition: stroke-dashoffset 0.5s ease;
-}
-
-.needle-wrap {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-}
-
-.needle {
-  /* background: red; */
-  transform-origin: bottom center;
-  transition: transform 0.3s ease-in-out;
-  transform: rotate(0deg);
-}
-
-.needle-center {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  right: 50%;
-}
-</style>
