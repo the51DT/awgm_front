@@ -1,23 +1,15 @@
 <template>
   <div class="faq--wrap">
-    <ContentHead title="FAQ" :leftArea=true headType="ty02"/>
+    <ContentHead title="FAQ" :leftArea=true headType="ty02" />
     <div class="faq">
       <div class="faq__tag">
-        <swiper
-          :modules="modules"
-          :slides-per-view="'auto'"
-          :freeMode="true"
-          :space-between="4"
-          :slidesOffsetBefore="20"
-          :slidesOffsetAfter="20"
-          @swiper="onSwiper"
-          @slideChange="onSlideChange"
-        >
+        <swiper :modules="modules" :slides-per-view="'auto'" :freeMode="true" :space-between="4"
+          :slidesOffsetBefore="20" :slidesOffsetAfter="20" @swiper="onSwiper" @slideChange="onSlideChange">
           <swiper-slide><button class="tag on">전체</button></swiper-slide>
-          <swiper-slide><button class="tag">미션/인증</button></swiper-slide>
-          <swiper-slide><button class="tag">챌린지/보상</button></swiper-slide>
-          <swiper-slide><button class="tag">팀</button></swiper-slide>
+          <swiper-slide><button class="tag">것모닝 코리아 챌린지</button></swiper-slide>
           <swiper-slide><button class="tag">기타</button></swiper-slide>
+          <swiper-slide><button class="tag">미션</button></swiper-slide>
+          <swiper-slide><button class="tag">자녀</button></swiper-slide>
         </swiper>
       </div>
       <div class="faq__cont">
@@ -34,7 +26,8 @@
 
           <div class="faq__acco on">
             <button class="acco">이벤트 챌린지는 참여는 어떻게 하나요?</button>
-            <div class="acco__cont">본 개인정보처리방침은 2024년 08월 26일부터 적용됩니다. 내용의 추가, 삭제 및 수정이 있을 시에는 시행일 이전에 공지사항 등을 통하여 고지할 것입니다. 또한 개인정보 처리방침에 버전번호 및 공고일자, 시행일자 등을 부여하여 개정여부를 쉽게 알 수 있도록 하고 있습니다.</div>
+            <div class="acco__cont">본 개인정보처리방침은 2024년 08월 26일부터 적용됩니다. 내용의 추가, 삭제 및 수정이 있을 시에는 시행일 이전에 공지사항 등을 통하여 고지할
+              것입니다. 또한 개인정보 처리방침에 버전번호 및 공고일자, 시행일자 등을 부여하여 개정여부를 쉽게 알 수 있도록 하고 있습니다.</div>
           </div>
 
           <div class="faq__acco">
