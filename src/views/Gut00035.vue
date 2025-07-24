@@ -18,67 +18,92 @@
                 <div class="activity__area_badge-section">
                   <div class="badge-box-wrap">
                     <div class="badge-box">
-                      <BadgeDefault pointColor="white" img="pin--beginner.svg">0회</BadgeDefault>
+                      <BadgeDefault pointColor="white" img="pin--beginner.svg">비기너</BadgeDefault>
+                      <span> 0회</span>
                     </div>
                     <div class="badge-box">
-                      <BadgeDefault pointColor="white" img="pin--rookie.svg">2회</BadgeDefault>
+                      <BadgeDefault pointColor="white" img="pin--rookie.svg">루키</BadgeDefault>
+                      <span> 2회</span>
                     </div>
                     <div class="badge-box">
-                      <BadgeDefault pointColor="white" img="pin--bronze_builder.svg">5회</BadgeDefault>
+                      <BadgeDefault pointColor="white" img="pin--bronze_builder.svg">브론즈 파운데이션</BadgeDefault>
+                      <span> 5회</span>
                     </div>
                     <div class="badge-box">
-                      <BadgeDefault pointColor="white" img="pin--bronze_foundation.svg">8회</BadgeDefault>
+                      <BadgeDefault pointColor="white" img="pin--bronze_foundation.svg">브론즈 빌더</BadgeDefault>
+                      <span> 8회</span>
                     </div>
                     <div class="badge-box">
-                      <BadgeDefault pointColor="white" img="pin--silver_producer.svg">11회</BadgeDefault>
+                      <BadgeDefault pointColor="white" img="pin--silver_producer.svg">실버 프로듀서</BadgeDefault>
+                      <span> 11회</span>
                     </div>
                     <div class="badge-box">
-                      <BadgeDefault pointColor="white" img="pin--gold_producer.svg">31회</BadgeDefault>
+                      <BadgeDefault pointColor="white" img="pin--gold_producer.svg">골드 프로듀서</BadgeDefault>
+                      <span> 31회</span>
                     </div>
                     <div class="badge-box">
-                      <BadgeDefault pointColor="white" img="pin--platinum.svg">51회</BadgeDefault>
+                      <BadgeDefault pointColor="white" img="pin--platinum.svg">플래티늄</BadgeDefault>
+                      <span> 51회</span>
                     </div>
                     <div class="badge-box">
-                      <BadgeDefault pointColor="white" img="pin--ruby.svg">71회</BadgeDefault>
+                      <BadgeDefault pointColor="white" img="pin--ruby.svg">루비</BadgeDefault>
+                      <span> 71회</span>
                     </div>
                     <div class="badge-box">
-                      <BadgeDefault pointColor="white" img="pin--sapphire.svg">9회</BadgeDefault>
+                      <BadgeDefault pointColor="white" img="pin--sapphire.svg">사파이어</BadgeDefault>
+                      <span> 91회</span>
                     </div>
                     <div class="badge-box">
-                      <BadgeDefault pointColor="white" img="pin--emerald.svg">111회</BadgeDefault>
+                      <BadgeDefault pointColor="white" img="pin--emerald.svg">에메랄드</BadgeDefault>
+                      <span> 111회</span>
                     </div>
                     <div class="badge-box">
-                      <BadgeDefault pointColor="white" img="pin--diamond.svg">131회</BadgeDefault>
+                      <BadgeDefault pointColor="white" img="pin--diamond.svg">다이아몬드</BadgeDefault>
+                      <span> 131회</span>
                     </div>
                     <div class="badge-box">
-                      <BadgeDefault pointColor="white" img="pin--exclutive_diamond.svg">151회</BadgeDefault>
+                      <BadgeDefault pointColor="white" img="pin--exclutive_diamond.svg">수석 다이아몬드</BadgeDefault>
+                      <span> 151회</span>
                     </div>
                     <div class="badge-box">
-                      <BadgeDefault pointColor="white" img="pin--double_diamond.svg">181회</BadgeDefault>
+                      <BadgeDefault pointColor="white" img="pin--double_diamond.svg">더블 다이아몬드</BadgeDefault>
+                      <span> 181회</span>
                     </div>
                     <div class="badge-box">
-                      <BadgeDefault pointColor="white" img="pin--triple_diamond.svg">211회</BadgeDefault>
+                      <BadgeDefault pointColor="white" img="pin--triple_diamond.svg">트리플 다이아몬드</BadgeDefault>
+                      <span> 211회</span>
                     </div>
                     <div class="badge-box">
-                      <BadgeDefault pointColor="white" img="pin--crown.svg">241회</BadgeDefault>
+                      <BadgeDefault pointColor="white" img="pin--crown.svg">크라운</BadgeDefault>
+                      <span> 241회</span>
                     </div>
                     <div class="badge-box">
-                      <BadgeDefault pointColor="white" img="pin--founders_crown.svg">271회</BadgeDefault>
+                      <BadgeDefault pointColor="white" img="pin--founders_crown.svg">파운더스 크라운</BadgeDefault>
+                      <span> 271회</span>
                     </div>
                     <div class="badge-box">
-                      <BadgeDefault pointColor="white" img="pin--crown_ambassador.svg">301회</BadgeDefault>
+                      <BadgeDefault pointColor="white" img="pin--crown_ambassador.svg">크라운 앰배서더</BadgeDefault>
+                      <span> 301회</span>
                     </div>
                     <div class="badge-box">
-                      <BadgeDefault pointColor="white" img="pin--founders_crown_ambassador.svg">316회</BadgeDefault>
+                      <BadgeDefault pointColor="white" img="pin--founders_crown_ambassador.svg">파운더스 크라운 앰배서더
+                      </BadgeDefault>
+                      <span> 316회</span>
                     </div>
                     <div class="badge-box">
-                      <BadgeDefault pointColor="white" img="pin--founders_crown_ambassador_40.svg">331회</BadgeDefault>
+                      <BadgeDefault pointColor="white" img="pin--founders_crown_ambassador_40.svg">파운더스 크라운 앰배서더 40
+                      </BadgeDefault>
+                      <span> 331회</span>
                     </div>
                     <div class="badge-box">
-                      <BadgeDefault pointColor="white" img="pin--founders_crown_ambassador_50.svg">346회</BadgeDefault>
+                      <BadgeDefault pointColor="white" img="pin--founders_crown_ambassador_50.svg">파운더스 크라운 앰배서더 50
+                      </BadgeDefault>
+                      <span> 346회</span>
                     </div>
                     <div class="badge-box">
-                      <BadgeDefault pointColor="white" img="pin--founders_crown_ambassador_60.svg">361회</BadgeDefault>
+                      <BadgeDefault pointColor="white" img="pin--founders_crown_ambassador_60.svg">파운더스 크라운 앰배서더 60
+                      </BadgeDefault>
+                      <span> 361회</span>
                     </div>
                   </div>
                 </div>
