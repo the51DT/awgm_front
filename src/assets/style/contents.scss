@@ -72,7 +72,7 @@
       font-weight: 800;
     }
 
-    .ico-desc{
+    .ico-desc {
       font-size: 12px;
       margin-top: 12px;
       font-weight: 500;
@@ -147,13 +147,15 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  .list-btn-wrap{
+
+  .list-btn-wrap {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 8px;
-    span{
+
+    span {
       font-weight: 500;
       font-size: 11px;
       line-height: 16px;
@@ -162,40 +164,49 @@
       padding-left: 8px;
       position: relative;
     }
-    span::before{
+
+    span::before {
       content: " ";
       display: block;
-      width: 2px; height: 2px;
+      width: 2px;
+      height: 2px;
       position: absolute;
-      top: 6px; left: 1px;
+      top: 6px;
+      left: 1px;
       background: #666;
       border-radius: 50%;
     }
-    &-sort-list{
+
+    &-sort-list {
       display: flex;
       flex-direction: row;
       justify-content: center;
       gap: 4px;
-      & > div > div{
+
+      &>div>div {
         border: 1px solid #D8D8D8;
         border-radius: 4px;
-        width: 28px; height: 28px;
+        width: 28px;
+        height: 28px;
         display: flex;
         justify-content: center;
         align-items: center;
-        button{
+
+        button {
           position: static;
         }
       }
     }
 
   }
-  .badge-btn-wrap{
+
+  .badge-btn-wrap {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     margin-bottom: 4px;
-    button{
+
+    button {
       font-weight: 500;
       font-size: 13px;
       line-height: 24px;
@@ -208,7 +219,8 @@
 
   .card {
     border-radius: 16px;
-    .bookmark__btn{
+
+    .bookmark__btn {
       right: 0;
     }
 
@@ -218,12 +230,14 @@
       width: 24px;
       height: 24px;
     }
-    .kickout-btn{
+
+    .kickout-btn {
       position: absolute;
       right: 12px;
       bottom: 16px;
     }
-    .kickout-btn.leaderOn{
+
+    .kickout-btn.leaderOn {
       display: none;
     }
   }
@@ -244,8 +258,8 @@
     &-conts-wrap {
       margin-bottom: 24px;
     }
-    
-    &-conts__not{
+
+    &-conts__not {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -259,7 +273,8 @@
 .team-btn-wrap {
   margin-top: 22px;
 }
-.team-box-wrap.child-manage{
+
+.team-box-wrap.child-manage {
   height: 92vh;
 
 }
@@ -319,16 +334,19 @@
     }
 
     .card {
-      &___top__profile_img{
+      &___top__profile_img {
         width: 56px;
         max-height: 56px;
-        .profile_img__info.user_img-wrap.on-flag{
+
+        .profile_img__info.user_img-wrap.on-flag {
           height: 56px;
         }
-        .user_img{
+
+        .user_img {
           height: 56px;
         }
       }
+
       // &__img {
       //   max-width: 56px;
       //   height: 56px;
@@ -354,10 +372,12 @@
     display: flex;
     flex-direction: column;
     flex: 1;
-    &.manage{
+
+    &.manage {
       max-width: 100%;
-      dl{
-        flex: 1 1; 
+
+      dl {
+        flex: 1 1;
         min-height: 40px;
         display: flex;
         justify-content: flex-start;
@@ -382,29 +402,35 @@
         dd {
           color: #111;
           word-wrap: break-word;
-          i{
+
+          i {
             font-style: normal;
           }
-          span{
+
+          span {
             color: #666;
             font-weight: 800;
           }
-          span.green{
+
+          span.green {
             color: #169E4A;
             font-weight: 800;
             font-size: 13px;
             line-height: 24px;
             letter-spacing: -0.5px
           }
-          button{
+
+          button {
             display: flex;
             justify-content: flex-start;
             align-items: center;
-            img{
+
+            img {
               width: 16px;
               height: 16px;
             }
-            span{
+
+            span {
               color: #666;
               font-size: 12px;
               line-height: 16px;
@@ -412,39 +438,46 @@
             }
           }
         }
-        dd:has(> img){
+
+        dd:has(> img) {
           display: flex;
           align-items: center;
         }
       }
     }
 
-    &.ty02.team-list-view{
+    &.ty02.team-list-view {
       max-width: 210px;
     }
 
     &.ty02.light-view {
       flex-direction: row;
       gap: 8px;
-      & > div{
+
+      &>div {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
       }
-      & > div:nth-child(1){
-        dt{
+
+      &>div:nth-child(1) {
+        dt {
           width: 60px;
         }
-        dd{
+
+        dd {
           width: 50px;
         }
       }
-      & > div:nth-child(2){
+
+      &>div:nth-child(2) {
         margin-right: 50px;
-        dt{
+
+        dt {
           width: 82px;
         }
-        dd{
+
+        dd {
           width: 80px;
         }
       }
@@ -454,27 +487,32 @@
       display: flex;
       font-size: 15px;
       line-height: 24px;
+
       &:not(:last-child) {
         // margin-bottom: 8px;
       }
+
       dt {
-        width: 110px; 
+        width: 110px;
         flex-shrink: 0;
         padding-right: 8px;
         font-size: 16px;
         font-weight: 800;
         color: #111;
       }
+
       dd {
         flex: 1 1 auto;
         min-width: 0;
         font-weight: 500;
         color: #666;
+
         .group-info {
           .sub {
             color: #999;
           }
         }
+
         .badge-info {
           width: fit-content;
           padding: 2px 8px;
@@ -487,15 +525,18 @@
           color: #fffa01;
         }
       }
-      .challenge__badge-wrap{
+
+      .challenge__badge-wrap {
         display: flex;
         gap: 4px;
       }
     }
   }
-  &__bottom{
+
+  &__bottom {
     margin-top: 8px !important;
-    .challenge__badge{
+
+    .challenge__badge {
       font-weight: 800;
       font-size: 13px;
       line-height: 24px;
@@ -503,64 +544,75 @@
     }
   }
 
-  .team-detail{
+  .team-detail {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    .team-detail-pin{
+
+    .team-detail-pin {
       width: 50%;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      p.title{
+
+      p.title {
         font-weight: 800;
         font-size: 16px;
         line-height: 24px;
         color: #111;
         margin-bottom: 8px;
       }
-      .badge__name{
+
+      .badge__name {
         font-weight: 500;
         font-size: 13px;
         line-height: 24px;
         color: #666;
       }
-      .badge__wrap{
+
+      .badge__wrap {
         margin-bottom: 0;
-        img{
+
+        img {
           width: 80px;
         }
       }
     }
-    .team-detail-pin:first-child{
+
+    .team-detail-pin:first-child {
       padding-right: 20px;
     }
-    .team-detail-pin:last-child{
+
+    .team-detail-pin:last-child {
       padding-left: 20px;
     }
-    .team-detail-pin:first-child:after{
-      content:"";
+
+    .team-detail-pin:first-child:after {
+      content: "";
       width: 2px;
       height: 100px;
       background: #D8D8D8;
       position: absolute;
       right: 50%;
     }
-    .team-detail-pin:only-child:after{
-      content:"";
+
+    .team-detail-pin:only-child:after {
+      content: "";
       width: 2px;
       height: 100px;
       background: transparent;
       position: absolute;
       right: 0;
     }
-    & + .card__top{
+
+    &+.card__top {
       margin-top: 12px;
     }
   }
-  &.all-times{
-    .team-detail-pin:first-child{
+
+  &.all-times {
+    .team-detail-pin:first-child {
       position: relative;
     }
   }
@@ -571,6 +623,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   .order--icon {
     background-image: url(../images/icon_order_desc.svg);
     background-size: contain;
@@ -629,7 +682,8 @@
 
   &-wrap {
     padding: 48px 0 140px;
-    &.not{
+
+    &.not {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -859,7 +913,7 @@
               text-align: center;
               color: #000;
             }
-            
+
           }
         }
 
@@ -1021,22 +1075,26 @@
         }
       }
     }
-    .btn__link-wrap{
+
+    .btn__link-wrap {
       background: transparent;
-      .btn__link{
-        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("@/assets/images/gut_welcome_bg.jpg") no-repeat center/cover; 
-        display: flex; 
+
+      .btn__link {
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("@/assets/images/gut_welcome_bg.jpg") no-repeat center/cover;
+        display: flex;
         justify-content: space-between;
         border-radius: 20px;
         margin-bottom: 20px;
-        & > div p:nth-child(1){
+
+        &>div p:nth-child(1) {
           font-weight: 700;
           font-size: 22px;
           line-height: 32px;
           letter-spacing: 0px;
           color: #F79C22;
         }
-        & > div p:nth-child(2){
+
+        &>div p:nth-child(2) {
           font-weight: 500;
           font-size: 13px;
           line-height: 24px;
@@ -1058,8 +1116,10 @@
     &:not(:last-child) {
       margin-bottom: 60px;
     }
+
     &:nth-last-child(n+1) {
-      margin-bottom: 36px;;
+      margin-bottom: 36px;
+      ;
     }
 
     &.ty02 {
@@ -1083,6 +1143,7 @@
             }
           }
         }
+
         &__tooltip {
           padding: 8px 10px;
           min-width: 240px;
@@ -1173,6 +1234,7 @@
 
       .challenge__card--main__top {
         display: block;
+
         &>p {
           padding-right: 48px;
         }
@@ -1330,6 +1392,16 @@
       }
     }
 
+    &.active-small {
+      width: 35px;
+      height: 35px;
+
+      img {
+        animation: rotate_image 4s linear infinite;
+        transform-origin: 50% 50%;
+      }
+    }
+
     img {
       width: 100%;
       height: 100%;
@@ -1390,14 +1462,16 @@
 
 
 /* 마이인덱스 ABO 회원인증 팝업 시 로그인*/
-.myindex.content-area{
-  .login-form{
+.myindex.content-area {
+  .login-form {
     padding-bottom: 0;
-    .input-area{
-      .inputField:nth-child(1){
+
+    .input-area {
+      .inputField:nth-child(1) {
         margin-bottom: 8px;
       }
-      .inputField:nth-child(2){
+
+      .inputField:nth-child(2) {
         margin-bottom: 0;
       }
     }
