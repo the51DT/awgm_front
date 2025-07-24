@@ -9,7 +9,8 @@
           <swiper-slide><button class="tag">것모닝 코리아 챌린지</button></swiper-slide>
           <swiper-slide><button class="tag">기타</button></swiper-slide>
           <swiper-slide><button class="tag">미션</button></swiper-slide>
-          <swiper-slide><button class="tag">자녀</button></swiper-slide>
+          <swiper-slide><button class="tag">자녀 프로필</button></swiper-slide>
+          <swiper-slide><button class="tag">팀</button></swiper-slide>
         </swiper>
       </div>
       <div class="faq__cont">
