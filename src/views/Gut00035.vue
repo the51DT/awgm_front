@@ -201,7 +201,7 @@
       <!--  대표 뱃지 있을 시 -->
       <div class="represent__badge-wrap">
         <div class="represent__badge">
-          <BadgeDefault img="badge--happy_birthday.svg" pointColor="green">
+          <BadgeDefault img="badge--happy_birthday.svg">
             나의 생일
           </BadgeDefault>
           <div class="btn">
