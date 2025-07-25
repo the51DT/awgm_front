@@ -93,10 +93,12 @@
           </p>
         </div>
       </div>
-      <DashBoard :value="0.9" :beforeValue="0.5" />
+
+      <DashBoard :value="1.09" :beforeValue="0.75" />
+
       <div class="challenge__card--main__bottom">
         <div class="challenge__card--main__bottom-result">
-          <div class="result-box">
+          <div class="result-box first">
             <div class="result-box__date">
               <p> $2025년 4월 1일$ </p>
               <p><b> 1차 분석 결과</b> </p>
@@ -105,12 +107,12 @@
               <p class="result-box__aging-rate--text"> 노화속도 </p>
               <div>
                 <span> x </span>
-                <p class="result-box__aging-rate--num yellow"> 1.09 </p>
+                <p class="result-box__aging-rate--num first"> 1.09 </p>
               </div>
             </div>
           </div>
           <!-- 2차결과 O -->
-          <!-- <div class="result-box">
+          <div class="result-box second">
             <div class="result-box__date">
               <p> $2025년 4월 2일$ </p>
               <p><b> 2차 분석 결과</b> </p>
@@ -119,12 +121,12 @@
               <p class="result-box__aging-rate--text"> 노화속도 </p>
               <div>
                 <span> x </span>
-                <p class="result-box__aging-rate--num pink"> 1.57 </p>
+                <p class="result-box__aging-rate--num second"> 1.57 </p>
               </div>
             </div>
-          </div> -->
-          <!-- 2차결과 X -->
-          <div class="result-box no-result">
+          </div>
+          <!-- 2차결과 X 시 .no-result 클래스 추가-->
+          <!-- <div class="result-box no-result">
             <p>
               팀 미션 성공 후 <br />
               2차 분석 결과를<br />
@@ -134,19 +136,32 @@
               (챌린지 종료일 이후 <br />
               2개월 이내)
             </p>
-          </div>
+          </div> -->
         </div>
 
+        <!-- 2차 건강 분석 결과 조회 전 -->
         <!-- <div class="btn-wrap">
           <CustomButton size="md-b12"> 2차 건강 분석 결과 조회하기 </CustomButton>
         </div> -->
-        <div class="btn-wrap">
+
+        <!-- 2차건강 분석결과 조회 후 -->
+        <!-- <div class="btn-wrap">
           <p class="desc">
             노화 속도가 개선되지 않았습니다. <br />
             다음에 다시 도전해보세요.
           </p>
           <CustomButton size="md-b12"> 2차 건강 분석 결과 다시 불러오기 </CustomButton>
+        </div> -->
+
+        <!-- 노화속도 개선 성공 시 - 1차 건강 분석 결과 다시 불러오기 -->
+        <div class="btn-wrap">
+          <p class="desc stamp">
+            노화 속도 1배속 개선
+            <!-- <img :src="require(`@/assets/images/my_wellness_lap-stamp.png`)" /> -->
+          </p>
+          <CustomButton size="md-b12"> 1차 건강 분석 결과 다시 불러오기 </CustomButton>
         </div>
+
         <div class="result-view-date">
           <p> 분석 결과 조회 가능일 </p> <span>D-$45$ </span>
         </div>
