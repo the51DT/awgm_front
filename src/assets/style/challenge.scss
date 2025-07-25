@@ -390,7 +390,29 @@
             text-align: center;
             color: #666;
             margin-top: 20px;
+
+            &.stamp {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 4px;
+              // padding: 0 102px 0 46px;
+              position: relative;
+              margin: -10px 0 -20px 0;
+            }
+
+            &.stamp::after {
+              content: "";
+              display: inline-block;
+              width: 72px;
+              height: 72px;
+              background: url('../images/my_wellness_lap-stamp.png') no-repeat center/100%;
+              // position: absolute;
+              // right: 90px;
+            }
           }
+
+
         }
 
         .result-view-date {
@@ -399,6 +421,7 @@
           line-height: 24px;
           letter-spacing: -0.5px;
           margin-top: 8px;
+          text-align: center;
 
           p {
             display: inline-block;
@@ -2535,6 +2558,36 @@ p i {
   }
 
   &__area {
+    &-certified {
+      margin-top: 20px;
+      padding: 12px 20px;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0px 8px 16px 0px #0000000F;
+
+      dl {
+        display: flex;
+        gap: 12px;
+        padding: 8px 0;
+
+        dt {
+          width: 102px;
+          font-weight: 800;
+          font-size: 15px;
+          line-height: 24px;
+          letter-spacing: -0.5px;
+          color: #111;
+        }
+
+        dd {
+          font-size: 15px;
+          line-height: 24px;
+          letter-spacing: -0.5px;
+          color: #666;
+        }
+      }
+    }
+
     &-profile {
       width: 100%;
       display: flex;
@@ -2542,8 +2595,21 @@ p i {
       justify-content: center;
       align-items: center;
       padding-top: 4px;
-      margin-bottom: 32px;
-      margin-top: 8px;
+      margin: 32px 0;
+
+      h2 {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 800;
+        color: #111;
+      }
+
+      &-date {
+        color: #666;
+        font-size: 14px;
+        line-height: 24px;
+        margin: 4px 0 12px 0;
+      }
 
       .badge__desc {
         margin-top: 4px;
@@ -2561,6 +2627,10 @@ p i {
           line-height: 19.5px;
           text-align: center;
           color: #fff;
+        }
+
+        span.badge__desc-my {
+          color: #666666;
         }
 
         button {

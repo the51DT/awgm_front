@@ -1,10 +1,23 @@
 <template>
   <div class="activity bg-case">
     <div class="activity__area">
+      <div class="activity__area-certified">
+        <dl>
+          <dt> 최초 인증일 </dt>
+          <dd> $2024년 7월 5일$</dd>
+
+        </dl>
+        <dl>
+          <dt> 총 누적 인증 횟수 </dt>
+          <dd> $총 누적 횟수$</dd>
+        </dl>
+      </div>
       <div class="activity__area-profile">
+        <h2> 활동 기준일</h2>
+        <p class="activity__area-profile-date"> 2025년 9월 ~ 2026년 8월</p>
         <BadgeDefault img="pin--diamond.svg" />
         <div class="badge__desc">
-          <span> 다이아몬드 </span>
+          <span class="badge__desc-my"> 다이아몬드 </span>
           <button type="button" class="badges_reward_btn__open">
             <img src="@/assets/images/icon_tooltip.svg" alt="핀레벨 뱃지 설명 툴팁 오픈 버튼" />
           </button>
@@ -110,7 +123,6 @@
               </div>
             </div>
           </div>
-
         </div>
         <div class="wrap">
           <p class="name"> 김웨이 </p>
