@@ -97,6 +97,13 @@
       <DashBoard :value="1.09" :beforeValue="0.75" />
 
       <div class="challenge__card--main__bottom">
+        <p class="desc">
+          노화 속도가 개선되지 않았습니다. <br />
+          다음에 다시 도전해보세요.
+        </p>
+        <!-- <p class="desc stamp">
+          노화 속도 1배속 개선
+        </p> -->
         <div class="challenge__card--main__bottom-result">
           <div class="result-box first">
             <div class="result-box__date">
@@ -146,22 +153,13 @@
 
         <!-- 2차건강 분석결과 조회 후 -->
         <!-- <div class="btn-wrap">
-          <p class="desc">
-            노화 속도가 개선되지 않았습니다. <br />
-            다음에 다시 도전해보세요.
-          </p>
           <CustomButton size="md-b12"> 2차 건강 분석 결과 다시 불러오기 </CustomButton>
         </div> -->
 
         <!-- 노화속도 개선 성공 시 - 1차 건강 분석 결과 다시 불러오기 -->
         <div class="btn-wrap">
-          <p class="desc stamp">
-            노화 속도 1배속 개선
-            <!-- <img :src="require(`@/assets/images/my_wellness_lap-stamp.png`)" /> -->
-          </p>
           <CustomButton size="md-b12"> 1차 건강 분석 결과 다시 불러오기 </CustomButton>
         </div>
-
         <div class="result-view-date">
           <p> 분석 결과 조회 가능일 </p> <span>D-$45$ </span>
         </div>
