@@ -95,6 +95,11 @@
       gap: 24px;
       margin-top: 136px;
 
+      .challenge_method_btn__open img {
+        width: 24px;
+        height: 24px;
+      }
+
       img {
         width: 94px;
       }
@@ -137,6 +142,93 @@
           display: flex;
           gap: 12px;
           padding: 8px 0;
+        }
+      }
+
+      .challenge__card--main__bottom {
+        width: 100%;
+        margin-top: 8px;
+
+        img {
+          width: 100%;
+        }
+
+        button {
+          margin-top: 0;
+        }
+      }
+
+      .challenge__card--main__top {
+        position: relative;
+      }
+
+      .challenge_method {
+        width: 100%;
+        max-width: 500px;
+        position: absolute;
+        bottom: 73px;
+        right: 36px;
+        // margin-left: -41px;
+
+        &_btn {
+          margin-left: auto;
+          margin-right: 20px;
+          width: 182px;
+          height: 160px;
+
+          &__pop {
+            display: none;
+            width: 234px;
+            height: 172px;
+            padding: 16px;
+            padding-top: 16px;
+            background: url(../images/challenge_method_speech_box_bg.svg) no-repeat center/100%;
+            z-index: 2;
+            position: relative;
+            color: #fff;
+
+            p {
+              font-weight: 800;
+              font-size: 12px;
+              line-height: 16px;
+              margin-bottom: 8px;
+            }
+
+            ul {
+              counter-reset: list-number;
+
+              li {
+                font-weight: 500;
+                font-size: 11px;
+                line-height: 16px;
+                counter-increment: list-number;
+                text-indent: -12px;
+                padding-left: 12px;
+              }
+
+              li::before {
+                content: counter(list-number) '.';
+                padding-right: 5px;
+              }
+            }
+
+
+
+            &.on {
+              display: block;
+            }
+
+            .challenge_method_btn__pop__close {
+              position: absolute;
+              top: 16px;
+              right: 16px;
+              width: 21px;
+              height: 21px;
+              background-image: url(../images/icon_close_white.svg);
+              background-size: contain;
+            }
+
+          }
         }
       }
     }
@@ -419,18 +511,6 @@
           }
 
           .custom-btn::after {
-            // content: "";
-            // position: absolute;
-            // border: 11px solid #169E4A;
-            // border-color: rgba(56, 77, 157, 0);
-            // border-bottom-color: #169E4A;
-            // height: 0;
-            // width: 0;
-            // transform: translate(-1px, 3px);
-            // margin-left: 45px;
-            // bottom: 100%;
-            // border-radius: 4px;
-
             content: "";
             width: 16px;
             height: 10px;

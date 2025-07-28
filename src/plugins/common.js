@@ -138,6 +138,22 @@ function layerClose (type) {
       });
     }
   }
+    else if (type === "challenge_method") {
+    const challengeMethodOpenBtn = document.querySelector(".challenge_method_btn__open");
+    const challengeMethodPop = document.querySelector(".challenge_method_btn__pop");
+    const challengeMethodCloseBtn = document.querySelector(".challenge_method_btn__pop__close");
+    
+    if (challengeMethodOpenBtn && challengeMethodPop) {
+      challengeMethodOpenBtn.addEventListener("click", () => {
+        challengeMethodPop.classList.add("on");
+      });
+    }
+    if (challengeMethodCloseBtn && challengeMethodPop) {
+      challengeMethodCloseBtn.addEventListener("click", () => {
+        challengeMethodPop.classList.remove("on");
+      });
+    }
+  }
   else if (type === "popup") {
     const btnClose = document.querySelector(".popup__box--close");
 

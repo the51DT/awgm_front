@@ -515,6 +515,11 @@ export const menuRoutes = [
 
     createMainMenu("07 마이웰니스랩", "/마이웰니스랩", MENU_TYPES.WELLNESS, [
     {
+      text: "첼린지 미 진행시-Gut10007",
+      path: "/첼린지 미 진행시-Gut10007",
+      meta: { layout: "headerOnly" },
+    },
+    {
       text: "홈 챌린지-Gut10008",
       path: "/홈 챌린지-Gut10008",
       meta: { layout: "headerOnly" },
