@@ -193,7 +193,7 @@ import DashBoard from "@/components/DashBoard.vue"
 import tabFn from "@/plugins/common.js";
 import layerClose from "@/plugins/common.js";
 export default {
-  name: "Gut_00008",
+  name: "Gut_10008",
   components: {
     CustomButton,
     AppNav,
