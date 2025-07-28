@@ -2703,9 +2703,17 @@ p i {
               text-align: center;
               padding: 8px 5px;
 
+              .badge {
+                margin-bottom: 4px;
+              }
 
               .badge__wrap {
                 margin-bottom: 0;
+              }
+
+              .badge__name p {
+                font-size: 15px;
+                line-height: 19.5px;
               }
 
               img {

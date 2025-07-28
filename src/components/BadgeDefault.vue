@@ -12,20 +12,6 @@
       </p>
     </div>
   </div>
-  <!-- 
-    lock 배지 네이밍
-    - lock-wave
-    - lock-circle
-    - lock-drape
-    - lock-hex
-    - lock-hex-rotate
-    - lock-octagon
-    - lock-octagon-rotate
-    - lock-semicircle
-    - lock-star
-
-    lock 배지 노출 시 pointColor="lock" 필수
-  -->
 </template>
 
 <script>
@@ -33,6 +19,21 @@
 // <BadgeDefault img="핀레벨이미지이름.svg" pointColor="white"> $핀레벨이름$ </BadgeDefault>
 // <BadgeDefault img="badge--lock.svg" pointColor="lock">$미획득 배지$</BadgeDefault>
 
+
+/*
+  lock 배지 네이밍
+  - lock-wave
+  - lock-circle
+  - lock-drape
+  - lock-hex
+  - lock-hex-rotate
+  - lock-octagon
+  - lock-octagon-rotate
+  - lock-semicircle
+  - lock-star
+
+  lock 배지 노출 시 pointColor="lock" 필수
+*/
 export default {
   props: {
     img: {
