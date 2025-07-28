@@ -158,77 +158,76 @@
         }
       }
 
-      .challenge__card--main__top {
-        position: relative;
-      }
 
-      .challenge_method {
-        width: 100%;
-        max-width: 500px;
-        position: absolute;
-        bottom: 73px;
-        right: 0px;
-        // margin-left: -41px;
+    }
 
-        &_btn {
-          margin-left: auto;
-          margin-right: 5px;
+    .challenge__card--main__top {
+      position: relative;
+    }
+
+    .challenge_method {
+      width: 100%;
+      max-width: 500px;
+      position: absolute;
+      bottom: 73px;
+      right: 0px;
+
+      &_btn {
+        margin-left: auto;
+        margin-right: 5px;
+        width: 234px;
+        height: 172px;
+
+        &__pop {
+          display: none;
           width: 234px;
           height: 172px;
+          padding: 16px;
+          padding-top: 16px;
+          background: url(../images/challenge_method_speech_box_bg.svg) no-repeat center/100%;
+          z-index: 2;
+          position: relative;
+          color: #fff;
 
-          &__pop {
-            display: none;
-            width: 234px;
-            height: 172px;
-            padding: 16px;
-            padding-top: 16px;
-            background: url(../images/challenge_method_speech_box_bg.svg) no-repeat center/100%;
-            z-index: 2;
-            position: relative;
-            color: #fff;
-
-            p {
-              font-weight: 800;
-              font-size: 12px;
-              line-height: 16px;
-              margin-bottom: 8px;
-            }
-
-            ul {
-              counter-reset: list-number;
-
-              li {
-                font-weight: 500;
-                font-size: 11px;
-                line-height: 16px;
-                counter-increment: list-number;
-                text-indent: -12px;
-                padding-left: 12px;
-              }
-
-              li::before {
-                content: counter(list-number) '.';
-                padding-right: 5px;
-              }
-            }
-
-
-
-            &.on {
-              display: block;
-            }
-
-            .challenge_method_btn__pop__close {
-              position: absolute;
-              top: 16px;
-              right: 16px;
-              width: 21px;
-              height: 21px;
-              background-image: url(../images/icon_close_white.svg);
-              background-size: contain;
-            }
-
+          p {
+            font-weight: 800;
+            font-size: 12px;
+            line-height: 16px;
+            margin-bottom: 8px;
           }
+
+          ul {
+            counter-reset: list-number;
+
+            li {
+              font-weight: 500;
+              font-size: 11px;
+              line-height: 16px;
+              counter-increment: list-number;
+              text-indent: -12px;
+              padding-left: 12px;
+            }
+
+            li::before {
+              content: counter(list-number) '.';
+              padding-right: 5px;
+            }
+          }
+
+          &.on {
+            display: block;
+          }
+
+          .challenge_method_btn__pop__close {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            width: 21px;
+            height: 21px;
+            background-image: url(../images/icon_close_white.svg);
+            background-size: contain;
+          }
+
         }
       }
     }
@@ -364,9 +363,6 @@
                   line-height: 16px;
                 }
               }
-
-
-
             }
           }
         }
@@ -380,16 +376,16 @@
           letter-spacing: -0.5px;
           text-align: center;
           color: #666;
-          margin-top: 20px;
+          margin: 12px 0;
 
           &.stamp {
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 4px;
-            // padding: 0 102px 0 46px;
+            gap: 8px;
             position: relative;
-            margin: -10px 0 -20px 0;
+            margin: -10px 0 -10px 0;
+            color: #169E4A;
           }
 
           &.stamp::after {
@@ -398,8 +394,6 @@
             width: 72px;
             height: 72px;
             background: url('../images/my_wellness_lap-stamp.png') no-repeat center/100%;
-            // position: absolute;
-            // right: 90px;
           }
         }
 
@@ -465,40 +459,59 @@
                 letter-spacing: -0.5px;
               }
 
-              &--num.first {
+              &--num.manage {
                 color: #F8B500;
               }
 
-              &--num.second {
+              &--num.caution {
+                color: #E95371;
+              }
+
+              &--num.good {
                 color: #5AB651;
               }
             }
           }
 
-          .result-box.first {
+          .result-box.manage {
             border: 1px solid #F8B50080;
+
+            .result-box__aging-rate--num {
+              color: #F8B500;
+            }
           }
 
-          .result-box.second {
+          .result-box.caution {
+            border: 1px solid #E9537180;
+
+            .result-box__aging-rate--num {
+              color: #E95371;
+            }
+          }
+
+          .result-box.good {
             border: 1px solid #5AB65180;
+
+            .result-box__aging-rate--num {
+              color: #5AB651;
+            }
           }
 
           .result-box.no-result {
             text-align: center;
             color: #111;
             border: 1px dashed #B9B9B9;
+            background: #F9F9F9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 8px;
 
-            p:nth-child(1) {
-              font-size: 13px;
-              line-height: 150%;
-              letter-spacing: -0.5px;
-              margin-bottom: 14px;
-
-            }
-
-            p:nth-child(2) {
-              font-size: 11px;
+            p {
+              font-size: 12px;
               line-height: 16px;
+              letter-spacing: -0.5px;
             }
           }
         }
@@ -508,6 +521,8 @@
 
           .custom-btn {
             position: relative;
+            font-size: 14px;
+            line-height: 24px;
           }
 
           .custom-btn::after {
@@ -519,6 +534,19 @@
             position: absolute;
             top: -10px;
             right: 40px;
+          }
+        }
+
+        .btn-wrap.first {
+          .custom-btn::after {
+            content: "";
+            width: 16px;
+            height: 10px;
+            background: url('../images/button_tail.svg') no-repeat center/100%;
+            display: inline-block;
+            position: absolute;
+            top: -10px;
+            left: 20px;
           }
         }
 

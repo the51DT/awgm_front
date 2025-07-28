@@ -20,22 +20,12 @@
     </div>
 
     <div class="needle-wrap">
-      <!-- 중앙 백그라운드 컬러 단계별 -->
-      <!-- 관리 : 백그라운드 옐로우 / 텍스트 블랙  -->
-      <div class="needle-center manage">
+      <div :class="['needle-center', centerClass]">
         <span> 노화속도 </span>
-        <span> 1차</span>
+        <span>
+          <slot />
+        </span>
       </div>
-      <!-- 주의 : 백그라운드 분홍 / 텍스트 화이트-->
-      <!-- <div class="needle-center caution">
-        <span> 노화속도 </span>
-        <span> 2차</span>
-      </div> -->
-      <!-- 좋음 : 백그라운드 그린 / 텍스트 화이트-->
-      <!-- <div class="needle-center good">
-        <span> 노화속도 </span>
-        <span> 2차</span>
-      </div> -->
       <div class="needle-line" :style="{ transform: `rotate(${angle}deg)` }">
         <img :src="require(`@/assets/images/needle-line.svg`)" />
       </div>
@@ -46,16 +36,18 @@
       <span> x0.5 </span>
       <span> x1.5 이상 </span>
     </div>
-    <!-- <p class="dashboard__text-head"> 노화속도 </p> -->
   </div>
 </template>
 
 <script>
 /*
-  <DashBoard :value="0.9" :beforeValue="0.5" />
-  value = '현재 값'
-  beforeValue = '1차 값' -> 없으면 렌더링 X
-  value && beforeValue == 0.00 ~ 1.50 사이 값으로 지정
+  <DashBoard :value="0.9"> 1차 </DashBoard>
+  <DashBoard :value="0.9" :beforeValue="0.5"> 2차 </DashBoard>
+
+  :value = '현재 값'
+  :beforeValue = '1차 값 표시' -> 없으면 렌더링 X
+  value && beforeValue == 0.00 ~ 1.50 사이 값으로 지정 (1.5이상 값이어도 최대치 1.5로 지정)
+  slot에 ['1차', '2차'] 텍스트 구분
 */
 export default {
   name: "DashBoard",
@@ -72,17 +64,33 @@ export default {
     beforeValue: {
       type: [Number, Boolean],
       default: false
+    },
+    centerClass: {
+      type: String,
+      default: 'manage' // 예: 'manage', 'caution', 'good'
     }
   },
   computed: {
     angle() {
-      if (this.value >= 1.5) return 90
-      return (this.value / 1.5) * 180 - 90
+      const clamped = Math.min(Math.max(this.value, 0.5), 1.5)
+      return ((clamped - 0.5) / 1.0) * 180 - 90
     },
     beforeAngle() {
       const base = typeof this.beforeValue === 'number' ? this.beforeValue : this.value
-      return base >= 1.5 ? 90 : (base / 1.5) * 180 - 90
+      const clamped = Math.min(Math.max(base, 0.5), 1.5)
+      return ((clamped - 0.5) / 1.0) * 180 - 90
+    },
+    centerClass() {
+      const base = this.value
+
+      if (typeof base !== 'number' || isNaN(base)) return ''
+
+      if (base >= 1.10 && base < 2) return 'caution' // 고속
+      if (base >= 0.91 && base < 1.10) return 'manage' // 중속
+      if (base >= 0.5 && base <= 0.9) return 'good' // 저속
+      return ''
     }
-  }
+  },
+
 }
 </script>

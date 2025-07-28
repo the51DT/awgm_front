@@ -1,3 +1,5 @@
+import { Zoom } from "swiper/modules";
+
 // 메뉴 타입
 const MENU_TYPES = {
   LOGIN: "login",
@@ -522,6 +524,26 @@ export const menuRoutes = [
     {
       text: "홈 챌린지-Gut10008",
       path: "/홈 챌린지-Gut10008",
+      meta: { layout: "headerOnly" },
+    },
+    {
+      text: "홈 챌린지 진행중-Gut10008-01",
+      path: "/홈 챌린지 진행중-Gut10008-01",
+      meta: { layout: "headerOnly" },
+    },
+    {
+      text: "홈 챌린지 챌린지 종료 후 2차 분석 전 화면-Gut10008-02",
+      path: "/홈 챌린지 챌린지 종료 후 2차 분석 전 화면-Gut10008-02",
+      meta: { layout: "headerOnly" },
+    },
+    {
+      text: "홈 챌린지 챌린지 종료 후 2차 분석 > 실패-Gut10008-03",
+      path: "/홈 챌린지 챌린지 종료 후 2차 분석 > 실패-Gut10008-03",
+      meta: { layout: "headerOnly" },
+    },
+    {
+      text: "홈 챌린지 챌린지 종료 후 2차 분석 > 성공-Gut10008-04",
+      path: "/홈 챌린지 챌린지 종료 후 2차 분석 > 성공-Gut10008-04",
       meta: { layout: "headerOnly" },
     },
   ]),

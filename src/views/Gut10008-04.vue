@@ -1,5 +1,5 @@
 <template>
-  <!-- 마이 웰니스랩 -->
+  <!-- 마이 웰니스랩 홈 챌린지 종료 후 2차 분석 성공-->
   <!-- 챌린지 단건진행 시 -->
   <div class="challenge challenge--main">
     <button class="link-arrow">챌린지 이력보기<img :src="require(`@/assets/images/icon_link_arrow.svg`)"></button>
@@ -37,11 +37,11 @@
       <div class="challenge__card--main__per">
         <div>
           <p class="font--700 font--ls1">팀 인증률</p>
-          <p class="font--700 font--c11 font--ls1"><span class="font--green font--800 font--ls1">40</span>%</p>
+          <p class="font--700 font--c11 font--ls1"><span class="font--green font--800 font--ls1">81</span>%</p>
         </div>
         <div class="card--per">
           <div class="card--per__gage--wrap">
-            <div class="card--per__gage" data-width="40%"></div>
+            <div class="card--per__gage" data-width="81%"></div>
           </div>
           <div class="card--per__comp" data-width="20%">성공!</div>
           <div class="card--per__target" data-left="60%">목표치</div>
@@ -81,15 +81,13 @@
             </p>
           </div>
 
-
           <p class="font--c66 font--ls1 challenge__card--traffic">
             마이웰니스 랩에서 분석된 노화속도가 챌린지 참여를 통해 개선될 경우 추가 보상이 지급됩니다.
           </p>
         </div>
       </div>
 
-      <DashBoard :value="1.0" :beforeValue="0.5"> 1차</DashBoard>
-      <!-- <DashBoard :value="1.09" :beforeValue="0.75" /> -->
+      <DashBoard :value="0.9" :beforeValue="0.95"> 1차</DashBoard>
 
       <div class="challenge__card--main__bottom">
         <!-- 노화속도 개선 시 -->
@@ -99,11 +97,17 @@
           다음에 다시 도전해보세요.
         </p> -->
         <!-- 노화속도 개선 성공 시 -->
-        <!-- <p class="desc stamp">
+        <p class="desc stamp">
           노화 속도 1배속 개선
-        </p> -->
+        </p>
         <div class="challenge__card--main__bottom-result">
           <div class="result-box manage">
+            <!-- 
+              .result-box에 클래스별 색상 추가
+              .manage : 관리
+              .caution : 주의
+              .good : 좋음
+            -->
             <div class="result-box__date">
               <p> $2025년 4월 1일$ </p>
               <p><b> 1차 분석 결과</b> </p>
@@ -112,12 +116,12 @@
               <p class="result-box__aging-rate--text"> 노화속도 </p>
               <div>
                 <span> x </span>
-                <p class="result-box__aging-rate--num manage"> 1.09 </p>
+                <p class="result-box__aging-rate--num"> 1.09 </p>
               </div>
             </div>
           </div>
           <!-- 2차결과 O -->
-          <!-- <div class="result-box caution">
+          <div class="result-box good">
             <div class="result-box__date">
               <p> $2025년 4월 2일$ </p>
               <p><b> 2차 분석 결과</b> </p>
@@ -126,31 +130,31 @@
               <p class="result-box__aging-rate--text"> 노화속도 </p>
               <div>
                 <span> x </span>
-                <p class="result-box__aging-rate--num caution"> 1.57 </p>
+                <p class="result-box__aging-rate--num"> 1.57 </p>
               </div>
             </div>
-          </div> -->
+          </div>
           <!-- 2차결과 X 시 .no-result 클래스 추가-->
-          <div class="result-box no-result">
+          <!-- <div class="result-box no-result">
             <img :src="require(`@/assets/images/mywellness_second_lock.svg`)" alt="자물쇠 아이콘" />
             <p>
-              팀 미션 성공 후 <br />
-              2차 분석 결과를<br />
-              측정해 주세요.
+              팀 미션 성공 시 종료일 <br />
+              2개월 이내 2차 분석 <br />
+              결과를 측정해주세요.
             </p>
-          </div>
+          </div> -->
 
         </div>
 
         <!-- 2차 건강 분석 결과 조회 전 -->
-        <div class="btn-wrap">
+        <!-- <div class="btn-wrap">
           <CustomButton size="md-b12"> 2차 건강 분석 결과 조회하기 </CustomButton>
-        </div>
+        </div> -->
 
         <!-- 2차건강 분석결과 조회 후 -->
-        <!-- <div class="btn-wrap">
+        <div class="btn-wrap">
           <CustomButton size="md-b12"> 2차 건강 분석 결과 다시 불러오기 </CustomButton>
-        </div> -->
+        </div>
 
         <!-- 노화속도 개선 성공 시 - 1차 건강 분석 결과 다시 불러오기 -->
         <!-- <div class="btn-wrap">
