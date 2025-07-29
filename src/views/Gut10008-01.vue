@@ -23,15 +23,6 @@
               <b class="date_progress"> / 70일</b>
             </div>
           </div>
-          <!-- <div class="challenge__info-item font--c66 font--ls1">
-            <span class="period font--800">2회차 진행중</span>
-            <div class="period_date font--c66 font--ls1">
-              <span>2025.04.01</span>
-              ~
-              <span>2025.06.10</span>
-              <b class="date_progress"> / 70일</b>
-            </div>
-          </div> -->
         </div>
       </div>
       <div class="challenge__card--main__per">

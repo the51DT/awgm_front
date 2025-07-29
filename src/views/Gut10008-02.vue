@@ -5,7 +5,10 @@
     <button class="link-arrow">챌린지 이력보기<img :src="require(`@/assets/images/icon_link_arrow.svg`)"></button>
     <div class="text__title__wrap">
       <p class="text__title">GUT Morning<br />Korea Challenge</p>
-      <p class="text__subtit text__subtit--mt8"><span class="text__subtit--bold">16</span>일째 참여중입니다.</p>
+      <p class="text__subtit text__subtit--mt8">
+        <span class="text__subtit--bold"> <b>6</b>월 <b>10</b>일</span>에 챌린지가 종료되었습니다.<br />
+        전체기간의 팀 인증률은 <span class="font--800 font--green">76</span>% 입니다.
+      </p>
     </div>
     <div class="card card--border card--shadow00 card--p20 challenge__card--main">
       <button><img :src="require(`@/assets/images/icon_arrow_r.svg`)"></button>
@@ -44,7 +47,6 @@
             <div class="card--per__gage" data-width="81%"></div>
           </div>
           <div class="card--per__comp" data-width="20%">성공!</div>
-          <div class="card--per__target" data-left="60%">목표치</div>
         </div>
       </div>
     </div>
