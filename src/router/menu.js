@@ -239,6 +239,11 @@ export const menuRoutes = [
       meta: { layout: "none" },
     },
     {
+      text: "나의 팀 정보 인증률 실패 시-Gut00010-03",
+      path: "/나의 팀 정보 인증률 실패 시-Gut00010-03",
+      meta: { layout: "none" },
+    },
+    {
       text: "(pu)팀 초대하기-Gut0001002",
       path: "/pu)팀 초대하기-Gut0001002",
       meta: { layout: "none" },
@@ -566,6 +571,11 @@ export const menuRoutes = [
       text: "홈 챌린지 챌린지 종료 후 2차 분석 > 성공-Gut10008-04",
       path: "/홈 챌린지 챌린지 종료 후 2차 분석 > 성공-Gut10008-04",
       meta: { layout: "headerOnly" },
+    },
+    {
+      text: "첼린지 이력보기-Gut10023",
+      path: "/첼린지 이력보기-Gut10023",
+      meta: { layout: "none" },
     },
   ]),
 
