@@ -1496,7 +1496,6 @@
   top: 0;
   display: flex;
   justify-content: center;
-  // align-items: center;
 
   .badge-wrap {
     width: 100%;
@@ -1512,12 +1511,13 @@
       height: 100vh;
       position: absolute;
       top: 0;
+      pointer-events: none;
+      display: none;
     }
 
     h3 {
       font-family: 'MontserratItalic';
       font-weight: 800;
-      // font-style: Italic;
       font-size: 40px;
       line-height: 100%;
       text-align: center;
@@ -1576,8 +1576,6 @@
 
       &-name {
         color: #fff;
-        // margin-top: 24px;
-        font-family: RixSinHead;
         font-weight: 800;
         font-style: 800;
         font-size: 18px;
@@ -1589,7 +1587,6 @@
     .popup-message {
       text-align: center;
       margin-top: 36px;
-      font-family: RixSinHead;
       font-weight: 800;
       font-style: ExtraBold;
       font-size: 18px;
@@ -1622,11 +1619,6 @@
       width: 100%;
     }
   }
-}
-
-.animation_bg {
-  pointer-events: none;
-  display: none;
 }
 
 
