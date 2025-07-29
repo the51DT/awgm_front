@@ -7,8 +7,8 @@
     <div class="inputField__wrap">
       <!-- 셀렉트 (option 리스트에서 문구 노출 시)-->
       <select v-if="type === 'select'" :class="warn === false
-          ? 'inputField__input'
-          : 'inputField__input inputField__input--warn'
+        ? 'inputField__input'
+        : 'inputField__input inputField__input--warn'
         " :id="id" :name="name" :readonly="readonly" @change="onChange" :value="modelValue">
         <!-- <option disabled hidden >{{  }}</option> -->
         <option :key="i" v-for="(options, i) in options" :value="options">
@@ -17,10 +17,10 @@
       </select>
       <!-- 셀렉트(option 리스트에서 placeholder 문구 없을 시) -->
       <select v-else-if="type === 'select-placeholder'" :class="warn === false
-          ? 'inputField__input'
-          : 'inputField__input inputField__input--warn'
+        ? 'inputField__input'
+        : 'inputField__input inputField__input--warn'
         " :id="id" :name="name" :readonly="readonly">
-        <option disabled selected hidden >{{ placeholder  }}</option>
+        <option disabled selected hidden>{{ placeholder }}</option>
         <option :key="i" v-for="(options, i) in options" :value="options">
           {{ options }}
         </option>
@@ -60,8 +60,8 @@
         :value="placeholder" readonly="readonly" />
       <!-- 그외 -->
       <input v-else :type="type" :class="warn === false
-          ? 'inputField__input'
-          : 'inputField__input inputField__input--warn'
+        ? 'inputField__input'
+        : 'inputField__input inputField__input--warn'
         " :id="id" :name="name" :placeholder="placeholder" :readonly="readonly" :checked="checked" />
 
       <!-- 패스워드 눈 버튼 -->
@@ -77,8 +77,8 @@
 
     <!-- 캡션 -->
     <p v-if="caption" :class="warn
-        ? 'inputField__caption inputField__caption--warn'
-        : 'inputField__caption'
+      ? 'inputField__caption inputField__caption--warn'
+      : 'inputField__caption'
       ">
       {{ caption }}
     </p>
@@ -86,18 +86,17 @@
 </template>
 
 <style>
-    input[type='date']::before {
-    content: attr(data-placeholder);
-    width: 100%;
-    position: absolute;
-    background: white;
-  }
-  input[type='date']:focus::before,
-  input[type='date']:valid::before {
-    display: none;
-  }
+input[type='date']::before {
+  content: attr(data-placeholder);
+  width: 100%;
+  position: absolute;
+  background: white;
+}
 
-  
+input[type='date']:focus::before,
+input[type='date']:valid::before {
+  display: none;
+}
 </style>
 
 <script>

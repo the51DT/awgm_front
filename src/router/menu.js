@@ -189,7 +189,7 @@ export const menuRoutes = [
   ]),
 
   createMainMenu("03 첼린지", "/첼린지", MENU_TYPES.CHALLENGE, [
-        {
+    {
       text: "첼린지 미 진행시-Gut00007",
       path: "/첼린지 미 진행시-Gut00007",
       meta: { layout: "headerOnly" },
@@ -521,9 +521,19 @@ export const menuRoutes = [
       path: "/첼린지 미 진행시(연동전)-Gut10007",
       meta: { layout: "headerOnly" },
     },
-        {
+    {
       text: "(pu)마이웰니스랩 계정 연동 팝업-Gut1000701",
       path: "/(pu)마이웰니스랩 계정 연동 팝업-Gut1000701",
+      meta: { layout: "" },
+    },
+    {
+      text: "(pu)마이웰니스랩 계정 연동 팝업(공동사업자 경우)-Gut1000702",
+      path: "/(pu)마이웰니스랩 계정 연동 팝업(공동사업자 경우)-Gut1000702",
+      meta: { layout: "" },
+    },
+    {
+      text: "(pu)마이웰니스랩 분석결과조회 팝업-Gut1000703",
+      path: "/(pu)마이웰니스랩 분석결과조회 연동 팝업-Gut1000703",
       meta: { layout: "" },
     },
     {
@@ -531,6 +541,7 @@ export const menuRoutes = [
       path: "/첼린지 미 진행시(연동후)-Gut10007-02",
       meta: { layout: "headerOnly" },
     },
+
     {
       text: "홈 챌린지-Gut10008",
       path: "/홈 챌린지-Gut10008",
