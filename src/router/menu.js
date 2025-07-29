@@ -189,6 +189,21 @@ export const menuRoutes = [
   ]),
 
   createMainMenu("03 첼린지", "/첼린지", MENU_TYPES.CHALLENGE, [
+        {
+      text: "첼린지 미 진행시-Gut00007",
+      path: "/첼린지 미 진행시-Gut00007",
+      meta: { layout: "headerOnly" },
+    },
+    {
+      text: "미션 인증 공유-Gut0000701",
+      path: "/미션 인증 공유-Gut0000701",
+      meta: { layout: "none" },
+    },
+    {
+      text: "(pu)미션 인증 공유-Gut0000702",
+      path: "/(pu)미션 인증 공유-Gut0000702",
+      meta: { layout: "none" },
+    },
     {
       text: "홈 첼린지-Gut00008",
       path: "/홈 첼린지-Gut00008",
@@ -203,21 +218,6 @@ export const menuRoutes = [
       text: "홈 첼린지(전체 챌린지 종료 시)-Gut00008-03",
       path: "/홈 첼린지(전체 랠린지 종료 시)-Gut00008-03",
       meta: { layout: "headerOnly" },
-    },
-    {
-      text: "첼린지 미 진행시-Gut00007",
-      path: "/첼린지 미 진행시-Gut00007",
-      meta: { layout: "headerOnly" },
-    },
-    {
-      text: "미션 인증 공유-Gut0000701",
-      path: "/미션 인증 공유-Gut0000701",
-      meta: { layout: "none" },
-    },
-    {
-      text: "(pu)미션 인증 공유-Gut0000702",
-      path: "/(pu)미션 인증 공유-Gut0000702",
-      meta: { layout: "none" },
     },
     {
       text: "첼린지 이력보기-Gut00023",
@@ -517,8 +517,18 @@ export const menuRoutes = [
 
     createMainMenu("07 마이웰니스랩", "/마이웰니스랩", MENU_TYPES.WELLNESS, [
     {
-      text: "첼린지 미 진행시-Gut10007",
-      path: "/첼린지 미 진행시-Gut10007",
+      text: "첼린지 미 진행시(연동전)-Gut10007",
+      path: "/첼린지 미 진행시(연동전)-Gut10007",
+      meta: { layout: "headerOnly" },
+    },
+        {
+      text: "(pu)마이웰니스랩 계정 연동 팝업-Gut1000701",
+      path: "/(pu)마이웰니스랩 계정 연동 팝업-Gut1000701",
+      meta: { layout: "" },
+    },
+    {
+      text: "첼린지 미 진행시(연동후)-Gut10007-02",
+      path: "/첼린지 미 진행시(연동후)-Gut10007-02",
       meta: { layout: "headerOnly" },
     },
     {
