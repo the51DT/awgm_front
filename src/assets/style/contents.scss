@@ -1463,6 +1463,23 @@
 
 /* 마이인덱스 ABO 회원인증 팝업 시 로그인*/
 .myindex.content-area {
+  .login-form {
+    padding-bottom: 0;
+
+    .input-area {
+      .inputField:nth-child(1) {
+        margin-bottom: 8px;
+      }
+
+      .inputField:nth-child(2) {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+/* 마이웰니스랩 팝업 */
+.myWellness.content-area {
   .gray333_text {
     margin-bottom: 10px;
   }
@@ -1481,5 +1498,3 @@
     }
   }
 }
-
-/* 마이웰니스랩 팝업 */
