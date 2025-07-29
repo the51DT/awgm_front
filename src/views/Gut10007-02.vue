@@ -47,11 +47,87 @@
             </p>
           </div>
         </div>
+        <DashBoard :value="1.49"> 1차</DashBoard>
         <div class="challenge__card--main__bottom">
-          <img class="dont-proceed" :src="require(`@/assets/images/dont_proceed_graph_img.svg`)" />
-          <CustomButton size="md-b12"> 마이웰니스 랩 연동하기</CustomButton>
+          <!-- 노화속도 개선 시 -->
+          <!-- 노화속도 개선 실패 시 -->
+          <!-- <p class="desc">
+          노화 속도가 개선되지 않았습니다. <br />
+          다음에 다시 도전해보세요.
+        </p> -->
+          <!-- 노화속도 개선 성공 시 -->
+          <!-- <p class="desc stamp">
+          노화 속도 1배속 개선
+        </p> -->
+          <div class="challenge__card--main__bottom-result">
+            <div class="result-box caution">
+              <!-- 
+              .result-box에 클래스별 색상 추가
+              .manage : 관리
+              .caution : 주의
+              .good : 좋음
+            -->
+              <div class="result-box__date">
+                <p> $2025년 4월 1일$ </p>
+                <p><b> 1차 분석 결과</b> </p>
+              </div>
+              <div class="result-box__aging-rate">
+                <p class="result-box__aging-rate--text"> 노화속도 </p>
+                <div>
+                  <span> x </span>
+                  <p class="result-box__aging-rate--num"> 1.49 </p>
+                </div>
+              </div>
+            </div>
+            <!-- 2차결과 O -->
+            <!-- <div class="result-box">
+            <div class="result-box__date">
+              <p> $2025년 4월 2일$ </p>
+              <p><b> 2차 분석 결과</b> </p>
+            </div>
+            <div class="result-box__aging-rate">
+              <p class="result-box__aging-rate--text"> 노화속도 </p>
+              <div>
+                <span> x </span>
+                <p class="result-box__aging-rate--num"> 1.57 </p>
+              </div>
+            </div>
+          </div> -->
+            <!-- 2차결과 X 시 .no-result 클래스 추가-->
+            <div class="result-box no-result">
+              <img :src="require(`@/assets/images/mywellness_second_lock.svg`)" alt="자물쇠 아이콘" />
+              <p>
+                팀 미션 성공 시 종료일 <br />
+                2개월 이내 2차 분석 <br />
+                결과를 측정해주세요.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- 2차 건강 분석 결과 조회 전 -->
+          <!-- <div class="btn-wrap">
+          <CustomButton size="md-b12"> 2차 건강 분석 결과 조회하기 </CustomButton>
+        </div> -->
+
+          <!-- 2차건강 분석결과 조회 후 -->
+          <!-- <div class="btn-wrap">
+          <CustomButton size="md-b12"> 2차 건강 분석 결과 다시 불러오기 </CustomButton>
+        </div> -->
+
+          <!-- 노화속도 개선 성공 시 - 1차 건강 분석 결과 다시 불러오기 -->
+          <div class="btn-wrap first" style="margin-top: 20px;">
+            <CustomButton size="md-b12"> 1차 건강 분석 결과 다시 불러오기 </CustomButton>
+          </div>
+
+          <!-- <div class="result-view-date">
+          <p> 분석 결과 조회 가능일 </p> <span>D-$45$ </span>
+        </div> -->
         </div>
       </div>
+
+
+
       <div class="challenge--main__not__box">
         <div>
           <p class="font--c11 font--800">진행일시</p>
@@ -79,11 +155,13 @@
 import CustomButton from "@/components/CustomButton.vue";
 import tabFn from "@/plugins/common.js";
 import layerClose from "@/plugins/common.js";
+import DashBoard from "@/components/DashBoard.vue"
 
 export default {
-  name: "Gut_10007",
+  name: "Gut_10007-02",
   components: {
     CustomButton,
+    DashBoard
   },
   props: {
     challenge: {
