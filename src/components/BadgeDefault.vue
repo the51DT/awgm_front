@@ -1,9 +1,7 @@
 <template>
   <div class="badge">
     <div class="badge__wrap" :class="width">
-      <object type="image/svg">
-        <img :src="imageSrc" alt="badge" :style="imgStyle" />
-      </object>
+      <img :src="imageSrc" alt="badge" :style="imgStyle" />
     </div>
     <div class="badge__name">
       <span v-if="show" class="badge__name_tag"> 대표배지 </span>
