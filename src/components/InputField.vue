@@ -58,6 +58,12 @@
       <!-- 복사 인풋 -->
       <input v-else-if="type === 'copy'" type="text" class="inputField__input inputField__copy" :id="id" :name="name"
         :value="placeholder" readonly="readonly" />
+      <!-- PIN 번호 입력 -->
+      <div v-else-if="type === 'pin'" class="inputField__pin--wrap">
+        <input v-for="(pin, index) in 4" :key="index" type="text" class="inputField__input__pin" maxlength="1"
+          inputmode="numeric" pattern="[0-9]*" @input="onInput($event, index)" @keydown="onKeydown($event, index)"
+          ref="pinInputs" />
+      </div>
       <!-- 그외 -->
       <input v-else :type="type" :class="warn === false
         ? 'inputField__input'
@@ -73,6 +79,7 @@
       </label>
       <!-- 복사하기 버튼 -->
       <button v-if="type === 'copy'" class="inputField__button--copy">복사하기</button>
+
     </div>
 
     <!-- 캡션 -->
@@ -159,6 +166,19 @@ export default {
       type: String,
       default: ''
     },
+    tel: {
+      type: String,
+      default: ''
+    },
+    pin: {
+      type: String,
+      default: ''
+    },
+  },
+  data() {
+    return {
+      pinValues: ['', '', '', ''],
+    }
   },
   methods: {
     // 패스워드 눈 버튼
@@ -177,7 +197,51 @@ export default {
     },
     onChange(event) {
       this.$emit('update:modelValue', event.target.value)
-    }
+    },
+    onInput(event, index) {
+      const val = event.target.value
+
+      // 숫자만 필터링
+      if (!/^\d$/.test(val)) {
+        event.target.value = ''
+        return
+      }
+
+      this.pinValues[index] = val
+
+      // 다음 input으로 focus 이동
+      const inputs = this.$refs.pinInputs
+      if (index < inputs.length - 1) {
+        inputs[index + 1].focus()
+      }
+    },
+    onKeydown(event, index) {
+      const key = event.key
+      const inputs = this.$refs.pinInputs
+
+      const allowed = [
+        ...Array.from({ length: 10 }, (_, i) => String(i)),
+        'Backspace', 'Delete', 'Tab', 'ArrowLeft', 'ArrowRight'
+      ]
+
+      if (!allowed.includes(key)) {
+        event.preventDefault()
+        return
+      }
+
+      // ✅ backspace/delete → 삭제하고 이전 칸으로 포커스
+      if ((key === 'Backspace' || key === 'Delete') && index > 0) {
+        event.preventDefault()
+
+        // 현재 값 제거
+        this.pinValues[index] = ''
+        event.target.value = ''
+
+        // 이전 칸으로 이동
+        inputs[index - 1].focus()
+      }
+    },
+
   }
 }
 </script>

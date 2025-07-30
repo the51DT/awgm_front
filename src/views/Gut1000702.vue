@@ -10,56 +10,32 @@
         </p>
         <div class="form-box mb0">
           <div class="input-area">
-            <div class="certify">
-              <input type="tel" maxlength="1" min="0" max="9" onlyNumber>
-              <input type="tel" maxlength="1" min="0" max="9" onlyNumber>
-              <input type="tel" maxlength="1" min="0" max="9" onlyNumber>
-              <input type="tel" maxlength="1" min="0" max="9" onlyNumber>
-            </div>
+            <InputField type="pin" />
+            <!-- <input type="password" id="user-password">
+            <input type="password" id="user-password">
+            <input type="password" id="user-password"> -->
           </div>
         </div>
-
+        <p class="gray333_text">
+          <!-- 마진 탑 추가해야하ssㅐ!~ -->
+          마이웰니스 랩에서 PIN 번호를 확인해 주세요.
+        </p>
       </div>
     </template>
     <template v-slot:btn>
       <div class="btn-area ty03">
-        <CustomButton size="md" color="light">취소</CustomButton>
-        <CustomButton size="md">확인</CustomButton>
+        <CustomButton size="md-b12" color="light">취소</CustomButton>
+        <CustomButton size="md-b12">확인</CustomButton>
       </div>
     </template>
   </PopupDefault>
 </template>
 
-<style scoped>
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.certify {
-  margin-top: 2.4rem;
-  text-align: center;
-  padding: 0 1.6rem;
-}
-
-.certify input~input {
-  margin-left: .6rem;
-}
-
-.certify input {
-  padding: 0;
-  width: 4rem;
-  height: 4rem;
-  line-height: 4rem;
-  font-size: 1.8rem;
-  font-weight: 700;
-  text-align: center;
-  background-color: #f0f1f4;
-  border-radius: .6rem;
-}
-</style>
 
 <script>
+// 텍스트로 해놓고 포커스 풀리면 패스워드 타입으로 변경
+
+
 import PopupDefault from "@/components/PopupDefault.vue";
 import InputField from "@/components/InputField.vue";
 import CustomButton from "@/components/CustomButton.vue";
