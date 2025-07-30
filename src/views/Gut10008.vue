@@ -133,9 +133,9 @@
           <div class="result-box no-result">
             <img :src="require(`@/assets/images/mywellness_second_lock.svg`)" alt="자물쇠 아이콘" />
             <p>
-              팀 미션 성공 후 <br />
-              2차 분석 결과를<br />
-              측정해 주세요.
+              팀 미션 성공 시 종료일 <br />
+              2개월 이내 2차 분석 <br />
+              결과를 측정해주세요.
             </p>
           </div>
 

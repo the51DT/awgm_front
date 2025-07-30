@@ -146,9 +146,9 @@
         </div> -->
 
         <!-- 노화속도 개선 성공 시 - 1차 건강 분석 결과 다시 불러오기 -->
-        <div class="btn-wrap first">
+        <!-- <div class="btn-wrap first">
           <CustomButton size="md-b12"> 1차 건강 분석 결과 다시 불러오기 </CustomButton>
-        </div>
+        </div> -->
 
         <!-- <div class="result-view-date">
           <p> 분석 결과 조회 가능일 </p> <span>D-$45$ </span>
