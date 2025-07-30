@@ -73,7 +73,6 @@
           <div class="challenge__card--main__top__text-wrap">
             <p class="font--c11 font--700 font--ls2" style="display: flex;">
               노화 속도 개선 추가 미션
-              <span class="green">도전</span>
             </p>
             <p class="font--c66"> 도전 방법
               <button class="challenge_method_btn__open">
@@ -89,7 +88,7 @@
         </div>
       </div>
 
-      <DashBoard :value="1.57" :beforeValue="1.09"> 1차</DashBoard>
+      <DashBoard :value="1.57" :beforeValue="1.09"> 2차</DashBoard>
 
       <div class="challenge__card--main__bottom">
         <!-- 노화속도 개선 시 -->
