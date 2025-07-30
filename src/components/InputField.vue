@@ -26,11 +26,14 @@
         </option>
       </select>
       <!-- 라디오 -->
-      <div v-else-if="type === 'radio'" class="inputField__input__radio--wrap" :key="i" v-for="(radio, i) in radio">
+      <div v-else-if="type === 'radio'" :key="i" v-for="(radio, i) in radio"
+        :class="radio.label_second ? 'inputField__input__radio_second--wrap' : 'inputField__input__radio--wrap'">
         <input :type="type" class="inputField__input inputField__input__radio" :id="radio.id" :name="name"
           :value="radio.value" :readonly="readonly" :checked="radio.checked" />
-        <label :for="radio.id" class="inputField__input__radio--label">
+        <label :for="radio.id" class="inputField__input__radio--label" :class="radio.label_second ? 'second' : ' '">
           <span>{{ radio.label }}</span>
+          <br v-if="radio.label_second" />
+          <span v-if="radio.label_second">{{ radio.label_second }}</span>
         </label>
       </div>
       <!-- 체크박스 -->
@@ -125,6 +128,12 @@ export default {
     checked: Boolean,
     disabled: Boolean,
     radio: {
+      type: Array,
+      default: () => {
+        return ['']
+      }
+    },
+    radio_second: {
       type: Array,
       default: () => {
         return ['']
