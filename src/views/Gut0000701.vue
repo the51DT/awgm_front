@@ -22,7 +22,7 @@
     <template v-slot:full>
       <ContentHead title="팀 정보" headType="ty03" :rightArea=true>
         <template v-slot:title>
-          이미지를 저장하여<br/><span>SNS로</span> 공유해 보세요!
+          이미지를 저장하여<br /><span>SNS로</span> 공유해 보세요!
         </template>
       </ContentHead>
       <div class="popup--full__cont">
@@ -45,7 +45,10 @@
               <p class="card--img__text__num"><span>2</span>회</p>
             </div>
             <div class="card--img__badge">
-              <BadgeDefault img="pin--crown.svg" />
+              <div class="badge__wrap">
+                <!-- 이미지 저장 시 배지 이미지 일그러짐 이슈로 이 페이지에서만 pin--이미지.png 사용 -->
+                <img :src="require(`@/assets/images/badgeImg/pin--silver_producer.png`)" alt="대표 핀 배지" />
+              </div>
             </div>
             <p class="card--img__title"><span>팀장김웨이</span>님의<br />GUT Morning</p>
           </div>
@@ -60,7 +63,8 @@
           </div>
         </div>
         <div class="challenge__btn--wrap">
-          <CustomButton color="yellow"><img :src="require(`@/assets/images/icon_kakao_login.svg`)">카카오로 공유</CustomButton>
+          <CustomButton color="yellow"><img :src="require(`@/assets/images/icon_kakao_login.svg`)">카카오로 공유
+          </CustomButton>
           <CustomButton>전체 이미지 저장</CustomButton>
           <CustomButton>오늘 인증 이미지 저장</CustomButton>
         </div>
