@@ -577,6 +577,21 @@ export const menuRoutes = [
       path: "/첼린지 이력보기-Gut10023",
       meta: { layout: "none" },
     },
+        {
+      text: "마이 index-Gut10015",
+      path: "/마이 index-Gut10015",
+      meta: { layout: "headerOnly", mypage: true },
+    },
+    {
+      text: "(pu)마이웰니스랩 계정 연동 팝업-Gut1001501",
+      path: "/(pu)마이웰니스랩 계정 연동 팝업-Gut1001501",
+      meta: { layout: "" },
+    },
+    {
+      text: "(pu)마이웰니스랩 계정 연동 팝업(공동사업자 경우)-Gut1001502",
+      path: "/(pu)마이웰니스랩 계정 연동 팝업(공동사업자 경우)-Gut1001502",
+      meta: { layout: "" },
+    },
   ]),
 
   createMainMenu("08 Footer", "/footer", MENU_TYPES.FOOTER, [
