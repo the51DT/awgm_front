@@ -63,7 +63,7 @@
         :value="placeholder" readonly="readonly" />
       <!-- PIN 번호 입력 -->
       <div v-else-if="type === 'pin'" class="inputField__pin--wrap">
-        <input v-for="(pin, index) in 4" :key="index" type="text" class="inputField__input__pin" maxlength="1"
+        <input v-for="(pin, index) in 4" :key="index" type="password" class="inputField__input__pin" maxlength="1"
           inputmode="numeric" pattern="[0-9]*" @input="onInput($event, index)" @keydown="onKeydown($event, index)"
           ref="pinInputs" />
       </div>
