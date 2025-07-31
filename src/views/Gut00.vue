@@ -6,14 +6,11 @@
   <!-- <AniBadge type="badge" frontImg="pin--ruby.svg" backImg="back/pin--ruby-back.svg"> $배지 명칭$ </AniBadge> -->
   <AniBadge type="pin" frontImg="pin--ruby.svg" backImg="back/pin--ruby.svg"> $것모닝핀 명칭$ </AniBadge>
 
-  <!-- <DashBoard :speed="currentSpeed" /> -->
-
 </template>
 
 <script>
 import BadgeDefault from "@/components/BadgeDefault.vue";
 import AniBadge from "@/components/AniBadge.vue"
-import DashBoard from "@/components/DashBoard.vue"
 
 import tabFn from "@/plugins/common.js";
 import layerClose from "@/plugins/common.js";
@@ -23,7 +20,6 @@ export default {
   components: {
     BadgeDefault,
     AniBadge,
-    DashBoard
   },
   data() {
     return {
