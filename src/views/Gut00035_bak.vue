@@ -1,21 +1,21 @@
 <template>
-  <div class="activity bg-case bg-green">
+  <!-- 00035 백업용 -->
+  <div class="activity bg-case">
     <div class="activity__area">
       <div class="activity__area-certified">
         <dl>
-          <dt> · 최초 인증일 </dt>
-          <dd> 2024년 7월 5일</dd>
+          <dt> 최초 인증일 </dt>
+          <dd> $2024년 7월 5일$</dd>
+
         </dl>
         <dl>
-          <dt> · 총 누적 인증 횟수 </dt>
-          <dd> 1,230회</dd>
+          <dt> 총 누적 인증 횟수 </dt>
+          <dd> $총 누적 횟수$</dd>
         </dl>
       </div>
-    </div>
-    <div class="activity__area-terms-tab">
       <div class="activity__area-profile">
-        <h2> 현재 나의 활동</h2>
-        <p class="activity__area-profile-date"> 활동 기준일 : 2025년 9월 ~ 2026년 8월</p>
+        <h2> 활동 기준일</h2>
+        <p class="activity__area-profile-date"> 2025년 9월 ~ 2026년 8월</p>
         <BadgeDefault img="pin--diamond.svg" />
         <div class="badge__desc">
           <span class="badge__desc-my"> 다이아몬드 </span>
@@ -127,68 +127,74 @@
         </div>
         <div class="wrap">
           <p class="name"> 김웨이 </p>
+          <p class="during"> <span> 2025년 9월 </span>~ <span> 2026년 8월</span></p>
         </div>
       </div>
-      <div class="activity__area-record">
-        <div class="para-title">
-          <h5> 현재 기록 </h5>
-          <button>이전 기록 <img src="../assets/images/icon_arrow_r_gray.svg" /> </button>
+    </div>
+
+    <div class="activity__area-record">
+      <div class="para-title">
+        <h5> 현재 기록 </h5>
+        <button>이전 기록 <img src="../assets/images/icon_arrow_r_gray.svg" /> </button>
+      </div>
+      <div class="activity__area-record-box-wrap">
+        <div class="record-box">
+          <div>
+            <h7>인증횟수</h7>
+          </div>
+          <div>
+            <p> 누적 </p>
+            <p class="green"> 21개 </p>
+          </div>
+          <div>
+            <p>최대 연속 </p>
+            <p class="green"> 10개 </p>
+          </div>
         </div>
-        <div class="activity__area-record-box-wrap">
-          <div class="record-box">
-            <div>
-              <h7>인증횟수</h7>
-            </div>
-            <div>
-              <p> 누적 </p>
-              <p class="green"> 21개 </p>
-            </div>
-            <div>
-              <p>최대 연속 </p>
-              <p class="green"> 10개 </p>
-            </div>
+        <div class="record-box">
+          <div>
+            <h7>챌린지</h7>
           </div>
-          <div class="record-box">
-            <div>
-              <h7>챌린지</h7>
-            </div>
-            <div>
-              <p> 참여 수 </p>
-              <p class="green"> 5회 </p>
-            </div>
-            <div>
-              <p>성공 </p>
-              <p class="green"> 4회 </p>
-            </div>
+          <div>
+            <p> 참여 수 </p>
+            <p class="green"> 5회 </p>
           </div>
-          <div class="record-box">
-            <div>
-              <h7>최고 인증률</h7>
-            </div>
-            <div>
-              <p> 상시 </p>
-              <p class="green"> 80% </p>
-            </div>
-            <div>
-              <p> 챌린지 </p>
-              <p class="green"> 80% </p>
-            </div>
+          <div>
+            <p>성공 </p>
+            <p class="green"> 4회 </p>
           </div>
-          <div class="record-box">
-            <div>
-              <h7>최고 달성 랭킹</h7>
-            </div>
-            <div>
-              <p> 상시 </p>
-              <p class="green"> 1개 </p>
-            </div>
-            <div>
-              <p> 챌린지 </p>
-              <p class="green"> 3위 </p>
-            </div>
+        </div>
+        <div class="record-box">
+          <div>
+            <h7>최고 인증률</h7>
+          </div>
+          <div>
+            <p> 상시 </p>
+            <p class="green"> 80% </p>
+          </div>
+          <div>
+            <p> 챌린지 </p>
+            <p class="green"> 80% </p>
+          </div>
+        </div>
+        <div class="record-box">
+          <div>
+            <h7>최고 달성 랭킹</h7>
+          </div>
+          <div>
+            <p> 상시 </p>
+            <p class="green"> 1개 </p>
+          </div>
+          <div>
+            <p> 챌린지 </p>
+            <p class="green"> 3위 </p>
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="activity__area-terms-tab">
+
       <div class="para-title">
         <h5> 배지 활동 </h5>
         <p> 총 <span class="green"> 13개</span> 보유 </p>

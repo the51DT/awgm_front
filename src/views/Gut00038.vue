@@ -13,11 +13,11 @@
               <p class="activity__period"> 25년 9월 - 26년 8월 </p>
             </div>
             <div class="activity__area-profile">
+              <p class="activity__area-profile-date"> 활동 기준일 : 2025년 9월 ~ 2026년 8월</p>
               <BadgeDefault img="pin--founders_crown_ambassador_60.svg" pointColor="use-profile">파운더스 크라운 앰버서더 60
               </BadgeDefault>
               <div class="wrap">
                 <p class="name"> 김웨이 </p>
-                <p class="during"> <span> 2025년 9월 </span>~ <span> 2026년 8월</span></p>
               </div>
             </div>
             <div class="activity__area-record">
