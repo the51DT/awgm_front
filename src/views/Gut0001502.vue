@@ -7,11 +7,11 @@
       <div class="select_profile">
         <div class="select_profile_card" @click="imgChange($event)">
           <img :src="require(`@/assets/images/select_profile-gray.png`)" />
-          <p>$영문 아이디 02$  </p>
+          <p>$영문 아이디 02$ </p>
           <p> <small> (인증완료)</small></p>
         </div>
         <div class="select_profile_card" @click="imgChange($event)">
-          <img :src="require(`@/assets/images/select_profile-gray.png`)"  /> 
+          <img :src="require(`@/assets/images/select_profile-gray.png`)" />
           <p>$영문 아이디 02$ </p>
         </div>
       </div>
@@ -24,7 +24,6 @@
     </template>
   </PopupDefault>
 </template>
-
 <style></style>
 
 <script>
@@ -53,7 +52,7 @@ export default {
     layerClose.layerClose("popup");
   },
   methods: {
-    imgChange(e){
+    imgChange(e) {
       const cards = document.querySelectorAll('.select_profile_card');
       cards.forEach((card) => {
         card.classList.remove('is-active');
