@@ -10,7 +10,8 @@
           <br />2025년 04월 01일에 시작 예정입니다.
         </p>
       </div>
-      <p>챌린지 참여를 위해, <br />챌린지 시작 전 팀에 참여해주세요.</p>
+      <p>아침마다 오 마이 GUT Morning팀에 <br />
+        참여가 완료되었습니다.</p>
 
       <div class="card card--border card--p20 challenge__card--main">
         <div class="challenge__card--main__top">
