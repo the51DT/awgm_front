@@ -1,4 +1,3 @@
-
 <template>
   <PopupDefault full>
     <template v-slot:full>
@@ -39,9 +38,9 @@
           <div class="btn-group">
             <!-- 10.16 수정 ty-chk on 클래스 추가시, active 처리됨 : 미체크가 디폴트 /           
               버튼 선택시 약관동의팝업 호출 -> 동의 선택 시 팝업 닫기 및 체크 활성화  -->
-              <CustomButton color="dark" class="ty-chk"><span>자녀의 팀 참가 동의</span></CustomButton>
-              <!-- <CustomButton color="dark" class="ty-chk on"><span>자녀의 팀 참가 동의</span></CustomButton>  -->
-              <!-- 1017 추가 : 기획 변경 해당 화면에 추가 버튼 생성됨 -->
+            <CustomButton color="dark" class="ty-chk"><span>자녀의 팀 참가 동의</span></CustomButton>
+            <!-- <CustomButton color="dark" class="ty-chk on"><span>자녀의 팀 참가 동의</span></CustomButton>  -->
+            <!-- 1017 추가 : 기획 변경 해당 화면에 추가 버튼 생성됨 -->
             <CustomButton>확인</CustomButton>
           </div>
         </div>
@@ -49,6 +48,12 @@
     </template>
   </PopupDefault>
 </template>
+
+<style scoped>
+.btn-area.ty02 p.label-txt {
+  max-width: 80%;
+}
+</style>
 
 <script>
 import InputField from "@/components/InputField.vue";
