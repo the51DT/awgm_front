@@ -1,9 +1,9 @@
 <template>
-  <header class="header" :class="{ 'bg-green': isBgGreen === true }">
+  <header class="header">
     <div class="header__left">
-      <h1><img :src="logoSrc" alt="로고" /></h1>
+      <h1><img :src="require(`@/assets/images/header_logo.svg`)"></h1>
       <div class="header__left--cont">
-        <img :src="textSrc" />
+        <img :src="require(`@/assets/images/header_text.svg`)">
         <div class="header__left--text">누적 <span> nnn만</span>회(<span>nn.n만</span>명), 오늘 <span>n.n천</span>회</div>
       </div>
     </div>
@@ -13,7 +13,7 @@
         <img :src="require(`@/assets/images/header_faq.svg`)">
       </template>
       <object v-else class="header__right--notice">
-        <img :src="noticeSrc" />
+        <img :src="require(`@/assets/images/header_notice.svg`)">
       </object>
     </div>
   </header>
@@ -21,6 +21,7 @@
 
 <script>
 // eslint-disable-next-line no-unused-vars
+import FrontLogo from "@/components/FrontLogo.vue";
 
 export default {
   name: "AppHeader",
@@ -33,27 +34,6 @@ export default {
       type: String,
       default: ' ' // 기본 배경색 클래스
     },
-    isBgGreen: {
-      type: Boolean,
-      default: false
-    }
-  },
-  computed: {
-    logoSrc() {
-      return this.isBgGreen
-        ? require('@/assets/images/header_logo_w.svg')
-        : require('@/assets/images/header_logo.svg')
-    },
-    textSrc() {
-      return this.isBgGreen
-        ? require('@/assets/images/header_text_w.svg')
-        : require('@/assets/images/header_text.svg')
-    },
-    noticeSrc() {
-      return this.isBgGreen
-        ? require('@/assets/images/header_notice_w.svg')
-        : require('@/assets/images/header_notice.svg')
-    }
   }
 };
 </script>

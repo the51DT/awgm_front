@@ -520,79 +520,79 @@ export const menuRoutes = [
     },
   ]),
 
-    createMainMenu("07 마이웰니스랩", "/마이웰니스랩", MENU_TYPES.WELLNESS, [
-    {
-      text: "첼린지 미 진행시(연동전)-Gut10007",
-      path: "/첼린지 미 진행시(연동전)-Gut10007",
-      meta: { layout: "headerOnly" },
-    },
-    {
-      text: "(pu)마이웰니스랩 계정 연동 팝업-Gut1000701",
-      path: "/(pu)마이웰니스랩 계정 연동 팝업-Gut1000701",
-      meta: { layout: "" },
-    },
-    {
-      text: "(pu)마이웰니스랩 계정 연동 팝업(공동사업자 경우)-Gut1000702",
-      path: "/(pu)마이웰니스랩 계정 연동 팝업(공동사업자 경우)-Gut1000702",
-      meta: { layout: "" },
-    },
-    {
-      text: "(pu)마이웰니스랩 분석결과조회 팝업-Gut1000703",
-      path: "/(pu)마이웰니스랩 분석결과조회 연동 팝업-Gut1000703",
-      meta: { layout: "" },
-    },
-    {
-      text: "첼린지 미 진행시(연동후)-Gut10007-02",
-      path: "/첼린지 미 진행시(연동후)-Gut10007-02",
-      meta: { layout: "headerOnly" },
-    },
+  // createMainMenu("07 마이웰니스랩", "/마이웰니스랩", MENU_TYPES.WELLNESS, [
+  //   {
+  //     text: "첼린지 미 진행시(연동전)-Gut10007",
+  //     path: "/첼린지 미 진행시(연동전)-Gut10007",
+  //     meta: { layout: "headerOnly" },
+  //   },
+  //   {
+  //     text: "(pu)마이웰니스랩 계정 연동 팝업-Gut1000701",
+  //     path: "/(pu)마이웰니스랩 계정 연동 팝업-Gut1000701",
+  //     meta: { layout: "" },
+  //   },
+  //   {
+  //     text: "(pu)마이웰니스랩 계정 연동 팝업(공동사업자 경우)-Gut1000702",
+  //     path: "/(pu)마이웰니스랩 계정 연동 팝업(공동사업자 경우)-Gut1000702",
+  //     meta: { layout: "" },
+  //   },
+  //   {
+  //     text: "(pu)마이웰니스랩 분석결과조회 팝업-Gut1000703",
+  //     path: "/(pu)마이웰니스랩 분석결과조회 연동 팝업-Gut1000703",
+  //     meta: { layout: "" },
+  //   },
+  //   {
+  //     text: "첼린지 미 진행시(연동후)-Gut10007-02",
+  //     path: "/첼린지 미 진행시(연동후)-Gut10007-02",
+  //     meta: { layout: "headerOnly" },
+  //   },
 
-    {
-      text: "홈 챌린지-Gut10008",
-      path: "/홈 챌린지-Gut10008",
-      meta: { layout: "headerOnly" },
-    },
-    {
-      text: "홈 챌린지 진행중-Gut10008-01",
-      path: "/홈 챌린지 진행중-Gut10008-01",
-      meta: { layout: "headerOnly" },
-    },
-    {
-      text: "홈 챌린지 챌린지 종료 후 2차 분석 전 화면-Gut10008-02",
-      path: "/홈 챌린지 챌린지 종료 후 2차 분석 전 화면-Gut10008-02",
-      meta: { layout: "headerOnly" },
-    },
-    {
-      text: "홈 챌린지 챌린지 종료 후 2차 분석 > 실패-Gut10008-03",
-      path: "/홈 챌린지 챌린지 종료 후 2차 분석 > 실패-Gut10008-03",
-      meta: { layout: "headerOnly" },
-    },
-    {
-      text: "홈 챌린지 챌린지 종료 후 2차 분석 > 성공-Gut10008-04",
-      path: "/홈 챌린지 챌린지 종료 후 2차 분석 > 성공-Gut10008-04",
-      meta: { layout: "headerOnly" },
-    },
-    {
-      text: "첼린지 이력보기-Gut10023",
-      path: "/첼린지 이력보기-Gut10023",
-      meta: { layout: "none" },
-    },
-        {
-      text: "마이 index-Gut10015",
-      path: "/마이 index-Gut10015",
-      meta: { layout: "headerOnly", mypage: true },
-    },
-    {
-      text: "(pu)마이웰니스랩 계정 연동 팝업-Gut1001501",
-      path: "/(pu)마이웰니스랩 계정 연동 팝업-Gut1001501",
-      meta: { layout: "" },
-    },
-    {
-      text: "(pu)마이웰니스랩 계정 연동 팝업(공동사업자 경우)-Gut1001502",
-      path: "/(pu)마이웰니스랩 계정 연동 팝업(공동사업자 경우)-Gut1001502",
-      meta: { layout: "" },
-    },
-  ]),
+  //   {
+  //     text: "홈 챌린지-Gut10008",
+  //     path: "/홈 챌린지-Gut10008",
+  //     meta: { layout: "headerOnly" },
+  //   },
+  //   {
+  //     text: "홈 챌린지 진행중-Gut10008-01",
+  //     path: "/홈 챌린지 진행중-Gut10008-01",
+  //     meta: { layout: "headerOnly" },
+  //   },
+  //   {
+  //     text: "홈 챌린지 챌린지 종료 후 2차 분석 전 화면-Gut10008-02",
+  //     path: "/홈 챌린지 챌린지 종료 후 2차 분석 전 화면-Gut10008-02",
+  //     meta: { layout: "headerOnly" },
+  //   },
+  //   {
+  //     text: "홈 챌린지 챌린지 종료 후 2차 분석 > 실패-Gut10008-03",
+  //     path: "/홈 챌린지 챌린지 종료 후 2차 분석 > 실패-Gut10008-03",
+  //     meta: { layout: "headerOnly" },
+  //   },
+  //   {
+  //     text: "홈 챌린지 챌린지 종료 후 2차 분석 > 성공-Gut10008-04",
+  //     path: "/홈 챌린지 챌린지 종료 후 2차 분석 > 성공-Gut10008-04",
+  //     meta: { layout: "headerOnly" },
+  //   },
+  //   {
+  //     text: "첼린지 이력보기-Gut10023",
+  //     path: "/첼린지 이력보기-Gut10023",
+  //     meta: { layout: "none" },
+  //   },
+  //       {
+  //     text: "마이 index-Gut10015",
+  //     path: "/마이 index-Gut10015",
+  //     meta: { layout: "headerOnly", mypage: true },
+  //   },
+  //   {
+  //     text: "(pu)마이웰니스랩 계정 연동 팝업-Gut1001501",
+  //     path: "/(pu)마이웰니스랩 계정 연동 팝업-Gut1001501",
+  //     meta: { layout: "" },
+  //   },
+  //   {
+  //     text: "(pu)마이웰니스랩 계정 연동 팝업(공동사업자 경우)-Gut1001502",
+  //     path: "/(pu)마이웰니스랩 계정 연동 팝업(공동사업자 경우)-Gut1001502",
+  //     meta: { layout: "" },
+  //   },
+  // ]),
 
   createMainMenu("08 Footer", "/footer", MENU_TYPES.FOOTER, [
     {
