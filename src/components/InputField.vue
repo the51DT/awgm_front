@@ -63,7 +63,7 @@
         :value="placeholder" readonly="readonly" />
       <!-- PIN 번호 입력 -->
       <div v-else-if="type === 'pin'" class="inputField__pin--wrap">
-        <input v-for="(pin, index) in 4" :key="index" type="password" class="inputField__input__pin" maxlength="1"
+        <input v-for="(pin, index) in 4" :key="index" type="text" class="inputField__input__pin" maxlength="1"
           inputmode="numeric" pattern="[0-9]*" @input="onInput($event, index)" @keydown="onKeydown($event, index)"
           ref="pinInputs" />
       </div>
@@ -187,6 +187,7 @@ export default {
   data() {
     return {
       pinValues: ['', '', '', ''],
+      hideLastTimeout: null,
     }
   },
   methods: {
@@ -209,6 +210,7 @@ export default {
     },
     onInput(event, index) {
       const val = event.target.value
+      const pinInputs = document.querySelectorAll(".inputField__input__pin");
 
       // 숫자만 필터링
       if (!/^\d$/.test(val)) {
@@ -222,6 +224,22 @@ export default {
       const inputs = this.$refs.pinInputs
       if (index < inputs.length - 1) {
         inputs[index + 1].focus()
+      }
+
+      if (pinInputs[index - 1]) {
+        pinInputs[index - 1].type = 'password'
+      }
+
+      // 마지막 인덱스일 경우: 1초 후 비밀번호 처리
+      if (index === inputs.length - 1) {
+        if (this.hideLastTimeout) {
+          clearTimeout(this.hideLastTimeout)
+        }
+        this.hideLastTimeout = setTimeout(() => {
+          if (pinInputs[index]) {
+            pinInputs[index].type = 'password'
+          }
+        }, 1000)
       }
     },
     onKeydown(event, index) {
