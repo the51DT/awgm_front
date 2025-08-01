@@ -13,7 +13,7 @@
         </dl>
       </div>
     </div>
-    <div class="activity__area-terms-tab">
+    <div class="activity__area-terms-tab home">
       <div class="activity__area-profile">
         <h2> 현재 나의 활동</h2>
         <p class="activity__area-profile-date"> 활동 기준일 : 2025년 9월 ~ 2026년 8월</p>
@@ -222,7 +222,7 @@
         <div class="para-title-2rd">
           <h6> 연속인증 </h6>
         </div>
-        <div class="badge-box-wrap">
+        <div class="badge-box-wrap home">
           <div class="badge-box">
             <BadgeDefault img="badge--lock-wave.svg" pointColor="lock">10일 연속 인증</BadgeDefault>
           </div>
@@ -263,7 +263,7 @@
         <div class="para-title-2rd">
           <h6> 챌린지 참여 </h6>
         </div>
-        <div class="badge-box-wrap">
+        <div class="badge-box-wrap home">
           <div class="badge-box">
             <BadgeDefault img="badge--lock-hex.svg" pointColor="lock"> 것모닝코리아 챌린지 1회 성공</BadgeDefault>
           </div>
@@ -286,7 +286,7 @@
         <div class="para-title-2rd">
           <h6> 팀장 </h6>
         </div>
-        <div class="badge-box-wrap">
+        <div class="badge-box-wrap home">
           <div class="badge-box">
             <BadgeDefault img="badge--lock-drape.svg" pointColor="lock">솔플 축하</BadgeDefault>
           </div>
@@ -315,7 +315,7 @@
         <div class="para-title-2rd">
           <h6> 이벤트 배지 </h6>
         </div>
-        <div class="badge-box-wrap">
+        <div class="badge-box-wrap home">
           <div class="badge-box">
             <BadgeDefault img="badge--lock-semicircle.svg" pointColor="lock">리치 디보스 탄생일</BadgeDefault>
           </div>

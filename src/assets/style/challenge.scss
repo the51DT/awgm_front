@@ -2619,6 +2619,12 @@ p i {
       }
     }
 
+    .badge-box-wrap.home {
+      .badge-box {
+        background-color: #fff;
+      }
+    }
+
     &.not-badges {
       display: flex;
       justify-content: center;
@@ -2974,6 +2980,10 @@ p i {
       margin: 0 -20px 0;
       background: #fff;
       border-radius: 32px 32px 0 0;
+
+      &.home {
+        background: #f5f5f5;
+      }
 
       .represent {
         &__badge-wrap {
