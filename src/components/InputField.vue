@@ -208,9 +208,22 @@ export default {
     onChange(event) {
       this.$emit('update:modelValue', event.target.value)
     },
+    focusNextEmptyInput() {
+      const inputs = this.$refs.pinInputs
+      const nextIndex = this.pinValues.findIndex(v => v === '')
+      if (nextIndex !== -1 && inputs[nextIndex]) {
+        inputs[nextIndex].focus()
+      }
+    },
     onInput(event, index) {
       const val = event.target.value
       const pinInputs = document.querySelectorAll(".inputField__input__pin");
+      const inputs = this.$refs.pinInputs
+
+      // PinInput 수동 클릭 방지
+      // pinInputs.addEventListener('mousedown', function (event) {
+      //   event.preventDefault();
+      // })
 
       // 숫자만 필터링
       if (!/^\d$/.test(val)) {
@@ -221,7 +234,6 @@ export default {
       this.pinValues[index] = val
 
       // 다음 input으로 focus 이동
-      const inputs = this.$refs.pinInputs
       if (index < inputs.length - 1) {
         inputs[index + 1].focus()
       }
@@ -229,6 +241,9 @@ export default {
       if (pinInputs[index - 1]) {
         pinInputs[index - 1].type = 'password'
       }
+
+      // 다음 빈 input으로 이동
+      this.focusNextEmptyInput()
 
       // 마지막 인덱스일 경우: 1초 후 비밀번호 처리
       if (index === inputs.length - 1) {
@@ -245,6 +260,7 @@ export default {
     onKeydown(event, index) {
       const key = event.key
       const inputs = this.$refs.pinInputs
+      const pinInputs = document.querySelectorAll(".inputField__input__pin")
 
       const allowed = [
         ...Array.from({ length: 10 }, (_, i) => String(i)),
@@ -260,15 +276,33 @@ export default {
       if ((key === 'Backspace' || key === 'Delete') && index > 0) {
         event.preventDefault()
 
-        // 현재 값 제거
+        // 값 제거
         this.pinValues[index] = ''
         event.target.value = ''
 
+        // type을 다시 text로 복원
+        if (pinInputs[index]) {
+          pinInputs[index].type = 'text'
+        }
+
         // 이전 칸으로 이동
-        inputs[index - 1].focus()
+        if (index > 0) {
+          inputs[index - 1].focus()
+        }
       }
     },
 
+  },
+  mounted() {
+    const pinInputs = this.$refs.pinInputs
+
+    // 마우스 클릭으로 포커스 막기
+    pinInputs.forEach((input) => {
+      input.addEventListener('mousedown', (e) => e.preventDefault())
+    })
+
+    // 초기 포커스 (입력값 없으면 첫 번째로 이동)
+    this.focusNextEmptyInput()
   }
 }
 </script>
