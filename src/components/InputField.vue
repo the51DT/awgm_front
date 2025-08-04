@@ -6,10 +6,9 @@
     <p v-if="title" class="inputField__title">{{ title }}</p>
     <div class="inputField__wrap">
       <!-- 셀렉트 (option 리스트에서 문구 노출 시)-->
-      <select v-if="type === 'select'" :class="warn === false
-        ? 'inputField__input'
-        : 'inputField__input inputField__input--warn'
-        " :id="id" :name="name" :readonly="readonly" @change="onChange" :value="modelValue">
+      <select v-if="type === 'select'"
+        :class="[warn === false ? 'inputField__input' : 'inputField__input inputField__input--warn', size === 'font-12' ? '' : 'font-12 ']"
+        :id="id" :name="name" :readonly="readonly" @change="onChange" :value="modelValue">
         <!-- <option disabled hidden >{{  }}</option> -->
         <option :key="i" v-for="(options, i) in options" :value="options">
           {{ options }}
@@ -117,6 +116,7 @@ export default {
     warn: Boolean,
     checked: Boolean,
     disabled: Boolean,
+    size: String,
     radio: {
       type: Array,
       default: () => {
