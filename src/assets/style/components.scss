@@ -788,8 +788,8 @@
   gap: 8px;
 
   >div {
-    width: 50%;
-    flex: 1;
+    width: 85%;
+    // flex: 1;
     height: 40px;
 
     &:has(.inputField__input__radio) {
@@ -797,7 +797,7 @@
     }
 
     &+div {
-      flex: 0 1 50%;
+      // flex: 0 1 50%;
     }
   }
 
