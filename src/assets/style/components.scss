@@ -789,7 +789,7 @@
 
   >div {
     width: 85%;
-    // flex: 1;
+    flex: 1 1 auto;
     height: 40px;
 
     &:has(.inputField__input__radio) {
