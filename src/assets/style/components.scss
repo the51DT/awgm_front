@@ -1402,6 +1402,10 @@
       word-break: keep-all;
       color: #111;
 
+      &.gray {
+        color: #666;
+      }
+
       &.white {
         color: #fff;
       }
