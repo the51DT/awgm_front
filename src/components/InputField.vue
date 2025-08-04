@@ -210,20 +210,20 @@ export default {
     },
     focusNextEmptyInput() {
       const inputs = this.$refs.pinInputs
+      const pinInputs = document.querySelectorAll(".inputField__input__pin")
       const nextIndex = this.pinValues.findIndex(v => v === '')
-      if (nextIndex !== -1 && inputs[nextIndex]) {
-        inputs[nextIndex].focus()
+      const focusIndex = nextIndex !== -1 ? nextIndex : this.pinValues.length - 1
+
+      // 포커싱될 인풋은 type을 text로
+      if (inputs[focusIndex]) {
+        pinInputs[focusIndex].type = 'text'
+        inputs[focusIndex].focus()
       }
     },
     onInput(event, index) {
       const val = event.target.value
       const pinInputs = document.querySelectorAll(".inputField__input__pin");
       const inputs = this.$refs.pinInputs
-
-      // PinInput 수동 클릭 방지
-      // pinInputs.addEventListener('mousedown', function (event) {
-      //   event.preventDefault();
-      // })
 
       // 숫자만 필터링
       if (!/^\d$/.test(val)) {
@@ -293,16 +293,5 @@ export default {
     },
 
   },
-  mounted() {
-    const pinInputs = this.$refs.pinInputs
-
-    // 마우스 클릭으로 포커스 막기
-    pinInputs.forEach((input) => {
-      input.addEventListener('mousedown', (e) => e.preventDefault())
-    })
-
-    // 초기 포커스 (입력값 없으면 첫 번째로 이동)
-    this.focusNextEmptyInput()
-  }
 }
 </script>
