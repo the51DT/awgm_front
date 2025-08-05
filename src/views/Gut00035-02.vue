@@ -3,14 +3,14 @@
   <div class="activity bg-case bg-green">
     <div class="activity__area">
       <div class="activity__area-certified">
-        <dl>
-          <dt> · 최초 인증일 </dt>
-          <dd> 2024년 7월 5일</dd>
-        </dl>
-        <dl>
-          <dt> · 총 누적 인증 횟수 </dt>
-          <dd> 1,230회</dd>
-        </dl>
+        <div>
+          <p> 최초 인증일 </p>
+          <p> 2024년 12월 31일 </p>
+        </div>
+        <div>
+          <p> 총 누적 인증 횟수 </p>
+          <p> 1,230회 </p>
+        </div>
       </div>
     </div>
     <div class="activity__area-terms-tab home">
