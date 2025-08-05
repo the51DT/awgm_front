@@ -787,6 +787,14 @@
   align-items: center;
   gap: 8px;
 
+  &.half {
+    >div {
+      width: 50%;
+      flex: 1;
+      height: 40px;
+    }
+  }
+
   >div {
     width: 85%;
     flex: 1 1 auto;
