@@ -3224,6 +3224,24 @@ p i {
 
     &--service {
       margin: 0 -20px;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 180px;
+        height: 100%;
+        background: linear-gradient(to right, transparent, #fff);
+        z-index: 1;
+        pointer-events: none;
+        transition: opacity 0.1s ease;
+      }
+
+      &.is-end::after {
+        opacity: 0;
+      }
 
       .tag {
         padding: 8px 16px;
@@ -3304,6 +3322,24 @@ p i {
 
   &__tag {
     margin: 0 -20px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 180px;
+      height: 100%;
+      background: linear-gradient(to right, transparent, #fff);
+      z-index: 1;
+      pointer-events: none;
+      transition: opacity 0.1s ease;
+    }
+
+    &.is-end::after {
+      opacity: 0;
+    }
 
     .swiper-slide {
       width: fit-content;

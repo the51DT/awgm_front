@@ -5,7 +5,7 @@
         <ContentHead title="서비스 이용안내" :rightArea=true />
         <div class="service">
           <div class="tag--wrap">
-            <div class="tag--wrap--service">
+            <div class="tag--wrap--service" ref="wrapRef">
               <swiper :modules="modules" :slides-per-view="'auto'" :freeMode="true" :space-between="4"
                 :slidesOffsetBefore="20" :slidesOffsetAfter="20" @swiper="onSwiper" @slideChange="onSlideChange">
                 <swiper-slide><button class="tag on">것모닝 인증방법</button></swiper-slide>
@@ -381,20 +381,33 @@ export default {
   mounted() {
     tabFn.tabFn()
   },
-  setup() {
-
-    const onSwiper = (swiper) => {
-    };
-    const onSlideChange = () => {
-    };
-
+  data() {
     return {
-      onSwiper,
-      onSlideChange,
       modules: [FreeMode],
-    };
+      swiperRef: null,
+    }
   },
   methods: {
+    onSwiper(swiper) {
+      this.swiperRef = swiper;
+      this.checkIsEnd();
+    },
+    onSlideChange() {
+      this.checkIsEnd();
+    },
+    checkIsEnd() {
+      setTimeout(() => {
+        const swiper = this.swiperRef;
+        if (!swiper) return;
+
+        const isEnd = swiper.isEnd; // ✅ swiper가 끝에 도달했는지 체크
+        const wrapEl = this.$refs.wrapRef;
+
+        if (wrapEl) {
+          wrapEl.classList.toggle('is-end', isEnd);
+        }
+      }, 100); // freeMode에서 정확한 상태 반영을 위해 약간의 delay
+    },
     faqAcco() {
       const tagList = document.querySelectorAll(".tag")
       const accoList = document.querySelectorAll(".tag_cont")
