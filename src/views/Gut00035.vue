@@ -27,7 +27,7 @@
           <div class="badges_reward">
             <div class="badges_reward_btn">
               <div class="badges_reward_btn__pop">
-                <span class="badges_reward_btn-txt"> 총 인증 횟수에 따라 핀레벨이 올라갑니다. </span>
+                <span class="badges_reward_btn-txt"> 총 인증 횟수에 따라 것모닝핀이 올라갑니다. </span>
                 <button class="badges_reward_btn__pop__close"></button>
                 <div class="activity__area_badge-section">
                   <div class="badge-box-wrap">
