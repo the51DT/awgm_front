@@ -21,8 +21,9 @@ html.pop-open {
   height: 100%;
   background-color: rgba(17, 17, 17, 0.8);
   z-index: 98;
-  &--bg-none{
-    .popup__box{
+
+  &--bg-none {
+    .popup__box {
       border: 1px solid transparent;
       border-radius: 16px;
       background-color: transparent;
@@ -90,7 +91,8 @@ html.pop-open {
       &+.popup__box--middle {
         margin-top: 8px;
       }
-      & > p{
+
+      &>p {
         color: #333;
       }
     }
@@ -101,21 +103,23 @@ html.pop-open {
       line-height: 20px;
       text-align: center;
       letter-spacing: -0.5px;
+
       // max-width: 248px;
       &>span {
         font-weight: 800;
       }
 
-      & > p {
+      &>p {
         font-size: 11px;
         line-height: 16px;
       }
 
-      & >p.wrong{
+      &>p.wrong {
         font-weight: 800;
         font-size: 15px;
         line-height: 24px;
-        span{
+
+        span {
           color: #169E4A;
         }
       }
@@ -300,14 +304,16 @@ html.pop-open {
         margin-top: 40px;
       }
     }
-    &__cont.pb-50{
+
+    &__cont.pb-50 {
       padding-top: 0;
       padding-bottom: 50px;
     }
 
     &__wrap {
       background-color: transparent;
-      overflow-y: auto;
+      // overflow-y: auto;
+      // swiper 옆 마진때문에 일단 주석 처리해둠
       z-index: 99;
 
       &::-webkit-scrollbar {
@@ -396,22 +402,27 @@ html.pop-open {
   }
 }
 
-.getBadge{
-  object, img{
+.getBadge {
+
+  object,
+  img {
     width: 120px;
     margin-bottom: 12px;
   }
-  p{
+
+  p {
     font-weight: 500;
     font-size: 13px;
     line-height: 20px;
     color: #333;
   }
-  &_txt{
+
+  &_txt {
     margin-top: 8px;
     margin-bottom: 20px;
   }
-  .badge__get_tag{
+
+  .badge__get_tag {
     font-weight: 500;
     font-size: 12px;
     line-height: 16px;
@@ -419,10 +430,12 @@ html.pop-open {
     border-radius: 16px;
     padding: 4px 8px;
   }
-  .badge__get_tag + p{
+
+  .badge__get_tag+p {
     margin-top: 6px;
   }
-  &-lock > div{
+
+  &-lock>div {
     margin-bottom: 20px;
   }
 }
