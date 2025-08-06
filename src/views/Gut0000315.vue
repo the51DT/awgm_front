@@ -1,5 +1,5 @@
 <template>
-  <PopupDefault full>
+  <PopupDefault full :isTopBtn="true">
     <template v-slot:full>
       <div class="content-area">
         <ContentHead title="법정대리인 동의" headType="ty02" :rightArea=true />
