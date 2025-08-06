@@ -37,11 +37,41 @@
                     <dd>팀장 김웨이</dd>
                   </dl>
                   <dl>
+                    <dt>인증횟수</dt>
+                    <dd>
+                      <div class="group-info">
+                        <p class="main">999회</p>
+                      </div>
+                    </dd>
+                  </dl>
+                </div>
+                <div>
+                  <dl>
                     <dt> 오늘 인증</dt>
                     <dd> <img :src="require(`@/assets/images/today_prove_O.svg`)" /></dd>
                   </dl>
+                  <dl>
+                    <dt>인증률</dt>
+                    <dd>
+                      <p> <span class="green"> 60%</span> </p>
+                    </dd>
+                  </dl>
                 </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card--border card--p16 card--shadowc2 card--link">
+            <button class="card__linkBtn">
+              <img :src="require(`@/assets/images/icon_arrow_r.svg`)" />
+            </button>
+            <div class="card__top">
+              <div class="card__text__list ty02 light-view">
                 <div>
+                  <dl>
+                    <dt>닉네임</dt>
+                    <dd>팀장 김웨</dd>
+                  </dl>
                   <dl>
                     <dt>인증횟수</dt>
                     <dd>
@@ -49,6 +79,12 @@
                         <p class="main">999회</p>
                       </div>
                     </dd>
+                  </dl>
+                </div>
+                <div>
+                  <dl>
+                    <dt>오늘 인증</dt>
+                    <dd> <img :src="require(`@/assets/images/today_prove_X.svg`)" /></dd>
                   </dl>
                   <dl class="align-ctr">
                     <dt>인증률</dt>
@@ -73,12 +109,6 @@
                     <dd>팀장 김웨</dd>
                   </dl>
                   <dl>
-                    <dt>오늘 인증</dt>
-                    <dd> <span class=""> X </span></dd>
-                  </dl>
-                </div>
-                <div>
-                  <dl>
                     <dt>인증횟수</dt>
                     <dd>
                       <div class="group-info">
@@ -86,7 +116,13 @@
                       </div>
                     </dd>
                   </dl>
-                  <dl class="align-ctr">
+                </div>
+                <div>
+                  <dl>
+                    <dt>오늘 인증</dt>
+                    <dd> <img :src="require(`@/assets/images/today_prove_X.svg`)" /></dd>
+                  </dl>
+                  <dl>
                     <dt>인증률</dt>
                     <dd>
                       <p> <span class="green"> 60%</span> </p>
@@ -96,68 +132,33 @@
               </div>
             </div>
           </div>
+          <div class="card card--border card--p16 card--shadowc2 card--link">
+            <button class="card__linkBtn">
+              <img :src="require(`@/assets/images/icon_arrow_r.svg`)" />
+            </button>
+            <div class="card__top">
+              <div class="card__text__list ty02 light-view">
+                <div>
+                  <dl>
+                    <dt>닉네임</dt>
+                    <dd>김웨이웨이웨이</dd>
+                  </dl>
+                  <dl>
+                    <dt>인증횟수</dt>
+                    <dd>
+                      <div class="group-info">
+                        <p class="main">999회</p>
+                      </div>
+                    </dd>
+                  </dl>
+                </div>
+                <div>
+                  <dl>
+                    <dt>오늘 인증</dt>
+                    <dd> <img :src="require(`@/assets/images/today_prove_X.svg`)" /></dd>
+                  </dl>
 
-          <div class="card card--border card--p16 card--shadowc2 card--link">
-            <button class="card__linkBtn">
-              <img :src="require(`@/assets/images/icon_arrow_r.svg`)" />
-            </button>
-            <div class="card__top">
-              <div class="card__text__list ty02 light-view">
-                <div>
                   <dl>
-                    <dt>닉네임</dt>
-                    <dd>팀장 김웨</dd>
-                  </dl>
-                  <dl>
-                    <dt>오늘 인증</dt>
-                    <dd> <span class=""> X </span></dd>
-                  </dl>
-                </div>
-                <div>
-                  <dl>
-                    <dt>인증횟수</dt>
-                    <dd>
-                      <div class="group-info">
-                        <p class="main">999회</p>
-                      </div>
-                    </dd>
-                  </dl>
-                  <dl class="align-ctr">
-                    <dt>인증률</dt>
-                    <dd>
-                      <p> <span class="green"> 60%</span> </p>
-                    </dd>
-                  </dl>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card card--border card--p16 card--shadowc2 card--link">
-            <button class="card__linkBtn">
-              <img :src="require(`@/assets/images/icon_arrow_r.svg`)" />
-            </button>
-            <div class="card__top">
-              <div class="card__text__list ty02 light-view">
-                <div>
-                  <dl>
-                    <dt>닉네임</dt>
-                    <dd>팀장 김웨</dd>
-                  </dl>
-                  <dl>
-                    <dt>오늘 인증</dt>
-                    <dd> <span class=""> X </span></dd>
-                  </dl>
-                </div>
-                <div>
-                  <dl>
-                    <dt>인증횟수</dt>
-                    <dd>
-                      <div class="group-info">
-                        <p class="main">999회</p>
-                      </div>
-                    </dd>
-                  </dl>
-                  <dl class="align-ctr">
                     <dt>인증률</dt>
                     <dd>
                       <p> <span class="green"> 60%</span> </p>

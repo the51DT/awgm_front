@@ -37,12 +37,6 @@
                     <dd>김웨이</dd>
                   </dl>
                   <dl>
-                    <dt> 오늘 인증</dt>
-                    <dd> <img :src="require(`@/assets/images/today_prove_O.svg`)" /></dd>
-                  </dl>
-                </div>
-                <div>
-                  <dl>
                     <dt>전체인증횟수</dt>
                     <dd>
                       <div class="group-info">
@@ -50,7 +44,13 @@
                       </div>
                     </dd>
                   </dl>
-                  <dl class="align-ctr">
+                </div>
+                <div>
+                  <dl>
+                    <dt> 오늘 인증</dt>
+                    <dd> <img :src="require(`@/assets/images/today_prove_O.svg`)" /></dd>
+                  </dl>
+                  <dl>
                     <dt>이달의인증</dt>
                     <dd>
                       <p> 9월 22회 <span class="green"> 60%</span> </p>
@@ -72,12 +72,6 @@
                     <dd>김웨이</dd>
                   </dl>
                   <dl>
-                    <dt> 오늘 인증</dt>
-                    <dd> <img :src="require(`@/assets/images/today_prove_O.svg`)" /></dd>
-                  </dl>
-                </div>
-                <div>
-                  <dl>
                     <dt>전체인증횟수</dt>
                     <dd>
                       <div class="group-info">
@@ -85,7 +79,13 @@
                       </div>
                     </dd>
                   </dl>
-                  <dl class="align-ctr">
+                </div>
+                <div>
+                  <dl>
+                    <dt> 오늘 인증</dt>
+                    <dd> <img :src="require(`@/assets/images/today_prove_O.svg`)" /></dd>
+                  </dl>
+                  <dl>
                     <dt>이달의인증</dt>
                     <dd>
                       <p> 9월 22회 <span class="green"> 60%</span> </p>
@@ -107,12 +107,6 @@
                     <dd>김웨이</dd>
                   </dl>
                   <dl>
-                    <dt> 오늘 인증</dt>
-                    <dd> <img :src="require(`@/assets/images/today_prove_O.svg`)" /></dd>
-                  </dl>
-                </div>
-                <div>
-                  <dl>
                     <dt>전체인증횟수</dt>
                     <dd>
                       <div class="group-info">
@@ -120,7 +114,13 @@
                       </div>
                     </dd>
                   </dl>
-                  <dl class="align-ctr">
+                </div>
+                <div>
+                  <dl>
+                    <dt> 오늘 인증</dt>
+                    <dd> <img :src="require(`@/assets/images/today_prove_O.svg`)" /></dd>
+                  </dl>
+                  <dl>
                     <dt>이달의인증</dt>
                     <dd>
                       <p> 9월 22회 <span class="green"> 60%</span> </p>
@@ -142,12 +142,6 @@
                     <dd>김사무엘 주니어</dd>
                   </dl>
                   <dl>
-                    <dt> 오늘 인증</dt>
-                    <dd> <img :src="require(`@/assets/images/today_prove_X.svg`)" /></dd>
-                  </dl>
-                </div>
-                <div>
-                  <dl>
                     <dt>전체인증횟수</dt>
                     <dd>
                       <div class="group-info">
@@ -155,7 +149,13 @@
                       </div>
                     </dd>
                   </dl>
-                  <dl class="align-ctr">
+                </div>
+                <div>
+                  <dl>
+                    <dt> 오늘 인증</dt>
+                    <dd> <img :src="require(`@/assets/images/today_prove_X.svg`)" /></dd>
+                  </dl>
+                  <dl>
                     <dt>이달의인증</dt>
                     <dd>
                       <p> 9월 22회 <span class="green"> 60%</span> </p>
@@ -177,12 +177,6 @@
                     <dd>코니 알렉스</dd>
                   </dl>
                   <dl>
-                    <dt> 오늘 인증</dt>
-                    <dd> <img :src="require(`@/assets/images/today_prove_O.svg`)" /></dd>
-                  </dl>
-                </div>
-                <div>
-                  <dl>
                     <dt>전체인증횟수</dt>
                     <dd>
                       <div class="group-info">
@@ -190,7 +184,13 @@
                       </div>
                     </dd>
                   </dl>
-                  <dl class="align-ctr">
+                </div>
+                <div>
+                  <dl>
+                    <dt> 오늘 인증</dt>
+                    <dd> <img :src="require(`@/assets/images/today_prove_O.svg`)" /></dd>
+                  </dl>
+                  <dl>
                     <dt>이달의인증</dt>
                     <dd>
                       <p> 9월 22회 <span class="green"> 60%</span> </p>
@@ -200,9 +200,6 @@
               </div>
             </div>
           </div>
-
-
-
         </div>
       </div>
     </div>

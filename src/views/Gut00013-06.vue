@@ -37,12 +37,6 @@
                     <dd>김웨이</dd>
                   </dl>
                   <dl>
-                    <dt> 오늘 인증</dt>
-                    <dd> <img :src="require(`@/assets/images/today_prove_O.svg`)" /></dd>
-                  </dl>
-                </div>
-                <div>
-                  <dl>
                     <dt>인증횟수</dt>
                     <dd>
                       <div class="group-info">
@@ -50,7 +44,13 @@
                       </div>
                     </dd>
                   </dl>
-                  <dl class="align-ctr">
+                </div>
+                <div>
+                  <dl>
+                    <dt> 오늘 인증</dt>
+                    <dd> <img :src="require(`@/assets/images/today_prove_O.svg`)" /></dd>
+                  </dl>
+                  <dl>
                     <dt>인증률</dt>
                     <dd>
                       <p><span class="green"> 60%</span> </p>
@@ -73,12 +73,6 @@
                     <dd>김웨이</dd>
                   </dl>
                   <dl>
-                    <dt> 오늘 인증</dt>
-                    <dd> <img :src="require(`@/assets/images/today_prove_O.svg`)" /></dd>
-                  </dl>
-                </div>
-                <div>
-                  <dl>
                     <dt>인증횟수</dt>
                     <dd>
                       <div class="group-info">
@@ -86,7 +80,13 @@
                       </div>
                     </dd>
                   </dl>
-                  <dl class="align-ctr">
+                </div>
+                <div>
+                  <dl>
+                    <dt> 오늘 인증</dt>
+                    <dd> <img :src="require(`@/assets/images/today_prove_O.svg`)" /></dd>
+                  </dl>
+                  <dl>
                     <dt>인증률</dt>
                     <dd>
                       <p><span class="green"> 60%</span> </p>
@@ -108,12 +108,6 @@
                     <dd>qwerasdf</dd>
                   </dl>
                   <dl>
-                    <dt> 오늘 인증</dt>
-                    <dd> <img :src="require(`@/assets/images/today_prove_O.svg`)" /></dd>
-                  </dl>
-                </div>
-                <div>
-                  <dl>
                     <dt>인증횟수</dt>
                     <dd>
                       <div class="group-info">
@@ -121,7 +115,13 @@
                       </div>
                     </dd>
                   </dl>
-                  <dl class="align-ctr">
+                </div>
+                <div>
+                  <dl>
+                    <dt> 오늘 인증</dt>
+                    <dd> <img :src="require(`@/assets/images/today_prove_O.svg`)" /></dd>
+                  </dl>
+                  <dl>
                     <dt>인증률</dt>
                     <dd>
                       <p><span class="green"> 60%</span> </p>
@@ -143,12 +143,6 @@
                     <dd>코니 일렉스</dd>
                   </dl>
                   <dl>
-                    <dt> 오늘 인증</dt>
-                    <dd> <span class=""> X </span></dd>
-                  </dl>
-                </div>
-                <div>
-                  <dl>
                     <dt>인증횟수</dt>
                     <dd>
                       <div class="group-info">
@@ -156,7 +150,13 @@
                       </div>
                     </dd>
                   </dl>
-                  <dl class="align-ctr">
+                </div>
+                <div>
+                  <dl>
+                    <dt> 오늘 인증</dt>
+                    <dd> <img :src="require(`@/assets/images/today_prove_X.svg`)" /></dd>
+                  </dl>
+                  <dl>
                     <dt>인증률</dt>
                     <dd>
                       <p><span class="green"> 60%</span> </p>
