@@ -30,7 +30,7 @@
             <div class="service__area">
               <div class="service__title">
                 <p class="title__num">02</p>
-                <p class="title__text">사진 올리기</p>
+                <p class="title__text">인증 사진 올리기</p>
               </div>
               <p class="service__division">Mobile Web</p>
               <p class="service__text">사진을 촬영하거나 내폰에 저장되어 있는 <br class="mo-only" />모든 사진을 불러오기 할 수 있습니다.</p>
@@ -118,7 +118,7 @@
                 <p class="title__text">챌린지 팀 만들기</p>
               </div>
               <p class="service__text">
-                ABO/Member 인증 회원인 경우 <br class="mo-only" />
+                팀장 자격 대상자의 경우 ABO인증 후 <br class="mo-only" />
                 챌린지 팀을 만들 수 있습니다.
               </p>
               <div class="service__img">
@@ -242,11 +242,11 @@
                 <p class="title__text">초대 수락 및 가입 여부 확인</p>
               </div>
               <p class="service__text">
-                팀장은 ‘팀 정보＇화면 하단에서 <br />
-                ‘초대한 팀원 보기’ 버튼을 통해 <br />
+                팀장은 '팀 정보'화면 하단에서 <br />
+                '초대한 팀원 보기' 버튼을 통해 <br />
                 팀원 가입 여부를 확인할 수 있으며, <br />
-                초대받은 팀원의 경우,＇나의 팀‘ 메뉴 내 <br />
-                ‘초대받은 팀’ 탭 화면에서 가입/거절이 가능합니다. <br />
+                초대받은 팀원의 경우, '나의 팀' 메뉴 내 <br />
+                '초대받은 팀' 탭 화면에서 가입/거절이 가능합니다. <br />
                 <span class="service__text_sm">
                   *카카오톡으로 초대하기와 초대링크 복사하기로 초대한 경우 <br />
                   초대받은 팀 목록에 표시되지 않습니다.
