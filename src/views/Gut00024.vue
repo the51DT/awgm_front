@@ -434,4 +434,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.tag--wrap {
+  margin-top: 40px;
+}
+</style>
