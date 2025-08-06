@@ -50,7 +50,10 @@
                 <p class="title__num">03</p>
                 <p class="title__text">것모닝 인증 내역 확인 및 공유하기</p>
               </div>
-              <p class="service__text">챌린지를 성공 했을 경우 <br class="mo-only" />보상수령 방법을 선택 해주세요.</p>
+              <p class="service__text">
+                나의 것모닝 인증 내역을 이미지로 저장하거나, <br />
+                카카오톡으로 공유해보세요.
+              </p>
               <div class="service__img">
                 <img class="img1_4" :src="require('@/assets/images/service1_4.png')">
               </div>
