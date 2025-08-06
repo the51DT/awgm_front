@@ -1303,14 +1303,14 @@
       &:after {
         content: '';
         display: inline-block;
-        width: 12px;
-        height: 12px;
+        width: 24px;
+        height: 24px;
         background-image: url(../images/icon_arrow_r_white.svg);
         background-size: contain;
         background-repeat: no-repeat;
         position: absolute;
         top: 50%;
-        right: 0;
+        right: -5px;
         transform: translateY(-50%);
       }
     }
