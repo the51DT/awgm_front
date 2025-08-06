@@ -1,8 +1,8 @@
 <template>
-  <PopupDefault full :isTopBtn="true">
+  <PopupDefault full>
     <template v-slot:full>
       <div class="content-area">
-        <ContentHead headType="ty02" :rightArea=true />
+        <ContentHead headType="ty03" :rightArea=true />
         <div class="content-top">
           <div class="login-wrap">
             <div class="login-intro">

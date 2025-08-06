@@ -312,7 +312,7 @@ html.pop-open {
 
     &__wrap {
       background-color: transparent;
-      // overflow-y: auto;
+      overflow-y: auto;
       // swiper 옆 마진때문에 일단 주석 처리해둠
       z-index: 99;
 

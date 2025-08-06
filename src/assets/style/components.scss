@@ -64,6 +64,10 @@
     background: #fff;
     min-height: 72px;
     transition: none;
+
+    .area-right {
+      padding-right: 20px;
+    }
   }
 
   &.bgGray {
@@ -112,7 +116,7 @@
     &-right {
       display: block;
       position: absolute;
-      right: 20px;
+      right: 0px;
       height: 32px;
 
       &__icon {
@@ -121,7 +125,6 @@
         align-items: center;
         justify-content: flex-end;
         gap: 16px;
-        // padding-right: 20px;
 
         button {
           display: flex;

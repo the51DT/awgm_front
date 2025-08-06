@@ -438,4 +438,8 @@ export default {
 .tag--wrap {
   margin-top: 40px;
 }
+
+.popup--full__wrap {
+  overflow-y: visible !important;
+}
 </style>

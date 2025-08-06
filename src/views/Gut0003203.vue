@@ -1,5 +1,5 @@
 <template>
-  <PopupDefault full :isTopBtn="true">
+  <PopupDefault full>
     <template v-slot:full>
       <div class="activity-content-area">
         <ContentHead title="획득한 배지 전체보기" :rightArea=true />
