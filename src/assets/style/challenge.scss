@@ -2520,6 +2520,12 @@ p i {
   .medal_btn {
     position: relative;
 
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
     &__pop {
       display: none;
       position: absolute;
