@@ -150,7 +150,7 @@
           </div>
           <div class="record-box">
             <div>
-              <h7>챌린지</h7>
+              <h7>챌린지(회차)</h7>
             </div>
             <div>
               <p> 참여 수 </p>
