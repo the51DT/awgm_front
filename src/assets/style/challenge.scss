@@ -2115,6 +2115,11 @@ p i {
         color: #fff;
         position: relative;
 
+        &.gray {
+          background: #aaa;
+          color: #fff;
+        }
+
         img {
           margin-left: 4px;
           height: 24px;
