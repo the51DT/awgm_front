@@ -160,6 +160,8 @@ body {
     transform: translateX(-50%);
     bottom: 73px;
     z-index: 55;
+    user-select: none;
+    pointer-events: none;
 
     &__pop {
       display: none;
@@ -186,6 +188,8 @@ body {
         height: 21px;
         background-image: url(../images/icon_close_white.svg);
         background-size: contain;
+        user-select: all;
+        pointer-events: all;
       }
 
       &>p {
@@ -209,6 +213,8 @@ body {
     transform: translateX(-50%);
     bottom: 104px;
     z-index: 50;
+    user-select: none;
+    pointer-events: none;
 
     button {
       position: relative;
@@ -221,6 +227,8 @@ body {
       border: 2px solid #169e4a;
       background: #fff;
       box-shadow: 8px 10px 12px 0px #0000001a;
+      user-select: all;
+      pointer-events: all;
     }
 
     img {
@@ -294,6 +302,34 @@ body {
         display: flex;
         align-items: center;
         gap: 4px;
+      }
+    }
+
+    &--email {
+      margin-top: 8px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+
+      div {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+      }
+    }
+
+    &--hosting {
+      a {
+        font-weight: 400;
+        padding-right: 4px;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        color: #fff;
+      }
+
+      a.white {
+        color: #111;
       }
     }
 

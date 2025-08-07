@@ -1059,12 +1059,18 @@
 
 .home {
   &--addBtn {
+    user-select: none;
+    pointer-events: none;
+
     &.active {
       .home--addBtn-hidden {
         color: #fff;
       }
 
       .home--addBtn-close {
+        user-select: all;
+        pointer-events: all;
+
         &:after {
           background-image: url(../images/icon_close_white.svg);
         }
