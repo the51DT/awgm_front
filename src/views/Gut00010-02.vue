@@ -52,12 +52,12 @@
           <p class="card-rank-title">상시 랭킹</p>
           <div class="card__display-rank">
             <p><span> 5 </span>위</p>
-            <!-- 챌린지 진행 대기 - 성공 -->
+            <!-- 챌린지 진행 중-->
             <button type="button">
               팀 랭킹 보기
               <img :src="require(`@/assets/images/icon_arrow_r_white.svg`)" />
             </button>
-            <!-- 챌린지 진행 대기 - 실패 : class="gray" 추가 -->
+            <!-- 챌린지 진행 대기 : class="gray" 추가 -->
             <!-- <button type="button" class="gray">
               팀 랭킹 보기
               <img :src="require(`@/assets/images/icon_arrow_r_white.svg`)" />
