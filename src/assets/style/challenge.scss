@@ -2863,9 +2863,9 @@ p i {
             &__pop {
               margin: 0 auto;
               width: 320px;
-              height: 1360px;
+              height: 1310px;
               padding: 35px 16px 8px 16px;
-              background: url(../images/badges_speech_bg.svg) no-repeat top center/100%;
+              background: url(../images/badges_speech_bg.svg) no-repeat top center/contain;
               z-index: 2;
               position: relative;
               display: none;
