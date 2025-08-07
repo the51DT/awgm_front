@@ -186,6 +186,10 @@
 .filter .inputField__input {
   font-size: 12px;
 }
+
+.tag--wrap {
+  margin-top: 0;
+}
 </style>
 
 <script>
