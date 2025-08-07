@@ -141,8 +141,7 @@ export default {
 </script>
 
 <style scoped>
-.font--c66.font--ls1.mt-8{
+.font--c66.font--ls1.mt-8 {
   margin-top: 8px;
 }
-
 </style>
