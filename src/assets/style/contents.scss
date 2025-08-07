@@ -733,6 +733,10 @@
             background-image: url(../images/icon/ico_file_modify.png);
             background-size: contain;
           }
+
+          &.not-upload::after {
+            display: none;
+          }
         }
 
         .img-wrap {

@@ -6,7 +6,8 @@
         <div class="profile-area small">
           <!-- 부모 계정일 경우, 등록한 개인 프로필 아이콘 노출 -->
           <!-- 자녀 계정일 경우, 설정된 자녀 프로필 아이콘 노출 -->
-          <div class="upload-label upload-set-img">
+          <!-- not-upload 클래스 존재 시 업로드 버튼 사라짐 -->
+          <div class="upload-label upload-set-img not-upload">
             <div class="img-wrap not-ico">
               <img class="ico-img" :src="require(`@/assets/images/icon/ico_profile.png`)" alt="프로필 설정 이미지" />
             </div>
@@ -89,11 +90,6 @@
   </div>
 </template>
 
-<style scoped>
-.my-page-wrap .profile-area.small .upload-label::after {
-  display: none;
-}
-</style>
 
 <script>
 import ContentHead from "@/components/ContentHead.vue";
