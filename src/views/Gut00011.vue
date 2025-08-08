@@ -8,6 +8,7 @@
           <div class="tag--wrap">
             <button class="tag on">인증률</button>
             <button class="tag">인증횟수</button>
+            <button class="tag">추가 혜택 순위</button>
           </div>
           <div class="medal_btn">
             <button><img :src="require(`@/assets/images/icon_medal.svg`)"></button>
@@ -177,6 +178,9 @@
       </div>
       <div class="tag_cont">
         인증횟수
+      </div>
+      <div class="tag_cont">
+        추가 혜택 순위
       </div>
     </div>
   </div>
