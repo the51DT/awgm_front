@@ -457,7 +457,7 @@
       &>div {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        padding-right: 50px;
+        padding-right: 30px;
       }
 
       dd:has(> img) {
@@ -469,7 +469,7 @@
       &>div {
         dl:nth-child(1) {
           dt {
-            width: 60px;
+            width: 65px;
           }
 
           dd {

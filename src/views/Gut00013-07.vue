@@ -46,10 +46,10 @@
                   </dl>
                 </div>
                 <div>
-                  <dl>
+                  <!-- <dl>
                     <dt> 오늘 인증</dt>
                     <dd> <img :src="require(`@/assets/images/today_prove_O.svg`)" /></dd>
-                  </dl>
+                  </dl> -->
                   <dl>
                     <dt>인증률</dt>
                     <dd>
