@@ -137,11 +137,13 @@
             </div>
           </div>
 
+          <!-- 추가 혜택 순위용 -->
           <div class="card card--border card--p16">
             <div class="card__top">
               <div class="card__profile__info">
                 <div class="card__img">
-                  <div class="card__medal bronze">20위</div>
+                  <!-- .plus 추가 -->
+                  <div class="card__medal plus">1위</div>
                   <img :src="require(`@/assets/images/card_profile.png`)">
                 </div>
               </div>
