@@ -52,7 +52,7 @@ export default {
     noticeSrc() {
       return this.isBgGreen
         ? require('@/assets/images/header_notice_w.svg')
-        : require('@/assets/images/header_notice.svg')
+        : require('@/assets/images/header_notice_before.svg')
     }
   }
 };
