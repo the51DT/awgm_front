@@ -1525,15 +1525,18 @@ p i {
     &--bar {
       position: relative;
       height: 128px;
+      width: 32px;
+      border-radius: 16px 16px 4px 4px;
+      background: #e5e5e5;
 
       div {
         position: absolute;
         bottom: 0;
-        transform: translateX(-50%);
         width: 32px;
         height: 100%;
-        border-radius: 16px;
+        border-radius: 16px 16px 4px 4px;
         background-color: #169e4a;
+        overflow: hidden;
       }
     }
 
@@ -1633,6 +1636,15 @@ p i {
       height: 34px;
       background-color: transparent;
       background-image: url(../images/bronze_medal.png);
+    }
+
+    &.plus {
+      background: #fff;
+      color: #111;
+      height: 34px;
+      width: 34px;
+      border: 1px solid #111;
+      border-radius: 50%;
     }
   }
 
@@ -2118,8 +2130,10 @@ p i {
         position: relative;
 
         &.gray {
-          background: #aaa;
+          background: #d8d8d8;
           color: #fff;
+          user-select: none;
+          pointer-events: none;
         }
 
         img {
