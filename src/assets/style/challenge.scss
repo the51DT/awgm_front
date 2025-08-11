@@ -2539,6 +2539,10 @@ p i {
   .medal_btn {
     position: relative;
 
+    &.plus {
+      display: none;
+    }
+
     button {
       display: flex;
       justify-content: center;
