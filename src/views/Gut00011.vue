@@ -58,7 +58,7 @@
               <div class="card__text">
                 <p class="card__text__title">우리몸은 GUT Morning을 원한다!</p>
                 <div class="card__info">
-                  <div class="card__num">231명</div>
+                  <div class="card__num ph-4">231명</div>
                 </div>
                 <p class="card__date">팀 인증률 <span>100%</span></p>
               </div>
@@ -76,7 +76,7 @@
               <div class="card__text">
                 <p class="card__text__title">아침마다 오 마이 GUT Morning</p>
                 <div class="card__info">
-                  <div class="card__num">99명</div>
+                  <div class="card__num ph-4">99명</div>
                 </div>
                 <p class="card__date">팀 인증률 <span>95%</span></p>
               </div>
@@ -94,7 +94,7 @@
               <div class="card__text">
                 <p class="card__text__title">아침마다 오 마이 GUT Morning</p>
                 <div class="card__info">
-                  <div class="card__num">99명</div>
+                  <div class="card__num ph-4">99명</div>
                 </div>
                 <p class="card__date">팀 인증률 <span>90%</span></p>
               </div>
@@ -112,7 +112,7 @@
               <div class="card__text">
                 <p class="card__text__title">아침마다 오 마이 GUT Morning</p>
                 <div class="card__info">
-                  <div class="card__num">99명</div>
+                  <div class="card__num ph-4">99명</div>
                 </div>
                 <p class="card__date">팀 인증률 <span>70%</span></p>
               </div>
@@ -130,7 +130,7 @@
               <div class="card__text">
                 <p class="card__text__title">아침마다 오 마이 GUT Morning</p>
                 <div class="card__info">
-                  <div class="card__num">99명</div>
+                  <div class="card__num ph-4">99명</div>
                 </div>
                 <p class="card__date">팀 인증률 <span>50%</span></p>
               </div>
@@ -150,7 +150,7 @@
               <div class="card__text">
                 <p class="card__text__title">아침마다 오 마이 GUT Morning</p>
                 <div class="card__info">
-                  <div class="card__num">99명</div>
+                  <div class="card__num ph-4">99명</div>
                 </div>
                 <p class="card__date">팀 인증률 <span>40%</span></p>
               </div>
@@ -170,7 +170,7 @@
               <div class="card__text">
                 <p class="card__text__title">아침마다 오 마이 GUT Morning</p>
                 <div class="card__info">
-                  <div class="card__num">99명</div>
+                  <div class="card__num ph-4">99명</div>
                 </div>
                 <p class="card__date">팀 인증률 <span>95%</span></p>
               </div>

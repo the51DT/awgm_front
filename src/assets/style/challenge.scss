@@ -1280,6 +1280,10 @@ p i {
     letter-spacing: -0.5px;
     color: #333;
 
+    &.ph-4 {
+      padding: 4px 10px;
+    }
+
     &::before {
       content: '';
       display: block;
