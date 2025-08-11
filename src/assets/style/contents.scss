@@ -424,6 +424,8 @@
             display: flex;
             justify-content: flex-start;
             align-items: center;
+            text-decoration: underline;
+            text-underline-offset: 3px;
 
             img {
               width: 16px;
@@ -509,9 +511,6 @@
       font-size: 15px;
       line-height: 24px;
 
-      &:not(:last-child) {
-        // margin-bottom: 8px;
-      }
 
       dt {
         width: 110px;
