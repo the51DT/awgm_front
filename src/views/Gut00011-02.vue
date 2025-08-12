@@ -6,9 +6,9 @@
       <div class="list-top-tag">
         <div class="tag-box-wrap">
           <div class="tag--wrap">
-            <button class="tag on">인증률</button>
+            <button class="tag ">인증률</button>
             <button class="tag">인증횟수</button>
-            <button class="tag">추가 혜택 순위</button>
+            <button class="tag on">추가 혜택 순위</button>
           </div>
 
           <!-- 추가 혜택 순위 view에서 .plus 추가 시 메달 display none -->
@@ -32,7 +32,7 @@
           </div>
         </div>
       </div>
-      <div class="tag_cont on">
+      <div class="tag_cont ">
         <div class="list-top-wrap">
           <div class="filter">
             <InputField type="radio" name="radio1" size="font-12" :radio="[
@@ -183,7 +183,7 @@
       <div class="tag_cont">
         인증횟수
       </div>
-      <div class="tag_cont">
+      <div class="tag_cont on">
         <div class="list-top-wrap">
           <div class="filter">
             <InputField type="radio" name="radio1" size="font-12" :radio="[
