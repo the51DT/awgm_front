@@ -258,11 +258,6 @@ export const menuRoutes = [
       path: "/팀 랭킹-Gut00011",
       meta: { layout: "none" },
     },
-        {
-      text: "팀 랭킹(추가 혜택 순위)-Gut00011-02",
-      path: "/팀 랭킹(추가 혜택 순위)-Gut00011-02",
-      meta: { layout: "none" },
-    },
     {
       text: "팀 관리(챌린지)-Gut00012",
       path: "/팀 관리(챌린지)-Gut00012",
