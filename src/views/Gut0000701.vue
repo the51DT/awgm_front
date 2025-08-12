@@ -18,7 +18,7 @@
     </div>
   </div> -->
   <!-- 공유하기 버튼 클릭 시 -->
-  <PopupDefault full :isTopBtn="true">
+  <PopupDefault full>
     <template v-slot:full>
       <ContentHead title="팀 정보" headType="ty03" :rightArea=true>
         <template v-slot:title>
