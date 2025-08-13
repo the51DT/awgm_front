@@ -289,6 +289,7 @@ html.pop-open {
     margin: 0 auto;
     padding: 0 20px;
     background-color: #fff;
+    overscroll-behavior: contain;
 
     .visit_counting {
       display: flex;
@@ -314,6 +315,8 @@ html.pop-open {
     &__wrap {
       background-color: transparent;
       overflow-y: auto;
+      overscroll-behavior: contain;
+      touch-action: pan-y;
       // swiper 옆 마진때문에 일단 주석 처리해둠
       z-index: 99;
 
