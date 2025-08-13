@@ -124,6 +124,22 @@
                 </ul>
               </div>
             </div>
+            <!-- 인증 후 계정연동정보 -->
+            <div class="card card--shadow00">
+              <div class="text-box-wrap">
+                <div class="text-wrap">
+                  <p class="card-title">마이웰니스 랩</p>
+                </div>
+                <ul class="sub-wrap">
+                  <li>
+                    <p class="user-name">$이름$</p>
+                  </li>
+                  <li>
+                    <CustomButton size="sm" color="light">연동완료</CustomButton>
+                  </li>
+                </ul>
+              </div>
+            </div>
             <ul class="info--list indent">
               <li class="font--green">* 연동하기 버튼을 통해 마이웰니스 랩과 계정 연동을 진행할 수
                 있습니다.</li>
@@ -180,26 +196,7 @@
               </div>
             </div>
 
-            <!-- 인증 후 계정연동정보 -->
-            <div class="card card--shadow00">
-              <div class="text-box-wrap">
-                <div class="text-wrap">
-                  <p class="card-title">마이웰니스 랩</p>
-                </div>
-                <ul class="sub-wrap">
-                  <li>
-                    <p class="user-name">$이름$</p>
-                  </li>
-                  <li>
-                    <CustomButton size="sm" color="light">연동완료</CustomButton>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <ul class="info--list indent">
-              <li class="font--green">* 연동하기 버튼을 통해 마이웰니스 랩과 계정 연동을 진행할 수
-                있습니다.</li>
-            </ul>
+            
             <div class="card card--shadow00">
               <div class="text-box-wrap">
                 <div class="text-wrap">
