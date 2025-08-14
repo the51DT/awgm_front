@@ -18,7 +18,7 @@
           <div class="tag_cont on">
             <div class="service__area">
               <div class="service__title">
-                <p class="title__num">01</p>
+                <p class="title__num orange">01</p>
                 <p class="title__text"><span class="accent">오늘의 인증하기</span> 버튼 선택하기</p>
               </div>
               <p class="service__text">것모닝 홈화면 가운데 <br class="mo-only" />오늘의 인증하기 영역을 선택 하세요.</p>
@@ -29,7 +29,7 @@
 
             <div class="service__area">
               <div class="service__title">
-                <p class="title__num">02</p>
+                <p class="title__num orange">02</p>
                 <p class="title__text">인증 사진 올리기</p>
               </div>
               <p class="service__division">Mobile Web</p>
@@ -47,7 +47,7 @@
 
             <div class="service__area">
               <div class="service__title">
-                <p class="title__num">03</p>
+                <p class="title__num orange">03</p>
                 <p class="title__text">것모닝 인증 내역 확인 및 공유하기</p>
               </div>
               <p class="service__text">
@@ -298,7 +298,10 @@
                 팀원 간 상세 정보 확인이 가능하며, <br />
                 팀장의 경우 팀원의 추가 정보 <br />
                 (이름/ABO인증여부/것모닝구매여부)를 <br />
-                확인하실 수 있습니다.
+                확인하실 수 있습니다. <br />
+                <span class="service__text_sm">
+                  *것모닝 구매여부는 챌린지 팀에만 노출됩니다.
+                </span>
               </p>
               <div class="service__img">
                 <img class="img3_3" :src="require('@/assets/images/service3_3.png')">
