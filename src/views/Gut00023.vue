@@ -1,4 +1,4 @@
-<template v-slot:full>
+<template>
   <div class="content-area">
     <!-- 
       n회차 진행, 
