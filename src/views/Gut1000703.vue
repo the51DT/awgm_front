@@ -1,5 +1,5 @@
 <template>
-  <PopupDefault>
+  <PopupDefault sm>
     <template v-slot:title>
       마이웰니스 랩 분석 결과 조회
     </template>
@@ -12,9 +12,9 @@
         <div class="form-box mb0">
           <div class="input-area">
             <InputField type="radio" name="radio1" :radio="[
-              { id: 'radio1_1', value: 'radio1_1', checked: true, label: '[측정방법]', label_second: '2025년 5월 26일 - 노화 속도 1.76배속' },
-              { id: 'radio1_2', value: 'radio1_2', checked: false, label: '[측정방법]', label_second: '2025년 4월 26일 - 노화 속도 1.84배속' },
-              { id: 'radio1_3', value: 'radio1_3', checked: false, label: '[측정방법]', label_second: '2024년 12월 15일 - 노화 속도 1.88배속' },
+              { id: 'radio1_1', value: 'radio1_1', checked: true, label: '2025년 5월 26일 - 노화 속도 1.76배속', center_layout: true, },
+              { id: 'radio1_2', value: 'radio1_2', checked: false, label: '2025년 4월 26일 - 노화 속도 1.84배속', center_layout: true, },
+              { id: 'radio1_3', value: 'radio1_3', checked: false, label: '2024년 12월 15일 - 노화 속도 1.88배속', center_layout: true, },
             ]" />
           </div>
         </div>

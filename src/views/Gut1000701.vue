@@ -1,5 +1,5 @@
 <template>
-  <PopupDefault>
+  <PopupDefault sm>
     <template v-slot:title>
       마이웰니스 랩 계정 연동
     </template>

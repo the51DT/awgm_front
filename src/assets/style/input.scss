@@ -135,6 +135,20 @@
         }
       }
 
+      &_center--wrap {
+        align-items: center;
+        &:first-child {
+          padding-top: 6px;
+        }
+        &:last-child {
+          padding-bottom: 0;
+        }
+        .inputField__input__radio--label {
+          font-size: 12px;
+          line-height: 16px;
+        }
+      }
+
     }
 
 

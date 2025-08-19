@@ -1,5 +1,5 @@
 <template>
-  <PopupDefault>
+  <PopupDefault sm>
     <template v-slot:title>
       프로필 선택 및 PIN 번호 입력
     </template>

@@ -13,7 +13,7 @@
       <p>아침마다 오 마이 GUT Morning팀에 <br />
         참여가 완료되었습니다.</p>
 
-      <div class="card card--border card--p20 challenge__card--main">
+      <div class="card card--border card--p20">
         <div class="challenge__card--main__top">
           <div class="challenge_method">
             <div class="challenge_method_btn">

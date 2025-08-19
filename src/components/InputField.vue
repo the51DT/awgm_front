@@ -27,7 +27,7 @@
       </select>
       <!-- 라디오 -->
       <div v-else-if="type === 'radio'" :key="i" v-for="(radio, i) in radio"
-        :class="radio.label_second ? 'inputField__input__radio_second--wrap' : 'inputField__input__radio--wrap'">
+        :class="[radio.label_second || radio.center_layout ? 'inputField__input__radio_second--wrap' : 'inputField__input__radio--wrap', radio.center_layout ? 'inputField__input__radio_center--wrap' : '']">
         <input :type="type" class="inputField__input inputField__input__radio" :id="radio.id" :name="name"
           :value="radio.value" :readonly="readonly" :checked="radio.checked" />
         <label :for="radio.id" class="inputField__input__radio--label" :class="radio.label_second ? 'second' : ' '">

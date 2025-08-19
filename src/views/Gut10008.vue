@@ -7,7 +7,7 @@
       <p class="text__title">GUT Morning<br />Korea Challenge</p>
       <p class="text__subtit text__subtit--mt8"><span class="text__subtit--bold">16</span>일째 참여중입니다.</p>
     </div>
-    <div class="card card--border card--shadow00 card--p20 challenge__card--main">
+    <div class="card card--border card--p20 challenge__card--main">
       <button><img :src="require(`@/assets/images/icon_arrow_r.svg`)"></button>
       <div class="challenge__card--main__top">
         <p class="font--c33 font--700 font--ls3">아침마다 오 마이 GUT Morning</p>
@@ -50,7 +50,7 @@
     </div>
 
     <!-- 노화 속도개선 추가 미션 섹션-->
-    <div class="card card--border card--shadow00 card--p20 challenge__card--main">
+    <div class="card card--border card--p20 challenge__card--main">
       <div class="challenge__card--main__top">
         <div class="challenge_method">
           <div class="challenge_method_btn">

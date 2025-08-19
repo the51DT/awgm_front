@@ -1,5 +1,5 @@
 <template>
-  <PopupDefault>
+  <PopupDefault sm>
     <template v-slot:title>
       PIN 번호 입력
     </template>
