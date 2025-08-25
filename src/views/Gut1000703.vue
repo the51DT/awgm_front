@@ -15,6 +15,10 @@
               { id: 'radio1_1', value: 'radio1_1', checked: true, label: '2025년 5월 26일 - 노화 속도 1.76배속', center_layout: true, },
               { id: 'radio1_2', value: 'radio1_2', checked: false, label: '2025년 4월 26일 - 노화 속도 1.84배속', center_layout: true, },
               { id: 'radio1_3', value: 'radio1_3', checked: false, label: '2024년 12월 15일 - 노화 속도 1.88배속', center_layout: true, },
+              { id: 'radio1_4', value: 'radio1_4', checked: false, label: '2024년 12월 16일 - 노화 속도 1.91배속', center_layout: true, },
+              { id: 'radio1_5', value: 'radio1_5', checked: false, label: '2024년 12월 17일 - 노화 속도 1.92배속', center_layout: true, },
+              { id: 'radio1_6', value: 'radio1_6', checked: false, label: '2024년 12월 18일 - 노화 속도 1.93배속', center_layout: true, },
+              { id: 'radio1_7', value: 'radio1_7', checked: false, label: '2024년 12월 19일 - 노화 속도 1.94배속', center_layout: true, },
             ]" />
           </div>
         </div>

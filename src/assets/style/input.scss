@@ -11,6 +11,10 @@
     position: relative;
     display: flex;
     align-items: start;
+    &:has(.inputField__input__radio_center--wrap) {
+      max-height: 185px;
+      overflow-y: auto;
+    }
   }
 
   &__wrap:has(.inputField__input__radio_second--wrap) {
