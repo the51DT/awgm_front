@@ -1,5 +1,5 @@
 <template>
-  <AppHeader v-if="showHeader" :mypage="route.meta.mypage" :class="headerBgClass" :isBgGreen="isBgGreen" :hasNotice="hasNotice" />
+  <AppHeader v-if="showHeader" :mypage="route.meta.mypage" :class="headerBgClass" :isBgGreen="isBgGreen" />
   <router-view />
   <AppFooter v-if="showFooter" :white="route.meta.white ? true : false" />
 </template>
@@ -30,14 +30,6 @@ const headerState = computed(() => {
 
 const headerBgClass = computed(() => headerState.value.class);
 const isBgGreen = computed(() => headerState.value.isGreen);
-
-const hasNotice = computed(() => {
-  if (route.path.includes("00007") || route.path.includes("00035")) {
-    return false
-  } else {
-    return true
-  }
-});
 
 
 

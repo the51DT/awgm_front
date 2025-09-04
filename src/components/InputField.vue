@@ -6,9 +6,10 @@
     <p v-if="title" class="inputField__title">{{ title }}</p>
     <div class="inputField__wrap">
       <!-- 셀렉트 (option 리스트에서 문구 노출 시)-->
-      <select v-if="type === 'select'"
-        :class="[warn === false ? 'inputField__input' : 'inputField__input inputField__input--warn', size === 'font-12' ? '' : 'font-12 ']"
-        :id="id" :name="name" :readonly="readonly" @change="onChange" :value="modelValue">
+      <select v-if="type === 'select'" :class="warn === false
+        ? 'inputField__input'
+        : 'inputField__input inputField__input--warn'
+        " :id="id" :name="name" :readonly="readonly" @change="onChange" :value="modelValue">
         <!-- <option disabled hidden >{{  }}</option> -->
         <option :key="i" v-for="(options, i) in options" :value="options">
           {{ options }}
@@ -25,11 +26,14 @@
         </option>
       </select>
       <!-- 라디오 -->
-      <div v-else-if="type === 'radio'" class="inputField__input__radio--wrap" :key="i" v-for="(radio, i) in radio">
+      <div v-else-if="type === 'radio'" :key="i" v-for="(radio, i) in radio"
+        :class="[radio.label_second || radio.center_layout ? 'inputField__input__radio_second--wrap' : 'inputField__input__radio--wrap', radio.center_layout ? 'inputField__input__radio_center--wrap' : '']">
         <input :type="type" class="inputField__input inputField__input__radio" :id="radio.id" :name="name"
           :value="radio.value" :readonly="readonly" :checked="radio.checked" />
-        <label :for="radio.id" class="inputField__input__radio--label">
+        <label :for="radio.id" class="inputField__input__radio--label" :class="radio.label_second ? 'second' : ' '">
           <span>{{ radio.label }}</span>
+          <br v-if="radio.label_second" />
+          <span v-if="radio.label_second">{{ radio.label_second }}</span>
         </label>
       </div>
       <!-- 체크박스 -->
@@ -57,6 +61,12 @@
       <!-- 복사 인풋 -->
       <input v-else-if="type === 'copy'" type="text" class="inputField__input inputField__copy" :id="id" :name="name"
         :value="placeholder" readonly="readonly" />
+      <!-- PIN 번호 입력 -->
+      <div v-else-if="type === 'pin'" class="inputField__pin--wrap">
+        <input v-for="(pin, index) in 4" :key="index" type="text" class="inputField__input__pin" maxlength="1"
+          inputmode="numeric" pattern="[0-9]*" @input="onInput($event, index)" @keydown="onKeydown($event, index)"
+          ref="pinInputs" />
+      </div>
       <!-- 그외 -->
       <input v-else :type="type" :class="warn === false
         ? 'inputField__input'
@@ -72,6 +82,7 @@
       </label>
       <!-- 복사하기 버튼 -->
       <button v-if="type === 'copy'" class="inputField__button--copy">복사하기</button>
+
     </div>
 
     <!-- 캡션 -->
@@ -116,8 +127,13 @@ export default {
     warn: Boolean,
     checked: Boolean,
     disabled: Boolean,
-    size: String,
     radio: {
+      type: Array,
+      default: () => {
+        return ['']
+      }
+    },
+    radio_second: {
       type: Array,
       default: () => {
         return ['']
@@ -159,6 +175,20 @@ export default {
       type: String,
       default: ''
     },
+    tel: {
+      type: String,
+      default: ''
+    },
+    pin: {
+      type: String,
+      default: ''
+    },
+  },
+  data() {
+    return {
+      pinValues: ['', '', '', ''],
+      hideLastTimeout: null,
+    }
   },
   methods: {
     // 패스워드 눈 버튼
@@ -177,7 +207,91 @@ export default {
     },
     onChange(event) {
       this.$emit('update:modelValue', event.target.value)
-    }
-  }
+    },
+    focusNextEmptyInput() {
+      const inputs = this.$refs.pinInputs
+      const pinInputs = document.querySelectorAll(".inputField__input__pin")
+      const nextIndex = this.pinValues.findIndex(v => v === '')
+      const focusIndex = nextIndex !== -1 ? nextIndex : this.pinValues.length - 1
+
+      // 포커싱될 인풋은 type을 text로
+      if (inputs[focusIndex]) {
+        pinInputs[focusIndex].type = 'text'
+        inputs[focusIndex].focus()
+      }
+    },
+    onInput(event, index) {
+      const val = event.target.value
+      const pinInputs = document.querySelectorAll(".inputField__input__pin");
+      const inputs = this.$refs.pinInputs
+
+      // 숫자만 필터링
+      if (!/^\d$/.test(val)) {
+        event.target.value = ''
+        return
+      }
+
+      this.pinValues[index] = val
+
+      // 다음 input으로 focus 이동
+      if (index < inputs.length - 1) {
+        inputs[index + 1].focus()
+      }
+
+      if (pinInputs[index - 1]) {
+        pinInputs[index - 1].type = 'password'
+      }
+
+      // 다음 빈 input으로 이동
+      this.focusNextEmptyInput()
+
+      // 마지막 인덱스일 경우: 1초 후 비밀번호 처리
+      if (index === inputs.length - 1) {
+        if (this.hideLastTimeout) {
+          clearTimeout(this.hideLastTimeout)
+        }
+        this.hideLastTimeout = setTimeout(() => {
+          if (pinInputs[index]) {
+            pinInputs[index].type = 'password'
+          }
+        }, 1000)
+      }
+    },
+    onKeydown(event, index) {
+      const key = event.key
+      const inputs = this.$refs.pinInputs
+      const pinInputs = document.querySelectorAll(".inputField__input__pin")
+
+      const allowed = [
+        ...Array.from({ length: 10 }, (_, i) => String(i)),
+        'Backspace', 'Delete', 'Tab', 'ArrowLeft', 'ArrowRight'
+      ]
+
+      if (!allowed.includes(key)) {
+        event.preventDefault()
+        return
+      }
+
+      // ✅ backspace/delete → 삭제하고 이전 칸으로 포커스
+      if ((key === 'Backspace' || key === 'Delete') && index > 0) {
+        event.preventDefault()
+
+        // 값 제거
+        this.pinValues[index] = ''
+        event.target.value = ''
+
+        // type을 다시 text로 복원
+        if (pinInputs[index]) {
+          pinInputs[index].type = 'text'
+        }
+
+        // 이전 칸으로 이동
+        if (index > 0) {
+          inputs[index - 1].focus()
+        }
+      }
+    },
+
+  },
 }
 </script>

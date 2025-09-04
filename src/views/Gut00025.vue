@@ -2,7 +2,7 @@
   <div class="faq--wrap">
     <ContentHead title="FAQ" :leftArea=true headType="ty02" />
     <div class="faq">
-      <div class="faq__tag" ref="wrapRef">
+      <div class="faq__tag">
         <swiper :modules="modules" :slides-per-view="'auto'" :freeMode="true" :space-between="4"
           :slidesOffsetBefore="20" :slidesOffsetAfter="20" @swiper="onSwiper" @slideChange="onSlideChange">
           <swiper-slide><button class="tag on">전체</button></swiper-slide>
@@ -90,37 +90,22 @@ export default {
     SwiperSlide,
     ContentHead,
   },
-  data() {
+  setup() {
+    const onSwiper = (swiper) => {
+    };
+    const onSlideChange = () => {
+    };
     return {
+      onSwiper,
+      onSlideChange,
       modules: [FreeMode],
-      swiperRef: null,
-    }
+    };
   },
   mounted() {
     this.faqAcco()
     tabFn.tabFn()
   },
   methods: {
-    onSwiper(swiper) {
-      this.swiperRef = swiper;
-      this.checkIsEnd();
-    },
-    onSlideChange() {
-      this.checkIsEnd();
-    },
-    checkIsEnd() {
-      setTimeout(() => {
-        const swiper = this.swiperRef;
-        if (!swiper) return;
-
-        const isEnd = swiper.isEnd; // ✅ swiper가 끝에 도달했는지 체크
-        const wrapEl = this.$refs.wrapRef;
-
-        if (wrapEl) {
-          wrapEl.classList.toggle('is-end', isEnd);
-        }
-      }, 100); // freeMode에서 정확한 상태 반영을 위해 약간의 delay
-    },
     faqAcco() {
       const tagList = document.querySelectorAll(".tag")
       const accoList = document.querySelectorAll(".faq__acco")

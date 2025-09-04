@@ -1,5 +1,5 @@
 <template>
-  <PopupDefault full :isTopBtn="true">
+  <PopupDefault full :isTopBtn="false">
     <template v-slot:full>
       <div class="activity-content-area">
         <ContentHead title="대표 배지 설정" :rightArea=true />
@@ -8,87 +8,33 @@
           <div class="activity__area_badge-section">
             <div class="badge-box-wrap">
               <!-- 선택 시 click 클래스 추가 -->
-              <div class="badge-box" @click="toggleClass">
-                <BadgeDefault img="badge--mission_streak_10.svg">10일 연속 인증</BadgeDefault>
-              </div>
-              <div class="badge-box" @click="toggleClass">
-                <BadgeDefault img="badge--mission_streak_20.svg">20일 연속 인증</BadgeDefault>
-              </div>
-              <div class="badge-box" @click="toggleClass">
-                <BadgeDefault img="badge--mission_streak_30.svg">30일 연속 인증</BadgeDefault>
-              </div>
-              <div class="badge-box" @click="toggleClass">
-                <BadgeDefault img="badge--mission_streak_60.svg">60일 연속 인증</BadgeDefault>
-              </div>
-              <div class="badge-box" @click="toggleClass">
-                <BadgeDefault img="badge--mission_streak_90.svg">90일 연속 인증</BadgeDefault>
-              </div>
-              <div class="badge-box" @click="toggleClass">
-                <BadgeDefault img="badge--event_figure_richDevos.svg">리치 디보스 탄생일</BadgeDefault>
-              </div>
-              <div class="badge-box" @click="toggleClass">
-                <BadgeDefault img="badge--event_figure_jayVanAndel.svg">제이 벤 엔델 탄생일</BadgeDefault>
-              </div>
-              <div class="badge-box" @click="toggleClass">
-                <BadgeDefault img="badge--amway_global.svg">한국암웨이 창립기념일 </BadgeDefault>
-              </div>
-              <div class="badge-box" @click="toggleClass">
-                <BadgeDefault img="badge--amway_global.svg">파운더스데이 </BadgeDefault>
-              </div>
-              <div class="badge-box" @click="toggleClass">
-                <BadgeDefault img="badge--happy_new_year.svg">새해 첫날</BadgeDefault>
-              </div>
-              <div class="badge-box" @click="toggleClass">
-                <BadgeDefault img="badge--happy_chuseok.svg">추석</BadgeDefault>
-              </div>
-              <div class="badge-box" @click="toggleClass">
-                <BadgeDefault img="badge--mission_start.svg">첫 인증</BadgeDefault>
-              </div>
-              <div class="badge-box" @click="toggleClass">
-                <BadgeDefault img="badge--family_day.svg">패밀리데이</BadgeDefault>
-              </div>
-              <div class="badge-box" @click="toggleClass">
-                <BadgeDefault img="badge--childrens_day.svg">어린이날</BadgeDefault>
-              </div>
-              <div class="badge-box" @click="toggleClass">
-                <BadgeDefault img="badge--octopus_mode.svg">문어발</BadgeDefault>
-              </div>
-              <div class="badge-box" @click="toggleClass">
-                <BadgeDefault img="badge--happy_birthday.svg">나의 생일</BadgeDefault>
-              </div>
-              <div class="badge-box" @click="toggleClass">
-                <BadgeDefault img="badge--returning_hero.svg">복귀왕</BadgeDefault>
-              </div>
-              <div class="badge-box" @click="toggleClass">
-                <BadgeDefault img="badge--early_bird.svg">얼리 것모너</BadgeDefault>
-              </div>
-              <div class="badge-box" @click="toggleClass">
-                <BadgeDefault img="badge--womens_day.svg">세계 여성의날</BadgeDefault>
-              </div>
-              <div class="badge-box" @click="toggleClass">
-                <BadgeDefault img="badge--earth_day.svg">지구의 날</BadgeDefault>
-              </div>
-              <div class="badge-box" @click="toggleClass">
-                <BadgeDefault img="badge--halloween_hustler.svg">고스트 것모닝</BadgeDefault>
-              </div>
-              <div class="badge-box" @click="toggleClass">
-                <BadgeDefault img="badge--valentines_day.svg">스윗 것모닝</BadgeDefault>
-              </div>
-              <div class="badge-box" @click="toggleClass">
-                <BadgeDefault img="badge--liberation_day.svg">광복절</BadgeDefault>
-              </div>
-              <div class="badge-box" @click="toggleClass">
-                <BadgeDefault img="badge--summer_gutmoring.svg">썸머 것모닝</BadgeDefault>
-              </div>
-              <div class="badge-box" @click="toggleClass">
-                <BadgeDefault img="badge--winter_gutmoring.svg">윈터 것모닝</BadgeDefault>
-              </div>
-              <div class="badge-box" @click="toggleClass">
-                <BadgeDefault img="badge--merry_christmas.svg">메리 크리스마스</BadgeDefault>
-              </div>
-              <div class="badge-box" @click="toggleClass">
-                <BadgeDefault img="badge--best_teammate.svg">베스트 팀메이트</BadgeDefault>
-              </div>
+              <div class="badge-box" @click="toggleClass"> <BadgeDefault img="badge--mission_streak_10.svg">10일 연속 인증</BadgeDefault></div>
+              <div class="badge-box" @click="toggleClass"> <BadgeDefault img="badge--mission_streak_20.svg">20일 연속 인증</BadgeDefault></div>
+              <div class="badge-box" @click="toggleClass"> <BadgeDefault img="badge--mission_streak_30.svg">30일 연속 인증</BadgeDefault></div>
+              <div class="badge-box" @click="toggleClass"> <BadgeDefault img="badge--mission_streak_60.svg">60일 연속 인증</BadgeDefault></div>
+              <div class="badge-box" @click="toggleClass"> <BadgeDefault img="badge--mission_streak_90.svg">90일 연속 인증</BadgeDefault></div>
+              <div class="badge-box" @click="toggleClass"> <BadgeDefault img="badge--event_figure_richDevos.svg">리치 디보스 탄생일</BadgeDefault></div>
+              <div class="badge-box" @click="toggleClass"> <BadgeDefault img="badge--event_figure_jayVanAndel.svg">제이 벤 엔델 탄생일</BadgeDefault></div>
+              <div class="badge-box" @click="toggleClass"> <BadgeDefault img="badge--amway_global.svg">한국암웨이 창립기념일 </BadgeDefault></div>
+              <div class="badge-box" @click="toggleClass"> <BadgeDefault img="badge--amway_global.svg">파운더스데이 </BadgeDefault></div>
+              <div class="badge-box" @click="toggleClass"> <BadgeDefault img="badge--happy_new_year.svg">새해 첫날</BadgeDefault></div>
+              <div class="badge-box" @click="toggleClass"> <BadgeDefault img="badge--happy_chuseok.svg">추석</BadgeDefault></div>
+              <div class="badge-box" @click="toggleClass"> <BadgeDefault img="badge--mission_start.svg">첫 인증</BadgeDefault></div>
+              <div class="badge-box" @click="toggleClass"> <BadgeDefault img="badge--family_day.svg">패밀리데이</BadgeDefault></div>
+              <div class="badge-box" @click="toggleClass"> <BadgeDefault img="badge--childrens_day.svg">어린이날</BadgeDefault></div>
+              <div class="badge-box" @click="toggleClass"> <BadgeDefault img="badge--octopus_mode.svg">문어발</BadgeDefault></div>
+              <div class="badge-box" @click="toggleClass"> <BadgeDefault img="badge--happy_birthday.svg">나의 생일</BadgeDefault></div>
+              <div class="badge-box" @click="toggleClass"> <BadgeDefault img="badge--returning_hero.svg">복귀왕</BadgeDefault></div>
+              <div class="badge-box" @click="toggleClass"> <BadgeDefault img="badge--early_bird.svg">얼리 것모너</BadgeDefault></div>
+              <div class="badge-box" @click="toggleClass"> <BadgeDefault img="badge--womens_day.svg">세계 여성의날</BadgeDefault></div>
+              <div class="badge-box" @click="toggleClass"> <BadgeDefault img="badge--earth_day.svg">지구의 날</BadgeDefault></div>
+              <div class="badge-box" @click="toggleClass"> <BadgeDefault img="badge--halloween_hustler.svg">고스트 것모닝</BadgeDefault></div>
+              <div class="badge-box" @click="toggleClass"> <BadgeDefault img="badge--valentines_day.svg">스윗 것모닝</BadgeDefault></div>
+              <div class="badge-box" @click="toggleClass"> <BadgeDefault img="badge--liberation_day.svg">광복절</BadgeDefault></div>
+              <div class="badge-box" @click="toggleClass"> <BadgeDefault img="badge--summer_gutmoring.svg">썸머 것모닝</BadgeDefault></div>
+              <div class="badge-box" @click="toggleClass"> <BadgeDefault img="badge--winter_gutmoring.svg">윈터 것모닝</BadgeDefault></div>
+              <div class="badge-box" @click="toggleClass"> <BadgeDefault img="badge--merry_christmas.svg">메리 크리스마스</BadgeDefault></div>
+              <div class="badge-box" @click="toggleClass"> <BadgeDefault img="badge--best_teammate.svg">베스트 팀메이트</BadgeDefault></div>
             </div>
           </div>
           <div class="btn-area ty03">
@@ -114,9 +60,9 @@
 </template>
 
 <style>
-.activity-content-area .activity__area_badge-section.not-badges {
-  height: calc(100vh - 140px);
-}
+  .activity-content-area .activity__area_badge-section.not-badges{
+    height: calc(100vh - 140px);
+  }
 </style>
 
 <script>
@@ -137,7 +83,7 @@ export default {
       type: Boolean,
       default: true,
     }
-  },
+  },   
   components: {
     ContentHead,
     PopupDefault,
@@ -159,11 +105,10 @@ export default {
 </script>
 
 <style scoped>
-.badge-box-wrap {
-  gap: 8px;
-}
-
-.activity__area_badge-section {
-  margin-bottom: 8px;
-}
+  .badge-box-wrap{
+    gap: 8px;
+  }
+  .activity__area_badge-section{
+    margin-bottom: 8px;
+  }
 </style>
