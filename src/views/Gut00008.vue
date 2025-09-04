@@ -63,13 +63,16 @@
                     <span> 것모닝 구매 완료 </span>
                   </div>
                 </div>
-                <p class="traffic_reward_btn__pop_text"> 챌린지 당월 포함 최근 3개월 이내 <br /> 것모닝(푸로틴&유산균)제품 구매 여부</p>
+                <p class="traffic_reward_btn__pop_text"> 챌린지 시작일 기준 최근 2개월 이내 <br />
+                  것모닝(푸로틴&유산균) 제품 구매 여부 </p>
               </div>
             </div>
           </div>
 
           <p class="font--c66 font--ls1 challenge__card--traffic">
-            챌린지 미션 성공 시, ABO/Member 회원 인증을 하시면 챌린지 당월 포함 최근 3개월 내 것모닝 제품 구매 이력에 따라 보상이 지급됩니다.
+            챌린지 미션 성공 시, ABO/Member 회원인증,
+            최근 2개월 내 것모닝 제품 구매 이력 등에 따라
+            보상이 차등 지급됩니다.
           </p>
 
 
@@ -138,7 +141,8 @@ export default {
 </script>
 
 <style scoped>
-.font--c66.font--ls1.mt-8 {
+.font--c66.font--ls1.mt-8{
   margin-top: 8px;
 }
+
 </style>

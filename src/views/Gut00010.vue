@@ -64,16 +64,10 @@
           <p class="card-rank-title">팀 랭킹</p>
           <div class="card__display-rank">
             <p><span> 5 </span>위</p>
-            <!-- 챌린지 진행 중 -->
             <button type="button">
               팀 랭킹 보기
               <img :src="require(`@/assets/images/icon_arrow_r_white.svg`)" />
             </button>
-            <!-- 챌린지 진행 대기 : class="gray" 추가  -->
-            <!-- <button type="button" class="gray">
-              팀 랭킹 보기
-              <img :src="require(`@/assets/images/icon_arrow_r_white.svg`)" />
-            </button> -->
           </div>
         </div>
         <div class="card card--p20 card--shadow00 team--sub__team-rate-ranking">
@@ -170,7 +164,7 @@
           <dl>
             <dt>전체 기간</dt>
             <dd>
-              <p>2025.01.01 ~ 2025.02.28 / 70일</p>
+              <p>2025.01.01 ~ 2025.02.28</p>
               <div class="font-13">
                 <span> 1회차 기간</span>
                 <p>2025.01.01 ~ 2025.01.31</p>

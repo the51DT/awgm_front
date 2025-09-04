@@ -8,21 +8,16 @@
         <li class="gray_text"> 이전 팀 목록 </li>
       </ul>
       <div class="filter">
-        <InputField type="select-placeholder" placeholder="선택" :options="teamOptions" @change="handleTeamChange" />
+        <InputField type="select-placeholder" placeholder="선택"  
+        :options="teamOptions"
+        @change="handleTeamChange" />
       </div>
       <p class="font--c66">팀원 모두에게 일괄로 초대 메시지가 전송됩니다.<br />
-        팀원은 초대받은 팀 목록에서 <span style="font-weight:800;"> 참여하기</span>를 <br />
-        선택해야 팀에 참여됩니다.
-        <br />
-
-      </p>
-      <p class="font--c66">
-        * 카카오톡으로 초대하기와 초대링크 복사하기로 <br />
-        초대한 경우 초대받은 팀 목록에 표시되지 않습니다.
-      </p>
-      <CustomButton size="md" :color="selectedTeam ? 'black' : 'gray-b9'">
-        초대하기
-      </CustomButton>
+        팀원은 초대받은 팀 목록에서 <span style="font-weight:800;"> 참여하기</span>를 선택해야 <br />
+        팀에 참여됩니다. </p>
+        <CustomButton size="md" :color="selectedTeam ? 'black' : 'gray-b9'">
+          초대하기
+        </CustomButton>
     </template>
   </PopupDefault>
   <div class="popup--toast">
@@ -67,16 +62,11 @@ export default {
 </script>
 
 <style scoped>
-li.gray_text {
-  margin-bottom: 4px;
-}
+  li.gray_text{
+    margin-bottom: 4px;
+  }
 
-p.font--c66:nth-child(3) {
-  margin-top: 12px;
-}
-
-p.font--c66:nth-child(4) {
-  margin: 2px 0 12px 0;
-  ;
-}
+  p.font--c66{
+    margin: 12px 0;
+  }
 </style>
