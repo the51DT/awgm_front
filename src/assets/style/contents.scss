@@ -424,6 +424,8 @@
             display: flex;
             justify-content: flex-start;
             align-items: center;
+            text-decoration: underline;
+            text-underline-offset: 3px;
 
             img {
               width: 16px;
@@ -451,18 +453,38 @@
     }
 
     &.ty02.light-view {
-      flex-direction: row;
-      gap: 8px;
+      display: grid;
+      grid-template-rows: auto 1fr;
 
       &>div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-right: 30px;
+      }
+
+      dd:has(> img) {
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        align-items: flex-start;
+        padding-top: 2px;
+      }
+
+      &>div {
+        dl:nth-child(1) {
+          dt {
+            width: 65px;
+          }
+
+          dd {
+            max-width: 55px;
+
+          }
+        }
+
       }
 
       &>div:nth-child(1) {
         dt {
-          width: 60px;
+          width: 76px;
         }
 
         dd {
@@ -471,14 +493,15 @@
       }
 
       &>div:nth-child(2) {
-        margin-right: 50px;
-
         dt {
-          width: 82px;
+          width: 76px;
         }
 
         dd {
-          width: 80px;
+          p {
+            display: inline-block;
+          }
+
         }
       }
     }
@@ -488,9 +511,6 @@
       font-size: 15px;
       line-height: 24px;
 
-      &:not(:last-child) {
-        // margin-bottom: 8px;
-      }
 
       dt {
         width: 110px;
@@ -712,6 +732,10 @@
             background-image: url(../images/icon/ico_file_modify.png);
             background-size: contain;
           }
+
+          &.not-upload::after {
+            display: none;
+          }
         }
 
         .img-wrap {
@@ -789,6 +813,7 @@
           padding: 0;
           width: 16px;
           height: 16px;
+          cursor: pointer;
 
           &:after {
             content: '';
@@ -1282,14 +1307,14 @@
       &:after {
         content: '';
         display: inline-block;
-        width: 12px;
-        height: 12px;
+        width: 24px;
+        height: 24px;
         background-image: url(../images/icon_arrow_r_white.svg);
         background-size: contain;
         background-repeat: no-repeat;
         position: absolute;
         top: 50%;
-        right: 0;
+        right: -5px;
         transform: translateY(-50%);
       }
     }

@@ -5,19 +5,39 @@
       <router-link class="footer__top--link" to="#">개인정보처리방침</router-link>
     </div>
     <div class="footer__bottom">
-      <div class="footer__bottom--call">
-        <div>
-          <img :src="white === false ? require(`@/assets/images/footer_call.svg`) : require(`@/assets/images/footer_call_white.svg`)">
-          <span>고객센터</span>
+      <div>
+        <div class="footer__bottom--call">
+          <div>
+            <img
+              :src="white === false ? require(`@/assets/images/footer_call.svg`) : require(`@/assets/images/footer_call_white.svg`)">
+            <span>고객센터</span>
+          </div>
+          <div>
+            1588-0080
+          </div>
         </div>
-        <div>
-          1588-0080
+        <div class="footer__bottom--email">
+          <div>
+            <img
+              :src="white === false ? require(`@/assets/images/footer_email.svg`) : require(`@/assets/images/footer_email_white.svg`)">
+            <span>이메일문의</span>
+          </div>
+          <div>
+            cskorea@amway.com
+          </div>
         </div>
       </div>
+
+
       <div class="footer__bottom--address">
         한국암웨이(주) 서울특별시 강남구 영동대로 517 27층<br>
         (삼성동, 아셈타워) (대표이사 : 신은자, 존패트릭파커)<br>
-        사업자 등록번호: 120-81-03391 
+        사업자 등록번호: 120-81-03391
+      </div>
+      <div class="footer__bottom--hosting">
+        호스팅제공자 : 한국암웨이㈜
+        <a href="http://www.ftc.go.kr/bizCommPop.do?wrkr_no=1208103391" target="_blank"
+          :class="white === false ? 'white' : ' '"> 사업자정보공개페이지 </a>
       </div>
       <div class="footer__bottom--copy">
         ALL CONTENTS Copyright ⓒ 2024<br>
