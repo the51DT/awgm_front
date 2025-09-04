@@ -13,7 +13,7 @@
 
       <!-- 챌린지 종료-->
       <p class="home__speech__title">챌린지 종료</p>
-      <p class="home__speech__text">종료된 챌린지 정보는 '챌린지 > 챌린지 이력보기'에서 확인 가능합니다.</p>
+      <p class="home__speech__text">종료된 챌린지 정보는 '나의 팀 > 챌린지 팀 정보' 또는 '챌린지 > 챌린지 이력보기'에서 확인 가능합니다.</p>
     </div>
 
     <div class="home__date">
@@ -30,19 +30,52 @@
     </div>
 
     <div class="swiper__area">
-      <swiper :modules="modules" :slides-per-view="'auto'" :space-between="24" :slidesOffsetBefore="20"
-        :slidesOffsetAfter="20" :pagination="{ clickable: true }" @swiper="onSwiper" @slideChange="onSlideChange"
-        dir="rtl">
+      <swiper
+        :modules="modules"
+        :slides-per-view="'auto'"
+        :space-between="24"
+        :slidesOffsetBefore="20"
+        :slidesOffsetAfter="20"
+        :pagination="{ clickable: true }"
+        @swiper="onSwiper"
+        @slideChange="onSlideChange"
+        dir="rtl"
+      >
         <swiper-slide data-day="sat">
           <div class="slider-wrap">
             <div class="profile-area">
-              <div class="upload-wrap card--shadowc2 card--img" :class="imageUrl ? 'upload-wrap--noborder' : ''">
-                <img v-if="imageUrl" class="card--img__comp" :src="require(`@/assets/images/challenge_comp.png`)" />
-                <input type="file" id="uploadIcon" class="upload-icon" @change="onFileChange" hidden />
-                <label for="uploadIcon" class="upload-label" :class="imageUrl ? 'card--img__uploaded' : ''">
-                  <img v-if="imageUrl" class="uploaded-img" :src="imageUrl" alt="업로드된 이미지" />
+              <div
+                class="upload-wrap card--shadowc2 card--img"
+                :class="imageUrl ? 'upload-wrap--noborder' : ''"
+              >
+                <img
+                  v-if="imageUrl"
+                  class="card--img__comp"
+                  :src="require(`@/assets/images/challenge_comp.png`)"
+                />
+                <input
+                  type="file"
+                  id="uploadIcon"
+                  class="upload-icon"
+                  @change="onFileChange"
+                  hidden
+                />
+                <label
+                  for="uploadIcon"
+                  class="upload-label"
+                  :class="imageUrl ? 'card--img__uploaded' : ''"
+                >
+                  <img
+                    v-if="imageUrl"
+                    class="uploaded-img"
+                    :src="imageUrl"
+                    alt="업로드된 이미지"
+                  />
                   <div v-else class="upload_ani">
-                    <img @click="openCamera" :src="require(`@/assets/images/upload_ani.gif`)" />
+                    <img
+                      @click="openCamera"
+                      :src="require(`@/assets/images/upload_ani.gif`)"
+                    />
                   </div>
                 </label>
                 <p v-if="!imageUrl" class="date">2025년 5월 16일 (토)</p>
@@ -62,7 +95,10 @@
         <swiper-slide data-day="fri">
           <div class="slider-wrap">
             <div class="card--img card--shadowc2">
-              <img class="card--img__comp" :src="require(`@/assets/images/challenge_comp.png`)" />
+              <img
+                class="card--img__comp"
+                :src="require(`@/assets/images/challenge_comp.png`)"
+              />
               <div class="card--img__uploaded">
                 <img :src="require(`@/assets/images/home_nodata.png`)" />
               </div>
@@ -81,7 +117,10 @@
         <swiper-slide data-day="thu">
           <div class="slider-wrap">
             <div class="card--img card--shadowc2">
-              <img class="card--img__comp ani" :src="require(`@/assets/images/challenge_comp.png`)" />
+              <img
+                class="card--img__comp ani"
+                :src="require(`@/assets/images/challenge_comp.png`)"
+              />
               <div class="card--img__uploaded">
                 <img :src="require(`@/assets/images/card_profile.png`)" />
               </div>
@@ -100,7 +139,10 @@
         <swiper-slide data-day="wed">
           <div class="slider-wrap">
             <div class="card--img card--shadowc2">
-              <img class="card--img__comp" :src="require(`@/assets/images/challenge_comp.png`)" />
+              <img
+                class="card--img__comp"
+                :src="require(`@/assets/images/challenge_comp.png`)"
+              />
               <div class="card--img__uploaded">
                 <img :src="require(`@/assets/images/challenge_card_bg.png`)" />
               </div>
@@ -119,7 +161,10 @@
         <swiper-slide data-day="mon">
           <div class="slider-wrap">
             <div class="card--img card--shadowc2">
-              <img class="card--img__comp" :src="require(`@/assets/images/challenge_comp.png`)" />
+              <img
+                class="card--img__comp"
+                :src="require(`@/assets/images/challenge_comp.png`)"
+              />
               <div class="card--img__uploaded">
                 <img :src="require(`@/assets/images/challenge_card_bg.png`)" />
               </div>
@@ -138,7 +183,10 @@
         <swiper-slide data-day="sun">
           <div class="slider-wrap">
             <div class="card--img card--shadowc2">
-              <img class="card--img__comp" :src="require(`@/assets/images/challenge_comp.png`)" />
+              <img
+                class="card--img__comp"
+                :src="require(`@/assets/images/challenge_comp.png`)"
+              />
               <div class="card--img__uploaded">
                 <img :src="require(`@/assets/images/challenge_card_bg.png`)" />
               </div>
@@ -160,7 +208,9 @@
   <div class="home--bot-section bg-case">
     <div class="home-card-box home-sticky sticky">
       <!-- 1025 수정 : 클래스 구조 변경 - sticky 클래스있는 경우에 따라 펼침/닫힘 적용 -->
-      <div class="card card--border card--shadow00 card--p20 challenge__card--main">
+      <div
+        class="card card--border card--shadow00 card--p20 challenge__card--main"
+      >
         <div class="challenge__card--main__per">
           <div>
             <p class="font--700 font--ls1">팀 인증률</p>
@@ -187,7 +237,10 @@
         <p class="card-title">챌린지</p>
       </a>
       <div class="card--icon">
-        <img :src="require(`@/assets/images/content/conts-ico_challenge.png`)" alt="챌린지 아이콘" />
+        <img
+          :src="require(`@/assets/images/content/conts-ico_challenge.png`)"
+          alt="챌린지 아이콘"
+        />
       </div>
       <div class="card card--border card--shadow00 card--p20 challenge__card--main">
         <!-- 이 섹션 삭제 시 script와 충돌 -->
@@ -257,7 +310,10 @@
         <a href="#" class="card-title">나의 팀</a>
       </div>
       <div class="card--icon">
-        <img :src="require(`@/assets/images/content/conts-ico_team.png`)" alt="나의팀 아이콘" />
+        <img
+          :src="require(`@/assets/images/content/conts-ico_team.png`)"
+          alt="나의팀 아이콘"
+        />
       </div>
       <div class="card card--border card--shadow00 card--p20 challenge__card--main">
         <div class="challenge__card--main__top">
@@ -326,7 +382,9 @@
           <div>
             <p class="font--700 font--ls1">이번 달 팀 인증률</p>
             <p class="font--700 font--c11 font--ls1">
-              <span class="font--green font--800 font--ls1 achieve-goal">20</span>%
+              <span class="font--green font--800 font--ls1 achieve-goal"
+                >20</span
+              >%
             </p>
           </div>
           <div class="card--per">
@@ -340,7 +398,7 @@
         </div>
       </div>
     </div>
-
+    
     <!-- 나의팀 : 상시일 떄 것모닝 welcome 페이지 링크 연결 판넬 -->
     <a href="https://gutmorning.co.kr/welcome" class="btn__link-wrap" target="_blank">
       <div class="card card--p20 btn__link">
@@ -348,7 +406,7 @@
           <p> GUT Moring Korea </p>
           <p> 현황 보러가기 <img src="@/assets/images/icon_arrow_r_white.svg" /></p>
         </div>
-        <img src="@/assets/images/gut_welcome-logo.svg" alt="것모닝 코리아 로고" />
+        <img src="@/assets/images/gut_welcome-logo.svg" alt="것모닝 코리아 로고"/>
       </div>
     </a>
 
@@ -520,7 +578,7 @@ export default {
   beforeUnmount() {
     document.removeEventListener("scroll", this.scrollEvents, true);
   },
-  methods: {
+  methods: { 
     openCamera() {
       const input = document.getElementById("uploadIcon");
       input.capture = "environment"; // 후면 카메라 설정
@@ -560,7 +618,7 @@ export default {
         }
       }
 
-    },
+    }, 
     dayBtn() {
       const dayBtn = document.querySelectorAll(".home__date .date");
       const swiperList = Array.from(

@@ -5,19 +5,17 @@
     <div class="team-box-wrap">
       <div class="tag_cont on">
         <div class="list-top-wrap">
-          <div class="filter half">
-            <InputField type="select" :options="['2024.09', '2024.08', '2024.07']" active v-model="selectedDate" />
+          <div class="filter">
+            <InputField type="select" :options="['2024.09', '2024.08', '2024.07']" active v-model="selectedDate"/>
             <InputField type="select" v-model="selectedMember" active
-              :options="['전체', 'ABO 미인증 팀원', '오늘 인증 완료', '오늘 미인증 팀원', '80% 이상 달성', '80% 미만 달성']" />
+              :options="['전체', 'ABO 미인증 팀원', '오늘 인증 완료','오늘 미인증 팀원', '80% 이상 달성', '80% 미만 달성']" />
           </div>
         </div>
         <div class="list-btn-wrap">
           <span> 높은 랭킹순</span>
           <div class="list-btn-wrap-sort-list">
-            <div>
-              <BookMarkBtn />
-            </div>
-            <div class="list-view">
+            <div> <BookMarkBtn /> </div>
+            <div class="list-view"> 
               <div>
                 <button class="list-view__btn" @click="toggleListView" :class="{ on: isActive == true }"> </button>
               </div>
@@ -34,8 +32,14 @@
                 <div>
                   <dl>
                     <dt>이름</dt>
-                    <dd>김웨이김웨이</dd>
+                    <dd>김웨이</dd>
                   </dl>
+                  <dl>
+                    <dt> 오늘 인증</dt>
+                     <dd> <img :src="require(`@/assets/images/today_prove_O.svg`)" /></dd>
+                  </dl>
+                </div>
+                <div>
                   <dl>
                     <dt>전체인증횟수</dt>
                     <dd>
@@ -44,13 +48,7 @@
                       </div>
                     </dd>
                   </dl>
-                </div>
-                <div>
-                  <!-- <dl>
-                    <dt> 오늘 인증</dt>
-                    <dd> <img :src="require(`@/assets/images/today_prove_O.svg`)" /></dd>
-                  </dl> -->
-                  <dl>
+                  <dl class="align-ctr">
                     <dt>이달의인증</dt>
                     <dd>
                       <p> 9월 22회 <span class="green"> 60%</span> </p>
@@ -72,6 +70,12 @@
                     <dd>김웨이</dd>
                   </dl>
                   <dl>
+                    <dt> 오늘 인증</dt>
+                     <dd> <img :src="require(`@/assets/images/today_prove_O.svg`)" /></dd>
+                  </dl>
+                </div>
+                <div>
+                  <dl>
                     <dt>전체인증횟수</dt>
                     <dd>
                       <div class="group-info">
@@ -79,14 +83,7 @@
                       </div>
                     </dd>
                   </dl>
-
-                </div>
-                <div>
-                  <dl>
-                    <dt> 오늘 인증</dt>
-                    <dd> <img :src="require(`@/assets/images/today_prove_O.svg`)" /></dd>
-                  </dl>
-                  <dl>
+                  <dl class="align-ctr">
                     <dt>이달의인증</dt>
                     <dd>
                       <p> 9월 22회 <span class="green"> 60%</span> </p>
@@ -108,6 +105,12 @@
                     <dd>김웨이</dd>
                   </dl>
                   <dl>
+                    <dt> 오늘 인증</dt>
+                     <dd> <img :src="require(`@/assets/images/today_prove_O.svg`)" /></dd>
+                  </dl>
+                </div>
+                <div>
+                  <dl>
                     <dt>전체인증횟수</dt>
                     <dd>
                       <div class="group-info">
@@ -115,13 +118,7 @@
                       </div>
                     </dd>
                   </dl>
-                </div>
-                <div>
-                  <dl>
-                    <dt> 오늘 인증</dt>
-                    <dd> <img :src="require(`@/assets/images/today_prove_O.svg`)" /></dd>
-                  </dl>
-                  <dl>
+                  <dl class="align-ctr">
                     <dt>이달의인증</dt>
                     <dd>
                       <p> 9월 22회 <span class="green"> 60%</span> </p>
@@ -143,6 +140,12 @@
                     <dd>김사무엘 주니어</dd>
                   </dl>
                   <dl>
+                    <dt> 오늘 인증</dt>
+                    <dd> <img :src="require(`@/assets/images/today_prove_X.svg`)" /></dd>
+                  </dl>
+                </div>
+                <div>
+                  <dl>
                     <dt>전체인증횟수</dt>
                     <dd>
                       <div class="group-info">
@@ -150,14 +153,7 @@
                       </div>
                     </dd>
                   </dl>
-                </div>
-                <div>
-                  <dl>
-                    <dt> 오늘 인증</dt>
-                    <dd> <img :src="require(`@/assets/images/today_prove_X.svg`)" /></dd>
-                  </dl>
-
-                  <dl>
+                  <dl class="align-ctr">
                     <dt>이달의인증</dt>
                     <dd>
                       <p> 9월 22회 <span class="green"> 60%</span> </p>
@@ -180,6 +176,12 @@
                     <dd>김사무엘 주니어</dd>
                   </dl>
                   <dl>
+                    <dt> 오늘 인증</dt>
+                     <dd> <img :src="require(`@/assets/images/today_prove_O.svg`)" /></dd>
+                  </dl>
+                </div>
+                <div>
+                  <dl>
                     <dt>전체인증횟수</dt>
                     <dd>
                       <div class="group-info">
@@ -187,14 +189,7 @@
                       </div>
                     </dd>
                   </dl>
-                </div>
-                <div>
-                  <dl>
-                    <dt> 오늘 인증</dt>
-                    <dd> <img :src="require(`@/assets/images/today_prove_O.svg`)" /></dd>
-                  </dl>
-
-                  <dl>
+                  <dl class="align-ctr">
                     <dt>이달의인증</dt>
                     <dd>
                       <p> 9월 22회 <span class="green"> 60%</span> </p>
@@ -204,6 +199,9 @@
               </div>
             </div>
           </div>
+
+
+
         </div>
       </div>
     </div>
@@ -224,9 +222,9 @@ export default {
     return {
       leftArea: "",
       rightArea: "",
-      isActive: true,
-      selectedDate: '2024.09',
-      selectedMember: '전체'
+      isActive : true,
+        selectedDate: '2024.09',
+      selectedMember :'전체'
     };
   },
   components: {
@@ -238,7 +236,7 @@ export default {
   mounted() {
     tabFn.tabFn()
   },
-  methods: {
+  methods: {  
     toggleListView() {
       this.isActive = !this.isActive
     }

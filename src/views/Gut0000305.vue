@@ -7,9 +7,9 @@
       <div class="box-wrap">
         <div class="box-gray">
           <div class="terms-conts">
-            미성년자녀의 것모닝 (Gut Morning) 서비스 내 챌린지/상시 팀 참가에 동의합니다. <br />
-            가입을 신청한 팀장은 귀하의 자녀의 닉네임과 인증 횟수를 확인할 수 있습니다. <br />
-            귀하의 자녀의 활동 정보를 대시 보드에서 볼 수 있습니다.
+            미성년자녀의 것모닝 (Gut Morning) 서비스 내 팀 챌린지 참가에 동의합니다.<br/>
+            가입을 신청한 팀장은 귀하의 자녀의 닉네임과 인증 횟수를 확인할 수 있습니다.<br/>
+            귀하의 자녀의 활동 정보를 대시 보드에서 볼 수 있습니다.<br/>
           </div>
         </div>
       </div>
@@ -23,7 +23,7 @@
         <CustomButton size="sm">동의</CustomButton>
       </div>
     </template>
-  </PopupDefault>
+  </PopupDefault> 
 </template>
 
 <script>
@@ -33,7 +33,7 @@ import layerClose from "@/plugins/common.js";
 
 export default {
   name: "AppSub",
-  components: {
+  components: {    
     PopupDefault,
     CustomButton,
   },
