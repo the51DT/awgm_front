@@ -13,8 +13,7 @@
         <img :src="require(`@/assets/images/header_faq.svg`)">
       </template>
       <object v-else class="header__right--notice">
-        <img v-if="hasNotice" :src="noticeSrc" />
-        <img v-else :src="noticeSrcNo" />
+        <img :src="noticeSrc" />
       </object>
     </div>
   </header>
@@ -37,10 +36,6 @@ export default {
     isBgGreen: {
       type: Boolean,
       default: false
-    },
-    hasNotice: {
-      type: Boolean,
-      default: false
     }
   },
   computed: {
@@ -58,11 +53,6 @@ export default {
       return this.isBgGreen
         ? require('@/assets/images/header_notice_w.svg')
         : require('@/assets/images/header_notice.svg')
-    },
-    noticeSrcNo() {
-      return this.isBgGreen
-        ? require('@/assets/images/header_notice_no_w.svg')
-        : require('@/assets/images/header_notice_no.svg')
     }
   }
 };

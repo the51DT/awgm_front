@@ -2,17 +2,17 @@
   <div class="activity bg-case bg-green">
     <div class="activity__area">
       <div class="activity__area-certified">
-        <div>
-          <p> 최초 인증일 </p>
-          <p> 2024년 12월 31일 </p>
-        </div>
-        <div>
-          <p> 총 누적 인증 횟수 </p>
-          <p> 1,230회 </p>
-        </div>
+        <dl>
+          <dt> · 최초 인증일 </dt>
+          <dd> 2024년 7월 5일</dd>
+        </dl>
+        <dl>
+          <dt> · 총 누적 인증 횟수 </dt>
+          <dd> 1,230회</dd>
+        </dl>
       </div>
     </div>
-    <div class="activity__area-terms-tab home">
+    <div class="activity__area-terms-tab">
       <div class="activity__area-profile">
         <h2> 현재 나의 활동</h2>
         <p class="activity__area-profile-date"> 활동 기준일 : 2025년 9월 ~ 2026년 8월</p>
@@ -27,7 +27,7 @@
           <div class="badges_reward">
             <div class="badges_reward_btn">
               <div class="badges_reward_btn__pop">
-                <span class="badges_reward_btn-txt"> 총 인증 횟수에 따라 <br />것모닝핀이 올라갑니다. </span>
+                <span class="badges_reward_btn-txt"> 총 인증 횟수에 따라 핀레벨이 올라갑니다. </span>
                 <button class="badges_reward_btn__pop__close"></button>
                 <div class="activity__area_badge-section">
                   <div class="badge-box-wrap">
@@ -150,7 +150,7 @@
           </div>
           <div class="record-box">
             <div>
-              <h7>챌린지(회차)</h7>
+              <h7>챌린지</h7>
             </div>
             <div>
               <p> 참여 수 </p>
@@ -221,7 +221,7 @@
         <div class="para-title-2rd">
           <h6> 연속인증 </h6>
         </div>
-        <div class="badge-box-wrap home">
+        <div class="badge-box-wrap">
           <div class="badge-box">
             <BadgeDefault img="badge--mission_streak_10.svg">10일 연속 인증</BadgeDefault>
           </div>
@@ -262,7 +262,7 @@
         <div class="para-title-2rd">
           <h6> 챌린지 참여 </h6>
         </div>
-        <div class="badge-box-wrap home">
+        <div class="badge-box-wrap">
           <div class="badge-box">
             <BadgeDefault img="badge--challenge_complete_1.svg"> 것모닝코리아 챌린지 1회 성공</BadgeDefault>
           </div>
@@ -285,7 +285,7 @@
         <div class="para-title-2rd">
           <h6> 팀장 </h6>
         </div>
-        <div class="badge-box-wrap home">
+        <div class="badge-box-wrap">
           <div class="badge-box">
             <BadgeDefault img="badge--self_starter.svg">솔플 축하</BadgeDefault>
           </div>
@@ -314,7 +314,7 @@
         <div class="para-title-2rd">
           <h6> 이벤트 배지 </h6>
         </div>
-        <div class="badge-box-wrap home">
+        <div class="badge-box-wrap">
           <div class="badge-box">
             <BadgeDefault img="badge--event_figure_richDevos.svg">리치 디보스 탄생일</BadgeDefault>
           </div>

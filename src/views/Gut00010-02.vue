@@ -1,8 +1,9 @@
 <template>
   <!-- 상시 팀 관리 -->
   <div class="team--sub">
-    <ContentHead title="팀 정보" headType="ty02" :leftArea="true" :rightArea="true" :rightIcon="true"
-      :bgClass="headerBgClass" :customLeftIcon="customLeftIcon" />
+    <ContentHead title="팀 정보" headType="ty02" :leftArea="true" :rightArea="true" :rightIcon="true" :bgClass="headerBgClass"
+  :customLeftIcon="customLeftIcon"
+    />
     <div class="team-box-wrap">
       <div class="profile-area">
         <div class="img-wrap on-flag">
@@ -11,7 +12,7 @@
       </div>
     </div>
     <div class="terms-tab">
-      <div class="terms-tab__title" ref="targetSection">
+      <div class="terms-tab__title"  ref="targetSection">
         <p> <i> 팀명 </i> 아침마다 오 마이 GUT Morning</p>
       </div>
       <div class="terms-tab__cont">
@@ -19,9 +20,7 @@
           <div class="card--per">
             <div class="card--per__gage--wrap">
               <!-- full-width일때 텍스트 나타나도록 -->
-              <div class="card--per__gage" data-width="100%">
-                <p class="full-width"> 100% 달성 완료 !</p>
-              </div>
+              <div class="card--per__gage" data-width="100%"> <p class="full-width"> 100% 달성 완료 !</p> </div>
               <!-- 100% 아닐 시 텍스트 -->
               <!-- <div class="card--per__gage" data-width="60%"> <p> 100% 달성 완료 !</p> </div> -->
             </div>
@@ -44,7 +43,7 @@
               <li> <span> 2025</span>년 <span> 6</span>월 <span class="percent"> <i> 25</i> %</span> </li>
               <li> <span> 2025</span>년 <span> 6</span>월 <span class="percent full"> <i> 100</i> %</span> </li>
               <li> <span> 2025</span>년 <span> 6</span>월 <span class="percent"> <i> 25</i> %</span> </li>
-            </ul>
+            </ul>  
           </Panel>
         </div>
 
@@ -52,16 +51,10 @@
           <p class="card-rank-title">상시 랭킹</p>
           <div class="card__display-rank">
             <p><span> 5 </span>위</p>
-            <!-- 챌린지 진행 중-->
             <button type="button">
               팀 랭킹 보기
               <img :src="require(`@/assets/images/icon_arrow_r_white.svg`)" />
             </button>
-            <!-- 챌린지 진행 대기 : class="gray" 추가 -->
-            <!-- <button type="button" class="gray">
-              팀 랭킹 보기
-              <img :src="require(`@/assets/images/icon_arrow_r_white.svg`)" />
-            </button> -->
           </div>
         </div>
 
@@ -73,7 +66,7 @@
               <p><span> 13 </span>위</p>
               <button type="button">
                 팀원 현황 보기
-                <img :src="require(`@/assets/images/icon_arrow_r_white.svg`)" />
+                <img :src="require(`@/assets/images/icon_arrow_r_white.svg`)"/>
               </button>
             </div>
           </div>
@@ -153,9 +146,7 @@
         <div class="card card--p20 card--shadow00 team--sub__card-team-info">
           <dl>
             <dt>팀 구분</dt>
-            <dd>
-              <p class="card__title card__title--always"> 상시 </p>
-            </dd>
+            <dd><p class="card__title card__title--always"> 상시 </p></dd>
           </dl>
           <dl>
             <dt>기간</dt>
@@ -171,10 +162,6 @@
           <dl>
             <dt>인증 시작일</dt>
             <dd>2025.09.12</dd>
-          </dl>
-          <dl>
-            <dt>목표 인증률</dt>
-            <dd class="orange"> 80% </dd>
           </dl>
           <dl>
             <dt>팀장</dt>
