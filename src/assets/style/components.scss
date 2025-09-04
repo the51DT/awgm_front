@@ -34,7 +34,7 @@
     width: 100%;
     max-width: 500px;
     padding: 0 20px;
-    margin: 0 -20px
+    margin: 0 -20px;
   }
 }
 
@@ -64,6 +64,10 @@
     background: #fff;
     min-height: 72px;
     transition: none;
+
+    .area-right {
+      padding-right: 20px;
+    }
   }
 
   &.bgGray {
@@ -72,7 +76,7 @@
   }
 
   &.bgGreen {
-    background: #169E4A;
+    background: #169e4a;
     color: #fff;
   }
 
@@ -82,7 +86,7 @@
   }
 
   &.ty02.scrolled {
-    box-shadow: 0px 8px 12px 0px #C2C2C240;
+    box-shadow: 0px 8px 12px 0px #c2c2c240;
     transition: color 0.3s ease, background-color 0.3s ease;
   }
 
@@ -112,7 +116,7 @@
     &-right {
       display: block;
       position: absolute;
-      right: 20px;
+      right: 0px;
       height: 32px;
 
       &__icon {
@@ -121,7 +125,6 @@
         align-items: center;
         justify-content: flex-end;
         gap: 16px;
-        // padding-right: 20px;
 
         button {
           display: flex;
@@ -131,7 +134,6 @@
 
       &__sort {
         position: relative;
-        padding-right: 20px;
 
         .sort {
           &__btn-wrap {
@@ -147,12 +149,13 @@
             position: absolute;
             width: 150px;
             top: 40px;
-            right: 20px;
+            right: 0px;
 
             ul {
               border: 1px solid #e5e5e5;
               background: #fff;
               box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.06);
+              border-radius: 8px;
 
               li {
                 text-align: right;
@@ -202,7 +205,7 @@
             background-size: contain;
           }
 
-          &>span {
+          & > span {
             font-size: 13px;
             font-weight: 800;
             line-height: 24px;
@@ -342,7 +345,7 @@
           width: 1px;
           display: none;
 
-          &+label {
+          & + label {
             cursor: pointer;
             font-size: 13px;
             font-weight: 500;
@@ -366,7 +369,7 @@
             }
           }
 
-          &:checked+label {
+          &:checked + label {
             color: #f79c22;
 
             &::before {
@@ -717,7 +720,7 @@
       }
 
       .certify-badge.on::before {
-        content: "";
+        content: '';
         display: inline-block;
         width: 20px;
         height: 20px;
@@ -745,10 +748,10 @@
       background-color: #fff;
       position: relative;
       overflow: hidden;
-      box-shadow: 0px 8px 16px 0px #0000000F;
+      box-shadow: 0px 8px 16px 0px #0000000f;
     }
 
-    &-icon+label {
+    &-icon + label {
       cursor: pointer;
     }
 
@@ -787,16 +790,24 @@
   align-items: center;
   gap: 8px;
 
-  >div {
-    width: 50%;
-    flex: 1;
+  &.half {
+    > div {
+      width: 50%;
+      flex: 1;
+      height: 40px;
+    }
+  }
+
+  > div {
+    width: 85%;
+    flex: 1 1 auto;
     height: 40px;
 
     &:has(.inputField__input__radio) {
       height: auto;
     }
 
-    &+div {
+    & + div {
       flex: 0 1 50%;
     }
   }
@@ -841,11 +852,11 @@
     }
   }
 
-  .inputField__input__radio--wrap+.inputField__input__radio--wrap {
+  .inputField__input__radio--wrap + .inputField__input__radio--wrap {
     margin-left: 8px;
   }
 
-  &+.filter {
+  & + .filter {
     margin-top: 8px;
   }
 }
@@ -866,7 +877,7 @@
       text-align: center;
 
       .clear-count {
-        color: #169E4A;
+        color: #169e4a;
       }
     }
   }
@@ -996,7 +1007,6 @@
             background-color: #fff;
 
             .date-info {
-
               // &:before {
               //   content: '';
               //   border-radius: 24px;
@@ -1048,12 +1058,18 @@
 
 .home {
   &--addBtn {
+    user-select: none;
+
     &.active {
       .home--addBtn-hidden {
         color: #fff;
+        pointer-events: auto;
       }
 
       .home--addBtn-close {
+        user-select: all;
+        pointer-events: all;
+
         &:after {
           background-image: url(../images/icon_close_white.svg);
         }
@@ -1088,7 +1104,7 @@
       border-radius: 48px;
       margin-left: auto;
       margin-right: 28px;
-
+      pointer-events: auto;
       &:before {
         content: '';
         display: inline-block;
@@ -1181,14 +1197,14 @@
 
 .kickout-btn {
   padding: 8px 15px;
-  background: #E5E5E5;
+  background: #e5e5e5;
   color: #b3b3b3;
   font-weight: 800;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: -0.5px;
   border-radius: 12px;
-  border: 1px solid #B3B3B3;
+  border: 1px solid #b3b3b3;
 }
 
 /* 프로필 이미지 컴포넌트 */
@@ -1247,6 +1263,7 @@
         img {
           width: 100%;
           object-fit: cover;
+          height: 100%;
         }
       }
 
@@ -1255,11 +1272,12 @@
       }
 
       .certify-badge.on::before {
-        content: "";
+        content: '';
         display: inline-block;
         width: 20px;
         height: 20px;
-        background: #333 url('../images/certify_badge.svg') no-repeat top left/80%;
+        background: #333 url('../images/certify_badge.svg') no-repeat top
+          left/80%;
         position: absolute;
         top: -25px;
         right: -57px;
@@ -1285,18 +1303,18 @@
   letter-spacing: -0.5px;
 
   &.badge--abo {
-    background-color: #FFE6EE;
-    color: #E42864;
+    background-color: #ffe6ee;
+    color: #e42864;
   }
 
   &.badge--purchase {
-    background-color: #E5F6EC;
-    color: #169E4A;
+    background-color: #e5f6ec;
+    color: #169e4a;
   }
 
   &.not {
-    background-color: #F5F5F5 !important;
-    color: #B9B9B9 !important;
+    background-color: #f5f5f5 !important;
+    color: #b9b9b9 !important;
   }
 }
 
@@ -1335,12 +1353,12 @@
 
   &--content::after,
   &--content::before {
-    content: "";
+    content: '';
     position: absolute;
     display: inline-block;
     width: 100%;
     height: 1px;
-    background: #E5E5E5;
+    background: #e5e5e5;
     top: 0;
   }
 
@@ -1382,13 +1400,13 @@
     align-items: center;
 
     &_tag {
-      color: #F79C22;
+      color: #f79c22;
       font-weight: 800;
       font-size: 11px;
       line-height: 16px;
       border-radius: 16px;
       padding: 2px 6px;
-      border: 1px solid #F79C22;
+      border: 1px solid #f79c22;
     }
 
     p {
@@ -1401,6 +1419,10 @@
       // padding: 0 18px;
       word-break: keep-all;
       color: #111;
+
+      &.gray {
+        color: #666;
+      }
 
       &.white {
         color: #fff;
@@ -1433,7 +1455,6 @@
         color: #111;
       }
     }
-
   }
 }
 
@@ -1521,7 +1542,7 @@
       line-height: 100%;
       text-align: center;
       letter-spacing: -0.5px;
-      text-shadow: #FFFFFF70 1px 0 16px;
+      text-shadow: #ffffff70 1px 0 16px;
     }
 
     .badge {
@@ -1540,7 +1561,7 @@
         position: relative;
       }
 
-      &--wrap>* {
+      &--wrap > * {
         grid-area: 1 / 1 / 1 / 1;
         width: 200px;
         height: 200px;
@@ -1554,7 +1575,6 @@
           width: 200px;
           height: 200px;
         }
-
       }
 
       &-back {
@@ -1567,7 +1587,11 @@
         bottom: 10px;
         width: 200px;
         height: 24px;
-        background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.7) 0%, transparent 60%);
+        background: radial-gradient(
+          ellipse at center,
+          rgba(0, 0, 0, 0.7) 0%,
+          transparent 60%
+        );
         filter: blur(6px);
         animation: shadow 1s ease-in-out 2.3s;
         z-index: -1;
@@ -1620,7 +1644,6 @@
   }
 }
 
-
 .select_profile {
   margin-top: 20px;
   width: 100%;
@@ -1631,8 +1654,8 @@
   &_card {
     border-radius: 16px;
     border: 1px solid #999;
-    padding: 16px 5px 8px;
-    background: #F5F5F5;
+    padding: 16px 20px 8px;
+    background: #f5f5f5;
 
     p {
       font-weight: 800;
@@ -1643,16 +1666,14 @@
   }
 
   &_card.is-active {
-    border: 1px solid #169E4A;
-    background: #EAFFF2;
+    border: 1px solid #169e4a;
+    background: #eafff2;
 
     p {
       color: #111;
     }
   }
 }
-
-
 
 /* 노화속도 계기판 dashboard*/
 .dashboard {
@@ -1697,12 +1718,12 @@
         }
 
         &.caution {
-          background-color: #E95371;
+          background-color: #e95371;
           color: #fff;
         }
 
         &.good {
-          background-color: #5AB651;
+          background-color: #5ab651;
           color: #fff;
         }
 
@@ -1721,7 +1742,6 @@
         }
       }
 
-
       &-line {
         position: absolute;
         bottom: 10px;
@@ -1732,7 +1752,6 @@
 
         img {
           height: 100%;
-
         }
       }
     }
@@ -1762,7 +1781,7 @@
       }
 
       li::before {
-        content: "";
+        content: '';
         display: inline-block;
         width: 8px;
         height: 8px;
@@ -1772,15 +1791,15 @@
       }
 
       li:nth-child(1)::before {
-        background-color: #E95371;
+        background-color: #e95371;
       }
 
       li:nth-child(2)::before {
-        background-color: #F8B500;
+        background-color: #f8b500;
       }
 
       li:nth-child(3)::before {
-        background-color: #5AB651;
+        background-color: #5ab651;
       }
     }
   }
@@ -1798,7 +1817,6 @@
         object-fit: contain;
       }
     }
-
   }
 
   &__text {
@@ -1833,8 +1851,6 @@
       letter-spacing: -1px;
       text-align: center;
     }
-
-
   }
 
   &__first-prove {
@@ -1863,8 +1879,5 @@
         font-size: 14px;
       }
     }
-
   }
-
-
 }
