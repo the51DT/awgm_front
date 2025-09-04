@@ -1,18 +1,15 @@
 <template>
   <div class="content-area bg-case">
-    <ContentHead :leftArea=true title="개인회원 정보" headType="ty02" bgGray="true"/>
+    <ContentHead :leftArea=true title="개인회원 정보" headType="ty02" bgGray="true" />
     <div class="my-page-box-info">
-      <div class="my-page-wrap">      
+      <div class="my-page-wrap">
         <div class="profile-area small">
           <!-- 부모 계정일 경우, 등록한 개인 프로필 아이콘 노출 -->
           <!-- 자녀 계정일 경우, 설정된 자녀 프로필 아이콘 노출 -->
-          <div class="upload-label upload-set-img">
+          <!-- not-upload 클래스 존재 시 업로드 버튼 사라짐 -->
+          <div class="upload-label upload-set-img not-upload">
             <div class="img-wrap not-ico">
-              <img
-                class="ico-img"
-                :src="require(`@/assets/images/icon/ico_profile.png`)"
-                alt="프로필 설정 이미지"
-              />
+              <img class="ico-img" :src="require(`@/assets/images/icon/ico_profile.png`)" alt="프로필 설정 이미지" />
             </div>
           </div>
         </div>
@@ -27,41 +24,25 @@
                 <ul class="list-wrap">
                   <li>
                     <div class="list-wrap-icon">
-                      <img
-                        class="ico-img"
-                        :src="require(`@/assets/images/icon/ico_info_user.png`)"
-                        alt="사용자이름 아이콘"
-                      />
+                      <img class="ico-img" :src="require(`@/assets/images/icon/ico_info_user.png`)" alt="사용자이름 아이콘" />
                     </div>
                     <p class="list-wrap-txt">홍길동</p>
                   </li>
                   <li>
                     <div class="list-wrap-icon">
-                      <img
-                        class="ico-img"
-                        :src="require(`@/assets/images/icon/ico_info_heart.png`)"
-                        alt="성별 아이콘"
-                      />
+                      <img class="ico-img" :src="require(`@/assets/images/icon/ico_info_heart.png`)" alt="성별 아이콘" />
                     </div>
                     <p class="list-wrap-txt">남성</p>
                   </li>
                   <li>
                     <div class="list-wrap-icon">
-                      <img
-                        class="ico-img"
-                        :src="require(`@/assets/images/icon/ico_info_calendar.png`)"
-                        alt="생년 아이콘"
-                      />
+                      <img class="ico-img" :src="require(`@/assets/images/icon/ico_info_calendar.png`)" alt="생년 아이콘" />
                     </div>
                     <p class="list-wrap-txt">1980년생</p>
                   </li>
                   <li>
                     <div class="list-wrap-icon">
-                      <img
-                        class="ico-img"
-                        :src="require(`@/assets/images/icon/ico_info_phone.png`)"
-                        alt="연락처 아이콘"
-                      />
+                      <img class="ico-img" :src="require(`@/assets/images/icon/ico_info_phone.png`)" alt="연락처 아이콘" />
                     </div>
                     <p class="list-wrap-txt">010-1234-5678</p>
                   </li>
@@ -69,7 +50,7 @@
               </div>
             </div>
           </div>
-          <div class="my-page-conts-item">          
+          <div class="my-page-conts-item">
             <div class="title-wrap">
               <p class="title">카카오 UID</p>
             </div>
@@ -86,7 +67,7 @@
             </ul>
           </div><!-- 개인회원정보_노출 case -->
           <!-- 개인회원정보_자녀 노출 case -->
-          <div class="my-page-conts-item">          
+          <div class="my-page-conts-item">
             <div class="title-wrap">
               <p class="title">아이디</p>
             </div>
@@ -109,11 +90,6 @@
   </div>
 </template>
 
-<style>
-  .my-page-wrap .profile-area.small .upload-label::after{
-    display: none;
-  }
-</style>
 
 <script>
 import ContentHead from "@/components/ContentHead.vue";

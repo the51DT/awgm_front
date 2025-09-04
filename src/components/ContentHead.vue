@@ -6,18 +6,13 @@
     { 'bgGray': bgGray },
     { 'scrolled': isScrolled },
     bgClass
-  ]"
-  >
+  ]">
     <a class="area-left" href="#" v-if="leftArea === true">
-      <img
-        class="ico-logo"
-        :src="customLeftIcon || (
-          bgClass === 'bgGreen' 
-            ? require('@/assets/images/icon_arrow_left_w.svg')
-            : require('@/assets/images/icon/ico_arrow_left.png')
-        )"
-        alt="이전페이지로 이동"
-      />
+      <img class="ico-logo" :src="customLeftIcon || (
+        bgClass === 'bgGreen'
+          ? require('@/assets/images/icon_arrow_left_w.svg')
+          : require('@/assets/images/icon/ico_arrow_left.svg')
+      )" alt="이전페이지로 이동" />
     </a>
     <template v-if="headType === 'ty03'">
       <h2 class="page-title">
@@ -27,19 +22,13 @@
     <h2 v-else class="page-title">{{ title }}</h2>
     <div class="area-right" v-if="rightArea === true">
       <div v-if="rightIcon" class="area-right__icon">
-        <img
-          :src="require(bgClass === 'bgGray'
-            ? '@/assets/images/icon_setting.svg'
-            : '@/assets/images/icon_setting_w.svg')"
-          alt="설정"
-        />
+        <img :src="require(bgClass === 'bgGray'
+          ? '@/assets/images/icon_setting.svg'
+          : '@/assets/images/icon_setting_w.svg')" alt="설정" />
         <button>
-          <img
-            :src="require(bgClass === 'bgGray'
-              ? '@/assets/images/icon_add_team.svg'
-              : '@/assets/images/icon_add_team_w.svg')"
-            alt="팀원 추가"
-          />
+          <img :src="require(bgClass === 'bgGray'
+            ? '@/assets/images/icon_add_team.svg'
+            : '@/assets/images/icon_add_team_w.svg')" alt="팀원 추가" />
           <div class="invite_btn">
             <div class="invite_btn__pop on">
               <span>팀원을 초대해주세요</span>
@@ -49,7 +38,8 @@
         </button>
       </div>
       <div v-else-if="sortIcon && rightIcon == false" class="area-right__sort">
-        <button class="sort__btn-wrap"  @click="toggleDropdown"> <img src="@/assets/images/icon-list-sort.svg" alt="리스트 정렬 선택 아이콘" /></button>
+        <button class="sort__btn-wrap" @click="toggleDropdown"> <img src="@/assets/images/icon-list-sort.svg"
+            alt="리스트 정렬 선택 아이콘" /></button>
         <div v-show="showDropdown" class="sort__drop-down-list">
           <ul>
             <li @click="closeDropdown"> 높은 랭킹순</li>
@@ -110,7 +100,7 @@ export default {
     },
 
   },
-  components:{InputField},
+  components: { InputField },
   mounted() {
     window.addEventListener('scroll', this.handleScroll)
 

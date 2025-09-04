@@ -6,10 +6,9 @@
     <p v-if="title" class="inputField__title">{{ title }}</p>
     <div class="inputField__wrap">
       <!-- 셀렉트 (option 리스트에서 문구 노출 시)-->
-      <select v-if="type === 'select'" :class="warn === false
-        ? 'inputField__input'
-        : 'inputField__input inputField__input--warn'
-        " :id="id" :name="name" :readonly="readonly" @change="onChange" :value="modelValue">
+      <select v-if="type === 'select'"
+        :class="[warn === false ? 'inputField__input' : 'inputField__input inputField__input--warn', size === 'font-12' ? '' : 'font-12 ']"
+        :id="id" :name="name" :readonly="readonly" @change="onChange" :value="modelValue">
         <!-- <option disabled hidden >{{  }}</option> -->
         <option :key="i" v-for="(options, i) in options" :value="options">
           {{ options }}
@@ -30,10 +29,8 @@
         :class="[radio.label_second || radio.center_layout ? 'inputField__input__radio_second--wrap' : 'inputField__input__radio--wrap', radio.center_layout ? 'inputField__input__radio_center--wrap' : '']">
         <input :type="type" class="inputField__input inputField__input__radio" :id="radio.id" :name="name"
           :value="radio.value" :readonly="readonly" :checked="radio.checked" />
-        <label :for="radio.id" class="inputField__input__radio--label" :class="radio.label_second ? 'second' : ' '">
+        <label :for="radio.id" class="inputField__input__radio--label">
           <span>{{ radio.label }}</span>
-          <br v-if="radio.label_second" />
-          <span v-if="radio.label_second">{{ radio.label_second }}</span>
         </label>
       </div>
       <!-- 체크박스 -->
@@ -82,7 +79,6 @@
       </label>
       <!-- 복사하기 버튼 -->
       <button v-if="type === 'copy'" class="inputField__button--copy">복사하기</button>
-
     </div>
 
     <!-- 캡션 -->
@@ -127,13 +123,8 @@ export default {
     warn: Boolean,
     checked: Boolean,
     disabled: Boolean,
+    size: String,
     radio: {
-      type: Array,
-      default: () => {
-        return ['']
-      }
-    },
-    radio_second: {
       type: Array,
       default: () => {
         return ['']
