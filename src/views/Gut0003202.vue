@@ -10,8 +10,30 @@
           <div class="text-wrap manage">
             <h3> 김사무엘 주니어 </h3>
           </div>
-        </div>        
-        <div class="card card--border card--p1220 card--shadowc2">
+        </div>
+        <div class="badge-btn-wrap">
+          <button> 전체 배지 보기 <img src="../assets/images/icon_arrow_r_gray.svg" /> </button>
+        </div>
+        <div class="card card--d8border card--p20 card--shadowc2">
+          <!-- 것모닝 핀/뱃지 둘 다 보유 시 -->
+          <div class="team-detail">
+            <div class="team-detail-pin">
+              <p class="title"> 것모닝핀</p>
+              <BadgeDefault img="pin--diamond.svg" pointColor="gray"> 에메랄드 </BadgeDefault>
+            </div>
+            <div class="team-detail-pin">
+              <p class="title"> 대표 배지</p>
+              <BadgeDefault img="badge--happy_new_year.svg" pointColor="gray"> 새해 첫날 </BadgeDefault>
+            </div>
+          </div>
+          <!-- 것모닝 핀/뱃지 둘 중 하나만 보유 시 -->
+          <!-- <div class="team-detail">
+            <div class="team-detail-pin">
+              <p class="title"> 것모닝핀</p>
+              <BadgeDefault img="pin--diamond.svg" width="w-80" pointColor="use-profile"> 새해 첫날 </BadgeDefault>
+            </div>
+          </div> -->
+
           <div class="card__top">
             <div class="card__text__list manage">
               <dl>
@@ -19,11 +41,12 @@
                 <dd>2024.09.09</dd>
               </dl>
               <dl>
-                <dt>인증 횟수</dt>
-                <dd>223/1000회 (9월 22회)</dd>
+                <dt>인증횟수</dt>
+                <dd>223/1000회</dd>
               </dl>
             </div>
           </div>
+
         </div>
       </div>
       <div class="team-btn-wrap ">
@@ -33,29 +56,31 @@
       </div>
     </div>
   </div>
-  
+
 </template>
 <style>
-  .team-box-wrap .btn-area{
-    margin-bottom: 0;
-  }
+.team-box-wrap .btn-area {
+  margin-bottom: 0;
+}
 </style>
 
 <script>
 import ContentHead from "@/components/ContentHead.vue";
 import CustomButton from "@/components/CustomButton.vue";
+import BadgeDefault from "@/components/BadgeDefault.vue"
 
 export default {
   name: "Gut_0003202",
   components: {
     ContentHead,
     CustomButton,
+    BadgeDefault,
   },
   data() {
     return {
       leftArea: "",
       rightArea: "",
     };
-  },  
+  },
 };
 </script>

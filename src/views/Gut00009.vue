@@ -16,7 +16,7 @@
       <div class="tag--wrap">
         <button type="button" class="tag on">진행중</button>
         <button type="button" class="tag tag-gray">진행종료</button>
-        <button type="button" class="tag">초대받은 팀 <span> ($n$) </span></button>
+        <button type="button" class="tag">초대받은 팀 <span class="bold"> (2개) </span></button>
       </div>
       <div class="tag_cont on">
         <div class="team--main__sub">

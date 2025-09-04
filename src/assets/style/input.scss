@@ -46,6 +46,11 @@
     width: 100%;
     background-color: #fff;
 
+    &.font-12 {
+      font-size: 12px;
+      line-height: 24px;
+    }
+
     &::placeholder {
       color: #999999;
     }
