@@ -10,7 +10,9 @@
     <div class="dashboard__first-prove" v-if="typeof beforeValue === 'number'">
       <div :style="{ transform: `rotate(${beforeAngle}deg)` }">
         <span class="font--c66 font--ls1"> 1차 </span>
-        <img :src="require(`@/assets/images/first_prove_unit.svg`)" />
+        <img v-if="0.9 >= beforeValue" :src="require(`@/assets/images/first_prove_unit_green.svg`)" />
+        <img v-else-if="0.9 < beforeValue && beforeValue <= 1.10" :src="require(`@/assets/images/first_prove_unit_yellow.svg`)" />
+        <img v-else :src="require(`@/assets/images/first_prove_unit.svg`)" />
       </div>
     </div>
     <div class="dashboard__bg">
