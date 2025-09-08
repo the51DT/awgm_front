@@ -1516,7 +1516,8 @@
     margin-bottom: 10px;
   }
 
-  .gray333_text:last-child {
+  .gray333_text:last-child,
+  .gray333_text:has(+ .flex-div) {
     margin-top: 10px;
   }
 
@@ -1531,6 +1532,20 @@
       .inputField:nth-child(2) {
         margin-bottom: 0;
       }
+    }
+  }
+
+  .flex-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4px;
+    .label-txt {
+      color: #169E4A;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 16px;
+      letter-spacing: -0.5px;
     }
   }
 }

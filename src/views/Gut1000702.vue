@@ -16,6 +16,14 @@
         <p class="gray333_text">
           마이웰니스 랩에서 PIN 번호를 확인해 주세요.
         </p>
+        <!-- 로딩 영역 -->
+        <div class="flex-div">
+          <div class="content-etc-img-area active-small">
+            <img :src="require('@/assets/images/icon/ico_etc02_loading.png')" alt="로딩페이지 아이콘">
+          </div>
+          <p class="label-txt">로딩중 입니다...</p>
+        </div>
+        <!-- //로딩 영역 -->
       </div>
     </template>
     <template v-slot:btn>
