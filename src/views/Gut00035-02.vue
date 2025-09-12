@@ -279,6 +279,9 @@
           <div class="badge-box">
             <BadgeDefault img="badge--lock-hex.svg" pointColor="lock">챌린지 막판스퍼트</BadgeDefault>
           </div>
+          <div class="badge-box">
+            <BadgeDefault img="badge--lock-hex.svg" pointColor="lock">저속노화 성공</BadgeDefault>
+          </div>
         </div>
       </div>
 

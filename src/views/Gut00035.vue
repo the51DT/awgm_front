@@ -278,6 +278,9 @@
           <div class="badge-box">
             <BadgeDefault img="badge--challenge_final_sprint.svg">챌린지 막판스퍼트</BadgeDefault>
           </div>
+          <div class="badge-box">
+            <BadgeDefault img="badge--challenge_slow_aging.svg">저속노화 성공</BadgeDefault>
+          </div>
         </div>
       </div>
 

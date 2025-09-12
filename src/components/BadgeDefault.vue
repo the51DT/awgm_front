@@ -112,6 +112,7 @@ export default {
       if (img.includes('challenge_complete_1')) return '#636FE6';
       if (img.includes('challenge_complete_2')) return '#C98AE2';
       if (img.includes('challenge_final_sprint')) return '#00FFAA';
+      if (img.includes('challenge_slow_aging')) return '#75FF38';
       if (img.includes('self_starter')) return '#FF968C';
       if (img.includes('new_leader')) return '#FFAD73';
       if (img.includes('proven_leader')) return '#7BE81D';
