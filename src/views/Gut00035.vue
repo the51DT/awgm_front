@@ -40,11 +40,11 @@
                       <span> 2회</span>
                     </div>
                     <div class="badge-box">
-                      <BadgeDefault pointColor="white" img="pin--bronze_builder.svg">브론즈 파운데이션</BadgeDefault>
+                      <BadgeDefault pointColor="white" img="pin--bronze_foundation.svg">브론즈 파운데이션</BadgeDefault>
                       <span> 5회</span>
                     </div>
                     <div class="badge-box">
-                      <BadgeDefault pointColor="white" img="pin--bronze_foundation.svg">브론즈 빌더</BadgeDefault>
+                      <BadgeDefault pointColor="white" img="pin--bronze_builder.svg">브론즈 빌더</BadgeDefault>
                       <span> 8회</span>
                     </div>
                     <div class="badge-box">
