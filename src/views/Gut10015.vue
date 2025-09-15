@@ -321,6 +321,6 @@ export default {
 </script>
 <style scoped>
 .info--list:not(:last-child) {
-  margin-bottom: 24px;
+  margin-bottom: 28px;
 }
 </style>
